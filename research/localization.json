@@ -1,0 +1,46 @@
+{
+  "domains": {
+    "gfm": "Grid-forming control & stability",
+    "pmsm": "PMSM current control",
+    "simulation": "Real-time simulation",
+    "twin": "Digital twins & estimation"
+  },
+  "papers": {
+    "rfpsc": {
+      "description": "Compare conventional PSC with reference-feedforward PSC in a no-load small-signal model. Check pole–zero cancellation and active-power step responses.",
+      "tags": ["RFPSC", "Small signal", "Pole–zero cancellation"]
+    },
+    "robust-psc": {
+      "description": "Evaluate analytical tuning and stability margins across grid strengths, including the stated high-reactive-power exception.",
+      "tags": ["PSC", "Stability margins", "Analytical tuning"],
+      "targetsZh": ["复核不同电网强度和运行点下的解析整定与稳定裕度。", "比较频域和时域响应，并保留原文的高无功工况例外。"]
+    },
+    "observer-gfm": {
+      "description": "Check grid-forming dynamics, small-signal predictions and sensitivity to inductance estimation error.",
+      "tags": ["DO-GFM", "Disturbance observer", "Parameter sensitivity"],
+      "targetsZh": ["复核构网模式的动态特性和小信号预测。", "测试电感估计误差下的鲁棒性。", "在指定工况下与 RFPSC 对照。"]
+    },
+    "pmsm-mpcc-performance": {
+      "description": "Check current ripple, THD and delay compensation under the paper's sampling conditions. Candidate for a venue exception.",
+      "tags": ["MPCC", "THD", "Delay compensation"],
+      "targetsZh": ["实现改进型预测电流控制。", "复核原采样条件下的纹波和 THD。", "检查参数敏感性与延时补偿。", "把实际开关频率对齐后的比较记为扩展试验。"]
+    },
+    "pmsm-mpcc-robustness": {
+      "description": "Check the incremental model's sensitivity to parameter mismatch once the full text is available.",
+      "tags": ["MPCC", "Incremental model", "Robustness"],
+      "gap": "The queue has no accessible full-text link. Review the equations, motor parameters and test setup once the text is available.",
+      "targetsZh": ["复核增量模型的参数鲁棒性。", "测试参数偏差对预测和延时补偿的影响。"]
+    },
+    "hf-converter-simulation": {
+      "description": "Check diode state mapping, the noniterative network solution and numerical error. Measure execution cost on the host.",
+      "tags": ["DMM", "Noniterative solver", "Numerical error"],
+      "targetsZh": ["复核 DMM 二极管状态映射与非迭代网络求解。", "用明确的参考模型和误差定义复核精度。", "记录主机执行时间，单独标明 FPGA 时序待验证。"]
+    },
+    "converter-digital-twin": {
+      "description": "Use traceable synthetic Buck converter data to evaluate identifiability, noise sensitivity and variability across initialization points.",
+      "tags": ["Parameter identification", "Buck", "PSO"],
+      "targetsZh": ["用独立合成 Buck 数据检查参数恢复与可辨识性。", "评估多起点、测量噪声和模型失配的影响。", "检查目标函数中电流与电压误差的尺度敏感性。"],
+      "boundariesZh": ["合成数据只用于参数辨识检查。物理退化和寿命预测仍需硬件证据。", "原文没有要求快速在线估计。PSO 运行较慢本身不足以否定该主张。"]
+    }
+  }
+}

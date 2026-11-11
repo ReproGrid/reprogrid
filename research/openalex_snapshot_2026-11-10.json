@@ -1,0 +1,363 @@
+{
+  "checked_on_local": "2026-11-10",
+  "source": "OpenAlex primary API",
+  "works": [
+    {
+      "id": "https://openalex.org/W3005397229",
+      "doi": "https://doi.org/10.1109/tpel.2020.2970991",
+      "title": "Reference-Feedforward Power-Synchronization Control",
+      "publication_date": "2020-02-03",
+      "cited_by_count": 84,
+      "citation_normalized_percentile": {
+        "value": 0.92274943,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 21
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 16
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 16
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 15
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 9
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 3
+        }
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research.aalto.fi/en/publications/532bf5a7-63e2-4320-8d6e-f272284f3077",
+        "any_repository_has_fulltext": true
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Power Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2020.2970991"
+    },
+    {
+      "id": "https://openalex.org/W2897459764",
+      "doi": "https://doi.org/10.1109/tie.2018.2874584",
+      "title": "Robust Analytic Design of Power-Synchronization Control",
+      "publication_date": "2018-10-12",
+      "cited_by_count": 234,
+      "citation_normalized_percentile": {
+        "value": 0.96226505,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 26
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 46
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 55
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 43
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 22
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 22
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 17
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 3
+        }
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research.aalto.fi/files/28320415/j44_post.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2018.2874584"
+    },
+    {
+      "id": "https://openalex.org/W4400975295",
+      "doi": "https://doi.org/10.1109/tpel.2024.3433503",
+      "title": "Multifunctional Grid-Forming Converter Control Based on a Disturbance Observer",
+      "publication_date": "2024-07-25",
+      "cited_by_count": 32,
+      "citation_normalized_percentile": {
+        "value": 0.94897047,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 15
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 15
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 2
+        }
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1109/tpel.2024.3433503",
+        "any_repository_has_fulltext": true
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Power Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2024.3433503"
+    },
+    {
+      "id": "https://openalex.org/W2604463336",
+      "doi": "https://doi.org/10.1109/tia.2017.2690998",
+      "title": "Performance Improvement of Model-Predictive Current Control of Permanent Magnet Synchronous Motor Drives",
+      "publication_date": "2017-04-05",
+      "cited_by_count": 311,
+      "citation_normalized_percentile": {
+        "value": 0.98848973,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 14
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 43
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 36
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 42
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 39
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 43
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 44
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 26
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 20
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 4
+        }
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Industry Applications",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIA.2017.2690998"
+    },
+    {
+      "id": "https://openalex.org/W2804668023",
+      "doi": "https://doi.org/10.1109/tpel.2018.2835835",
+      "title": "Model Predictive Current Control for PMSM Drives With Parameter Robustness Improvement",
+      "publication_date": "2018-05-17",
+      "cited_by_count": 625,
+      "citation_normalized_percentile": {
+        "value": 0.99721764,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 52
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 99
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 86
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 103
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 76
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 92
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 80
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 32
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 5
+        }
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Power Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2018.2835835"
+    },
+    {
+      "id": "https://openalex.org/W3204921776",
+      "doi": "https://doi.org/10.1109/tie.2021.3114706",
+      "title": "Methods for the Accurate Real-Time Simulation of High-Frequency Power Converters",
+      "publication_date": "2021-10-01",
+      "cited_by_count": 45,
+      "citation_normalized_percentile": {
+        "value": 0.88582078,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 16
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 14
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 3
+        }
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2021.3114706"
+    },
+    {
+      "id": "https://openalex.org/W3043679992",
+      "doi": "https://doi.org/10.1109/tpel.2020.3009600",
+      "title": "A Digital Twin Based Estimation Method for Health Indicators of DC–DC Converters",
+      "publication_date": "2020-07-15",
+      "cited_by_count": 320,
+      "citation_normalized_percentile": {
+        "value": 0.9922793,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 45
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 86
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 57
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 74
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 32
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 22
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 4
+        }
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://vbn.aau.dk/da/publications/92a5fe1c-9e25-49e9-ac83-905185083ff6",
+        "any_repository_has_fulltext": true
+      },
+      "is_retracted": false,
+      "venue": "IEEE Transactions on Power Electronics",
+      "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2020.3009600"
+    }
+  ]
+}

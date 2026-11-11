@@ -1,0 +1,14 @@
+{
+  "doi": "10.1109/TPEL.2020.2970991",
+  "base_frequency_hz": 50,
+  "voltage_pu": 1,
+  "active_resistance_pu": 0.2,
+  "reference_step_pu": 0.01,
+  "normalized_time_step": 0.01,
+  "normalized_duration": 60,
+  "cases": [
+    {"id": "strong", "inductance_pu": 0.1, "source": "Section II-B strong-grid example"},
+    {"id": "figure3", "inductance_pu": 0.5, "source": "Figure 3 no-load case"},
+    {"id": "weak", "inductance_pu": 1, "source": "Figure 5 grid inductance applied to Section II-B model"}
+  ]
+}

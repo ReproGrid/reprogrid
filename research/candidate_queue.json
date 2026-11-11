@@ -1,0 +1,248 @@
+{
+  "schema_version": 2,
+  "status": "research_queue_not_executed",
+  "checked_on_local": "2026-11-10",
+  "note": "Citation counts are database-specific snapshots. OpenAlex OA flags do not fully cover author uploads. Test targets are questions, not findings of error or misconduct.",
+  "papers": [
+    {
+      "doi": "10.1109/TPEL.2020.2970991",
+      "issue_year": 2020,
+      "domain": "gfm_control",
+      "priority": "first_end_to_end_pilot",
+      "full_text_url": "https://acris.aalto.fi/ws/portalfiles/portal/41217320/ELEC_Harnefors_etal_Reference_Feedforward_IEEETraPowEle_acceptedauthormanuscript.pdf",
+      "reference_code_url": "https://aalto-electric-drives.github.io/motulator/grid_examples/grid_forming/plot_13kva_rfpsc_gfm.html",
+      "test_targets": [
+        "Reference-feedforward effect on power response under paper assumptions",
+        "Robustness of response to model mismatch as a separately labeled extension"
+      ],
+      "title": "Reference-Feedforward Power-Synchronization Control",
+      "venue": "IEEE Transactions on Power Electronics",
+      "first_publication_date_openalex": "2020-02-03",
+      "openalex_id": "https://openalex.org/W3005397229",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 84,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2020.2970991"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TPEL",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    },
+    {
+      "doi": "10.1109/TIE.2018.2874584",
+      "issue_year": 2019,
+      "domain": "gfm_stability",
+      "priority": "high_impact_followup",
+      "full_text_url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/c8da5953-833c-4f32-b38b-49ea7add52b9/content",
+      "test_targets": [
+        "Analytic tuning and stability margins over grid strength and operating points",
+        "Frequency-domain and time-domain agreement, retaining the stated high-reactive-power exception"
+      ],
+      "title": "Robust Analytic Design of Power-Synchronization Control",
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "first_publication_date_openalex": "2018-10-12",
+      "openalex_id": "https://openalex.org/W2897459764",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 234,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2018.2874584"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TIE",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    },
+    {
+      "doi": "10.1109/TPEL.2024.3433503",
+      "issue_year": 2024,
+      "domain": "gfm_control",
+      "priority": "shared_model_followup",
+      "full_text_url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/e0dab62d-a1f7-498c-98f2-d593ae9c4ff8/content",
+      "reference_code_url": "https://aalto-electric-drives.github.io/motulator/grid_examples/grid_forming/plot_13kva_do_gfm.html",
+      "test_targets": [
+        "GFM-mode dynamics and small-signal predictions",
+        "Inductance-estimation error robustness",
+        "RFPSC comparison without assuming universal performance superiority"
+      ],
+      "title": "Multifunctional Grid-Forming Converter Control Based on a Disturbance Observer",
+      "venue": "IEEE Transactions on Power Electronics",
+      "first_publication_date_openalex": "2024-07-25",
+      "openalex_id": "https://openalex.org/W4400975295",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 32,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2024.3433503"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TPEL",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    },
+    {
+      "doi": "10.1109/TIA.2017.2690998",
+      "issue_year": 2017,
+      "domain": "pmsm_current_control",
+      "priority": "high_citation_exception_candidate",
+      "full_text_url": "https://www.researchgate.net/publication/316025377_Performance_Improvement_of_Model-Predictive_Current_Control_of_Permanent_Magnet_Synchronous_Motor_Drives",
+      "test_targets": [
+        "Improved predictive-current-control implementations",
+        "Ripple and THD under original sampling conditions",
+        "Parameter sensitivity and delay compensation",
+        "Matched actual switching frequency as a separately labeled extension"
+      ],
+      "title": "Performance Improvement of Model-Predictive Current Control of Permanent Magnet Synchronous Motor Drives",
+      "venue": "IEEE Transactions on Industry Applications",
+      "first_publication_date_openalex": "2017-04-05",
+      "openalex_id": "https://openalex.org/W2604463336",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 311,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIA.2017.2690998"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "exception_candidate",
+        "abbreviation": "TIA",
+        "basis": "Outside the seven priority journals; retained as a high-citation PMSM algorithm candidate, not as a default pilot.",
+        "quartile_classification": null,
+        "exception_evidence": {
+          "source": "OpenAlex",
+          "checked_on_local": "2026-11-10",
+          "citation_count": 311,
+          "citation_normalized_percentile": {
+            "value": 0.98848973,
+            "is_in_top_1_percent": false,
+            "is_in_top_10_percent": true
+          },
+          "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIA.2017.2690998",
+          "relevance": "PMSM predictive current-control baseline and parameter-robustness comparisons"
+        }
+      }
+    },
+    {
+      "doi": "10.1109/TPEL.2018.2835835",
+      "issue_year": 2019,
+      "domain": "pmsm_current_control",
+      "priority": "parked_pending_full_text",
+      "full_text_url": null,
+      "test_targets": [
+        "Incremental-model parameter robustness",
+        "Sensitivity of prediction and delay compensation to parameter mismatch"
+      ],
+      "title": "Model Predictive Current Control for PMSM Drives With Parameter Robustness Improvement",
+      "venue": "IEEE Transactions on Power Electronics",
+      "first_publication_date_openalex": "2018-05-17",
+      "openalex_id": "https://openalex.org/W2804668023",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 625,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2018.2835835"
+      },
+      "state": "parked",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TPEL",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    },
+    {
+      "doi": "10.1109/TIE.2021.3114706",
+      "issue_year": 2022,
+      "domain": "real_time_simulation",
+      "priority": "simulation_pilot_candidate",
+      "full_text_url": "https://www.researchgate.net/publication/355029015_Methods_for_the_Accurate_Real-Time_Simulation_of_High-Frequency_Power_Converters",
+      "institution_record_url": "https://publications.polymtl.ca/49886/",
+      "test_targets": [
+        "DMM diode-state mapping and noniterative network solution",
+        "Accuracy under explicit reference models and error definitions",
+        "Measured host execution costs, separately from untested FPGA timing"
+      ],
+      "title": "Methods for the Accurate Real-Time Simulation of High-Frequency Power Converters",
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "first_publication_date_openalex": "2021-10-01",
+      "openalex_id": "https://openalex.org/W3204921776",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 45,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2021.3114706"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TIE",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    },
+    {
+      "doi": "10.1109/TPEL.2020.3009600",
+      "issue_year": 2021,
+      "domain": "digital_twin_parameter_estimation",
+      "priority": "high_impact_twin_pilot_candidate",
+      "full_text_url": "https://vbn.aau.dk/ws/files/337146322/A_Digital_Twin_based_Estimation_Method_for_Health_Indicators_of_DC_DC_Converters.pdf",
+      "test_targets": [
+        "Parameter recovery and identifiability on independent synthetic Buck data",
+        "Multi-start variability, measurement noise, and model mismatch",
+        "Sensitivity to current/voltage error scaling in the objective"
+      ],
+      "claim_boundaries": [
+        "Synthetic identification does not validate physical degradation or lifetime",
+        "The paper does not require fast online estimation; slow PSO is not by itself a contradiction"
+      ],
+      "title": "A Digital Twin Based Estimation Method for Health Indicators of DC–DC Converters",
+      "venue": "IEEE Transactions on Power Electronics",
+      "first_publication_date_openalex": "2020-07-15",
+      "openalex_id": "https://openalex.org/W3043679992",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 320,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2020.3009600"
+      },
+      "state": "screened",
+      "feasibility_review_complete": false,
+      "code_executed": false,
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TPEL",
+        "basis": "Explicit user priority list, 2026-11-10",
+        "quartile_classification": null
+      }
+    }
+  ],
+  "venue_policy_updated_on_local": "2026-11-10",
+  "priority_status": "Provisional research priorities; execution eligibility still requires feasibility review.",
+  "venue_policy_summary": {
+    "preferred": 6,
+    "exception_candidate": 1
+  }
+}

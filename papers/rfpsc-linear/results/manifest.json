@@ -1,0 +1,20 @@
+{
+  "doi": "10.1109/TPEL.2020.2970991",
+  "normalization": "tau = 2*pi*50*t; response metrics normalized by step amplitude",
+  "method": "fixed-step RK4; direct dq model, published transfer function, and first-order analytic solution",
+  "inputs_sha256": {
+    "run.py": "adb8f8ea633675d51c842afd22abc07eb7852036b87489e29cf8a9adb46f5a4a",
+    "config.json": "b0561ffab3faccde6bb8d1419c346de7f09982ef48bf893d37b518504e3bd83d"
+  },
+  "outputs_sha256": {
+    "summary.json": "6507ef63c9e6f6503ee8b197aa2007b49581eb3d2be312fed6e7e29659e4108e",
+    "chart.json": "1041c920e46147946741f12e79964bbae25c54847d46d7e6abfa6e1a74f541c7",
+    "step-response.csv": "fda4ebc6e1c3549d2474d4fd46954dbf9cd27938d2176c78d07d1c7ef57bb92b"
+  },
+  "thresholds": {
+    "dq_vs_transfer": 1e-09,
+    "time_step_refinement": 1e-07,
+    "rfpsc_vs_analytic": 1e-07
+  },
+  "initial_state": "no load, zero perturbation"
+}

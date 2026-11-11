@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.000
+Conventional PSC integrates the power error times the synchronizing gain.
+
+00:00:08.000 --> 00:00:16.000
+RFPSC adds a direct path from the power reference to the active-resistance branch.
+
+00:00:16.000 --> 00:00:24.000
+At no load with a purely inductive grid, the complex poles cancel in the small-signal response.

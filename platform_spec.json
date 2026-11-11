@@ -1,0 +1,42 @@
+{
+  "selection": {
+    "journal_policy": {
+      "priority_journals": [
+        {
+          "abbreviation": "TSG",
+          "title": "IEEE Transactions on Smart Grid"
+        },
+        {
+          "abbreviation": "TPEL",
+          "title": "IEEE Transactions on Power Electronics"
+        },
+        {
+          "abbreviation": "TII",
+          "title": "IEEE Transactions on Industrial Informatics"
+        },
+        {
+          "abbreviation": "TIE",
+          "title": "IEEE Transactions on Industrial Electronics"
+        },
+        {
+          "abbreviation": "TPWRS",
+          "title": "IEEE Transactions on Power Systems",
+          "user_aliases": [
+            "TPWSY"
+          ]
+        },
+        {
+          "abbreviation": "TTE",
+          "title": "IEEE Transactions on Transportation Electrification"
+        },
+        {
+          "abbreviation": "TSTE",
+          "title": "IEEE Transactions on Sustainable Energy",
+          "user_aliases": [
+            "Sustainable Energy"
+          ]
+        }
+      ]
+    }
+  }
+}

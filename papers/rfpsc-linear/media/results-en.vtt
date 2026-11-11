@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.000
+Strong grid: RFPSC rises in 3.50 ms. Conventional PSC takes 11.50 ms.
+
+00:00:08.000 --> 00:00:16.000
+At 0.5 p.u., RFPSC removes 3.22% overshoot, with a longer rise time.
+
+00:00:16.000 --> 00:00:24.000
+At 1.0 p.u., this is a no-load small-signal calculation. Hardware traces await verification.

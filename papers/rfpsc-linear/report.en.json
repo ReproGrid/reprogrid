@@ -1,0 +1,27 @@
+{
+  "algorithm": [
+    ["Set the operating point", "Use the purely inductive infinite bus from Section II-B. At no load, i_d0 = i_q0 = 0. The perturbation states are the power angle and the d- and q-axis currents."],
+    ["Switch the reference feedforward path", "Conventional PSC uses ξ = 0. RFPSC uses ξ = 1 and feeds ΔP_ref / V into the active-resistance branch. Both variants use the same feedback gain K_p."],
+    ["Compute and cross-check the responses", "Integrate the dq perturbation equations and the transfer-function implementation of Eq. (19) with RK4. Compare RFPSC with the no-load solution 1 − exp(−ατ) and repeat with half the step size."]
+  ],
+  "strengths": [
+    "In the strong-grid example with L = 0.1 p.u., the 10–90% rise time was 3.50 ms for RFPSC and 11.50 ms for conventional PSC.",
+    "All three no-load RFPSC traces matched the first-order analytical response. RFPSC eliminated the small overshoot seen with conventional PSC at L = 0.5 and 1.0 p.u."
+  ],
+  "limitations": [
+    "The speed benefit depends on grid inductance. At L = 0.5 and 1.0 p.u., RFPSC eliminated overshoot and took longer to rise from 10% to 90%.",
+    "This run covers a balanced, purely inductive, no-load small-signal model. Approximate cancellation under load, finite filter bandwidth, sampling and PWM delay, current limiting and the hardware traces in Figs. 5–6 remain unverified."
+  ],
+  "parameters": [
+    ["V, ω₁", "1 p.u. each", "Figure 3. Table I gives the 50 Hz base frequency."],
+    ["L", "0.1, 0.5, 1.0 p.u.", "Strong-grid example in Section II-B, Fig. 3 and Fig. 5. The 1.0 p.u. value is used here only in the no-load linear model."],
+    ["Rₐ, Kₚ", "0.2 p.u. and Eq. (18)", "The values follow the per-unit theoretical analysis."],
+    ["ΔP_ref, step size", "0.01 p.u. and Δτ = 0.01, 0.005", "Reproduction settings. τ = 2π × 50 × t."],
+    ["Rₐ in Table I", "Conversion needs clarification", "The table lists 4.4 Ω, 0.2 p.u. and a 12.6 Ω base. Direct conversion on that base gives about 0.349 p.u. Hardware comparison needs clarification of the normalization."],
+    ["Raw traces for Figs. 5–6", "To obtain", "The evidence package contains computed data. Sample-by-sample comparison needs the measured traces and the full discrete implementation settings."]
+  ],
+  "videos": [
+    {"kind": "algorithm", "title": "Algorithm and feedforward path", "description": "Follow the power error to the power angle and the active-resistance branch.", "file": "algorithm-en.mp4", "poster": "algorithm-en.png", "captions": "algorithm-en.vtt", "duration": "0:24"},
+    {"kind": "results", "title": "Step response and evidence limits", "description": "Compare rise time and overshoot at three grid inductances.", "file": "results-en.mp4", "poster": "results-en.png", "captions": "results-en.vtt", "duration": "0:24"}
+  ]
+}

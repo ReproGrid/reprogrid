@@ -1,0 +1,63 @@
+{
+  "doi": "10.1109/TPEL.2020.2970991",
+  "kind": "independent_small_signal_implementation",
+  "cases": [
+    {
+      "id": "strong",
+      "inductance_pu": 0.1,
+      "source": "Section II-B strong-grid example",
+      "alpha_pu": 2.0,
+      "check_error_upper_bounds": {
+        "dq_vs_transfer": 1e-12,
+        "time_step_refinement": 4.68e-10,
+        "rfpsc_vs_analytic": 3.1e-11
+      },
+      "psc": {
+        "rise_time_ms": 11.50035,
+        "overshoot_percent": 0
+      },
+      "rfpsc": {
+        "rise_time_ms": 3.49699,
+        "overshoot_percent": 0
+      }
+    },
+    {
+      "id": "figure3",
+      "inductance_pu": 0.5,
+      "source": "Figure 3 no-load case",
+      "alpha_pu": 0.4,
+      "check_error_upper_bounds": {
+        "dq_vs_transfer": 1e-12,
+        "time_step_refinement": 5.9e-11,
+        "rfpsc_vs_analytic": 1e-12
+      },
+      "psc": {
+        "rise_time_ms": 8.23042,
+        "overshoot_percent": 3.22394
+      },
+      "rfpsc": {
+        "rise_time_ms": 17.48496,
+        "overshoot_percent": 0
+      }
+    },
+    {
+      "id": "weak",
+      "inductance_pu": 1,
+      "source": "Figure 5 grid inductance applied to Section II-B model",
+      "alpha_pu": 0.2,
+      "check_error_upper_bounds": {
+        "dq_vs_transfer": 1e-12,
+        "time_step_refinement": 5.8e-11,
+        "rfpsc_vs_analytic": 1e-12
+      },
+      "psc": {
+        "rise_time_ms": 26.72524,
+        "overshoot_percent": 1.00546
+      },
+      "rfpsc": {
+        "rise_time_ms": 34.96992,
+        "overshoot_percent": 0
+      }
+    }
+  ]
+}
