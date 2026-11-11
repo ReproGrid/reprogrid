@@ -1,0 +1,66 @@
+{
+  "paper": {
+    "doi": "10.1109/TPEL.2024.3433503",
+    "title": "Multifunctional Grid-Forming Converter Control Based on a Disturbance Observer",
+    "source_url": "https://acris.aalto.fi/ws/portalfiles/portal/162149547/Multifunctional_Grid-Forming_Converter_Control_Based_on_a_Disturbance_Observer.pdf",
+    "source_sha256": "a17aee546525bd418ced2ea980c18c82ca2f32bd552daf774415ddbce64cb51e",
+    "source_license": "CC BY 4.0",
+    "target": "Tables I and II, Section V-C and Section VI-A, weak-grid Figures 5(b) and 6(b)"
+  },
+  "upstream": {
+    "url": "https://github.com/Aalto-Electric-Drives/motulator",
+    "version": "0.23.1",
+    "commit": "ca3fb1f225be30ff98d70ebca6fc49cc24e2bb2e"
+  },
+  "table_i": {
+    "voltage_line_line_rms_v": 400.0,
+    "phase_current_rms_a": 18.0,
+    "nameplate_va": 12500.0,
+    "grid_frequency_hz": 50.0,
+    "dc_voltage_v": 650.0,
+    "filter_inductance_h": 0.0063,
+    "control_sampling_hz": 10000,
+    "carrier_hz": 5000
+  },
+  "table_ii": {
+    "rfpsc_power_synchronization_gain_pu": 0.2,
+    "rfpsc_active_resistance_pu": 0.2,
+    "rfpsc_current_lpf_bandwidth_pu": 0.1,
+    "do_power_gain_pu": 0.2,
+    "do_voltage_gain_pu": 1.0,
+    "do_observer_gain_pu_re_im": [1.0, -1.0],
+    "do_current_control_bandwidth_pu": 8.0
+  },
+  "weak_grid": {
+    "total_inductance_pu": 0.89,
+    "observer_inductance_estimate_pu": 0.15,
+    "series_resistance_estimate_pu": 0.05,
+    "grid_voltage_pu": 1.0,
+    "converter_voltage_setpoint_pu": 1.0,
+    "step_times_s": [0.2, 0.5, 0.8, 1.1],
+    "step_levels_pu": [0.0, 0.33, 0.66, 1.0, 0.0],
+    "stop_s": 1.5
+  },
+  "simulation_assumptions": {
+    "plant_series_resistance_pu": 0.05,
+    "current_limit_pu": 1.3,
+    "svpwm_carrier_counter_levels": 4096,
+    "computational_delay_samples": 1,
+    "pwm_dead_time_s": 0.0,
+    "notes": [
+      "The grid emulator is a balanced sinusoidal voltage source. The DC bus is held at 650 V, as in the motulator examples. Emulator and DC supply dynamics, sensor filtering and hardware dead time are unspecified for these panels.",
+      "Use the 6.3 mH filter from Table I and set the total to 0.89 p.u. using the voltage/current/frequency bases. Normalize P and Q with sqrt(3)*400*18 VA, consistent with the space-vector bases; 12.5 kVA is the rounded nameplate.",
+      "Only the resistance estimate is given. Set physical series R equal to that estimate, as in the upstream examples. Section V-C writes the compensated voltage with a minus sign. In motulator this is the net voltage after subtracting the resistive drop from the physical PWM command, which adds that drop.",
+      "The 1.3 p.u. current limit is given explicitly for Fig. 8 and used here as an assumption. The replay reports contacts with the limit.",
+      "Upstream DO uses the Eq. (13) feedback gains with a fixed-frame, hold-equivalent discrete observer. The paper prototype uses Eq. (19) in the estimated-voltage frame. Upstream RFPSC uses realized PWM voltage and subtracts estimated I^2R losses in power feedback; Appendix C writes the command-voltage product.",
+      "The PDF reference traces read 0.33 and 0.66 p.u. and show constant trigger offsets. The simulation uses a shared nominal clock and each digitized trace is translated by its own first reference edge for the paper comparison. No plant parameter is fit to a trace."
+    ]
+  },
+  "numerics": {
+    "primary": {"method": "RK45", "rtol": 1e-7, "atol": 1e-9, "max_step": 5e-5},
+    "refined": {"method": "RK45", "rtol": 1e-9, "atol": 1e-11, "max_step": 2.5e-5},
+    "max_refinement_difference_pu": 0.0002,
+    "paper_rmse_window_s": [0.05, 1.45],
+    "plateau_window_s": 0.05
+  }
+}

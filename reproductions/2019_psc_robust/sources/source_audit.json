@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TIE.2018.2874584",
+  "source_version": "peer_reviewed_author_manuscript",
+  "source_path": "research/feasibility_batch1/sources/robust_psc2019.pdf",
+  "source_sha256": "e45aa9f7dc1688da6f125144619fe742220c0766ed8487f4cac47ff8a12b02e5",
+  "source_page_numbering": "1-based physical PDF pages, including cover, 11 pages total",
+  "final_published_version_or_erratum_checked": false,
+  "scope": "Source audit, formula algebra and direct transfer-function substitution; no main simulation or hardware reproduction",
+  "equation_groups": [
+    {
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "page": 3,
+      "section": "II and III-A",
+      "contents": [
+        "stationary inductive network",
+        "SCR=1/L_pu at converter terminals",
+        "basic voltage vector",
+        "theta_dot=omega1+Kp(Pref-P)",
+        "P=kappa Re{v i*}; kappa=3/(2K^2)",
+        "frequency droop",
+        "v=V-Ha*i; Ha=Ra*s/(s+wb)",
+        "P0=kappa V id0; Q0=-kappa V iq0"
+      ]
+    },
+    {
+      "numbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "page": 4,
+      "section": "III-A and III-B",
+      "contents": [
+        "full GthetaP(s)",
+        "a and b(s)",
+        "phase integrator",
+        "Gp and Gc",
+        "Kp selection",
+        "frozen-Ha cubic Gc",
+        "approximate factorization",
+        "approximate damping",
+        "weak-grid low-current bandwidth"
+      ]
+    },
+    {
+      "numbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "page": 5,
+      "section": "III-B and III-C",
+      "contents": [
+        "strong-grid maximum-bandwidth estimate",
+        "Ra=.2pu",
+        "zeta=.1SCR",
+        "high-reactive-injection bandwidth estimate",
+        "DC energy balance",
+        "DC controller",
+        "Kd upper bound",
+        "Kd=omega1/(4sqrt2)"
+      ]
+    },
+    {
+      "numbers": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "page": 6,
+      "section": "IV",
+      "contents": [
+        "VSM swing equation",
+        "dynamic damping D(s)",
+        "M=2Sbase*H/omega1",
+        "governor droop",
+        "equivalent low-pass",
+        "VSM Kp selection"
+      ]
+    },
+    {
+      "numbers": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "page": 9,
+      "section": "Appendix I",
+      "contents": [
+        "perturbation states",
+        "rotating-frame network including delta_theta_dot",
+        "linearized network",
+        "equilibrium constraint",
+        "Gtheta_i",
+        "power linearization retaining voltage term"
+      ]
+    },
+    {
+      "numbers": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "page": 10,
+      "section": "Appendices I-IV",
+      "contents": [
+        "real-coefficient GthetaP extraction",
+        "active-loop gain margin",
+        "gm bound expression",
+        "a>=-1",
+        "printed DC-loop gain-margin expression, inconsistent",
+        "printed lower bound, zero-current consistency passed"
+      ]
+    }
+  ],
+  "formulas": {
+    "Ha": "Ra*s/(s+wb)",
+    "GthetaP": "kappa*V^2/(omega1*L) * [a*s^2+(1+a+b(s))*omega1^2] / [s^2+2*Ha(s)*s/L+omega1^2+(Ha(s)/L)^2]",
+    "a": "omega1*L*iq0/V",
+    "b": "-Ha(s)^2/V * (iq0/(omega1*L)+abs(i0)^2/V)",
+    "Gp": "Kp*GthetaP/s",
+    "Gc": "Gp/(1+Gp)",
+    "Gd": "Kd*Gc/s",
+    "Kp_robust": "omega1*Ra/(kappa*V^2)",
+    "Kd_recommendation": "omega1/(4*sqrt(2))",
+    "equilibrium": "V-j*omega1*L*i0=Vg*exp(-j*theta0)",
+    "bandwidth_high_reactive_approx": "(1+a)*Ra/L",
+    "VSM_Kp": "sigma*omega1/Sbase",
+    "VSM_filter": "Kg/[s*M+KD*s/(s+alpha_f)+Kg]",
+    "VSM_M": "2*Sbase*H/omega1"
+  },
+  "hypotheses": {
+    "explicit": [
+      "R neglected",
+      "L includes converter filter, transformer and grid",
+      "constant stiff infinite-bus magnitude",
+      "slow voltage/reactive outer loop neglected",
+      "PWM delay and harmonics neglected",
+      "embedded current controller excluded from design analysis",
+      "load angle constrained to [-pi/2,pi/2]",
+      "weak DC integrator approximated by Kd with source-power feedforward"
+    ],
+    "theorem1": "negligible wb so Ha=Ra; gain-margin target only, phase margin not universally proved",
+    "theorem2": "negligible wb so Ha=Ra; source uses weak-integral DC-controller approximation",
+    "factorization": "|a|<<1 and |b|<<1",
+    "additional_implementation_guards": [
+      "Do not replace complex Ha(jw)^2 by abs(Ha(jw))^2",
+      "Eq38 takes real coefficients before substituting s=jw",
+      "retain voltage perturbation in power and rotating-frame speed perturbation",
+      "verify equilibrium compatibility instead of forcing Vg=1 for arbitrary i0",
+      "check closed-loop stability and negative-real-axis crossings before reporting gain margins"
+    ]
+  },
+  "figures": {
+    "5": {
+      "page": 6,
+      "section": "III-C Example1",
+      "model": "full Ha(s), Eq9/12; explicitly not Eq14",
+      "V": 1,
+      "omega1": 1,
+      "kappa": 1,
+      "wb": 0.1,
+      "Ra": 0.2,
+      "Kp": 0.2,
+      "Kd": 0.17677669529663687,
+      "SCR": [
+        10,
+        3,
+        1
+      ],
+      "current_points": [
+        [
+          0.95,
+          0.2
+        ],
+        [
+          0.2,
+          -0.95
+        ]
+      ],
+      "current_norm": 0.9708243919473799,
+      "lines": {
+        "solid": 10,
+        "dashed": 3,
+        "dash_dot": 1
+      },
+      "ambiguity": "Prose says full current |i0|=1; panel components have norm .970824; keep panel values without renormalization."
+    },
+    "6": {
+      "page": 6,
+      "section": "IV",
+      "type": "VSM block diagram, not numerical curve"
+    },
+    "7": {
+      "page": 7,
+      "section": "IV Example2",
+      "V": 1,
+      "omega1": 1,
+      "Sbase": 1,
+      "kappa": 1,
+      "Ra": 0.2,
+      "SCR": 2,
+      "id0": 0.7,
+      "iq0": -0.7,
+      "H_seconds": 0,
+      "KD_pu": 0,
+      "sigma": 0.05,
+      "Kp_robust": 0.2,
+      "Kp_VSM": 0.05,
+      "Kd_primary": 0.17677669529663687,
+      "Kd_VSM_alternative_factor": 0.3,
+      "wb": 0.1,
+      "wb_evidence": "inherited from Example1, inferred; not explicitly restated"
+    },
+    "8": {
+      "page": 7,
+      "section": "IV Example3",
+      "base_frequency_Hz": 50,
+      "sigma": 0.05,
+      "branches": [
+        {
+          "H_seconds": 0,
+          "KD_pu": 0
+        },
+        {
+          "H_seconds": 5,
+          "KD_pu": 0
+        },
+        {
+          "H_seconds": 5,
+          "KD_pu": 50,
+          "alpha_f_rad_per_s": 1
+        }
+      ],
+      "inherited_from_7": [
+        "SCR",
+        "current_point",
+        "V",
+        "Ra",
+        "wb"
+      ],
+      "zero_damping_filter_time_constant_s": 0.5,
+      "alpha_f_pu": 0.0031830988618379067
+    },
+    "14": {
+      "page": 9,
+      "SCR": 10,
+      "scope": "experimental grid-frequency perturbation",
+      "explicit_frequency_drop_pu": 0.02,
+      "explicit_power_increase_pu": 0.1,
+      "figure_inferred_ramp_and_hold_s": [
+        0.1,
+        0.2,
+        0.4,
+        0.5
+      ],
+      "figure_inferred_Pref_pu": 0.6
+    },
+    "9_10": {
+      "pages": [
+        7,
+        8
+      ],
+      "type": "hardware photograph and circuit"
+    },
+    "11_12_13": {
+      "page": 8,
+      "SCR": [
+        1,
+        3,
+        10
+      ],
+      "scope": "experimental active-power-only steps",
+      "figure_inferred_times_s": [
+        0.2,
+        0.4,
+        0.6,
+        0.8
+      ],
+      "figure_inferred_levels_pu": [
+        0,
+        0.4,
+        0.8,
+        1,
+        0
+      ]
+    },
+    "15_16_17": {
+      "pages": [
+        9,
+        10
+      ],
+      "SCR": [
+        1,
+        3,
+        10
+      ],
+      "scope": "experimental cascaded DC control",
+      "explicit_nominal_vdc_pu": 2,
+      "explicit_excursion_pu": 0.2,
+      "figure_inferred_times_s": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "figure_inferred_levels_pu": [
+        2,
+        1.8,
+        2.2,
+        2
+      ],
+      "reported_id0_pu": 0.6
+    }
+  },
+  "table_I": {
+    "page": 7,
+    "rated_power_VA": 12700,
+    "voltage_peak_base": "sqrt(2/3)*400 V",
+    "current_peak_base": "sqrt(2)*18.3 A",
+    "Zbase_ohm": 12.6,
+    "frequency_Hz": 50,
+    "Vdc_V": 650,
+    "Vdc_pu": 2,
+    "Cdc_F": 0.0021,
+    "Cdc_pu": 8.3,
+    "sampling_Hz": 8000,
+    "switching_Hz": 4000,
+    "Ra_ohm": 4.4,
+    "Ra_pu": 0.2,
+    "wb_rad_per_s": 31,
+    "wb_pu": 0.1,
+    "Kd_rad_per_s": 56,
+    "Kd_pu": 0.18,
+    "hardware_vector_scaling_K": 1,
+    "hardware_kappa": 1.5,
+    "discretization": "forward difference",
+    "processor": "dSPACE DS1006"
+  },
+  "material_findings": [
+    {
+      "id": "Ra_normalization",
+      "evidence": "explicit table entries, independent ratio",
+      "finding": "4.4/12.6=.349206349, while .2*12.6=2.52 ohm",
+      "resolved": false,
+      "recommended_handling": "Primary analytical Ra=.2; retain reported-ohm branch separately; do not select by waveform fit."
+    },
+    {
+      "id": "Fig5_full_current_wording",
+      "evidence": "figure labels vs prose",
+      "finding": "sqrt(.95^2+.2^2)=.970824392, not 1",
+      "recommended_handling": "Use exact panel labels and disclose rounding/wording discrepancy."
+    },
+    {
+      "id": "AppendixIV_Eq42",
+      "evidence": "printed PDF p10 vs direct Eq14 substitution",
+      "finding": "Printed first term lacks factor 2 relative to Gd from Eq14.",
+      "printed": "1/Kd*[(1-b)*omega1^2*L/((2+a)*Ra)+Ra/(2*L)]",
+      "derived": "1/Kd*[(1-b)*omega1^2*L/(2*(2+a)*Ra)+Ra/(2*L)]",
+      "status": "independent algebra found; root verifier requested"
+    },
+    {
+      "id": "AppendixIV_crossover",
+      "evidence": "printed PDF p10 vs Eq14 denominator",
+      "printed": "omega1*sqrt((1-b)/(2+a))",
+      "derived": "omega1*sqrt((1+a+b)/(2+a))",
+      "status": "independent algebra found; root verifier requested"
+    },
+    {
+      "id": "AppendixIV_argmin",
+      "printed": "L=sqrt(2)*Ra/omega1",
+      "qualification": "Only the a=b=0 case agrees with stationary point of derived margin; treating a,b fixed gives L=Ra/omega1*sqrt((2+a)/(1-b)), and actual a,b usually vary with L."
+    },
+    {
+      "id": "Theorem1_domain",
+      "finding": "Eq40 inequality needs careful handling when 1-(Ra*abs(i0)/V)^2 is nonpositive; do not mechanically return gm>=2 outside a valid crossing/stable operating domain."
+    }
+  ],
+  "algebra_check": {
+    "kind": "direct complex transfer-function evaluation; no ODE simulation",
+    "omega1": 1,
+    "V": 1,
+    "kappa": 1,
+    "id0": 0,
+    "iq0": 0,
+    "Ra": 0.2,
+    "L": 0.28284271247461906,
+    "Kd": 0.17677669529663687,
+    "omega_pi": 0.7071067811865475,
+    "Gd_real": -0.25,
+    "Gd_imag": -3.925231146709438e-17,
+    "gm_from_Eq14": 4,
+    "gm_printed_Eq42": 6,
+    "gm_printed_Eq43": 4
+  },
+  "high_reactive_case": {
+    "source": "Fig5 lower row, SCR1",
+    "a": -0.95,
+    "Vg_derived": 0.20615528128088303,
+    "Eq21_bandwidth_pu_approx": 0.01,
+    "Eq21_bandwidth_rad_per_s_approx": 3.141592653589793,
+    "warning": "Approximate bandwidth falls below wb=.1 and |a| is not small; evaluate full Ha(s) and report approximation error."
+  },
+  "missing_for_experimental_reproduction": [
+    "raw sampled traces",
+    "original controller code/model files",
+    "complete current-limiter dynamics",
+    "detailed sensor and measurement filtering",
+    "PWM/computation scheduling and delay",
+    "external DC-source controller settings",
+    "fast PCC-voltage/reactive-power-loop interaction"
+  ],
+  "runtime": {
+    "agent": "/root/background",
+    "parent": "/root",
+    "started_at_utc": "2026-11-11 03:45:26 UTC",
+    "completed_at_utc": "2026-11-11 03:51:10 UTC",
+    "measured_wall_clock_seconds": 343.316,
+    "model_and_reasoning_effort": "Parent will verify from runtime; not inferred here",
+    "no_main_simulation": true,
+    "writes": [
+      "sources/source_audit.md",
+      "sources/source_audit.json"
+    ]
+  }
+}

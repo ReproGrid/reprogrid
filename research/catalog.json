@@ -1,54 +1,131 @@
 {
   "domains": {
-    "gfm": {"title": "构网控制与稳定性", "short": "GFM", "keys": ["gfm_control", "gfm_stability"]},
-    "pmsm": {"title": "PMSM 电流控制", "short": "PMSM", "keys": ["pmsm_current_control"]},
-    "simulation": {"title": "实时仿真", "short": "SIM", "keys": ["real_time_simulation"]},
-    "twin": {"title": "数字孪生与估计", "short": "DT", "keys": ["digital_twin_parameter_estimation"]}
+    "gfm": {
+      "title": "构网控制与稳定性",
+      "short": "GFM",
+      "keys": [
+        "gfm_control",
+        "gfm_stability"
+      ]
+    },
+    "pmsm": {
+      "title": "PMSM 电流控制",
+      "short": "PMSM",
+      "keys": [
+        "pmsm_current_control"
+      ]
+    },
+    "simulation": {
+      "title": "实时仿真",
+      "short": "SIM",
+      "keys": [
+        "real_time_simulation"
+      ]
+    },
+    "twin": {
+      "title": "数字孪生与估计",
+      "short": "DT",
+      "keys": [
+        "digital_twin_parameter_estimation"
+      ]
+    }
   },
   "papers": {
     "10.1109/TPEL.2020.2970991": {
       "slug": "rfpsc",
       "title": "参考前馈功率同步控制",
-      "description": "用空载小信号模型比较常规 PSC 与参考前馈 RFPSC，检查极零相消与有功功率阶跃响应。",
-      "tags": ["RFPSC", "小信号", "极零相消"],
-      "experiment": "rfpsc-linear"
+      "description": "在首篇小信号试点基础上，加入完整阶跃序列、参数表对照和独立平均模型。",
+      "tags": [
+        "RFPSC",
+        "小信号",
+        "极零相消"
+      ],
+      "experiment": "rfpsc-linear",
+      "publicArtifacts": {
+        "code": "https://github.com/ReproGrid/reprogrid/blob/743b56a0d131d86ec3e04d6601920ffb19ede270/papers/rfpsc-linear/run.py",
+        "results": "https://github.com/ReproGrid/reprogrid/tree/743b56a0d131d86ec3e04d6601920ffb19ede270/papers/rfpsc-linear/results"
+      }
     },
     "10.1109/TIE.2018.2874584": {
       "slug": "robust-psc",
       "title": "功率同步控制的鲁棒解析设计",
-      "description": "拟复核解析整定、不同电网强度下的稳定裕度，以及高无功工况下的适用边界。",
-      "tags": ["PSC", "稳定裕度", "解析整定"]
+      "description": "复核 PSC 解析整定与稳定裕度，分别保留原图图注工况和反推工况。",
+      "tags": [
+        "PSC",
+        "稳定裕度",
+        "解析整定"
+      ]
     },
     "10.1109/TPEL.2024.3433503": {
       "slug": "observer-gfm",
       "title": "基于扰动观测器的多功能构网控制",
-      "description": "拟检查 GFM 动态与小信号预测，并对比电感估计误差下的响应。",
-      "tags": ["DO-GFM", "扰动观测器", "参数敏感性"]
+      "description": "复核扰动观测器构网控制方程，量化弱网出版波形与仿真的差距。",
+      "tags": [
+        "DO-GFM",
+        "扰动观测器",
+        "参数敏感性"
+      ]
     },
     "10.1109/TIA.2017.2690998": {
       "slug": "pmsm-mpcc-performance",
       "title": "永磁同步电机模型预测电流控制的性能改进",
       "description": "拟在原文采样条件下复核电流纹波、THD 与延时补偿。该论文属于期刊范围例外候选。",
-      "tags": ["MPCC", "THD", "延时补偿"]
+      "tags": [
+        "MPCC",
+        "THD",
+        "延时补偿"
+      ]
     },
     "10.1109/TPEL.2018.2835835": {
       "slug": "pmsm-mpcc-robustness",
       "title": "面向参数鲁棒性的 PMSM 模型预测电流控制",
       "description": "拟检查增量模型对参数偏差的敏感性。当前等待可查阅的全文。",
-      "tags": ["MPCC", "增量模型", "鲁棒性"],
+      "tags": [
+        "MPCC",
+        "增量模型",
+        "鲁棒性"
+      ],
       "gap": "候选队列尚无可用全文链接。取得全文后，再核查方程、电机参数与试验配置。"
     },
     "10.1109/TIE.2021.3114706": {
       "slug": "hf-converter-simulation",
       "title": "高频变换器的高精度实时仿真方法",
-      "description": "拟复核二极管状态映射、非迭代求解与误差度量，记录主机运行成本。",
-      "tags": ["DMM", "非迭代求解", "数值误差"]
+      "description": "对谐振升压算例做 DMM 离线重算，区分数值等价、映射规模和实时性能。",
+      "tags": [
+        "DMM",
+        "非迭代求解",
+        "数值误差"
+      ]
     },
     "10.1109/TPEL.2020.3009600": {
       "slug": "converter-digital-twin",
       "title": "基于数字孪生的 DC–DC 变换器健康指标估计",
       "description": "拟用可追溯的 Buck 合成数据评估参数可辨识性、噪声敏感性和多起点差异。",
-      "tags": ["参数辨识", "Buck", "PSO"]
+      "tags": [
+        "参数辨识",
+        "Buck",
+        "PSO"
+      ]
+    },
+    "10.1109/TIE.2018.2875669": {
+      "slug": "psc-transient-stability",
+      "title": "功率同步控制的暂态稳定分析",
+      "tags": [
+        "PSC",
+        "相图",
+        "故障清除"
+      ],
+      "description": "复核单变流器 PSC 暂态稳定边界，并检查故障清除时的电流是否越限。"
+    },
+    "10.1109/TIE.2019.2952824": {
+      "slug": "pmsm-delay-smo",
+      "title": "永磁同步电机的延时抑制滑模观测器",
+      "tags": [
+        "PMSM",
+        "滑模观测器",
+        "延时补偿"
+      ],
+      "description": "已完成资料审计，原文工况复现暂缓。"
     }
   }
 }

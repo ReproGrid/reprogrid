@@ -1,0 +1,2 @@
+# Optional; required only for vector readback of thesis Fig. 3.14.
+pymupdf==2.1

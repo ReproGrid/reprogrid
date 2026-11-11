@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "checks": {
+    "same_protocol_sha256": true,
+    "same_code_sha256": true,
+    "same_checks": true,
+    "same_published_mode_and_W_match": true,
+    "numerical_checks_passed_both": true,
+    "primary_recorded_output_hashes": true,
+    "replay_recorded_output_hashes": true,
+    "same_metrics.json": true,
+    "same_topology_summary.json": true,
+    "same_compiled_maps.json": true,
+    "same_region_probes.json": true,
+    "same_rbc_zoom.csv": true,
+    "same_refinement_published_edges": true,
+    "same_refinement_fixed_edges": true,
+    "same_rbc_100ns.npz": true,
+    "same_refinement.npz": true
+  },
+  "arrays": {
+    "rbc_100ns.npz": {
+      "t_ns": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "gate_mask": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "dmm": {
+        "shape": [
+          380001,
+          5
+        ],
+        "exact": true
+      },
+      "tableau": {
+        "shape": [
+          380001,
+          5
+        ],
+        "exact": true
+      },
+      "dmm_diode_mask": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "tableau_diode_mask": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "dmm_boundary": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "tableau_min_abs_diode_voltage": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "tableau_linear_solves": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      },
+      "tableau_fallback": {
+        "shape": [
+          380001
+        ],
+        "exact": true
+      }
+    },
+    "refinement.npz": {
+      "published_edges_100ns_t_ns": {
+        "shape": [
+          20001
+        ],
+        "exact": true
+      },
+      "published_edges_100ns_x": {
+        "shape": [
+          20001,
+          5
+        ],
+        "exact": true
+      },
+      "published_edges_50ns_t_ns": {
+        "shape": [
+          40001
+        ],
+        "exact": true
+      },
+      "published_edges_50ns_x": {
+        "shape": [
+          40001,
+          5
+        ],
+        "exact": true
+      },
+      "published_edges_25ns_t_ns": {
+        "shape": [
+          80001
+        ],
+        "exact": true
+      },
+      "published_edges_25ns_x": {
+        "shape": [
+          80001,
+          5
+        ],
+        "exact": true
+      },
+      "published_edges_10ns_t_ns": {
+        "shape": [
+          200001
+        ],
+        "exact": true
+      },
+      "published_edges_10ns_x": {
+        "shape": [
+          200001,
+          5
+        ],
+        "exact": true
+      },
+      "fixed_edges_100ns_t_ns": {
+        "shape": [
+          20001
+        ],
+        "exact": true
+      },
+      "fixed_edges_100ns_x": {
+        "shape": [
+          20001,
+          5
+        ],
+        "exact": true
+      },
+      "fixed_edges_50ns_t_ns": {
+        "shape": [
+          40001
+        ],
+        "exact": true
+      },
+      "fixed_edges_50ns_x": {
+        "shape": [
+          40001,
+          5
+        ],
+        "exact": true
+      },
+      "fixed_edges_25ns_t_ns": {
+        "shape": [
+          80001
+        ],
+        "exact": true
+      },
+      "fixed_edges_25ns_x": {
+        "shape": [
+          80001,
+          5
+        ],
+        "exact": true
+      }
+    }
+  },
+  "primary_manifest_sha256": "bbddede1ae34b65513f332f8e8c07dcb5dd931caf630e1ae65a46207145cd994",
+  "replay_manifest_sha256": "db1bf1bd21003f119a8fc73649b5b82f8c0d3f70fc868ea76b0a30040d525f9d",
+  "verification_scope": "Independent Python environment. Scientific arrays, matched tables and metrics; runtime fields are excluded.",
+  "replay_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "started_utc": "2026-11-11T04:53:53.230500+00:00",
+    "finished_utc": "2026-11-11T04:54:15.571401+00:00",
+    "wall_seconds": 22.340731915959623,
+    "elapsed_seconds": {
+      "offline_compile": 0.10481091699330136,
+      "dmm_steps": 2.8945888750022277,
+      "tableau_steps": 8.369476458989084,
+      "step_refinement": 6.94435029104352
+    }
+  }
+}

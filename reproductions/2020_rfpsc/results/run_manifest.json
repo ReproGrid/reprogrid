@@ -1,0 +1,858 @@
+{
+  "paper_doi": "10.1109/TPEL.2020.2970991",
+  "evidence_scope": "Independent analytical and continuous average-value computational reproduction; no hardware validation or quantitative experimental-waveform matching",
+  "source_sha256": "8420166351fbbc3b05a2932b55af0f3c17f0edfde8bb556c1ee5b773e9d4d391",
+  "protocol_sha256": "ace03b6f72bd92663be91bc725504a78aca001e7cd3fb2ba507cc903067215db",
+  "implementation_sha256": "820a71be09e74e82d0b188b6feb61cdb35cbbac293b3444f646399c75d90c8f0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "elapsed_seconds": 19.79739870800404,
+  "all_numerical_checks_passed": true,
+  "case_count": 8,
+  "checks": [
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": 0.0,
+      "iq0": 0.0,
+      "xi": 0,
+      "max_transfer_abs_error": 2.376769710703941e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 0.0,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": 0.0,
+      "iq0": 0.0,
+      "xi": 1,
+      "max_transfer_abs_error": 2.2855808433963753e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 0.0,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": 0.7,
+      "iq0": 0.7,
+      "xi": 0,
+      "max_transfer_abs_error": 3.547685157992276e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 2.220446049250313e-16,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": 0.7,
+      "iq0": 0.7,
+      "xi": 1,
+      "max_transfer_abs_error": 2.2386004594509281e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 2.220446049250313e-16,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": -0.7,
+      "iq0": 0.7,
+      "xi": 0,
+      "max_transfer_abs_error": 3.833103050576566e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 2.220446049250313e-16,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": -0.7,
+      "iq0": 0.7,
+      "xi": 1,
+      "max_transfer_abs_error": 2.405466352657525e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 2.220446049250313e-16,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": -0.7,
+      "iq0": -0.7,
+      "xi": 0,
+      "max_transfer_abs_error": 3.120191921125721e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 0.0,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "independent_equation_jacobian_vs_eq19",
+      "id0": -0.7,
+      "iq0": -0.7,
+      "xi": 1,
+      "max_transfer_abs_error": 3.0099832958325183e-10,
+      "tolerance": 1e-07,
+      "passed": true,
+      "equilibrium_residual": 0.0,
+      "equilibrium_residual_tolerance": 1e-09
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 0.05,
+      "max_error": 3.356589068483857e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 0.1,
+      "max_error": 3.356589068483857e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 0.2,
+      "max_error": 4.440892627896187e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 0.5,
+      "max_error": 3.342213888644167e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 1.0,
+      "max_error": 3.3335590258932494e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "zero_current_exact_cancellation",
+      "L_pu": 2.0,
+      "max_error": 3.376611507232129e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "small_step_nonlinear_vs_linear_frozen_filters",
+      "L_pu": 0.1,
+      "xi": 0,
+      "relative_to_step_max_error": 2.719818124052864e-06,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "check": "small_step_nonlinear_vs_linear_frozen_filters",
+      "L_pu": 0.1,
+      "xi": 1,
+      "relative_to_step_max_error": 4.999330531219037e-07,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "check": "small_step_nonlinear_vs_linear_frozen_filters",
+      "L_pu": 1.0,
+      "xi": 0,
+      "relative_to_step_max_error": 1.27129975879825e-06,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "check": "small_step_nonlinear_vs_linear_frozen_filters",
+      "L_pu": 1.0,
+      "xi": 1,
+      "relative_to_step_max_error": 5.000186896753078e-07,
+      "tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "paper_pu",
+      "L_pu": 1.0,
+      "controller": "PSC",
+      "max_power_difference_pu": 1.9984014443252818e-15,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "paper_pu",
+      "L_pu": 1.0,
+      "controller": "RFPSC",
+      "max_power_difference_pu": 2.4424906541753444e-15,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "paper_pu",
+      "L_pu": 0.1,
+      "controller": "PSC",
+      "max_power_difference_pu": 2.9309887850104133e-13,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "paper_pu",
+      "L_pu": 0.1,
+      "controller": "RFPSC",
+      "max_power_difference_pu": 6.329381463388017e-13,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "table_ohm",
+      "L_pu": 1.0,
+      "controller": "PSC",
+      "max_power_difference_pu": 7.760458942129844e-14,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "table_ohm",
+      "L_pu": 1.0,
+      "controller": "RFPSC",
+      "max_power_difference_pu": 1.5543122344752192e-15,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "table_ohm",
+      "L_pu": 0.1,
+      "controller": "PSC",
+      "max_power_difference_pu": 9.530843669836031e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "time_step_and_tolerance_refinement",
+      "branch": "table_ohm",
+      "L_pu": 0.1,
+      "controller": "RFPSC",
+      "max_power_difference_pu": 5.4326543263982785e-12,
+      "tolerance": 1e-05,
+      "passed": true
+    }
+  ],
+  "pole_zero_cases": [
+    {
+      "id0": 0.0,
+      "iq0": 0.0,
+      "poles": [
+        [
+          -0.20000000000000004,
+          0.9797958971132713
+        ],
+        [
+          -0.20000000000000004,
+          -0.9797958971132713
+        ],
+        [
+          -0.39999999999999997,
+          0.0
+        ]
+      ],
+      "zeros": [
+        [
+          -0.20000000000000007,
+          0.9797958971132714
+        ],
+        [
+          -0.20000000000000007,
+          -0.9797958971132714
+        ]
+      ],
+      "upper_complex_pole_zero_distance": [
+        1.1443916996305594e-16
+      ],
+      "coefficients": {
+        "alpha": 0.4,
+        "a": 0.0,
+        "b": -0.0,
+        "c": 0.0,
+        "d": 0.0
+      }
+    },
+    {
+      "id0": 0.7,
+      "iq0": 0.7,
+      "poles": [
+        [
+          -0.20386433718357944,
+          0.9494298552398545
+        ],
+        [
+          -0.20386433718357944,
+          -0.9494298552398545
+        ],
+        [
+          -0.5322713256328411,
+          0.0
+        ]
+      ],
+      "zeros": [
+        [
+          -3.837981053805306,
+          0.0
+        ],
+        [
+          -0.20958090166877477,
+          0.943503009441129
+        ],
+        [
+          -0.20958090166877477,
+          -0.943503009441129
+        ]
+      ],
+      "upper_complex_pole_zero_distance": [
+        0.008234476949707649
+      ],
+      "coefficients": {
+        "alpha": 0.4,
+        "a": 0.35,
+        "b": -0.09520000000000002,
+        "c": 0.13999999999999999,
+        "d": 0.05600000000000001
+      }
+    },
+    {
+      "id0": -0.7,
+      "iq0": 0.7,
+      "poles": [
+        [
+          -0.20386433718357944,
+          0.9494298552398545
+        ],
+        [
+          -0.20386433718357944,
+          -0.9494298552398545
+        ],
+        [
+          -0.5322713256328411,
+          0.0
+        ]
+      ],
+      "zeros": [
+        [
+          3.841413973967479,
+          0.0
+        ],
+        [
+          -0.1921355584123115,
+          0.9467688325555723
+        ],
+        [
+          -0.1921355584123115,
+          -0.9467688325555723
+        ]
+      ],
+      "upper_complex_pole_zero_distance": [
+        0.012026857161852778
+      ],
+      "coefficients": {
+        "alpha": 0.4,
+        "a": 0.35,
+        "b": -0.09520000000000002,
+        "c": -0.13999999999999999,
+        "d": 0.05600000000000001
+      }
+    },
+    {
+      "id0": -0.7,
+      "iq0": -0.7,
+      "poles": [
+        [
+          -0.20384790666752833,
+          1.0077612169343797
+        ],
+        [
+          -0.20384790666752833,
+          -1.0077612169343797
+        ],
+        [
+          -0.2523041866649433,
+          0.0
+        ]
+      ],
+      "zeros": [
+        [
+          1.8663212329606385,
+          0.0
+        ],
+        [
+          -0.20458918790889008,
+          0.989416197659361
+        ],
+        [
+          -0.20458918790889008,
+          -0.989416197659361
+        ]
+      ],
+      "upper_complex_pole_zero_distance": [
+        0.01835998992591238
+      ],
+      "coefficients": {
+        "alpha": 0.4,
+        "a": -0.35,
+        "b": 0.016800000000000006,
+        "c": -0.13999999999999999,
+        "d": -0.05600000000000001
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "paper_pu_L1_psc",
+      "branch": "paper_pu",
+      "L_pu": 1.0,
+      "Ra_pu": 0.2,
+      "controller": "PSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 26.900000000000006,
+          "overshoot_percent_of_step": 0.7649372974832147,
+          "settling_2pct_ms": 68.90000000000002,
+          "end_window_error_pu": 6.508483981809698e-05,
+          "integral_abs_error_pu_s": 0.006606179703081597,
+          "max_voltage_deviation_pu": 0.049759504283350964
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 43.39999999999999,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 88.2,
+          "end_window_error_pu": 0.0003455783325444495,
+          "integral_abs_error_pu_s": 0.008195359202592688,
+          "max_voltage_deviation_pu": 0.04911252017904988
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 100.29999999999994,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": null,
+          "end_window_error_pu": 0.007696892825900137,
+          "integral_abs_error_pu_s": 0.008235978418820863,
+          "max_voltage_deviation_pu": 0.02162900941913748
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 25.799999999999933,
+          "overshoot_percent_of_step": 4.667502854136529,
+          "settling_2pct_ms": 114.70000000000002,
+          "end_window_error_pu": 0.0006226289365849002,
+          "integral_abs_error_pu_s": 0.024094484254649808,
+          "max_voltage_deviation_pu": 0.14679770411227544
+        }
+      ],
+      "data_file": "paper_pu_L1_psc.npz"
+    },
+    {
+      "case_id": "paper_pu_L1_rfpsc",
+      "branch": "paper_pu",
+      "L_pu": 1.0,
+      "Ra_pu": 0.2,
+      "controller": "RFPSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 36.50000000000001,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 70.90000000000002,
+          "end_window_error_pu": 0.00012341452204384096,
+          "integral_abs_error_pu_s": 0.006545045940021471,
+          "max_voltage_deviation_pu": 0.08000000000000007
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 50.99999999999999,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 110.09999999999998,
+          "end_window_error_pu": 0.0010275727891049247,
+          "integral_abs_error_pu_s": 0.008166475399290609,
+          "max_voltage_deviation_pu": 0.08002428912932258
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 120.30000000000007,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": null,
+          "end_window_error_pu": 0.009837739776316634,
+          "integral_abs_error_pu_s": 0.00782205691014724,
+          "max_voltage_deviation_pu": 0.040146122642611415
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 51.799999999999955,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 90.60000000000001,
+          "end_window_error_pu": 0.0004901031970731691,
+          "integral_abs_error_pu_s": 0.022519453086268636,
+          "max_voltage_deviation_pu": 0.19866809671018737
+        }
+      ],
+      "data_file": "paper_pu_L1_rfpsc.npz"
+    },
+    {
+      "case_id": "paper_pu_L0.1_psc",
+      "branch": "paper_pu",
+      "L_pu": 0.1,
+      "Ra_pu": 0.2,
+      "controller": "PSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 9.800000000000002,
+          "overshoot_percent_of_step": 39.290505140655796,
+          "settling_2pct_ms": 91.2,
+          "end_window_error_pu": 0.00043253292579176206,
+          "integral_abs_error_pu_s": 0.007258991777548585,
+          "max_voltage_deviation_pu": 0.08579300570257942
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 9.899999999999965,
+          "overshoot_percent_of_step": 40.79740884662,
+          "settling_2pct_ms": 91.60000000000001,
+          "end_window_error_pu": 0.0004271365760734058,
+          "integral_abs_error_pu_s": 0.007445494462957352,
+          "max_voltage_deviation_pu": 0.09219028346508695
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 9.000000000000007,
+          "overshoot_percent_of_step": 34.50565677397377,
+          "settling_2pct_ms": 92.10000000000007,
+          "end_window_error_pu": 0.0002594403888472874,
+          "integral_abs_error_pu_s": 0.0033642598872341404,
+          "max_voltage_deviation_pu": 0.045083214745073374
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 5.499999999999949,
+          "overshoot_percent_of_step": 23.843987949967428,
+          "settling_2pct_ms": 62.59999999999999,
+          "end_window_error_pu": 0.0017288844766008634,
+          "integral_abs_error_pu_s": 0.012179630789071876,
+          "max_voltage_deviation_pu": 0.16626590051687784
+        }
+      ],
+      "data_file": "paper_pu_L0.1_psc.npz"
+    },
+    {
+      "case_id": "paper_pu_L0.1_rfpsc",
+      "branch": "paper_pu",
+      "L_pu": 0.1,
+      "Ra_pu": 0.2,
+      "controller": "RFPSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 3.399999999999986,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 6.200000000000011,
+          "end_window_error_pu": 7.27675316614107e-07,
+          "integral_abs_error_pu_s": 0.0006369966600549613,
+          "max_voltage_deviation_pu": 0.08000000000000007
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 3.400000000000014,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 6.299999999999972,
+          "end_window_error_pu": 3.663491456196155e-06,
+          "integral_abs_error_pu_s": 0.0006379320822097055,
+          "max_voltage_deviation_pu": 0.08000015560970697
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 3.4000000000000696,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 6.60000000000005,
+          "end_window_error_pu": 3.4696621215024592e-06,
+          "integral_abs_error_pu_s": 0.0003197038171625752,
+          "max_voltage_deviation_pu": 0.04000082027909779
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 3.7000000000000366,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 6.399999999999961,
+          "end_window_error_pu": 2.2187519810891113e-06,
+          "integral_abs_error_pu_s": 0.0015943668925692783,
+          "max_voltage_deviation_pu": 0.1999992159440691
+        }
+      ],
+      "data_file": "paper_pu_L0.1_rfpsc.npz"
+    },
+    {
+      "case_id": "table_ohm_L1_psc",
+      "branch": "table_ohm",
+      "L_pu": 1.0,
+      "Ra_pu": 0.34920634920634924,
+      "controller": "PSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 10.300000000000004,
+          "overshoot_percent_of_step": 3.3540759771817807,
+          "settling_2pct_ms": 40.300000000000004,
+          "end_window_error_pu": 0.00018864222276382403,
+          "integral_abs_error_pu_s": 0.004141526830549752,
+          "max_voltage_deviation_pu": 0.11801245432314178
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 23.60000000000001,
+          "overshoot_percent_of_step": 2.3873310634774603,
+          "settling_2pct_ms": 60.0,
+          "end_window_error_pu": 0.00036821092948557954,
+          "integral_abs_error_pu_s": 0.005181873952606753,
+          "max_voltage_deviation_pu": 0.1214767061062102
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 53.200000000000024,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 90.20000000000006,
+          "end_window_error_pu": 0.0028471394069284894,
+          "integral_abs_error_pu_s": 0.005085278179459989,
+          "max_voltage_deviation_pu": 0.05768514372953115
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 4.0000000000000036,
+          "overshoot_percent_of_step": 62.57927913063352,
+          "settling_2pct_ms": 94.50000000000003,
+          "end_window_error_pu": 0.0009289366468895607,
+          "integral_abs_error_pu_s": 0.026517936613352153,
+          "max_voltage_deviation_pu": 0.4595434428826122
+        }
+      ],
+      "data_file": "table_ohm_L1_psc.npz"
+    },
+    {
+      "case_id": "table_ohm_L1_rfpsc",
+      "branch": "table_ohm",
+      "L_pu": 1.0,
+      "Ra_pu": 0.34920634920634924,
+      "controller": "RFPSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 20.59999999999998,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 42.1,
+          "end_window_error_pu": 6.093456219741222e-05,
+          "integral_abs_error_pu_s": 0.0037488401444457477,
+          "max_voltage_deviation_pu": 0.13968253968253963
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 29.200000000000003,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 72.69999999999999,
+          "end_window_error_pu": 0.00039534913379335457,
+          "integral_abs_error_pu_s": 0.00468590122712067,
+          "max_voltage_deviation_pu": 0.13970127477864258
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 79.10000000000007,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": null,
+          "end_window_error_pu": 0.004701482470731433,
+          "integral_abs_error_pu_s": 0.005117211317899248,
+          "max_voltage_deviation_pu": 0.06976648531855711
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 33.00000000000003,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 71.99999999999996,
+          "end_window_error_pu": 0.0003043940358540606,
+          "integral_abs_error_pu_s": 0.013543056034968368,
+          "max_voltage_deviation_pu": 0.35120650066481096
+        }
+      ],
+      "data_file": "table_ohm_L1_rfpsc.npz"
+    },
+    {
+      "case_id": "table_ohm_L0.1_psc",
+      "branch": "table_ohm",
+      "L_pu": 0.1,
+      "Ra_pu": 0.34920634920634924,
+      "controller": "PSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 38.800000000000004,
+          "overshoot_percent_of_step": 42.33786649343112,
+          "settling_2pct_ms": null,
+          "end_window_error_pu": 0.03697712690884036,
+          "integral_abs_error_pu_s": 0.060981453825584966,
+          "max_voltage_deviation_pu": 1.0873406788289137
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 36.00000000000003,
+          "overshoot_percent_of_step": 44.11051821298937,
+          "settling_2pct_ms": null,
+          "end_window_error_pu": 0.021925633362965824,
+          "integral_abs_error_pu_s": 0.06027873978186201,
+          "max_voltage_deviation_pu": 1.186275767306745
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 19.600000000000062,
+          "overshoot_percent_of_step": 94.72335169954151,
+          "settling_2pct_ms": 167.10000000000002,
+          "end_window_error_pu": 0.0006838423134279958,
+          "integral_abs_error_pu_s": 0.008061511256953384,
+          "max_voltage_deviation_pu": 0.10033735180627334
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 5.099999999999993,
+          "overshoot_percent_of_step": 13.166720685658916,
+          "settling_2pct_ms": 176.5,
+          "end_window_error_pu": 0.0031409102703804158,
+          "integral_abs_error_pu_s": 0.012546901444618721,
+          "max_voltage_deviation_pu": 0.19591475388813895
+        }
+      ],
+      "data_file": "table_ohm_L0.1_psc.npz"
+    },
+    {
+      "case_id": "table_ohm_L0.1_rfpsc",
+      "branch": "table_ohm",
+      "L_pu": 0.1,
+      "Ra_pu": 0.34920634920634924,
+      "controller": "RFPSC",
+      "metrics": [
+        {
+          "step_time_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.4,
+          "rise_10_90_ms": 1.9000000000000128,
+          "overshoot_percent_of_step": 0.00014666601393376055,
+          "settling_2pct_ms": 3.500000000000003,
+          "end_window_error_pu": 2.6018250892656525e-07,
+          "integral_abs_error_pu_s": 0.000365176929037537,
+          "max_voltage_deviation_pu": 0.13968253968253963
+        },
+        {
+          "step_time_s": 0.4,
+          "from_pu": 0.4,
+          "to_pu": 0.8,
+          "rise_10_90_ms": 1.9000000000000128,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 3.500000000000003,
+          "end_window_error_pu": 5.77237860177604e-07,
+          "integral_abs_error_pu_s": 0.00036564509421874343,
+          "max_voltage_deviation_pu": 0.13968243638079691
+        },
+        {
+          "step_time_s": 0.6,
+          "from_pu": 0.8,
+          "to_pu": 1.0,
+          "rise_10_90_ms": 1.8000000000000238,
+          "overshoot_percent_of_step": 0.0,
+          "settling_2pct_ms": 3.5000000000000586,
+          "end_window_error_pu": 1.5303687144196942e-06,
+          "integral_abs_error_pu_s": 0.00018316476906690322,
+          "max_voltage_deviation_pu": 0.06984153652836622
+        },
+        {
+          "step_time_s": 0.8,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_10_90_ms": 2.0999999999999908,
+          "overshoot_percent_of_step": 0.002395294647916657,
+          "settling_2pct_ms": 3.7000000000000366,
+          "end_window_error_pu": 9.485041243771384e-07,
+          "integral_abs_error_pu_s": 0.0009154220390263042,
+          "max_voltage_deviation_pu": 0.34920563612563327
+        }
+      ],
+      "data_file": "table_ohm_L0.1_rfpsc.npz"
+    }
+  ],
+  "parameter_ambiguity": {
+    "Ra_reported_pu": 0.2,
+    "Ra_actual_over_base": 0.34920634920634924,
+    "resolved": false
+  }
+}

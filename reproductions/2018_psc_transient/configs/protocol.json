@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2018.2875669",
+  "scope": "One PSC converter and infinite bus. Ideal PCC voltage, constant DC link, lossless algebraic network, no current-limit mode switching. Reproduce Eq. 5, Figs. 6–8 and the reduced-model counterparts of Figs. 9–10.",
+  "source": "Wu and Wang, accepted manuscript, arXiv:1804.09394v2. Fig. 1, Fig. 3, Sec. III–IV, Eqs. 2–12, Table I.",
+  "base": {"power_W": 1000000000.0, "phase_RMS_voltage_V": 220000.0, "frequency_Hz": 50.0, "Pref_pu": 1.0, "PCC_voltage_pu": 1.0, "grid_voltage_pu": 1.0, "Ki_rad_per_W_s": 9.3e-9, "stated_Ki_pu": 0.01, "current_limit_pu": 1.8},
+  "conventions": {
+    "voltage": "220 kV phase RMS is inferred from the SI-to-pu inductance ratios. Eq. 2 uses phase peak and the factor 3/2. With RMS phasors, three-phase P=3 Re(V conj(I)).",
+    "gain": "Integrate physical seconds with SI Ki and 1 GW power base. The table's 0.01 pu gain lacks a stated time/gain base. No conversion of that column is used.",
+    "current": "Use Ibase=Sbase/(3 Vphase,RMS) and compare phasor magnitude in pu to the reported 1.8 pu. The original simulation's threshold sensing/filter, switching logic and trace are unavailable. Record violations without clipping or switching to another model.",
+    "network": "PCC -> XT -> sending node; both lines connect that node to the ideal grid. Fig. 1 shows the shunt Xgnd on the sending end of line 2 after S3, before Xg2. During the fault, both lines remain in service and this shunt is connected. Clearing removes both Xg2 and the shunt. Lf lies behind the ideal PCC voltage boundary.",
+    "angles": "Store unwrapped angles. For a cleared case, report which post-fault stable-equilibrium basin is entered and any crossing of 2π; angle wrapping is presentation only.",
+    "table_columns": "Primary uses Table I pu reactances directly. Sensitivity uses omega*L/Zbase from the rounded SI inductances and inferred phase RMS base. Both use the same SI gain. The two columns are not fitted or averaged."
+  },
+  "branches": {
+    "table_pu": {"units": "reactance_pu", "type_i": {"T": 0.02, "line1": 0.85, "line2": 0.85}, "type_ii": {"T": 0.8, "line1": 0.15, "line2": 0.8, "ground": 0.5}},
+    "table_si": {"units": "inductance_H", "type_i": {"T": 0.01, "line1": 0.39, "line2": 0.39}, "type_ii": {"T": 0.37, "line1": 0.07, "line2": 0.37, "ground": 0.23}}
+  },
+  "schedule": {"start_s": 2.0, "disturbance_s": 3.0, "stop_s": 7.0, "early_fault_duration_s": 0.5, "late_fault_duration_s": 0.7, "event_time_source": "3 s read from Fig. 9/10 axes. 0.5 s and 0.7 s are text/caption durations."},
+  "paper_targets": {"type_i_pre_deg": 26.4, "type_i_post_deg": 60.5, "type_ii_cca_deg": 108.0, "type_ii_cct_s": 0.58, "type_i_angle_rounding_tolerance_deg": 0.05, "cca_rounding_tolerance_deg": 0.5, "cct_rounding_tolerance_s": 0.005},
+  "numerics": {
+    "sample_s": 0.001,
+    "primary": {"method": "DOP853", "rtol": 1e-10, "atol": 1e-12, "max_step": 0.01},
+    "refined": {"method": "Radau", "rtol": 1e-11, "atol": 1e-13, "max_step": 0.005},
+    "max_trajectory_difference": 2e-7,
+    "event_vs_integral_tolerance_s": 1e-8,
+    "max_equilibrium_or_kcl_residual": 1e-10,
+    "monotonic_tolerance_rad": 1e-10,
+    "terminal_angle_tolerance_deg": 1.0,
+    "cross_implementation_scalar_tolerance": 1e-7,
+    "clean_replay_array_tolerance": 1e-12
+  },
+  "claim_boundary": [
+    "CCA/CCT denote the original synchronism basin boundary in this reduced model. Eventual re-synchronization into another basin can occur with restored equilibria.",
+    "Skip quantitative replay of the original EMT and hardware traces. Inner-loop gains, exact current sensing and limiter behavior, switching/timing configuration and raw traces are insufficient for waveform matching.",
+    "No simulation of the Fig. 4 PLL/current-limit branch, no relay or protection design, and no fault-clearing recommendations for real equipment."
+  ]
+}

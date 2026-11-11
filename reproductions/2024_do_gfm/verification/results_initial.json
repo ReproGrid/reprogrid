@@ -1,0 +1,99 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "method": "Grid-aligned real-valued Eq. (1), direct Eq. (10) with solved current derivative, and separately implemented Eq. (30). Shared protocol only.",
+  "protocol_sha256": "b217a7ac065f4ed3fa1ea2c4676755c95db3aa9fda9bbd88db16bcc41f4f9178",
+  "implementation_sha256": "b91b4a3ccd6c111e18615e42f71c1e264ef0bee886f602fa619c8159730585bd",
+  "started_utc": "2026-11-11T04:06:43.994022+00:00",
+  "finished_utc": "2026-11-11T04:07:10.368448+00:00",
+  "wall_seconds": 26.374128542025574,
+  "cases": {
+    "do13_strong": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 2.3356659877311455e-17,
+      "eq19_min_abs_denominator": 0.9999996011234176
+    },
+    "do13_weak": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 4.3066543170197646e-17,
+      "eq19_min_abs_denominator": 0.9728408815722345
+    },
+    "do12_weak": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 4.440892098500626e-16,
+      "eq19_magnitude_derivative_error": 2.1575623232461538e-17,
+      "eq19_min_abs_denominator": 0.9907741013130533
+    },
+    "rfpsc_strong": {
+      "sample_count": 7501,
+      "finite": true
+    },
+    "rfpsc_weak": {
+      "sample_count": 7501,
+      "finite": true
+    },
+    "frequency_fig9": {
+      "sample_count": 6501,
+      "finite": true,
+      "eq19_sample_count": 68,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 2.574980159653073e-17,
+      "eq19_min_abs_denominator": 1.0721835337589565
+    },
+    "mode_fig10": {
+      "sample_count": 5501,
+      "finite": true,
+      "eq19_sample_count": 59,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 3.639425288643871e-17,
+      "eq19_min_abs_denominator": 1.1372768057985418
+    }
+  },
+  "frequency_equilibria": [
+    {
+      "mode": "do12",
+      "p0": 0.0,
+      "p_derivative": -2.4999999995448197,
+      "v_derivative": 0.9999999998899777,
+      "p_at_49_hz": 0.04663046390826232,
+      "v_at_49_hz": 0.9801090825984392,
+      "max_equilibrium_residual": 5.134781488891349e-16
+    },
+    {
+      "mode": "do12",
+      "p0": 0.5,
+      "p_derivative": -2.2335507259302334,
+      "v_derivative": 1.0765141487900642,
+      "p_at_49_hz": 0.5411107149512593,
+      "v_at_49_hz": 0.9785793868247195,
+      "max_equilibrium_residual": 5.516420653606247e-16
+    },
+    {
+      "mode": "do13",
+      "p0": 0.0,
+      "p_derivative": -5.000000000400836,
+      "v_derivative": 1.0000000000343068,
+      "p_at_49_hz": 0.09836893304881654,
+      "v_at_49_hz": 0.9799974452278601,
+      "max_equilibrium_residual": 1.0269562977782698e-15
+    },
+    {
+      "mode": "do13",
+      "p0": 0.5,
+      "p_derivative": -5.731223559066189,
+      "v_derivative": 1.1500000000885802,
+      "p_at_49_hz": 0.6132707298474415,
+      "v_at_49_hz": 0.9768963106002924,
+      "max_equilibrium_residual": 4.996003610813204e-16
+    }
+  ],
+  "max_eq19_projection_error": 4.440892098500626e-16,
+  "passed": true
+}

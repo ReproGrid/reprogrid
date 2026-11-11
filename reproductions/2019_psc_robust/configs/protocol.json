@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2018.2874584",
+  "scope": "Lossless single-converter infinite-bus PSC. Reconstruct Figs. 5, 7 and 8, audit Appendix II/IV, and test the finite-filter ideal nonlinear model against local linear responses.",
+  "base_frequency_hz": 50.0,
+  "nominal": {"V": 1.0, "kappa": 1.0, "Ra": 0.2, "wb": 0.1},
+  "formula": {"Kp": "Ra/V^2 in pu, Eq. (13)", "Kd": "1/(4 sqrt(2)) in pu, Eq. (25)", "SCR": "1/L at converter terminals", "time": "tau = 2*pi*50*t_seconds"},
+  "fig5": {"scr": [1, 3, 10], "active": [0.95, 0.2], "reactive": [0.2, -0.95], "operating_point_source": "Figure labels are used as printed; their magnitude is 0.970824 pu, while text describes full current."},
+  "fig7_8": {"scr": 2, "id": 0.7, "iq": -0.7, "droop": 0.05, "Kd_reduced_fraction": 0.3, "inertia_seconds": 5.0, "damping_pu": 50.0, "damping_filter_rad_s": 1.0, "filter_source": "Use wb=0.1 inherited from Example 1; Examples 2 and 3 do not explicitly restate it."},
+  "appendix_audit": {"scr": [1, 2, 3, 10], "current_points": [[0,0], [0.95,0.2], [0.7,-0.7], [0.2,-0.95]], "filter": 0.0, "conditions": "Frozen perturbation resistance; positive small-signal static gain and conventional negative-real crossing. Verify phase crossings numerically against printed and rederived formulas, with assumptions stated."},
+  "extensions": {
+    "reactive_sweep": {"scr": 1, "id": 0.0, "iq_min": -0.999, "iq_max": 0.0, "count": 151, "note": "Vg and load angle follow equilibrium Eq. (35); Vg is not held fixed across operating points. Include negative feedback poles even when a margin is small."},
+    "table_I_Ra": {"actual_ohm": 4.4, "base_ohm": 12.6, "note": "Separate sensitivity branch for the printed SI value, not a claim about experimental tuning."}
+  },
+  "numerics": {
+    "cross_frequency_pu": [0.001, 100, 501],
+    "margin_search_pu": [0.000001, 1000, 4501],
+    "cross_frequency_abs_tolerance": 2e-7,
+    "closed_form_abs_tolerance": 2e-7,
+    "local_step_pu": 0.00001,
+    "local_end_tau": 280.0,
+    "local_samples": 1401,
+    "local_relative_to_step_tolerance": 0.002,
+    "integrator_relative_to_step_tolerance": 0.0001,
+    "solver": {"method": "DOP853", "rtol": 1e-10, "atol": 1e-12, "max_step": 2.0},
+    "refinement": {"method": "Radau", "rtol": 1e-11, "atol": 1e-13, "max_step": 1.0},
+    "clean_replay_tolerance": 1e-12
+  },
+  "not_reproduced": ["Figs. 9–17 hardware and quantitative switching/time-domain traces", "Current limiter and PWM, exact experimental delays and parasitics", "Fast PCC-voltage/reactive-power loop, series resistance, and multi-converter grids"]
+}

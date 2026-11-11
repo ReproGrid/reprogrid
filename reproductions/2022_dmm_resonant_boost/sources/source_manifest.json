@@ -1,0 +1,34 @@
+{
+  "doi": "10.1109/TIE.2021.3114706",
+  "title": "Methods for the Accurate Real-Time Simulation of High-Frequency Power Converters",
+  "authors": ["Hossein Chalangar", "Tarek Ould-Bachir", "Keyhan Sheshyekani", "Jean Mahseredjian"],
+  "venue": "IEEE Transactions on Industrial Electronics",
+  "first_online_year": 2021,
+  "issue": {"year": 2022, "volume": 69, "number": 9, "pages": "9613–9623"},
+  "sources": [
+    {
+      "kind": "paper_author_upload_fulltext",
+      "url": "https://www.researchgate.net/publication/355029015_Methods_for_the_Accurate_Real-Time_Simulation_of_High-Frequency_Power_Converters",
+      "institution_record": "https://publications.polymtl.ca/49886/",
+      "locations": ["Sections II–III, Eq. (3), Eq. (6), Algorithm 1, Eq. (14)", "Table II (EVBC switch resistance)", "Section VI-C, Fig. 9, Fig. 10, Table VII"],
+      "access": "Author-posted full text viewed online; direct PDF was not retrieved."
+    },
+    {
+      "kind": "first_author_dissertation",
+      "url": "https://publications.polymtl.ca/9473/",
+      "file_url": "https://publications.polymtl.ca/9473/1/2021_HosseinChalangar.pdf",
+      "retrieved_from": "http://publications.polymtl.ca/9473/1/2021_HosseinChalangar.pdf",
+      "local_path": "sources/chalangar_2021_thesis.pdf",
+      "pages": 142,
+      "sha256": "3084bda44193154c10d00d423dd98a78d8744b5e4a0b14a2de7dea0da639fa8b",
+      "locations": ["Section 3.6, PDF pages 64–67; Fig. 3.12 topology, Fig. 3.13 PWM, Fig. 3.14 EMTP/DMM vector plot, Table 3.7 FPGA error"],
+      "distribute_pdf": false
+    },
+    {
+      "kind": "method_predecessor",
+      "url": "https://arxiv.org/abs/2006.04155",
+      "usage": "Background on the trapezoidal RSM and direct mapping; the precursor's LLC case does not supply the Fig. 9 RBC data."
+    }
+  ],
+  "unavailable_in_inspected_materials": ["RBC-specific R_on/R_off confirmation", "original EMTP deck and aligned raw waveforms", "initialization and gate rounding in the authors' runs", "mode-domain restrictions and generated W/TCAM tables", "FPGA implementation and bit-accurate configuration"]
+}

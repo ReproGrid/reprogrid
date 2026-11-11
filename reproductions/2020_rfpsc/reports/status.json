@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPEL.2020.2970991",
+  "state": "report_ready",
+  "outcome": "supported_in_tested_conditions",
+  "evidence_level": "independent_analytical_and_average_model_computational_reproduction",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "quantitative_original_experiment_match": false,
+  "misconduct_allegation": null,
+  "checks_passed": 26,
+  "checks_total": 26,
+  "full_sequence_cases": 8,
+  "cross_implementation_max_power_difference_pu": 3.205243093162835e-08,
+  "clean_environment_replay_passed": true,
+  "sequence_extrema_pu": [
+    {
+      "case_id": "paper_pu_L1_psc",
+      "power_min_pu": -0.04667502854136531,
+      "power_max_pu": 1.1188793095641023,
+      "current_abs_max_pu": 1.3541349908602272,
+      "voltage_abs_max_pu": 1.1467977041122754
+    },
+    {
+      "case_id": "paper_pu_L1_rfpsc",
+      "power_min_pu": 0.0,
+      "power_max_pu": 0.9901622602236834,
+      "current_abs_max_pu": 1.30433445918271,
+      "voltage_abs_max_pu": 1.0800242891293226
+    },
+    {
+      "case_id": "paper_pu_L0.1_psc",
+      "power_min_pu": -0.23843987949967418,
+      "power_max_pu": 1.0690113135479475,
+      "current_abs_max_pu": 1.7452698734178909,
+      "voltage_abs_max_pu": 1.1662659005168778
+    },
+    {
+      "case_id": "paper_pu_L0.1_rfpsc",
+      "power_min_pu": 0.0,
+      "power_max_pu": 0.9999965303378785,
+      "current_abs_max_pu": 1.0012516171525343,
+      "voltage_abs_max_pu": 1.080000155609707
+    },
+    {
+      "case_id": "table_ohm_L1_psc",
+      "power_min_pu": -0.6257927913063354,
+      "power_max_pu": 1.183306194279519,
+      "current_abs_max_pu": 1.3900546582469222,
+      "voltage_abs_max_pu": 1.4595434428826122
+    },
+    {
+      "case_id": "table_ohm_L1_rfpsc",
+      "power_min_pu": 0.0,
+      "power_max_pu": 0.9952985175292686,
+      "current_abs_max_pu": 1.3582787868324295,
+      "voltage_abs_max_pu": 1.1397012747786426
+    },
+    {
+      "case_id": "table_ohm_L0.1_psc",
+      "power_min_pu": -7.845128367205363,
+      "power_max_pu": 1.189446703399083,
+      "current_abs_max_pu": 6.413481219570033,
+      "voltage_abs_max_pu": 2.186275767306745
+    },
+    {
+      "case_id": "table_ohm_L0.1_rfpsc",
+      "power_min_pu": -2.3952946479274564e-05,
+      "power_max_pu": 0.9999984696312856,
+      "current_abs_max_pu": 1.001253602408679,
+      "voltage_abs_max_pu": 1.1396825396825396
+    }
+  ],
+  "physical_model_limit": "Ideal average model without current or modulation saturation; large excursions are mathematical responses, not validated hardware waveforms.",
+  "critical_gaps": [
+    "Table I Ra normalization ambiguity",
+    "Experimental raw waveforms unavailable",
+    "Original firmware and complete experimental parasitics not available in the inspected manuscript"
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Eq.19 denominator is independent of feedforward switch xi in the H(s)=0 approximation",
+      "source": "Section II-B, Eqs.9,18,19"
+    },
+    {
+      "id": "C2",
+      "claim": "At zero current, RFPSC Eq.19 reduces exactly to alpha/(s+alpha)",
+      "source": "Section II-B, Eq.20 and following paragraph"
+    },
+    {
+      "id": "C3",
+      "claim": "Fig.3 selected nonzero operating points have near, rather than exact, complex pole-zero cancellation",
+      "source": "Fig.3"
+    },
+    {
+      "id": "C4",
+      "claim": "Reference-feedforward improves strong-grid step response and reduces weak-grid ringing",
+      "source": "Section III, evaluated here in a continuous averaged model only"
+    }
+  ],
+  "primary_manifest_sha256": "d78abaca6bb3555408d46c39e57010d9ec47a2262836f749af1d5f956be24924",
+  "report_sha256": "774260c8d603a78ee3ef03c6ff6f10a6cd89a7ac891edea104145679dd9d294f"
+}

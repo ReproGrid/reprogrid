@@ -1,0 +1,390 @@
+{
+  "status": "same_accepted_article_body_different_repository_cover_and_pdf_metadata",
+  "no_network_used": true,
+  "files": [
+    {
+      "path": "reproductions/2020_rfpsc/sources/paper_author_manuscript.pdf",
+      "size_bytes": 1320511,
+      "file_sha256": "8420166351fbbc3b05a2932b55af0f3c17f0edfde8bb556c1ee5b773e9d4d391",
+      "page_count": 7,
+      "metadata": {
+        "/Author": "Mure Laura",
+        "/CreationDate": "D:20200225153722+02'00'",
+        "/Creator": "Adobe Acrobat Pro DC 20.6.20034",
+        "/ModDate": "D:20200225153722+02'00'",
+        "/Producer": "Adobe Acrobat Pro DC 20.6.20034",
+        "/Title": ""
+      },
+      "doi_matches": [
+        "10.1109/TPEL.2020.2970991"
+      ],
+      "article_body_text_sha256": "68c756dc4ec58fb7b957704af5ecb39c59d7915e4111ce5f43cbde259693c43f",
+      "article_body_length_prefixed_decoded_stream_sha256": "2947c4edd78fda97f89be4429e16498458820c3fb66cf7f5564237824830e937"
+    },
+    {
+      "path": "reproductions/2020_rfpsc/verification/rfpsc_2020_author_manuscript.pdf",
+      "size_bytes": 1314435,
+      "file_sha256": "55d87c408fe93ba20b1df49110cf50fcef934cd0ebd962c2667ea9f033bf7f38",
+      "page_count": 7,
+      "metadata": {
+        "/CreationDate": "D:20261111031004Z",
+        "/Producer": "OpenPDF 1.4.2"
+      },
+      "doi_matches": [
+        "10.1109/TPEL.2020.2970991"
+      ],
+      "article_body_text_sha256": "68c756dc4ec58fb7b957704af5ecb39c59d7915e4111ce5f43cbde259693c43f",
+      "article_body_length_prefixed_decoded_stream_sha256": "2947c4edd78fda97f89be4429e16498458820c3fb66cf7f5564237824830e937"
+    }
+  ],
+  "parser": {
+    "name": "pypdf",
+    "version": "6.21.4"
+  },
+  "render_method": {
+    "renderer": "PyMuPDF",
+    "version": "2.1",
+    "dpi": 144,
+    "colorspace": "default RGB",
+    "alpha": false
+  },
+  "page_comparisons": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "role": "repository_cover",
+      "exact_extracted_text_equal": false,
+      "normalized_whitespace_text_equal": false,
+      "text_lengths": [
+        1155,
+        1253
+      ],
+      "primary_text_sha256": "0b94a3198e5a6b06d33539957322aef972ce244d1b2222816a512103ba675587",
+      "independent_text_sha256": "816928bbe7e401badaa594bfd35fcb386ba6621a2fb953df73870d40fc739188",
+      "decoded_page_content_streams_equal": false,
+      "primary_decoded_stream_sha256": "9c78ebf4d9f23c1240ab990342eeb6b441259a9211079fda4f7f595ef8b85f59",
+      "independent_decoded_stream_sha256": "b305766e34cde0b70ef29ed542df83486f553e19d61ce3bd7b00e27f2a109989",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ],
+      "pixel_equal": false,
+      "primary_pixel_sha256": "4fc21106bad246cc3f63445fe9b52c629ad4cece1c29d9f37cf48a2957b21699",
+      "independent_pixel_sha256": "70c3bd8fa356b732b75e3584153924981afba71b387a89e9dade1b75c388aa18",
+      "dimensions": [
+        1190,
+        1684,
+        1190,
+        1684
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": null,
+      "role": "copyright_notice",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        467,
+        467
+      ],
+      "primary_text_sha256": "702bf2631f2fd92876e389247c010f1749517f5ddf287608dacc0320c698f262",
+      "independent_text_sha256": "702bf2631f2fd92876e389247c010f1749517f5ddf287608dacc0320c698f262",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "a480b14f44e9c7932578c0e0d3242196b4202a42abf2531a017aa86fd6dc00d7",
+      "independent_decoded_stream_sha256": "a480b14f44e9c7932578c0e0d3242196b4202a42abf2531a017aa86fd6dc00d7",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        595.32,
+        841.92
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        595.32,
+        841.92
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "5dd3a4bc72ae7fb0e10cafddd75b0bd1e77e3abb6797e219cff03de022e2c110",
+      "independent_pixel_sha256": "5dd3a4bc72ae7fb0e10cafddd75b0bd1e77e3abb6797e219cff03de022e2c110",
+      "dimensions": [
+        1191,
+        1684,
+        1191,
+        1684
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 1,
+      "role": "article_body",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        4892,
+        4892
+      ],
+      "primary_text_sha256": "89c42cf2fe5e94fa1fafaf174b53d5bdf1fbd864ecca56ce93768c017ba6bb5f",
+      "independent_text_sha256": "89c42cf2fe5e94fa1fafaf174b53d5bdf1fbd864ecca56ce93768c017ba6bb5f",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "a54ab9a7e919a92807e6aa5617f05ca94cb36d8e796688de2d55b2f56350e20d",
+      "independent_decoded_stream_sha256": "a54ab9a7e919a92807e6aa5617f05ca94cb36d8e796688de2d55b2f56350e20d",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "3ab5c92b39328a5442ea203cc55b6e90016bc24f8046508601dbd712262b8897",
+      "independent_pixel_sha256": "3ab5c92b39328a5442ea203cc55b6e90016bc24f8046508601dbd712262b8897",
+      "dimensions": [
+        1224,
+        1584,
+        1224,
+        1584
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 2,
+      "role": "article_body",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        3755,
+        3755
+      ],
+      "primary_text_sha256": "bbb8e0556b523fee8363f27323e865b4547cc7bcc89f2c037041b1bd4a1ad764",
+      "independent_text_sha256": "bbb8e0556b523fee8363f27323e865b4547cc7bcc89f2c037041b1bd4a1ad764",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "b84a52d21a14b35e369b5f8f720452729529ea909c6fe4b85ce00ff20fa6220a",
+      "independent_decoded_stream_sha256": "b84a52d21a14b35e369b5f8f720452729529ea909c6fe4b85ce00ff20fa6220a",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "4993550a962276c438a37fc4cf3c6ae1b238e81ed9bb6f8cdacb30022c7f0a96",
+      "independent_pixel_sha256": "4993550a962276c438a37fc4cf3c6ae1b238e81ed9bb6f8cdacb30022c7f0a96",
+      "dimensions": [
+        1224,
+        1584,
+        1224,
+        1584
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 3,
+      "role": "article_body",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        4056,
+        4056
+      ],
+      "primary_text_sha256": "9955df923eaa71dcf40d4c1691d002a8d39deb37356b1777faa0224d92ac80f2",
+      "independent_text_sha256": "9955df923eaa71dcf40d4c1691d002a8d39deb37356b1777faa0224d92ac80f2",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "afbf647454c6e7a5457a6d13901ea255c38e46e3b170b8350505da5e893122d0",
+      "independent_decoded_stream_sha256": "afbf647454c6e7a5457a6d13901ea255c38e46e3b170b8350505da5e893122d0",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "409bcb75acb2205f2a4654418e6d4a8fdf8980f44db21a2491c9d6b8ff702d9a",
+      "independent_pixel_sha256": "409bcb75acb2205f2a4654418e6d4a8fdf8980f44db21a2491c9d6b8ff702d9a",
+      "dimensions": [
+        1224,
+        1584,
+        1224,
+        1584
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 4,
+      "role": "article_body",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        2211,
+        2211
+      ],
+      "primary_text_sha256": "5930ca2e8cc9d8b2b21a68f2c7b07423a07eec105e8260c50277bcdafa20b79c",
+      "independent_text_sha256": "5930ca2e8cc9d8b2b21a68f2c7b07423a07eec105e8260c50277bcdafa20b79c",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "2fb9658208e1192151d2e768e607ae3946a764a6417a66cbee9dbbbe570e4254",
+      "independent_decoded_stream_sha256": "2fb9658208e1192151d2e768e607ae3946a764a6417a66cbee9dbbbe570e4254",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "2fe76597cb5ebbabe70b9615deaeef098cce8eb84e91ceda4c756b71d5b7a22d",
+      "independent_pixel_sha256": "2fe76597cb5ebbabe70b9615deaeef098cce8eb84e91ceda4c756b71d5b7a22d",
+      "dimensions": [
+        1224,
+        1584,
+        1224,
+        1584
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 5,
+      "role": "article_body",
+      "exact_extracted_text_equal": true,
+      "normalized_whitespace_text_equal": true,
+      "text_lengths": [
+        643,
+        643
+      ],
+      "primary_text_sha256": "2d5be8f899109dec7683de4fd015cfaeebd99aa6cf43cf694e4413a25e6c4ebb",
+      "independent_text_sha256": "2d5be8f899109dec7683de4fd015cfaeebd99aa6cf43cf694e4413a25e6c4ebb",
+      "decoded_page_content_streams_equal": true,
+      "primary_decoded_stream_sha256": "03ce0645851e68c70ad575afe354eaf9ee1e6ad3a82826c384fa0bc6174c64d1",
+      "independent_decoded_stream_sha256": "03ce0645851e68c70ad575afe354eaf9ee1e6ad3a82826c384fa0bc6174c64d1",
+      "mediabox_primary": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "mediabox_independent": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pixel_equal": true,
+      "primary_pixel_sha256": "20efe06cc39094a7b7e41df5cc233024aaec93f4cfd070a7d3c87093723e710d",
+      "independent_pixel_sha256": "20efe06cc39094a7b7e41df5cc233024aaec93f4cfd070a7d3c87093723e710d",
+      "dimensions": [
+        1224,
+        1584,
+        1224,
+        1584
+      ]
+    }
+  ],
+  "doi_consistent": true,
+  "article_pdf_pages_3_to_7_exact_text_equal": true,
+  "article_pdf_pages_3_to_7_decoded_streams_identical": true,
+  "article_pdf_pages_3_to_7_rendered_pixels_identical_at_144_dpi": true,
+  "copyright_page_2_identical": true,
+  "key_item_checks": [
+    {
+      "item": "equation_19",
+      "pdf_page": 4,
+      "printed_article_page": 2,
+      "text_equal": true,
+      "decoded_content_equal": true,
+      "rendered_pixels_equal": true,
+      "details": "The full cubic closed-loop numerator and denominator are on this identical article page."
+    },
+    {
+      "item": "table_I",
+      "pdf_page": 5,
+      "printed_article_page": 3,
+      "text_equal": true,
+      "decoded_content_equal": true,
+      "rendered_pixels_equal": true,
+      "details": "Both copies show Ra=4.4 ohm, Zbase=12.6 ohm, and Ra=.2 pu; normalization ambiguity is shared by both sources."
+    },
+    {
+      "item": "figure_3",
+      "pdf_page": 5,
+      "printed_article_page": 3,
+      "text_equal": true,
+      "decoded_content_equal": true,
+      "rendered_pixels_equal": true,
+      "details": "Identical pole-zero panels and labels: (0,0),(.7,.7),(-.7,.7),(-.7,-.7), with V=omega1=1, L=.5, Ra=.2."
+    },
+    {
+      "item": "figure_5",
+      "pdf_page": 6,
+      "printed_article_page": 4,
+      "text_equal": true,
+      "decoded_content_equal": true,
+      "rendered_pixels_equal": true,
+      "details": "Identical weak-grid experimental plots and L=1 pu caption; reference read-off remains plot-inferred."
+    },
+    {
+      "item": "figure_6",
+      "pdf_page": 6,
+      "printed_article_page": 4,
+      "text_equal": true,
+      "decoded_content_equal": true,
+      "rendered_pixels_equal": true,
+      "details": "Identical strong-grid experimental plots and L=.1 pu caption; reference read-off remains plot-inferred."
+    }
+  ],
+  "cover_text_diff": [
+    "--- primary repository cover",
+    "+++ independent repository cover",
+    "@@ -12,9 +12,10 @@",
+    " IEEE Transactions on Power Electronics",
+    " DOI:",
+    " 10.1109/TPEL.2020.2970991",
+    "-E-pub ahead of print: 03/02/2020",
+    "+Published: 03/02/2020",
+    " Document Version",
+    "-Peer reviewed version",
+    "+Peer-reviewed accepted author manuscript, also known as Final accepted manuscript or Post-print",
+    " Please cite the original version:",
+    " Harnefors, L., Rahman, F. M. M., Hinkkanen, M., & Routimo, M. (2020). Reference-feedforward power-",
+    "-synchronization control. IEEE Transactions on Power Electronics. https://doi.org/10.1109/TPEL.2020.2970991",
+    "+synchronization control. IEEE Transactions on Power Electronics, 35(9), 8878-8881. Article 8978738.",
+    "+https://doi.org/10.1109/TPEL.2020.2970991"
+  ],
+  "cover_difference_summary": [
+    "Primary cover says E-pub ahead of print; independent cover says Published, both with 03/02/2020.",
+    "Primary version label is Peer reviewed version; independent label explicitly describes the accepted author manuscript/post-print.",
+    "Independent cover adds final journal volume 35(9), pages 8878-8881, and article 8978738; DOI is unchanged."
+  ],
+  "metadata_difference_summary": "Primary PDF metadata identifies Adobe Acrobat and a 2020 creation date; independent download identifies OpenPDF and a 2026 file-creation timestamp. These PDF metadata dates do not establish a substantive article revision.",
+  "conclusion": "The two downloaded files are byte-distinct repository copies of the same accepted manuscript article. Every article page has identical extracted text, decoded drawing content, and 144-dpi rendered RGB pixels. Differences observed are the first repository cover and PDF metadata/container representation; no substantive difference was found in the article or the specified equations/table/figures.",
+  "provenance_policy": "Keep both original file hashes. For scientific equivalence, record the shared article-body hashes; do not relabel the two files as byte-identical."
+}

@@ -1,0 +1,369 @@
+{
+  "doi": "10.1109/TIE.2018.2875669",
+  "scope": "One PSC converter and infinite bus. Ideal PCC voltage, constant DC link, lossless algebraic network, no current-limit mode switching. Reproduce Eq. 5, Figs. 6\u20138 and the reduced-model counterparts of Figs. 9\u201310.",
+  "source_sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "protocol_sha256": "105986bc77f8cb771eeb733120893416526c5f5ae8f0f6e410966b9838fa7493",
+  "implementation_sha256": "211a9e4e31469615f92005e53d4d32aa0a0fd32b44bf60842ac16e436907564a",
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "started_utc": "2026-11-11T03:39:17.420869+00:00",
+  "finished_utc": "2026-11-11T03:39:23.544910+00:00",
+  "wall_seconds": 6.123981624958105,
+  "gain_per_s": 9.3,
+  "impedance_base_ohm": 145.2,
+  "current_base_RMS_A": 1515.1515151515152,
+  "checks": {
+    "table_pu": {
+      "nodal_kcl": true,
+      "equilibrium_residual": true,
+      "fault_lacks_equilibrium": true,
+      "cct_event_agrees_with_quadrature": true,
+      "type_i_line_open_integrator_agreement": true,
+      "type_i_line_open_basin": true,
+      "type_i_line_open_terminal_angle": true,
+      "type_i_monotone_no_overshoot": true,
+      "type_ii_uncleared_integrator_agreement": true,
+      "type_ii_uncleared_basin": true,
+      "uncleared_positive_phase_drift": true,
+      "type_ii_early_integrator_agreement": true,
+      "type_ii_early_basin": true,
+      "type_ii_early_terminal_angle": true,
+      "type_ii_late_integrator_agreement": true,
+      "type_ii_late_basin": true,
+      "type_ii_late_terminal_angle": true
+    },
+    "table_si": {
+      "nodal_kcl": true,
+      "equilibrium_residual": true,
+      "fault_lacks_equilibrium": true,
+      "cct_event_agrees_with_quadrature": true,
+      "type_i_line_open_integrator_agreement": true,
+      "type_i_line_open_basin": true,
+      "type_i_line_open_terminal_angle": true,
+      "type_i_monotone_no_overshoot": true,
+      "type_ii_uncleared_integrator_agreement": true,
+      "type_ii_uncleared_basin": true,
+      "uncleared_positive_phase_drift": true,
+      "type_ii_early_integrator_agreement": true,
+      "type_ii_early_basin": true,
+      "type_ii_early_terminal_angle": true,
+      "type_ii_late_integrator_agreement": true,
+      "type_ii_late_basin": true,
+      "type_ii_late_terminal_angle": true
+    }
+  },
+  "numerical_checks_passed": true,
+  "branches": {
+    "table_pu": {
+      "type_i_pre_deg": 26.423338765896766,
+      "type_i_post_deg": 60.45863949985723,
+      "type_ii_pre_deg": 67.86760859852433,
+      "type_ii_post_deg": 71.8051276612332,
+      "type_ii_cca_deg": 108.1948723387668,
+      "type_ii_cct_s": 0.5802698165663505,
+      "cct_event_s": 0.5802698165663513,
+      "cct_quadrature_error_estimate_s": 2.1699891457627104e-12,
+      "fault_slip_period_s": 1.4582138344958502,
+      "fault_min_angle_rate_rad_s": 1.05839552238806,
+      "power_max_pu_pre_fault_post": {
+        "type_i": [
+          2.2471910112359548,
+          null,
+          1.1494252873563218
+        ],
+        "type_ii": [
+          1.0795454545454544,
+          0.8861940298507462,
+          1.0526315789473686
+        ]
+      },
+      "cases": {
+        "type_i_line_open": {
+          "name": "type_i_line_open",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 0.4611742608347537
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 0.4611742608347537
+            }
+          ],
+          "basin_index": 0,
+          "classification": "same_basin",
+          "clear_angle_deg": null,
+          "final_angle_deg": 60.458639483951856,
+          "target_angle_deg": 60.45863949985723,
+          "first_2pi_crossing_s": null,
+          "first_current_limit_crossing_s": null,
+          "sampled_peak_current_pu": 1.1573842590017056,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 1.1959322421262186e-12,
+            "angle_rate_rad_s": 7.184031147744463e-12,
+            "power_pu": 7.724931805341839e-13,
+            "current_pu": 1.198596777385319e-12
+          },
+          "npz": "table_pu_type_i_line_open.npz"
+        },
+        "type_ii_uncleared": {
+          "name": "type_ii_uncleared",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.184513225499064
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.184513225499064
+            }
+          ],
+          "basin_index": null,
+          "classification": "persistent_phase_drift",
+          "clear_angle_deg": null,
+          "final_angle_deg": 1030.8551867097785,
+          "target_angle_deg": null,
+          "first_2pi_crossing_s": 4.153027201218076,
+          "first_current_limit_crossing_s": 3.756149373367372,
+          "sampled_peak_current_pu": 1.996268192606857,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 4.5140780002839165e-11,
+            "angle_rate_rad_s": 3.297824235914959e-10,
+            "power_pu": 3.5460495650951884e-11,
+            "current_pu": 3.8509417876753105e-11
+          },
+          "npz": "table_pu_type_ii_uncleared.npz"
+        },
+        "type_ii_early": {
+          "name": "type_ii_early",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.184513225499064
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.184513225499064
+            },
+            {
+              "time_s": 3.5,
+              "angle_rad": 1.7804990879109561
+            }
+          ],
+          "basin_index": 0,
+          "classification": "same_basin",
+          "clear_angle_deg": 102.01508316419032,
+          "final_angle_deg": 71.80903231162088,
+          "target_angle_deg": 71.8051276612332,
+          "first_2pi_crossing_s": null,
+          "first_current_limit_crossing_s": null,
+          "sampled_peak_current_pu": 1.6362711353620052,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 3.907540957470701e-12,
+            "angle_rate_rad_s": 6.395328711050752e-12,
+            "power_pu": 6.87672141452822e-13,
+            "current_pu": 2.667199794359476e-12
+          },
+          "npz": "table_pu_type_ii_early.npz"
+        },
+        "type_ii_late": {
+          "name": "type_ii_late",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.184513225499064
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.184513225499064
+            },
+            {
+              "time_s": 3.7,
+              "angle_rad": 2.1013013708279455
+            }
+          ],
+          "basin_index": 1,
+          "classification": "re_synchronized_after_phase_slip",
+          "clear_angle_deg": 120.3957000334956,
+          "final_angle_deg": 431.79936336725996,
+          "target_angle_deg": 431.8051276612332,
+          "first_2pi_crossing_s": 4.248522653358606,
+          "first_current_limit_crossing_s": 3.7,
+          "sampled_peak_current_pu": 2.1052625460781873,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 2.2027712986982806e-11,
+            "angle_rate_rad_s": 1.5491785632093524e-10,
+            "power_pu": 1.665789728377831e-11,
+            "current_pu": 1.837063834386754e-11
+          },
+          "npz": "table_pu_type_ii_late.npz"
+        }
+      },
+      "printed_target_matches": {
+        "type_i_pre_deg": true,
+        "type_i_post_deg": true,
+        "type_ii_cca_deg": true,
+        "type_ii_cct_s": true
+      }
+    },
+    "table_si": {
+      "type_i_pre_deg": 26.330248557647426,
+      "type_i_post_deg": 59.934417539244215,
+      "type_ii_pre_deg": 68.11022290152081,
+      "type_ii_post_deg": 72.17534748022096,
+      "type_ii_cca_deg": 107.82465251977904,
+      "type_ii_cct_s": 0.5586715730755898,
+      "cct_event_s": 0.5586715730755905,
+      "cct_quadrature_error_estimate_s": 8.684649493347716e-13,
+      "fault_slip_period_s": 1.4381241348241716,
+      "fault_min_angle_rate_rad_s": 1.0901454559484125,
+      "power_max_pu_pre_fault_post": {
+        "type_i": [
+          2.2545656328725077,
+          null,
+          1.1554648868471602
+        ],
+        "type_ii": [
+          1.0776990995500804,
+          0.8827800585001707,
+          1.0504226244065091
+        ]
+      },
+      "cases": {
+        "type_i_line_open": {
+          "name": "type_i_line_open",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 0.45954953019943556
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 0.45954953019943556
+            }
+          ],
+          "basin_index": 0,
+          "classification": "same_basin",
+          "clear_angle_deg": null,
+          "final_angle_deg": 59.93441752913799,
+          "target_angle_deg": 59.934417539244215,
+          "first_2pi_crossing_s": null,
+          "first_current_limit_crossing_s": null,
+          "sampled_peak_current_pu": 1.1543193099461273,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 1.2048140263232199e-12,
+            "angle_rate_rad_s": 7.213118990989642e-12,
+            "power_pu": 7.756018050031344e-13,
+            "current_pu": 1.2092549184217205e-12
+          },
+          "npz": "table_si_type_i_line_open.npz"
+        },
+        "type_ii_uncleared": {
+          "name": "type_ii_uncleared",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.1887476438987836
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.1887476438987836
+            }
+          ],
+          "basin_index": null,
+          "classification": "persistent_phase_drift",
+          "clear_angle_deg": null,
+          "final_angle_deg": 1074.985522598592,
+          "target_angle_deg": null,
+          "first_2pi_crossing_s": 4.1328167645114595,
+          "first_current_limit_crossing_s": 3.739798637235892,
+          "sampled_peak_current_pu": 1.9914889417816186,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 4.4639847374128294e-11,
+            "angle_rate_rad_s": 2.717648328598443e-10,
+            "power_pu": 2.9221874919826973e-11,
+            "current_pu": 2.7064905872009604e-11
+          },
+          "npz": "table_si_type_ii_uncleared.npz"
+        },
+        "type_ii_early": {
+          "name": "type_ii_early",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.1887476438987836
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.1887476438987836
+            },
+            {
+              "time_s": 3.5,
+              "angle_rad": 1.8004207980269065
+            }
+          ],
+          "basin_index": 0,
+          "classification": "same_basin",
+          "clear_angle_deg": 103.15651307451735,
+          "final_angle_deg": 72.18189898438897,
+          "target_angle_deg": 72.17534748022096,
+          "first_2pi_crossing_s": null,
+          "first_current_limit_crossing_s": null,
+          "sampled_peak_current_pu": 1.6459233413390568,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 4.1948666762436915e-12,
+            "angle_rate_rad_s": 5.495159882684675e-12,
+            "power_pu": 5.908606937055083e-13,
+            "current_pu": 2.8264057760907235e-12
+          },
+          "npz": "table_si_type_ii_early.npz"
+        },
+        "type_ii_late": {
+          "name": "type_ii_late",
+          "segment_starts": [
+            {
+              "time_s": 2.0,
+              "angle_rad": 1.1887476438987836
+            },
+            {
+              "time_s": 3.0,
+              "angle_rad": 1.1887476438987836
+            },
+            {
+              "time_s": 3.7,
+              "angle_rad": 2.1457314532122105
+            }
+          ],
+          "basin_index": 1,
+          "classification": "re_synchronized_after_phase_slip",
+          "clear_angle_deg": 122.94135623753253,
+          "final_angle_deg": 432.1694246458924,
+          "target_angle_deg": 432.1753474802209,
+          "first_2pi_crossing_s": 4.200830807816348,
+          "first_current_limit_crossing_s": 3.7,
+          "sampled_peak_current_pu": 2.100842927262532,
+          "max_refinement_differences": {
+            "time_s": 0.0,
+            "angle_rad": 2.049027614248189e-11,
+            "angle_rate_rad_s": 1.5899281891051942e-10,
+            "power_pu": 1.7095935778144167e-11,
+            "current_pu": 1.7193607648735565e-11
+          },
+          "npz": "table_si_type_ii_late.npz"
+        }
+      }
+    }
+  }
+}

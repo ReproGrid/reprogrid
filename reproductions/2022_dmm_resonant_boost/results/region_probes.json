@@ -1,0 +1,1802 @@
+{
+  "probes_total": 2116,
+  "strict_constructed_witnesses": 64,
+  "all_witness_masks_agree": true,
+  "mismatches_away_from_transition": 0,
+  "max_relative_peak_voltage_error": 4.1595171751396264e-13,
+  "reference_fallbacks": 0,
+  "witnesses": [
+    {
+      "gate_mask": 0,
+      "diode_mask": 0,
+      "z_history_a_then_vg_v": [
+        -0.0010199999999999931,
+        0.0015825000000000006,
+        0.0,
+        -0.06403,
+        -4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 0,
+      "tableau_mask": 0,
+      "tableau_diode_voltages_v": [
+        -1.0000000000000009,
+        -1.0000000000000018,
+        -0.9999999999999991,
+        -1.0
+      ],
+      "relative_voltage_error": 1.1842378929335004e-17
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 1,
+      "z_history_a_then_vg_v": [
+        -1000.01395,
+        0.0015825000000000006,
+        0.0,
+        -0.06403,
+        1e-05,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 1,
+      "tableau_mask": 1,
+      "tableau_diode_voltages_v": [
+        0.9999999999999999,
+        -1.0000000000000007,
+        -0.9999999999999999,
+        -1.0
+      ],
+      "relative_voltage_error": 4.440892098500626e-18
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 2,
+      "z_history_a_then_vg_v": [
+        -1000.00105,
+        -1000.0015725,
+        0.0,
+        999.9359999999999,
+        -5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 2,
+      "tableau_mask": 2,
+      "tableau_diode_voltages_v": [
+        -1.0000000000118803,
+        1.0,
+        -0.9999999999881197,
+        -1.0000000000012221
+      ],
+      "relative_voltage_error": 1.8436215517188732e-13
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 3,
+      "z_history_a_then_vg_v": [
+        -2000.01398,
+        -1000.0015725,
+        0.0,
+        999.9359999999999,
+        -1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 3,
+      "tableau_mask": 3,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        -1.0000000000000002,
+        -0.9999999999982239
+      ],
+      "relative_voltage_error": 2.2099359379505284e-14
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 4,
+      "z_history_a_then_vg_v": [
+        999.9989899999999,
+        -0.0015425000000000022,
+        0.0,
+        -0.06402999999999999,
+        1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 4,
+      "tableau_mask": 4,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999999,
+        -0.9999999999999983,
+        0.9999999999999999,
+        -0.9999999999999997
+      ],
+      "relative_voltage_error": 1.1102230246251566e-17
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 5,
+      "z_history_a_then_vg_v": [
+        -0.013939999999997316,
+        -0.0015425000000000022,
+        0.0,
+        -0.06402999999999999,
+        5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 5,
+      "tableau_mask": 5,
+      "tableau_diode_voltages_v": [
+        0.9999999999999999,
+        -0.9999999999999987,
+        1.0,
+        -0.9999999999999999
+      ],
+      "relative_voltage_error": 8.881784197001253e-18
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 6,
+      "z_history_a_then_vg_v": [
+        -0.0010400000001027365,
+        -1000.0046975,
+        0.0,
+        999.936,
+        -9.999999974752427e-06,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 6,
+      "tableau_mask": 6,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        1.0,
+        1.0,
+        -0.9999999999988916
+      ],
+      "relative_voltage_error": 1.0865382667664865e-14
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 7,
+      "z_history_a_then_vg_v": [
+        -1000.0139700000001,
+        -1000.0046975,
+        0.0,
+        999.936,
+        4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 7,
+      "tableau_mask": 7,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999998,
+        -1.0000000000000002
+      ],
+      "relative_voltage_error": 1.1075584893660562e-14
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 8,
+      "z_history_a_then_vg_v": [
+        -0.0010200000000395448,
+        0.00470749999999498,
+        0.0,
+        1000.06398,
+        -4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 8,
+      "tableau_mask": 8,
+      "tableau_diode_voltages_v": [
+        -1.000000000040864,
+        -1.0000000000374762,
+        -0.999999999959136,
+        0.9999999999999998
+      ],
+      "relative_voltage_error": 3.1292337971918285e-13
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 9,
+      "z_history_a_then_vg_v": [
+        -1000.01395,
+        0.00470749999999498,
+        0.0,
+        1000.06398,
+        1e-05,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 9,
+      "tableau_mask": 9,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        -0.9999999999968274,
+        -0.9999999999999998,
+        0.9999999999999998
+      ],
+      "relative_voltage_error": 2.1150488767792315e-14
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 10,
+      "z_history_a_then_vg_v": [
+        -1000.0010500000001,
+        -999.9984475,
+        0.0,
+        2000.06401,
+        -5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 10,
+      "tableau_mask": 10,
+      "tableau_diode_voltages_v": [
+        -0.9999999999957416,
+        1.0000000000000002,
+        -1.0000000000042584,
+        1.0
+      ],
+      "relative_voltage_error": 1.6563639348987636e-13
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 11,
+      "z_history_a_then_vg_v": [
+        -2000.0139800000002,
+        -999.9984475,
+        0.0,
+        2000.06401,
+        -1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 11,
+      "tableau_mask": 11,
+      "tableau_diode_voltages_v": [
+        1.0000000000000009,
+        0.9999999999999999,
+        -1.0000000000000009,
+        1.0000000000000004
+      ],
+      "relative_voltage_error": 8.881784197001253e-18
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 12,
+      "z_history_a_then_vg_v": [
+        999.9989899999999,
+        0.0015825000000404543,
+        0.0,
+        1000.06398,
+        1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 12,
+      "tableau_mask": 12,
+      "tableau_diode_voltages_v": [
+        -1.0000000000000007,
+        -1.000000000025564,
+        1.0000000000000004,
+        0.9999999999999998
+      ],
+      "relative_voltage_error": 1.7042811606415852e-13
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 13,
+      "z_history_a_then_vg_v": [
+        -0.013940000000047803,
+        0.0015825000000404543,
+        0.0,
+        1000.06398,
+        5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 13,
+      "tableau_mask": 13,
+      "tableau_diode_voltages_v": [
+        0.9999999999999999,
+        -1.0000000000255636,
+        1.0,
+        0.9999999999999999
+      ],
+      "relative_voltage_error": 1.7042367517206003e-13
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 14,
+      "z_history_a_then_vg_v": [
+        -0.0010400000001027365,
+        -1000.0015725000001,
+        0.0,
+        2000.06401,
+        -9.999999974752427e-06,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 14,
+      "tableau_mask": 14,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999992,
+        1.0000000000000002,
+        0.9999999999999996,
+        1.0
+      ],
+      "relative_voltage_error": 5.752062111936151e-18
+    },
+    {
+      "gate_mask": 0,
+      "diode_mask": 15,
+      "z_history_a_then_vg_v": [
+        -1000.0139700000001,
+        -1000.0015725000001,
+        0.0,
+        2000.06401,
+        4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 15,
+      "tableau_mask": 15,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999998,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 2.960594732333751e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 0,
+      "z_history_a_then_vg_v": [
+        999.99897,
+        0.0015825000000000006,
+        0.0,
+        -0.06403,
+        -4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 0,
+      "tableau_mask": 0,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "relative_voltage_error": 2.960594732333751e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 1,
+      "z_history_a_then_vg_v": [
+        -2000.01394,
+        0.0015825000000000006,
+        0.0,
+        -0.06403,
+        1e-05,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 1,
+      "tableau_mask": 1,
+      "tableau_diode_voltages_v": [
+        1.0,
+        -1.0000000000000004,
+        -1.0,
+        -1.0
+      ],
+      "relative_voltage_error": 2.960594732333751e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 2,
+      "z_history_a_then_vg_v": [
+        -0.0010599999999385545,
+        -1000.0015725,
+        0.0,
+        999.9359999999999,
+        -5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 2,
+      "tableau_mask": 2,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999999,
+        1.0,
+        -1.0,
+        -0.9999999999971153
+      ],
+      "relative_voltage_error": 2.949048412877649e-14
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 3,
+      "z_history_a_then_vg_v": [
+        -3000.01397,
+        -1000.0015725,
+        0.0,
+        999.9359999999999,
+        -1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 3,
+      "tableau_mask": 3,
+      "tableau_diode_voltages_v": [
+        1.0,
+        0.9999999999999999,
+        -0.9999999999999999,
+        -0.9999999999982236
+      ],
+      "relative_voltage_error": 2.7774819481389084e-14
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 4,
+      "z_history_a_then_vg_v": [
+        1999.9989799999998,
+        -0.0015425000000000022,
+        0.0,
+        -0.06402999999999999,
+        1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 4,
+      "tableau_mask": 4,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        -0.9999999999999984,
+        1.0,
+        -1.0
+      ],
+      "relative_voltage_error": 1.1102230246251566e-17
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 5,
+      "z_history_a_then_vg_v": [
+        -1000.0139300000001,
+        -0.0015425000000000022,
+        0.0,
+        -0.06402999999999999,
+        5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 5,
+      "tableau_mask": 5,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        -0.9999999999999989,
+        1.0000000000000002,
+        -1.0
+      ],
+      "relative_voltage_error": 7.401486830834377e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 6,
+      "z_history_a_then_vg_v": [
+        999.9989499999998,
+        -1000.0046975,
+        0.0,
+        999.936,
+        -9.999999974752427e-06,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 6,
+      "tableau_mask": 6,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999999,
+        1.0000000000000002,
+        1.0,
+        -0.9999999999988917
+      ],
+      "relative_voltage_error": 7.389644451905042e-15
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 7,
+      "z_history_a_then_vg_v": [
+        -2000.0139600000002,
+        -1000.0046975,
+        0.0,
+        999.936,
+        4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 7,
+      "tableau_mask": 7,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        0.9999999999999998,
+        -1.0000000000000002
+      ],
+      "relative_voltage_error": 5.903425896273499e-15
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 8,
+      "z_history_a_then_vg_v": [
+        999.99897,
+        0.00470749999999498,
+        0.0,
+        1000.06398,
+        -4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 8,
+      "tableau_mask": 8,
+      "tableau_diode_voltages_v": [
+        -1.0000000000000002,
+        -0.9999999999968274,
+        -0.9999999999999998,
+        0.9999999999999998
+      ],
+      "relative_voltage_error": 2.1150488767792315e-14
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 9,
+      "z_history_a_then_vg_v": [
+        -2000.01394,
+        0.00470749999999498,
+        0.0,
+        1000.06398,
+        1e-05,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 9,
+      "tableau_mask": 9,
+      "tableau_diode_voltages_v": [
+        1.0,
+        -0.9999999999968271,
+        -1.0,
+        1.0
+      ],
+      "relative_voltage_error": 2.1152709213841566e-14
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 10,
+      "z_history_a_then_vg_v": [
+        -0.0010600000000522414,
+        -999.9984475,
+        0.0,
+        2000.06401,
+        -5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 10,
+      "tableau_mask": 10,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999997,
+        1.0000000000000002,
+        -1.0000000000000004,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 4.440892098500626e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 11,
+      "z_history_a_then_vg_v": [
+        -3000.01397,
+        -999.9984475,
+        0.0,
+        2000.06401,
+        -1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 11,
+      "tableau_mask": 11,
+      "tableau_diode_voltages_v": [
+        1.0,
+        1.0,
+        -1.0,
+        1.0000000000000004
+      ],
+      "relative_voltage_error": 5.921189464667502e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 12,
+      "z_history_a_then_vg_v": [
+        1999.9989799999998,
+        0.0015825000000404543,
+        0.0,
+        1000.06398,
+        1000.00002,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 12,
+      "tableau_mask": 12,
+      "tableau_diode_voltages_v": [
+        -1.0000000000000002,
+        -1.000000000025564,
+        1.0000000000000004,
+        0.9999999999999998
+      ],
+      "relative_voltage_error": 1.704251554694262e-13
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 13,
+      "z_history_a_then_vg_v": [
+        -1000.0139300000001,
+        0.0015825000000404543,
+        0.0,
+        1000.06398,
+        5000.00802,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 13,
+      "tableau_mask": 13,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        -1.0000000000255636,
+        1.0000000000000002,
+        1.0
+      ],
+      "relative_voltage_error": 1.7042367517206003e-13
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 14,
+      "z_history_a_then_vg_v": [
+        999.9989499999997,
+        -1000.0015725000001,
+        0.0,
+        2000.06401,
+        -9.999999974752427e-06,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 14,
+      "tableau_mask": 14,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999998,
+        1.0,
+        0.9999999999999997,
+        1.0
+      ],
+      "relative_voltage_error": 2.220446049250313e-18
+    },
+    {
+      "gate_mask": 1,
+      "diode_mask": 15,
+      "z_history_a_then_vg_v": [
+        -2000.0139600000002,
+        -1000.0015725000001,
+        0.0,
+        2000.06401,
+        4000.00799,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 15,
+      "tableau_mask": 15,
+      "tableau_diode_voltages_v": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relative_voltage_error": 0.0
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 0,
+      "z_history_a_then_vg_v": [
+        999.9989699999999,
+        1000.0015725,
+        0.0,
+        -1000.0640199999999,
+        -3000.0080000000003,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 0,
+      "tableau_mask": 0,
+      "tableau_diode_voltages_v": [
+        -0.9999999999434905,
+        -1.0,
+        -1.0000000000565095,
+        -0.9999999999941167
+      ],
+      "relative_voltage_error": 4.1595171751396264e-13
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 1,
+      "z_history_a_then_vg_v": [
+        -0.013960000000110995,
+        1000.0015725,
+        0.0,
+        -1000.0640199999999,
+        1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 1,
+      "tableau_mask": 1,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        -1.0000000000000004,
+        -1.0000000000000004,
+        -1.0000000000000002
+      ],
+      "relative_voltage_error": 1.1045389140355392e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 2,
+      "z_history_a_then_vg_v": [
+        -2000.00104,
+        -2000.0015625,
+        0.0,
+        1999.9359900000002,
+        -6000.0080100000005,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 2,
+      "tableau_mask": 2,
+      "tableau_diode_voltages_v": [
+        -1.0000000000163212,
+        1.0000000000000004,
+        -0.9999999999836786,
+        -1.0000000000012221
+      ],
+      "relative_voltage_error": 1.169553343061125e-13
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 3,
+      "z_history_a_then_vg_v": [
+        -3000.01397,
+        -2000.0015625,
+        0.0,
+        1999.9359900000002,
+        -2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 3,
+      "tableau_mask": 3,
+      "tableau_diode_voltages_v": [
+        0.9999999999999999,
+        0.9999999999999998,
+        -0.9999999999999999,
+        -0.9999999999928945
+      ],
+      "relative_voltage_error": 4.7369515717340014e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 4,
+      "z_history_a_then_vg_v": [
+        1999.9989799999998,
+        999.9984475,
+        0.0,
+        -1000.06402,
+        2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 4,
+      "tableau_mask": 4,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999998,
+        -1.0000000000000002,
+        0.9999999999999998,
+        -1.0000000000006681
+      ],
+      "relative_voltage_error": 4.4527344774299614e-15
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 5,
+      "z_history_a_then_vg_v": [
+        999.98605,
+        999.9984475,
+        0.0,
+        -1000.06402,
+        6000.00801,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 5,
+      "tableau_mask": 5,
+      "tableau_diode_voltages_v": [
+        0.9999999999999997,
+        -1.0000000000000002,
+        1.0,
+        -1.000000000001776
+      ],
+      "relative_voltage_error": 1.1842378929335004e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 6,
+      "z_history_a_then_vg_v": [
+        -1000.00103,
+        -2000.0046875,
+        0.0,
+        1999.93599,
+        -1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 6,
+      "tableau_mask": 6,
+      "tableau_diode_voltages_v": [
+        -1.0000000000000002,
+        0.9999999999999998,
+        1.0000000000000002,
+        -1.0000000000059968
+      ],
+      "relative_voltage_error": 3.997987126543497e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 7,
+      "z_history_a_then_vg_v": [
+        -2000.01396,
+        -2000.0046875,
+        0.0,
+        1999.93599,
+        3000.008,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 7,
+      "tableau_mask": 7,
+      "tableau_diode_voltages_v": [
+        1.0,
+        1.0,
+        1.0,
+        -0.9999999999964473
+      ],
+      "relative_voltage_error": 3.992806085761913e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 8,
+      "z_history_a_then_vg_v": [
+        999.99897,
+        1000.0046975,
+        0.0,
+        0.06398999999998978,
+        -3000.0080000000003,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 8,
+      "tableau_mask": 8,
+      "tableau_diode_voltages_v": [
+        -0.9999999999957416,
+        -1.0,
+        -1.0000000000042584,
+        0.9999999999999999
+      ],
+      "relative_voltage_error": 6.862362530076401e-14
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 9,
+      "z_history_a_then_vg_v": [
+        -0.013959999999997308,
+        1000.0046975,
+        0.0,
+        0.06398999999998978,
+        1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 9,
+      "tableau_mask": 9,
+      "tableau_diode_voltages_v": [
+        1.0000000000000004,
+        -1.0000000000000004,
+        -1.0000000000000004,
+        1.0000000000000004
+      ],
+      "relative_voltage_error": 5.921189464667502e-18
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 10,
+      "z_history_a_then_vg_v": [
+        -2000.0010399999999,
+        -1999.9984375,
+        0.0,
+        3000.064,
+        -6000.0080100000005,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 10,
+      "tableau_mask": 10,
+      "tableau_diode_voltages_v": [
+        -0.9999999999781157,
+        1.0000000000000002,
+        -1.000000000021884,
+        0.9999999999999999
+      ],
+      "relative_voltage_error": 3.3992068419289957e-13
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 11,
+      "z_history_a_then_vg_v": [
+        -3000.01397,
+        -1999.9984375,
+        0.0,
+        3000.064,
+        -2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 11,
+      "tableau_mask": 11,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        -1.0000000000000002,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 5.921189464667502e-18
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 12,
+      "z_history_a_then_vg_v": [
+        1999.9989799999998,
+        1000.0015725,
+        0.0,
+        0.06399000000010346,
+        2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 12,
+      "tableau_mask": 12,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999991,
+        -0.9999999999999999,
+        0.9999999999999993,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 6.817879594223087e-18
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 13,
+      "z_history_a_then_vg_v": [
+        999.9860499999999,
+        1000.0015725,
+        0.0,
+        0.06399000000010346,
+        6000.00801,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 13,
+      "tableau_mask": 13,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        -1.0,
+        1.0000000000000002,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 1.4802973661668755e-18
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 14,
+      "z_history_a_then_vg_v": [
+        -1000.0010300000004,
+        -2000.0015625000003,
+        0.0,
+        3000.0640000000003,
+        -1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 14,
+      "tableau_mask": 14,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999989,
+        1.0000000000000002,
+        0.9999999999999993,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 9.778474326556838e-18
+    },
+    {
+      "gate_mask": 2,
+      "diode_mask": 15,
+      "z_history_a_then_vg_v": [
+        -2000.0139600000002,
+        -2000.0015625000003,
+        0.0,
+        3000.0640000000003,
+        3000.008,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 15,
+      "tableau_mask": 15,
+      "tableau_diode_voltages_v": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relative_voltage_error": 2.960594732333751e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 0,
+      "z_history_a_then_vg_v": [
+        1999.99896,
+        1000.0015725,
+        0.0,
+        -1000.0640199999999,
+        -3000.0080000000003,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 0,
+      "tableau_mask": 0,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999998,
+        -1.0,
+        -1.0000000000000002,
+        -0.9999999999953391
+      ],
+      "relative_voltage_error": 3.1074402310575046e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 1,
+      "z_history_a_then_vg_v": [
+        -1000.0139500000001,
+        1000.0015725,
+        0.0,
+        -1000.0640199999999,
+        1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 1,
+      "tableau_mask": 1,
+      "tableau_diode_voltages_v": [
+        1.0,
+        -1.0000000000000004,
+        -1.0,
+        -1.0
+      ],
+      "relative_voltage_error": 1.672069889953794e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 2,
+      "z_history_a_then_vg_v": [
+        -1000.0010500000002,
+        -2000.0015625,
+        0.0,
+        1999.9359900000002,
+        -6000.0080100000005,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 2,
+      "tableau_mask": 2,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        1.0,
+        -0.9999999999999998,
+        -1.0000000000024443
+      ],
+      "relative_voltage_error": 3.237114280333723e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 3,
+      "z_history_a_then_vg_v": [
+        -4000.01396,
+        -2000.0015625,
+        0.0,
+        1999.9359900000002,
+        -2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 3,
+      "tableau_mask": 3,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        1.0,
+        -1.0000000000000002,
+        -1.0000000000000002
+      ],
+      "relative_voltage_error": 2.3092638912203257e-15
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 4,
+      "z_history_a_then_vg_v": [
+        2999.9989699999996,
+        999.9984475,
+        0.0,
+        -1000.06402,
+        2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 4,
+      "tableau_mask": 4,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999998,
+        -1.0000000000000002,
+        0.9999999999999998,
+        -0.9999999999971154
+      ],
+      "relative_voltage_error": 2.356041287991199e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 5,
+      "z_history_a_then_vg_v": [
+        -0.013940000000047803,
+        999.9984475,
+        0.0,
+        -1000.06402,
+        6000.00801,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 5,
+      "tableau_mask": 5,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        -1.0000000000000004,
+        0.9999999999999998,
+        -1.0000000000017761
+      ],
+      "relative_voltage_error": 1.1842378929335004e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 6,
+      "z_history_a_then_vg_v": [
+        -0.0010400000001027365,
+        -2000.0046875,
+        0.0,
+        1999.93599,
+        -1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 6,
+      "tableau_mask": 6,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        1.0000000000000004,
+        1.0,
+        -1.000000000005997
+      ],
+      "relative_voltage_error": 3.997987126543497e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 7,
+      "z_history_a_then_vg_v": [
+        -3000.01395,
+        -2000.0046875,
+        0.0,
+        1999.93599,
+        3000.008,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        0.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 7,
+      "tableau_mask": 7,
+      "tableau_diode_voltages_v": [
+        0.9999999999999999,
+        1.0,
+        1.0,
+        -1.0000000000035527
+      ],
+      "relative_voltage_error": 2.3684757858670007e-14
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 8,
+      "z_history_a_then_vg_v": [
+        1999.99896,
+        1000.0046975,
+        0.0,
+        0.06398999999998978,
+        -3000.0080000000003,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        3.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 8,
+      "tableau_mask": 8,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999993,
+        -1.0,
+        -1.0000000000000007,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 6.095494479533651e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 9,
+      "z_history_a_then_vg_v": [
+        -1000.01395,
+        1000.0046975,
+        0.0,
+        0.06398999999998978,
+        1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 9,
+      "tableau_mask": 9,
+      "tableau_diode_voltages_v": [
+        1.0000000000000002,
+        -1.0000000000000004,
+        -1.0000000000000004,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 2.960594732333751e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 10,
+      "z_history_a_then_vg_v": [
+        -1000.0010499999999,
+        -1999.9984375,
+        0.0,
+        3000.064,
+        -6000.0080100000005,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        2.0,
+        150.0
+      ],
+      "dmm_mask": 10,
+      "tableau_mask": 10,
+      "tableau_diode_voltages_v": [
+        -0.9999999999999999,
+        0.9999999999999998,
+        -1.0,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 5.921189464667502e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 11,
+      "z_history_a_then_vg_v": [
+        -4000.0139599999998,
+        -1999.9984375,
+        0.0,
+        3000.064,
+        -2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 11,
+      "tableau_mask": 11,
+      "tableau_diode_voltages_v": [
+        0.9999999999999998,
+        0.9999999999999997,
+        -0.9999999999999998,
+        1.0
+      ],
+      "relative_voltage_error": 2.220446049250313e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 12,
+      "z_history_a_then_vg_v": [
+        2999.9989699999996,
+        1000.0015725,
+        0.0,
+        0.06399000000010346,
+        2000.00001,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 12,
+      "tableau_mask": 12,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        -1.0000000000000002,
+        1.0,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 2.220446049250313e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 13,
+      "z_history_a_then_vg_v": [
+        -0.01394000000016149,
+        1000.0015725,
+        0.0,
+        0.06399000000010346,
+        6000.00801,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -1.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 13,
+      "tableau_mask": 13,
+      "tableau_diode_voltages_v": [
+        0.9999999999999997,
+        -1.0000000000000002,
+        1.0000000000000004,
+        1.0
+      ],
+      "relative_voltage_error": 2.220446049250313e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 14,
+      "z_history_a_then_vg_v": [
+        -0.0010400000005574839,
+        -2000.0015625000003,
+        0.0,
+        3000.0640000000003,
+        -1000.0,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        1.0,
+        0.0,
+        -1.0,
+        0.0,
+        150.0
+      ],
+      "dmm_mask": 14,
+      "tableau_mask": 14,
+      "tableau_diode_voltages_v": [
+        -1.0,
+        1.0,
+        1.0000000000000004,
+        1.0000000000000002
+      ],
+      "relative_voltage_error": 3.1348997471999004e-18
+    },
+    {
+      "gate_mask": 3,
+      "diode_mask": 15,
+      "z_history_a_then_vg_v": [
+        -3000.0139500000005,
+        -2000.0015625000003,
+        0.0,
+        3000.0640000000003,
+        3000.008,
+        150.0
+      ],
+      "target_node_voltages_v": [
+        -1.0,
+        -2.0,
+        -3.0,
+        -2.0,
+        150.0
+      ],
+      "dmm_mask": 15,
+      "tableau_mask": 15,
+      "tableau_diode_voltages_v": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "relative_voltage_error": 0.0
+    }
+  ]
+}

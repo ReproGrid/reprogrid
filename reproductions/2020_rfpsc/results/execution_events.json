@@ -1,0 +1,24 @@
+[
+  {
+    "attempt": 1,
+    "status": "environment_failure",
+    "reason": "AppleDouble resource forks in matplotlib stylelib were treated as UTF-8 style sheets",
+    "remedy": "Removed only AppleDouble-magic resource forks inside newly created project .venv",
+    "removed_count": 10874,
+    "scientific_parameters_changed": false
+  },
+  {
+    "event": "implementation_review_correction",
+    "scope": "protocol parameter wiring and declared equilibrium residual acceptance; no model constants or protocol thresholds changed",
+    "original_code": "src/reproduce_initial.py",
+    "original_manifest": "results/initial_run_manifest.json",
+    "case_metrics_unchanged": true,
+    "final_code_sha256": "820a71be09e74e82d0b188b6feb61cdb35cbbac293b3444f646399c75d90c8f0"
+  },
+  {
+    "event": "fresh_virtualenv_replay_passed",
+    "comparison_file": "results/clean_replay_comparison.json",
+    "numeric_array_max_difference": 0.0,
+    "scope": "same host and pinned libraries; distinct environment"
+  }
+]

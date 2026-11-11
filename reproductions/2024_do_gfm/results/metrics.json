@@ -1,0 +1,374 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "motulator_commit": "ca3fb1f225be30ff98d70ebca6fc49cc24e2bb2e",
+  "source_hashes": {
+    "protocol": "b2bd842d3b06471e646e4d80f03f9adec7ef5feddd3bcbea63333c6cef8ce8e3",
+    "script": "94a5d10fb5dd6dfea1037a432bc1ab247b9ebebda6df7ec93c1a2a4b4946211a"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "tqdm": "4.70.1"
+  },
+  "series_definition": "P and Q at emulator terminals, 1.5*e_g*conj(i_g)/S_base. P and Q for figures and metrics use a centered 5 kHz carrier-period mean; CSV also contains controller-instant power samples.",
+  "comparison": "Paper vector traces share the nominal first command edge after a per-panel time translation. Compare by interpolation on the simulation clock with no amplitude rescaling.",
+  "runs": {
+    "rfpsc": {
+      "base": {
+        "u": 326.5986323710904,
+        "i": 25.455844122715714,
+        "w": 314.1592653589793,
+        "psi": 1.0395957349782348,
+        "p": 12470.765814495917,
+        "Z": 12.83000598199168,
+        "L": 0.04083917743865125,
+        "C": 0.0002480980029398065,
+        "tau": 0.0,
+        "n_p": 0,
+        "w_M": 0.0
+      },
+      "controller_config_si": {
+        "i_max": 33.09259735953043,
+        "u_nom": 326.5986323710904,
+        "w_nom": 314.1592653589793,
+        "R": 0.6415002990995841,
+        "R_a": 2.5660011963983362,
+        "w_b": 31.415926535897935,
+        "T_s": 0.0001
+      },
+      "derived_power_gain_pu": 0.19999999999999998,
+      "filter_inductance_h": 0.0063,
+      "grid_inductance_h": 0.030046867920399616,
+      "plant_series_resistance_ohm": 0.6415002990995841,
+      "plant_samples": 72883,
+      "controller_samples": 15001,
+      "current_limiter_activations": 0,
+      "peak_plant_current_pu": 1.1784322408178989,
+      "paper_reference_sha256": "3a7784437442be2972fd9a89bf8b9943ecd4e334808c69586719ef173b9d2afe",
+      "switched_steps": [
+        {
+          "step_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.33,
+          "rise_or_fall_10_90_ms": 32.26891281270433,
+          "directional_overshoot_pct": 0.06702333011567863,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.33003307975425666,
+            "q_g_pu": -0.049580461076267894,
+            "u_c_ref_pu": 1.016497372593933,
+            "u_g_pu": 1.0
+          }
+        },
+        {
+          "step_s": 0.5,
+          "from_pu": 0.33,
+          "to_pu": 0.66,
+          "rise_or_fall_10_90_ms": 39.16536848571495,
+          "directional_overshoot_pct": 0.08597875312721381,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.6600466183882713,
+            "q_g_pu": -0.21433104865700794,
+            "u_c_ref_pu": 1.033044926231801,
+            "u_g_pu": 1.0
+          }
+        },
+        {
+          "step_s": 0.8,
+          "from_pu": 0.66,
+          "to_pu": 1.0,
+          "rise_or_fall_10_90_ms": 60.98940673655484,
+          "directional_overshoot_pct": 0.037162223135367434,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.9997091913620495,
+            "q_g_pu": -0.6108478349892114,
+            "u_c_ref_pu": 1.0504306389112847,
+            "u_g_pu": 1.0
+          }
+        },
+        {
+          "step_s": 1.1,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_or_fall_10_90_ms": 38.845325050705256,
+          "directional_overshoot_pct": 0.012334118226764446,
+          "last_50_ms_mean": {
+            "p_g_pu": 3.0723796162760486e-06,
+            "q_g_pu": -3.0032113783610128e-05,
+            "u_c_ref_pu": 0.9999997319767495,
+            "u_g_pu": 1.0
+          }
+        }
+      ],
+      "paper_steps": [
+        {
+          "step_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.33,
+          "rise_or_fall_10_90_ms": 41.37825389291727,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.31995283127999996,
+            "q_g_pu": -0.089855824,
+            "u_c_ref_pu": 1.01647098816,
+            "u_g_pu": 0.9972926148000001
+          }
+        },
+        {
+          "step_s": 0.5,
+          "from_pu": 0.33,
+          "to_pu": 0.66,
+          "rise_or_fall_10_90_ms": 51.054745178172546,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.6406666088799999,
+            "q_g_pu": -0.28747114568,
+            "u_c_ref_pu": 1.0330271727200002,
+            "u_g_pu": 0.99873794984
+          }
+        },
+        {
+          "step_s": 0.8,
+          "from_pu": 0.66,
+          "to_pu": 1.0,
+          "rise_or_fall_10_90_ms": 89.72499282596935,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.9693908307999999,
+            "q_g_pu": -0.79462465936,
+            "u_c_ref_pu": 1.0507123408,
+            "u_g_pu": 1.00033776048
+          }
+        },
+        {
+          "step_s": 1.1,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_or_fall_10_90_ms": 43.968891428412874,
+          "directional_overshoot_pct": 0.23842000000000585,
+          "last_50_ms_mean": {
+            "p_g_pu": -0.00010786984000000002,
+            "q_g_pu": 0.00156226,
+            "u_c_ref_pu": 1.0000275982400002,
+            "u_g_pu": 0.9963587532
+          }
+        }
+      ],
+      "switched_vs_paper_rmse_pu": {
+        "p_g_pu": 0.021945119418433755,
+        "q_g_pu": 0.08509312229192599,
+        "u_c_ref_pu": 0.002339563835727026,
+        "u_g_pu": 0.003654702632483284
+      },
+      "switched_vs_averaged_rmse_pu": {
+        "p_g_pu": 0.00010302758928705358,
+        "q_g_pu": 0.00014319231385882271,
+        "u_c_ref_pu": 5.659013285910364e-06,
+        "u_g_pu": 1.7512992146100154e-16
+      },
+      "solver_refinement_max_abs_difference_pu": {
+        "p_g_pu": 4.603311842821755e-05,
+        "q_g_pu": 5.422381793574512e-05,
+        "u_c_ref_pu": 5.973974326334286e-06,
+        "u_g_pu": 6.661338147750939e-16
+      },
+      "solver_refinement_pass": true
+    },
+    "do_gfm": {
+      "base": {
+        "u": 326.5986323710904,
+        "i": 25.455844122715714,
+        "w": 314.1592653589793,
+        "psi": 1.0395957349782348,
+        "p": 12470.765814495917,
+        "Z": 12.83000598199168,
+        "L": 0.04083917743865125,
+        "C": 0.0002480980029398065,
+        "tau": 0.0,
+        "n_p": 0,
+        "w_M": 0.0
+      },
+      "controller_config_si": {
+        "i_max": 33.09259735953043,
+        "L": 0.006125876615797688,
+        "R": 0.6415002990995841,
+        "R_a": 2.5660011963983362,
+        "k_v": 1.0,
+        "alpha_o": 314.1592653589793,
+        "alpha_c": 2513.2741228718346,
+        "u_nom": 326.5986323710904,
+        "w_nom": 314.1592653589793,
+        "T_s": 0.0001,
+        "i_d_max": null,
+        "alpha_l": 314.1592653589793
+      },
+      "derived_power_gain_pu": 0.2,
+      "filter_inductance_h": 0.0063,
+      "grid_inductance_h": 0.030046867920399616,
+      "plant_series_resistance_ohm": 0.6415002990995841,
+      "plant_samples": 72897,
+      "controller_samples": 15001,
+      "current_limiter_activations": 0,
+      "peak_plant_current_pu": 1.178759512524824,
+      "paper_reference_sha256": "f675e976994e31c4bb271cee6dc99ebd8b15e78b3cb6a15f1d79b9ba0352b87b",
+      "switched_steps": [
+        {
+          "step_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.33,
+          "rise_or_fall_10_90_ms": 35.509799102678016,
+          "directional_overshoot_pct": 0.11246053100297804,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.33018975646627463,
+            "q_g_pu": -0.049683232606276266,
+            "u_c_ref_pu": 1.016471585616725,
+            "u_g_pu": 1.0,
+            "u_c_hat_pu": 0.99999995294067
+          }
+        },
+        {
+          "step_s": 0.5,
+          "from_pu": 0.33,
+          "to_pu": 0.66,
+          "rise_or_fall_10_90_ms": 42.30668442313923,
+          "directional_overshoot_pct": 0.12207243823860736,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.6601679914424368,
+            "q_g_pu": -0.21448045061097046,
+            "u_c_ref_pu": 1.0330241454171425,
+            "u_g_pu": 1.0,
+            "u_c_hat_pu": 1.0000005032162445
+          }
+        },
+        {
+          "step_s": 0.8,
+          "from_pu": 0.66,
+          "to_pu": 1.0,
+          "rise_or_fall_10_90_ms": 67.01897318955774,
+          "directional_overshoot_pct": 0.08058150878591519,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.9999161547296733,
+            "q_g_pu": -0.6112784764210637,
+            "u_c_ref_pu": 1.0504369447112116,
+            "u_g_pu": 1.0,
+            "u_c_hat_pu": 1.0000333271401602
+          }
+        },
+        {
+          "step_s": 1.1,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_or_fall_10_90_ms": 34.81024743591132,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.00020670849892436894,
+            "q_g_pu": -8.08310948388713e-05,
+            "u_c_ref_pu": 0.9999691862212783,
+            "u_g_pu": 1.0,
+            "u_c_hat_pu": 1.0000000199587966
+          }
+        }
+      ],
+      "paper_steps": [
+        {
+          "step_s": 0.2,
+          "from_pu": 0.0,
+          "to_pu": 0.33,
+          "rise_or_fall_10_90_ms": 40.57104974307546,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.32082247688,
+            "q_g_pu": -0.08798332480000001,
+            "u_c_ref_pu": 1.01630235984,
+            "u_g_pu": 0.9961959775199999,
+            "u_c_hat_pu": 1.0008343724
+          }
+        },
+        {
+          "step_s": 0.5,
+          "from_pu": 0.33,
+          "to_pu": 0.66,
+          "rise_or_fall_10_90_ms": 50.559335124146784,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.6390171320000001,
+            "q_g_pu": -0.28539547808,
+            "u_c_ref_pu": 1.0320697600000002,
+            "u_g_pu": 0.99771372376,
+            "u_c_hat_pu": 1.00184372504
+          }
+        },
+        {
+          "step_s": 0.8,
+          "from_pu": 0.66,
+          "to_pu": 1.0,
+          "rise_or_fall_10_90_ms": 109.55470821368397,
+          "directional_overshoot_pct": 0.0,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.9605152269599999,
+            "q_g_pu": -0.7748046900799999,
+            "u_c_ref_pu": 1.04768254488,
+            "u_g_pu": 0.9992854078400001,
+            "u_c_hat_pu": 1.0037168995199999
+          }
+        },
+        {
+          "step_s": 1.1,
+          "from_pu": 1.0,
+          "to_pu": 0.0,
+          "rise_or_fall_10_90_ms": 35.582954798584645,
+          "directional_overshoot_pct": 0.24783399999999123,
+          "last_50_ms_mean": {
+            "p_g_pu": 0.0008874644799999998,
+            "q_g_pu": 0.0034244588799999995,
+            "u_c_ref_pu": 1.0000116245600001,
+            "u_g_pu": 0.9949885125599999,
+            "u_c_hat_pu": 1.0000454612
+          }
+        }
+      ],
+      "switched_vs_paper_rmse_pu": {
+        "p_g_pu": 0.022678921602014557,
+        "q_g_pu": 0.07816008118845691,
+        "u_c_ref_pu": 0.0021780117284722496,
+        "u_g_pu": 0.0038868843766083783,
+        "u_c_hat_pu": 0.0028394370624515533
+      },
+      "switched_vs_averaged_rmse_pu": {
+        "p_g_pu": 0.00010229770084752246,
+        "q_g_pu": 0.00014232846584129763,
+        "u_c_ref_pu": 4.901120556168342e-06,
+        "u_g_pu": 1.7408363785032008e-16,
+        "u_c_hat_pu": 4.259154433266667e-06
+      },
+      "solver_refinement_max_abs_difference_pu": {
+        "p_g_pu": 2.65329747062311e-05,
+        "q_g_pu": 3.3191343284947656e-05,
+        "u_c_ref_pu": 3.0872645375712437e-06,
+        "u_g_pu": 6.661338147750939e-16,
+        "u_c_hat_pu": 4.107373178463547e-06
+      },
+      "solver_refinement_pass": true
+    }
+  },
+  "pairwise_rms_difference_pu": {
+    "motulator": {
+      "p_g_pu": 0.0065202346708460425,
+      "q_g_pu": 0.005269722083144609,
+      "u_c_ref_pu": 0.001975813253195095
+    },
+    "paper": {
+      "p_g_pu": 0.011493503569337352,
+      "q_g_pu": 0.014374393005808473,
+      "u_c_ref_pu": 0.0031451227017702805
+    }
+  },
+  "ideal_loss_compensated_equilibrium": {
+    "conditions": "1 p.u. grid voltage and 1 p.u. quasi-static converter voltage, low-angle branch",
+    "formula": "Q = (sqrt(1 - (X * P)^2) - 1) / X",
+    "rated_q_pu": -0.6112803094302024
+  },
+  "all_solver_refinement_checks_pass": true
+}

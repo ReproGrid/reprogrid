@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TIE.2018.2875669",
+  "source_version": "accepted_author_manuscript",
+  "source_path": "research/feasibility_batch1/sources/psc_transient_design2018.pdf",
+  "source_sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "classification_legend": {
+    "explicit": "Stated in article or table",
+    "figure_inferred": "Read from figure axes/topology",
+    "consistency_inferred": "Derived by consistency, not explicitly stated",
+    "derived": "Independent algebra",
+    "reproducer_choice": "Must be frozen before simulation"
+  },
+  "voltage_convention": {
+    "table_value_V": 220000,
+    "table_unit_label": "kV, 50 Hz, 1 p.u.",
+    "phase_rms_or_peak_explicit": false,
+    "adopted_interpretation": "phase_RMS",
+    "classification": "consistency_inferred",
+    "equation_2_input": "phase_peak=sqrt(2)*phase_RMS",
+    "warning": "Line-line RMS or phase-peak interpretation does not reproduce Type-I equilibrium targets."
+  },
+  "gain": {
+    "SI": 9.3e-9,
+    "reported_pu": 0.01,
+    "Pref_base_W": 1000000000,
+    "a_per_second": 9.3,
+    "conventional_pu_using_total_3phase_power_and_omega_base": 0.029602819415092536,
+    "normalization_resolved": false
+  },
+  "parameter_branches": {
+    "pu_primary": {
+      "type_I": {
+        "XT": 0.02,
+        "Xg1": 0.85,
+        "Xg2": 0.85
+      },
+      "type_II": {
+        "XT": 0.8,
+        "Xg1": 0.15,
+        "Xg2": 0.8,
+        "Xgnd": 0.5
+      },
+      "Lf": 0.075
+    },
+    "SI_sensitivity": {
+      "type_I": {
+        "LT_H": 0.01,
+        "Lg1_H": 0.39,
+        "Lg2_H": 0.39
+      },
+      "type_II": {
+        "LT_H": 0.37,
+        "Lg1_H": 0.07,
+        "Lg2_H": 0.37,
+        "Lgnd_H": 0.23
+      },
+      "Lf_H": 0.035,
+      "phase_voltage_rms_V": 220000,
+      "frequency_Hz": 50
+    }
+  },
+  "topology": {
+    "normal": "PCC -> XT -> (Xg1 || Xg2) -> infinite bus; Xf is upstream of regulated PCC.",
+    "type_I_event": "Disconnect line 2; post=X_T+X_g1.",
+    "type_II_fault": "Shunt Xgnd from sending-end node of line 2 after S3 (after XT, before Xg2), per Fig.1; line 2 remains connected during fault.",
+    "clearing": "Open both S3 and S4, disconnecting line 2 and its fault branch.",
+    "reclosing_in_original": false,
+    "fault_transfer_reactance": "XT + Xpar + XT*Xpar/Xgnd",
+    "fault_thevenin_voltage": "Vg*Xgnd/(Xgnd+Xpar)",
+    "fault_thevenin_reactance": "XT+(Xpar||Xgnd)",
+    "current_warning": "Do not calculate current from unchanged Vg in series with Xfault_transfer; this value only matches active-power transfer."
+  },
+  "figure_protocol": {
+    "display_window_s": [
+      2,
+      7
+    ],
+    "disturbance_time_s": 3,
+    "absolute_time_classification": "figure_inferred",
+    "explicit_clearing_durations_s": [
+      0.5,
+      0.7
+    ],
+    "derived_absolute_clearing_times_s": [
+      3.5,
+      3.7
+    ],
+    "unwrapped_state_recommended": true,
+    "wrapped_display_interval_rad": [
+      0,
+      6.283185307179586
+    ]
+  },
+  "article_targets": {
+    "type_I_angles_deg": [
+      26.4,
+      60.5
+    ],
+    "type_II_CCA_deg": 108,
+    "type_II_CCT_s": 0.58,
+    "current_limit_pu": 1.8
+  },
+  "consistency_calculations": {
+    "kind": "algebra and scalar definite integral, no trajectory simulation",
+    "pu_geometry_with_SI_gain": {
+      "type_I_angles_deg": [
+        26.423338765896762,
+        60.45863949985721
+      ],
+      "type_II_Xpre": 0.9263157894736842,
+      "type_II_Xpost": 0.95,
+      "type_II_Xfault_transfer": 1.128421052631579,
+      "type_II_delta0_deg": 67.86760859852433,
+      "type_II_CCA_deg": 108.19487233876676,
+      "type_II_CCT_s": 0.5802698165663497
+    },
+    "rounded_SI_geometry_with_phase_RMS_voltage": {
+      "type_I_angles_deg": [
+        26.33024855764743,
+        59.93441753924424
+      ],
+      "type_II_CCA_deg": 107.82465251977904,
+      "type_II_CCT_s": 0.5586715730755889
+    },
+    "source_of_difference": "Table SI and pu columns are rounded and base definitions are incomplete; retain branches without retuning."
+  },
+  "assumptions": [
+    "single_converter_infinite_bus",
+    "fixed_DC_link",
+    "constant_PCC_voltage_magnitude",
+    "instantaneous_voltage_inner_loop_in_reduced_model",
+    "pure_inductance_network",
+    "no_current_limit_activation_for_analyzed_PSC_branch"
+  ],
+  "unresolved_items": [
+    {
+      "id": "current_limit_scope",
+      "severity": "scope_limit",
+      "detail": "Current base/detection unspecified; conventional post-fault Ipu(pi)=2/.95=2.105>1.8, so scalar late-clearing restoration does not establish complete limiter-equipped-system success."
+    },
+    {
+      "id": "detailed_loops",
+      "severity": "missing_implementation",
+      "detail": "Voltage/current/PLL loop gains, modulation/sampling/delay and switching/return logic not fully provided."
+    },
+    {
+      "id": "raw_data",
+      "severity": "missing_data",
+      "detail": "No raw simulation/experimental trajectory or executable model in inspected article."
+    },
+    {
+      "id": "analytic_branches",
+      "severity": "implementation_guard",
+      "detail": "Real arctan Eq9-12 contains sqrt(a^2-b^2), requiring branch handling for a<=b and angle wrapping."
+    },
+    {
+      "id": "CCA_vs_CCT",
+      "severity": "claim_boundary",
+      "detail": "CCA fixed for given post-fault conditions; CCT also depends on fault-stage a,b and initial angle."
+    },
+    {
+      "id": "reclosing",
+      "severity": "out_of_original_scope",
+      "detail": "No reclosing time, synchronization check or reclosing test provided."
+    }
+  ],
+  "evidence_locations": {
+    "normal_and_fallback": "PDF p.4, Figs.3-4, III-A",
+    "fault_topology": "PDF p.3, Fig.1 and II-B; p.6 III-D",
+    "parameters": "PDF p.6 Table I",
+    "phase_portraits": "PDF p.6 Figs.7-8",
+    "angle_targets": "PDF p.7 IV-A-1",
+    "CCA_CCT_and_time": "PDF p.8 IV-A-2 and Fig.10",
+    "experimental_angle_wrapping": "PDF p.8 final paragraph"
+  },
+  "runtime": {
+    "agent": "/root/background",
+    "parent_agent": "/root",
+    "started_at_utc": "2026-11-11 03:32:32 UTC",
+    "completed_at_utc": "2026-11-11 03:37:21 UTC",
+    "measured_wall_clock_seconds": 289.047,
+    "clock_measurement": "Date.now elapsed across this delegated source audit; includes reading, rendering, algebra, writing and validation; excludes later parent work.",
+    "inherited_configuration": "Parent configuration inherited; exact model identifier not independently exposed in agent tools.",
+    "reasoning_effort": "未公开；未猜测",
+    "work_type": "Source audit plus algebra/scalar definite integral; no main trajectory simulation",
+    "writes_limited_to": "reproductions/2018_psc_transient/sources/source_audit.md and source_audit.json"
+  }
+}

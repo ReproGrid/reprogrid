@@ -1,0 +1,22 @@
+{
+  "doi": "10.1109/TIE.2019.2952824",
+  "state": "parked_missing_inputs",
+  "outcome": "original_case_not_executable_from_checked_public_inputs",
+  "reason_zh": "作者接收稿未锁定实际 SMO 增益、PI 整定与数字离散更新；延迟补偿仅有实验展示，缺同步原始数据。",
+  "scope_zh": "审计了 SMO 增益、PI、离散化与双采样配置；暂停原文条件仿真。",
+  "critical_gaps": [
+    "No numeric observer gain k or current-error tolerance ξ for the reported cases.",
+    "No published speed and d/q current PI gains and discrete integrator configuration.",
+    "No executable discrete SMO and angle/speed update sequence; switching period alone does not determine it.",
+    "No synchronized DSP ADC/PWM timing and raw before/after waveforms for the delay compensation experiments."
+  ],
+  "execution_kind": "source_audit_only",
+  "code_executed": false,
+  "clean_environment_replay_passed": null,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "anomaly_evidence": [],
+  "misconduct_allegation": null,
+  "report_sha256": "7729ad9431bf10db50c482ae3742fd5ec2d342288167a7ddf761bfdd83197c21",
+  "source_report_sha256": "90e5810ac6c0aabc3c9b2b262661c168d20eb8e11252058ee8fd662ed64837e8"
+}

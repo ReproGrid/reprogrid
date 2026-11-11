@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-11-11T03:51:55.556274+00:00",
+  "files": {
+    "protocol.json": "b876371d2dc02d4633679e7df29b0fe442c34ab600531f85a059022980d1572d",
+    "protocol_amendment_eq39.json": "26c8c5f47ecad0799a9503e3be1032efc84b4a369a8dd5c8d0cd4c9a56fccfdb",
+    "independent_derivation.md": "30c1ca806d884914e510e4b87246291c069a6a7a743b2d5343dc6602760b1f77",
+    "verifier.py": "f727de865b432abde8706cbbc41b11ab0d4da1bebe2214ba7bf182ab4d532d1b",
+    "results.json": "717d8299b8bd3d6da4b20f0bcaf7e4792927a37c229867b85b10c4bc71991fda",
+    "frequency_responses.npz": "0e5d585abb555a79516b71d1d82817179d4915316f1ea998fa1e522d264e9fae",
+    "fig5_independent.png": "ae28da46ca281018cf69edddbb7f2dec804ad6a7a52020bc04d157414e916751",
+    "verification_report.md": "811b4b86abeaf7fdd4c1b35f65f1f731eb420ff05274b7e0148529222f4a8a42",
+    "stage_record.json": "d1e35eb47dd7e476594ceaadd6c2907d171690ecc01b1d954dbeeb95f6e15fd0",
+    "results_initial_before_eq39_audit.json": "ee8860e7de39cf658153d7ce544c4a665ccfd6c2c549c253906a9c61a494af8a"
+  },
+  "source_pdf_sha256": "e45aa9f7dc1688da6f125144619fe742220c0766ed8487f4cac47ff8a12b02e5"
+}

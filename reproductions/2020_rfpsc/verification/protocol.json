@@ -1,0 +1,66 @@
+{
+  "protocol_version": 1,
+  "frozen_before_first_verifier_execution": true,
+  "independent_of_primary_implementation": true,
+  "primary_implementation_inspected": false,
+  "source_doi": "10.1109/TPEL.2020.2970991",
+  "source_url": "https://acris.aalto.fi/ws/portalfiles/portal/41217320/ELEC_Harnefors_etal_Reference_Feedforward_IEEETraPowEle_acceptedauthormanuscript.pdf",
+  "source_version": "Aalto accepted author manuscript, seven PDF pages including two cover pages",
+  "paper_page_to_pdf_page_offset": 2,
+  "scope": "Independent mathematical verification and continuous average-model trend reconstruction, not experimental replication",
+  "assumptions": {
+    "kappa": 1.0,
+    "V_pu": 1.0,
+    "omega1_normalized": 1.0,
+    "base_angular_frequency_rad_s": 314.1592653589793,
+    "grid_resistance_pu": 0.0,
+    "controller_delay_s": 0.0,
+    "pwm_and_switching_harmonics": "omitted as in theoretical analysis",
+    "full_filter_bandwidth_normalized": 0.1,
+    "analytic_filter_approximation": "Freeze filter perturbations at zero, retain their equilibrium state values",
+    "Ra_primary_pu": 0.2,
+    "Ra_alternative_pu": 0.34920634920634924,
+    "Ra_conflict": "Table I gives Ra=4.4 ohm and Zbase=12.6 ohm, but Ra=0.2 pu. The ratio is 0.34920635. The main branch uses the repeatedly stated 0.2 pu; the ratio is a labeled sensitivity branch.",
+    "full_model_grid_voltage_pu": 1.0,
+    "full_model_grid_voltage_status": "assumption consistent with nominal source voltage, not measured experimental trace"
+  },
+  "equilibrium": {
+    "controller_frame_current": "i0=id0+j iq0",
+    "power_reference": "r0=kappa*V*id0",
+    "grid_voltage_relation": "Vg*exp(-j delta0)=V-j*omega1*L*i0",
+    "delta0": "-arg(V-j*omega1*L*i0)",
+    "Vg": "abs(V-j*omega1*L*i0)",
+    "warning": "Arbitrary Figure 3 id0,iq0 cannot in general coexist with fixed Vg=V=1. Derive Vg from each stated operating point."
+  },
+  "figure3": {
+    "V": 1.0,
+    "omega1": 1.0,
+    "L": 0.5,
+    "Ra": 0.2,
+    "operating_points_id_iq": [[0.0, 0.0], [0.7, 0.7], [-0.7, 0.7], [-0.7, -0.7]],
+    "source": "Figure 3 caption and individual panel labels, printed page 3 / PDF page 5"
+  },
+  "figure5_6_trend_reconstruction": {
+    "grid_L_pu": [1.0, 0.1],
+    "event_times_s": [0.2, 0.4, 0.6, 0.8],
+    "reference_levels_pu": [0.4, 0.8, 1.0, 0.0],
+    "reference_status": "visually inferred from plotted axes and dashed references; not explicitly tabulated by authors",
+    "initial_conditions": "zero current, zero filter state, delta=0, Pref=0; ideal nominal-grid equilibrium",
+    "experimental_raw_data": "not supplied in this manuscript or inspected source",
+    "missing_experimental_details": ["DC voltage and voltage-command limits", "actual voltage and current measurement/filtering chains", "control calculation and PWM delay", "grid impedance resistive component and actual measured voltage", "unambiguous physical Ra due to Table I conflict", "exact raw reference and measurement samples"],
+    "figure2": "linearized closed-loop block diagram, not a response curve",
+    "figure4": "experimental setup schematic, not a response curve"
+  },
+  "checks": [
+    {"id": "equilibrium", "method": "fixed-grid-frame nonlinear residual at each Figure 3 point", "tolerance_max_abs": 1e-12},
+    {"id": "jacobian", "method": "explicit fixed-grid-frame linearization against centered finite differences", "tolerance_max_abs": 2e-8},
+    {"id": "closed_loop_tf", "method": "state-space resolvent against Eq.19 at 300 frequencies for both controllers and four Figure 3 points", "tolerance_max_abs": 2e-8},
+    {"id": "pole_invariance", "method": "compare physical H=0 state matrices for PSC and RFPSC", "tolerance_max_abs": 1e-12},
+    {"id": "zero_current_factorization", "method": "exact rational symbolic factorization and numerical first-order step", "tolerance_step_max_abs": 1e-9},
+    {"id": "small_signal", "method": "nonlinear fixed-grid-frame perturbation against analytic state response at input step 1e-5", "tolerance_normalized_max_error": 0.001},
+    {"id": "solver_crosscheck", "method": "DOP853 versus Radau on identical full-filter piecewise cases", "tolerance_power_max_abs_pu": 2e-7},
+    {"id": "full_filter_boundary", "method": "compare finite-filter poles/response to frozen-filter approximation", "verdict": "report approximation difference, no universal equality gate"},
+    {"id": "experimental_trends", "method": "report first-step rise/overshoot and voltage extrema for Figure 5/6-like sequences", "verdict": "qualitative comparison only, not an original-data error metric"}
+  ],
+  "invalid_inferences": ["calling simulation discrepancies misconduct", "calling copied authors code independent reproduction", "claiming exact original experimental waveforms reconstructed", "treating H=0 perturbation model as zero steady filter current", "claiming same exact full-filter poles merely from Eq.19", "claiming arbitrary-R/X robustness from the pure-L analysis"]
+}

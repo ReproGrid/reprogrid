@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2021.3114706",
+  "frozen_utc": "2026-11-11T04:50:38.319740+00:00",
+  "scope": "Section VI-C resonant boost topology and DMM equations, thesis PWM, offline float64. Hardware, EVBC/NTT/SDD, and original initial conditions are outside the verified scope.",
+  "network": {
+    "unknown_nodes": ["sw", "cr_plus", "aux", "out"],
+    "source": {"name": "Vg", "p": "input", "n": "0", "value": "150"},
+    "dynamic": [
+      {"name": "Lg", "kind": "L", "p": "input", "n": "sw", "value": "0.001", "state": "ig_A"},
+      {"name": "Lr", "kind": "L", "p": "cr_plus", "n": "aux", "value": "0.000032", "state": "ir_A"},
+      {"name": "Cs", "kind": "C", "p": "sw", "n": "0", "value": "0.00000000032", "state": "vCs_V"},
+      {"name": "Cr", "kind": "C", "p": "cr_plus", "n": "sw", "value": "0.0000000032", "state": "vCr_V"},
+      {"name": "Co", "kind": "C", "p": "out", "n": "0", "value": "0.0001", "state": "vo_V"}
+    ],
+    "controlled": [
+      {"name": "S1", "p": "sw", "n": "0"},
+      {"name": "S2", "p": "aux", "n": "out"}
+    ],
+    "diodes": [
+      {"name": "D1", "p": "0", "n": "sw"},
+      {"name": "D2", "p": "out", "n": "aux"},
+      {"name": "D3", "p": "sw", "n": "out"},
+      {"name": "D4", "p": "sw", "n": "cr_plus"}
+    ],
+    "resistors": [{"name": "RL", "p": "out", "n": "0", "value": "250"}]
+  },
+  "resistance_model_ohm": {
+    "on": "0.001", "off": "100000",
+    "provenance": "Working RSM settings. No RBC-specific resistor values verified; not fitted to published curves. All six semiconductors use finite two-state resistors; no forward drop, gating interlock, or artificial diode mask exclusions."
+  },
+  "pwm": {
+    "period_ns": 10000,
+    "S1_on_ns": 540,
+    "S1_off_ns": 5000,
+    "S2_on_ns": 0,
+    "S2_off_ns": 1430,
+    "semantics": "Evaluate inclusive-on/exclusive-off gate intervals at integer sample t_n, n>=1; no sub-step switching correction. An edge occurs at first sample at or after its specified time. The fixed-edge refinement holds the effective 100 ns edge times constant."
+  },
+  "initialization": "All five trapezoid Norton history terms and state variables zero at t=0, Vg=0 at t=0, then 150 V for all samples n>=1; source start and history are reproduction assumptions.",
+  "primary": {"step_ns": 100, "stop_ns": 38000000, "view_start_ns": 37006000, "view_stop_ns": 37022000},
+  "refinement": {"stop_ns": 2000000, "steps_ns": [100, 50, 25, 10], "fixed_100ns_edges_steps_ns": [100, 50, 25]},
+  "probes": {"seed": 3114706, "random_per_gate": 512, "history_scales_a": [4.0, 5.0, 2.0, 10.0, 650000.0], "witness_diode_voltage_v": 1.0},
+  "criteria": {
+    "lookup_relative_tie": 4e-15,
+    "reference_tie_voltage_v": 2e-10,
+    "mode_compare_min_abs_diode_v": 1e-7,
+    "max_relative_state_l2": 1e-6,
+    "max_relative_probe_voltage_peak_error": 1e-8,
+    "max_relative_kcl": 1e-9,
+    "max_relative_trapezoid_residual": 1e-8,
+    "max_diode_sign_violation_v": 1e-8
+  },
+  "published_targets": {
+    "feasible_combinations": 10, "W_shape": [14, 6], "F_shape": [5, 6],
+    "table_VII_fpga_error_pct": [0.00825, 0.00803, 0.056, 0.0222, 0.00912],
+    "target_interpretation": "Map-size numbers are comparison targets and are not used to prune or fit this model. Table VII errors compare FPGA with an offline reference and are not thresholds for this float64 replay."
+  }
+}

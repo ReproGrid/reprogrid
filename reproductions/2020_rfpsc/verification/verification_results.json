@@ -1,0 +1,848 @@
+{
+  "independence": "Only accepted manuscript and local protocol read; no primary implementation or author code imported",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "matplotlib": "3.11.2"
+  },
+  "source_sha256": "55d87c408fe93ba20b1df49110cf50fcef934cd0ebd962c2667ea9f033bf7f38",
+  "protocol_sha256": "d0846bea58aff0ad3338cfc7ce328b82705b1e962022ec992a1b4fdf3fd591ae",
+  "verifier_sha256": "e39265c457a840afe5459af31abc876239b3f3d26d553107bd85a17f1a72be64",
+  "state_space_vs_paper_checks": [
+    {
+      "id0": 0.0,
+      "iq0": 0.0,
+      "xi": 0,
+      "Vg": 1.0,
+      "delta0_rad": -0.0,
+      "equilibrium_max_residual": 0.0,
+      "jacobian_max_abs_error": 9.952005886049164e-11,
+      "eq19_resolvent_max_abs_error": 5.978733960281817e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.4000000000000001,
+          0.0
+        ],
+        [
+          -0.1999999999999999,
+          0.979795897113271
+        ],
+        [
+          -0.1999999999999999,
+          -0.979795897113271
+        ]
+      ],
+      "zeros": [],
+      "passed": true
+    },
+    {
+      "id0": 0.0,
+      "iq0": 0.0,
+      "xi": 1,
+      "Vg": 1.0,
+      "delta0_rad": -0.0,
+      "equilibrium_max_residual": 0.0,
+      "jacobian_max_abs_error": 9.952005886049164e-11,
+      "eq19_resolvent_max_abs_error": 3.925231146709438e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.4000000000000001,
+          0.0
+        ],
+        [
+          -0.1999999999999999,
+          0.979795897113271
+        ],
+        [
+          -0.1999999999999999,
+          -0.979795897113271
+        ]
+      ],
+      "zeros": [
+        [
+          -0.20000000000000007,
+          0.9797958971132714
+        ],
+        [
+          -0.20000000000000007,
+          -0.9797958971132714
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": 0.7,
+      "iq0": 0.7,
+      "xi": 0,
+      "Vg": 1.3946325680981353,
+      "delta0_rad": 0.25367409613864267,
+      "equilibrium_max_residual": 2.220446049250313e-16,
+      "jacobian_max_abs_error": 8.196698875195807e-11,
+      "eq19_resolvent_max_abs_error": 6.206335383118183e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.5322713256328407,
+          0.0
+        ],
+        [
+          -0.20386433718357944,
+          0.9494298552398538
+        ],
+        [
+          -0.20386433718357944,
+          -0.9494298552398538
+        ]
+      ],
+      "zeros": [
+        [
+          -0.0,
+          1.8934473473384092
+        ],
+        [
+          0.0,
+          -1.8934473473384092
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": 0.7,
+      "iq0": 0.7,
+      "xi": 1,
+      "Vg": 1.3946325680981353,
+      "delta0_rad": 0.25367409613864267,
+      "equilibrium_max_residual": 2.220446049250313e-16,
+      "jacobian_max_abs_error": 1.2209816491193237e-10,
+      "eq19_resolvent_max_abs_error": 7.786725208595148e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.5322713256328407,
+          0.0
+        ],
+        [
+          -0.20386433718357944,
+          0.9494298552398538
+        ],
+        [
+          -0.20386433718357944,
+          -0.9494298552398538
+        ]
+      ],
+      "zeros": [
+        [
+          -3.837981053805306,
+          0.0
+        ],
+        [
+          -0.20958090166877477,
+          0.943503009441129
+        ],
+        [
+          -0.20958090166877477,
+          -0.943503009441129
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": -0.7,
+      "iq0": 0.7,
+      "xi": 0,
+      "Vg": 1.3946325680981353,
+      "delta0_rad": -0.25367409613864267,
+      "equilibrium_max_residual": 2.220446049250313e-16,
+      "jacobian_max_abs_error": 1.6413767567335924e-10,
+      "eq19_resolvent_max_abs_error": 8.005932084973442e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.5322713256328412,
+          0.0
+        ],
+        [
+          -0.2038643371835801,
+          0.9494298552398546
+        ],
+        [
+          -0.2038643371835801,
+          -0.9494298552398546
+        ]
+      ],
+      "zeros": [
+        [
+          -0.0,
+          1.8934473473384092
+        ],
+        [
+          0.0,
+          -1.8934473473384092
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": -0.7,
+      "iq0": 0.7,
+      "xi": 1,
+      "Vg": 1.3946325680981353,
+      "delta0_rad": -0.25367409613864267,
+      "equilibrium_max_residual": 2.220446049250313e-16,
+      "jacobian_max_abs_error": 1.6413767567335924e-10,
+      "eq19_resolvent_max_abs_error": 6.662151249755524e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.5322713256328412,
+          0.0
+        ],
+        [
+          -0.2038643371835801,
+          0.9494298552398546
+        ],
+        [
+          -0.2038643371835801,
+          -0.9494298552398546
+        ]
+      ],
+      "zeros": [
+        [
+          3.841413973967479,
+          0.0
+        ],
+        [
+          -0.1921355584123115,
+          0.9467688325555723
+        ],
+        [
+          -0.1921355584123115,
+          -0.9467688325555723
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": -0.7,
+      "iq0": -0.7,
+      "xi": 0,
+      "Vg": 0.73824115301167,
+      "delta0_rad": -0.4939413689195812,
+      "equilibrium_max_residual": 5.551115123125783e-17,
+      "jacobian_max_abs_error": 2.0861223859469646e-10,
+      "eq19_resolvent_max_abs_error": 8.005932084973442e-16,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.2523041866649434,
+          0.0
+        ],
+        [
+          -0.20384790666752864,
+          1.0077612169343808
+        ],
+        [
+          -0.20384790666752864,
+          -1.0077612169343808
+        ]
+      ],
+      "zeros": [
+        [
+          1.3802691248966115,
+          0.0
+        ],
+        [
+          -1.3802691248966115,
+          0.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "id0": -0.7,
+      "iq0": -0.7,
+      "xi": 1,
+      "Vg": 0.73824115301167,
+      "delta0_rad": -0.4939413689195812,
+      "equilibrium_max_residual": 5.551115123125783e-17,
+      "jacobian_max_abs_error": 2.0861223859469646e-10,
+      "eq19_resolvent_max_abs_error": 1.0016071625299566e-15,
+      "xi_state_matrix_difference": 0.0,
+      "poles": [
+        [
+          -0.2523041866649434,
+          0.0
+        ],
+        [
+          -0.20384790666752864,
+          1.0077612169343808
+        ],
+        [
+          -0.20384790666752864,
+          -1.0077612169343808
+        ]
+      ],
+      "zeros": [
+        [
+          1.8663212329606385,
+          0.0
+        ],
+        [
+          -0.20458918790889008,
+          0.989416197659361
+        ],
+        [
+          -0.20458918790889008,
+          -0.989416197659361
+        ]
+      ],
+      "passed": true
+    }
+  ],
+  "symbolic_zero_current_factorization": {
+    "identity_residual": "0",
+    "factored_numerator": "alpha*(alpha*s + omega**2 + s**2)",
+    "factored_denominator": "(alpha + s)*(alpha*s + omega**2 + s**2)",
+    "passed": true
+  },
+  "zero_current_steps": [
+    {
+      "L": 0.1,
+      "first_order_max_abs_error": 3.6637359812630166e-15,
+      "small_signal_step": 1e-05,
+      "nonlinear_normalized_max_abs_error": 4.978527452514925e-07,
+      "theoretical_rise_10_90_ms": 3.496991525660598,
+      "passed": true
+    },
+    {
+      "L": 0.5,
+      "first_order_max_abs_error": 7.771561172376096e-16,
+      "small_signal_step": 1e-05,
+      "nonlinear_normalized_max_abs_error": 5.07125066329106e-07,
+      "theoretical_rise_10_90_ms": 17.48495762830299,
+      "passed": true
+    },
+    {
+      "L": 1.0,
+      "first_order_max_abs_error": 7.771561172376096e-16,
+      "small_signal_step": 1e-05,
+      "nonlinear_normalized_max_abs_error": 5.053048905967472e-07,
+      "theoretical_rise_10_90_ms": 34.96991525660598,
+      "passed": true
+    }
+  ],
+  "figure3_polezero": [
+    {
+      "id0": 0.0,
+      "iq0": 0.0,
+      "pole_positive_imag": [
+        [
+          -0.1999999999999999,
+          0.979795897113271
+        ]
+      ],
+      "zero_positive_imag": [
+        [
+          -0.20000000000000007,
+          0.9797958971132714
+        ]
+      ],
+      "distance": 4.742874840267547e-16
+    },
+    {
+      "id0": 0.7,
+      "iq0": 0.7,
+      "pole_positive_imag": [
+        [
+          -0.20386433718357944,
+          0.9494298552398538
+        ]
+      ],
+      "zero_positive_imag": [
+        [
+          -0.20958090166877477,
+          0.943503009441129
+        ]
+      ],
+      "distance": 0.00823447694970717
+    },
+    {
+      "id0": -0.7,
+      "iq0": 0.7,
+      "pole_positive_imag": [
+        [
+          -0.2038643371835801,
+          0.9494298552398546
+        ]
+      ],
+      "zero_positive_imag": [
+        [
+          -0.1921355584123115,
+          0.9467688325555723
+        ]
+      ],
+      "distance": 0.012026857161853453
+    },
+    {
+      "id0": -0.7,
+      "iq0": -0.7,
+      "pole_positive_imag": [
+        [
+          -0.20384790666752864,
+          1.0077612169343808
+        ]
+      ],
+      "zero_positive_imag": [
+        [
+          -0.20458918790889008,
+          0.989416197659361
+        ]
+      ],
+      "distance": 0.01835998992591348
+    }
+  ],
+  "full_filter_sequences": [
+    {
+      "rise_10_90_ms": 26.86146792915631,
+      "overshoot_percent_reference": 0.7650919183674054,
+      "final_window_mean_pu": 0.39992167196274137,
+      "L": 1.0,
+      "Ra": 0.2,
+      "controller": "PSC",
+      "power_solver_max_abs_difference": 3.837203887968599e-10,
+      "voltage_magnitude_min": 0.9502404957167102,
+      "voltage_magnitude_max": 1.1467977041278272,
+      "function_evaluations_DOP853": 6829,
+      "function_evaluations_Radau": 59676,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 3.837203887968599e-10
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 36.454196656455665,
+      "overshoot_percent_reference": 0.0,
+      "final_window_mean_pu": 0.3998681000995156,
+      "L": 1.0,
+      "Ra": 0.2,
+      "controller": "RFPSC",
+      "power_solver_max_abs_difference": 2.5332519415499632e-09,
+      "voltage_magnitude_min": 0.8013319033058867,
+      "voltage_magnitude_max": 1.0800242891272098,
+      "function_evaluations_DOP853": 4720,
+      "function_evaluations_Radau": 21116,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 2.5332519415499632e-09
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 9.73470670376686,
+      "overshoot_percent_reference": 39.29069162749571,
+      "final_window_mean_pu": 0.39954295718875144,
+      "L": 0.1,
+      "Ra": 0.2,
+      "controller": "PSC",
+      "power_solver_max_abs_difference": 1.3644640028953603e-08,
+      "voltage_magnitude_min": 0.9078095761576562,
+      "voltage_magnitude_max": 1.1662681574599945,
+      "function_evaluations_DOP853": 6772,
+      "function_evaluations_Radau": 31544,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 1.3644640028953603e-08
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 3.396436581301787,
+      "overshoot_percent_reference": 0.0,
+      "final_window_mean_pu": 0.3999992013555655,
+      "L": 0.1,
+      "Ra": 0.2,
+      "controller": "RFPSC",
+      "power_solver_max_abs_difference": 5.034093475408952e-09,
+      "voltage_magnitude_min": 0.8000007840558842,
+      "voltage_magnitude_max": 1.0800001556096677,
+      "function_evaluations_DOP853": 4804,
+      "function_evaluations_Radau": 55940,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 4.2551994050565867e-07
+        },
+        {
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "max_power_difference": 5.034093475408952e-09
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 10.235686865023574,
+      "overshoot_percent_reference": 3.35407598133175,
+      "final_window_mean_pu": 0.3997996938662453,
+      "L": 1.0,
+      "Ra": 0.34920634920634924,
+      "controller": "PSC",
+      "power_solver_max_abs_difference": 8.036373788655737e-10,
+      "voltage_magnitude_min": 0.8785217310556602,
+      "voltage_magnitude_max": 1.4595444661109327,
+      "function_evaluations_DOP853": 5923,
+      "function_evaluations_Radau": 49005,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 8.036373788655737e-10
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 20.61957235179482,
+      "overshoot_percent_reference": 0.0,
+      "final_window_mean_pu": 0.3999349589338071,
+      "L": 1.0,
+      "Ra": 0.34920634920634924,
+      "controller": "RFPSC",
+      "power_solver_max_abs_difference": 1.4278564719472087e-09,
+      "voltage_magnitude_min": 0.6487934993358683,
+      "voltage_magnitude_max": 1.1397012747755275,
+      "function_evaluations_DOP853": 4639,
+      "function_evaluations_Radau": 23319,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 1.4278564719472087e-09
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 38.830282531556904,
+      "overshoot_percent_reference": 42.34745577777269,
+      "final_window_mean_pu": 0.4360319188106658,
+      "L": 0.1,
+      "Ra": 0.34920634920634924,
+      "controller": "PSC",
+      "power_solver_max_abs_difference": 3.37084875567939e-08,
+      "voltage_magnitude_min": 0.3480160280075925,
+      "voltage_magnitude_max": 2.186624269437878,
+      "function_evaluations_DOP853": 18226,
+      "function_evaluations_Radau": 47470,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 3.37084875567939e-08
+        }
+      ],
+      "passed": true
+    },
+    {
+      "rise_10_90_ms": 1.8962697712603116,
+      "overshoot_percent_reference": 0.00014667140633972675,
+      "final_window_mean_pu": 0.4000002842843287,
+      "L": 0.1,
+      "Ra": 0.34920634920634924,
+      "controller": "RFPSC",
+      "power_solver_max_abs_difference": 3.947985494079376e-09,
+      "voltage_magnitude_min": 0.6507943638743285,
+      "voltage_magnitude_max": 1.1396825396825396,
+      "function_evaluations_DOP853": 5320,
+      "function_evaluations_Radau": 19113,
+      "solver_validation_attempts": [
+        {
+          "rtol": 2e-10,
+          "atol": 2e-12,
+          "max_power_difference": 3.947985494079376e-09
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "finite_filter_approximation": [
+    {
+      "L": 0.1,
+      "controller": "PSC",
+      "frozen_poles": [
+        [
+          -0.9999999999999989,
+          4.448622001665932e-08
+        ],
+        [
+          -0.9999999999999989,
+          -4.448622001665932e-08
+        ],
+        [
+          -2.000000000000001,
+          0.0
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -1.9533115301160828,
+          0.0
+        ],
+        [
+          -1.719930795630835,
+          0.0
+        ],
+        [
+          -0.22744751246650835,
+          0.17637581989016696
+        ],
+        [
+          -0.22744751246650835,
+          -0.17637581989016696
+        ],
+        [
+          -0.07186264882246496,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 0.47930112175347417,
+      "status": "approximation characterization, not equality test"
+    },
+    {
+      "L": 0.1,
+      "controller": "RFPSC",
+      "frozen_poles": [
+        [
+          -0.9999999999999989,
+          4.448622001665932e-08
+        ],
+        [
+          -0.9999999999999989,
+          -4.448622001665932e-08
+        ],
+        [
+          -2.000000000000001,
+          0.0
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -0.1,
+          0.0
+        ],
+        [
+          -0.13667504190861435,
+          0.0
+        ],
+        [
+          -0.5000000003788694,
+          0.0
+        ],
+        [
+          -1.4633249570826454,
+          0.0
+        ],
+        [
+          -2.000000000132271,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 1.4169460876373268e-10,
+      "status": "approximation characterization, not equality test"
+    },
+    {
+      "L": 0.5,
+      "controller": "PSC",
+      "frozen_poles": [
+        [
+          -0.4000000000000001,
+          0.0
+        ],
+        [
+          -0.1999999999999999,
+          0.979795897113271
+        ],
+        [
+          -0.1999999999999999,
+          -0.979795897113271
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -0.19527987654865236,
+          0.9366983893504959
+        ],
+        [
+          -0.19527987654865236,
+          -0.9366983893504959
+        ],
+        [
+          -0.39171863793242334,
+          0.0
+        ],
+        [
+          -0.1352657657696211,
+          0.0
+        ],
+        [
+          -0.08245584310113051,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 0.22148417906003115,
+      "status": "approximation characterization, not equality test"
+    },
+    {
+      "L": 0.5,
+      "controller": "RFPSC",
+      "frozen_poles": [
+        [
+          -0.4000000000000001,
+          0.0
+        ],
+        [
+          -0.1999999999999999,
+          0.979795897113271
+        ],
+        [
+          -0.1999999999999999,
+          -0.979795897113271
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -0.1,
+          0.0
+        ],
+        [
+          -0.1978475124328114,
+          0.9589491134183336
+        ],
+        [
+          -0.1978475124328114,
+          -0.9589491134183336
+        ],
+        [
+          -0.10430497502932078,
+          0.0
+        ],
+        [
+          -0.40000000000553654,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 2.4053955461109676e-10,
+      "status": "approximation characterization, not equality test"
+    },
+    {
+      "L": 1.0,
+      "controller": "PSC",
+      "frozen_poles": [
+        [
+          -0.1999999999999998,
+          0.0
+        ],
+        [
+          -0.09999999999999984,
+          0.9949874371066193
+        ],
+        [
+          -0.09999999999999984,
+          -0.9949874371066193
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -0.09784905474303221,
+          0.974475143500074
+        ],
+        [
+          -0.09784905474303221,
+          -0.974475143500074
+        ],
+        [
+          -0.18967036654618402,
+          0.0
+        ],
+        [
+          -0.13019088016051775,
+          0.0
+        ],
+        [
+          -0.08444064375747412,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 0.20793223772275296,
+      "status": "approximation characterization, not equality test"
+    },
+    {
+      "L": 1.0,
+      "controller": "RFPSC",
+      "frozen_poles": [
+        [
+          -0.1999999999999998,
+          0.0
+        ],
+        [
+          -0.09999999999999984,
+          0.9949874371066193
+        ],
+        [
+          -0.09999999999999984,
+          -0.9949874371066193
+        ]
+      ],
+      "full_filter_poles_including_unobservable_zd_for_RFPSC": [
+        [
+          -0.1,
+          0.0
+        ],
+        [
+          -0.09896907665780844,
+          0.9848873988501858
+        ],
+        [
+          -0.09896907665780844,
+          -0.9848873988501858
+        ],
+        [
+          -0.10206184663258439,
+          0.0
+        ],
+        [
+          -0.2000000000020386,
+          0.0
+        ]
+      ],
+      "max_transfer_difference_on_frequency_grid": 2.505415107845401e-10,
+      "status": "approximation characterization, not equality test"
+    }
+  ],
+  "table_I_arithmetic": {
+    "Ra_ohm": 4.4,
+    "Zbase_ohm": 12.6,
+    "ratio": 0.34920634920634924,
+    "stated_Ra_pu": 0.2,
+    "ohms_implied_by_stated_pu": 2.52,
+    "finding": "internal normalization inconsistency in inspected manuscript; cause unknown"
+  },
+  "overall_checks_passed": true,
+  "scope_limit": "No hardware/data replication, no validation of switching, control delay, finite-resistance grids, or exact original experimental traces"
+}

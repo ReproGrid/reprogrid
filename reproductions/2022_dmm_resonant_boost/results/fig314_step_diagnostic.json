@@ -1,0 +1,54 @@
+{
+  "started_utc": "2026-11-11T04:55:38.615739+00:00",
+  "finished_utc": "2026-11-11T04:57:29.617666+00:00",
+  "wall_seconds": 111.00079129100777,
+  "scope": "Same gate rule, parameters, and initial state for all steps; extends the frozen refinement list to 38 ms for comparison with the published plot. No fitted shifts/gains. Different grids move gate times and change integration error.",
+  "per_step_ns": {
+    "100": {
+      "published_dmm_marker_relative_l2": 0.15754861764852598,
+      "origin": "frozen primary run"
+    },
+    "50": {
+      "edges_ns": {
+        "S1_on_ns": 550,
+        "S1_off_ns": 5000,
+        "S2_on_ns": 0,
+        "S2_off_ns": 1450
+      },
+      "dmm_steps_wall_seconds": 9.081382457981817,
+      "published_dmm_marker_relative_l2": 0.26393991350490226,
+      "min_max_current_a": [
+        -2.9102003166074764,
+        3.2483002638379728
+      ]
+    },
+    "25": {
+      "edges_ns": {
+        "S1_on_ns": 550,
+        "S1_off_ns": 5000,
+        "S2_on_ns": 0,
+        "S2_off_ns": 1450
+      },
+      "dmm_steps_wall_seconds": 24.95915466704173,
+      "published_dmm_marker_relative_l2": 0.29232560293708193,
+      "min_max_current_a": [
+        -2.88806848725455,
+        3.4124533784960165
+      ]
+    },
+    "10": {
+      "edges_ns": {
+        "S1_on_ns": 540,
+        "S1_off_ns": 5000,
+        "S2_on_ns": 0,
+        "S2_off_ns": 1430
+      },
+      "dmm_steps_wall_seconds": 76.33239441603655,
+      "published_dmm_marker_relative_l2": 0.3188534633517731,
+      "min_max_current_a": [
+        -2.8994724722585095,
+        3.4433318374734494
+      ]
+    }
+  }
+}

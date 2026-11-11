@@ -22,6 +22,7 @@
   "按领域查找论文，查看算法、开源代码、实验结果和参数缺口。": "Browse by field and inspect algorithms, open-source code, results and missing parameters.",
   "浏览复现目录": "Browse papers",
   "查看首篇试点": "View the pilot",
+  "GitHub 公开仓库": "GitHub repository",
   "RFPSC 试点 · 强网空载小信号计算": "RFPSC pilot · strong-grid, no-load small-signal model",
   "收录论文": "Papers indexed",
   "研究领域": "Research areas",
@@ -48,6 +49,8 @@
   "下一页": "Next",
   "算法与复现步骤": "Algorithm and reproduction steps",
   "运行代码": "Run the code",
+  "在 GitHub 查看源码": "View source on GitHub",
+  "在 GitHub 查看结果": "View results on GitHub",
   "Python 源码": "Python source",
   "运行配置": "Run configuration",
   "MIT 许可证": "MIT license",
@@ -108,5 +111,13 @@
   "交叉核对与复跑": "Cross-check and rerun",
   "按模型检查解析边界、步长或容差收敛，并用独立推导或实现交叉核对。复跑结果应能重新生成指标和曲线。": "Check analytical limits and convergence with respect to step size or tolerance. Cross-check with a separate derivation or implementation. A replay should regenerate the metrics and traces.",
   "限定实验结论": "Scope the conclusions",
-  "主机运行时间、FPGA 时序、合成数据辨识和物理硬件验证分别记录。引用数按 OpenAlex 快照标注日期。": "Record host runtime, FPGA timing, identification from synthetic data and hardware validation separately. Date citation counts using the OpenAlex snapshot."
+  "主机运行时间、FPGA 时序、合成数据辨识和物理硬件验证分别记录。引用数按 OpenAlex 快照标注日期。": "Record host runtime, FPGA timing, identification from synthetic data and hardware validation separately. Date citation counts using the OpenAlex snapshot.",
+  "源码、配置与复跑说明 ZIP": "Source, configuration and replay instructions (ZIP)",
+  "独立计算与干净环境复跑已通过，原硬件未定量复现。": "Independent calculations and clean-environment replays passed. The original hardware tests were not reproduced quantitatively.",
+  "已完成资料审计。原文算例尚未运行。": "Source audit complete. The published cases have not been run.",
+  "指标": "Metric",
+  "结果": "Result",
+  "证据状态 JSON": "Evidence status JSON",
+  "在 GitHub 查看完整报告": "Read the full report on GitHub",
+  "首篇小信号试点": "Original small-signal pilot"
 }

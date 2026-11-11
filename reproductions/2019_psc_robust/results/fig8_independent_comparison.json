@@ -1,0 +1,40 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "implementation_sha256": "3e61c65e296cff757d4614f8612ab5731680b4a9034390c9a16101b249507cc8",
+  "method": "Independent fixed-grid-frame PSC state model with virtual-speed and damping-filter states from Eqs. (27)-(30).",
+  "samples_per_response": 501,
+  "tolerance": 2e-07,
+  "cases": {
+    "vsm_H5": {
+      "scaled_frequency_errors": {
+        "gp": 7.091251362574619e-16,
+        "gc": 1.2165685004044557e-15,
+        "gd": 1.1471106150509031e-15
+      },
+      "active_closed_poles": {
+        "max_pole_distance_pu": 5.587856406832415e-16,
+        "rightmost_pole_real_pu": -0.0031830320837648984
+      },
+      "dc_closed_poles": {
+        "max_pole_distance_pu": 3.536113709135232e-16,
+        "rightmost_pole_real_pu": 0.017555571109689944
+      }
+    },
+    "vsm_H5_KD50": {
+      "scaled_frequency_errors": {
+        "gp": 7.332530384488256e-16,
+        "gc": 8.619568609061263e-16,
+        "gd": 9.186985139597508e-16
+      },
+      "active_closed_poles": {
+        "max_pole_distance_pu": 8.326672684688674e-16,
+        "rightmost_pole_real_pu": -0.003732015478446077
+      },
+      "dc_closed_poles": {
+        "max_pole_distance_pu": 1.6572774944741864e-15,
+        "rightmost_pole_real_pu": 0.012937035656824459
+      }
+    }
+  },
+  "passed": true
+}

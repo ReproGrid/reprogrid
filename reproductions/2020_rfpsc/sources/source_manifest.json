@@ -1,0 +1,14 @@
+{
+  "doi": "10.1109/TPEL.2020.2970991",
+  "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/6671cde6-9842-46e6-bb6f-b4ecf25777ae/content",
+  "sha256": "8420166351fbbc3b05a2932b55af0f3c17f0edfde8bb556c1ee5b773e9d4d391",
+  "downloaded_on_local": "2026-11-10",
+  "local_use": "research reference; excluded from publication handoff",
+  "version": "Aalto accepted author manuscript",
+  "download_attempts": [
+    {
+      "url": "https://acris.aalto.fi/ws/portalfiles/portal/41217320/ELEC_Harnefors_etal_Reference_Feedforward_IEEETraPowEle_acceptedauthormanuscript.pdf",
+      "status": "HTTP403"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "frozen_before_numeric_execution_utc": "2026-11-11T03:34:50.965921+00:00",
+  "paper_doi": "10.1109/TIE.2018.2875669",
+  "source_path": "research/feasibility_batch1/sources/psc_transient_design2018.pdf",
+  "source_sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "primary_implementation_read": false,
+  "other_agent_derivation_read": false,
+  "model": "delta_dot=a-b*sin(delta), a=Ki*Pref, b=Ki*Pmax; ideal fixed PCC voltage, no inner loop, no current limiter switching, pure inductive network",
+  "time_unit": "seconds",
+  "physical_gain_product_a_rad_s": 9.3,
+  "gain_provenance": "Table I: 9.3e-9 rad/(W s)*1e9 W; Table III: 9.3e-3*1e3 gives same 9.3",
+  "gain_pu_ambiguity": "The stated 0.01 pu gain has no explicit base definition. Do not substitute 0.01*2*pi*50 for a; use dimensional gain product.",
+  "type_I_pu": {
+    "XT": 0.02,
+    "Xg1": 0.85,
+    "Xg2": 0.85,
+    "fault": "disconnect line 2 permanently",
+    "Xpre_formula": "XT+Xg1*Xg2/(Xg1+Xg2)",
+    "Xpost_formula": "XT+Xg1",
+    "reported_initial_deg": 26.4,
+    "reported_final_deg": 60.5
+  },
+  "type_II_pu": {
+    "XT": 0.8,
+    "Xg1": 0.15,
+    "Xg2": 0.8,
+    "Xgnd": 0.5,
+    "fault_location": "Sending end of line 2 after S3 and before Xg2 as drawn in Figure 1; grounded common node after XT while both lines remain connected",
+    "B_formula": "Xg1*Xg2/(Xg1+Xg2)",
+    "Vth_formula": "Xgnd/(B+Xgnd)",
+    "Xth_formula": "XT+B*Xgnd/(B+Xgnd)",
+    "Pmax_fault_formula": "Vth/Xth",
+    "equivalent_transfer_X_formula": "XT+B+XT*B/Xgnd",
+    "post_formula": "Xpost=XT+Xg1, Vth=1",
+    "clearing_duration_s": [
+      0.5,
+      0.7
+    ],
+    "reported_CCA_deg": 108,
+    "reported_CCT_s": 0.58
+  },
+  "figures": {
+    "typeI": {
+      "analysis": 7,
+      "simulation": 9,
+      "experiment": 12
+    },
+    "typeII": {
+      "analysis": 8,
+      "simulation": 10,
+      "experiment": 13
+    },
+    "disturbance_start_s": 3,
+    "start_time_source": "visually read from Figure 9 and 10 axes",
+    "experiment_absolute_times": "not reconstructed, oscilloscope trigger origin not specified"
+  },
+  "methods": [
+    "Exact projective Riccati flow via 2x2 matrix exponential (independent of paper arctangent formula)",
+    "Direct scalar quadrature of 1/(a-b*sin(delta))",
+    "Brent root finding for critical angle and time",
+    "DOP853 scalar ODE only as an independent numerical cross-check",
+    "Direct nodal circuit solve to check fault Thevenin power and current"
+  ],
+  "gates": {
+    "equilibrium_angle_vs_report_deg": 0.15,
+    "CCA_vs_report_deg": 0.5,
+    "CCT_vs_report_s": 0.01,
+    "analytic_quadrature_CCT_max_abs_s": 1e-10,
+    "root_quadrature_CCT_max_abs_s": 1e-09,
+    "matrix_vs_ODE_max_abs_angle_rad": 2e-07,
+    "nodal_vs_Thevenin_max_abs_power_pu": 1e-12,
+    "nodal_kcl_max_abs": 1e-12,
+    "typeI_monotonic_and_no_overshoot_tolerance_rad": 1e-10
+  },
+  "current_scope_audit": {
+    "reported_limit_pu": 1.8,
+    "formula": "Ipu=abs(exp(j*delta)-Vth)/Xth",
+    "basis": "standard consistent three-phase power/phase-voltage normalization; actual paper current base not separately tabulated",
+    "interpretation": "Exceedance flags leaving the paper stated no-limiter PSC validity region; does not establish actual switch timing or full converter behavior"
+  },
+  "physical_sensitivity": {
+    "simulation_table": {
+      "P_W": 1000000000.0,
+      "V_table_V": 220000,
+      "f_Hz": 50,
+      "Ki": 9.3e-09,
+      "typeI_H": [
+        0.01,
+        0.39,
+        0.39
+      ],
+      "typeII_H": [
+        0.37,
+        0.07,
+        0.37,
+        0.23
+      ]
+    },
+    "experimental_table": {
+      "P_W": 1000,
+      "V_table_V": 50,
+      "f_Hz": 50,
+      "Ki": 0.0093,
+      "typeI_H": [
+        0.0005,
+        0.021,
+        0.021
+      ],
+      "typeII_H": [
+        0.019,
+        0.003,
+        0.019,
+        0.012
+      ]
+    },
+    "voltage_interpretation": "Treat table voltage as phase RMS only in labeled SI-sensitivity branch because it approximately reconciles listed inductance pu; power formula uses phase peaks sqrt(2)*Vrms. This is an inference, not an explicit table definition.",
+    "primary_parameters": "stated per-unit reactances plus dimensional a=9.3; never tune parameters to force reported CCT"
+  },
+  "boundary_tests": [
+    "Clear at CCT +/-1ms: same-well versus one-slip recapture in mathematical scalar model",
+    "Exactly at UEP is an unstable equilibrium boundary, not guaranteed attraction",
+    "Fault shunt Xgnd=.3,.5,.8 with fixed post-fault circuit: CCA unchanged but CCT changes",
+    "Arctangent primitive only real in a^2>b^2; use projective/hyperbolic representation for Type I and unwrap phase for multi-cycle travel"
+  ],
+  "excluded": [
+    "protection-device design",
+    "hardware replication",
+    "inner voltage controller reconstruction",
+    "PLL/current-controller switching dynamics",
+    "claiming reference plots quantitatively reproduced without raw data"
+  ]
+}

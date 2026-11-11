@@ -1,0 +1,105 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "method": "Grid-aligned real-valued Eq. (1), direct Eq. (10) with solved current derivative, and separately implemented Eq. (30). Shared protocol only.",
+  "solver": {
+    "method": "RK45",
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "max_step": 0.0005
+  },
+  "protocol_sha256": "b217a7ac065f4ed3fa1ea2c4676755c95db3aa9fda9bbd88db16bcc41f4f9178",
+  "implementation_sha256": "5638a6ac0130138345d37b5cfec314431578102c4f630481b150c506d88a2702",
+  "started_utc": "2026-11-11T04:15:26.517714+00:00",
+  "finished_utc": "2026-11-11T04:15:33.315303+00:00",
+  "wall_seconds": 6.797503916022833,
+  "cases": {
+    "do13_strong": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 2.2140965069095513e-17,
+      "eq19_min_abs_denominator": 0.9999999999999998
+    },
+    "do13_weak": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 5.903480829183572e-17,
+      "eq19_min_abs_denominator": 0.9728408815718658
+    },
+    "do12_weak": {
+      "sample_count": 7501,
+      "finite": true,
+      "eq19_sample_count": 80,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 2.421158976431692e-17,
+      "eq19_min_abs_denominator": 0.9907741013130265
+    },
+    "rfpsc_strong": {
+      "sample_count": 7501,
+      "finite": true
+    },
+    "rfpsc_weak": {
+      "sample_count": 7501,
+      "finite": true
+    },
+    "frequency_fig9": {
+      "sample_count": 6501,
+      "finite": true,
+      "eq19_sample_count": 68,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 2.3066401219629107e-17,
+      "eq19_min_abs_denominator": 1.0721835337589565
+    },
+    "mode_fig10": {
+      "sample_count": 5501,
+      "finite": true,
+      "eq19_sample_count": 59,
+      "eq19_speed_error": 2.220446049250313e-16,
+      "eq19_magnitude_derivative_error": 3.9508342578719274e-17,
+      "eq19_min_abs_denominator": 1.1372768057985418
+    }
+  },
+  "frequency_equilibria": [
+    {
+      "mode": "do12",
+      "p0": 0.0,
+      "p_derivative": -2.4999999995448197,
+      "v_derivative": 0.9999999998899777,
+      "p_at_49_hz": 0.04663046390826232,
+      "v_at_49_hz": 0.9801090825984392,
+      "max_equilibrium_residual": 5.134781488891349e-16
+    },
+    {
+      "mode": "do12",
+      "p0": 0.5,
+      "p_derivative": -2.2335507259302334,
+      "v_derivative": 1.0765141487900642,
+      "p_at_49_hz": 0.5411107149512593,
+      "v_at_49_hz": 0.9785793868247195,
+      "max_equilibrium_residual": 5.516420653606247e-16
+    },
+    {
+      "mode": "do13",
+      "p0": 0.0,
+      "p_derivative": -5.000000000400836,
+      "v_derivative": 1.0000000000343068,
+      "p_at_49_hz": 0.09836893304881654,
+      "v_at_49_hz": 0.9799974452278601,
+      "max_equilibrium_residual": 1.0269562977782698e-15
+    },
+    {
+      "mode": "do13",
+      "p0": 0.5,
+      "p_derivative": -5.731223559066189,
+      "v_derivative": 1.1500000000885802,
+      "p_at_49_hz": 0.6132707298474415,
+      "v_at_49_hz": 0.9768963106002924,
+      "max_equilibrium_residual": 4.996003610813204e-16
+    }
+  ],
+  "max_eq19_projection_error": 2.220446049250313e-16,
+  "passed": true
+}

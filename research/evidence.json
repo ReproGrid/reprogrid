@@ -1,0 +1,392 @@
+{
+  "10.1109/TPEL.2020.2970991": {
+    "id": "2020_rfpsc",
+    "figure": "step_responses_paper_pu.png",
+    "zh": {
+      "description": "在首篇小信号试点基础上，加入完整阶跃序列、参数表对照和独立平均模型。",
+      "algorithm": [
+        "按式 (19) 重建极点和零点；在零电流点检查参考前馈的极零相消。",
+        "分别使用原文标幺值和从欧姆换算的有源电阻，重跑两种网强下的 PSC 与 RFPSC。",
+        "用电网同步坐标系重新实现方程，独立比较轨迹。"
+      ],
+      "metrics": [
+        [
+          "数值检查",
+          "26 / 26"
+        ],
+        [
+          "完整阶跃序列",
+          "8"
+        ],
+        [
+          "原硬件波形",
+          "未定量复现"
+        ]
+      ],
+      "strengths": [
+        "受测的平均模型工况下，RFPSC 减弱了 PSC 的有功振荡；零电流点相消得到支持。"
+      ],
+      "limitations": [
+        "带载时不能把零电流条件下的极零相消推广为精确相消。模型未包含硬件限流和保护。"
+      ],
+      "gaps": [
+        "表 I 的有源电阻欧姆值与标幺值不一致。缺原始波形、原固件与完整实验寄生参数。"
+      ],
+      "caption": "基于原文标幺值重算的 PSC 与 RFPSC 有功功率响应。"
+    },
+    "en": {
+      "description": "Extends the small-signal pilot with complete step sequences, two interpretations of the parameter table, and an independent averaged model.",
+      "algorithm": [
+        "Rebuild poles and zeros from Eq. (19) and test reference-feedforward cancellation at zero current.",
+        "Run PSC and RFPSC at two grid strengths using the printed per-unit active resistance and the ohmic value converted to per unit.",
+        "Reimplement the equations in grid-synchronous coordinates and compare trajectories."
+      ],
+      "metrics": [
+        [
+          "Numerical checks",
+          "26 / 26"
+        ],
+        [
+          "Full step sequences",
+          "8"
+        ],
+        [
+          "Original hardware traces",
+          "No quantitative reproduction"
+        ]
+      ],
+      "strengths": [
+        "In the tested averaged model, RFPSC reduced the oscillation seen with PSC. The zero-current cancellation was supported."
+      ],
+      "limitations": [
+        "The exact cancellation at zero current does not generally carry over to loaded conditions. The model excludes hardware limiters and protection."
+      ],
+      "gaps": [
+        "Table I gives inconsistent ohmic and per-unit active resistance. Raw waveforms, firmware and full experimental parasitics are unavailable."
+      ],
+      "caption": "Computed PSC and RFPSC active-power responses using the printed per-unit parameters."
+    }
+  },
+  "10.1109/TIE.2018.2875669": {
+    "id": "2018_psc_transient",
+    "figure": "phase_portraits.png",
+    "zh": {
+      "description": "复核单变流器 PSC 暂态稳定边界，并检查故障清除时的电流是否越限。",
+      "algorithm": [
+        "用故障前、中、后的网络导纳建立相角标量模型。",
+        "按吸引区边界求临界清除角和时间，对照两套参数口径。",
+        "用独立的戴维南等效和标量闭式流对照数值轨迹。"
+      ],
+      "metrics": [
+        [
+          "数值检查",
+          "34 / 34"
+        ],
+        [
+          "临界清除角",
+          "108.195°"
+        ],
+        [
+          "临界清除时间",
+          "0.580270 s"
+        ],
+        [
+          "晚清除电流峰值",
+          "2.105 p.u."
+        ]
+      ],
+      "strengths": [
+        "相图可解释在早清除和未清除工况下的不同收敛行为。"
+      ],
+      "limitations": [
+        "0.7 s 晚清除算例超过 1.8 p.u. 电流门槛。标量模型中重新同步的结果不能代表实际限流系统。"
+      ],
+      "gaps": [
+        "缺原始 EMT 和硬件波形、内环设置和限流切换逻辑。SI 电感及控制增益的归一化需要推断。"
+      ],
+      "caption": "根据冻结协议重新计算的相图。"
+    },
+    "en": {
+      "description": "Checks the scalar transient stability boundary for a single converter with PSC and tests whether fault clearance exceeds the current threshold.",
+      "algorithm": [
+        "Build a scalar angle model using network admittance before, during and after the fault.",
+        "Compute the critical clearing angle and time from the attraction boundary under two parameter conventions.",
+        "Compare trajectories with an independent Thévenin-equivalent and closed-form scalar flow."
+      ],
+      "metrics": [
+        [
+          "Numerical checks",
+          "34 / 34"
+        ],
+        [
+          "Critical clearing angle",
+          "108.195°"
+        ],
+        [
+          "Critical clearing time",
+          "0.580270 s"
+        ],
+        [
+          "Late-clearance peak current",
+          "2.105 p.u."
+        ]
+      ],
+      "strengths": [
+        "The phase portrait explains the different convergence behaviors after early clearance and when the fault persists."
+      ],
+      "limitations": [
+        "The 0.7 s late-clearance case exceeds the 1.8 p.u. current threshold. Recapture in the scalar model does not establish recapture in a current-limited converter."
+      ],
+      "gaps": [
+        "Raw EMT and hardware traces, inner-loop settings and current-limiter transitions are unavailable. The SI inductance and gain normalization require inference."
+      ],
+      "caption": "Phase portraits calculated from the frozen protocol."
+    }
+  },
+  "10.1109/TIE.2018.2874584": {
+    "id": "2019_psc_robust",
+    "figure": "fig5_robustness_comparison.png",
+    "zh": {
+      "description": "复核 PSC 解析整定与稳定裕度，分别保留原图图注工况和反推工况。",
+      "algorithm": [
+        "重建功率同步环和直流电压环，计算频响与稳定裕度。",
+        "按原图图注及从曲线推断的两种无功电流条件运行图 5。",
+        "独立重算中间公式与图 8，比较两套频响。"
+      ],
+      "metrics": [
+        [
+          "数值检查",
+          "50 / 50"
+        ],
+        [
+          "SCR=1 高无功时直流相位裕度",
+          "13.51°"
+        ],
+        [
+          "图 5 灵敏度峰值最小的 SCR（图注 / 反推）",
+          "1 / 3"
+        ]
+      ],
+      "strengths": [
+        "解析整定可用于解释受测条件下的稳定裕度。"
+      ],
+      "limitations": [
+        "高无功注入加上极弱电网时，直流环相位裕度显著变小。附录若干中间公式与独立推导不一致。"
+      ],
+      "gaps": [
+        "表 I 的有源电阻单位不一致；图 7–8 滤波带宽沿用算例 1。缺原始硬件波形、限幅与延迟等数据。"
+      ],
+      "caption": "按图注和曲线反推的两种工况重算图 5 的裕度与灵敏度。"
+    },
+    "en": {
+      "description": "Checks analytical PSC tuning and stability margins, preserving both the caption and curve-inferred cases.",
+      "algorithm": [
+        "Rebuild the power synchronization and DC voltage loops and compute frequency responses and stability margins.",
+        "Evaluate Fig. 5 under the captioned reactive current and the value inferred from its curves.",
+        "Independently rederive intermediate equations and Fig. 8, then compare frequency responses."
+      ],
+      "metrics": [
+        [
+          "Numerical checks",
+          "50 / 50"
+        ],
+        [
+          "DC phase margin at SCR=1 with high reactive injection",
+          "13.51°"
+        ],
+        [
+          "SCR with lowest peak sensitivity in Fig. 5 (caption / inferred)",
+          "1 / 3"
+        ]
+      ],
+      "strengths": [
+        "Analytical tuning helps explain the stability margins in the tested cases."
+      ],
+      "limitations": [
+        "High reactive injection in a very weak grid reduces the DC loop phase margin. Several intermediate appendix expressions disagree with the independent derivation."
+      ],
+      "gaps": [
+        "Table I gives inconsistent active resistance units. The Fig. 7–8 filter bandwidth is inherited from Example 1. Raw hardware traces, limiter settings and delays are unavailable."
+      ],
+      "caption": "Computed Fig. 5 margins and sensitivity under the captioned and inferred cases."
+    }
+  },
+  "10.1109/TPEL.2024.3433503": {
+    "id": "2024_do_gfm",
+    "figure": "inductance_sweep.png",
+    "zh": {
+      "description": "复核扰动观测器构网控制方程，量化弱网出版波形与仿真的差距。",
+      "algorithm": [
+        "实现平均模型与独立电网坐标实现，比较 DO-GFM 和 RFPSC。",
+        "检查电感失配、50→49 Hz 频率斜坡与 GFM/GFL 切换。",
+        "在相同指令下用 motulator PWM 重跑，并对照出版图读数。"
+      ],
+      "metrics": [
+        [
+          "数值检查",
+          "181 / 181"
+        ],
+        [
+          "弱网 DO-GFM 上升时间：平均 / PWM / 出版图",
+          "64.89 / 67.02 / 109.55 ms"
+        ],
+        [
+          "弱网 DO-GFM 无功平台：平均 / PWM / 出版图",
+          "−0.611 / −0.611 / −0.775 p.u."
+        ]
+      ],
+      "strengths": [
+        "两套方程实现支持受测工况下的基本控制机制。"
+      ],
+      "limitations": [
+        "弱网下两种仿真都未定量重现原图的上升时间和无功平台；部分 P–f 表达式的符号与数值微分不一致。"
+      ],
+      "gaps": [
+        "缺实际数字离散化、端电压、对象电阻与器件延时。故障穿越、LCL 与硬件直流母线超出验证范围。"
+      ],
+      "caption": "平均模型的电感失配扫描。"
+    },
+    "en": {
+      "description": "Checks the disturbance-observer grid-forming equations and quantifies the weak-grid gap between the published plot and simulations.",
+      "algorithm": [
+        "Implement an averaged model and independent grid-frame equations; compare DO-GFM with RFPSC.",
+        "Check inductance mismatch, a 50→49 Hz frequency ramp and transitions between GFM and GFL.",
+        "Replay the same commands with motulator PWM and compare to values read from the published plot."
+      ],
+      "metrics": [
+        [
+          "Numerical checks",
+          "181 / 181"
+        ],
+        [
+          "Weak-grid DO-GFM rise time: average / PWM / published plot",
+          "64.89 / 67.02 / 109.55 ms"
+        ],
+        [
+          "Weak-grid DO-GFM reactive plateau: average / PWM / published plot",
+          "−0.611 / −0.611 / −0.775 p.u."
+        ]
+      ],
+      "strengths": [
+        "The two equation implementations support the tested control mechanisms."
+      ],
+      "limitations": [
+        "Neither simulation matches the published weak-grid rise time and reactive plateau quantitatively. A printed P–f expression has a sign discrepancy relative to numerical differentiation."
+      ],
+      "gaps": [
+        "The exact digital implementation, terminal voltage, plant resistance and device delays are unavailable. Fault ride-through, LCL and hardware DC bus validation are outside scope."
+      ],
+      "caption": "Inductance mismatch sweep of the averaged model."
+    }
+  },
+  "10.1109/TIE.2021.3114706": {
+    "id": "2022_dmm_resonant_boost",
+    "figure": "rbc_waveforms.png",
+    "zh": {
+      "description": "对谐振升压算例做 DMM 离线重算，区分数值等价、映射规模和实时性能。",
+      "algorithm": [
+        "用梯形积分建立开关电阻电路模型。",
+        "预编译二极管可行区及仿射映射，逐步查询得到下一状态。",
+        "以同一步长的独立迭代 tableau 作数值基线。"
+      ],
+      "metrics": [
+        [
+          "数值检查",
+          "11 / 11"
+        ],
+        [
+          "离线步数 / 步长",
+          "380,000 / 100 ns"
+        ],
+        [
+          "同一步长下最大相对 L² 误差",
+          "1.35 × 10⁻⁹"
+        ],
+        [
+          "轨迹访问的二极管组合",
+          "10"
+        ]
+      ],
+      "strengths": [
+        "该算例的映射查表与同一步长的独立迭代解高度一致。"
+      ],
+      "limitations": [
+        "10 个是该轨迹访问的模式；无额外限制的历史域并未复现原文的映射规模。与论文图读回仍有定量差距。"
+      ],
+      "gaps": [
+        "缺该算例的开关电阻、初值、事件量化、完整 EMTP 算例和映射表。未验证 FPGA 时序、定点精度或资源。"
+      ],
+      "caption": "100 ns 步长下的离线谐振升压波形。"
+    },
+    "en": {
+      "description": "Replays DMM offline on the resonant boost case, separating numerical agreement, mapping size and real-time performance.",
+      "algorithm": [
+        "Discretize the resistive switching circuit with the trapezoidal rule.",
+        "Compile feasible diode regions and affine maps, then look up the next state at each step.",
+        "Use an independently assembled iterative tableau at the same step as the reference."
+      ],
+      "metrics": [
+        [
+          "Numerical checks",
+          "11 / 11"
+        ],
+        [
+          "Offline steps / step size",
+          "380,000 / 100 ns"
+        ],
+        [
+          "Maximum same-step relative L² error",
+          "1.35 × 10⁻⁹"
+        ],
+        [
+          "Diode combinations visited on the trajectory",
+          "10"
+        ]
+      ],
+      "strengths": [
+        "The map lookup closely agrees with the independent iterative reference at the same step size in this case."
+      ],
+      "limitations": [
+        "The trajectory visits ten modes; the unrestricted history domain does not reproduce the published map size. A quantitative gap remains against the published plot readback."
+      ],
+      "gaps": [
+        "Case-specific switch resistance, initialization, event quantization, the full EMTP case and lookup tables are unavailable. FPGA timing, fixed-point accuracy and resources were not verified."
+      ],
+      "caption": "Offline resonant boost waveforms at a 100 ns step."
+    }
+  },
+  "10.1109/TIE.2019.2952824": {
+    "id": "2020_pmsm_delay_smo",
+    "figure": null,
+    "zh": {
+      "description": "已完成资料审计，原文工况复现暂缓。",
+      "algorithm": [
+        "检查滑模观测器、延时补偿、PI 设置与采样时序。"
+      ],
+      "metrics": [],
+      "strengths": [],
+      "limitations": [
+        "未按原文工况运行仿真。"
+      ],
+      "gaps": [
+        "缺实际观测器增益 k、误差阈值 ξ、速度与电流 PI、离散更新顺序，以及同步的 ADC/PWM 时序和原始波形。"
+      ],
+      "caption": ""
+    },
+    "en": {
+      "description": "Source audit complete; reproduction of the published cases is on hold.",
+      "algorithm": [
+        "Check the sliding-mode observer, delay compensation, PI settings and sampling schedule."
+      ],
+      "metrics": [],
+      "strengths": [],
+      "limitations": [
+        "No simulation of the original cases was executed."
+      ],
+      "gaps": [
+        "The numeric observer gain k, error tolerance ξ, speed and current PI settings, discrete update order, synchronized ADC/PWM timing and raw waveforms are unavailable."
+      ],
+      "caption": ""
+    }
+  }
+}

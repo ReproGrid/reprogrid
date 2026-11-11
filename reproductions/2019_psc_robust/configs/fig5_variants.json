@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "Fig. 5 operating-point comparison using the original finite-filter model. The sign and inductance rounding are changed separately and jointly.",
+  "curve_inferred": {
+    "upper_iq_pu": -0.2,
+    "inductance_by_scr_label_pu": {"3": 0.33}
+  },
+  "validation_tolerances": {
+    "independent_frequency_scaled_error": 2e-10,
+    "independent_margin_and_pole_abs_error": 2e-7,
+    "maximum_curve_inferred_rms_locus_error_pu": 0.00002,
+    "minimum_upper_row_rms_improvement_factor_at_curve_inductance": 100
+  }
+}

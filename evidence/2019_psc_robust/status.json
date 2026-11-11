@@ -1,0 +1,56 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "state": "report_ready",
+  "outcome": "computational_claims_reproduced_with_documented_intermediate_formula_corrections",
+  "scope": "Lossless single-converter infinite-bus PSC. Reconstruct Figs. 5, 7 and 8, audit Appendix II/IV, and test the finite-filter ideal nonlinear model against local linear responses.",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "quantitative_original_experiment_match": false,
+  "checks_passed": 50,
+  "checks_total": 50,
+  "baseline_checks_total": 42,
+  "fig5_variant_checks_total": 8,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "fig8_independent_passed": true,
+  "key_results": {
+    "fig5_reactive_scr1_dc_phase_margin_deg": 13.511807423703374,
+    "fig5_upper_dc_peak_sensitivity_best_scr_printed": 1,
+    "fig5_upper_dc_peak_sensitivity_best_scr_curve_inferred": 3,
+    "fig7_dc_phase_margins_deg": [
+      55.77171903296349,
+      28.69843818257874,
+      55.9502254540721
+    ],
+    "appendix_iv_zero_current_numeric_gm": 4.000000000000001,
+    "appendix_iv_zero_current_printed_gm": 6.000000000000001
+  },
+  "critical_gaps": [
+    "Quantitative hardware replay requires original traces, limiter settings and experimental delay/impedance data.",
+    "Table I Ra in ohms is inconsistent with the listed pu value.",
+    "Fig. 7–8 filter bandwidth is inherited from Example 1."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "intermediate_formula_inconsistency",
+      "source": "Appendices II and IV",
+      "finding": "Eq39 last equality, Eq40, Appendix IV crossover, and Eq42 first term disagree with direct transfer evaluation. Main bounds still follow from the corrected derivation."
+    },
+    {
+      "type": "parameter_normalization_inconsistency",
+      "source": "Table I",
+      "finding": "4.4/12.6 = 0.349206 pu, versus stated 0.2 pu."
+    },
+    {
+      "type": "parameter_label_and_curve_inconsistency",
+      "source": "Aalto accepted manuscript, Fig. 5",
+      "finding": "The upper row is labeled iq0=+0.2 pu. Its vector loci agree with iq0=-0.2 pu, with L=0.33 pu for the SCR=3 dashed trace. The sign changes which SCR minimizes the DC-link sensitivity peak.",
+      "evidence": "verification/fig5_vector_comparison.json"
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "f3be46a7b1f1689fa82148ef6ee17e61b140393e82d4955e89ba74a395de6fbf",
+  "primary_manifest_sha256": "218a5a12486ed5821b8c0d4febecc858465d4c18e6b8c4133d27814ba0693550",
+  "fig5_condition_comparison_sha256": "9a38e41d0634f24a3970f2028c22e9b1821dcb74470eeaca8f27c25b0f6d7695",
+  "source_report_sha256": "f3722e99ca1a6f58ec639986e75b73194b391ac4ce277f8e0240830871f331b4"
+}

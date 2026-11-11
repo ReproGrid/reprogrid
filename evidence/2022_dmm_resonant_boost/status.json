@@ -1,0 +1,54 @@
+{
+  "doi": "10.1109/TIE.2021.3114706",
+  "state": "report_ready",
+  "outcome": "offline_DMM_equivalence_supported_with_map_size_and_published_trace_gaps",
+  "scope": "Published resonant-boost circuit and thesis PWM; float64 trapezoidal RSM, FME sign mapping, independent iterative tableau, clean replay, and published plot readback.",
+  "scope_zh": "谐振升压 DMM 的离线等价性、可行域规模、步长精化及原图对照；未验证 FPGA 实时期限和 EVBC。",
+  "code_executed": true,
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "quantitative_original_experiment_match": false,
+  "clean_environment_replay_passed": true,
+  "cross_implementation_passed": true,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "key_results": {
+    "step_ns": 100,
+    "steps": 380000,
+    "max_same_step_relative_l2": 1.3532014272582807e-09,
+    "full_history_domain_masks_per_gate": 16,
+    "positive_output_masks_per_gate": 12,
+    "visited_diode_masks": 10,
+    "W_shape_per_gate": [
+      32,
+      6
+    ],
+    "F_shape": [
+      5,
+      6
+    ],
+    "published_plot_marker_relative_l2": 0.15754861822582866
+  },
+  "critical_gaps": [
+    "No RBC-specific switch resistance, initialization, event quantization or complete EMTP case.",
+    "The published 10 feasible combinations and 14×6 W are not reproduced over the stated unrestricted history domain. Author RBC domain restrictions or lookup tables were not available.",
+    "The 100 ns replay reproduces the main shape but differs quantitatively from thesis Fig. 3.14; only plot readback is available.",
+    "Original FPGA timing, fixed-point accuracy and resources, and EVBC/NTT/SDD claims are outside verified scope."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "reported_map_size_not_recovered_under_stated_domain",
+      "source": "Section VI-C and thesis Section 3.6; 64 independent witnesses at Vg=150 V",
+      "finding": "16 open regions and 32×6 W per gate for unrestricted histories; 12 with vo>0. The chosen trajectory visits 10 masks; the author scope may differ."
+    },
+    {
+      "type": "published_trace_quantitative_gap",
+      "source": "Chalangar thesis Fig. 3.14 vector plot",
+      "finding": "At the reported time coordinates the 100 ns replay differs by 15.75% relative L2 at the DMM markers; peaks are close. Input and discretization gaps prevent attribution."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "ce638deedf5b861f05a20d916ca25ced6011259f17869b6abff8baaf0a77d60a",
+  "primary_manifest_sha256": "bbddede1ae34b65513f332f8e8c07dcb5dd931caf630e1ae65a46207145cd994",
+  "source_report_sha256": "d0f336defee50a6d1fb30365afa9e7b9ebf46378e186e2a217af1ec5f93e636a"
+}

@@ -1,0 +1,105 @@
+{
+  "state_order": [
+    "ig_A",
+    "ir_A",
+    "vCs_V",
+    "vCr_V",
+    "vo_V"
+  ],
+  "step_ns": 100,
+  "time_steps": 380000,
+  "stop_ns": 38000000,
+  "effective_edges_ns": {
+    "S1_on_ns": 600,
+    "S1_off_ns": 5000,
+    "S2_on_ns": 0,
+    "S2_off_ns": 1500
+  },
+  "trajectory_relative_l2": [
+    4.125150005224368e-12,
+    1.3532014272582807e-09,
+    1.6208583892056072e-11,
+    2.114433124014125e-10,
+    2.0880326235938663e-12
+  ],
+  "trajectory_max_abs_error": [
+    2.191672399121103e-10,
+    1.3116234157258875e-07,
+    2.023182652521882e-07,
+    7.409984648446e-06,
+    1.502030499977991e-09
+  ],
+  "trajectory_mask_mismatches": 24,
+  "trajectory_mask_mismatches_away_from_transition": 0,
+  "trajectory_mask_mismatches_near_transition": 24,
+  "min_diode_voltage_at_mask_mismatches_max_v": 1.4061119387169963e-10,
+  "visited_diode_masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    10,
+    12
+  ],
+  "visited_gate_diode_pairs": 25,
+  "visited_diode_masks_by_gate": {
+    "0": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "1": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      12
+    ],
+    "3": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      8,
+      9,
+      10
+    ]
+  },
+  "reference_linear_solves_total": 446448,
+  "reference_linear_solves_per_step_max": 3,
+  "reference_linear_solves_per_step_histogram": {
+    "1": 316470,
+    "2": 60612,
+    "3": 2918
+  },
+  "reference_fallback_steps": 0,
+  "dmm_online_linear_solves": 0,
+  "network_residuals": {
+    "max_relative_kcl": 4.3396113892912896e-10,
+    "max_relative_trapezoid_residual": 1.1234733536877901e-11,
+    "max_diode_sign_violation_v": 0.0
+  },
+  "final_dmm_state": [
+    1.8062027916972034,
+    0.8022265789702665,
+    289.0942496581151,
+    518.8670225927737,
+    289.09408197820375
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "scope": "Fresh virtualenv; same host and pinned packages. Not a cross-platform replay.",
+  "fresh_environment": ".cache/clean-rfpsc-venv",
+  "input_and_dependency_versions_match": true,
+  "numeric_tolerance": 1e-12,
+  "cases": [
+    {
+      "case_id": "paper_pu_L1_psc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "paper_pu_L1_rfpsc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "paper_pu_L0.1_psc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "paper_pu_L0.1_rfpsc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "table_ohm_L1_psc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "table_ohm_L1_rfpsc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "table_ohm_L0.1_psc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "table_ohm_L0.1_rfpsc",
+      "array_max_abs_errors": {
+        "time_s": 0.0,
+        "reference_pu": 0.0,
+        "power_pu": 0.0,
+        "id_pu": 0.0,
+        "iq_pu": 0.0,
+        "delta_rad": 0.0,
+        "voltage_abs_pu": 0.0,
+        "h_d": 0.0,
+        "h_q": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "both_numerical_suites_passed": true,
+  "replay_manifest_sha256": "004814209b87d8d48d25fd3dddc5af27a15a820d2017fbf240ebe9d45c6b641e",
+  "primary_manifest_sha256": "d78abaca6bb3555408d46c39e57010d9ec47a2262836f749af1d5f956be24924",
+  "passed": true
+}

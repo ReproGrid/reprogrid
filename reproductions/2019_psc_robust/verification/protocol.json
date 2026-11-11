@@ -1,0 +1,67 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "frozen_utc": "2026-11-11T03:48:10.796736+00:00",
+  "source_sha256": "e45aa9f7dc1688da6f125144619fe742220c0766ed8487f4cac47ff8a12b02e5",
+  "source_pdf_pages": 11,
+  "independence": {
+    "primary_code_read": false,
+    "other_derivations_read": false,
+    "route": "Physical fixed-grid-coordinate current and filter states, finite-difference Jacobian, frequency resolvent; separate frozen-filter cubic and analytic negative-real crossing"
+  },
+  "baseline": {
+    "V": 1,
+    "omega1": 1,
+    "kappa": 1,
+    "Ra": 0.2,
+    "omega_b": 0.1,
+    "Kp": 0.2,
+    "Kd": 0.17677669529663687,
+    "fig5": {
+      "active": {
+        "id": 0.95,
+        "iq": 0.2
+      },
+      "reactive": {
+        "id": 0.2,
+        "iq": -0.95
+      }
+    },
+    "SCR": [
+      1,
+      3,
+      10
+    ],
+    "current_norm_note": "Use exact plot labels; magnitude is 0.970824 rather than the prose claim 1.0. Do not normalize labels."
+  },
+  "frequency_grid": {
+    "minimum_pu": 0.001,
+    "maximum_pu": 100,
+    "points": 501,
+    "scale": "geomspace"
+  },
+  "checks": {
+    "physical_vs_Eq9_12_scaled_complex_abs_tolerance": 1e-08,
+    "finite_difference_vs_analytic_matrix_abs_tolerance": 1e-07,
+    "analytic_vs_numerical_crossover_relative_tolerance": 1e-08,
+    "pole_real_part_stable_threshold": -1e-10,
+    "scan_is_empirical_not_proof": true
+  },
+  "predeclared_scope": [
+    "Fig5 six finite-highpass cases, open-loop gain/phase margins, inner and DC outer closed-loop eigenvalues",
+    "Appendix IV exact crossing and gain margin, printed intermediate equations vs corrected derivation, final Theorem2 bound",
+    "Frozen-filter Theorem1 exact gain margin and pole invariants on physically valid normalized current sweep",
+    "Limiting low-current, high-reactive, high-active/high-Ra regimes and approximation limitations",
+    "Fig7 PSC vs zero-inertia droop comparison only, assuming omega_b=.1 inherited from Example1"
+  ],
+  "excluded": [
+    "No experimental waveform reproduction, no raw data",
+    "No PWM/sampling/current limit/PLL implementation",
+    "No VSM finite-inertia Fig8 independent verification",
+    "No hardware/DC-voltage time traces or capacitance assertion validation"
+  ],
+  "source_issues_to_test": [
+    "Appendix IV frequency, Eq42 factor and stated minimizer; do not equate these with invalid Eq24",
+    "Table I 4.4 ohm divided by12.6ohm differs from .2pu",
+    "Fig5 plot label magnitude vs full-current prose"
+  ]
+}

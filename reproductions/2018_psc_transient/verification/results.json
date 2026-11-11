@@ -1,0 +1,519 @@
+{
+  "paper_doi": "10.1109/TIE.2018.2875669",
+  "independence": "Only paper and independently frozen protocol used; no primary/other-agent implementation or derivation inspected",
+  "source_sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "protocol_sha256": "650f87dd4921bd8cc4fa266ba4ad45cbb01b155d54f89be3a80af61867b1ec6d",
+  "implementation_sha256": "6ba2d2a228d0b9402cccecf2a16adfa26eb28e6693f773605283d5cae2ac48f2",
+  "branches": {
+    "stated_pu": {
+      "typeI": {
+        "initial_angle_deg": 26.42333876589676,
+        "post_sep_angle_deg": 60.45863949985723,
+        "post_uep_angle_deg": 119.54136050014276,
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.445,
+          "Pmax_pu": 2.247191011235955,
+          "Xtransfer": 0.445
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.87,
+          "Pmax_pu": 1.1494252873563218,
+          "Xtransfer": 0.87
+        },
+        "a_rad_s": 9.3,
+        "maximum_overshoot_rad": 0.0,
+        "monotonic_without_overshoot": true,
+        "endpoint_error_rad": 2.7760105325569384e-10,
+        "matrix_vs_ODE_max_abs_angle_rad": 8.881784197001252e-16,
+        "maximum_current_pu": 1.1573842590017052,
+        "trajectory_file": "stated_pu_typeI.npz"
+      },
+      "typeII": {
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.9263157894736842,
+          "Pmax_pu": 1.0795454545454546,
+          "Xtransfer": 0.9263157894736842
+        },
+        "fault_network": {
+          "E": 0.7983193277310925,
+          "X": 0.9008403361344538,
+          "Pmax_pu": 0.8861940298507464,
+          "Xtransfer": 1.128421052631579
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.9500000000000001,
+          "Pmax_pu": 1.0526315789473684,
+          "Xtransfer": 0.9500000000000001
+        },
+        "a_rad_s": 9.3,
+        "b_fault_rad_s": 8.241604477611942,
+        "initial_angle_deg": 67.86760859852433,
+        "post_sep_angle_deg": 71.80512766123324,
+        "CCA_deg": 108.19487233876676,
+        "CCA_root_deg": 108.19487233876676,
+        "CCT_s": 0.5802698165663505,
+        "CCT_paper_formula_s": 0.5802698165663503,
+        "CCT_root_s": 0.5802698165663507,
+        "CCT_formula_quad_difference_s": 1.1102230246251565e-16,
+        "CCT_root_quad_difference_s": 2.220446049250313e-16,
+        "uncleared_slip_period_s": 1.4582138344958508,
+        "uncleared_period_quad_s": 1.4582138344958508,
+        "boundary_checks": [
+          {
+            "clearing_time_s": 0.5792698165663505,
+            "offset_from_CCT_s": -0.001,
+            "clear_angle_deg": 108.11072843923311,
+            "attractor_basin_index": 0
+          },
+          {
+            "clearing_time_s": 0.5812698165663505,
+            "offset_from_CCT_s": 0.001,
+            "clear_angle_deg": 108.27923305683389,
+            "attractor_basin_index": 1
+          }
+        ],
+        "exact_UEP": "Unstable equilibrium; exact equality remains there in exact arithmetic, attraction is not guaranteed",
+        "circuit_check": {
+          "max_current_complex_error_pu": 3.1401849173675503e-16,
+          "max_power_error_pu": 3.3306690738754696e-16,
+          "max_kcl_residual": 1.7783073324607987e-15
+        },
+        "cases": {
+          "early": {
+            "clearing_duration_s": 0.5,
+            "clear_angle_deg": 102.01508316419026,
+            "clear_angle_rad": 1.780499087910955,
+            "attractor_basin_index": 0,
+            "formal_scalar_model_classification": "same_well_recapture",
+            "target_attractor_unwrapped_rad": 1.2532358975033755,
+            "final_angle_unwrapped_rad": 1.2533040465087797,
+            "endpoint_distance_to_attractor_rad": 6.814900540419444e-05,
+            "first_current_limit_since_fault_s": null,
+            "first_current_limit_absolute_s": null,
+            "current_limit_crossing_type": null,
+            "maximum_current_pu": 1.6362711353620045,
+            "within_assumed_no_current_limit_region": true,
+            "matrix_vs_ODE_max_abs_angle_rad": 1.7763568394002505e-15,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "stated_pu_typeII_early.npz"
+          },
+          "late": {
+            "clearing_duration_s": 0.7,
+            "clear_angle_deg": 120.39570003349543,
+            "clear_angle_rad": 2.1013013708279424,
+            "attractor_basin_index": 1,
+            "formal_scalar_model_classification": "1_slip_recapture",
+            "target_attractor_unwrapped_rad": 7.536421204682962,
+            "final_angle_unwrapped_rad": 7.536320598774074,
+            "endpoint_distance_to_attractor_rad": 0.00010060590888816279,
+            "first_current_limit_since_fault_s": 0.7,
+            "first_current_limit_absolute_s": 3.7,
+            "current_limit_crossing_type": "topology_jump_at_clearance",
+            "maximum_current_pu": 2.105262546078187,
+            "within_assumed_no_current_limit_region": false,
+            "matrix_vs_ODE_max_abs_angle_rad": 3.197442310920451e-14,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "stated_pu_typeII_late.npz"
+          },
+          "uncleared": {
+            "clearing_duration_s": null,
+            "clear_angle_deg": null,
+            "clear_angle_rad": null,
+            "attractor_basin_index": null,
+            "formal_scalar_model_classification": "unbounded_phase_running",
+            "target_attractor_unwrapped_rad": null,
+            "final_angle_unwrapped_rad": 17.9918171193465,
+            "endpoint_distance_to_attractor_rad": null,
+            "first_current_limit_since_fault_s": 0.7561493733673817,
+            "first_current_limit_absolute_s": 3.7561493733673816,
+            "current_limit_crossing_type": "continuous_crossing",
+            "maximum_current_pu": 1.9962685362768997,
+            "within_assumed_no_current_limit_region": false,
+            "matrix_vs_ODE_max_abs_angle_rad": 7.815970093361102e-14,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "stated_pu_typeII_uncleared.npz",
+            "slip_period_s": 1.4582138344958508
+          }
+        }
+      },
+      "internal_numeric_checks_passed": true
+    },
+    "table_SI_simulation": {
+      "typeI": {
+        "initial_angle_deg": 26.330248557647426,
+        "post_sep_angle_deg": 59.934417539244215,
+        "post_uep_angle_deg": 120.06558246075579,
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.4435444173456664,
+          "Pmax_pu": 2.2545656328725077,
+          "Xtransfer": 0.4435444173456664
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.8654525216500808,
+          "Pmax_pu": 1.1554648868471602,
+          "Xtransfer": 0.8654525216500808
+        },
+        "a_rad_s": 9.3,
+        "maximum_overshoot_rad": 0.0,
+        "monotonic_without_overshoot": true,
+        "endpoint_error_rad": 1.7638668303732175e-10,
+        "matrix_vs_ODE_max_abs_angle_rad": 1.1102230246251565e-15,
+        "maximum_current_pu": 1.1543193099461257,
+        "trajectory_file": "table_SI_simulation_typeI.npz"
+      },
+      "typeII": {
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.927902788837331,
+          "Pmax_pu": 1.0776990995500804,
+          "Xtransfer": 0.927902788837331
+        },
+        "fault_network": {
+          "E": 0.7962234461054287,
+          "X": 0.9019499686685264,
+          "Pmax_pu": 0.8827800585001705,
+          "Xtransfer": 1.1327849902941671
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.9519977738150889,
+          "Pmax_pu": 1.0504226244065091,
+          "Xtransfer": 0.9519977738150889
+        },
+        "a_rad_s": 9.3,
+        "b_fault_rad_s": 8.209854544051586,
+        "initial_angle_deg": 68.11022290152081,
+        "post_sep_angle_deg": 72.17534748022096,
+        "CCA_deg": 107.82465251977904,
+        "CCA_root_deg": 107.82465251977908,
+        "CCT_s": 0.5586715730755888,
+        "CCT_paper_formula_s": 0.5586715730755889,
+        "CCT_root_s": 0.5586715730755889,
+        "CCT_formula_quad_difference_s": 1.1102230246251565e-16,
+        "CCT_root_quad_difference_s": 1.1102230246251565e-16,
+        "uncleared_slip_period_s": 1.4381241348241702,
+        "uncleared_period_quad_s": 1.4381241348241702,
+        "boundary_checks": [
+          {
+            "clearing_time_s": 0.5576715730755888,
+            "offset_from_CCT_s": -0.001,
+            "clear_angle_deg": 107.73971862135093,
+            "attractor_basin_index": 0
+          },
+          {
+            "clearing_time_s": 0.5596715730755888,
+            "offset_from_CCT_s": 0.001,
+            "clear_angle_deg": 107.9098001324432,
+            "attractor_basin_index": 1
+          }
+        ],
+        "exact_UEP": "Unstable equilibrium; exact equality remains there in exact arithmetic, attraction is not guaranteed",
+        "circuit_check": {
+          "max_current_complex_error_pu": 4.440892098500626e-16,
+          "max_power_error_pu": 3.3306690738754696e-16,
+          "max_kcl_residual": 1.776573666601473e-15
+        },
+        "cases": {
+          "early": {
+            "clearing_duration_s": 0.5,
+            "clear_angle_deg": 103.15651307451736,
+            "clear_angle_rad": 1.8004207980269067,
+            "attractor_basin_index": 0,
+            "formal_scalar_model_classification": "same_well_recapture",
+            "target_attractor_unwrapped_rad": 1.2596974523008486,
+            "final_angle_unwrapped_rad": 1.2598117976195378,
+            "endpoint_distance_to_attractor_rad": 0.00011434531868914632,
+            "first_current_limit_since_fault_s": null,
+            "first_current_limit_absolute_s": null,
+            "current_limit_crossing_type": null,
+            "maximum_current_pu": 1.6459233413390573,
+            "within_assumed_no_current_limit_region": true,
+            "matrix_vs_ODE_max_abs_angle_rad": 2.886579864025407e-15,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_simulation_typeII_early.npz"
+          },
+          "late": {
+            "clearing_duration_s": 0.7,
+            "clear_angle_deg": 122.94135623753256,
+            "clear_angle_rad": 2.145731453212211,
+            "attractor_basin_index": 1,
+            "formal_scalar_model_classification": "1_slip_recapture",
+            "target_attractor_unwrapped_rad": 7.542882759480435,
+            "final_angle_unwrapped_rad": 7.542779386520349,
+            "endpoint_distance_to_attractor_rad": 0.00010337296008522401,
+            "first_current_limit_since_fault_s": 0.7,
+            "first_current_limit_absolute_s": 3.7,
+            "current_limit_crossing_type": "topology_jump_at_clearance",
+            "maximum_current_pu": 2.1008445133346108,
+            "within_assumed_no_current_limit_region": false,
+            "matrix_vs_ODE_max_abs_angle_rad": 3.019806626980426e-14,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_simulation_typeII_late.npz"
+          },
+          "uncleared": {
+            "clearing_duration_s": null,
+            "clear_angle_deg": null,
+            "clear_angle_rad": null,
+            "attractor_basin_index": null,
+            "formal_scalar_model_classification": "unbounded_phase_running",
+            "target_attractor_unwrapped_rad": null,
+            "final_angle_unwrapped_rad": 18.762036780617358,
+            "endpoint_distance_to_attractor_rad": null,
+            "first_current_limit_since_fault_s": 0.7397986372358919,
+            "first_current_limit_absolute_s": 3.739798637235892,
+            "current_limit_crossing_type": "continuous_crossing",
+            "maximum_current_pu": 1.9914889417816184,
+            "within_assumed_no_current_limit_region": false,
+            "matrix_vs_ODE_max_abs_angle_rad": 1.0302869668521453e-13,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_simulation_typeII_uncleared.npz",
+            "slip_period_s": 1.4381241348241702
+          }
+        }
+      },
+      "internal_numeric_checks_passed": true,
+      "interpretation": {
+        "voltage": "phase RMS, inferred from approximate agreement of inductance bases",
+        "Zbase_ohm": 145.2,
+        "Lbase_H": 0.46218595473886404,
+        "typeI_recomputed_pu": [
+          0.02163631304125202,
+          0.8438162086088288,
+          0.8438162086088288
+        ],
+        "typeII_recomputed_pu": [
+          0.8005435825263247,
+          0.15145419128876417,
+          0.8005435825263247,
+          0.49763519994879646
+        ],
+        "status": "SI/table-rounding sensitivity, not substituted for main stated-pu protocol"
+      }
+    },
+    "table_SI_experiment": {
+      "typeI": {
+        "initial_angle_deg": 27.436606690368762,
+        "post_sep_angle_deg": 64.23571483050536,
+        "post_uep_angle_deg": 115.76428516949466,
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.4607669225265031,
+          "Pmax_pu": 2.170294678525845,
+          "Xtransfer": 0.4607669225265031
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.9005898940290742,
+          "Pmax_pu": 1.110383323896944,
+          "Xtransfer": 0.9005898940290742
+        },
+        "a_rad_s": 9.299999999999999,
+        "maximum_overshoot_rad": 0.0,
+        "monotonic_without_overshoot": true,
+        "endpoint_error_rad": 6.277018682609992e-09,
+        "matrix_vs_ODE_max_abs_angle_rad": 8.881784197001252e-16,
+        "maximum_current_pu": 1.1806985124891805,
+        "trajectory_file": "table_SI_experiment_typeI.npz"
+      },
+      "typeII": {
+        "pre_network": {
+          "E": 1.0,
+          "X": 0.9043978851243344,
+          "Pmax_pu": 1.1057080256910623,
+          "Xtransfer": 0.9043978851243344
+        },
+        "fault_network": {
+          "E": 0.822429906542056,
+          "X": 0.8851266030861711,
+          "Pmax_pu": 0.9291664081437497,
+          "Xtransfer": 1.076233483297958
+        },
+        "post_network": {
+          "E": 1.0,
+          "X": 0.921533845053006,
+          "Pmax_pu": 1.0851473392629227,
+          "Xtransfer": 0.921533845053006
+        },
+        "a_rad_s": 9.299999999999999,
+        "b_fault_rad_s": 8.641247595736871,
+        "initial_angle_deg": 64.7423100119724,
+        "post_sep_angle_deg": 67.15135977835186,
+        "CCA_deg": 112.84864022164814,
+        "CCA_root_deg": 112.84864022164814,
+        "CCT_s": 0.9745832768421843,
+        "CCT_paper_formula_s": 0.9745832768421843,
+        "CCT_root_s": 0.9745832768421842,
+        "CCT_formula_quad_difference_s": 0.0,
+        "CCT_root_quad_difference_s": 1.1102230246251565e-16,
+        "uncleared_slip_period_s": 1.8276475217878378,
+        "uncleared_period_quad_s": 1.8276475217878372,
+        "boundary_checks": [
+          {
+            "clearing_time_s": 0.9735832768421843,
+            "offset_from_CCT_s": -0.001,
+            "clear_angle_deg": 112.77217556526143,
+            "attractor_basin_index": 0
+          },
+          {
+            "clearing_time_s": 0.9755832768421843,
+            "offset_from_CCT_s": 0.001,
+            "clear_angle_deg": 112.92536187732127,
+            "attractor_basin_index": 1
+          }
+        ],
+        "exact_UEP": "Unstable equilibrium; exact equality remains there in exact arithmetic, attraction is not guaranteed",
+        "circuit_check": {
+          "max_current_complex_error_pu": 4.47545209131181e-16,
+          "max_power_error_pu": 4.440892098500626e-16,
+          "max_kcl_residual": 3.3325189318763902e-15
+        },
+        "cases": {
+          "early": {
+            "clearing_duration_s": 0.5,
+            "clear_angle_deg": 89.91625785926523,
+            "clear_angle_rad": 1.5693347507164064,
+            "attractor_basin_index": 0,
+            "formal_scalar_model_classification": "same_well_recapture",
+            "target_attractor_unwrapped_rad": 1.1720123253235295,
+            "final_angle_unwrapped_rad": 1.1720131775990774,
+            "endpoint_distance_to_attractor_rad": 8.522755479134503e-07,
+            "first_current_limit_since_fault_s": null,
+            "first_current_limit_absolute_s": null,
+            "current_limit_crossing_type": null,
+            "maximum_current_pu": 1.5335081853627417,
+            "within_assumed_no_current_limit_region": true,
+            "matrix_vs_ODE_max_abs_angle_rad": 1.3322676295501878e-15,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_experiment_typeII_early.npz"
+          },
+          "late": {
+            "clearing_duration_s": 0.7,
+            "clear_angle_deg": 97.75469799609891,
+            "clear_angle_rad": 1.706141339324629,
+            "attractor_basin_index": 0,
+            "formal_scalar_model_classification": "same_well_recapture",
+            "target_attractor_unwrapped_rad": 1.1720123253235295,
+            "final_angle_unwrapped_rad": 1.1720161022401079,
+            "endpoint_distance_to_attractor_rad": 3.776916578379641e-06,
+            "first_current_limit_since_fault_s": null,
+            "first_current_limit_absolute_s": null,
+            "current_limit_crossing_type": null,
+            "maximum_current_pu": 1.6348904694273525,
+            "within_assumed_no_current_limit_region": true,
+            "matrix_vs_ODE_max_abs_angle_rad": 2.220446049250313e-15,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_experiment_typeII_late.npz"
+          },
+          "uncleared": {
+            "clearing_duration_s": null,
+            "clear_angle_deg": null,
+            "clear_angle_rad": null,
+            "attractor_basin_index": null,
+            "formal_scalar_model_classification": "unbounded_phase_running",
+            "target_attractor_unwrapped_rad": null,
+            "final_angle_unwrapped_rad": 14.03089235847892,
+            "endpoint_distance_to_attractor_rad": null,
+            "first_current_limit_since_fault_s": 1.0697978303955125,
+            "first_current_limit_absolute_s": 4.069797830395513,
+            "current_limit_crossing_type": "continuous_crossing",
+            "maximum_current_pu": 2.0589482355287996,
+            "within_assumed_no_current_limit_region": false,
+            "matrix_vs_ODE_max_abs_angle_rad": 9.947598300641403e-14,
+            "physical_scope": "Scalar PSC prediction only; no limiter or controller-mode switch is simulated",
+            "trajectory_file": "table_SI_experiment_typeII_uncleared.npz",
+            "slip_period_s": 1.8276475217878378
+          }
+        }
+      },
+      "internal_numeric_checks_passed": true,
+      "interpretation": {
+        "voltage": "phase RMS, inferred from approximate agreement of inductance bases",
+        "Zbase_ohm": 7.5,
+        "Lbase_H": 0.0238732414637843,
+        "typeI_recomputed_pu": [
+          0.020943951023931956,
+          0.8796459430051422,
+          0.8796459430051422
+        ],
+        "typeII_recomputed_pu": [
+          0.7958701389094143,
+          0.12566370614359174,
+          0.7958701389094143,
+          0.5026548245743669
+        ],
+        "status": "SI/table-rounding sensitivity, not substituted for main stated-pu protocol"
+      }
+    }
+  },
+  "reported_main_targets_passed": {
+    "typeI_initial_deg": true,
+    "typeI_post_deg": true,
+    "CCA_deg": true,
+    "CCT_s": true
+  },
+  "fault_severity_sensitivity": [
+    {
+      "Xgnd_pu": 0.3,
+      "fault_Pmax_pu": 0.7916666666666666,
+      "CCA_deg": 108.19487233876676,
+      "CCT_s": 0.3378357462515713
+    },
+    {
+      "Xgnd_pu": 0.5,
+      "fault_Pmax_pu": 0.8861940298507464,
+      "CCA_deg": 108.19487233876676,
+      "CCT_s": 0.5802698165663503
+    },
+    {
+      "Xgnd_pu": 0.8,
+      "fault_Pmax_pu": 0.95,
+      "CCA_deg": 108.19487233876676,
+      "CCT_s": 1.150259229692287
+    }
+  ],
+  "all_internal_numeric_checks_passed": true,
+  "all_reported_main_targets_passed": true,
+  "scope_findings": [
+    "No-current-limiter assumption is audited by trajectory current; an exceeded 1.8 pu threshold is not simulated as a hardware controller switch.",
+    "CCA is fixed for a specified post-fault circuit; CCT also depends on fault-on dynamics and initial angle.",
+    "An unwrapped angle is monotone in the no-equilibrium fault case; plotted sawtooth/wrapped angle is not an oscillation of the unwrapped scalar state.",
+    "The real arctangent primitive needs a\u00b2>b\u00b2 and branch care; Type I uses a different real representation.",
+    "A fixed-angle phase-slip re-capture in the ideal scalar equation does not establish continued PSC operation when current limiting should activate."
+  ],
+  "cross_comparison_export": {
+    "file": "trajectories.npz",
+    "time_key": "time_s",
+    "time_grid": "round(linspace(2,7,5001),12)",
+    "key_pattern": "{branch}_{scenario}_{field}",
+    "branches": [
+      "stated_pu",
+      "table_SI_simulation"
+    ],
+    "scenarios": [
+      "type_i_line_open",
+      "type_ii_clear_0p5",
+      "type_ii_clear_0p7",
+      "type_ii_uncleared"
+    ],
+    "fields": [
+      "angle_rad",
+      "power_pu",
+      "current_pu"
+    ],
+    "event_convention": "right-continuous network and output at t=3,3.5,3.7; continuous unwrapped angle; no interpolation"
+  },
+  "execution": {
+    "measured_numeric_script_wall_s": 1.0960847500246018,
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

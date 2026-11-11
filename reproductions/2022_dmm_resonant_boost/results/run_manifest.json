@@ -1,0 +1,47 @@
+{
+  "doi": "10.1109/TIE.2021.3114706",
+  "started_utc": "2026-11-11T04:53:09.782560+00:00",
+  "finished_utc": "2026-11-11T04:53:29.901333+00:00",
+  "wall_seconds": 20.1184438749915,
+  "elapsed_seconds": {
+    "offline_compile": 0.10235170897794887,
+    "dmm_steps": 2.7353466249769554,
+    "tableau_steps": 6.736827292013913,
+    "step_refinement": 6.820563833985943
+  },
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "protocol_sha256": "0cfa28dabd7da8898492e8288d5dc75a2bfce992ed171ae95469e97c2f4f4e79",
+  "code_sha256": {
+    "src/reproduce.py": "cfc7cf3019c675a1cbdbc28b7aafdf0be6e6f919177404986072667a11cc8434",
+    "src/dmm.py": "12b28bc09fdb78de58a24ad12e8f2e48e5e8d79143c8a421572fc671f3583677",
+    "verification/tableau_reference.py": "e2bc732459956a51acc0260bde20080397b9b9e683811e218692c25e476365ad",
+    "verification/region_probes.py": "bf45916ac24e3e1c83d6be1c32940a29af8456c8df7f31bde922911715fca1bf"
+  },
+  "passed": true,
+  "checks": {
+    "states_finite": true,
+    "state_l2_limit": true,
+    "trajectory_diode_masks_away_from_boundaries": true,
+    "probe_diode_masks_away_from_boundaries": true,
+    "probe_voltage": true,
+    "all_constructed_strict_masks": true,
+    "kcl": true,
+    "trapezoid": true,
+    "diode_sign": true,
+    "F_shape": true,
+    "all_gates_exercised": true
+  },
+  "published_mode_and_W_match": false,
+  "outputs": {
+    "compiled_maps.json": "e74b4ed9939b49a8d0b1e28cca5f61b5bbb4baacad351c6a79d05ce11eaac0da",
+    "metrics.json": "982934ca07749a15b1f6bdf170d0c21852ec2283918b83cf0e8e89695ba68361",
+    "rbc_100ns.npz": "a0e1ef24b30fb50bb9a49d15bed97543b3ef9103463e3b5b845f7cdec90382d4",
+    "rbc_zoom.csv": "1fcb415e28b888e97c0dc8eda887fe8d0c876b219eff09d59fd5cbe382aedce4",
+    "refinement.npz": "5bbd8af14fe0d8d642f0bc0a040914b6074b8bbc04866b0823358136a88b9ac2",
+    "region_probes.json": "59710f134b19f2f71384c6ade0e6c2167a964df1cc840cc24a4dfcba4cc60ee0",
+    "step_refinement.json": "191b5348013c110d8929d27eb7e44c042937deddcf4f846f416a062b61c58712",
+    "topology_summary.json": "8bd0d79973a13cff8ccb2e68c2afb34ab90b19b906d61ba7fbd560e0cb91bc56"
+  }
+}

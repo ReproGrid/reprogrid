@@ -4,13 +4,18 @@ import path from 'node:path';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dist = path.join(root, 'dist');
+const publicRepository = 'https://github.com/ReproGrid/reprogrid';
 const json = (file) => JSON.parse(readFileSync(path.join(root, file), 'utf8'));
 const queue = json('research/candidate_queue.json');
 const catalog = json('research/catalog.json');
 const localized = json('research/localization.json');
 const englishLabels = json('scripts/ui.en.json');
 const spec = json('platform_spec.json');
-const statuses = { pilot: ['试点有结果', 'pilot'], parked: ['暂缓', 'parked'], screened: ['候选待评估', 'screened'] };
+const evidence = json('research/evidence.json');
+const evidenceCommit = existsSync(path.join(root, 'research/evidence-repository.json'))
+  ? json('research/evidence-repository.json').commit : null;
+if (evidenceCommit !== null && !/^[a-f0-9]{40}$/.test(evidenceCommit)) throw new Error('Invalid evidence commit');
+const statuses = { pilot: ['有计算结果', 'pilot'], parked: ['暂缓', 'parked'], screened: ['候选待评估', 'screened'] };
 const emptyVideos = [
   { title: '算法讲解', description: '待制作' },
   { title: '结果解读', description: '待制作' },
@@ -29,7 +34,9 @@ const papers = queue.papers.map((source) => {
   const translation = localized.papers[entry.slug];
   if (!translation || !localized.domains[domain]) throw new Error(`Missing English text for ${entry.slug}`);
   const experiment = entry.experiment;
-  const paper = { source, translation, ...entry, domain, status: experiment ? 'pilot' : source.state, videos: entry.videos ?? emptyVideos };
+  const record = evidence[source.doi];
+  if (record && (!/^[a-z0-9_]+$/.test(record.id) || !record.zh || !record.en)) throw new Error(`Invalid evidence: ${source.doi}`);
+  const paper = { source, translation, ...entry, domain, record, status: experiment || record?.figure ? 'pilot' : source.state, videos: entry.videos ?? emptyVideos };
   if (experiment) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(experiment)) throw new Error('Invalid experiment folder');
     paper.folder = `papers/${experiment}`;
@@ -46,17 +53,17 @@ const papers = queue.papers.map((source) => {
   return paper;
 });
 if (Object.keys(catalog.papers).length !== seenDoi.size) throw new Error('Catalog and candidate queue differ');
-papers.sort((a, b) => Number(Boolean(b.experiment)) - Number(Boolean(a.experiment)));
+papers.sort((a, b) => Number(b.status === 'pilot') - Number(a.status === 'pilot'));
 
 function escape(value) {
   return String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 }
 
-function external(url, label) {
+function external(url, label, className = 'external-link') {
   const parsed = new URL(url);
   if (parsed.protocol !== 'https:' || parsed.username || parsed.password) throw new Error('Expected public HTTPS link');
-  return `<a class="external-link" href="${escape(parsed.href)}" target="_blank" rel="noopener noreferrer">${escape(label)} <span aria-hidden="true">↗</span></a>`;
+  return `<a class="${className}" href="${escape(parsed.href)}" target="_blank" rel="noopener noreferrer">${escape(label)} <span aria-hidden="true">↗</span></a>`;
 }
 
 function renderLanguage(lang) {
@@ -149,7 +156,7 @@ function renderLanguage(lang) {
   const domainButtons = Object.entries(catalog.domains).map(([id]) =>
     `<button type="button" data-domain-button="${id}" aria-pressed="false"><span>${escape(domainTitle(id))}</span><b>${entries.filter((p) => p.domain === id).length}</b></button>`
   ).join('');
-  const experimentCount = entries.filter((paper) => paper.experiment).length;
+  const experimentCount = entries.filter((paper) => paper.status === 'pilot').length;
   const videoCount = entries.flatMap((paper) => paper.videos).filter((video) => video.file || video.url).length;
   const homepage = page({
     base: './', title: t('论文复现库'), current: 'catalog',
@@ -159,7 +166,11 @@ function renderLanguage(lang) {
         <div class="hero-copy"><div class="hero-kicker"><i></i> ${t('电力电子与控制')}</div>
           <h1 id="hero-title">${t('把论文结论变成')}<br>${t('可重跑的证据')}<span>${english ? '.' : '。'}</span></h1>
           <p>${t('按领域查找论文，查看算法、开源代码、实验结果和参数缺口。')}</p>
-          <div class="hero-actions"><a class="button bright" href="#catalog">${t('浏览复现目录')} <span aria-hidden="true">↓</span></a><a class="hero-link" href="papers/rfpsc/">${t('查看首篇试点')} <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-actions">
+            <a class="button bright" href="#catalog">${t('浏览复现目录')} <span aria-hidden="true">↓</span></a>
+            <a class="hero-link" href="papers/rfpsc/">${t('查看首篇试点')} <span aria-hidden="true">↗</span></a>
+            ${external(publicRepository, t('GitHub 公开仓库'), 'hero-link')}
+          </div>
         </div>
         ${figure(siteBase + 'downloads/rfpsc-linear/results/chart.json', 'hero-trace', t('RFPSC 试点 · 强网空载小信号计算'))}
       </section>
@@ -199,13 +210,14 @@ function renderLanguage(lang) {
 
   function renderExperiment(paper) {
     const prefix = `${siteBase}../../downloads/${paper.experiment}/`;
-    const { report, results } = paper;
+    const { report, results, publicArtifacts } = paper;
     return `<section id="algorithm" class="detail-section">
       <h2>${t('算法与复现步骤')}</h2>
       <ol class="algorithm">${report.algorithm.map(([name, description]) => `<li><strong>${escape(name)}</strong><p>${escape(description)}</p></li>`).join('')}</ol>
       <h3>${t('运行代码')}</h3>
       <pre><code>python3 run.py</code></pre>
       <div class="links-row">
+        ${publicArtifacts?.code ? external(publicArtifacts.code, t('在 GitHub 查看源码'), 'button secondary') : ''}
         <a class="button secondary" href="${prefix}run.py" download>${t('Python 源码')} ↓</a>
         <a class="button secondary" href="${prefix}config.json" download>${t('运行配置')} ↓</a>
         <a class="button secondary" href="${prefix}LICENSE" download>${t('MIT 许可证')} ↓</a>
@@ -225,6 +237,7 @@ function renderLanguage(lang) {
       </table></div>
       <p class="callout">${t('dq 模型、式 (19) 和 RFPSC 解析解通过数值交叉核对。清单记录阈值、输入与输出校验值。')}</p>
       <div class="links-row">
+        ${publicArtifacts?.results ? external(publicArtifacts.results, t('在 GitHub 查看结果'), 'button secondary') : ''}
         <a class="button secondary" href="${prefix}results/step-response.csv" download>${t('结果 CSV')} ↓</a>
         <a class="button secondary" href="${prefix}results/summary.json" download>${t('指标 JSON')} ↓</a>
         <a class="button secondary" href="${prefix}results/manifest.json" download>${t('运行清单')} ↓</a>
@@ -241,6 +254,43 @@ function renderLanguage(lang) {
       <h2>${t('参数与待核对信息')}</h2>
       <div class="table-scroll"><table><thead><tr><th scope="col">${t('参数 / 材料')}</th><th scope="col">${t('值 / 状态')}</th><th scope="col">${t('来源 / 影响')}</th></tr></thead>
       <tbody>${report.parameters.map(([name, value, source]) => `<tr><th scope="row">${escape(name)}</th><td>${escape(value)}</td><td>${escape(source)}</td></tr>`).join('')}</tbody></table></div>
+    </section>`;
+  }
+
+  function renderEvidence(paper) {
+    const { record } = paper;
+    const copy = english ? record.en : record.zh;
+    const prefix = `${siteBase}../../downloads/${record.id}/`;
+    const repository = evidenceCommit ? `${publicRepository}/tree/${evidenceCommit}/reproductions/${record.id}` : null;
+    const renderList = (items) => `<ul>${items.map((item) => `<li>${escape(item)}</li>`).join('')}</ul>`;
+    const link = (href, label) => `<a class="button secondary" href="${href}" download>${t(label)} ↓</a>`;
+    return `<section id="algorithm" class="detail-section">
+      <h2>${t('算法与复现步骤')}</h2>
+      <ol class="algorithm">${copy.algorithm.map((step) => `<li>${escape(step)}</li>`).join('')}</ol>
+      <div class="links-row">
+        ${record.figure ? link(prefix + 'replay.zip', '源码、配置与复跑说明 ZIP') : ''}
+        ${repository && record.figure ? external(repository + '/src', t('在 GitHub 查看源码'), 'button secondary') : ''}
+      </div>
+    </section>
+    <section id="results" class="detail-section">
+      <h2>${t('复现结果')}</h2>
+      <p class="callout">${t(record.figure ? '独立计算与干净环境复跑已通过，原硬件未定量复现。' : '已完成资料审计。原文算例尚未运行。')}</p>
+      ${copy.metrics.length ? `<div class="table-scroll"><table><thead><tr><th scope="col">${t('指标')}</th><th scope="col">${t('结果')}</th></tr></thead>
+        <tbody>${copy.metrics.map(([name, value]) => `<tr><th scope="row">${escape(name)}</th><td>${escape(value)}</td></tr>`).join('')}</tbody></table></div>` : ''}
+      ${record.figure ? `<figure class="evidence-figure"><a href="${prefix}${escape(record.figure)}"><img src="${prefix}${escape(record.figure)}" alt="${escape(copy.caption)}" loading="lazy"></a><figcaption>${escape(copy.caption)}</figcaption></figure>` : ''}
+      <div class="links-row">
+        ${link(prefix + 'status.json', '证据状态 JSON')}
+        ${repository && record.figure ? external(repository + '/results', t('在 GitHub 查看结果'), 'button secondary') : ''}
+        ${repository ? external(`${publicRepository}/blob/${evidenceCommit}/reproductions/${record.id}/reports/REPORT.md`, t('在 GitHub 查看完整报告'), 'button secondary') : ''}
+      </div>
+    </section>
+    <section id="discussion" class="detail-section">
+      <h2>${t('优点与局限')}</h2>
+      ${copy.strengths.length ? `<div class="discussion-grid"><div><h3>${t('观测到的优势')}</h3>${renderList(copy.strengths)}</div><div><h3>${t('权衡与适用条件')}</h3>${renderList(copy.limitations)}</div></div>` : renderList(copy.limitations)}
+    </section>
+    <section id="parameters" class="detail-section">
+      <h2>${t('参数与待核对信息')}</h2>
+      ${renderList(copy.gaps)}
     </section>`;
   }
 
@@ -290,7 +340,8 @@ function renderLanguage(lang) {
     const { source } = paper;
     const anchor = [
       ['algorithm', '算法与代码'], ['results', '复现结果'], ['discussion', '优点与局限'],
-      ['parameters', '参数缺口'], ['videos', '讲解视频'], ['sources', '引用来源'],
+      ['parameters', '参数缺口'], ...(paper.experiment && paper.record ? [['pilot', '首篇小信号试点']] : []),
+      ['videos', '讲解视频'], ['sources', '引用来源'],
     ];
     const citation = source.citations;
     return page({
@@ -313,7 +364,8 @@ function renderLanguage(lang) {
             </dl>
           </aside>
           <div class="detail-body">
-            ${paper.experiment ? renderExperiment(paper) : renderCandidate(paper)}
+            ${paper.record ? renderEvidence(paper) : paper.experiment ? renderExperiment(paper) : renderCandidate(paper)}
+            ${paper.experiment && paper.record ? `<details id="pilot" class="detail-section"><summary>${t('首篇小信号试点')}</summary>${renderExperiment(paper).replaceAll(/id="(algorithm|results|discussion|parameters)"/g, 'id="pilot-$1"')}</details>` : ''}
             <section id="videos" class="detail-section"><h2>${t('讲解视频')}</h2><div class="videos">${paper.videos.map((video) => videoTile(video, paper)).join('')}</div></section>
             <section id="sources" class="detail-section"><h2>${t('引用来源')}</h2>
               <ul class="source-links"><li>${external(`https://doi.org/${source.doi}`, t('原文 DOI · ') + source.doi)}</li>
@@ -337,7 +389,7 @@ function renderLanguage(lang) {
         <ul class="journals">${spec.selection.journal_policy.priority_journals.map((journal) => `<li><strong>${escape(journal.abbreviation)}</strong><span lang="en">${escape(journal.title)}</span></li>`).join('')}</ul>
       </section>
       <section class="detail-section"><h2>${t('状态怎么读')}</h2><dl class="method-status">
-        <div><dt>${t('试点有结果')}</dt><dd>${t('已有可执行代码和实际输出。结论的覆盖范围见各论文结果页。')}</dd></div>
+        <div><dt>${t('有计算结果')}</dt><dd>${t('已有可执行代码和实际输出。结论的覆盖范围见各论文结果页。')}</dd></div>
         <div><dt>${t('候选待评估')}</dt><dd>${t('已登记文献信息和计划复核的主张，等待原文、参数与可执行性审查。')}</dd></div>
         <div><dt>${t('暂缓')}</dt><dd>${t('当前有关键输入缺口，例如可访问全文或必需参数。')}</dd></div>
       </dl></section>
@@ -370,6 +422,19 @@ for (const lang of ['zh-Hans', 'en']) {
 }
 cpSync(path.join(root, 'site'), path.join(dist, 'assets'), { recursive: true, filter: (source) => !path.basename(source).startsWith('._') });
 for (const paper of papers) {
+  if (paper.record) {
+    const { id, figure } = paper.record;
+    if (figure && !/^[a-z0-9_]+\.png$/.test(figure)) throw new Error('Invalid evidence figure');
+    const status = json(`evidence/${id}/status.json`);
+    if ((status.doi ?? status.paper_doi) !== paper.source.doi || Boolean(figure) !== (status.state === 'report_ready')) {
+      throw new Error(`Evidence status mismatch: ${paper.source.doi}`);
+    }
+    const download = path.join(dist, 'downloads', id);
+    mkdirSync(download, { recursive: true });
+    for (const name of ['status.json', ...(figure ? [figure, 'replay.zip'] : [])]) {
+      cpSync(path.join(root, 'evidence', id, name), path.join(download, name));
+    }
+  }
   if (paper.folder) {
     const download = path.join(dist, 'downloads', paper.experiment);
     mkdirSync(download, { recursive: true });

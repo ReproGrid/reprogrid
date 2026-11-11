@@ -1,0 +1,28 @@
+{
+  "source": "Chalangar (2021), Fig. 3.14, PDF page 65, EMTP reference curve and DMM dots",
+  "source_url": "https://publications.polymtl.ca/9473/",
+  "source_pdf_sha256": "3084bda44193154c10d00d423dd98a78d8744b5e4a0b14a2de7dea0da639fa8b",
+  "pymupdf_version": "2.1",
+  "reference_vertices": 340,
+  "dmm_markers": 68,
+  "calibration_max_residual_us": 0.0018825571969500743,
+  "calibration_max_residual_a": 0.0006137159101733403,
+  "median_reference_vertex_interval_ns": 49.021230450307485,
+  "median_dmm_marker_interval_ns": 250.50561857642606,
+  "replay_vs_published_dmm_at_dots_relative_l2": 0.15754861822582866,
+  "replay_vs_published_emtp_curve_relative_l2": 0.15275021858109236,
+  "published_dmm_vs_published_emtp_at_dots_relative_l2": 0.006615665972364975,
+  "replay_min_max_a": [
+    -2.7512714380931502,
+    3.353309080857553
+  ],
+  "published_dmm_min_max_a": [
+    -2.761493508340081,
+    3.2898787348098573
+  ],
+  "published_emtp_min_max_a": [
+    -2.759892634227313,
+    3.2873615394698543
+  ],
+  "scope": "Vector plot readback at the labeled time coordinates. No time shift, gain fit, or original raw traces. Plot point spacing does not identify author solver step or decimation."
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPEL.2020.2970991",
+  "protocol_status": "frozen_before_numerical_runs",
+  "source_version": "Aalto accepted author manuscript, seven PDF pages including covers",
+  "evidence_scope": "Independent analytical and continuous average-value computational reproduction; no hardware validation or quantitative experimental-waveform matching",
+  "base_frequency_hz": 50.0,
+  "voltage_pu": 1.0,
+  "grid_voltage_pu": 1.0,
+  "power_scaling_kappa_pu": 1.0,
+  "active_resistance_pu_primary": 0.2,
+  "active_resistance_alternative": {"actual_ohm": 4.4, "base_ohm": 12.6, "reason": "Table I actual and normalized columns disagree; alternative branch, not a correction"},
+  "filter_bandwidth_pu": 0.1,
+  "paper_fig3": {"L_pu": 0.5, "operating_points_id_iq": [[0.0, 0.0], [0.7, 0.7], [-0.7, 0.7], [-0.7, -0.7]], "provenance": "Fig.3 caption and panel labels"},
+  "nonlinear_cases": {"L_pu": [1.0, 0.1], "R_grid_pu": 0.0, "provenance": "Fig.5/6 captions and Section II pure-inductance assumption"},
+  "reference_sequence": {"times_s": [0.0, 0.2, 0.4, 0.6, 0.8], "levels_pu": [0.0, 0.4, 0.8, 1.0, 0.0], "stop_s": 1.0, "provenance": "Inferred from Fig.5/6 plotted axes and red reference; not supplied raw data"},
+  "analytical_claims": [
+    {"id": "C1", "claim": "Eq.19 denominator is independent of feedforward switch xi in the H(s)=0 approximation", "source": "Section II-B, Eqs.9,18,19"},
+    {"id": "C2", "claim": "At zero current, RFPSC Eq.19 reduces exactly to alpha/(s+alpha)", "source": "Section II-B, Eq.20 and following paragraph"},
+    {"id": "C3", "claim": "Fig.3 selected nonzero operating points have near, rather than exact, complex pole-zero cancellation", "source": "Fig.3"},
+    {"id": "C4", "claim": "Reference-feedforward improves strong-grid step response and reduces weak-grid ringing", "source": "Section III, evaluated here in a continuous averaged model only"}
+  ],
+  "predeclared_checks": {
+    "zero_current_transfer_abs_error": 1e-10,
+    "steady_state_residual": 1e-9,
+    "time_domain_refinement_max_power_difference_pu": 1e-5,
+    "local_small_signal_relative_error": 0.005,
+    "small_signal_step_pu": 1e-5,
+    "metric_notes": "No universal waveform tolerance is applied to unavailable original experimental data. Pole-zero distances and overshoot are reported numerically without invented pass cutoffs."
+  },
+  "solver": {"method": "DOP853", "rtol": 1e-9, "atol": 1e-11, "max_step_s": 0.00025, "refinement_max_step_s": 0.000125, "sample_interval_s": 0.0001},
+  "excluded_claims": ["FPGA/dSPACE timing", "switching ripple and experimental THD", "fault ride through", "original measurement noise", "quantitative reproduction of experimental Fig.5/6"],
+  "critical_gaps": ["Table I Ra normalization ambiguity", "Experimental raw waveforms unavailable", "Original firmware and complete experimental parasitics not available in the inspected manuscript"],
+  "comparison_policy": "Same plant, reference, Ra, bandwidth and solver for PSC/RFPSC; no gain tuning on the outcome; alternative Ra branch kept separate"
+}

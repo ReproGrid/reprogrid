@@ -1,0 +1,1477 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "protocol_sha256": "b876371d2dc02d4633679e7df29b0fe442c34ab600531f85a059022980d1572d",
+  "implementation_route": "Independent physical fixed-grid-frame Jacobian/resolvent; frozen converter-frame Jacobian; analytic algebra",
+  "fig5": {
+    "active_scr10": {
+      "L_pu": 0.1,
+      "id0_pu": 0.95,
+      "iq0_pu": 0.2,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 1.0244144669029231,
+      "load_angle_deg_derived": 5.321021232701208,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 2.1104521043280458,
+            "factor": 11.408059923589319,
+            "imaginary_residual": 3.8522145745482224e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.37351647428792184,
+            "margin_deg": 45.376495959215674
+          }
+        ],
+        "gain_margin_factor": 11.408059923589319,
+        "phase_margin_deg": 45.376495959215674,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.5068493441962593,
+            "factor": 2.9940152708131995,
+            "imaginary_residual": 5.616134739293353e-15
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.26714716569732294,
+            "margin_deg": 50.33179626412419
+          }
+        ],
+        "gain_margin_factor": 2.9940152708131995,
+        "phase_margin_deg": 50.33179626412419,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -1.903182544949996,
+            -0.19205220681494234
+          ],
+          [
+            -1.903182544949996,
+            0.19205220681494234
+          ],
+          [
+            -0.18366376944823717,
+            -0.224389088874099
+          ],
+          [
+            -0.18366376944823717,
+            0.224389088874099
+          ],
+          [
+            -0.06630737120353584,
+            0.0
+          ]
+        ],
+        "max_real": -0.06630737120353584,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -1.9493838607573666,
+            -0.36016009090186424
+          ],
+          [
+            -1.9493838607573666,
+            0.36016009090186424
+          ],
+          [
+            -0.08750001667709945,
+            -0.34784045477164033
+          ],
+          [
+            -0.08750001667709945,
+            0.34784045477164033
+          ],
+          [
+            -0.08311612256553495,
+            -0.014992467702137056
+          ],
+          [
+            -0.08311612256553495,
+            0.014992467702137056
+          ]
+        ],
+        "max_real": -0.08311612256553495,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 9.936443350409463e-16,
+      "feedback_identity_scaled_error": 8.501186588727478e-16,
+      "fd_jacobian_max_error": 1.7318591005732742e-10
+    },
+    "active_scr3": {
+      "L_pu": 0.3333333333333333,
+      "id0_pu": 0.95,
+      "iq0_pu": 0.2,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 1.1126794486983012,
+      "load_angle_deg_derived": 16.534837857345156,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 1.1026510110378913,
+            "factor": 2.7337990650601633,
+            "imaginary_residual": 4.4332738648637643e-16
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.502181200007581,
+            "margin_deg": 51.894703237231965
+          }
+        ],
+        "gain_margin_factor": 2.7337990650601633,
+        "phase_margin_deg": 51.894703237231965,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.6593828650253372,
+            "factor": 3.211011806445233,
+            "imaginary_residual": 3.8389148270891984e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.19318092308136897,
+            "margin_deg": 69.84641987717431
+          }
+        ],
+        "gain_margin_factor": 3.211011806445233,
+        "phase_margin_deg": 69.84641987717431,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.5898667966333155,
+            0.0
+          ],
+          [
+            -0.30049240505345015,
+            -0.8622596870589719
+          ],
+          [
+            -0.30049240505345015,
+            0.8622596870589719
+          ],
+          [
+            -0.17463349228035357,
+            0.0
+          ],
+          [
+            -0.07451490097942985,
+            0.0
+          ]
+        ],
+        "max_real": -0.07451490097942985,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.32650222499734305,
+            -0.2895711344836876
+          ],
+          [
+            -0.32650222499734305,
+            0.2895711344836876
+          ],
+          [
+            -0.30026296428271226,
+            -0.7680043458595252
+          ],
+          [
+            -0.30026296428271226,
+            0.7680043458595252
+          ],
+          [
+            -0.09323481071994544,
+            -0.0065750440772969895
+          ],
+          [
+            -0.09323481071994544,
+            0.0065750440772969895
+          ]
+        ],
+        "max_real": -0.09323481071994544,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 6.515621024224037e-16,
+      "feedback_identity_scaled_error": 6.670873293379074e-16,
+      "fd_jacobian_max_error": 4.696021349559487e-11
+    },
+    "active_scr1": {
+      "L_pu": 1.0,
+      "id0_pu": 0.95,
+      "iq0_pu": 0.2,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 1.5305227865013966,
+      "load_angle_deg_derived": 38.36748538486154,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.997712067029234,
+            "factor": 2.101538523855931,
+            "imaginary_residual": 7.13267374505566e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.24799384367752236,
+            "margin_deg": 81.94829124534425
+          }
+        ],
+        "gain_margin_factor": 2.101538523855931,
+        "phase_margin_deg": 81.94829124534425,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.7127967659725672,
+            "factor": 6.631058550971977,
+            "imaginary_residual": 9.069237887239557e-19
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.1562584799478933,
+            "margin_deg": 55.997959694980565
+          }
+        ],
+        "gain_margin_factor": 6.631058550971977,
+        "phase_margin_deg": 55.997959694980565,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.1916991690712004,
+            0.0
+          ],
+          [
+            -0.16921034104740554,
+            0.0
+          ],
+          [
+            -0.10056935263577246,
+            -0.9690422026524393
+          ],
+          [
+            -0.10056935263577246,
+            0.9690422026524393
+          ],
+          [
+            -0.07795178460984904,
+            0.0
+          ]
+        ],
+        "max_real": -0.07795178460984904,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.12033744800072509,
+            -0.18331425776755828
+          ],
+          [
+            -0.12033744800072509,
+            0.18331425776755828
+          ],
+          [
+            -0.1088818869635528,
+            0.0
+          ],
+          [
+            -0.10076248032149257,
+            -0.9493060572634786
+          ],
+          [
+            -0.10076248032149257,
+            0.9493060572634786
+          ],
+          [
+            -0.08891825639201204,
+            0.0
+          ]
+        ],
+        "max_real": -0.08891825639201204,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 6.093159813655847e-16,
+      "feedback_identity_scaled_error": 7.447602459741819e-16,
+      "fd_jacobian_max_error": 1.565336749109747e-11
+    },
+    "reactive_scr10": {
+      "L_pu": 0.1,
+      "id0_pu": 0.2,
+      "iq0_pu": -0.95,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 0.9052209674990963,
+      "load_angle_deg_derived": 1.2659990003947308,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 2.1778094634788028,
+            "factor": 5.817060703113758,
+            "imaginary_residual": 4.224222742841508e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.47900215033232474,
+            "margin_deg": 55.27673766291886
+          }
+        ],
+        "gain_margin_factor": 5.817060703113758,
+        "phase_margin_deg": 55.27673766291886,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.7132734105035303,
+            "factor": 4.656588695393076,
+            "imaginary_residual": 4.884796154980872e-16
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.2178068284541383,
+            "margin_deg": 66.26096324351562
+          }
+        ],
+        "gain_margin_factor": 4.656588695393076,
+        "phase_margin_deg": 66.26096324351562,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -1.764655801390814,
+            0.0
+          ],
+          [
+            -1.227072021962997,
+            0.0
+          ],
+          [
+            -0.8391864268461426,
+            0.0
+          ],
+          [
+            -0.08954287490002331,
+            -0.04407695747288085
+          ],
+          [
+            -0.08954287490002331,
+            0.04407695747288085
+          ]
+        ],
+        "max_real": -0.08954287490002331,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -1.6995239498083272,
+            -0.36614179834198707
+          ],
+          [
+            -1.6995239498083272,
+            0.36614179834198707
+          ],
+          [
+            -0.23715141974176154,
+            -0.3346162053707978
+          ],
+          [
+            -0.23715141974176154,
+            0.3346162053707978
+          ],
+          [
+            -0.06832463044991052,
+            -0.040315176888295425
+          ],
+          [
+            -0.06832463044991052,
+            0.040315176888295425
+          ]
+        ],
+        "max_real": -0.06832463044991052,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 1.192796302970022e-15,
+      "feedback_identity_scaled_error": 7.892362715077417e-16,
+      "fd_jacobian_max_error": 1.6763479493420164e-10
+    },
+    "reactive_scr3": {
+      "L_pu": 0.3333333333333333,
+      "id0_pu": 0.2,
+      "iq0_pu": -0.95,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 0.686577664134866,
+      "load_angle_deg_derived": 5.572197803963795,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 1.1174348720166087,
+            "factor": 2.2506984741771494,
+            "imaginary_residual": 1.6275041237902432e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.4011221465944616,
+            "margin_deg": 61.57818858616547
+          }
+        ],
+        "gain_margin_factor": 2.2506984741771494,
+        "phase_margin_deg": 61.57818858616547,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.6366593442882361,
+            "factor": 3.6090002047192464,
+            "imaginary_residual": 2.0025247716718633e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.18287260243027118,
+            "margin_deg": 62.95870579090703
+          }
+        ],
+        "gain_margin_factor": 3.6090002047192464,
+        "phase_margin_deg": 62.95870579090703,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.3967022770142657,
+            0.0
+          ],
+          [
+            -0.30652112130885045,
+            -0.9498780391123903
+          ],
+          [
+            -0.30652112130885045,
+            0.9498780391123903
+          ],
+          [
+            -0.10012774018401652,
+            -0.018676757452625398
+          ],
+          [
+            -0.10012774018401652,
+            0.018676757452625398
+          ]
+        ],
+        "max_real": -0.10012774018401652,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.3100823732475747,
+            -0.8799794882442797
+          ],
+          [
+            -0.3100823732475747,
+            0.8799794882442797
+          ],
+          [
+            -0.21063558632375268,
+            -0.24215928931660305
+          ],
+          [
+            -0.21063558632375268,
+            0.24215928931660305
+          ],
+          [
+            -0.08428204042867257,
+            -0.031293729791625695
+          ],
+          [
+            -0.08428204042867257,
+            0.031293729791625695
+          ]
+        ],
+        "max_real": -0.08428204042867257,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 7.610450527583016e-16,
+      "feedback_identity_scaled_error": 7.327682229021408e-16,
+      "fd_jacobian_max_error": 5.112354983793921e-11
+    },
+    "reactive_scr1": {
+      "L_pu": 1.0,
+      "id0_pu": 0.2,
+      "iq0_pu": -0.95,
+      "current_magnitude_pu": 0.9708243919473799,
+      "Vg_pu_derived": 0.20615528128088306,
+      "load_angle_deg_derived": 75.96375653207352,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.9996193991723817,
+            "factor": 2.0187591328178103,
+            "imaginary_residual": 2.992017234349852e-16
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.010027433401546607,
+            "margin_deg": 89.9938544911049
+          }
+        ],
+        "gain_margin_factor": 2.0187591328178103,
+        "phase_margin_deg": 89.9938544911049,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.20123573187944765,
+            "factor": 12.240144059903622,
+            "imaginary_residual": 1.945418785024449e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.04240619968527817,
+            "margin_deg": 13.511807423703402
+          }
+        ],
+        "gain_margin_factor": 12.240144059903622,
+        "phase_margin_deg": 13.511807423703402,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.10198542730580029,
+            -0.9937661335751312
+          ],
+          [
+            -0.10198542730580029,
+            0.9937661335751312
+          ],
+          [
+            -0.09802879562947775,
+            -0.020958527150668406
+          ],
+          [
+            -0.09802879562947775,
+            0.020958527150668406
+          ],
+          [
+            -0.009971554129444022,
+            0.0
+          ]
+        ],
+        "max_real": -0.009971554129444022,
+        "asymptotically_stable": true
+      },
+      "outer_closed_loop_poles": {
+        "values_real_imag": [
+          [
+            -0.10207014449344833,
+            -0.9757675960219229
+          ],
+          [
+            -0.10207014449344833,
+            0.9757675960219229
+          ],
+          [
+            -0.09759900552823916,
+            -0.019702921042137025
+          ],
+          [
+            -0.09759900552823916,
+            0.019702921042137025
+          ],
+          [
+            -0.005330849978312761,
+            -0.04270971304224474
+          ],
+          [
+            -0.005330849978312761,
+            0.04270971304224474
+          ]
+        ],
+        "max_real": -0.005330849978312761,
+        "asymptotically_stable": true
+      },
+      "physical_vs_eq9_scaled_error": 4.551927966704973e-15,
+      "feedback_identity_scaled_error": 6.727850765658122e-15,
+      "fd_jacobian_max_error": 1.7091106307987047e-11
+    }
+  },
+  "fig7": {
+    "psc": {
+      "omega_b_pu_assumption": 0.1,
+      "Kp_pu": 0.2,
+      "Kd_pu": 0.17677669529663687,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 1.038725284067842,
+            "factor": 2.1232564752295002,
+            "imaginary_residual": 2.5279972297178067e-16
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.2741382755488065,
+            "margin_deg": 74.3263059772967
+          }
+        ],
+        "gain_margin_factor": 2.1232564752295002,
+        "phase_margin_deg": 74.3263059772967,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.6110638019654795,
+            "factor": 4.6413131116796436,
+            "imaginary_residual": 3.540996985514799e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.16503475526530093,
+            "margin_deg": 55.77171903296349
+          }
+        ],
+        "gain_margin_factor": 4.6413131116796436,
+        "phase_margin_deg": 55.77171903296349,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_poles": {
+        "values_real_imag": [
+          [
+            -0.21658372411459811,
+            0.0
+          ],
+          [
+            -0.2059267554044045,
+            -0.9656903626198071
+          ],
+          [
+            -0.2059267554044045,
+            0.9656903626198071
+          ],
+          [
+            -0.14883383399405808,
+            0.0
+          ],
+          [
+            -0.0827289310825352,
+            0.0
+          ]
+        ],
+        "max_real": -0.0827289310825352,
+        "asymptotically_stable": true
+      },
+      "outer_poles": {
+        "values_real_imag": [
+          [
+            -0.2072998733125029,
+            -0.92457818264018
+          ],
+          [
+            -0.2072998733125029,
+            0.92457818264018
+          ],
+          [
+            -0.13147019483348954,
+            -0.2016873090513523
+          ],
+          [
+            -0.13147019483348954,
+            0.2016873090513523
+          ],
+          [
+            -0.0912299318540078,
+            -0.022566042694684638
+          ],
+          [
+            -0.0912299318540078,
+            0.022566042694684638
+          ]
+        ],
+        "max_real": -0.0912299318540078,
+        "asymptotically_stable": true
+      }
+    },
+    "droop": {
+      "omega_b_pu_assumption": 0.1,
+      "Kp_pu": 0.05,
+      "Kd_pu": 0.17677669529663687,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 1.038725284067842,
+            "factor": 8.493025900918001,
+            "imaginary_residual": 6.319993074294517e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.06812949758786595,
+            "margin_deg": 86.55988131423503
+          }
+        ],
+        "gain_margin_factor": 8.493025900918001,
+        "phase_margin_deg": 86.55988131423503,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.2615538815146313,
+            "factor": 5.478358774935426,
+            "imaginary_residual": 1.3070265678746158e-16
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.1032004868109743,
+            "margin_deg": 28.69843818257877
+          }
+        ],
+        "gain_margin_factor": 5.478358774935426,
+        "phase_margin_deg": 28.69843818257877,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_poles": {
+        "values_real_imag": [
+          [
+            -0.3632055643263826,
+            -0.9572120623374126
+          ],
+          [
+            -0.3632055643263826,
+            0.9572120623374126
+          ],
+          [
+            -0.09265967924105192,
+            -0.05527645367515852
+          ],
+          [
+            -0.09265967924105192,
+            0.05527645367515852
+          ],
+          [
+            -0.05326951286513078,
+            0.0
+          ]
+        ],
+        "max_real": -0.05326951286513078,
+        "asymptotically_stable": true
+      },
+      "outer_poles": {
+        "values_real_imag": [
+          [
+            -0.36701931323560155,
+            -0.9492727236297178
+          ],
+          [
+            -0.36701931323560155,
+            0.9492727236297178
+          ],
+          [
+            -0.08714635718362153,
+            -0.02920308142372469
+          ],
+          [
+            -0.08714635718362153,
+            0.02920308142372469
+          ],
+          [
+            -0.028334329580776762,
+            -0.11103733589966076
+          ],
+          [
+            -0.028334329580776762,
+            0.11103733589966076
+          ]
+        ],
+        "max_real": -0.028334329580776762,
+        "asymptotically_stable": true
+      }
+    },
+    "droop_reduced_dc_gain": {
+      "omega_b_pu_assumption": 0.1,
+      "Kp_pu": 0.05,
+      "Kd_pu": 0.05303300858899106,
+      "gp": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 1.038725284067842,
+            "factor": 8.493025900918001,
+            "imaginary_residual": 6.319993074294517e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.06812949758786595,
+            "margin_deg": 86.55988131423503
+          }
+        ],
+        "gain_margin_factor": 8.493025900918001,
+        "phase_margin_deg": 86.55988131423503,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "gd": {
+        "negative_real_crossings": [
+          {
+            "frequency_pu": 0.2615538815146313,
+            "factor": 18.261195916451424,
+            "imaginary_residual": 3.921079703623848e-17
+          }
+        ],
+        "unity_gain_crossings": [
+          {
+            "frequency_pu": 0.044635225766886846,
+            "margin_deg": 55.95022545407207
+          }
+        ],
+        "gain_margin_factor": 18.261195916451424,
+        "phase_margin_deg": 55.95022545407207,
+        "frequency_search_pu": [
+          1e-07,
+          100000.0
+        ]
+      },
+      "inner_poles": {
+        "values_real_imag": [
+          [
+            -0.3632055643263826,
+            -0.9572120623374126
+          ],
+          [
+            -0.3632055643263826,
+            0.9572120623374126
+          ],
+          [
+            -0.09265967924105192,
+            -0.05527645367515852
+          ],
+          [
+            -0.09265967924105192,
+            0.05527645367515852
+          ],
+          [
+            -0.05326951286513078,
+            0.0
+          ]
+        ],
+        "max_real": -0.05326951286513078,
+        "asymptotically_stable": true
+      },
+      "outer_poles": {
+        "values_real_imag": [
+          [
+            -0.36432094697411105,
+            -0.9548374796081787
+          ],
+          [
+            -0.36432094697411105,
+            0.9548374796081787
+          ],
+          [
+            -0.08119874890140863,
+            -0.04540052095546413
+          ],
+          [
+            -0.08119874890140863,
+            0.04540052095546413
+          ],
+          [
+            -0.0369803041244809,
+            -0.049457628858104716
+          ],
+          [
+            -0.0369803041244809,
+            0.049457628858104716
+          ]
+        ],
+        "max_real": -0.0369803041244809,
+        "asymptotically_stable": true
+      }
+    }
+  },
+  "appendix_iv": {
+    "cases": {
+      "zero_current": {
+        "L_pu": 0.28284271247461906,
+        "id0_pu": 0.0,
+        "iq0_pu": 0.0,
+        "a": 0.0,
+        "b": -0.0,
+        "corrected_crossing_frequency_pu": 0.7071067811865476,
+        "printed_crossing_frequency_pu": 0.7071067811865476,
+        "numeric_crossing_frequency_pu": 0.7071067811865537,
+        "gd_at_printed_frequency_real_imag": [
+          -0.24999999999999992,
+          7.2756255008456e-17
+        ],
+        "gain_margin_corrected": 4.0,
+        "gain_margin_printed_eq42": 6.000000000000001,
+        "gain_margin_numeric": 4.0000000000000355,
+        "eq43_lower_bound": 4.000000000000001,
+        "eq24_Kd_upper_bound": 0.1767766952966369,
+        "theorem1_gm_corrected_eq39_first_expression": 3.0,
+        "theorem1_gm_printed_eq39_second_expression": 3.0,
+        "theorem1_gm_numeric": 2.9999999999999996,
+        "physical_vs_eq14_max_pole_error": 4.440892098500626e-16,
+        "inner_poles": {
+          "values_real_imag": [
+            [
+              -0.7071067811865475,
+              0.0
+            ],
+            [
+              -0.35355339059327373,
+              -0.9354143466934853
+            ],
+            [
+              -0.35355339059327373,
+              0.9354143466934853
+            ]
+          ],
+          "max_real": -0.35355339059327373,
+          "asymptotically_stable": true
+        },
+        "outer_poles": {
+          "values_real_imag": [
+            [
+              -0.35355339059327373,
+              -0.8535533905932738
+            ],
+            [
+              -0.35355339059327373,
+              0.8535533905932738
+            ],
+            [
+              -0.3535533905932736,
+              -0.14644660940672596
+            ],
+            [
+              -0.3535533905932736,
+              0.14644660940672596
+            ]
+          ],
+          "max_real": -0.3535533905932736,
+          "asymptotically_stable": true
+        }
+      },
+      "reactive_scr1": {
+        "L_pu": 1.0,
+        "id0_pu": 0.2,
+        "iq0_pu": -0.95,
+        "a": -0.95,
+        "b": 0.00029999999999999813,
+        "corrected_crossing_frequency_pu": 0.21887156486113482,
+        "printed_crossing_frequency_pu": 0.9757536769570679,
+        "numeric_crossing_frequency_pu": 0.2188715648611347,
+        "gd_at_printed_frequency_real_imag": [
+          -0.06835508037094881,
+          0.151320379864946
+        ],
+        "gain_margin_corrected": 14.030345408800507,
+        "gain_margin_printed_eq42": 27.495005392651773,
+        "gain_margin_numeric": 14.030345408800503,
+        "eq43_lower_bound": 5.519696333952405,
+        "eq24_Kd_upper_bound": 0.24393841923926698,
+        "theorem1_gm_corrected_eq39_first_expression": 2.0032745834537224,
+        "theorem1_gm_printed_eq39_second_expression": 2.1614881014236724,
+        "theorem1_gm_numeric": 2.003274583453723,
+        "physical_vs_eq14_max_pole_error": 1.3409850070281778e-15,
+        "inner_poles": {
+          "values_real_imag": [
+            [
+              -0.1001544169493467,
+              -1.0139170905871278
+            ],
+            [
+              -0.1001544169493467,
+              1.0139170905871278
+            ],
+            [
+              -0.009691166101306764,
+              0.0
+            ]
+          ],
+          "max_real": -0.009691166101306764,
+          "asymptotically_stable": true
+        },
+        "outer_poles": {
+          "values_real_imag": [
+            [
+              -0.10016070967843108,
+              -0.996327179329863
+            ],
+            [
+              -0.10016070967843108,
+              0.996327179329863
+            ],
+            [
+              -0.004839290321569011,
+              -0.0418349867496278
+            ],
+            [
+              -0.004839290321569011,
+              0.0418349867496278
+            ]
+          ],
+          "max_real": -0.004839290321569011,
+          "asymptotically_stable": true
+        }
+      },
+      "active_scr3": {
+        "L_pu": 0.3333333333333333,
+        "id0_pu": 0.95,
+        "iq0_pu": 0.2,
+        "a": 0.06666666666666667,
+        "b": -0.06170000000000001,
+        "corrected_crossing_frequency_pu": 0.6973336314479512,
+        "printed_crossing_frequency_pu": 0.716746682204817,
+        "numeric_crossing_frequency_pu": 0.6973336314479512,
+        "gd_at_printed_frequency_real_imag": [
+          -0.23608118607754075,
+          0.01324872668547283
+        ],
+        "gain_margin_corrected": 4.118782950930803,
+        "gain_margin_printed_eq42": 6.5405096270138925,
+        "gain_margin_numeric": 4.118782950930802,
+        "eq43_lower_bound": 4.0545315150398835,
+        "eq24_Kd_upper_bound": 0.17918667055120424,
+        "theorem1_gm_corrected_eq39_first_expression": 2.9749535163513072,
+        "theorem1_gm_printed_eq39_second_expression": 2.826561363400187,
+        "theorem1_gm_numeric": 2.974953516351247,
+        "physical_vs_eq14_max_pole_error": 5.4672143489065705e-16,
+        "inner_poles": {
+          "values_real_imag": [
+            [
+              -0.6180582921057458,
+              0.0
+            ],
+            [
+              -0.3109708539471271,
+              -0.9374971457156243
+            ],
+            [
+              -0.3109708539471271,
+              0.9374971457156243
+            ]
+          ],
+          "max_real": -0.3109708539471271,
+          "asymptotically_stable": true
+        },
+        "outer_poles": {
+          "values_real_imag": [
+            [
+              -0.3143039011922899,
+              -0.8716711766188237
+            ],
+            [
+              -0.3143039011922899,
+              0.8716711766188237
+            ],
+            [
+              -0.30569609880771004,
+              -0.17520694847741136
+            ],
+            [
+              -0.30569609880771004,
+              0.17520694847741136
+            ]
+          ],
+          "max_real": -0.30569609880771004,
+          "asymptotically_stable": true
+        }
+      }
+    },
+    "frequency_formula": "omega1*sqrt((1+a+b)/(2+a))",
+    "corrected_eq42": "((1-b)*omega1^2*L/(2*(2+a)*Ra)+Ra/(2*L))/Kd",
+    "eq43_and_eq24": "Valid pointwise by AM-GM for positive quantities and applicable negative-real crossing; intermediate printed expressions inconsistent",
+    "minimizer_holding_a_b_fixed": "(Ra/omega1)*sqrt((2+a)/(1-b)); printed sqrt(2)*Ra/omega1 is a=b=0 special case",
+    "max_numeric_crossing_relative_error": 8.659739592076221e-15,
+    "max_numeric_gm_relative_error": 8.881784197001252e-15
+  },
+  "limits": {
+    "large_Ra_id_0": {
+      "Ra_pu": 1.0,
+      "L_pu": 1.0,
+      "id0": 0.0,
+      "iq0": 0.0,
+      "a": 0.0,
+      "b": -0.0,
+      "slow_pole_approx": -1.0,
+      "poles": {
+        "values_real_imag": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            -0.4999999999999998,
+            -0.8660254037844386
+          ],
+          [
+            -0.4999999999999998,
+            0.8660254037844386
+          ]
+        ],
+        "max_real": -0.4999999999999998,
+        "asymptotically_stable": true
+      }
+    },
+    "large_Ra_id_0_99": {
+      "Ra_pu": 1.0,
+      "L_pu": 1.0,
+      "id0": 0.99,
+      "iq0": 0.0,
+      "a": 0.0,
+      "b": -0.9801,
+      "slow_pole_approx": -0.01990000000000003,
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.9949747474812871,
+            -0.9950001278649184
+          ],
+          [
+            -0.9949747474812871,
+            0.9950001278649184
+          ],
+          [
+            -0.010050505037425925,
+            0.0
+          ]
+        ],
+        "max_real": -0.010050505037425925,
+        "asymptotically_stable": true
+      }
+    },
+    "large_Ra_id_0_9999": {
+      "Ra_pu": 1.0,
+      "L_pu": 1.0,
+      "id0": 0.9999,
+      "iq0": 0.0,
+      "a": 0.0,
+      "b": -0.9998000100000001,
+      "slow_pole_approx": -0.00019998999999992773,
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.99994999749975,
+            -0.9999500000001249
+          ],
+          [
+            -0.99994999749975,
+            0.9999500000001249
+          ],
+          [
+            -0.000100005000500039,
+            0.0
+          ]
+        ],
+        "max_real": -0.000100005000500039,
+        "asymptotically_stable": true
+      }
+    },
+    "reactive_iq_0": {
+      "Ra_pu": 0.2,
+      "L_pu": 1.0,
+      "id0": 0.0,
+      "iq0": 0.0,
+      "a": 0.0,
+      "b": -0.0,
+      "slow_pole_approx": -0.2,
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.19999999999999996,
+            0.0
+          ],
+          [
+            -0.09999999999999992,
+            -0.9949874371066199
+          ],
+          [
+            -0.09999999999999992,
+            0.9949874371066199
+          ]
+        ],
+        "max_real": -0.09999999999999992,
+        "asymptotically_stable": true
+      }
+    },
+    "reactive_iq_neg_0_99": {
+      "Ra_pu": 0.2,
+      "L_pu": 1.0,
+      "id0": 0.0,
+      "iq0": -0.99,
+      "a": -0.99,
+      "b": 0.0003960000000000009,
+      "slow_pole_approx": -0.002079200000000002,
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.10000000000000003,
+            -1.014692071517266
+          ],
+          [
+            -0.10000000000000003,
+            1.014692071517266
+          ],
+          [
+            -0.0020000000000000013,
+            0.0
+          ]
+        ],
+        "max_real": -0.0020000000000000013,
+        "asymptotically_stable": true
+      }
+    },
+    "reactive_iq_neg_0_9999": {
+      "Ra_pu": 0.2,
+      "L_pu": 1.0,
+      "id0": 0.0,
+      "iq0": -0.9999,
+      "a": -0.9999,
+      "b": 3.99959999999755e-06,
+      "slow_pole_approx": -2.079991999999731e-05,
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.09999999999999994,
+            -1.014887185848752
+          ],
+          [
+            -0.09999999999999994,
+            1.014887185848752
+          ],
+          [
+            -1.9999999999997796e-05,
+            0.0
+          ]
+        ],
+        "max_real": -1.9999999999997796e-05,
+        "asymptotically_stable": true
+      }
+    }
+  },
+  "source_issues": {
+    "table_I_Ra": "4.4 ohm / 12.6 ohm = .349206 pu, inconsistent with .2 pu; independent analytic baseline uses recommended .2 pu",
+    "Fig5_current_norm": 0.9708243919473799,
+    "frequency_units": "All generated frequencies normalized to omega1; dimensional rad/s=pu*2*pi*50",
+    "experimental_claim_scope": "No raw traces and no hardware replication; Tables/Figs 11-17 cannot be treated as numerically replicated experiments."
+  },
+  "gates": {
+    "max_physical_vs_paper_scaled_complex_error": 6.727850765658122e-15,
+    "transfer_gate_pass": true,
+    "max_analytic_vs_finite_difference_jacobian_error": 1.7318591005732742e-10,
+    "jacobian_gate_pass": true,
+    "max_equilibrium_residual": 2.220446049250313e-16,
+    "appendix_numeric_gate_pass": true,
+    "finite_filter_inner_all_stable": true,
+    "finite_filter_outer_all_stable": true,
+    "frozen_filter_scan_all_stable": true
+  },
+  "appendix_ii": {
+    "corrected_gm_formula": "2*(1+(Ra/(omega1*L))^2)/(1+b-a*(Ra/(omega1*L))^2)",
+    "corrected_denominator": "1-2*Ra^2*iq0/(omega1*L*V)-(Ra*abs(i0)/V)^2",
+    "printed_error": "Eq39 first denominator to second denominator drops a nonzero reactive-current term; Eq40 inherits it",
+    "bound_survives": "Numerator(half gm)-denominator = (Ra/(omega1*L))^2*abs(V-j*omega1*L*i0)^2/V^2 >=0; gm>=2 when denominator positive and crossing negative real",
+    "max_corrected_formula_vs_physical_gm_relative_error": 2.0317081350640365e-14
+  },
+  "frozen_filter_domain_scan": {
+    "count": 3150,
+    "range": "V=omega1=kappa=1; Ra=.2; SCR1..10; |i|0..0.999; 25 current angles; wb=0; Kd chosen at Eq24 bound",
+    "minimum_inner_gm_formula": 2.000303399603318,
+    "minimum_outer_gm_corrected_formula": 4.000003509486218,
+    "maximum_inner_pole_real": -0.000563985479984636,
+    "maximum_outer_pole_real": -0.00028127292059877565,
+    "inner_unstable_count": 0,
+    "outer_unstable_count": 0,
+    "limitation": "Finite scan corroborates but does not prove global claims or cover depressed converter voltage/current limiting."
+  },
+  "low_current_factorization": {
+    "1": {
+      "SCR": 1,
+      "zeta_exact_for_a_b_zero": 0.1,
+      "eq20_zeta": 0.1,
+      "factorization": "(s+r)*(s^2+r*s+1), exact only a=b=0 in frozen-filter model",
+      "pair_type": "complex",
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.19999999999999996,
+            0.0
+          ],
+          [
+            -0.09999999999999992,
+            -0.9949874371066199
+          ],
+          [
+            -0.09999999999999992,
+            0.9949874371066199
+          ]
+        ],
+        "max_real": -0.09999999999999992,
+        "asymptotically_stable": true
+      }
+    },
+    "3": {
+      "SCR": 3,
+      "zeta_exact_for_a_b_zero": 0.30000000000000004,
+      "eq20_zeta": 0.30000000000000004,
+      "factorization": "(s+r)*(s^2+r*s+1), exact only a=b=0 in frozen-filter model",
+      "pair_type": "complex",
+      "poles": {
+        "values_real_imag": [
+          [
+            -0.6000000000000001,
+            0.0
+          ],
+          [
+            -0.30000000000000004,
+            -0.9539392014169457
+          ],
+          [
+            -0.30000000000000004,
+            0.9539392014169457
+          ]
+        ],
+        "max_real": -0.30000000000000004,
+        "asymptotically_stable": true
+      }
+    },
+    "10": {
+      "SCR": 10,
+      "zeta_exact_for_a_b_zero": 1.0,
+      "eq20_zeta": 1.0,
+      "factorization": "(s+r)*(s^2+r*s+1), exact only a=b=0 in frozen-filter model",
+      "pair_type": "critical",
+      "poles": {
+        "values_real_imag": [
+          [
+            -2.0,
+            0.0
+          ],
+          [
+            -1.0000000176647246,
+            0.0
+          ],
+          [
+            -0.9999999823352753,
+            0.0
+          ]
+        ],
+        "max_real": -0.9999999823352753,
+        "asymptotically_stable": true
+      }
+    },
+    "20": {
+      "SCR": 20,
+      "zeta_exact_for_a_b_zero": 2.0,
+      "eq20_zeta": 2.0,
+      "factorization": "(s+r)*(s^2+r*s+1), exact only a=b=0 in frozen-filter model",
+      "pair_type": "two_real",
+      "poles": {
+        "values_real_imag": [
+          [
+            -4.000000000000001,
+            0.0
+          ],
+          [
+            -3.732050807568877,
+            0.0
+          ],
+          [
+            -0.26794919243112253,
+            0.0
+          ]
+        ],
+        "max_real": -0.26794919243112253,
+        "asymptotically_stable": true
+      }
+    }
+  },
+  "run": {
+    "started_utc": "2026-11-11T03:51:06.426995+00:00",
+    "finished_utc": "2026-11-11T03:51:08.409375+00:00",
+    "measured_wall_elapsed_s": 1.982361167029012
+  }
+}

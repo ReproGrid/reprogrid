@@ -1,0 +1,16 @@
+{
+  "protocol_version": 1,
+  "declared_before_computing_cross_implementation_differences": true,
+  "scope": "Compare already-completed independent grid-frame and primary converter-dq-frame implementations; do not import either solver into the other",
+  "primary_sample_interval_s": 0.0001,
+  "independent_sample_interval_s": 0.000025,
+  "alignment": "Select every fourth independent sample after verifying each timestamp matches the primary timestamp within 1e-12 seconds; no waveform interpolation",
+  "time_alignment_tolerance_s": 1e-12,
+  "event_handling": "Both outputs must be right-continuous at 0.2,0.4,0.6,0.8 seconds: preserve continuous state and use the post-event reference for algebraic power/voltage",
+  "reference_gate": "Reference vectors must agree exactly on matched samples and at every event",
+  "power_max_abs_tolerance_pu": 2e-7,
+  "power_tolerance_reason": "Same absolute cross-solver gate as the independently frozen verification protocol; declared before paired output differences are computed",
+  "auxiliary_metrics": "Report controller-frame id/iq, delta, voltage magnitude and filter-state differences; the formal response acceptance gate is power plus time/reference consistency",
+  "sources": "Record immutable bytes/hash of each input NPZ, numeric-array hashes, both protocol hashes, original generating-code hash from manifests, and current primary-code hash separately",
+  "failure_policy": "Record failure without loosening the gate; diagnose timestamp/reference convention before attributing any numerical difference to the model"
+}

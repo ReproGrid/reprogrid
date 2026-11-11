@@ -1,0 +1,31 @@
+{
+  "doi": "10.1109/TIE.2019.2952824",
+  "issue_year": 2020,
+  "primary": {
+    "record_url": "https://eprints.whiterose.ac.uk/id/eprint/162707/",
+    "file_url": "https://eprints.whiterose.ac.uk/162707/1/An_improved_delay_suppressed_sliding_mode_observer.pdf",
+    "t7_workspace_path": "research/feasibility_batch1/sources/pmsm_delay_smo2019.pdf",
+    "sha256": "f4b7546e027453e0452ba357d5a9055a56f119cc7310990de543a3cb87211ad8",
+    "kind": "accepted_manuscript",
+    "pages": 11
+  },
+  "cross_checks": [
+    "https://pure.york.ac.uk/portal/en/publications/an-improved-delay-suppressed-sliding-mode-observer-for-sensorless/",
+    "https://www.researchgate.net/publication/337303318_An_Improved_Delay-Suppressed_Sliding-Mode_Observer_for_Sensorless_Vector-Controlled_PMSM"
+  ],
+  "supplement_search": {
+    "keys": [
+      "exact title",
+      "DOI"
+    ],
+    "targets": [
+      "public supplement",
+      "GitHub",
+      "Zenodo",
+      "figshare",
+      "IEEE DataPort"
+    ],
+    "attributable_artifacts_found": false,
+    "access_limit": "IEEE DataPort was not directly crawlable."
+  }
+}

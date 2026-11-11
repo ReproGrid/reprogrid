@@ -1,0 +1,10 @@
+{
+  "case": "do13_strong",
+  "initial_implicit_solver": "Radau with its default numerical Jacobian",
+  "initial_radau_vs_tight_dop853_max_current_pu": 7.991257478621488e-06,
+  "initial_worst_time_s": 1.2106,
+  "implicit_fixed_jacobian_attempt": "Interrupted after more than two minutes, with no complete output. Archived implementation for diagnosis.",
+  "rk45_vs_tight_dop853_max_current_pu": 4.031186551029378e-12,
+  "rk45_vs_primary_nominal_frame_max_current_pu": 7.857084253667084e-11,
+  "frozen_trajectory_tolerance": 1e-07
+}

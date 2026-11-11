@@ -235,3 +235,8 @@ tbody th { color: #2b4b3d; min-width: 92px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+.evidence-figure { margin: 1.25rem 0; }
+.evidence-figure img { display: block; max-width: 100%; height: auto; border-radius: 0.5rem; background: #fff; }
+.evidence-figure figcaption { margin-top: 0.6rem; font-size: 0.875rem; }
+.detail-section > summary { cursor: pointer; font-weight: 700; }

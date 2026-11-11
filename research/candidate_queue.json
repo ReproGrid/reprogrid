@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "research_queue_not_executed",
+  "status": "catalog_with_computational_evidence",
   "checked_on_local": "2026-11-10",
   "note": "Citation counts are database-specific snapshots. OpenAlex OA flags do not fully cover author uploads. Test targets are questions, not findings of error or misconduct.",
   "papers": [
@@ -28,6 +28,8 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TPEL",
@@ -58,6 +60,8 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TIE",
@@ -90,6 +94,8 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TPEL",
@@ -122,6 +128,8 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "exception_candidate",
         "abbreviation": "TIA",
@@ -164,6 +172,8 @@
       "state": "parked",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TPEL",
@@ -196,6 +206,8 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TIE",
@@ -231,12 +243,58 @@
       "state": "screened",
       "feasibility_review_complete": false,
       "code_executed": false,
+      "anomaly_evidence": [],
+      "misconduct_allegation": null,
       "venue_policy": {
         "status": "preferred",
         "abbreviation": "TPEL",
         "basis": "Explicit user priority list, 2026-11-10",
         "quartile_classification": null
       }
+    },
+    {
+      "doi": "10.1109/TIE.2018.2875669",
+      "title": "Design-Oriented Transient Stability Analysis of Grid-Connected Converters With Power Synchronization Control",
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "first_publication_date_openalex": "2018-10-17",
+      "openalex_id": "https://openalex.org/W2896180559",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 336,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2018.2875669"
+      },
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TIE",
+        "quartile_classification": null
+      },
+      "full_text_url": "https://arxiv.org/pdf/1804.09394",
+      "issue_year": 2019,
+      "domain": "gfm_stability",
+      "state": "screened"
+    },
+    {
+      "doi": "10.1109/TIE.2019.2952824",
+      "title": "An Improved Delay-Suppressed Sliding-Mode Observer for Sensorless Vector-Controlled PMSM",
+      "venue": "IEEE Transactions on Industrial Electronics",
+      "first_publication_date_openalex": "2019-11-15",
+      "openalex_id": "https://openalex.org/W2988299278",
+      "citations": {
+        "source": "OpenAlex",
+        "checked_on_local": "2026-11-10",
+        "count": 408,
+        "api_url": "https://api.openalex.org/works/https://doi.org/10.1109/TIE.2019.2952824"
+      },
+      "venue_policy": {
+        "status": "preferred",
+        "abbreviation": "TIE",
+        "quartile_classification": null
+      },
+      "full_text_url": "https://eprints.whiterose.ac.uk/162707/1/An_improved_delay_suppressed_sliding_mode_observer.pdf",
+      "issue_year": 2020,
+      "domain": "pmsm_current_control",
+      "state": "parked"
     }
   ],
   "venue_policy_updated_on_local": "2026-11-10",

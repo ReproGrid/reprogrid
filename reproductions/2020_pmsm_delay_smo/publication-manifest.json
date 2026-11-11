@@ -1,0 +1,27 @@
+{
+  "doi": "10.1109/TIE.2019.2952824",
+  "source_handoff_state": "parked_missing_inputs",
+  "scope": "Input gap audit only",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 704,
+      "sha256": "ee60094f922a9ab771a0f598bb06aaf5b509432111b7f4558640dd0b84071831"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 3177,
+      "sha256": "7729ad9431bf10db50c482ae3742fd5ec2d342288167a7ddf761bfdd83197c21"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 1255,
+      "sha256": "ab8b3890bba49b707c464be805a2119eb778ebfcce86e0340260391982596ba1"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 1094,
+      "sha256": "e8e2288f4331b28e3e6adc85c9ad53415f4f079960b9c9f263965fd06f26c7ed"
+    }
+  ]
+}

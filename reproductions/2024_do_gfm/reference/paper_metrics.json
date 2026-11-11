@@ -1,0 +1,210 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "paper_url": "https://acris.aalto.fi/ws/portalfiles/portal/162149547/Multifunctional_Grid-Forming_Converter_Control_Based_on_a_Disturbance_Observer.pdf",
+  "paper_pdf_sha256": "a17aee546525bd418ced2ea980c18c82ca2f32bd552daf774415ddbce64cb51e",
+  "pdf_page_one_based": 7,
+  "printed_page": 13028,
+  "weak_grid_total_inductance_pu": 0.89,
+  "method": "Extract the colored stair polylines from the PDF and calibrate them with the rendered axes. The CSV samples the right-continuous hold on a 0.4 ms grid.",
+  "scope": "Published plot digitization. Original laboratory telemetry and sample clocks were unavailable. Horizontal segments and repeated values can be merged in the PDF path.",
+  "csv_step_s": 0.0004,
+  "clock_alignment": "The first command edge for each published trace is translated to 0.2 s. CSV time_s retains the paper clock.",
+  "timing_metric": "First 10% and 90% crossings on the published vector stairs relative to the nominal command levels. Approximate 0.4 ms plot sampling. Tail means use the last 50 ms before the next command or 1.5 s.",
+  "voltage_signal": "u_c_hat_pu represents the magnitude of the red estimated disturbance voltage trace shown in the proposed controller figure.",
+  "panels": {
+    "rfpsc": {
+      "figure": "5(b)",
+      "csv": "fig5b_rfpsc.csv",
+      "row_count": 3751,
+      "axis_calibration": {
+        "power": {
+          "left_pt": 78.63896942138672,
+          "right_pt": 275.67596435546875,
+          "top_pt": 229.6099853515625,
+          "bottom_pt": 282.2879943847656,
+          "low_pu": -1.0,
+          "high_pu": 1.5
+        },
+        "voltage": {
+          "left_pt": 78.63893127441406,
+          "right_pt": 275.6759338378906,
+          "top_pt": 289.4609680175781,
+          "bottom_pt": 342.13897705078125,
+          "low_pu": 0.8,
+          "high_pu": 1.2
+        }
+      },
+      "extracted_command_levels_pu": [
+        -1.04278125983015e-05,
+        0.3299661154022846,
+        0.6599897286045906,
+        0.9999798685284562,
+        -1.04278125983015e-05
+      ],
+      "command_edges_plot_s": [
+        0.19877727640168352,
+        0.49878188802747986,
+        0.7987863834914174,
+        1.0987909951172137
+      ],
+      "aligned_time_offset_s": 0.0012227235983164886,
+      "steps": [
+        {
+          "time_s": 0.19877727640168352,
+          "nominal_p_g_ref_before_pu": 0.0,
+          "nominal_p_g_ref_after_pu": 0.33,
+          "t10_t90_ms": 41.20034617782764,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.3199528315276803,
+            "q_g_pu": -0.08985582390437001,
+            "u_c_ref_pu": 1.016470987681857,
+            "u_g_pu": 0.9972926145017272
+          },
+          "min_u_c_ref_pu_after_step": 1.015050230193963
+        },
+        {
+          "time_s": 0.49878188802747986,
+          "nominal_p_g_ref_before_pu": 0.33,
+          "nominal_p_g_ref_after_pu": 0.66,
+          "t10_t90_ms": 51.20356657176106,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.640666609506805,
+            "q_g_pu": -0.2874711453735561,
+            "u_c_ref_pu": 1.0330271729099332,
+            "u_g_pu": 0.9987379501121859
+          },
+          "min_u_c_ref_pu_after_step": 1.0305709864652786
+        },
+        {
+          "time_s": 0.7987863834914174,
+          "nominal_p_g_ref_before_pu": 0.66,
+          "nominal_p_g_ref_after_pu": 1.0,
+          "t10_t90_ms": 89.59494475980878,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.969390830360924,
+            "q_g_pu": -0.7946246595753678,
+            "u_c_ref_pu": 1.0507123407948196,
+            "u_g_pu": 1.0003377600942673
+          },
+          "min_u_c_ref_pu_after_step": 1.0473597647485478
+        },
+        {
+          "time_s": 1.0987909951172137,
+          "nominal_p_g_ref_before_pu": 1.0,
+          "nominal_p_g_ref_after_pu": 0.0,
+          "t10_t90_ms": 44.00187980864101,
+          "directional_overshoot_percent_of_command_step": 0.23842034860177552,
+          "last_50ms_means_pu": {
+            "p_g_pu": -0.00012420683450424795,
+            "q_g_pu": 0.0014958117849344736,
+            "u_c_ref_pu": 1.0000300886422004,
+            "u_g_pu": 0.9963764315214235
+          },
+          "min_u_c_ref_pu_after_step": 0.8509894545848485
+        }
+      ]
+    },
+    "do_gfm": {
+      "figure": "6(b)",
+      "csv": "fig6b_do_gfm.csv",
+      "row_count": 3751,
+      "axis_calibration": {
+        "power": {
+          "left_pt": 341.6547546386719,
+          "right_pt": 538.6907348632812,
+          "top_pt": 229.60986328125,
+          "bottom_pt": 282.2878723144531,
+          "low_pu": -1.0,
+          "high_pu": 1.5
+        },
+        "voltage": {
+          "left_pt": 341.65478515625,
+          "right_pt": 538.6907958984375,
+          "top_pt": 289.4608459472656,
+          "bottom_pt": 342.13885498046875,
+          "low_pu": 0.8,
+          "high_pu": 1.2
+        }
+      },
+      "extracted_command_levels_pu": [
+        -1.04278125983015e-05,
+        0.3299661154022846,
+        0.6599897286045906,
+        0.9999798685284562,
+        -1.04278125983015e-05
+      ],
+      "command_edges_plot_s": [
+        0.1963651992766951,
+        0.4963712397244627,
+        0.7963849468943968,
+        1.0963912196670784
+      ],
+      "aligned_time_offset_s": 0.0036348007233049096,
+      "steps": [
+        {
+          "time_s": 0.1963651992766951,
+          "nominal_p_g_ref_before_pu": 0.0,
+          "nominal_p_g_ref_after_pu": 0.33,
+          "t10_t90_ms": 40.80485094420716,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.32082247633900357,
+            "q_g_pu": -0.08798332476900945,
+            "u_c_ref_pu": 1.0163023592926004,
+            "u_g_pu": 0.9961959775292226,
+            "u_c_hat_pu": 1.0008343723876156
+          },
+          "min_u_c_ref_pu_after_step": 1.014981870089152
+        },
+        {
+          "time_s": 0.4963712397244627,
+          "nominal_p_g_ref_before_pu": 0.33,
+          "nominal_p_g_ref_after_pu": 0.66,
+          "t10_t90_ms": 50.39708199907844,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.6390171323167761,
+            "q_g_pu": -0.2853954776894053,
+            "u_c_ref_pu": 1.0320697606759075,
+            "u_g_pu": 0.9977137238703636,
+            "u_c_hat_pu": 1.001843725324464
+          },
+          "min_u_c_ref_pu_after_step": 1.0301455317112678
+        },
+        {
+          "time_s": 0.7963849468943968,
+          "nominal_p_g_ref_before_pu": 0.66,
+          "nominal_p_g_ref_after_pu": 1.0,
+          "t10_t90_ms": 109.60183381798893,
+          "directional_overshoot_percent_of_command_step": 0.0,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.9605152266340238,
+            "q_g_pu": -0.7748046899666484,
+            "u_c_ref_pu": 1.047682544942424,
+            "u_g_pu": 0.999285407492847,
+            "u_c_hat_pu": 1.0037168997186228
+          },
+          "min_u_c_ref_pu_after_step": 1.0454915641892695
+        },
+        {
+          "time_s": 1.0963912196670784,
+          "nominal_p_g_ref_before_pu": 1.0,
+          "nominal_p_g_ref_after_pu": 0.0,
+          "t10_t90_ms": 35.597520318749744,
+          "directional_overshoot_percent_of_command_step": 0.2478343460863508,
+          "last_50ms_means_pu": {
+            "p_g_pu": 0.0007621804092684723,
+            "q_g_pu": 0.003235008715913352,
+            "u_c_ref_pu": 1.0000182482085886,
+            "u_g_pu": 0.9950052770524976,
+            "u_c_hat_pu": 1.0000449137475067
+          },
+          "min_u_c_ref_pu_after_step": 0.8492429118392171
+        }
+      ]
+    }
+  }
+}

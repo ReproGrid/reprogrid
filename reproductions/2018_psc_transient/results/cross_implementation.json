@@ -1,0 +1,140 @@
+{
+  "tolerance": 1e-07,
+  "cases": 8,
+  "samples_per_case": 5001,
+  "max_waveform_error": {
+    "angle_rad": 1.2096990076315706e-12,
+    "power_pu": 9.245937349078304e-13,
+    "current_pu": 1.1829426327381043e-12
+  },
+  "max_scalar_error": 1.7053025658242404e-13,
+  "branches": {
+    "table_pu": {
+      "scalar_absolute_differences": {
+        "type_i_pre_deg": 7.105427357601002e-15,
+        "type_i_post_deg": 0.0,
+        "type_ii_cca_deg": 4.263256414560601e-14,
+        "type_ii_cct_s": 0.0,
+        "fault_slip_period_s": 6.661338147750939e-16,
+        "type_ii_uncleared_first_current_limit_crossing_s": 9.769962616701378e-15,
+        "type_ii_early_clear_angle_deg": 5.684341886080802e-14,
+        "type_ii_late_clear_angle_deg": 1.7053025658242404e-13,
+        "type_ii_late_first_current_limit_crossing_s": 0.0
+      },
+      "trajectories": {
+        "type_i_line_open": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 8.1601392309949e-15,
+            "power_pu": 8.215650382226158e-15,
+            "current_pu": 8.881784197001252e-15
+          }
+        },
+        "type_ii_uncleared": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": null,
+          "first_current_limit_crossing_s_error": 9.769962616701378e-15,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 5.133671265866724e-13,
+            "power_pu": 3.289590821964339e-13,
+            "current_pu": 4.5219383792982626e-13
+          }
+        },
+        "type_ii_early": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": 5.684341886080802e-14,
+          "first_current_limit_crossing_s_error": null,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 1.7763568394002505e-15,
+            "power_pu": 6.661338147750939e-16,
+            "current_pu": 1.7763568394002505e-15
+          }
+        },
+        "type_ii_late": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": 1.7053025658242404e-13,
+          "first_current_limit_crossing_s_error": 0.0,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 1.2096990076315706e-12,
+            "power_pu": 9.245937349078304e-13,
+            "current_pu": 1.1829426327381043e-12
+          }
+        }
+      }
+    },
+    "table_si": {
+      "scalar_absolute_differences": {
+        "type_i_pre_deg": 0.0,
+        "type_i_post_deg": 0.0,
+        "type_ii_cca_deg": 0.0,
+        "type_ii_cct_s": 9.992007221626409e-16,
+        "fault_slip_period_s": 1.3322676295501878e-15,
+        "type_ii_uncleared_first_current_limit_crossing_s": 0.0,
+        "type_ii_early_clear_angle_deg": 1.4210854715202004e-14,
+        "type_ii_late_clear_angle_deg": 2.842170943040401e-14,
+        "type_ii_late_first_current_limit_crossing_s": 0.0
+      },
+      "trajectories": {
+        "type_i_line_open": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 8.215650382226158e-15,
+            "power_pu": 8.326672684688674e-15,
+            "current_pu": 8.548717289613705e-15
+          }
+        },
+        "type_ii_uncleared": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": null,
+          "first_current_limit_crossing_s_error": 0.0,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 4.32542890393961e-13,
+            "power_pu": 2.779998453661392e-13,
+            "current_pu": 3.788080960021034e-13
+          }
+        },
+        "type_ii_early": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": 1.4210854715202004e-14,
+          "first_current_limit_crossing_s_error": null,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 1.5543122344752192e-15,
+            "power_pu": 5.551115123125783e-16,
+            "current_pu": 1.3322676295501878e-15
+          }
+        },
+        "type_ii_late": {
+          "basin_agrees": true,
+          "current_limit_event_agrees": true,
+          "clear_angle_deg_error": 2.842170943040401e-14,
+          "first_current_limit_crossing_s_error": 0.0,
+          "samples": 5001,
+          "fields": {
+            "angle_rad": 1.1439738045737613e-12,
+            "power_pu": 8.415490526658687e-13,
+            "current_pu": 1.1081136008783687e-12
+          }
+        }
+      }
+    }
+  },
+  "source_sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "primary_manifest_sha256": "5606e5d4c00fd10a4971cdc0a771b5abf1773616fe8e7bc5b3c2ff99861ce698",
+  "verification_manifest_sha256": "39931f195c16d055b7dbb10383645309efe37ab28a5cafede6c8b171cb3f255d",
+  "verification_trajectory_sha256": "c13b51e647d4f7d2ee9f8c6d7be80f97bb6411eefdcfb7e7a256a195452ccecb",
+  "passed": true
+}

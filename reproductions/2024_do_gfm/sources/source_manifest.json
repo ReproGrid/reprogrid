@@ -1,0 +1,26 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "title": "Multifunctional Grid-Forming Converter Control Based on a Disturbance Observer",
+  "authors": ["Tuure Nurminen", "Rayane Mourouvin", "Marko Hinkkanen", "Jarno Kukkola"],
+  "journal": "IEEE Transactions on Power Electronics",
+  "volume": 39,
+  "issue": 10,
+  "pages": "13023–13032",
+  "early_online": "2024-07-25",
+  "version": "Publisher version with Aalto repository cover",
+  "license": "CC BY 4.0",
+  "landing_url": "https://research.aalto.fi/en/publications/multifunctional-grid-forming-converter-control-based-on-a-disturb/",
+  "pdf_url": "https://acris.aalto.fi/ws/portalfiles/portal/162149547/Multifunctional_Grid-Forming_Converter_Control_Based_on_a_Disturbance_Observer.pdf",
+  "workspace_source": "research/feasibility_batch1/sources/do_gfm2024.pdf",
+  "sha256": "a17aee546525bd418ced2ea980c18c82ca2f32bd552daf774415ddbce64cb51e",
+  "pdf_pages": 11,
+  "source_pdf_required_to_run_model": false,
+  "existing_framework": {
+    "git_url": "https://github.com/Aalto-Electric-Drives/motulator",
+    "commit": "ca3fb1f225be30ff98d70ebca6fc49cc24e2bb2e",
+    "release": "0.23.1",
+    "script": "reproduce.py",
+    "protocol": "protocol.json",
+    "published_reference": ["reference/fig5b_rfpsc.csv", "reference/fig6b_do_gfm.csv"]
+  }
+}

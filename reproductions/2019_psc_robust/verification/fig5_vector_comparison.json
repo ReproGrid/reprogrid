@@ -1,0 +1,535 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "source": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/c8da5953-833c-4f32-b38b-49ea7add52b9/content",
+  "pdf_sha256": "e45aa9f7dc1688da6f125144619fe742220c0766ed8487f4cac47ff8a12b02e5",
+  "pdf_page_one_based": 6,
+  "figure": "Fig. 5",
+  "method": "Nearest Euclidean distance of each non-edge PDF vector vertex to a dense positive-frequency locus from Eq. (9), Eq. (12), and Section III-C. The computed samples use 300001 log-spaced frequencies from 1e-6 to 1e3 p.u. Distances include plot precision and finite frequency-sampling error.",
+  "margin_method": "Interpolate visible negative-real-axis crossings at Re < -0.03 and visible unit-circle crossings on the PDF vector segments. An empty list indicates that no qualifying crossing was visible within the plotted axes.",
+  "sensitivity_method": "Inverse minimum distance from -1 to the visible PDF line segments. Plot resolution and clipping limit this estimate.",
+  "published_plot_calibration": {
+    "real_axis_0_and_minus_half_tick_pt": {
+      "active_power": [
+        157.00509643554688,
+        129.6678924560547
+      ],
+      "dc_link": [
+        293.5360412597656,
+        266.1988525390625
+      ]
+    },
+    "imaginary_axis_0_and_minus_point_two_tick_pt": {
+      "high_active": [
+        106.45367431640625,
+        117.389404296875
+      ],
+      "high_reactive": [
+        220.83538818359375,
+        231.77105712890625
+      ]
+    }
+  },
+  "environment": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pymupdf": "2.1"
+  },
+  "curves": [
+    {
+      "condition": "high_active",
+      "loop": "active_power",
+      "scr_label": 1,
+      "compared_unique_vertices": 763,
+      "visible_gain_margins_factor": [
+        2.0748719178362394
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.9610066782077609,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 0.026857071941057575,
+          "max_nearest_locus_distance_pu": 0.11628719787368151
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.2857639778560602e-05,
+          "max_nearest_locus_distance_pu": 8.120398607318274e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 0.026857071941057575,
+          "max_nearest_locus_distance_pu": 0.11628719787368151
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.2857639778560602e-05,
+          "max_nearest_locus_distance_pu": 8.120398607318274e-05
+        }
+      }
+    },
+    {
+      "condition": "high_active",
+      "loop": "active_power",
+      "scr_label": 3,
+      "compared_unique_vertices": 804,
+      "visible_gain_margins_factor": [
+        2.5634504170928194
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.8810664811609892,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.008201588441201653,
+          "max_nearest_locus_distance_pu": 0.03766487544626635
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0005426418184456393,
+          "max_nearest_locus_distance_pu": 0.0037049855938680663
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 0.008635518384692013,
+          "max_nearest_locus_distance_pu": 0.04072994619273234
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 1.061549854511311e-05,
+          "max_nearest_locus_distance_pu": 3.810780167060175e-05
+        }
+      }
+    },
+    {
+      "condition": "high_active",
+      "loop": "active_power",
+      "scr_label": 10,
+      "compared_unique_vertices": 913,
+      "visible_gain_margins_factor": [
+        8.60883692719293
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.3626027216632446,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 0.010733307160422645,
+          "max_nearest_locus_distance_pu": 0.07699875112747513
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.482558153562006e-06,
+          "max_nearest_locus_distance_pu": 3.204962875713878e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 0.010733307160422645,
+          "max_nearest_locus_distance_pu": 0.07699875112747513
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.482558153562006e-06,
+          "max_nearest_locus_distance_pu": 3.204962875713878e-05
+        }
+      }
+    },
+    {
+      "condition": "high_active",
+      "loop": "dc_link",
+      "scr_label": 1,
+      "compared_unique_vertices": 136,
+      "visible_gain_margins_factor": [
+        7.936513396354431
+      ],
+      "visible_phase_margins_deg": [
+        47.487871060683744
+      ],
+      "visible_peak_sensitivity_estimate": 1.6097979872735024,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 0.02959289282352369,
+          "max_nearest_locus_distance_pu": 0.13405926412387437
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.4818929983620304e-05,
+          "max_nearest_locus_distance_pu": 6.0437273408988454e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 0.02959289282352369,
+          "max_nearest_locus_distance_pu": 0.13405926412387437
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.4818929983620304e-05,
+          "max_nearest_locus_distance_pu": 6.0437273408988454e-05
+        }
+      }
+    },
+    {
+      "condition": "high_active",
+      "loop": "dc_link",
+      "scr_label": 3,
+      "compared_unique_vertices": 145,
+      "visible_gain_margins_factor": [
+        3.322284562018187
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.5070681426853239,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.007382575886516311,
+          "max_nearest_locus_distance_pu": 0.02740126082923244
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0005850511796710738,
+          "max_nearest_locus_distance_pu": 0.0012097530790203693
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 0.007573495752006667,
+          "max_nearest_locus_distance_pu": 0.027883897747204463
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 1.4733413669810533e-05,
+          "max_nearest_locus_distance_pu": 3.245445195815764e-05
+        }
+      }
+    },
+    {
+      "condition": "high_active",
+      "loop": "dc_link",
+      "scr_label": 10,
+      "compared_unique_vertices": 305,
+      "visible_gain_margins_factor": [
+        3.7509827637607027
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.7355135248118894,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 0.024204908630555414,
+          "max_nearest_locus_distance_pu": 0.1019930530050998
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 1.1225925232834872e-05,
+          "max_nearest_locus_distance_pu": 4.861812839251469e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": 0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 0.024204908630555414,
+          "max_nearest_locus_distance_pu": 0.1019930530050998
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.95,
+          "i_q0_pu": -0.2,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 1.1225925232834872e-05,
+          "max_nearest_locus_distance_pu": 4.861812839251469e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "active_power",
+      "scr_label": 1,
+      "compared_unique_vertices": 994,
+      "visible_gain_margins_factor": [
+        2.0189507904566626
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.9815073009006123,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1720482614294643e-05,
+          "max_nearest_locus_distance_pu": 8.112638743860298e-05
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1720482614294643e-05,
+          "max_nearest_locus_distance_pu": 8.112638743860298e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1720482614294643e-05,
+          "max_nearest_locus_distance_pu": 8.112638743860298e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1720482614294643e-05,
+          "max_nearest_locus_distance_pu": 8.112638743860298e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "active_power",
+      "scr_label": 3,
+      "compared_unique_vertices": 952,
+      "visible_gain_margins_factor": [
+        2.2583125232973913
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.9485894783283795,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0007735932060829532,
+          "max_nearest_locus_distance_pu": 0.005388239353696364
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0007735932060829532,
+          "max_nearest_locus_distance_pu": 0.005388239353696364
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 9.743181125546417e-06,
+          "max_nearest_locus_distance_pu": 3.623265081041649e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 9.743181125546417e-06,
+          "max_nearest_locus_distance_pu": 3.623265081041649e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "active_power",
+      "scr_label": 10,
+      "compared_unique_vertices": 949,
+      "visible_gain_margins_factor": [
+        5.817601497285753
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.4110531918046605,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 8.762301422255093e-06,
+          "max_nearest_locus_distance_pu": 3.13143366557569e-05
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 8.762301422255093e-06,
+          "max_nearest_locus_distance_pu": 3.13143366557569e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 8.762301422255093e-06,
+          "max_nearest_locus_distance_pu": 3.13143366557569e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 8.762301422255093e-06,
+          "max_nearest_locus_distance_pu": 3.13143366557569e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "dc_link",
+      "scr_label": 1,
+      "compared_unique_vertices": 129,
+      "visible_gain_margins_factor": [
+        12.242055696690558
+      ],
+      "visible_phase_margins_deg": [
+        13.66531447204315
+      ],
+      "visible_peak_sensitivity_estimate": 4.312071553405956,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1614265147243082e-05,
+          "max_nearest_locus_distance_pu": 5.738911621236282e-05
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1614265147243082e-05,
+          "max_nearest_locus_distance_pu": 5.738911621236282e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1614265147243082e-05,
+          "max_nearest_locus_distance_pu": 5.738911621236282e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 1.0,
+          "rms_nearest_locus_distance_pu": 1.1614265147243082e-05,
+          "max_nearest_locus_distance_pu": 5.738911621236282e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "dc_link",
+      "scr_label": 3,
+      "compared_unique_vertices": 126,
+      "visible_gain_margins_factor": [
+        3.5910653982501626
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.4983253473072011,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0007953523387957147,
+          "max_nearest_locus_distance_pu": 0.0024863867456518863
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.3333333333333333,
+          "rms_nearest_locus_distance_pu": 0.0007953523387957147,
+          "max_nearest_locus_distance_pu": 0.0024863867456518863
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 1.4369714677926191e-05,
+          "max_nearest_locus_distance_pu": 3.264510399503326e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.33,
+          "rms_nearest_locus_distance_pu": 1.4369714677926191e-05,
+          "max_nearest_locus_distance_pu": 3.264510399503326e-05
+        }
+      }
+    },
+    {
+      "condition": "high_reactive",
+      "loop": "dc_link",
+      "scr_label": 10,
+      "compared_unique_vertices": 260,
+      "visible_gain_margins_factor": [
+        4.657014585141625
+      ],
+      "visible_phase_margins_deg": [],
+      "visible_peak_sensitivity_estimate": 1.4929048435288956,
+      "candidates": {
+        "figure_labels": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.757639230850493e-06,
+          "max_nearest_locus_distance_pu": 3.064865186421746e-05
+        },
+        "flip_upper_iq": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.757639230850493e-06,
+          "max_nearest_locus_distance_pu": 3.064865186421746e-05
+        },
+        "round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.757639230850493e-06,
+          "max_nearest_locus_distance_pu": 3.064865186421746e-05
+        },
+        "flip_upper_iq_and_round_scr3_inductance": {
+          "i_d0_pu": 0.2,
+          "i_q0_pu": -0.95,
+          "L_pu": 0.1,
+          "rms_nearest_locus_distance_pu": 9.757639230850493e-06,
+          "max_nearest_locus_distance_pu": 3.064865186421746e-05
+        }
+      }
+    }
+  ]
+}

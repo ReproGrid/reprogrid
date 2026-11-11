@@ -1,0 +1,15 @@
+{
+  "doi": "10.1109/TIE.2018.2875669",
+  "title": "Design-Oriented Transient Stability Analysis of Grid-Connected Converters With Power Synchronization Control",
+  "authors": ["Heng Wu", "Xiongfei Wang"],
+  "journal": "IEEE Transactions on Industrial Electronics",
+  "early_access_year": 2018,
+  "version": "Accepted author manuscript with repository cover, arXiv v2",
+  "repository_url": "https://arxiv.org/abs/1804.09394v2",
+  "pdf_url": "https://arxiv.org/pdf/1804.09394v2",
+  "workspace_source": "research/feasibility_batch1/sources/psc_transient_design2018.pdf",
+  "sha256": "d3d5c711f4de50eaaa6c446a2cd5f731b14a2dd165b71ee5cd8577f978c76f39",
+  "pages": 11,
+  "source_pdf_required_to_run_model": false,
+  "redistribution": "Link to repository. Local source PDF, extracted text and source page images are research inputs."
+}

@@ -1,0 +1,43 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "state": "report_ready",
+  "outcome": "equation_level_reproduction_with_printed_frequency_gain_discrepancy_and_hardware_trace_gap",
+  "scope": "Independent continuous averaged, per-unit single-converter reproduction of the DO-GFM equations, GFM/GFL transition, frequency droop, and inductance mismatch. The existing motulator replay is a separate sampled/PWM baseline.",
+  "scope_zh": "DO-GFM/RFPSC 理想时域、观测器小信号与电感失配、频率斜坡、GFM/GFL 切换及独立框架重跑。",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "quantitative_original_experiment_match": false,
+  "checks_passed": 181,
+  "checks_total": 181,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "author_framework_replay_passed": true,
+  "key_results": {
+    "fig9_final_power_pu": 0.6132707298474412,
+    "fig10_gfl_max_active_deviation_pu": 2.1094237467877974e-15,
+    "voltage_command_return_jump_pu": 0.14449606211957716,
+    "no_load_do12_dP_domega_printed": 2.5,
+    "no_load_do12_dP_domega_numeric": -2.4999999995448183
+  },
+  "critical_gaps": [
+    "Exact laboratory Eq. (19) discretization, terminal voltage, plant resistance and device delays are unavailable.",
+    "Fig. 6(b) weak-grid power rise and reactive plateau differ quantitatively from both reproduction layers.",
+    "Fig. 8 fault ride-through, Fig. 11 hardware DC-bus control and LCL validation remain outside verified scope."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "printed_frequency_gain_discrepancy",
+      "source": "Eq. (16a), Eq. (26a,c) versus Eq. (21)–(23)",
+      "finding": "At zero current with Eq. (12), the printed DC P/f slope is +2.5; direct state-equation derivation and two steady solves give −2.5."
+    },
+    {
+      "type": "published_trace_quantitative_gap",
+      "source": "Fig. 6(b) versus the frozen weak-grid models",
+      "finding": "The rated step rise is about 109.6 ms in the vector trace and 64.9/67.0 ms in the ideal/PWM replays. Raw hardware inputs are unavailable."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "be716d0eceded9da58542df7422bdef218255f48cc66a6418f949a8ad2ae3b02",
+  "primary_manifest_sha256": "33f6db75055e4b807ce60cb0a15962ee05940e34037cc4ae20f4b5732f304146",
+  "source_report_sha256": "922839b234cc397da2955c43bfba14849aa96c9db06d39b4a854a4bf9d86854d"
+}

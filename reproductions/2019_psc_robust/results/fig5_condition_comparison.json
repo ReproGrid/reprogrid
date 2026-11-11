@@ -1,0 +1,3214 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "scope": "Fig. 5 operating-point comparison using the original finite-filter model. The sign and inductance rounding are changed separately and jointly.",
+  "inputs_sha256": {
+    "protocol": "8fd2a93e75a1489beb66fbb7ccce02b647e8538f40df3feb72d847b048852845",
+    "variants": "ee3584e8b00802568434408dfe2832a11aad6ff377c0e9d9283ba581171758b2",
+    "implementation": "a89eb2a2a4b36a488324847f6bfe7db4aeaa16a491555aaab2b7bd6c8f735b10",
+    "primary_implementation": "3c3d924e3d9305cdac979a915aeab7935fcc6c00b35a4ae96b4a05b45ee1e37c",
+    "independent_implementation": "f727de865b432abde8706cbbc41b11ab0d4da1bebe2214ba7bf182ab4d532d1b",
+    "paper_vector_evidence": "3b6acb26903a1a6e92eb5df710a5be7984fd3de351c9a0a0a38a6910d64763e9",
+    "printed_fig5_baseline": "25139382a36fecb5efb424a278e57e4e8414018f0762ec482a82d6138c8c58b8"
+  },
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "checks": {
+    "printed_baseline_matches": true,
+    "independent_frequency_responses_match": true,
+    "independent_margins_sensitivity_and_poles_match": true,
+    "independent_equilibria_and_jacobians_pass": true,
+    "sign_alone_improves_all_six_upper_curves_at_nominal_inductance": true,
+    "sign_alone_passes_improvement_gate_at_curve_inductance": true,
+    "combined_inputs_match_all_twelve_paper_curves": true,
+    "curve_inferred_linear_nonlinear_and_solver_checks_pass": true
+  },
+  "passed": true,
+  "validation": {
+    "max_independent_scaled_frequency_error": 7.298018709788989e-15,
+    "max_independent_margin_sensitivity_or_pole_abs_error": 2.3447910280083306e-12,
+    "max_baseline_abs_error": 0.0,
+    "minimum_upper_rms_improvement_factor_from_sign_at_curve_inductance": 514.0353703313931,
+    "max_combined_vector_rms_pu": 1.4818929983620304e-05
+  },
+  "claims": {
+    "figure_labels": {
+      "all_closed_loops_stable": true,
+      "minimum_active_gain_margin": 2.0187591328178103,
+      "active_phase_margin_minimum_scr": {
+        "active": 10,
+        "reactive": 10
+      },
+      "dc_gain_margin_below_four_count": 3,
+      "dc_phase_margin_below_45_deg_cases": [
+        "fig5_reactive_scr1"
+      ],
+      "high_active_dc_sensitivity_ascending_scr": [
+        1,
+        3,
+        10
+      ],
+      "weak_grid_active_bandwidth_pu": 0.2954089592683667,
+      "weak_grid_high_reactive_bandwidth_pu": 0.010028515235464967,
+      "weak_grid_high_reactive_dc_phase_margin_deg": 13.511807423703374
+    },
+    "flip_upper_iq": {
+      "all_closed_loops_stable": true,
+      "minimum_active_gain_margin": 2.0187591328178103,
+      "active_phase_margin_minimum_scr": {
+        "active": 10,
+        "reactive": 10
+      },
+      "dc_gain_margin_below_four_count": 3,
+      "dc_phase_margin_below_45_deg_cases": [
+        "fig5_reactive_scr1"
+      ],
+      "high_active_dc_sensitivity_ascending_scr": [
+        3,
+        1,
+        10
+      ],
+      "weak_grid_active_bandwidth_pu": 0.18593865279828323,
+      "weak_grid_high_reactive_bandwidth_pu": 0.010028515235464967,
+      "weak_grid_high_reactive_dc_phase_margin_deg": 13.511807423703374
+    },
+    "round_scr3_inductance": {
+      "all_closed_loops_stable": true,
+      "minimum_active_gain_margin": 2.0187591328178103,
+      "active_phase_margin_minimum_scr": {
+        "active": 10,
+        "reactive": 10
+      },
+      "dc_gain_margin_below_four_count": 3,
+      "dc_phase_margin_below_45_deg_cases": [
+        "fig5_reactive_scr1"
+      ],
+      "high_active_dc_sensitivity_ascending_scr": [
+        1,
+        3,
+        10
+      ],
+      "weak_grid_active_bandwidth_pu": 0.2954089592683667,
+      "weak_grid_high_reactive_bandwidth_pu": 0.010028515235464967,
+      "weak_grid_high_reactive_dc_phase_margin_deg": 13.511807423703374
+    },
+    "flip_upper_iq_and_round_scr3_inductance": {
+      "all_closed_loops_stable": true,
+      "minimum_active_gain_margin": 2.0187591328178103,
+      "active_phase_margin_minimum_scr": {
+        "active": 10,
+        "reactive": 10
+      },
+      "dc_gain_margin_below_four_count": 3,
+      "dc_phase_margin_below_45_deg_cases": [
+        "fig5_reactive_scr1"
+      ],
+      "high_active_dc_sensitivity_ascending_scr": [
+        3,
+        1,
+        10
+      ],
+      "weak_grid_active_bandwidth_pu": 0.18593865279828323,
+      "weak_grid_high_reactive_bandwidth_pu": 0.010028515235464967,
+      "weak_grid_high_reactive_dc_phase_margin_deg": 13.511807423703374
+    }
+  },
+  "cases": {
+    "figure_labels": {
+      "fig5_active_scr1": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 1.5305227865013966,
+        "delta0_deg": 38.36748538486154,
+        "a": 0.2,
+        "b_frozen": -0.04570000000000001,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 0.2954089592683667,
+        "gp": {
+          "gain_margin": 2.101538523855932,
+          "phase_margin_deg": 81.94829124534424,
+          "gain_crossings": [
+            {
+              "w_pu": 0.24799384367752234,
+              "phase_margin_deg": 81.94829124534424
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.997712067029234,
+              "gain_margin": 2.101538523855932
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.19169916907119589,
+              0.0
+            ],
+            [
+              -0.1692103410474108,
+              0.0
+            ],
+            [
+              -0.1005693526357724,
+              -0.9690422026524396
+            ],
+            [
+              -0.1005693526357724,
+              0.9690422026524396
+            ],
+            [
+              -0.07795178460984864,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07795178460984864,
+          "peak_sensitivity": 1.9768358072105439,
+          "peak_sensitivity_omega_pu": 0.9661828005247041,
+          "rms_distance_to_paper_locus_pu": 0.026857071941057575
+        },
+        "gd": {
+          "gain_margin": 6.6310585509719795,
+          "phase_margin_deg": 55.99795969498054,
+          "gain_crossings": [
+            {
+              "w_pu": 0.15625847994789333,
+              "phase_margin_deg": 55.99795969498054
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7127967659725671,
+              "gain_margin": 6.6310585509719795
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.12033744800072434,
+              -0.18331425776755808
+            ],
+            [
+              -0.12033744800072434,
+              0.18331425776755808
+            ],
+            [
+              -0.10888188696355457,
+              0.0
+            ],
+            [
+              -0.1007624803214929,
+              -0.9493060572634786
+            ],
+            [
+              -0.1007624803214929,
+              0.9493060572634786
+            ],
+            [
+              -0.08891825639201133,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.08891825639201133,
+          "peak_sensitivity": 1.4551293331234516,
+          "peak_sensitivity_omega_pu": 0.26035072294228256,
+          "rms_distance_to_paper_locus_pu": 0.02959289282352369
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 5.4933930250337e-16,
+            "gc": 1.9011153221764724e-15,
+            "gd": 7.557273233479775e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 1.3322676295501878e-15,
+              "max_pole_distance_pu": 5.2735593669694936e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 2.6645352591003757e-15,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 1.762479051592436e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.565336749109747e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr3": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0,
+        "L_pu": 0.3333333333333333,
+        "Vg_pu": 1.1126794486983012,
+        "delta0_deg": 16.534837857345156,
+        "a": 0.06666666666666667,
+        "b_frozen": -0.06170000000000001,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 1.03261757815105,
+        "gp": {
+          "gain_margin": 2.7337990650601567,
+          "phase_margin_deg": 51.894703237231994,
+          "gain_crossings": [
+            {
+              "w_pu": 0.5021812000075809,
+              "phase_margin_deg": 51.894703237231994
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1026510110378898,
+              "gain_margin": 2.7337990650601567
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.5898667966333158,
+              0.0
+            ],
+            [
+              -0.3004924050534512,
+              -0.8622596870589719
+            ],
+            [
+              -0.3004924050534512,
+              0.8622596870589719
+            ],
+            [
+              -0.17463349228035208,
+              0.0
+            ],
+            [
+              -0.07451490097943052,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07451490097943052,
+          "peak_sensitivity": 1.8706245499717018,
+          "peak_sensitivity_omega_pu": 0.8747296805529473,
+          "rms_distance_to_paper_locus_pu": 0.008201588441201653
+        },
+        "gd": {
+          "gain_margin": 3.211011806445234,
+          "phase_margin_deg": 69.84641987717666,
+          "gain_crossings": [
+            {
+              "w_pu": 0.19318092308135196,
+              "phase_margin_deg": 69.84641987717666
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6593828650253372,
+              "gain_margin": 3.211011806445234
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3265022249973428,
+              -0.289571134483687
+            ],
+            [
+              -0.3265022249973428,
+              0.289571134483687
+            ],
+            [
+              -0.300262964282712,
+              -0.7680043458595254
+            ],
+            [
+              -0.300262964282712,
+              0.7680043458595254
+            ],
+            [
+              -0.09323481071994548,
+              -0.006575044077299509
+            ],
+            [
+              -0.09323481071994548,
+              0.006575044077299509
+            ]
+          ],
+          "max_closed_real_pu": -0.09323481071994548,
+          "peak_sensitivity": 1.514956741255853,
+          "peak_sensitivity_omega_pu": 0.5346409613082562,
+          "rms_distance_to_paper_locus_pu": 0.007382575886516311
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.785586747214805e-16,
+            "gc": 9.679832418035518e-16,
+            "gd": 8.511999306569967e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 6.661338147750939e-15,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 8.881784197001252e-16,
+              "max_pole_distance_pu": 1.4988010832439613e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.3322676295501878e-15,
+              "phase_margin_deg_abs_error": 2.3447910280083306e-12,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 2.520029784323333e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 4.696021349559487e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr10": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 1.0244144669029231,
+        "delta0_deg": 5.321021232701208,
+        "a": 0.020000000000000004,
+        "b_frozen": -0.11770000000000001,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 0.6507760599666593,
+        "gp": {
+          "gain_margin": 11.408059923589304,
+          "phase_margin_deg": 45.376495959215674,
+          "gain_crossings": [
+            {
+              "w_pu": 0.37351647428792184,
+              "phase_margin_deg": 45.376495959215674
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1104521043280444,
+              "gain_margin": 11.408059923589304
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.903182544949995,
+              -0.19205220681494112
+            ],
+            [
+              -1.903182544949995,
+              0.19205220681494112
+            ],
+            [
+              -0.1836637694482366,
+              -0.22438908887409842
+            ],
+            [
+              -0.1836637694482366,
+              0.22438908887409842
+            ],
+            [
+              -0.06630737120353604,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.06630737120353604,
+          "peak_sensitivity": 1.3868610419983136,
+          "peak_sensitivity_omega_pu": 0.5442218500751199,
+          "rms_distance_to_paper_locus_pu": 0.010733307160422645
+        },
+        "gd": {
+          "gain_margin": 2.994015270813088,
+          "phase_margin_deg": 50.33179626412419,
+          "gain_crossings": [
+            {
+              "w_pu": 0.26714716569732294,
+              "phase_margin_deg": 50.33179626412419
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.5068493441962504,
+              "gain_margin": 2.994015270813088
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.9493838607573664,
+              -0.36016009090186285
+            ],
+            [
+              -1.9493838607573664,
+              0.36016009090186285
+            ],
+            [
+              -0.08750001667709967,
+              -0.3478404547716401
+            ],
+            [
+              -0.08750001667709967,
+              0.3478404547716401
+            ],
+            [
+              -0.08311612256553497,
+              -0.014992467702136837
+            ],
+            [
+              -0.08311612256553497,
+              0.014992467702136837
+            ]
+          ],
+          "max_closed_real_pu": -0.08311612256553497,
+          "peak_sensitivity": 2.023136248194432,
+          "peak_sensitivity_omega_pu": 0.372751689087133,
+          "rms_distance_to_paper_locus_pu": 0.024204908630555414
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 8.146750340582668e-16,
+            "gc": 8.685438753167676e-16,
+            "gd": 9.167922169456695e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.4210854715202004e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 1.5100665727558131e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.1146639167236572e-13,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.4054300946555646e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7318591005732742e-10,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_reactive_scr1": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 0.20615528128088306,
+        "delta0_deg": 75.96375653207352,
+        "a": -0.95,
+        "b_frozen": 0.00029999999999999813,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.010028515235464967,
+        "gp": {
+          "gain_margin": 2.0187591328178103,
+          "phase_margin_deg": 89.9938544911049,
+          "gain_crossings": [
+            {
+              "w_pu": 0.010027433401546628,
+              "phase_margin_deg": 89.9938544911049
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9996193991723816,
+              "gain_margin": 2.0187591328178103
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10198542730580026,
+              -0.9937661335751319
+            ],
+            [
+              -0.10198542730580026,
+              0.9937661335751319
+            ],
+            [
+              -0.09802879562947764,
+              -0.02095852715066861
+            ],
+            [
+              -0.09802879562947764,
+              0.02095852715066861
+            ],
+            [
+              -0.00997155412944402,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.00997155412944402,
+          "peak_sensitivity": 1.9816766616182717,
+          "peak_sensitivity_omega_pu": 0.9984906240423093,
+          "rms_distance_to_paper_locus_pu": 1.1720482614294643e-05
+        },
+        "gd": {
+          "gain_margin": 12.240144059903638,
+          "phase_margin_deg": 13.511807423703374,
+          "gain_crossings": [
+            {
+              "w_pu": 0.04240619968527822,
+              "phase_margin_deg": 13.511807423703374
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.2012357318794477,
+              "gain_margin": 12.240144059903638
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10207014449344826,
+              -0.9757675960219218
+            ],
+            [
+              -0.10207014449344826,
+              0.9757675960219218
+            ],
+            [
+              -0.09759900552823902,
+              -0.01970292104213735
+            ],
+            [
+              -0.09759900552823902,
+              0.01970292104213735
+            ],
+            [
+              -0.00533084997831272,
+              -0.04270971304224478
+            ],
+            [
+              -0.00533084997831272,
+              0.04270971304224478
+            ]
+          ],
+          "max_closed_real_pu": -0.00533084997831272,
+          "peak_sensitivity": 4.371204739806622,
+          "peak_sensitivity_omega_pu": 0.0436786098754643,
+          "rms_distance_to_paper_locus_pu": 1.1614265147243082e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.1078721948235624e-15,
+            "gc": 7.106294666405892e-15,
+            "gd": 7.298018709788989e-15
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 6.667118051786499e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 3.552713678800501e-14,
+              "max_pole_distance_pu": 1.1123893155135927e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7091106307987047e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr3": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0,
+        "L_pu": 0.3333333333333333,
+        "Vg_pu": 0.686577664134866,
+        "delta0_deg": 5.572197803963795,
+        "a": -0.31666666666666665,
+        "b_frozen": 0.07630000000000002,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 1.1758619500119278,
+        "gp": {
+          "gain_margin": 2.2506984741771485,
+          "phase_margin_deg": 61.57818858616544,
+          "gain_crossings": [
+            {
+              "w_pu": 0.4011221465944619,
+              "phase_margin_deg": 61.57818858616544
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1174348720166087,
+              "gain_margin": 2.2506984741771485
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3967022770142666,
+              0.0
+            ],
+            [
+              -0.30652112130885073,
+              -0.9498780391123905
+            ],
+            [
+              -0.30652112130885073,
+              0.9498780391123905
+            ],
+            [
+              -0.1001277401840164,
+              -0.018676757452625172
+            ],
+            [
+              -0.1001277401840164,
+              0.018676757452625172
+            ]
+          ],
+          "max_closed_real_pu": -0.1001277401840164,
+          "peak_sensitivity": 1.9506869486942975,
+          "peak_sensitivity_omega_pu": 0.9649562186974519,
+          "rms_distance_to_paper_locus_pu": 0.0007735932060829532
+        },
+        "gd": {
+          "gain_margin": 3.6090002047192455,
+          "phase_margin_deg": 62.958705790907004,
+          "gain_crossings": [
+            {
+              "w_pu": 0.18287260243027129,
+              "phase_margin_deg": 62.958705790907004
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.636659344288236,
+              "gain_margin": 3.6090002047192455
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3100823732475746,
+              -0.8799794882442805
+            ],
+            [
+              -0.3100823732475746,
+              0.8799794882442805
+            ],
+            [
+              -0.21063558632375373,
+              -0.24215928931660316
+            ],
+            [
+              -0.21063558632375373,
+              0.24215928931660316
+            ],
+            [
+              -0.0842820404286717,
+              -0.0312937297916277
+            ],
+            [
+              -0.0842820404286717,
+              0.0312937297916277
+            ]
+          ],
+          "max_closed_real_pu": -0.0842820404286717,
+          "peak_sensitivity": 1.4979158572404396,
+          "peak_sensitivity_omega_pu": 0.40347886328435795,
+          "rms_distance_to_paper_locus_pu": 0.0007953523387957147
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.610882394422203e-16,
+            "gc": 6.833959902092635e-16,
+            "gd": 9.238896857051834e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 6.661338147750939e-16,
+              "max_pole_distance_pu": 8.881784197001252e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 2.1876451876518853e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 5.112354983793921e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr10": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9052209674990963,
+        "delta0_deg": 1.2659990003947308,
+        "a": -0.095,
+        "b_frozen": 0.34229999999999994,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.9061551170985581,
+        "gp": {
+          "gain_margin": 5.817060703113759,
+          "phase_margin_deg": 55.27673766291886,
+          "gain_crossings": [
+            {
+              "w_pu": 0.47900215033232474,
+              "phase_margin_deg": 55.27673766291886
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1778094634788028,
+              "gain_margin": 5.817060703113759
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.7646558013908125,
+              0.0
+            ],
+            [
+              -1.227072021963,
+              0.0
+            ],
+            [
+              -0.8391864268461409,
+              0.0
+            ],
+            [
+              -0.08954287490002352,
+              -0.044076957472880804
+            ],
+            [
+              -0.08954287490002352,
+              0.044076957472880804
+            ]
+          ],
+          "max_closed_real_pu": -0.08954287490002352,
+          "peak_sensitivity": 1.411074764681844,
+          "peak_sensitivity_omega_pu": 1.0409032721126465,
+          "rms_distance_to_paper_locus_pu": 8.762301422255093e-06
+        },
+        "gd": {
+          "gain_margin": 4.656588695393112,
+          "phase_margin_deg": 66.26096324351562,
+          "gain_crossings": [
+            {
+              "w_pu": 0.21780682845413826,
+              "phase_margin_deg": 66.26096324351562
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7132734105035335,
+              "gain_margin": 4.656588695393112
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.6995239498083299,
+              -0.36614179834198995
+            ],
+            [
+              -1.6995239498083299,
+              0.36614179834198995
+            ],
+            [
+              -0.23715141974176085,
+              -0.3346162053707976
+            ],
+            [
+              -0.23715141974176085,
+              0.3346162053707976
+            ],
+            [
+              -0.06832463044991069,
+              -0.04031517688829462
+            ],
+            [
+              -0.06832463044991069,
+              0.04031517688829462
+            ]
+          ],
+          "max_closed_real_pu": -0.06832463044991069,
+          "peak_sensitivity": 1.4929852071311749,
+          "peak_sensitivity_omega_pu": 0.4470141394606702,
+          "rms_distance_to_paper_locus_pu": 9.757639230850493e-06
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 1.0815855825183624e-15,
+            "gc": 7.369511110839744e-16,
+            "gd": 7.821482935609121e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 3.1086244689504383e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.6415315207705135e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 3.9283700765566935e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.6763479493420164e-10,
+          "equilibrium_residual": 2.220446049250313e-16
+        }
+      }
+    },
+    "flip_upper_iq": {
+      "fig5_active_scr1": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 1.241974234837422,
+        "delta0_deg": 49.89909245378776,
+        "a": -0.2,
+        "b_frozen": -0.029700000000000004,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 0.18593865279828323,
+        "gp": {
+          "gain_margin": 2.074097144084879,
+          "phase_margin_deg": 84.15673095838065,
+          "gain_crossings": [
+            {
+              "w_pu": 0.16578434455708912,
+              "phase_margin_deg": 84.15673095838065
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9983938040448875,
+              "gain_margin": 2.074097144084879
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.14023925060430878,
+              -0.049957883748499764
+            ],
+            [
+              -0.14023925060430878,
+              0.049957883748499764
+            ],
+            [
+              -0.10239900182995268,
+              -0.9775728173387043
+            ],
+            [
+              -0.10239900182995268,
+              0.9775728173387043
+            ],
+            [
+              -0.07472349513147698,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07472349513147698,
+          "peak_sensitivity": 1.961659890674347,
+          "peak_sensitivity_omega_pu": 0.9770614371864518,
+          "rms_distance_to_paper_locus_pu": 1.2857639778560602e-05
+        },
+        "gd": {
+          "gain_margin": 7.936783060559484,
+          "phase_margin_deg": 47.47746222805404,
+          "gain_crossings": [
+            {
+              "w_pu": 0.1408645957699198,
+              "phase_margin_deg": 47.47746222805404
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6387262044278667,
+              "gain_margin": 7.936783060559484
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.1033313840960524,
+              0.0
+            ],
+            [
+              -0.10272181126484639,
+              -0.9587399414186388
+            ],
+            [
+              -0.10272181126484639,
+              0.9587399414186388
+            ],
+            [
+              -0.09291977176370665,
+              0.0
+            ],
+            [
+              -0.07915261080527435,
+              -0.15943428955357858
+            ],
+            [
+              -0.07915261080527435,
+              0.15943428955357858
+            ]
+          ],
+          "max_closed_real_pu": -0.07915261080527435,
+          "peak_sensitivity": 1.6100211969428624,
+          "peak_sensitivity_omega_pu": 0.20183852961421353,
+          "rms_distance_to_paper_locus_pu": 1.4818929983620304e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.5347591807446e-16,
+            "gc": 8.34977029545232e-16,
+            "gd": 9.066543501500274e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 4.796163466380676e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 8.02305388030533e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 1.0130785099704553e-14
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.565336749109747e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr3": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0,
+        "L_pu": 0.3333333333333333,
+        "Vg_pu": 0.9855906294648347,
+        "delta0_deg": 18.74134044519272,
+        "a": -0.06666666666666667,
+        "b_frozen": -0.013699999999999999,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 1.072571998368164,
+        "gp": {
+          "gain_margin": 2.55128400113452,
+          "phase_margin_deg": 54.8127620937247,
+          "gain_crossings": [
+            {
+              "w_pu": 0.47136377839101773,
+              "phase_margin_deg": 54.8127620937247
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1085757853085128,
+              "gain_margin": 2.55128400113452
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.5078708250377792,
+              0.0
+            ],
+            [
+              -0.3077463420230888,
+              -0.8924685782560541
+            ],
+            [
+              -0.3077463420230888,
+              0.8924685782560541
+            ],
+            [
+              -0.15865132710633562,
+              0.0
+            ],
+            [
+              -0.07798516380970855,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07798516380970855,
+          "peak_sensitivity": 1.8834775885790642,
+          "peak_sensitivity_omega_pu": 0.9038552003003393,
+          "rms_distance_to_paper_locus_pu": 0.0005426418184456393
+        },
+        "gd": {
+          "gain_margin": 3.3348439365034523,
+          "phase_margin_deg": 67.64849049696343,
+          "gain_crossings": [
+            {
+              "w_pu": 0.19113580497739416,
+              "phase_margin_deg": 67.64849049696343
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6520243272587837,
+              "gain_margin": 3.3348439365034523
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3126917864348816,
+              -0.8093714926793629
+            ],
+            [
+              -0.3126917864348816,
+              0.8093714926793629
+            ],
+            [
+              -0.27647254782755915,
+              -0.27785566099068343
+            ],
+            [
+              -0.27647254782755915,
+              0.27785566099068343
+            ],
+            [
+              -0.09083566573755994,
+              -0.017529742086809356
+            ],
+            [
+              -0.09083566573755994,
+              0.017529742086809356
+            ]
+          ],
+          "max_closed_real_pu": -0.09083566573755994,
+          "peak_sensitivity": 1.504638267700787,
+          "peak_sensitivity_omega_pu": 0.49088984199192776,
+          "rms_distance_to_paper_locus_pu": 0.0005850511796710738
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.057216966775388e-16,
+            "gc": 1.0370338861126152e-15,
+            "gd": 6.985374182419927e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.9539925233402755e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 7.771561172376096e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 4.440892098500626e-16,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 9.155133597044475e-16
+            }
+          },
+          "jacobian_finite_difference_abs_error": 4.696021349559487e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr10": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9845938248841498,
+        "delta0_deg": 5.536882362483717,
+        "a": -0.020000000000000004,
+        "b_frozen": 0.04230000000000001,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 0.7226687054156054,
+        "gp": {
+          "gain_margin": 8.60841817438619,
+          "phase_margin_deg": 50.20343027706318,
+          "gain_crossings": [
+            {
+              "w_pu": 0.4059130509700807,
+              "phase_margin_deg": 50.20343027706318
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1462508978881067,
+              "gain_margin": 8.60841817438619
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.8032382006712542,
+              -0.19597637358378384
+            ],
+            [
+              -1.8032382006712542,
+              0.19597637358378384
+            ],
+            [
+              -0.2395150032025442,
+              -0.1503441178081093
+            ],
+            [
+              -0.2395150032025442,
+              0.1503441178081093
+            ],
+            [
+              -0.0744935922524042,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.0744935922524042,
+          "peak_sensitivity": 1.362591921607153,
+          "peak_sensitivity_omega_pu": 0.764194566265143,
+          "rms_distance_to_paper_locus_pu": 9.482558153562006e-06
+        },
+        "gd": {
+          "gain_margin": 3.7497970919877126,
+          "phase_margin_deg": 58.45370589693344,
+          "gain_crossings": [
+            {
+              "w_pu": 0.24432878031703123,
+              "phase_margin_deg": 58.45370589693344
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.5843616583934387,
+              "gain_margin": 3.7497970919877126
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.8704599486968392,
+              -0.3785332734263184
+            ],
+            [
+              -1.8704599486968392,
+              0.3785332734263184
+            ],
+            [
+              -0.1307118375863024,
+              -0.3464637607448135
+            ],
+            [
+              -0.1307118375863024,
+              0.3464637607448135
+            ],
+            [
+              -0.07882821371685922,
+              -0.026911838097895987
+            ],
+            [
+              -0.07882821371685922,
+              0.026911838097895987
+            ]
+          ],
+          "max_closed_real_pu": -0.07882821371685922,
+          "peak_sensitivity": 1.7358610037279856,
+          "peak_sensitivity_omega_pu": 0.39349985195588416,
+          "rms_distance_to_paper_locus_pu": 1.1225925232834872e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 9.029183621333274e-16,
+            "gc": 7.973694671998933e-16,
+            "gd": 6.874736122870129e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 1.7342238036525468e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.552713678800501e-14,
+              "phase_margin_deg_abs_error": 5.115907697472721e-13,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.790180836524724e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7318591005732742e-10,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_reactive_scr1": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 0.20615528128088306,
+        "delta0_deg": 75.96375653207352,
+        "a": -0.95,
+        "b_frozen": 0.00029999999999999813,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.010028515235464967,
+        "gp": {
+          "gain_margin": 2.0187591328178103,
+          "phase_margin_deg": 89.9938544911049,
+          "gain_crossings": [
+            {
+              "w_pu": 0.010027433401546628,
+              "phase_margin_deg": 89.9938544911049
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9996193991723816,
+              "gain_margin": 2.0187591328178103
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10198542730580026,
+              -0.9937661335751319
+            ],
+            [
+              -0.10198542730580026,
+              0.9937661335751319
+            ],
+            [
+              -0.09802879562947764,
+              -0.02095852715066861
+            ],
+            [
+              -0.09802879562947764,
+              0.02095852715066861
+            ],
+            [
+              -0.00997155412944402,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.00997155412944402,
+          "peak_sensitivity": 1.9816766616182717,
+          "peak_sensitivity_omega_pu": 0.9984906240423093,
+          "rms_distance_to_paper_locus_pu": 1.1720482614294643e-05
+        },
+        "gd": {
+          "gain_margin": 12.240144059903638,
+          "phase_margin_deg": 13.511807423703374,
+          "gain_crossings": [
+            {
+              "w_pu": 0.04240619968527822,
+              "phase_margin_deg": 13.511807423703374
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.2012357318794477,
+              "gain_margin": 12.240144059903638
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10207014449344826,
+              -0.9757675960219218
+            ],
+            [
+              -0.10207014449344826,
+              0.9757675960219218
+            ],
+            [
+              -0.09759900552823902,
+              -0.01970292104213735
+            ],
+            [
+              -0.09759900552823902,
+              0.01970292104213735
+            ],
+            [
+              -0.00533084997831272,
+              -0.04270971304224478
+            ],
+            [
+              -0.00533084997831272,
+              0.04270971304224478
+            ]
+          ],
+          "max_closed_real_pu": -0.00533084997831272,
+          "peak_sensitivity": 4.371204739806622,
+          "peak_sensitivity_omega_pu": 0.0436786098754643,
+          "rms_distance_to_paper_locus_pu": 1.1614265147243082e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.1078721948235624e-15,
+            "gc": 7.106294666405892e-15,
+            "gd": 7.298018709788989e-15
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 6.667118051786499e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 3.552713678800501e-14,
+              "max_pole_distance_pu": 1.1123893155135927e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7091106307987047e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr3": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0,
+        "L_pu": 0.3333333333333333,
+        "Vg_pu": 0.686577664134866,
+        "delta0_deg": 5.572197803963795,
+        "a": -0.31666666666666665,
+        "b_frozen": 0.07630000000000002,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 1.1758619500119278,
+        "gp": {
+          "gain_margin": 2.2506984741771485,
+          "phase_margin_deg": 61.57818858616544,
+          "gain_crossings": [
+            {
+              "w_pu": 0.4011221465944619,
+              "phase_margin_deg": 61.57818858616544
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1174348720166087,
+              "gain_margin": 2.2506984741771485
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3967022770142666,
+              0.0
+            ],
+            [
+              -0.30652112130885073,
+              -0.9498780391123905
+            ],
+            [
+              -0.30652112130885073,
+              0.9498780391123905
+            ],
+            [
+              -0.1001277401840164,
+              -0.018676757452625172
+            ],
+            [
+              -0.1001277401840164,
+              0.018676757452625172
+            ]
+          ],
+          "max_closed_real_pu": -0.1001277401840164,
+          "peak_sensitivity": 1.9506869486942975,
+          "peak_sensitivity_omega_pu": 0.9649562186974519,
+          "rms_distance_to_paper_locus_pu": 0.0007735932060829532
+        },
+        "gd": {
+          "gain_margin": 3.6090002047192455,
+          "phase_margin_deg": 62.958705790907004,
+          "gain_crossings": [
+            {
+              "w_pu": 0.18287260243027129,
+              "phase_margin_deg": 62.958705790907004
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.636659344288236,
+              "gain_margin": 3.6090002047192455
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3100823732475746,
+              -0.8799794882442805
+            ],
+            [
+              -0.3100823732475746,
+              0.8799794882442805
+            ],
+            [
+              -0.21063558632375373,
+              -0.24215928931660316
+            ],
+            [
+              -0.21063558632375373,
+              0.24215928931660316
+            ],
+            [
+              -0.0842820404286717,
+              -0.0312937297916277
+            ],
+            [
+              -0.0842820404286717,
+              0.0312937297916277
+            ]
+          ],
+          "max_closed_real_pu": -0.0842820404286717,
+          "peak_sensitivity": 1.4979158572404396,
+          "peak_sensitivity_omega_pu": 0.40347886328435795,
+          "rms_distance_to_paper_locus_pu": 0.0007953523387957147
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.610882394422203e-16,
+            "gc": 6.833959902092635e-16,
+            "gd": 9.238896857051834e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 6.661338147750939e-16,
+              "max_pole_distance_pu": 8.881784197001252e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 2.1876451876518853e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 5.112354983793921e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr10": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9052209674990963,
+        "delta0_deg": 1.2659990003947308,
+        "a": -0.095,
+        "b_frozen": 0.34229999999999994,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.9061551170985581,
+        "gp": {
+          "gain_margin": 5.817060703113759,
+          "phase_margin_deg": 55.27673766291886,
+          "gain_crossings": [
+            {
+              "w_pu": 0.47900215033232474,
+              "phase_margin_deg": 55.27673766291886
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1778094634788028,
+              "gain_margin": 5.817060703113759
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.7646558013908125,
+              0.0
+            ],
+            [
+              -1.227072021963,
+              0.0
+            ],
+            [
+              -0.8391864268461409,
+              0.0
+            ],
+            [
+              -0.08954287490002352,
+              -0.044076957472880804
+            ],
+            [
+              -0.08954287490002352,
+              0.044076957472880804
+            ]
+          ],
+          "max_closed_real_pu": -0.08954287490002352,
+          "peak_sensitivity": 1.411074764681844,
+          "peak_sensitivity_omega_pu": 1.0409032721126465,
+          "rms_distance_to_paper_locus_pu": 8.762301422255093e-06
+        },
+        "gd": {
+          "gain_margin": 4.656588695393112,
+          "phase_margin_deg": 66.26096324351562,
+          "gain_crossings": [
+            {
+              "w_pu": 0.21780682845413826,
+              "phase_margin_deg": 66.26096324351562
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7132734105035335,
+              "gain_margin": 4.656588695393112
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.6995239498083299,
+              -0.36614179834198995
+            ],
+            [
+              -1.6995239498083299,
+              0.36614179834198995
+            ],
+            [
+              -0.23715141974176085,
+              -0.3346162053707976
+            ],
+            [
+              -0.23715141974176085,
+              0.3346162053707976
+            ],
+            [
+              -0.06832463044991069,
+              -0.04031517688829462
+            ],
+            [
+              -0.06832463044991069,
+              0.04031517688829462
+            ]
+          ],
+          "max_closed_real_pu": -0.06832463044991069,
+          "peak_sensitivity": 1.4929852071311749,
+          "peak_sensitivity_omega_pu": 0.4470141394606702,
+          "rms_distance_to_paper_locus_pu": 9.757639230850493e-06
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 1.0815855825183624e-15,
+            "gc": 7.369511110839744e-16,
+            "gd": 7.821482935609121e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 3.1086244689504383e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.6415315207705135e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 3.9283700765566935e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.6763479493420164e-10,
+          "equilibrium_residual": 2.220446049250313e-16
+        }
+      }
+    },
+    "round_scr3_inductance": {
+      "fig5_active_scr1": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 1.5305227865013966,
+        "delta0_deg": 38.36748538486154,
+        "a": 0.2,
+        "b_frozen": -0.04570000000000001,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 0.2954089592683667,
+        "gp": {
+          "gain_margin": 2.101538523855932,
+          "phase_margin_deg": 81.94829124534424,
+          "gain_crossings": [
+            {
+              "w_pu": 0.24799384367752234,
+              "phase_margin_deg": 81.94829124534424
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.997712067029234,
+              "gain_margin": 2.101538523855932
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.19169916907119589,
+              0.0
+            ],
+            [
+              -0.1692103410474108,
+              0.0
+            ],
+            [
+              -0.1005693526357724,
+              -0.9690422026524396
+            ],
+            [
+              -0.1005693526357724,
+              0.9690422026524396
+            ],
+            [
+              -0.07795178460984864,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07795178460984864,
+          "peak_sensitivity": 1.9768358072105439,
+          "peak_sensitivity_omega_pu": 0.9661828005247041,
+          "rms_distance_to_paper_locus_pu": 0.026857071941057575
+        },
+        "gd": {
+          "gain_margin": 6.6310585509719795,
+          "phase_margin_deg": 55.99795969498054,
+          "gain_crossings": [
+            {
+              "w_pu": 0.15625847994789333,
+              "phase_margin_deg": 55.99795969498054
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7127967659725671,
+              "gain_margin": 6.6310585509719795
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.12033744800072434,
+              -0.18331425776755808
+            ],
+            [
+              -0.12033744800072434,
+              0.18331425776755808
+            ],
+            [
+              -0.10888188696355457,
+              0.0
+            ],
+            [
+              -0.1007624803214929,
+              -0.9493060572634786
+            ],
+            [
+              -0.1007624803214929,
+              0.9493060572634786
+            ],
+            [
+              -0.08891825639201133,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.08891825639201133,
+          "peak_sensitivity": 1.4551293331234516,
+          "peak_sensitivity_omega_pu": 0.26035072294228256,
+          "rms_distance_to_paper_locus_pu": 0.02959289282352369
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 5.4933930250337e-16,
+            "gc": 1.9011153221764724e-15,
+            "gd": 7.557273233479775e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 1.3322676295501878e-15,
+              "max_pole_distance_pu": 5.2735593669694936e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 2.6645352591003757e-15,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 1.762479051592436e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.565336749109747e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr3": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0303030303030303,
+        "L_pu": 0.33,
+        "Vg_pu": 1.1111427676045955,
+        "delta0_deg": 16.388085350934634,
+        "a": 0.066,
+        "b_frozen": -0.06194242424242426,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 1.031775077470276,
+        "gp": {
+          "gain_margin": 2.7488781224691516,
+          "phase_margin_deg": 51.66879667663494,
+          "gain_crossings": [
+            {
+              "w_pu": 0.502908170818916,
+              "phase_margin_deg": 51.66879667663494
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1052421384339859,
+              "gain_margin": 2.7488781224691516
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.5955122587533761,
+              0.0
+            ],
+            [
+              -0.30350105619224244,
+              -0.8600778014027506
+            ],
+            [
+              -0.30350105619224244,
+              0.8600778014027506
+            ],
+            [
+              -0.1751426928573344,
+              0.0
+            ],
+            [
+              -0.07446414812601651,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07446414812601651,
+          "peak_sensitivity": 1.868005015857433,
+          "peak_sensitivity_omega_pu": 0.8733933803527554,
+          "rms_distance_to_paper_locus_pu": 0.008635518384692013
+        },
+        "gd": {
+          "gain_margin": 3.1999762541011862,
+          "phase_margin_deg": 69.9160982885321,
+          "gain_crossings": [
+            {
+              "w_pu": 0.1935351460964786,
+              "phase_margin_deg": 69.9160982885321
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6587290055484003,
+              "gain_margin": 3.1999762541011862
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.32969372943342484,
+              -0.29182492973853674
+            ],
+            [
+              -0.32969372943342484,
+              0.29182492973853674
+            ],
+            [
+              -0.3032061925885645,
+              -0.7637857665682416
+            ],
+            [
+              -0.3032061925885645,
+              0.7637857665682416
+            ],
+            [
+              -0.09316068403861633,
+              -0.006709438838349217
+            ],
+            [
+              -0.09316068403861633,
+              0.006709438838349217
+            ]
+          ],
+          "max_closed_real_pu": -0.09316068403861633,
+          "peak_sensitivity": 1.518053320508328,
+          "peak_sensitivity_omega_pu": 0.5351791370361607,
+          "rms_distance_to_paper_locus_pu": 0.007573495752006667
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 6.185812521873348e-16,
+            "gc": 8.256097884961525e-16,
+            "gd": 6.77599954797753e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 4.263256414560601e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 1.355199909595506e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.7763568394002505e-15,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 3.376611507232129e-16
+            }
+          },
+          "jacobian_finite_difference_abs_error": 4.827560573517076e-11,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_active_scr10": {
+        "op": [
+          0.95,
+          0.2
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 1.0244144669029231,
+        "delta0_deg": 5.321021232701208,
+        "a": 0.020000000000000004,
+        "b_frozen": -0.11770000000000001,
+        "converter_Q_pu": -0.2,
+        "active_bandwidth_pu": 0.6507760599666593,
+        "gp": {
+          "gain_margin": 11.408059923589304,
+          "phase_margin_deg": 45.376495959215674,
+          "gain_crossings": [
+            {
+              "w_pu": 0.37351647428792184,
+              "phase_margin_deg": 45.376495959215674
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1104521043280444,
+              "gain_margin": 11.408059923589304
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.903182544949995,
+              -0.19205220681494112
+            ],
+            [
+              -1.903182544949995,
+              0.19205220681494112
+            ],
+            [
+              -0.1836637694482366,
+              -0.22438908887409842
+            ],
+            [
+              -0.1836637694482366,
+              0.22438908887409842
+            ],
+            [
+              -0.06630737120353604,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.06630737120353604,
+          "peak_sensitivity": 1.3868610419983136,
+          "peak_sensitivity_omega_pu": 0.5442218500751199,
+          "rms_distance_to_paper_locus_pu": 0.010733307160422645
+        },
+        "gd": {
+          "gain_margin": 2.994015270813088,
+          "phase_margin_deg": 50.33179626412419,
+          "gain_crossings": [
+            {
+              "w_pu": 0.26714716569732294,
+              "phase_margin_deg": 50.33179626412419
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.5068493441962504,
+              "gain_margin": 2.994015270813088
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.9493838607573664,
+              -0.36016009090186285
+            ],
+            [
+              -1.9493838607573664,
+              0.36016009090186285
+            ],
+            [
+              -0.08750001667709967,
+              -0.3478404547716401
+            ],
+            [
+              -0.08750001667709967,
+              0.3478404547716401
+            ],
+            [
+              -0.08311612256553497,
+              -0.014992467702136837
+            ],
+            [
+              -0.08311612256553497,
+              0.014992467702136837
+            ]
+          ],
+          "max_closed_real_pu": -0.08311612256553497,
+          "peak_sensitivity": 2.023136248194432,
+          "peak_sensitivity_omega_pu": 0.372751689087133,
+          "rms_distance_to_paper_locus_pu": 0.024204908630555414
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 8.146750340582668e-16,
+            "gc": 8.685438753167676e-16,
+            "gd": 9.167922169456695e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.4210854715202004e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 1.5100665727558131e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.1146639167236572e-13,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.4054300946555646e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7318591005732742e-10,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_reactive_scr1": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 0.20615528128088306,
+        "delta0_deg": 75.96375653207352,
+        "a": -0.95,
+        "b_frozen": 0.00029999999999999813,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.010028515235464967,
+        "gp": {
+          "gain_margin": 2.0187591328178103,
+          "phase_margin_deg": 89.9938544911049,
+          "gain_crossings": [
+            {
+              "w_pu": 0.010027433401546628,
+              "phase_margin_deg": 89.9938544911049
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9996193991723816,
+              "gain_margin": 2.0187591328178103
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10198542730580026,
+              -0.9937661335751319
+            ],
+            [
+              -0.10198542730580026,
+              0.9937661335751319
+            ],
+            [
+              -0.09802879562947764,
+              -0.02095852715066861
+            ],
+            [
+              -0.09802879562947764,
+              0.02095852715066861
+            ],
+            [
+              -0.00997155412944402,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.00997155412944402,
+          "peak_sensitivity": 1.9816766616182717,
+          "peak_sensitivity_omega_pu": 0.9984906240423093,
+          "rms_distance_to_paper_locus_pu": 1.1720482614294643e-05
+        },
+        "gd": {
+          "gain_margin": 12.240144059903638,
+          "phase_margin_deg": 13.511807423703374,
+          "gain_crossings": [
+            {
+              "w_pu": 0.04240619968527822,
+              "phase_margin_deg": 13.511807423703374
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.2012357318794477,
+              "gain_margin": 12.240144059903638
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10207014449344826,
+              -0.9757675960219218
+            ],
+            [
+              -0.10207014449344826,
+              0.9757675960219218
+            ],
+            [
+              -0.09759900552823902,
+              -0.01970292104213735
+            ],
+            [
+              -0.09759900552823902,
+              0.01970292104213735
+            ],
+            [
+              -0.00533084997831272,
+              -0.04270971304224478
+            ],
+            [
+              -0.00533084997831272,
+              0.04270971304224478
+            ]
+          ],
+          "max_closed_real_pu": -0.00533084997831272,
+          "peak_sensitivity": 4.371204739806622,
+          "peak_sensitivity_omega_pu": 0.0436786098754643,
+          "rms_distance_to_paper_locus_pu": 1.1614265147243082e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.1078721948235624e-15,
+            "gc": 7.106294666405892e-15,
+            "gd": 7.298018709788989e-15
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 6.667118051786499e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 3.552713678800501e-14,
+              "max_pole_distance_pu": 1.1123893155135927e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7091106307987047e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr3": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0303030303030303,
+        "L_pu": 0.33,
+        "Vg_pu": 0.6896653173822793,
+        "delta0_deg": 5.4915294008669,
+        "a": -0.3135,
+        "b_frozen": 0.07745151515151516,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 1.1761342603104168,
+        "gp": {
+          "gain_margin": 2.258184363260774,
+          "phase_margin_deg": 61.19009774790837,
+          "gain_crossings": [
+            {
+              "w_pu": 0.40477001525372747,
+              "phase_margin_deg": 61.19009774790837
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1202753331460575,
+              "gain_margin": 2.258184363260774
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.402739892154621,
+              0.0
+            ],
+            [
+              -0.30962675159459024,
+              -0.9488706718467275
+            ],
+            [
+              -0.30962675159459024,
+              0.9488706718467275
+            ],
+            [
+              -0.10006390838870548,
+              -0.018897629822293538
+            ],
+            [
+              -0.10006390838870548,
+              0.018897629822293538
+            ]
+          ],
+          "max_closed_real_pu": -0.10006390838870548,
+          "peak_sensitivity": 1.9487563553467178,
+          "peak_sensitivity_omega_pu": 0.9644431647991255,
+          "rms_distance_to_paper_locus_pu": 9.743181125546417e-06
+        },
+        "gd": {
+          "gain_margin": 3.5910745484509,
+          "phase_margin_deg": 63.15541704632719,
+          "gain_crossings": [
+            {
+              "w_pu": 0.18336854488353962,
+              "phase_margin_deg": 63.15541704632719
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6375740609016605,
+              "gain_margin": 3.5910745484509
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.31331427132866385,
+              -0.8779083738688965
+            ],
+            [
+              -0.31331427132866385,
+              0.8779083738688965
+            ],
+            [
+              -0.21358073025834745,
+              -0.24352236397158938
+            ],
+            [
+              -0.21358073025834745,
+              0.24352236397158938
+            ],
+            [
+              -0.08416560447359467,
+              -0.03136931677392954
+            ],
+            [
+              -0.08416560447359467,
+              0.03136931677392954
+            ]
+          ],
+          "max_closed_real_pu": -0.08416560447359467,
+          "peak_sensitivity": 1.4983454337609208,
+          "peak_sensitivity_omega_pu": 0.40758392273363947,
+          "rms_distance_to_paper_locus_pu": 1.4369714677926191e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.662042522951999e-16,
+            "gc": 8.342565498912405e-16,
+            "gd": 7.105047011800704e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 7.105427357601002e-15,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.4432899320127035e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 4.440892098500626e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 8.878530994695551e-16
+            }
+          },
+          "jacobian_finite_difference_abs_error": 5.105116329673365e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr10": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9052209674990963,
+        "delta0_deg": 1.2659990003947308,
+        "a": -0.095,
+        "b_frozen": 0.34229999999999994,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.9061551170985581,
+        "gp": {
+          "gain_margin": 5.817060703113759,
+          "phase_margin_deg": 55.27673766291886,
+          "gain_crossings": [
+            {
+              "w_pu": 0.47900215033232474,
+              "phase_margin_deg": 55.27673766291886
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1778094634788028,
+              "gain_margin": 5.817060703113759
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.7646558013908125,
+              0.0
+            ],
+            [
+              -1.227072021963,
+              0.0
+            ],
+            [
+              -0.8391864268461409,
+              0.0
+            ],
+            [
+              -0.08954287490002352,
+              -0.044076957472880804
+            ],
+            [
+              -0.08954287490002352,
+              0.044076957472880804
+            ]
+          ],
+          "max_closed_real_pu": -0.08954287490002352,
+          "peak_sensitivity": 1.411074764681844,
+          "peak_sensitivity_omega_pu": 1.0409032721126465,
+          "rms_distance_to_paper_locus_pu": 8.762301422255093e-06
+        },
+        "gd": {
+          "gain_margin": 4.656588695393112,
+          "phase_margin_deg": 66.26096324351562,
+          "gain_crossings": [
+            {
+              "w_pu": 0.21780682845413826,
+              "phase_margin_deg": 66.26096324351562
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7132734105035335,
+              "gain_margin": 4.656588695393112
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.6995239498083299,
+              -0.36614179834198995
+            ],
+            [
+              -1.6995239498083299,
+              0.36614179834198995
+            ],
+            [
+              -0.23715141974176085,
+              -0.3346162053707976
+            ],
+            [
+              -0.23715141974176085,
+              0.3346162053707976
+            ],
+            [
+              -0.06832463044991069,
+              -0.04031517688829462
+            ],
+            [
+              -0.06832463044991069,
+              0.04031517688829462
+            ]
+          ],
+          "max_closed_real_pu": -0.06832463044991069,
+          "peak_sensitivity": 1.4929852071311749,
+          "peak_sensitivity_omega_pu": 0.4470141394606702,
+          "rms_distance_to_paper_locus_pu": 9.757639230850493e-06
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 1.0815855825183624e-15,
+            "gc": 7.369511110839744e-16,
+            "gd": 7.821482935609121e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 3.1086244689504383e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.6415315207705135e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 3.9283700765566935e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.6763479493420164e-10,
+          "equilibrium_residual": 2.220446049250313e-16
+        }
+      }
+    },
+    "flip_upper_iq_and_round_scr3_inductance": {
+      "fig5_active_scr1": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 1.241974234837422,
+        "delta0_deg": 49.89909245378776,
+        "a": -0.2,
+        "b_frozen": -0.029700000000000004,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 0.18593865279828323,
+        "gp": {
+          "gain_margin": 2.074097144084879,
+          "phase_margin_deg": 84.15673095838065,
+          "gain_crossings": [
+            {
+              "w_pu": 0.16578434455708912,
+              "phase_margin_deg": 84.15673095838065
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9983938040448875,
+              "gain_margin": 2.074097144084879
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.14023925060430878,
+              -0.049957883748499764
+            ],
+            [
+              -0.14023925060430878,
+              0.049957883748499764
+            ],
+            [
+              -0.10239900182995268,
+              -0.9775728173387043
+            ],
+            [
+              -0.10239900182995268,
+              0.9775728173387043
+            ],
+            [
+              -0.07472349513147698,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.07472349513147698,
+          "peak_sensitivity": 1.961659890674347,
+          "peak_sensitivity_omega_pu": 0.9770614371864518,
+          "rms_distance_to_paper_locus_pu": 1.2857639778560602e-05
+        },
+        "gd": {
+          "gain_margin": 7.936783060559484,
+          "phase_margin_deg": 47.47746222805404,
+          "gain_crossings": [
+            {
+              "w_pu": 0.1408645957699198,
+              "phase_margin_deg": 47.47746222805404
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6387262044278667,
+              "gain_margin": 7.936783060559484
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.1033313840960524,
+              0.0
+            ],
+            [
+              -0.10272181126484639,
+              -0.9587399414186388
+            ],
+            [
+              -0.10272181126484639,
+              0.9587399414186388
+            ],
+            [
+              -0.09291977176370665,
+              0.0
+            ],
+            [
+              -0.07915261080527435,
+              -0.15943428955357858
+            ],
+            [
+              -0.07915261080527435,
+              0.15943428955357858
+            ]
+          ],
+          "max_closed_real_pu": -0.07915261080527435,
+          "peak_sensitivity": 1.6100211969428624,
+          "peak_sensitivity_omega_pu": 0.20183852961421353,
+          "rms_distance_to_paper_locus_pu": 1.4818929983620304e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.5347591807446e-16,
+            "gc": 8.34977029545232e-16,
+            "gd": 9.066543501500274e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 4.796163466380676e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 8.02305388030533e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 1.0130785099704553e-14
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.565336749109747e-11,
+          "equilibrium_residual": 5.551115123125783e-17
+        }
+      },
+      "fig5_active_scr3": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0303030303030303,
+        "L_pu": 0.33,
+        "Vg_pu": 0.9852097492412466,
+        "delta0_deg": 18.55448726826723,
+        "a": -0.066,
+        "b_frozen": -0.01345757575757576,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 1.0720613307635243,
+        "gp": {
+          "gain_margin": 2.563227608973654,
+          "phase_margin_deg": 54.53798279623973,
+          "gain_crossings": [
+            {
+              "w_pu": 0.4729908723111208,
+              "phase_margin_deg": 54.53798279623973
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1112765209120832,
+              "gain_margin": 2.563227608973654
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.5135954574331028,
+              0.0
+            ],
+            [
+              -0.31086585418362866,
+              -0.8906978685777647
+            ],
+            [
+              -0.31086585418362866,
+              0.8906978685777647
+            ],
+            [
+              -0.1588178432444873,
+              0.0
+            ],
+            [
+              -0.0779762030763656,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.0779762030763656,
+          "peak_sensitivity": 1.8811264154087952,
+          "peak_sensitivity_omega_pu": 0.902790033461817,
+          "rms_distance_to_paper_locus_pu": 1.061549854511311e-05
+        },
+        "gd": {
+          "gain_margin": 3.322134406565231,
+          "phase_margin_deg": 67.75174918814804,
+          "gain_crossings": [
+            {
+              "w_pu": 0.1915086375455342,
+              "phase_margin_deg": 67.75174918814804
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6518384438142815,
+              "gain_margin": 3.322134406565231
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.3159967802567547,
+              -0.8060295707522178
+            ],
+            [
+              -0.3159967802567547,
+              0.8060295707522178
+            ],
+            [
+              -0.2793176158719363,
+              -0.27965130080145967
+            ],
+            [
+              -0.2793176158719363,
+              0.27965130080145967
+            ],
+            [
+              -0.09074620993191525,
+              -0.0176310113545756
+            ],
+            [
+              -0.09074620993191525,
+              0.0176310113545756
+            ]
+          ],
+          "max_closed_real_pu": -0.09074620993191525,
+          "peak_sensitivity": 1.5070842619267117,
+          "peak_sensitivity_omega_pu": 0.49309987712280307,
+          "rms_distance_to_paper_locus_pu": 1.4733413669810533e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 9.275082701146894e-16,
+            "gc": 1.2008898127460164e-15,
+            "gd": 6.996162288553682e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.7763568394002505e-15,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 6.280369834735101e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 5.46229728115577e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 2.7237810250336647e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 4.827560573517076e-11,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_active_scr10": {
+        "op": [
+          0.95,
+          -0.2
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9845938248841498,
+        "delta0_deg": 5.536882362483717,
+        "a": -0.020000000000000004,
+        "b_frozen": 0.04230000000000001,
+        "converter_Q_pu": 0.2,
+        "active_bandwidth_pu": 0.7226687054156054,
+        "gp": {
+          "gain_margin": 8.60841817438619,
+          "phase_margin_deg": 50.20343027706318,
+          "gain_crossings": [
+            {
+              "w_pu": 0.4059130509700807,
+              "phase_margin_deg": 50.20343027706318
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1462508978881067,
+              "gain_margin": 8.60841817438619
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.8032382006712542,
+              -0.19597637358378384
+            ],
+            [
+              -1.8032382006712542,
+              0.19597637358378384
+            ],
+            [
+              -0.2395150032025442,
+              -0.1503441178081093
+            ],
+            [
+              -0.2395150032025442,
+              0.1503441178081093
+            ],
+            [
+              -0.0744935922524042,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.0744935922524042,
+          "peak_sensitivity": 1.362591921607153,
+          "peak_sensitivity_omega_pu": 0.764194566265143,
+          "rms_distance_to_paper_locus_pu": 9.482558153562006e-06
+        },
+        "gd": {
+          "gain_margin": 3.7497970919877126,
+          "phase_margin_deg": 58.45370589693344,
+          "gain_crossings": [
+            {
+              "w_pu": 0.24432878031703123,
+              "phase_margin_deg": 58.45370589693344
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.5843616583934387,
+              "gain_margin": 3.7497970919877126
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.8704599486968392,
+              -0.3785332734263184
+            ],
+            [
+              -1.8704599486968392,
+              0.3785332734263184
+            ],
+            [
+              -0.1307118375863024,
+              -0.3464637607448135
+            ],
+            [
+              -0.1307118375863024,
+              0.3464637607448135
+            ],
+            [
+              -0.07882821371685922,
+              -0.026911838097895987
+            ],
+            [
+              -0.07882821371685922,
+              0.026911838097895987
+            ]
+          ],
+          "max_closed_real_pu": -0.07882821371685922,
+          "peak_sensitivity": 1.7358610037279856,
+          "peak_sensitivity_omega_pu": 0.39349985195588416,
+          "rms_distance_to_paper_locus_pu": 1.1225925232834872e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 9.029183621333274e-16,
+            "gc": 7.973694671998933e-16,
+            "gd": 6.874736122870129e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 1.7342238036525468e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.552713678800501e-14,
+              "phase_margin_deg_abs_error": 5.115907697472721e-13,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.790180836524724e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7318591005732742e-10,
+          "equilibrium_residual": 1.6653345369377348e-16
+        }
+      },
+      "fig5_reactive_scr1": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 1,
+        "effective_scr": 1.0,
+        "L_pu": 1.0,
+        "Vg_pu": 0.20615528128088306,
+        "delta0_deg": 75.96375653207352,
+        "a": -0.95,
+        "b_frozen": 0.00029999999999999813,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.010028515235464967,
+        "gp": {
+          "gain_margin": 2.0187591328178103,
+          "phase_margin_deg": 89.9938544911049,
+          "gain_crossings": [
+            {
+              "w_pu": 0.010027433401546628,
+              "phase_margin_deg": 89.9938544911049
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.9996193991723816,
+              "gain_margin": 2.0187591328178103
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10198542730580026,
+              -0.9937661335751319
+            ],
+            [
+              -0.10198542730580026,
+              0.9937661335751319
+            ],
+            [
+              -0.09802879562947764,
+              -0.02095852715066861
+            ],
+            [
+              -0.09802879562947764,
+              0.02095852715066861
+            ],
+            [
+              -0.00997155412944402,
+              0.0
+            ]
+          ],
+          "max_closed_real_pu": -0.00997155412944402,
+          "peak_sensitivity": 1.9816766616182717,
+          "peak_sensitivity_omega_pu": 0.9984906240423093,
+          "rms_distance_to_paper_locus_pu": 1.1720482614294643e-05
+        },
+        "gd": {
+          "gain_margin": 12.240144059903638,
+          "phase_margin_deg": 13.511807423703374,
+          "gain_crossings": [
+            {
+              "w_pu": 0.04240619968527822,
+              "phase_margin_deg": 13.511807423703374
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.2012357318794477,
+              "gain_margin": 12.240144059903638
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.10207014449344826,
+              -0.9757675960219218
+            ],
+            [
+              -0.10207014449344826,
+              0.9757675960219218
+            ],
+            [
+              -0.09759900552823902,
+              -0.01970292104213735
+            ],
+            [
+              -0.09759900552823902,
+              0.01970292104213735
+            ],
+            [
+              -0.00533084997831272,
+              -0.04270971304224478
+            ],
+            [
+              -0.00533084997831272,
+              0.04270971304224478
+            ]
+          ],
+          "max_closed_real_pu": -0.00533084997831272,
+          "peak_sensitivity": 4.371204739806622,
+          "peak_sensitivity_omega_pu": 0.0436786098754643,
+          "rms_distance_to_paper_locus_pu": 1.1614265147243082e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 4.1078721948235624e-15,
+            "gc": 7.106294666405892e-15,
+            "gd": 7.298018709788989e-15
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 0.0,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 6.667118051786499e-16
+            },
+            "gd": {
+              "gain_margin_abs_error": 1.5987211554602254e-14,
+              "phase_margin_deg_abs_error": 2.842170943040401e-14,
+              "peak_sensitivity_abs_error": 3.552713678800501e-14,
+              "max_pole_distance_pu": 1.1123893155135927e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.7091106307987047e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr3": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 3,
+        "effective_scr": 3.0303030303030303,
+        "L_pu": 0.33,
+        "Vg_pu": 0.6896653173822793,
+        "delta0_deg": 5.4915294008669,
+        "a": -0.3135,
+        "b_frozen": 0.07745151515151516,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 1.1761342603104168,
+        "gp": {
+          "gain_margin": 2.258184363260774,
+          "phase_margin_deg": 61.19009774790837,
+          "gain_crossings": [
+            {
+              "w_pu": 0.40477001525372747,
+              "phase_margin_deg": 61.19009774790837
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 1.1202753331460575,
+              "gain_margin": 2.258184363260774
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.402739892154621,
+              0.0
+            ],
+            [
+              -0.30962675159459024,
+              -0.9488706718467275
+            ],
+            [
+              -0.30962675159459024,
+              0.9488706718467275
+            ],
+            [
+              -0.10006390838870548,
+              -0.018897629822293538
+            ],
+            [
+              -0.10006390838870548,
+              0.018897629822293538
+            ]
+          ],
+          "max_closed_real_pu": -0.10006390838870548,
+          "peak_sensitivity": 1.9487563553467178,
+          "peak_sensitivity_omega_pu": 0.9644431647991255,
+          "rms_distance_to_paper_locus_pu": 9.743181125546417e-06
+        },
+        "gd": {
+          "gain_margin": 3.5910745484509,
+          "phase_margin_deg": 63.15541704632719,
+          "gain_crossings": [
+            {
+              "w_pu": 0.18336854488353962,
+              "phase_margin_deg": 63.15541704632719
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.6375740609016605,
+              "gain_margin": 3.5910745484509
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -0.31331427132866385,
+              -0.8779083738688965
+            ],
+            [
+              -0.31331427132866385,
+              0.8779083738688965
+            ],
+            [
+              -0.21358073025834745,
+              -0.24352236397158938
+            ],
+            [
+              -0.21358073025834745,
+              0.24352236397158938
+            ],
+            [
+              -0.08416560447359467,
+              -0.03136931677392954
+            ],
+            [
+              -0.08416560447359467,
+              0.03136931677392954
+            ]
+          ],
+          "max_closed_real_pu": -0.08416560447359467,
+          "peak_sensitivity": 1.4983454337609208,
+          "peak_sensitivity_omega_pu": 0.40758392273363947,
+          "rms_distance_to_paper_locus_pu": 1.4369714677926191e-05
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 7.662042522951999e-16,
+            "gc": 8.342565498912405e-16,
+            "gd": 7.105047011800704e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 7.105427357601002e-15,
+              "phase_margin_deg_abs_error": 1.4210854715202004e-14,
+              "peak_sensitivity_abs_error": 4.440892098500626e-16,
+              "max_pole_distance_pu": 1.4432899320127035e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 4.440892098500626e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 8.878530994695551e-16
+            }
+          },
+          "jacobian_finite_difference_abs_error": 5.105116329673365e-11,
+          "equilibrium_residual": 0.0
+        }
+      },
+      "fig5_reactive_scr10": {
+        "op": [
+          0.2,
+          -0.95
+        ],
+        "scr_label": 10,
+        "effective_scr": 10.0,
+        "L_pu": 0.1,
+        "Vg_pu": 0.9052209674990963,
+        "delta0_deg": 1.2659990003947308,
+        "a": -0.095,
+        "b_frozen": 0.34229999999999994,
+        "converter_Q_pu": 0.95,
+        "active_bandwidth_pu": 0.9061551170985581,
+        "gp": {
+          "gain_margin": 5.817060703113759,
+          "phase_margin_deg": 55.27673766291886,
+          "gain_crossings": [
+            {
+              "w_pu": 0.47900215033232474,
+              "phase_margin_deg": 55.27673766291886
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 2.1778094634788028,
+              "gain_margin": 5.817060703113759
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.7646558013908125,
+              0.0
+            ],
+            [
+              -1.227072021963,
+              0.0
+            ],
+            [
+              -0.8391864268461409,
+              0.0
+            ],
+            [
+              -0.08954287490002352,
+              -0.044076957472880804
+            ],
+            [
+              -0.08954287490002352,
+              0.044076957472880804
+            ]
+          ],
+          "max_closed_real_pu": -0.08954287490002352,
+          "peak_sensitivity": 1.411074764681844,
+          "peak_sensitivity_omega_pu": 1.0409032721126465,
+          "rms_distance_to_paper_locus_pu": 8.762301422255093e-06
+        },
+        "gd": {
+          "gain_margin": 4.656588695393112,
+          "phase_margin_deg": 66.26096324351562,
+          "gain_crossings": [
+            {
+              "w_pu": 0.21780682845413826,
+              "phase_margin_deg": 66.26096324351562
+            }
+          ],
+          "negative_real_crossings": [
+            {
+              "w_pu": 0.7132734105035335,
+              "gain_margin": 4.656588695393112
+            }
+          ],
+          "closed_poles_pu": [
+            [
+              -1.6995239498083299,
+              -0.36614179834198995
+            ],
+            [
+              -1.6995239498083299,
+              0.36614179834198995
+            ],
+            [
+              -0.23715141974176085,
+              -0.3346162053707976
+            ],
+            [
+              -0.23715141974176085,
+              0.3346162053707976
+            ],
+            [
+              -0.06832463044991069,
+              -0.04031517688829462
+            ],
+            [
+              -0.06832463044991069,
+              0.04031517688829462
+            ]
+          ],
+          "max_closed_real_pu": -0.06832463044991069,
+          "peak_sensitivity": 1.4929852071311749,
+          "peak_sensitivity_omega_pu": 0.4470141394606702,
+          "rms_distance_to_paper_locus_pu": 9.757639230850493e-06
+        },
+        "independent_state_space": {
+          "scaled_frequency_errors": {
+            "gp": 1.0815855825183624e-15,
+            "gc": 7.369511110839744e-16,
+            "gd": 7.821482935609121e-16
+          },
+          "margin_and_pole_errors": {
+            "gp": {
+              "gain_margin_abs_error": 8.881784197001252e-16,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 2.220446049250313e-16,
+              "max_pole_distance_pu": 3.1086244689504383e-15
+            },
+            "gd": {
+              "gain_margin_abs_error": 3.6415315207705135e-14,
+              "phase_margin_deg_abs_error": 0.0,
+              "peak_sensitivity_abs_error": 0.0,
+              "max_pole_distance_pu": 3.9283700765566935e-15
+            }
+          },
+          "jacobian_finite_difference_abs_error": 1.6763479493420164e-10,
+          "equilibrium_residual": 2.220446049250313e-16
+        }
+      }
+    }
+  },
+  "curve_inferred_local_steps": {
+    "fig5_active_scr1_active": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 6.057616279253608e-06,
+      "DOP853_Radau_max_relative_to_step": 5.358735677418736e-06
+    },
+    "fig5_active_scr1_dc": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 4.788347671702553e-07,
+      "DOP853_Radau_max_relative_to_step": 2.4552887678552793e-07
+    },
+    "fig5_active_scr3_active": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 8.247329612132148e-06,
+      "DOP853_Radau_max_relative_to_step": 7.79168951581255e-06
+    },
+    "fig5_active_scr3_dc": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 3.1555267709926227e-07,
+      "DOP853_Radau_max_relative_to_step": 2.535948454562842e-07
+    },
+    "fig5_active_scr10_active": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 4.720531413729585e-06,
+      "DOP853_Radau_max_relative_to_step": 4.757905180952093e-06
+    },
+    "fig5_active_scr10_dc": {
+      "equilibrium_residual": 1.6653345369377348e-16,
+      "linear_nonlinear_max_relative_to_step": 2.2737688865070993e-07,
+      "DOP853_Radau_max_relative_to_step": 5.897633216511711e-08
+    },
+    "fig5_reactive_scr1_active": {
+      "equilibrium_residual": 2.7755575615628914e-17,
+      "linear_nonlinear_max_relative_to_step": 0.0001292104723337184,
+      "DOP853_Radau_max_relative_to_step": 3.1438462944066714e-06
+    },
+    "fig5_reactive_scr1_dc": {
+      "equilibrium_residual": 2.7755575615628914e-17,
+      "linear_nonlinear_max_relative_to_step": 9.562404880592013e-06,
+      "DOP853_Radau_max_relative_to_step": 2.3178008459745492e-07
+    },
+    "fig5_reactive_scr3_active": {
+      "equilibrium_residual": 0.0,
+      "linear_nonlinear_max_relative_to_step": 6.518282335998826e-06,
+      "DOP853_Radau_max_relative_to_step": 5.024256011232353e-06
+    },
+    "fig5_reactive_scr3_dc": {
+      "equilibrium_residual": 0.0,
+      "linear_nonlinear_max_relative_to_step": 4.0791025688984017e-07,
+      "DOP853_Radau_max_relative_to_step": 4.112522122255713e-07
+    },
+    "fig5_reactive_scr10_active": {
+      "equilibrium_residual": 2.220446049250313e-16,
+      "linear_nonlinear_max_relative_to_step": 2.0646354195186234e-06,
+      "DOP853_Radau_max_relative_to_step": 1.5341561354631494e-06
+    },
+    "fig5_reactive_scr10_dc": {
+      "equilibrium_residual": 2.220446049250313e-16,
+      "linear_nonlinear_max_relative_to_step": 1.4187085040084924e-07,
+      "DOP853_Radau_max_relative_to_step": 9.27591685684348e-08
+    }
+  }
+}

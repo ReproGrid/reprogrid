@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "tqdm": "4.70.1"
+  },
+  "motulator_commit": "ca3fb1f225be30ff98d70ebca6fc49cc24e2bb2e",
+  "method": "Fresh virtual environment, pinned dependencies, a fresh upstream clone and a separate output directory.",
+  "compared_files": {
+    "metrics.json": {
+      "byte_identical": true,
+      "sha256": "1cdc3897ac76f4d7ef15006fb64ace640f4242df4b9bd179172e9cd318548cdc"
+    },
+    "fig5b_rfpsc_switched.csv": {
+      "byte_identical": true,
+      "sha256": "ce7f39536e0969f30de58d109ea9c3adac6ce1767aa84db1ba175042467a457f"
+    },
+    "fig6b_do_gfm_switched.csv": {
+      "byte_identical": true,
+      "sha256": "61e67cdf74d73f7cf4462b9e70cdad3399dcda902bc106bf9d1c91f70cc56656"
+    },
+    "fig5b_rfpsc_averaged.csv": {
+      "byte_identical": true,
+      "sha256": "c75bd18e92a9b3093b51550366253db897cdb8b8a6f921ce1108190370034b05"
+    },
+    "fig6b_do_gfm_averaged.csv": {
+      "byte_identical": true,
+      "sha256": "756f75166ca1da83ec208da9856472c24871ced8388953251d45451159594117"
+    },
+    "fig5b_fig6b_comparison.png": {
+      "byte_identical": true,
+      "sha256": "5df74390050dd4d4ec19a4e6528d9f86330c72f9eafe20fbd01bb4e533099e6a"
+    }
+  },
+  "svg": "Re-rendered and parsed in both runs.",
+  "paper_digitization": "Both reference CSVs and reference metrics were regenerated from the source PDF and matched byte for byte."
+}

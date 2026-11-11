@@ -1,0 +1,17 @@
+{
+  "doi": "10.1109/TIE.2018.2874584",
+  "title": "Robust Analytic Design of Power-Synchronization Control",
+  "journal": "IEEE Transactions on Industrial Electronics",
+  "volume": 66,
+  "issue": 8,
+  "pages": "5810–5819",
+  "issue_year": 2019,
+  "early_online": "2018-09-13",
+  "version": "Aalto accepted peer-reviewed manuscript",
+  "landing_url": "https://research.aalto.fi/en/publications/robust-analytic-design-of-power-synchronization-control/",
+  "pdf_url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/c8da5953-833c-4f32-b38b-49ea7add52b9/content",
+  "workspace_source": "research/feasibility_batch1/sources/robust_psc2019.pdf",
+  "sha256": "e45aa9f7dc1688da6f125144619fe742220c0766ed8487f4cac47ff8a12b02e5",
+  "pdf_pages": 11,
+  "source_pdf_required_to_run_model": false
+}

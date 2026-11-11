@@ -1,0 +1,45 @@
+{
+  "doi": "10.1109/TIE.2018.2875669",
+  "state": "report_ready",
+  "outcome": "scalar_psc_claims_reproduced_with_current_limit_scope_boundary",
+  "scope": "One PSC converter and infinite bus. Ideal PCC voltage, constant DC link, lossless algebraic network, no current-limit mode switching. Reproduce Eq. 5, Figs. 6–8 and the reduced-model counterparts of Figs. 9–10.",
+  "numerical_checks_passed": true,
+  "checks_passed": 34,
+  "checks_total": 34,
+  "full_sequence_cases": 8,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "quantitative_original_experiment_match": false,
+  "key_results": {
+    "type_i_angles_deg": [
+      26.423338765896766,
+      60.45863949985723
+    ],
+    "cca_deg": 108.1948723387668,
+    "cct_s": 0.5802698165663505,
+    "late_clearing_peak_current_pu": 2.1052625460781873
+  },
+  "critical_gaps": [
+    "PCC current exceeds 1.8 pu under the stated base in late and uncleared scalar trajectories.",
+    "Original EMT and hardware raw traces, inner-loop settings and current limit transition details are unavailable.",
+    "SI inductance and gain normalization conventions require documented inference."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "model_scope_boundary",
+      "source": "Author manuscript Sec. III-A and Table II, Fig. 10",
+      "finding": "Late ideal-scalar case crosses reported current threshold at clearance, so its subsequent recapture is conditional."
+    },
+    {
+      "type": "figure_trajectory_difference",
+      "source": "Fig. 10(a), visual axis reading",
+      "finding": "Approx. 1.15 s between plotted wraps versus 1.4582 s for the ideal scalar model. Cause unresolved."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "c7fa6176d72789d9eee9c5d3855e06fef05fd44ac33766e4142b211874ba21ba",
+  "primary_manifest_sha256": "5606e5d4c00fd10a4971cdc0a771b5abf1773616fe8e7bc5b3c2ff99861ce698",
+  "source_report_sha256": "1723d1aec9e0ed66ef14ba258afcc11f24e5922b8f6b33c5ca1bd7a75c03fc6f"
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-11-11T03:50:27.201818+00:00",
+  "original_protocol_sha256": "b876371d2dc02d4633679e7df29b0fe442c34ab600531f85a059022980d1572d",
+  "trigger": "Initial run revealed printed Eq39/40 theorem1 formula differs from direct physical crossing even though physical transfer matches Eq9/12.",
+  "added_check": "Test both first and second Eq39 expressions independently; derive surviving gm>=2 bound without invalid cancellation.",
+  "unchanged_thresholds": true,
+  "initial_result_sha256": "ee8860e7de39cf658153d7ce544c4a665ccfd6c2c549c253906a9c61a494af8a"
+}
