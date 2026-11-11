@@ -1,0 +1,23 @@
+{
+  "doi": "10.1109/TPEL.2022.3225626",
+  "state": "parked_missing_inputs",
+  "outcome": "published_source_verified_speed_reversal_inputs_missing",
+  "fulltext_review_completed": true,
+  "public_fulltext_url": "https://hdl.handle.net/11697/212481",
+  "reason_zh": "已取得出版版与电机、约束参数。缺实际 MAESO 观测器带宽、速度 PI、机械参数及原始波形。",
+  "scope_zh": "核对了表 I–V 和式 (27)–(28)。原速度反转和实测带宽暂缓。",
+  "critical_gaps": [
+    "No numerical bandwidth for the MAESO implemented in the reported cases was located.",
+    "No complete speed PI, mechanical inertia and friction, and benchmark controller tuning were found for the Fig. 5–6 runs.",
+    "Synchronized trace files and the exact RMS measurement window remain unavailable."
+  ],
+  "execution_kind": "source_audit_only",
+  "code_executed": false,
+  "clean_environment_replay_passed": null,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "anomaly_evidence": [],
+  "misconduct_allegation": null,
+  "report_sha256": "e9d91d1272087c88c0fb17a59be9cbc052c89aea124808e0f01f6ddab6781f16",
+  "source_report_sha256": "03b6a499ae486866e1ba12dac8d303fcdf6186de9b82f5e16e79c597490afc67"
+}

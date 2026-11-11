@@ -1,0 +1,288 @@
+{
+  "doi": "10.1109/TPEL.2017.2773094",
+  "observer_analysis": {
+    "fig8_damping": 5,
+    "design_parameter_rad_s": 6.283185307179586,
+    "methods": {
+      "PI": {
+        "gains": [
+          6.220981559220748,
+          0.38700611560164616
+        ],
+        "actual_3db_rad_s": 6.283185307179587,
+        "max_real_pole_rad_s": -0.06284467573946917,
+        "state_space_vs_formula_max_absolute_error": 4.495784161971419e-16,
+        "fig8_gain_db_rmse": 0.1064267314208596,
+        "fig8_phase_deg_rmse": 0.3580631095594088
+      },
+      "ESO_C1": {
+        "gains": [
+          17.726625043439622,
+          28.566657766427344,
+          4.185044884047272
+        ],
+        "actual_3db_rad_s": 19.317245061167526,
+        "max_real_pole_rad_s": -0.16279570736914403,
+        "state_space_vs_formula_max_absolute_error": 4.442378921822308e-16,
+        "fig8_gain_db_rmse": 0.12280588599933877,
+        "fig8_phase_deg_rmse": 0.40306642154297395
+      },
+      "ESO_C2": {
+        "gains": [
+          120.86335256890652,
+          38.95453331785547,
+          4.185044884047272
+        ],
+        "actual_3db_rad_s": 121.18536835521915,
+        "max_real_pole_rad_s": -0.16143877943703008,
+        "state_space_vs_formula_max_absolute_error": 4.69612108587006e-16,
+        "fig8_gain_db_rmse": 0.10515902612765457,
+        "fig8_phase_deg_rmse": 0.3349760389415379
+      }
+    },
+    "eso_c2_stability_threshold": 0.4807498567691362,
+    "poles_near_boundary": [
+      {
+        "damping": 0.4797498567691362,
+        "rightmost_pole_real_rad_s": 0.0026126872647808455
+      },
+      {
+        "damping": 0.4807498567691362,
+        "rightmost_pole_real_rad_s": -4.619922889936795e-17
+      },
+      {
+        "damping": 0.4817498567691362,
+        "rightmost_pole_real_rad_s": -0.002616766402317341
+      }
+    ]
+  },
+  "normalization": {
+    "left_vs_printed_max_absolute_difference": 0.36895701481134835,
+    "sqrt2_times_left_vs_printed_max_absolute_error": 8.881784197001252e-16,
+    "fig4_small_error_detector_gain_left": 0.7071067811865475,
+    "fig4_small_error_detector_gain_right": 1.0,
+    "paper_normalized_detector_threshold": 0.06736783176668476,
+    "ideal_near_d_axis_limit_from_left_deg": 3.5336348803873987,
+    "ideal_near_d_axis_limit_from_right_deg": 2.497741610601984,
+    "rtvi_eq8_vs_independent_steady_dq_max_error": 3.885780586188048e-16
+  },
+  "circuit_verification": {
+    "stationary_matrix_vs_rotor_frame_max_current_error_a": 5.551115123125783e-17,
+    "ideal_switch_vs_held_voltage_endpoint_error_a": 2.636779683484747e-16,
+    "polarity_reversal_measurement_difference": 0.0
+  },
+  "figure9_q_lock": {
+    "paper_last_20ms_max_deviation_from_q_axis_deg": 0.8815008437021703,
+    "paper_last_20ms_mean_axis_error_deg": -89.11849915629783,
+    "q_axis_classification_tolerance_from_paper_deg": 2.5,
+    "pi_zero_seed_min_terminal_axis_error_deg": 90.0,
+    "eso_zero_seed_min_terminal_axis_error_deg": 90.0
+  },
+  "sweeps": {
+    "pi_averaged": {
+      "angles": 360,
+      "detector_flagged_angles": 360,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 360,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.0261,
+      "max_joint_time_s": 0.0315,
+      "terminal_max_abs_axis_error_deg": 0.3290619729016087
+    },
+    "eso_averaged": {
+      "angles": 360,
+      "detector_flagged_angles": 360,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 360,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.021300000000000003,
+      "max_joint_time_s": 0.023100000000000002,
+      "terminal_max_abs_axis_error_deg": 0.07059726200558607
+    },
+    "pi_switched": {
+      "angles": 36,
+      "detector_flagged_angles": 36,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 36,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.026250000000000002,
+      "max_joint_time_s": 0.0315,
+      "terminal_max_abs_axis_error_deg": 0.3290782873473887
+    },
+    "eso_switched": {
+      "angles": 36,
+      "detector_flagged_angles": 36,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 36,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.021150000000000002,
+      "max_joint_time_s": 0.023100000000000002,
+      "terminal_max_abs_axis_error_deg": 0.07070531823503931
+    },
+    "pi_zero_seed": {
+      "angles": 4,
+      "detector_flagged_angles": 4,
+      "flagged_with_axis_error_over_nominal_at_declaration": 2,
+      "joint_converged_angles": 2,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.020100000000000003,
+      "max_joint_time_s": 0.020100000000000003,
+      "terminal_max_abs_axis_error_deg": 90.0
+    },
+    "eso_zero_seed": {
+      "angles": 4,
+      "detector_flagged_angles": 4,
+      "flagged_with_axis_error_over_nominal_at_declaration": 2,
+      "joint_converged_angles": 2,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.020100000000000003,
+      "max_joint_time_s": 0.020100000000000003,
+      "terminal_max_abs_axis_error_deg": 90.0
+    },
+    "pi_scaled_sqrt2": {
+      "angles": 360,
+      "detector_flagged_angles": 360,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 360,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.024300000000000002,
+      "max_joint_time_s": 0.0285,
+      "terminal_max_abs_axis_error_deg": 0.23021310730256508
+    },
+    "eso_scaled_sqrt2": {
+      "angles": 360,
+      "detector_flagged_angles": 360,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 360,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.020700000000000003,
+      "max_joint_time_s": 0.022500000000000003,
+      "terminal_max_abs_axis_error_deg": 0.04978529737513183
+    }
+  },
+  "seed_sweep": [
+    {
+      "observer": "PI",
+      "initial_speed_rad_s": 0,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 2,
+      "joint_converged_angles": 4,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.029100000000000004,
+      "max_joint_time_s": 0.029100000000000004,
+      "terminal_max_abs_axis_error_deg": 90.0
+    },
+    {
+      "observer": "PI",
+      "initial_speed_rad_s": 0.1,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.029100000000000004,
+      "max_joint_time_s": 0.033,
+      "terminal_max_abs_axis_error_deg": 0.30536263336825514
+    },
+    {
+      "observer": "PI",
+      "initial_speed_rad_s": 1,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.029400000000000003,
+      "max_joint_time_s": 0.0315,
+      "terminal_max_abs_axis_error_deg": 0.3290619729016087
+    },
+    {
+      "observer": "PI",
+      "initial_speed_rad_s": 5,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.029700000000000004,
+      "max_joint_time_s": 0.030000000000000002,
+      "terminal_max_abs_axis_error_deg": 0.4450850211109093
+    },
+    {
+      "observer": "ESO_C2",
+      "initial_speed_rad_s": 0,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 2,
+      "joint_converged_angles": 4,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.0222,
+      "max_joint_time_s": 0.0222,
+      "terminal_max_abs_axis_error_deg": 90.0
+    },
+    {
+      "observer": "ESO_C2",
+      "initial_speed_rad_s": 0.1,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.0222,
+      "max_joint_time_s": 0.023700000000000002,
+      "terminal_max_abs_axis_error_deg": 0.07154551380463771
+    },
+    {
+      "observer": "ESO_C2",
+      "initial_speed_rad_s": 1,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.0222,
+      "max_joint_time_s": 0.023100000000000002,
+      "terminal_max_abs_axis_error_deg": 0.07059726200558607
+    },
+    {
+      "observer": "ESO_C2",
+      "initial_speed_rad_s": 5,
+      "angles": 6,
+      "detector_flagged_angles": 6,
+      "flagged_with_axis_error_over_nominal_at_declaration": 0,
+      "joint_converged_angles": 6,
+      "hold_duration_implemented_s": 0.020100000000000003,
+      "median_joint_time_s": 0.0222,
+      "max_joint_time_s": 0.0228,
+      "terminal_max_abs_axis_error_deg": 0.07341408187491634
+    }
+  ],
+  "checks": {
+    "PI_fig8_gain_db": true,
+    "PI_fig8_phase_deg": true,
+    "PI_independent_state_frequency": true,
+    "ESO_C1_fig8_gain_db": true,
+    "ESO_C1_fig8_phase_deg": true,
+    "ESO_C1_independent_state_frequency": true,
+    "ESO_C2_fig8_gain_db": true,
+    "ESO_C2_fig8_phase_deg": true,
+    "ESO_C2_independent_state_frequency": true,
+    "eso_c2_routh_boundary": true,
+    "pi_design_bandwidth": true,
+    "eq15_sqrt2_factor": true,
+    "eq8_rotating_steady_state": true,
+    "independent_matrix_current": true,
+    "same_input_switch_endpoint": true,
+    "linear_motor_cannot_resolve_polarity": true,
+    "fig9_source_trace_identifies_q_axis": true,
+    "pi_reproduces_exact_q_equilibrium_and_false_flag": true,
+    "pi_averaged_speed_seed_escapes_q_axis": true,
+    "pi_switched_speed_seed_escapes_q_axis": true,
+    "eso_reproduces_exact_q_equilibrium_and_false_flag": true,
+    "eso_averaged_speed_seed_escapes_q_axis": true,
+    "eso_switched_speed_seed_escapes_q_axis": true
+  },
+  "checks_passed": 23,
+  "checks_total": 23
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2020.3009600",
+  "reviewed_at_local_date": "2026-11-11",
+  "sources": [
+    {
+      "type": "institutional_journal_manuscript",
+      "url": "https://vbn.aau.dk/ws/files/337146322/A_Digital_Twin_based_Estimation_Method_for_Health_Indicators_of_DC_DC_Converters.pdf",
+      "local_path_from_workspace": "research/feasibility_batch1/sources/buck_dt2021.pdf",
+      "sha256": "4269c6f0c22f1f6ff313b15f4b503b6fe315926ae27998e97d7bbf181d554732",
+      "review_scope": "Sections II–IV, especially Eqs. (7)–(13) and Tables II–III."
+    },
+    {
+      "type": "author_thesis",
+      "url": "https://vbn.aau.dk/en/publications/advanced-converter-level-condition-monitoring-for-power-electroni/",
+      "pdf_url": "https://vbn.aau.dk/ws/files/549493140/PHD_YP_e_pdf.pdf",
+      "local_path_from_workspace": ".cache/tie-impedance-source/peng-thesis.pdf",
+      "sha256": "58430ff2017ca4e70932f94d0ccacf01e632df89fee96fcbfac1c9b067da25ce",
+      "review_scope": "Chapter 4, pp. 69–75, Eqs. (30)–(37), Table 10, and the published journal article in the appendix."
+    }
+  ],
+  "newly_confirmed_inputs_for_thesis_case": {
+    "pso_particle_count": 25,
+    "sampling_hz": 50000,
+    "switching_hz": 20000,
+    "input_v": 24,
+    "voltage_reference_v": 9,
+    "load_ohm": [4.9, 3.3],
+    "inductance_uh": 782,
+    "capacitance_uf": 151,
+    "diode_forward_drop_v": 1
+  },
+  "public_artifacts_audit": {
+    "crossref_relation": {},
+    "datacite_related_identifier_results": 0,
+    "title_or_doi_web_queries": ["IEEE DataPort", "Zenodo", "Matlab", "dataset"],
+    "synchronized_experimental_waveforms": "not_located_in_reviewed_sources"
+  }
+}

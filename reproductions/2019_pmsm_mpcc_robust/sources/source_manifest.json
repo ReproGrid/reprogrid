@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2018.2835835",
+  "reviewed_at_local_date": "2026-11-11",
+  "sources": [
+    {
+      "type": "publisher_record",
+      "url": "https://ieeexplore.ieee.org/document/8360394",
+      "scope": "Publisher bibliographic and abstract entry."
+    },
+    {
+      "type": "author_listing",
+      "url": "https://www.researchgate.net/publication/325210319_Model_Predictive_Current_Control_for_PMSM_Drives_With_Parameter_Robustness_Improvement",
+      "scope": "Bibliographic and abstract entry with full text request only."
+    },
+    {
+      "type": "repository_index",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/TPEL.2018.2835835",
+      "scope": "One publisher location, marked closed and no listed OA copy at review."
+    }
+  ],
+  "searched": ["exact title and DOI", "IEEE article number", "author manuscript", "author and North China University of Technology", "public repository and PDF searches"],
+  "full_text_obtained": false
+}

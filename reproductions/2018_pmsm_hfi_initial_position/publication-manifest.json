@@ -1,0 +1,142 @@
+{
+  "doi": "10.1109/TPEL.2017.2773094",
+  "source_handoff_state": "report_ready",
+  "scope": "Stationary PMSM observer frequency responses, Eq. (15) normalization, q-axis lock, and averaged and ideal switched pulse tests.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1271,
+      "sha256": "98ea37191807a1d6df258a20f1e69c5ea8f7182df4dae5bfbb0129918c2188d9"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 2073,
+      "sha256": "e978031b64ae8ef057b57306beaca2fa5d52daafe90d8bd6c31a9cb06c611a2e"
+    },
+    {
+      "path": "figures/detector_normalization.png",
+      "bytes": 113337,
+      "sha256": "3d5b2c06ebfe58f51f3a2d6c3d3a1f223c6b49ef43588129b0e4c6fa735a20f1"
+    },
+    {
+      "path": "figures/observer_bode.png",
+      "bytes": 124166,
+      "sha256": "9de2af186ec68f6ef07f9884e40f24ee403116675951d1b58a512afa745961b2"
+    },
+    {
+      "path": "figures/pulse_lock_and_convergence.png",
+      "bytes": 122098,
+      "sha256": "13447b15318265777462d0ebdb74133732a7f720cdac130a617c65da1f7438fd"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 2997,
+      "sha256": "30abb300e40a25ff9e13173286570fb002f753eedd6e91c37b8bfc011cc6961a"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 2648,
+      "sha256": "fcde0f5ba4b482c678876934e6b22168f5e236f092ec8a5affe35dbd2fcec8d2"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "results/angle_sweep.csv",
+      "bytes": 139352,
+      "sha256": "d04ba57065cf6c53de0bbceba490bb5fb13e8c97f35dd0f59859d2b15fa4e381"
+    },
+    {
+      "path": "results/clean_replay/run_manifest.json",
+      "bytes": 1782,
+      "sha256": "c2161b03b7ead9debcd5650cb9d5defdef5b5a5e09c2af5207ec67b035e6680d"
+    },
+    {
+      "path": "results/clean_replay_comparison.json",
+      "bytes": 3273,
+      "sha256": "1a4355117e3e4d756d87c0e6a9ea2645fb51e7aa1814f0b208e233d8bdc839c4"
+    },
+    {
+      "path": "results/metrics.json",
+      "bytes": 10616,
+      "sha256": "95e09c7cfd8754f480a943f84a81857fcca9bf0bd74fe8d816f6dd8fc72db2f8"
+    },
+    {
+      "path": "results/observer_curves.npz",
+      "bytes": 160271,
+      "sha256": "a31c105740400b67ba1745c0e895ed91794809e8cb3c0244190ef0ad2daedf23"
+    },
+    {
+      "path": "results/pulse_traces.npz",
+      "bytes": 18173635,
+      "sha256": "1cf9c70cae277389d2c7126ccee24812d34a8e482cac5db9e44d3ccaaeea0c84"
+    },
+    {
+      "path": "results/run_manifest.json",
+      "bytes": 1783,
+      "sha256": "65b20cb92abd629ba166e771bbc30b05d7f9e98cff1d4af8d1844a4671f30ac5"
+    },
+    {
+      "path": "sources/source_audit.md",
+      "bytes": 1866,
+      "sha256": "6b3dc3c74a56ee1fa486209681b217b906fe54c3e7cfd09ec9938310a727383d"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 1844,
+      "sha256": "b8ca105a3a2bf8fb7fd74eb3edde3ce4ca07bf84977ca799cfed9e99ed9520da"
+    },
+    {
+      "path": "src/compare_replay.py",
+      "bytes": 2425,
+      "sha256": "7e4e54ef828dad9b0d2f63bd02fd155a71fa1e54ed78c1d16e0efb4b912ad48b"
+    },
+    {
+      "path": "src/observer.py",
+      "bytes": 1771,
+      "sha256": "c01bb1fc57367dc9e32be4c829e236e6170d7e261586c45c5742399659129d2d"
+    },
+    {
+      "path": "src/plots.py",
+      "bytes": 4348,
+      "sha256": "1957ecf41389d44b7a3fc3398ae4ab89ee7cd74eb71b3b9b64cb900b10979af8"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 17164,
+      "sha256": "75aed8a6dd15bda1d44a4b51856d860c67c070d1dce96d50549f4c06b970f81c"
+    },
+    {
+      "path": "src/standstill.py",
+      "bytes": 6172,
+      "sha256": "2d4655528469d6c679c3ee1e3b9d2b6b01e22d938508c2dfd97fb245259d4cda"
+    },
+    {
+      "path": "verification/environment_freeze.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "verification/fig8_9_readback.csv",
+      "bytes": 91233,
+      "sha256": "8fcd4990333ea2a7c8e12e1b76b2654e3196c363379317eee4c905f4b202ec40"
+    },
+    {
+      "path": "verification/independent.py",
+      "bytes": 779,
+      "sha256": "73c144674e1dc1046f7e04c238a769592d9bb94d80a053b396bb4da7eeb800bb"
+    },
+    {
+      "path": "verification/read_figures.py",
+      "bytes": 3003,
+      "sha256": "4195ca3d7b58b68faabaa89930f713079e3b3880391f897b992e1152c17fd547"
+    }
+  ]
+}

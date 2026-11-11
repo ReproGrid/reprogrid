@@ -1,0 +1,22 @@
+{
+  "doi": "10.1109/TPEL.2020.3009600",
+  "state": "parked_missing_inputs",
+  "outcome": "original_experiment_blocked_after_thesis_input_audit",
+  "reason_zh": "博士论文确认 25 粒子与一组 50 kHz 采样。同期电感电流、输出电压和闭环 PI、采样调理与时延仍缺。",
+  "scope_zh": "补齐台架同步波形与实际闭环实现后，执行五参数恢复和采样率敏感性核验。",
+  "critical_gaps": [
+    "No located synchronized vin, iL and vo records across the original load transition.",
+    "No verified numeric closed-loop Kp/Ki, analog measurement gains/RC or exact PWM update delay.",
+    "The thesis supplies 25 PSO particles but the tested inertia, bounds, stopping threshold and initial states are unresolved."
+  ],
+  "execution_kind": "source_audit_only",
+  "code_executed": false,
+  "clean_environment_replay_passed": null,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "anomaly_evidence": [],
+  "misconduct_allegation": null,
+  "report_sha256": "b1e95bd6f20fa2c51aa14f3dbe9151c55e15b6a492e5f22d7bf1466f53816ba4",
+  "public_fulltext_url": "https://vbn.aau.dk/ws/files/337146322/A_Digital_Twin_based_Estimation_Method_for_Health_Indicators_of_DC_DC_Converters.pdf",
+  "source_report_sha256": "42a15ded655b50687cb4d6f5ae9f2ab7354868fa7e6b3cff497eba1ccde84f7b"
+}

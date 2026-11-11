@@ -1,0 +1,46 @@
+{
+  "doi": "10.1109/TPEL.2017.2773094",
+  "state": "report_ready",
+  "display_state_zh": "观测器与锁轴复现，式 (15) 有归一化差异",
+  "outcome": "hfi_observers_and_q_axis_lock_reproduced_with_eq15_scaling_discrepancy",
+  "scope_zh": "复现三种观测器频响、脉冲归一化、q 轴误锁和静止角度扫描。",
+  "scope": "Stationary PMSM observer frequency responses, Eq. (15) normalization, q-axis lock, and averaged and ideal switched pulse tests.",
+  "public_fulltext_url": "https://vbn.aau.dk/en/publications/high-frequency-voltage-injection-methods-and-observer-design-for-/",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 23,
+  "checks_total": 23,
+  "key_results": {
+    "bode_max_gain_rmse_db": 0.12280588599933877,
+    "bode_max_phase_rmse_deg": 0.40306642154297395,
+    "eso_c2_minimum_stable_damping_exclusive": 0.4807498567691362,
+    "eq15_left_angle_at_reported_threshold_deg": 3.5336348803873987,
+    "eq15_right_angle_at_reported_threshold_deg": 2.497741610601984,
+    "pi_seeded_median_joint_convergence_s": 0.0261,
+    "eso_seeded_median_joint_convergence_s": 0.021300000000000003
+  },
+  "critical_gaps": [
+    "Original S-Function, injection settings and filter timing are not specified sufficiently for exact Figs. 10–13 reconstruction.",
+    "The published Fig. 9 trace is about 0.88 electrical degrees away from exact q-axis equilibrium. Only the lock category is verified against that curve.",
+    "The independent linear locked-rotor model has no polarity observability. Nonlinear or bench data are needed for the paper's polarity-detection step."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "normalization_scale_discrepancy",
+      "source": "Eqs. (14)–(17) and Fig. 4",
+      "finding": "Eq. (15)'s printed expression is sqrt(2) times its current-norm definition. The reported threshold yields 3.534 electrical degrees near d when applied to the current-norm definition."
+    },
+    {
+      "type": "detector_only_convergence_ambiguity",
+      "source": "Fig. 9 and Section IV",
+      "finding": "The 20 ms detector-only criterion can hold at the exact q-axis false lock with 90 electrical degrees of axis error."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "30abb300e40a25ff9e13173286570fb002f753eedd6e91c37b8bfc011cc6961a",
+  "primary_manifest_sha256": "65b20cb92abd629ba166e771bbc30b05d7f9e98cff1d4af8d1844a4671f30ac5",
+  "source_report_sha256": "fba71fc919f4261c49eff779ca467921f8ec817473b4ac4abb9ff2a5771a02dc"
+}

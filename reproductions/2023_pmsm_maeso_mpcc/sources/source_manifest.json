@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2022.3225626",
+  "title": "Model Predictive Current Control With Model-Aid Extended State Observer Compensation for PMSM Drive",
+  "published_version": {
+    "institutional_record": "https://hdl.handle.net/11697/212481",
+    "public_pdf": "https://ricerca.univaq.it/bitstream/11697/212481/1/Model_Predictive_Current_Control_With_Model-Aid_Extended_State_Observer_Compensation_for_PMSM_Drive.pdf",
+    "sha256": "30e6a46aa74da3a700a910d87faee772afb51617d3a5f95ea95ff6ebbcf6d195",
+    "inspected": "Sections II–V and Tables I–V, especially journal pages 3157–3160.",
+    "workspace_path": "reproductions/2023_pmsm_maeso_mpcc/sources/published_version.pdf"
+  },
+  "verified_source_values": {
+    "nominal_resistance_ohm": 0.5,
+    "nominal_inductance_h": 0.0006555,
+    "nominal_magnet_flux_wb": 0.006616,
+    "pole_pairs": 8,
+    "dc_voltage_v": 48,
+    "sampling_s": 0.0001,
+    "prediction_horizon": 2,
+    "control_horizon": 1,
+    "current_limit_a": 5,
+    "parameter_factors_R_L_flux": {
+      "C1": [
+        1,
+        1,
+        1
+      ],
+      "C2": [
+        0.1,
+        0.5,
+        2
+      ],
+      "C3": [
+        5,
+        2,
+        0.5
+      ]
+    }
+  }
+}

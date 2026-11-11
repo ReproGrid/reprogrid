@@ -37,10 +37,13 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 构网稳定 / GFM stability | [Complex droop](reproductions/2024_complex_droop) | 算例 I–III 与阻抗角 / Cases I–III and impedance angle |
 | 数字孪生 / Digital twin | [Online impedance identification](reproductions/2024_tie_dt_impedance) | 六组三相平均模型 / Six averaged three-phase benchmarks |
 | 构网稳定 / GFM stability | [VSG parameter constraints](reproductions/2019_vsg_parameter_constraints) | 传递函数复跑与算例 3 差异 / Transfer-function replay and Case 3 discrepancy |
+| 电机控制 / Motor control | [PMSM high-frequency injection](reproductions/2018_pmsm_hfi_initial_position) | 观测器、归一化和 q 轴误锁 / Observers, normalization and false q-axis lock |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 
 [PMSM 延时抑制滑模观测器](reproductions/2020_pmsm_delay_smo)已完成资料审计，因缺少关键输入暂缓仿真。
+
+另外三篇资料审计记录了复跑缺口：[DC–DC 健康指标数字孪生](reproductions/2021_buck_dt_health/reports/REPORT.md)、[参数鲁棒性 PMSM 预测电流控制](reproductions/2019_pmsm_mpcc_robust/reports/REPORT.md)、[MAESO 辅助 PMSM 预测电流控制](reproductions/2023_pmsm_maeso_mpcc/reports/REPORT.md)。可在[投稿页](https://reprogrid.org/submit/)提供可分享的资料。
 
 ## 增加论文
 

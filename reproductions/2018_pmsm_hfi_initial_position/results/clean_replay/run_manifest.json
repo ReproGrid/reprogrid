@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPEL.2017.2773094",
+  "started_utc": "2026-11-11T12:29:48.144829+00:00",
+  "finished_utc": "2026-11-11T12:29:57.215778+00:00",
+  "wall_seconds": 9.070907167042606,
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "e978031b64ae8ef057b57306beaca2fa5d52daafe90d8bd6c31a9cb06c611a2e",
+  "implementation_sha256": {
+    "src/observer.py": "c01bb1fc57367dc9e32be4c829e236e6170d7e261586c45c5742399659129d2d",
+    "src/standstill.py": "2d4655528469d6c679c3ee1e3b9d2b6b01e22d938508c2dfd97fb245259d4cda",
+    "src/reproduce.py": "75aed8a6dd15bda1d44a4b51856d860c67c070d1dce96d50549f4c06b970f81c",
+    "src/plots.py": "1957ecf41389d44b7a3fc3398ae4ab89ee7cd74eb71b3b9b64cb900b10979af8",
+    "verification/independent.py": "73c144674e1dc1046f7e04c238a769592d9bb94d80a053b396bb4da7eeb800bb",
+    "verification/fig8_9_readback.csv": "8fcd4990333ea2a7c8e12e1b76b2654e3196c363379317eee4c905f4b202ec40"
+  },
+  "data_sha256": {
+    "metrics.json": "95e09c7cfd8754f480a943f84a81857fcca9bf0bd74fe8d816f6dd8fc72db2f8",
+    "angle_sweep.csv": "d04ba57065cf6c53de0bbceba490bb5fb13e8c97f35dd0f59859d2b15fa4e381",
+    "observer_curves.npz": "a31c105740400b67ba1745c0e895ed91794809e8cb3c0244190ef0ad2daedf23",
+    "pulse_traces.npz": "1cf9c70cae277389d2c7126ccee24812d34a8e482cac5db9e44d3ccaaeea0c84"
+  },
+  "figures_sha256": {
+    "observer_bode.png": "9de2af186ec68f6ef07f9884e40f24ee403116675951d1b58a512afa745961b2",
+    "detector_normalization.png": "3d5b2c06ebfe58f51f3a2d6c3d3a1f223c6b49ef43588129b0e4c6fa735a20f1",
+    "pulse_lock_and_convergence.png": "13447b15318265777462d0ebdb74133732a7f720cdac130a617c65da1f7438fd"
+  },
+  "checks_passed": 23,
+  "checks_total": 23
+}

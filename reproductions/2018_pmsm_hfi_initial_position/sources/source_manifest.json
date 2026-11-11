@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2017.2773094",
+  "title": "High-Frequency Voltage-Injection Methods and Observer Design for Initial Position Detection of Permanent Magnet Synchronous Machines",
+  "authors": ["Xinhai Jin", "Ronggang Ni", "Wei Chen", "Frede Blaabjerg", "Dianguo Xu"],
+  "journal": "IEEE Transactions on Power Electronics 33(9), 7971–7979",
+  "doi_url": "https://doi.org/10.1109/TPEL.2017.2773094",
+  "repository_record": "https://vbn.aau.dk/en/publications/high-frequency-voltage-injection-methods-and-observer-design-for-/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/280258862/High_Frequency_Voltage_Injection_Methods_and_Observer_Design_for_Initial_Position_Detection_of_Permanent_Magnet_Synchronous_Machines.pdf",
+    "workspace_path": "reproductions/2018_pmsm_hfi_initial_position/sources/aalborg_author_manuscript.pdf",
+    "sha256": "49939aaede132dd5102651bffd6906b51709575a331fba152a2d657345ac45a9",
+    "version": "Author accepted manuscript with Aalborg repository cover.",
+    "inspected": "Sections II–V, Table I, Figs. 4 and 7–13, Eqs. (3)–(27)."
+  },
+  "version_cross_check": {
+    "location": "https://www.researchgate.net/publication/321357102_High-Frequency_Voltage-Injection_Methods_and_Observer_Design_for_Initial_Position_Detection_of_Permanent_Magnet_Synchronous_Machines",
+    "scope": "Journal layout text of Eqs. (14)–(17) and Section IV checked against the repository manuscript."
+  },
+  "numeric_figure_readback": {
+    "path": "verification/fig8_9_readback.csv",
+    "sha256": "8fcd4990333ea2a7c8e12e1b76b2654e3196c363379317eee4c905f4b202ec40",
+    "rows": 1479,
+    "curves": 8,
+    "method": "PDF vector segments from manuscript pages 6 and 7, calibrated using major axis ticks. The curves retain plot precision."
+  },
+  "source_pdf_included_in_handoff": false
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2017.2773094",
+  "paper": {
+    "standstill_resistance_ohm": 0.961,
+    "d_inductance_h": 0.0178,
+    "q_inductance_h": 0.0784,
+    "pole_pairs": 2,
+    "rated_kw": 5.5,
+    "sampling_period_s": 0.0001,
+    "switching_frequency_hz": 5000,
+    "reported_simulink_step_s": 0.0000004,
+    "fig8_design_bandwidth_rad_s": 6.283185307179586,
+    "fig8_damping": 5,
+    "fig13_design_bandwidth_rad_s": {"rtvi_pi": 62.8, "puvi_pi": 628, "puvi_eso_c2": 157},
+    "fig9_true_electrical_angle_deg": 90,
+    "convergence_hold_s": 0.02,
+    "convergence_nominal_electrical_deg": 2.5
+  },
+  "reconstruction_settings": {
+    "injection_vector_amplitude_v": 24,
+    "ideal_dc_bus_v": 540,
+    "pulsating_sequence": "Command +U, -U, 0 with one sample actuation latency; realized pulse group 0, +U, -U.",
+    "angle_update": "Hold the estimated angle over a pulse pair and integrate the observer after the two slope measurements.",
+    "simulation_observer_damping": 5,
+    "simulation_observer_damping_basis": "Use Fig. 8 damping for the independent standstill runs. Section IV does not provide a simulation-specific value.",
+    "torque_feedforward": "zero in the independent locked-rotor observer",
+    "initial_speed_seed_rad_s": 1.0,
+    "seed_sweep_rad_s": [0, 0.1, 1, 5],
+    "duration_s": 0.24,
+    "rotor_angle_increment_deg": 1,
+    "switched_angle_increment_deg": 10,
+    "rtvi_analytical_probe_frequency_hz": 500,
+    "standstill_voltage_model": "Linear locked rotor, ideal held voltage and independent event-resolved two-level SVPWM.",
+    "rtvi_verification": "Ideal steady-state demodulator and observer transfer function. Original BPF/LPF, rotating injection frequency and filter time alignment were not disclosed."
+  },
+  "gates": {
+    "algebraic_max_absolute_error": 1e-11,
+    "source_bode_magnitude_rmse_db": 0.65,
+    "source_bode_phase_rmse_deg": 1.25,
+    "exact_model_q_axis_equilibrium_tolerance_deg": 1e-9,
+    "independent_matrix_current_error_a": 1e-10,
+    "same_input_ideal_switch_endpoint_error_a": 1e-10
+  }
+}

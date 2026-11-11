@@ -1,0 +1,19 @@
+{
+  "doi": "10.1109/TPEL.2018.2835835",
+  "state": "parked_missing_fulltext",
+  "outcome": "full_text_gate_unresolved_after_public_search",
+  "reason_zh": "精确题名、DOI、作者和公开仓储检索后，仍未取得可核验的全文。",
+  "scope_zh": "获取原文全文后，核验增量模型、延迟补偿、参数失配与电机基准。",
+  "critical_gaps": [
+    "The checked public records provided only metadata or abstract. The exact control equations, tuning and benchmark conditions could not be frozen."
+  ],
+  "execution_kind": "source_audit_only",
+  "code_executed": false,
+  "clean_environment_replay_passed": null,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "anomaly_evidence": [],
+  "misconduct_allegation": null,
+  "report_sha256": "eb4c811a4edf0f22fe6a9e522bd71ffcd3d2618d7deeb8108372d37d1c165a42",
+  "source_report_sha256": "67bb0129044f2eda0ac1898b1ed142ff7c5eefd544b499e1d7b9d5a7f783d6d9"
+}

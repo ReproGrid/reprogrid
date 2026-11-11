@@ -1,0 +1,27 @@
+{
+  "doi": "10.1109/TPEL.2022.3225626",
+  "source_handoff_state": "parked_missing_inputs",
+  "scope": "核对了表 I–V 和式 (27)–(28)。原速度反转和实测带宽暂缓。",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 1075,
+      "sha256": "e9d91d1272087c88c0fb17a59be9cbc052c89aea124808e0f01f6ddab6781f16"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 1244,
+      "sha256": "aed00cd5a363f476b444b34bbe9a5f72dc6920b1b5b8c0ec20cfdaf710e112b0"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 1227,
+      "sha256": "398156d698a1bf592cf82dc55ca234673e6e5683dac43a4a61bbaa6596be7efe"
+    }
+  ]
+}

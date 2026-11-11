@@ -1,0 +1,27 @@
+{
+  "doi": "10.1109/TPEL.2018.2835835",
+  "source_handoff_state": "parked_missing_fulltext",
+  "scope": "获取原文全文后，核验增量模型、延迟补偿、参数失配与电机基准。",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 911,
+      "sha256": "eb4c811a4edf0f22fe6a9e522bd71ffcd3d2618d7deeb8108372d37d1c165a42"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 954,
+      "sha256": "6dad112b6c19e5bc652a711394ac42453f32316b96490e517ce4db99ffa5cd22"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 999,
+      "sha256": "d70294d9e6855b45440c3007b8f52387b729878cf176fd9700ca3b70eead682f"
+    }
+  ]
+}
