@@ -1,0 +1,137 @@
+{
+  "doi": "10.1109/TIE.2024.3395755",
+  "source_handoff_state": "report_ready",
+  "scope": "Equation-level reproduction using six averaged passive-grid benchmarks based on the companion thesis case matrix. The journal hardware replay is parked.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2091,
+      "sha256": "7e15aea9b7c126ba9a7ae132614c4bec0265b4a010724505c737faedda647f20"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 3238,
+      "sha256": "549d427075ceafdf6d0e8d0890e4cd9d178ffe683041c1baac648bf9b95a5a7e"
+    },
+    {
+      "path": "figures/identification_error.png",
+      "bytes": 124579,
+      "sha256": "5498fda46e205119df6fca3468c17d662d11036f545efe5267f89e3699ce6b7e"
+    },
+    {
+      "path": "figures/impedance_bode.png",
+      "bytes": 161197,
+      "sha256": "264ac2c7913b0072a13d0d04016067b5c96d1a2a0066d7bef67a49f1ec1c3234"
+    },
+    {
+      "path": "figures/nyquist_band.png",
+      "bytes": 97572,
+      "sha256": "14b2d977f18a48f72cc1c1a803d72735ac7648b3e36a56f2e20f3ce4b5eda005"
+    },
+    {
+      "path": "figures/orthogonal_excitation.png",
+      "bytes": 47160,
+      "sha256": "d295313f286a1246a2c0ebb2377c67a43947476794c51a2d2e7282a5e5ffc35b"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 5773,
+      "sha256": "80bf4744b7c636d2ca5804e47211b928bb069d77fe2eaac5b7a5282f7d598d84"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 3059,
+      "sha256": "6905e3780cede90dec8a7d8e501b2fc8d6d661c55c6acbc78cadd409cad1d9da"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "results/case_metrics.json",
+      "bytes": 41983,
+      "sha256": "209896e3de29ea285d3079762987efecb641e2c88f8bf6b3b337b6802683f57e"
+    },
+    {
+      "path": "results/clean_replay/run_manifest.json",
+      "bytes": 2114,
+      "sha256": "9cc5f36ad1a8368426f80f9c5457e2f3c7af3975369781c8ea7b19d5d78d759c"
+    },
+    {
+      "path": "results/clean_replay_comparison.json",
+      "bytes": 5046,
+      "sha256": "b18ccccaf48b1ec8c08e39adff5fbc8a70c49355433186cbd9a4d9fe4befb9bf"
+    },
+    {
+      "path": "results/example_waveforms.npz",
+      "bytes": 1813719,
+      "sha256": "8c96bea06dad65f1bc1d9825ac15d0d4343cf7eadf1769d28f26c91fb3a311cd"
+    },
+    {
+      "path": "results/identification_summary.csv",
+      "bytes": 647391,
+      "sha256": "41a1928ae040daadccb66f051ffcb7fda90a517de596e86a003946f0d7526c87"
+    },
+    {
+      "path": "results/impedance_curves.npz",
+      "bytes": 6389713,
+      "sha256": "6c77b8ebb1999713bb7b28531c3ada9171f0e35b11aa40d4cd304f3e31dfe04d"
+    },
+    {
+      "path": "results/run_manifest.json",
+      "bytes": 2107,
+      "sha256": "9c17ca2e5993974a28b3ff6e9e490cf06901a5c7fcb256cde6919d3a3784a39a"
+    },
+    {
+      "path": "sources/source_audit.md",
+      "bytes": 3050,
+      "sha256": "949a2fbd58a9f0e6653483f69526c795cbdf4e17fc34fca071ea5f00663987fb"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 3150,
+      "sha256": "2be8075a4d36b21f09947ef8580be8ba24cfb51bb35ea41b8fdd9223f37e8571"
+    },
+    {
+      "path": "src/circuit.py",
+      "bytes": 6382,
+      "sha256": "606eefdae1e477ef5bed8315c117f4ac232c99010e0db9d72c6e4890b1d6ba39"
+    },
+    {
+      "path": "src/compare_replay.py",
+      "bytes": 2862,
+      "sha256": "cbe8a720c93c6b6c530113fd84050ebcd26434dfa4dc9e45896daafd3e425bd5"
+    },
+    {
+      "path": "src/identify.py",
+      "bytes": 6766,
+      "sha256": "305305b8ab39c613b7e5703381a97fbf7320ffab153ee6c0096e4b8d4bd354a7"
+    },
+    {
+      "path": "src/plot_results.py",
+      "bytes": 4677,
+      "sha256": "cdb14e0d5a5925d808e5e92b1afe3397d539fdf96cfdbe0c622b2d89159f799c"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 21407,
+      "sha256": "42d129dd583e0753e6d15bd09acf8eb0ddf542d1e22b9308eb6a52d44102d36e"
+    },
+    {
+      "path": "verification/environment_freeze.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "verification/sideband.py",
+      "bytes": 2478,
+      "sha256": "fffba6d96793516f684a1b1ca90b483fffeaa8707e0ac7be8528bea56b95eebb"
+    }
+  ]
+}

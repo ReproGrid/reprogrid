@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TIE.2024.3395755",
+  "scope": "Independent implementation of the journal identification equations on the companion thesis passive-grid case matrix, with a declared averaged GFM model. The journal laboratory replay is parked.",
+  "journal": {
+    "generation_hz": 2500,
+    "mlbs_order": 11,
+    "acquisition_step_s": 0.0001,
+    "average_dt_step_s": 0.0000025,
+    "reported_average_periods": 50,
+    "reported_acquisition_s_approx": 41,
+    "median_width_bins": 3,
+    "reported_max_perturbation_response_fraction": 0.05,
+    "practical_band_fraction_of_generation": 0.45,
+    "assessment_band_hz": [10, 1000],
+    "experimental_vsc2_voltage_pi": {
+      "high": [0.275, 231.6],
+      "medium": [0.172, 93.64],
+      "low": [0.145, 67.01]
+    }
+  },
+  "thesis": {
+    "chapter": "5",
+    "base_power_w": 100000,
+    "fundamental_hz": 50,
+    "real_disturbance_fraction": 0.025,
+    "virtual_disturbance_fraction": 0.1,
+    "reported_periods": 52,
+    "reported_irs_chips_in_prose": 4095,
+    "vsc2_pi_table_5_4": {
+      "current_kp_real": 0.7411,
+      "current_kp_cross": -0.078,
+      "current_ki": 1008.44,
+      "voltage_kp_real": 0.1532,
+      "voltage_kp_cross": -0.047,
+      "voltage_ki": 74.47,
+      "voltage_bandwidth_label": "high"
+    },
+    "cases_table_5_3": [
+      {"id": "RL_SCR3", "scr": 3, "parallel_c_uf": 0, "reported_p_kw": -10, "reported_q_kvar": 50},
+      {"id": "RL_SCR2p5", "scr": 2.5, "parallel_c_uf": 0, "reported_p_kw": -10, "reported_q_kvar": 80},
+      {"id": "RL_SCR2", "scr": 2, "parallel_c_uf": 0, "reported_p_kw": -10, "reported_q_kvar": 80},
+      {"id": "RLC_800uF", "scr": 3, "parallel_c_uf": 800, "reported_p_kw": 50, "reported_q_kvar": 0},
+      {"id": "RLC_1200uF", "scr": 3, "parallel_c_uf": 1200, "reported_p_kw": 50, "reported_q_kvar": 0},
+      {"id": "RLC_1600uF", "scr": 3, "parallel_c_uf": 1600, "reported_p_kw": 50, "reported_q_kvar": 0}
+    ]
+  },
+  "independent_benchmark": {
+    "line_to_line_rms_v": 400,
+    "line_x_over_r": 10,
+    "filter_l_h": 0.00025,
+    "filter_c_f": 0.00015,
+    "filter_series_r_ohm": 0.02,
+    "explicit_pwm_delay_samples": 0,
+    "physical_perturbation_limit_headroom": 0.999,
+    "mlbs_taps": [9],
+    "mlbs_seed": "all_ones",
+    "mlbs_shape": "four zero-order-held acquisition samples per chip",
+    "excitation_filter": "none in the benchmark",
+    "stationarity": "linear perturbation around a fixed reference, no dispatch-dependent effects",
+    "noise_case": "RL_SCR3",
+    "noise_seed": 3395755,
+    "noise_voltage_rms_v": 0.02,
+    "noise_current_rms_a": 0.01,
+    "noise_average_complete_irs_frames": 25,
+    "voltage_floor_relative_to_bin_vector": 1e-12,
+    "ratio_condition_limit": 1e8,
+    "gnc_min_positive_hz": 0.001,
+    "gnc_max_positive_hz": 1000000,
+    "gnc_positive_points": 15001
+  },
+  "gates": {
+    "off_parity_spectral_energy_fraction": 1e-24,
+    "periodic_state_relative_error": 1e-10,
+    "direct_equation9_vs_sampled_transfer_max_relative": 1e-9,
+    "matrix_response_from_abc_max_relative": 1e-12,
+    "determinant_vs_poles_max_relative": 1e-8,
+    "full_contour_max_phase_step_rad": 0.6,
+    "equation10_median_relative": 0.005,
+    "equation10_p95_relative": 0.05
+  }
+}

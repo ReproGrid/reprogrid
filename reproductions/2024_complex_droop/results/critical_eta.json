@@ -1,0 +1,146 @@
+[
+  {
+    "angle_branch": "impedance_matched",
+    "rg": 0.08,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "equilibrium_count": 1,
+    "selected_voltage_mag_pu": 0.6294183899114391,
+    "certificate_supremum": 0.03758988262389547,
+    "critical_eta_over_omega0": 0.09977586054376648,
+    "crossings_in_scan": 1,
+    "routh_crossing": 0.0997758605437625,
+    "crossing_difference": 3.982925100842749e-15,
+    "quartic_coefficient_scaled_error": 1.232377463030587e-15,
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "at_crossing_poles_per_s": [
+      [
+        -9.813668526941537e-12,
+        357.38531480030593
+      ],
+      [
+        -9.813668526941537e-12,
+        -357.38531480030593
+      ],
+      [
+        -107.51291064168946,
+        54.569464600676575
+      ],
+      [
+        -107.51291064168946,
+        -54.569464600676575
+      ]
+    ]
+  },
+  {
+    "angle_branch": "impedance_matched",
+    "rg": 0.2,
+    "alpha": 1.0,
+    "phi_rad": 0.7853981633974483,
+    "equilibrium_count": 1,
+    "selected_voltage_mag_pu": 0.6971974158355602,
+    "certificate_supremum": 0.11148874154363819,
+    "critical_eta_over_omega0": 0.47905999421726764,
+    "crossings_in_scan": 1,
+    "routh_crossing": 0.4790599942172639,
+    "crossing_difference": 3.7192471324942744e-15,
+    "quartic_coefficient_scaled_error": 1.1539500943742494e-15,
+    "post_equilibrium_v": [
+      0.6947530749137363,
+      0.058330108397733976
+    ],
+    "at_crossing_poles_per_s": [
+      [
+        6.550081644392425e-13,
+        551.402085641784
+      ],
+      [
+        6.550081644392425e-13,
+        -551.402085641784
+      ],
+      [
+        -235.47632736445456,
+        274.24577109982056
+      ],
+      [
+        -235.47632736445456,
+        -274.24577109982056
+      ]
+    ]
+  },
+  {
+    "angle_branch": "printed_literal",
+    "rg": 0.08,
+    "alpha": 1.0,
+    "phi_rad": 0.00795757918423499,
+    "equilibrium_count": 1,
+    "selected_voltage_mag_pu": 0.5606661444311991,
+    "certificate_supremum": 0.006526295927720407,
+    "critical_eta_over_omega0": 0.16304867587538002,
+    "crossings_in_scan": 1,
+    "routh_crossing": 0.16304867587537375,
+    "crossing_difference": 6.2727600891321345e-15,
+    "quartic_coefficient_scaled_error": 2.1504535102764157e-16,
+    "post_equilibrium_v": [
+      0.543227412356602,
+      0.13874618544557016
+    ],
+    "at_crossing_poles_per_s": [
+      [
+        -80.95181966801673,
+        474.94417465617767
+      ],
+      [
+        -80.95181966801673,
+        -474.94417465617767
+      ],
+      [
+        1.9637646648421957e-13,
+        150.4851905511804
+      ],
+      [
+        1.9637646648421957e-13,
+        -150.4851905511804
+      ]
+    ]
+  },
+  {
+    "angle_branch": "held_case_i_angle",
+    "rg": 0.2,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "equilibrium_count": 1,
+    "selected_voltage_mag_pu": 0.690593475749046,
+    "certificate_supremum": 0.10546715923226775,
+    "critical_eta_over_omega0": 0.2994407071912152,
+    "crossings_in_scan": 1,
+    "routh_crossing": 0.2994407071912073,
+    "crossing_difference": 7.882583474838611e-15,
+    "quartic_coefficient_scaled_error": 1.8087603470283627e-15,
+    "post_equilibrium_v": [
+      0.6905915274192694,
+      0.0016404279528755427
+    ],
+    "at_crossing_poles_per_s": [
+      [
+        1.8848644728079975e-14,
+        407.63740109112007
+      ],
+      [
+        1.8848644728079975e-14,
+        -407.63740109112007
+      ],
+      [
+        -274.87928529367935,
+        130.15264505555774
+      ],
+      [
+        -274.87928529367935,
+        -130.15264505555774
+      ]
+    ]
+  }
+]

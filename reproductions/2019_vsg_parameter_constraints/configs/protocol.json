@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPWRS.2019.2896853",
+  "source": "Chen and O'Donnell, Sections II–III and Figs. 2–5, UCD author manuscript",
+  "published_common": {
+    "rated_line_to_line_rms_v": 10000,
+    "rated_active_power_w": 1000000,
+    "grid_frequency_hz": 50,
+    "internal_and_grid_phase_peak_v": 8165,
+    "initial_angle_rad": 0,
+    "grid_resistance_ohm": 0.0124,
+    "grid_inductance_h": 0.1,
+    "inertia": 2600,
+    "filter_inductance_h": 0.047,
+    "filter_capacitance_f": 0.000029,
+    "voltage_kp": 0.02,
+    "voltage_ki": 4.36,
+    "current_kp": 95.5,
+    "current_ki": 326.6,
+    "fig5_active_power_step_w": 500000
+  },
+  "published_cases": [
+    {
+      "id": "case1", "figure": 2, "virtual_r_ohm": 10.0, "virtual_l_h": 0.0,
+      "damping": 159150, "reported_crossover_rad_s": 17.4, "reported_phase_margin_deg": 74.1,
+      "reported_stability": "stable"
+    },
+    {
+      "id": "case2", "figure": 3, "virtual_r_ohm": 0.0, "virtual_l_h": -0.1,
+      "damping": 1591500, "reported_crossover_rad_s": 414.2, "reported_reduced_phase_margin_deg": 56.0,
+      "reported_gain_margin_db": -18.1, "reported_phase_crossing_rad_s": 286.0,
+      "reported_stability": "unstable"
+    },
+    {
+      "id": "case3", "figure": 4, "virtual_r_ohm": 10.0, "virtual_l_h": 0.0,
+      "damping": 15915, "reported_crossover_rad_s": 33.0, "reported_phase_margin_deg": 6.8,
+      "reported_stability": "unstable"
+    }
+  ],
+  "inferences_and_settings": {
+    "current_loop_time_constant": "Nominal Eq. (2) first-order approximation t_i = filter_inductance / current_kp. Exact t_i is not supplied for the validation cases.",
+    "time_constant_scan_s": [0.0005, 0.005],
+    "time_constant_scan_count": 181,
+    "figure3_inference": "Invert the reported reduced-order crossover through Eqs. (4), (6) and (7) and retain both positive X roots. Fig. 3 red/blue curves and reported gain margin are out-of-fit comparisons.",
+    "small_signal_reference_step_w": 500,
+    "fig5_step_start_s": 0.5,
+    "fig5_timing_basis": "Inferred from the onset of the Case 1 power rise near 0.50 s after plotting the PDF vector trace. The caption gives the step amplitude and does not specify the command time.",
+    "fig5_comparison_s": 1.0,
+    "waveform_sample_step_s": 0.00025,
+    "frequency_scan_rad_s": [0.001, 10000000],
+    "frequency_scan_count": 16001,
+    "nonlinear_integrator_rtol": 2e-10,
+    "nonlinear_integrator_atol": 2e-11
+  },
+  "gates": {
+    "same_model_pole_error_rad_s": 1e-5,
+    "same_model_frequency_relative_error": 2e-8,
+    "same_model_step_error_fraction": 1e-8,
+    "nonlinear_small_signal_step_error_fraction": 0.003,
+    "equation7_crossover_check_fraction": 2e-9,
+    "readback_bode_magnitude_rmse_db": 2.5,
+    "readback_bode_phase_rmse_deg": 4.5,
+    "readback_case1_crossover_relative_error": 0.025,
+    "case2_inferred_gain_margin_abs_error_db": 1.5
+  }
+}

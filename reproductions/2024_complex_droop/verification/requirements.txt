@@ -1,0 +1,2 @@
+# Optional vector comparison with the pinned author figure archive.
+pymupdf==2.1

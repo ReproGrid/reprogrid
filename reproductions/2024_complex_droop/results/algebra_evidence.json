@@ -1,0 +1,46 @@
+{
+  "lyapunov": {
+    "points": 512,
+    "margin_eq23": 3.469076532851547,
+    "max_Vdot_minus_proven_upper_bound": -0.01159877183397734
+  },
+  "classical_example_3": {
+    "classical_quartic_coefficients_ascending": [
+      1.0,
+      -2.0,
+      -1.53125,
+      2.5,
+      3.125
+    ],
+    "classical_quartic_global_minimum_on_nonnegative_voltage": 0.1246845345154276,
+    "dVOC_equilibrium_dq_pu": [
+      0.11614573264763185,
+      -0.07499484051775505
+    ],
+    "dVOC_equilibrium_residual": 3.608224830031759e-16
+  },
+  "proposition_4_triple_root": {
+    "exact_coefficients_descending": [
+      1,
+      -3,
+      3,
+      -1
+    ],
+    "exact_discriminant": 0,
+    "number_of_distinct_positive_roots": 1,
+    "exact_squared_voltage_root": 1,
+    "coefficient_error_from_physical_inputs": 4.440892098500626e-16,
+    "physical_voltage_dq_pu": [
+      -0.5,
+      0.8660254037844386
+    ],
+    "equilibrium_residual": 1.0658141036401503e-14
+  },
+  "proposition_5_characteristic_polynomial": {
+    "eta_rad_per_s": 25.132741228718345,
+    "displayed_constant": 6.062432233376364,
+    "direct_jacobian_determinant": 3829.3637025175867,
+    "corrected_constant": 3829.3637025175904,
+    "relative_error_corrected_constant": 9.500217502714487e-16
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "doi": "10.1109/TPEL.2024.3404251",
+  "started_utc": "2026-11-11T05:18:38.677643+00:00",
+  "finished_utc": "2026-11-11T05:21:26.592236+00:00",
+  "wall_seconds": 167.912968833989,
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "1d9e3de77b66e359af8bed5555386c8694500806087462d562d6ae3de2078d29",
+  "code_sha256": {
+    "src/reproduce.py": "3f21d27963d66be0c48e1083b935abff9649ee41e6e168c55073aea519785762",
+    "src/models.py": "d1a15100082d1e5c1402b9d4ef1323fea35498c9b976a33d4a9d0d165673ac83",
+    "src/experiments.py": "6a297138af1d34572d3c1b209d4438e41dabb0d191c01aa1271da78a7cb7a948",
+    "verification/reference.py": "869bf6892e9836e8584cbcb2674b94545c141f606f8a9e7503461b62a810359d"
+  },
+  "outputs": {
+    "stability_sweep.csv": "e3c5fbd4a2f0ff742603358d812e1408ded1e6b7dcd0c726a4c11ab43a75b9f8",
+    "critical_eta.json": "6b080ba0d86add34ebe8a79022975fa588b0def68ed4aff2ba7e4d30f3ab3077",
+    "algebra_evidence.json": "2c1e4d5615819a482ef33618214336d4e1be3105c924d64d93bcb87e1e2c8a0c",
+    "case_metrics.json": "ead7b66f0c5e9484675f7843896ddea0bdd1abf25955694b40e89cc682bcc182",
+    "phase_metrics.json": "4694fc9985af52101577ab05ba76097c9a931305752996a0cbea1d06b81a2cfe",
+    "rotation_angle_diagnostic.json": "69ef54c0034a955a281a4224d2a0f4051a94e3a80c72fba5fe0c2d01fe4661a7",
+    "trajectories.npz": "7a12aa98e461ab698a0b720ed6effcae1d653958c7da52c434dbfd6c6a7f493f"
+  },
+  "passed": true,
+  "checks": {
+    "equilibria_lift_and_direct_root": true,
+    "jacobians_independent_finite_difference": true,
+    "independent_dip_trajectories": true,
+    "quartic_coefficients": true,
+    "routh_crossings_match_eigenvalues": true,
+    "case_ii_reported_critical_interval": true,
+    "case_ii_sufficient_bound_below_local_crossing": true,
+    "case_ii_second_order_stays_locally_stable": true,
+    "case_iii_alpha_3_repelling_equilibrium": true,
+    "case_iii_alpha_1_not_certified_but_attracts": true,
+    "case_iii_periodic_returns": true,
+    "case_iii_phase_initial_conditions_share_cycle": true,
+    "case_iii_periods_comparable_across_order": true,
+    "case_iii_second_order_voltage_bound": true,
+    "lyapunov_derivative_bound": true,
+    "example_3_equilibrium_existence": true,
+    "triple_root_exact_construction": true,
+    "characteristic_polynomial_corrected_constant": true
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "case_i_eta_0.020_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.02,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -27.986971447245086
+      }
+    ],
+    "post_equilibrium_residual": 8.881784197001252e-16,
+    "pre_equilibrium_residual": 9.992007221626409e-16,
+    "direct_equilibrium_residual": 3.1086244689504383e-15,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 8.881784197001252e-16,
+    "jacobian_scaled_error": 2.0579641430479445e-11,
+    "dominant_real_per_s": -25.09172919522135,
+    "poles_per_s": [
+      [
+        -25.96955383189095,
+        0.0
+      ],
+      [
+        -25.09172919522135,
+        0.0
+      ]
+    ],
+    "peak_reference_difference": 1.566761165250341e-10,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.0014591515978645724,
+    "tail_voltage_error_rms_pu": 0.009259054790682734,
+    "main_rhs_evaluations": 1799,
+    "reference_rhs_evaluations": 578
+  },
+  "case_i_eta_0.020_order_4": {
+    "order": 4,
+    "eta_over_omega0": 0.02,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -30.476915524967392
+      }
+    ],
+    "post_equilibrium_residual": 1.7763568394002505e-15,
+    "pre_equilibrium_residual": 2.842170943040401e-14,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 8.881784197001252e-16,
+    "jacobian_scaled_error": 4.0828497729975476e-12,
+    "dominant_real_per_s": -25.808833236943997,
+    "poles_per_s": [
+      [
+        -96.21655890905889,
+        -316.4332833641844
+      ],
+      [
+        -96.21655890905889,
+        316.4332833641844
+      ],
+      [
+        -25.808833236943997,
+        -3.988027687084444
+      ],
+      [
+        -25.808833236943997,
+        3.988027687084444
+      ]
+    ],
+    "peak_reference_difference": 9.49369138858458e-10,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.0016589579466284056,
+    "tail_voltage_error_rms_pu": 0.009324447923877323,
+    "main_rhs_evaluations": 9516,
+    "reference_rhs_evaluations": 2778
+  },
+  "case_i_eta_0.020_order_8": {
+    "order": 8,
+    "eta_over_omega0": 0.02,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -9.99047111895442
+      }
+    ],
+    "post_equilibrium_residual": 1.1181787222977173e-14,
+    "pre_equilibrium_residual": 2.5377126160050143e-13,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 8.881784197001252e-16,
+    "jacobian_scaled_error": 8.503613926379219e-13,
+    "dominant_real_per_s": -9.986699254592295,
+    "poles_per_s": [
+      [
+        -6273.689852183368,
+        -1.5179965243081026
+      ],
+      [
+        -6273.689852183368,
+        1.5179965243081026
+      ],
+      [
+        -95.5290657750692,
+        -314.96807681284434
+      ],
+      [
+        -95.5290657750692,
+        314.96807681284434
+      ],
+      [
+        -26.005082112561425,
+        -4.039468534017747
+      ],
+      [
+        -26.005082112561425,
+        4.039468534017747
+      ],
+      [
+        -9.986699254592295,
+        -0.002442000355276982
+      ],
+      [
+        -9.986699254592295,
+        0.002442000355276982
+      ]
+    ],
+    "peak_reference_difference": 1.1784810904913456e-09,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.0017311448219214742,
+    "tail_voltage_error_rms_pu": 0.009393017602201636,
+    "main_rhs_evaluations": 8914,
+    "reference_rhs_evaluations": 2728
+  },
+  "case_i_eta_0.020_order_12": {
+    "order": 12,
+    "eta_over_omega0": 0.02,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -9.834410365468809
+      }
+    ],
+    "post_equilibrium_residual": 1.1368683772161603e-13,
+    "pre_equilibrium_residual": 9.023892744153272e-13,
+    "direct_equilibrium_residual": 4.3598356225107894e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 8.881784197001252e-16,
+    "jacobian_scaled_error": 1.1671907684720562e-12,
+    "dominant_real_per_s": -9.73866934639213,
+    "poles_per_s": [
+      [
+        -6411.253953220198,
+        -7205.600515393086
+      ],
+      [
+        -6411.253953220198,
+        7205.600515393086
+      ],
+      [
+        -6161.028061518428,
+        -6854.168112674299
+      ],
+      [
+        -6161.028061518428,
+        6854.168112674299
+      ],
+      [
+        -80.57678388354796,
+        -279.85217923799746
+      ],
+      [
+        -80.57678388354796,
+        279.85217923799746
+      ],
+      [
+        -26.117219943440617,
+        -4.899476378779614
+      ],
+      [
+        -26.117219943440617,
+        4.899476378779614
+      ],
+      [
+        -10.1532941051364,
+        -0.5547907321424508
+      ],
+      [
+        -10.1532941051364,
+        0.5547907321424508
+      ],
+      [
+        -9.73866934639213,
+        -0.46821551838155817
+      ],
+      [
+        -9.73866934639213,
+        0.46821551838155817
+      ]
+    ],
+    "peak_reference_difference": 1.0225296165344844e-09,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.0016451418446151182,
+    "tail_voltage_error_rms_pu": 0.009433207773877003,
+    "main_rhs_evaluations": 10861,
+    "reference_rhs_evaluations": 3350
+  },
+  "case_i_eta_0.060_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.06,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -83.96091434173523
+      }
+    ],
+    "post_equilibrium_residual": 6.217248937900877e-15,
+    "pre_equilibrium_residual": 7.105427357601002e-15,
+    "direct_equilibrium_residual": 8.881784197001252e-15,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.6645352591003757e-15,
+    "jacobian_scaled_error": 2.057986870598397e-11,
+    "dominant_real_per_s": -75.275187585664,
+    "poles_per_s": [
+      [
+        -77.90866149567287,
+        0.0
+      ],
+      [
+        -75.275187585664,
+        0.0
+      ]
+    ],
+    "peak_reference_difference": 1.5236645278804417e-10,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 1.1394882966362758e-07,
+    "tail_voltage_error_rms_pu": 3.1994304163496384e-05,
+    "main_rhs_evaluations": 2512,
+    "reference_rhs_evaluations": 852
+  },
+  "case_i_eta_0.060_order_4": {
+    "order": 4,
+    "eta_over_omega0": 0.06,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -44.58133424702143
+      }
+    ],
+    "post_equilibrium_residual": 5.329070518200751e-15,
+    "pre_equilibrium_residual": 2.842170943040401e-14,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.6645352591003757e-15,
+    "jacobian_scaled_error": 4.0828497729975476e-12,
+    "dominant_real_per_s": -42.04137223733804,
+    "poles_per_s": [
+      [
+        -72.7073919134873,
+        -25.66335983408993
+      ],
+      [
+        -72.7073919134873,
+        25.66335983408993
+      ],
+      [
+        -42.04137223733804,
+        -333.42452716908866
+      ],
+      [
+        -42.04137223733804,
+        333.42452716908866
+      ]
+    ],
+    "peak_reference_difference": 1.1128894472633988e-09,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 2.6221267584911455e-05,
+    "tail_voltage_error_rms_pu": 0.0005922608644514198,
+    "main_rhs_evaluations": 22226,
+    "reference_rhs_evaluations": 5394
+  },
+  "case_i_eta_0.060_order_8": {
+    "order": 8,
+    "eta_over_omega0": 0.06,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -9.997158417534942
+      }
+    ],
+    "post_equilibrium_residual": 1.1181787222977173e-14,
+    "pre_equilibrium_residual": 2.5377126160050143e-13,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.6645352591003757e-15,
+    "jacobian_scaled_error": 8.503613926379219e-13,
+    "dominant_real_per_s": -9.995173759302768,
+    "poles_per_s": [
+      [
+        -6274.736580723442,
+        -4.544544235755247
+      ],
+      [
+        -6274.736580723442,
+        4.544544235755247
+      ],
+      [
+        -73.54137775278825,
+        -26.500601654832362
+      ],
+      [
+        -73.54137775278825,
+        26.500601654832362
+      ],
+      [
+        -39.66093909487927,
+        -329.70799130200834
+      ],
+      [
+        -39.66093909487927,
+        329.70799130200834
+      ],
+      [
+        -9.995173759302768,
+        -0.000812978308868504
+      ],
+      [
+        -9.995173759302768,
+        0.000812978308868504
+      ]
+    ],
+    "peak_reference_difference": 1.3845821988933693e-09,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.00010290510308198439,
+    "tail_voltage_error_rms_pu": 0.0007896455704142844,
+    "main_rhs_evaluations": 21600,
+    "reference_rhs_evaluations": 5402
+  },
+  "case_i_eta_0.060_order_12": {
+    "order": 12,
+    "eta_over_omega0": 0.06,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -9.773645906974547
+      }
+    ],
+    "post_equilibrium_residual": 1.1368683772161603e-13,
+    "pre_equilibrium_residual": 9.023892744153272e-13,
+    "direct_equilibrium_residual": 4.3598356225107894e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.6645352591003757e-15,
+    "jacobian_scaled_error": 1.1671907684720562e-12,
+    "dominant_real_per_s": -9.878616496327417,
+    "poles_per_s": [
+      [
+        -6411.8061742820755,
+        -7206.693253267187
+      ],
+      [
+        -6411.8061742820755,
+        7206.693253267187
+      ],
+      [
+        -6161.32110682987,
+        -6852.915940307264
+      ],
+      [
+        -6161.32110682987,
+        6852.915940307264
+      ],
+      [
+        -71.76057550630603,
+        -29.001733524921526
+      ],
+      [
+        -71.76057550630603,
+        29.001733524921526
+      ],
+      [
+        -26.739946713756616,
+        -296.970052245416
+      ],
+      [
+        -26.739946713756616,
+        296.970052245416
+      ],
+      [
+        -10.084934193621939,
+        -0.33081226132774566
+      ],
+      [
+        -10.084934193621939,
+        0.33081226132774566
+      ],
+      [
+        -9.878616496327417,
+        -0.3084526653576403
+      ],
+      [
+        -9.878616496327417,
+        0.3084526653576403
+      ]
+    ],
+    "peak_reference_difference": 1.612826538988088e-09,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.000597710631357651,
+    "tail_voltage_error_rms_pu": 0.003741634230865058,
+    "main_rhs_evaluations": 26118,
+    "reference_rhs_evaluations": 6296
+  },
+  "case_ii_eta_0.099_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.099,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -138.53550866386314
+      }
+    ],
+    "post_equilibrium_residual": 1.0658141036401503e-14,
+    "pre_equilibrium_residual": 7.105427357601002e-15,
+    "direct_equilibrium_residual": 1.4210854715202004e-14,
+    "independent_root_delta": 1.1443916996305594e-16,
+    "independent_root_residual": 4.6629367034256575e-15,
+    "jacobian_scaled_error": 2.060889907377732e-11,
+    "dominant_real_per_s": -124.20405951634562,
+    "poles_per_s": [
+      [
+        -128.5492914678602,
+        0.0
+      ],
+      [
+        -124.20405951634562,
+        0.0
+      ]
+    ],
+    "peak_reference_difference": 1.5261847341463408e-10,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 1.1443916996305594e-16,
+    "tail_voltage_error_rms_pu": 1.1443916996305594e-16,
+    "main_rhs_evaluations": 2617,
+    "reference_rhs_evaluations": 1002
+  },
+  "case_ii_eta_0.099_order_4": {
+    "order": 4,
+    "eta_over_omega0": 0.099,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -9.220771345489835
+      }
+    ],
+    "post_equilibrium_residual": 1.2434497875801753e-14,
+    "pre_equilibrium_residual": 2.842170943040401e-14,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1443916996305594e-16,
+    "independent_root_residual": 4.6629367034256575e-15,
+    "jacobian_scaled_error": 4.0828497729975476e-12,
+    "dominant_real_per_s": -0.7220090575094806,
+    "poles_per_s": [
+      [
+        -106.93204279801782,
+        -53.99470705376349
+      ],
+      [
+        -106.93204279801782,
+        53.99470705376349
+      ],
+      [
+        -0.7220090575094806,
+        -356.9081203599953
+      ],
+      [
+        -0.7220090575094806,
+        356.9081203599953
+      ]
+    ],
+    "peak_reference_difference": 5.0760706304942005e-08,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 0.016899507486626983,
+    "tail_voltage_error_rms_pu": 0.017791451830723427,
+    "main_rhs_evaluations": 652926,
+    "reference_rhs_evaluations": 135317
+  },
+  "case_ii_eta_0.101_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.101,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -141.33420580858765
+      }
+    ],
+    "post_equilibrium_residual": 1.7763568394002505e-14,
+    "pre_equilibrium_residual": 4.440892098500626e-16,
+    "direct_equilibrium_residual": 1.4210854715202004e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.220446049250313e-16,
+    "jacobian_scaled_error": 2.0480428389042017e-11,
+    "dominant_real_per_s": -126.71323243586772,
+    "poles_per_s": [
+      [
+        -131.14624685104934,
+        0.0
+      ],
+      [
+        -126.71323243586772,
+        0.0
+      ]
+    ],
+    "peak_reference_difference": 1.5197554326107365e-10,
+    "peak_voltage_magnitude_pu": 1.054846375466662,
+    "end_voltage_error_pu": 1.1188630228279524e-16,
+    "tail_voltage_error_rms_pu": 1.1188630228279524e-16,
+    "main_rhs_evaluations": 2617,
+    "reference_rhs_evaluations": 1002
+  },
+  "case_ii_eta_0.101_order_4": {
+    "order": 4,
+    "eta_over_omega0": 0.101,
+    "alpha": 1.0,
+    "phi_rad": 1.1902899496825317,
+    "pre_equilibrium_v": [
+      1.0506973015003773,
+      0.09346687357015293
+    ],
+    "post_equilibrium_v": [
+      0.6258895985501346,
+      0.06655614160586303
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          1.0506973015003773,
+          0.09346687357015293
+        ],
+        "dominant_real_per_s": -7.704024758005771
+      }
+    ],
+    "post_equilibrium_residual": 1.2434497875801753e-14,
+    "pre_equilibrium_residual": 2.842170943040401e-14,
+    "direct_equilibrium_residual": 2.1799178112553947e-14,
+    "independent_root_delta": 1.1188630228279524e-16,
+    "independent_root_residual": 2.220446049250313e-16,
+    "jacobian_scaled_error": 4.0828497729975476e-12,
+    "dominant_real_per_s": 1.1324741986118232,
+    "poles_per_s": [
+      [
+        -108.42269465438018,
+        -55.47596636934453
+      ],
+      [
+        -108.42269465438018,
+        55.47596636934453
+      ],
+      [
+        1.1324741986118232,
+        -358.1378197035472
+      ],
+      [
+        1.1324741986118232,
+        358.1378197035472
+      ]
+    ],
+    "peak_reference_difference": 1.5623752060989204e-06,
+    "peak_voltage_magnitude_pu": 1.183005698110841,
+    "end_voltage_error_pu": 0.7114312280804809,
+    "tail_voltage_error_rms_pu": 0.665894992623288,
+    "main_rhs_evaluations": 727528,
+    "reference_rhs_evaluations": 149375
+  },
+  "case_iii_alpha_3.0_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.08,
+    "alpha": 3.0,
+    "phi_rad": 0.7853981633974483,
+    "pre_equilibrium_v": [
+      0.595370267018984,
+      0.8151558443744071
+    ],
+    "post_equilibrium_v": [
+      -0.16649727508665876,
+      0.04804791097683221
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          -0.38744320270059673,
+          0.13457899241457422
+        ],
+        "dominant_real_per_s": 38.47918561311472
+      },
+      {
+        "v_dq": [
+          -0.5850506809512152,
+          0.4051348123996904
+        ],
+        "dominant_real_per_s": 21.275858236372997
+      },
+      {
+        "v_dq": [
+          0.595370267018984,
+          0.8151558443744071
+        ],
+        "dominant_real_per_s": -15.063612731926654
+      }
+    ],
+    "post_equilibrium_residual": 1.790234627208065e-15,
+    "pre_equilibrium_residual": 6.323830348264892e-13,
+    "direct_equilibrium_residual": 1.7763568394002505e-15,
+    "independent_root_delta": 1.3877787807814457e-17,
+    "independent_root_residual": 1.7763568394002505e-15,
+    "jacobian_scaled_error": 9.333481724403184e-11,
+    "dominant_real_per_s": 59.31831912258872,
+    "poles_per_s": [
+      [
+        59.31831912258872,
+        -17.626704711553884
+      ],
+      [
+        59.31831912258872,
+        17.626704711553884
+      ]
+    ],
+    "peak_reference_difference": 1.351966538720717e-09,
+    "peak_voltage_magnitude_pu": 1.009427959523615,
+    "end_voltage_error_pu": 0.8675020577206117,
+    "tail_voltage_error_rms_pu": 1.0304977483639373,
+    "main_rhs_evaluations": 44844,
+    "reference_rhs_evaluations": 14653,
+    "cycle": {
+      "crossings": 6,
+      "mean_period_s": 0.4816604073240982,
+      "relative_period_spread": 1.318454995322629e-13,
+      "section_return_spread_pu": 4.122258090433206e-13
+    },
+    "post_peak_voltage_pu": 1.009427959523615
+  },
+  "case_iii_alpha_3.0_order_12": {
+    "order": 12,
+    "eta_over_omega0": 0.08,
+    "alpha": 3.0,
+    "phi_rad": 0.7853981633974483,
+    "pre_equilibrium_v": [
+      0.595370267018984,
+      0.8151558443744071
+    ],
+    "post_equilibrium_v": [
+      -0.16649727508665876,
+      0.04804791097683221
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          -0.38744320270059673,
+          0.13457899241457422
+        ],
+        "dominant_real_per_s": 40.50609507934939
+      },
+      {
+        "v_dq": [
+          -0.5850506809512152,
+          0.4051348123996904
+        ],
+        "dominant_real_per_s": 22.518169598668596
+      },
+      {
+        "v_dq": [
+          0.595370267018984,
+          0.8151558443744071
+        ],
+        "dominant_real_per_s": -9.769958373209095
+      }
+    ],
+    "post_equilibrium_residual": 5.329070518200751e-13,
+    "pre_equilibrium_residual": 7.958078640513122e-13,
+    "direct_equilibrium_residual": 8.719671245021579e-14,
+    "independent_root_delta": 1.3877787807814457e-17,
+    "independent_root_residual": 1.7763568394002505e-15,
+    "jacobian_scaled_error": 3.1097799150533263e-13,
+    "dominant_real_per_s": 62.08800016628034,
+    "poles_per_s": [
+      [
+        -6431.966582110696,
+        -6642.693438746057
+      ],
+      [
+        -6431.966582110696,
+        6642.693438746057
+      ],
+      [
+        -6135.9982939677375,
+        -6316.949067265063
+      ],
+      [
+        -6135.9982939677375,
+        6316.949067265063
+      ],
+      [
+        -283.5531751905652,
+        -301.37520034379804
+      ],
+      [
+        -283.5531751905652,
+        301.37520034379804
+      ],
+      [
+        -10.295338733788387,
+        -0.13217907643035517
+      ],
+      [
+        -10.295338733788387,
+        0.13217907643035517
+      ],
+      [
+        -9.743731580217847,
+        -0.11078535911519065
+      ],
+      [
+        -9.743731580217847,
+        0.11078535911519065
+      ],
+      [
+        62.08800016628034,
+        -16.383265784873984
+      ],
+      [
+        62.08800016628034,
+        16.383265784873984
+      ]
+    ],
+    "peak_reference_difference": 2.8302461207996288e-09,
+    "peak_voltage_magnitude_pu": 1.009427959523615,
+    "end_voltage_error_pu": 0.6906058451019812,
+    "tail_voltage_error_rms_pu": 0.8500023977781723,
+    "main_rhs_evaluations": 47903,
+    "reference_rhs_evaluations": 14051,
+    "cycle": {
+      "crossings": 6,
+      "mean_period_s": 0.462696985933902,
+      "relative_period_spread": 3.8536014239173295e-06,
+      "section_return_spread_pu": 7.204603027499701e-07
+    },
+    "post_peak_voltage_pu": 1.009427959523615
+  },
+  "case_iii_alpha_1.0_order_2": {
+    "order": 2,
+    "eta_over_omega0": 0.08,
+    "alpha": 1.0,
+    "phi_rad": 0.7853981633974483,
+    "pre_equilibrium_v": [
+      0.5894667801856074,
+      0.8327352041845885
+    ],
+    "post_equilibrium_v": [
+      -0.14312282137924928,
+      0.5902986825030735
+    ],
+    "pre_equilibria": [
+      {
+        "v_dq": [
+          0.5894667801856074,
+          0.8327352041845885
+        ],
+        "dominant_real_per_s": -19.54265662665599
+      }
+    ],
+    "post_equilibrium_residual": 1.5543122344752192e-15,
+    "pre_equilibrium_residual": 5.329070518200751e-15,
+    "direct_equilibrium_residual": 3.552713678800501e-15,
+    "independent_root_delta": 8.326672684688674e-17,
+    "independent_root_residual": 4.884981308350689e-15,
+    "jacobian_scaled_error": 7.566833885293409e-11,
+    "dominant_real_per_s": -4.963534454247293,
+    "poles_per_s": [
+      [
+        -4.963534454247293,
+        -15.160808821334577
+      ],
+      [
+        -4.963534454247293,
+        15.160808821334577
+      ]
+    ],
+    "peak_reference_difference": 9.759104635520544e-11,
+    "peak_voltage_magnitude_pu": 1.020254382607953,
+    "end_voltage_error_pu": 7.856157793156727e-08,
+    "tail_voltage_error_rms_pu": 1.313113974832708e-07,
+    "main_rhs_evaluations": 6687,
+    "reference_rhs_evaluations": 3087
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "doi": "10.1109/TIE.2024.3395755",
+  "state": "report_ready",
+  "display_state_zh": "算法已复现，原台架暂缓",
+  "outcome": "identification_equations_and_gnc_verified_on_independent_three_phase_benchmark",
+  "scope": "Equation-level reproduction using six averaged passive-grid benchmarks based on the companion thesis case matrix. The journal hardware replay is parked.",
+  "scope_zh": "已复现 dq 双端口辨识和 GNC 算法，六组博士论文拓扑采用明示参数的三相平均模型。期刊原台架暂缓。",
+  "paper_condition_replay_state": "parked_missing_inputs",
+  "public_fulltext_url": "https://www.researchgate.net/publication/380998215_A_Digital_Twin_Approach_for_Online_Impedance-Based_Stability_Analysis_of_Three-Phase_AC_Systems",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 74,
+  "checks_total": 74,
+  "key_results": {
+    "case_count": 6,
+    "assessment_bins_per_case": 810,
+    "max_grid_p95_relative": 0.0004600597388971719,
+    "max_twin_p95_relative": 5.760845398800936e-05,
+    "max_return_ratio_p95_relative": 0.002356153939260142,
+    "max_return_ratio_single_bin_relative": 0.022945771163805737,
+    "max_sampled_vs_continuous_return_ratio_p95_relative": 0.23488700374795118,
+    "closest_identified_eigenvalue_distance_to_minus_one": 0.653410794076847,
+    "full_irs_frame_s": 1.6376000000000002,
+    "noise_grid_p95_relative_after_averaging_and_median": 0.0038002450563201394
+  },
+  "critical_gaps": [
+    "The reviewed public sources did not yield synchronized original PCC/dc-bus/injection data, the full converter model, Simulink files or firmware.",
+    "The physical and twin model use disclosed benchmark choices for circuit, operating point, timing and filtering. Quantitative thesis near-marginal cases and the journal laboratory figures remain unresolved.",
+    "Published averaging-frame boundaries, sensor/perturbation filter settings, and real-time board deadlines were not verified."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "normalization_singularity",
+      "source": "TIE Eqs. (9)–(11)",
+      "finding": "A diagonal port with independent d/q columns is fully determined by Eq. (9), but Eq. (10) has zero voltage denominators."
+    },
+    {
+      "type": "averaging_frame_ambiguity",
+      "source": "TIE Section V-B",
+      "finding": "50 MLBS periods are 40.94 s, while 50 full IRS frames are 81.88 s."
+    },
+    {
+      "type": "sequence_length_text_inconsistency",
+      "source": "Author thesis Section 5.4.1",
+      "finding": "The text says 4095 chips, while doubling 2047 gives 4094 chips."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "80bf4744b7c636d2ca5804e47211b928bb069d77fe2eaac5b7a5282f7d598d84",
+  "primary_manifest_sha256": "9c17ca2e5993974a28b3ff6e9e490cf06901a5c7fcb256cde6919d3a3784a39a",
+  "source_report_sha256": "5f0716e37021586124cc41265f25e18586d9e0483490af2e1e86f496206832ba"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TIE.2024.3395755",
+  "started_utc": "2026-11-11T05:44:49.246309+00:00",
+  "finished_utc": "2026-11-11T05:44:56.688691+00:00",
+  "wall_seconds": 7.442395916034002,
+  "stage_seconds": {
+    "RL_SCR3": 0.6053084160084836,
+    "RL_SCR2p5": 0.6119289589696564,
+    "RL_SCR2": 0.6963456249795854,
+    "RLC_800uF": 0.6175551660126075,
+    "RLC_1200uF": 0.63690600002883,
+    "RLC_1600uF": 0.6034656669944525,
+    "noise_and_degeneracy": 0.4272315420093946,
+    "figures": 2.204118916997686
+  },
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "549d427075ceafdf6d0e8d0890e4cd9d178ffe683041c1baac648bf9b95a5a7e",
+  "implementation_sha256": {
+    "src/reproduce.py": "42d129dd583e0753e6d15bd09acf8eb0ddf542d1e22b9308eb6a52d44102d36e",
+    "src/circuit.py": "606eefdae1e477ef5bed8315c117f4ac232c99010e0db9d72c6e4890b1d6ba39",
+    "src/identify.py": "305305b8ab39c613b7e5703381a97fbf7320ffab153ee6c0096e4b8d4bd354a7",
+    "src/plot_results.py": "cdb14e0d5a5925d808e5e92b1afe3397d539fdf96cfdbe0c622b2d89159f799c",
+    "verification/sideband.py": "fffba6d96793516f684a1b1ca90b483fffeaa8707e0ac7be8528bea56b95eebb"
+  },
+  "data_sha256": {
+    "case_metrics.json": "209896e3de29ea285d3079762987efecb641e2c88f8bf6b3b337b6802683f57e",
+    "identification_summary.csv": "41a1928ae040daadccb66f051ffcb7fda90a517de596e86a003946f0d7526c87",
+    "impedance_curves.npz": "6c77b8ebb1999713bb7b28531c3ada9171f0e35b11aa40d4cd304f3e31dfe04d",
+    "example_waveforms.npz": "8c96bea06dad65f1bc1d9825ac15d0d4343cf7eadf1769d28f26c91fb3a311cd"
+  },
+  "figures_sha256": {
+    "orthogonal_excitation.png": "d295313f286a1246a2c0ebb2377c67a43947476794c51a2d2e7282a5e5ffc35b",
+    "identification_error.png": "5498fda46e205119df6fca3468c17d662d11036f545efe5267f89e3699ce6b7e",
+    "impedance_bode.png": "264ac2c7913b0072a13d0d04016067b5c96d1a2a0066d7bef67a49f1ec1c3234",
+    "nyquist_band.png": "14b2d977f18a48f72cc1c1a803d72735ac7648b3e36a56f2e20f3ce4b5eda005"
+  },
+  "checks_passed": 74,
+  "checks_total": 74
+}

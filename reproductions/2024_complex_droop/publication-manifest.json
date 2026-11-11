@@ -1,0 +1,172 @@
+{
+  "doi": "10.1109/TPEL.2024.3404251",
+  "source_handoff_state": "report_ready",
+  "scope": "Single grid-connected converter, 2/4/8/12-state averaged models, Case Studies I–III, Eqs. (23) and (26a,b), appendix equilibrium checks and vector figure comparisons.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1218,
+      "sha256": "4a816ade64ea1dae24c6de6dc686db0cf3e7dc7b85b4dd65104d95040d1d2bcf"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 5229,
+      "sha256": "1d9e3de77b66e359af8bed5555386c8694500806087462d562d6ae3de2078d29"
+    },
+    {
+      "path": "figures/fig7_published_curve_comparison.png",
+      "bytes": 170922,
+      "sha256": "df0aa25c8064ba685e0470edde0344c7a245f41d490766d9ddb5ee6560e98b8c"
+    },
+    {
+      "path": "figures/limit_cycle_and_phase_portraits.png",
+      "bytes": 312511,
+      "sha256": "8cdcecdc42322758977f34e69b509e58ca29c917c4909d29d2fab4777fbb98d7"
+    },
+    {
+      "path": "figures/model_order_voltage_dip.png",
+      "bytes": 298072,
+      "sha256": "e873fbc96d2cb78d4a35aff920efe6eaca0f44054108caba658bdae0f5eacaac"
+    },
+    {
+      "path": "figures/stability_boundary_and_response.png",
+      "bytes": 297363,
+      "sha256": "ba217b278026cb04ae7f709c7e25a3427bc79ee2e3b161284d1a7dd0f8f1bb95"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 5540,
+      "sha256": "ea3e33e05bb7aaa436467557fafde6f29112db018b965c6d4813ac0a4c27a40b"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 2831,
+      "sha256": "ea99d7852bdea46711878924d8724dda0f2d3ef1d2611e93ff828ba16462207b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "results/algebra_evidence.json",
+      "bytes": 1254,
+      "sha256": "2c1e4d5615819a482ef33618214336d4e1be3105c924d64d93bcb87e1e2c8a0c"
+    },
+    {
+      "path": "results/case_metrics.json",
+      "bytes": 24636,
+      "sha256": "ead7b66f0c5e9484675f7843896ddea0bdd1abf25955694b40e89cc682bcc182"
+    },
+    {
+      "path": "results/clean_replay/run_manifest.json",
+      "bytes": 2387,
+      "sha256": "79fc3cf03b96ba6a1ecb61fff3a263a0fc09fcbf1f7728a8a98892220b72bb6e"
+    },
+    {
+      "path": "results/clean_replay_comparison.json",
+      "bytes": 3174,
+      "sha256": "f59e9b1cfe2a52f9a01bf3eb7f08d30942530c77510e785c8d31ad94ae6579ff"
+    },
+    {
+      "path": "results/critical_eta.json",
+      "bytes": 3629,
+      "sha256": "6b080ba0d86add34ebe8a79022975fa588b0def68ed4aff2ba7e4d30f3ab3077"
+    },
+    {
+      "path": "results/phase_metrics.json",
+      "bytes": 10035,
+      "sha256": "4694fc9985af52101577ab05ba76097c9a931305752996a0cbea1d06b81a2cfe"
+    },
+    {
+      "path": "results/published_curve_comparison.json",
+      "bytes": 7146,
+      "sha256": "be1a0ecf40a6a419f14eacfc1c2d909270584f41232de02f8dc10eb19fcd62c9"
+    },
+    {
+      "path": "results/rotation_angle_diagnostic.json",
+      "bytes": 1674,
+      "sha256": "69ef54c0034a955a281a4224d2a0f4051a94e3a80c72fba5fe0c2d01fe4661a7"
+    },
+    {
+      "path": "results/run_manifest.json",
+      "bytes": 2386,
+      "sha256": "5065f5de94d0c4e9fc40135764df4c8daedc903fe0b987000aaf339cbec378c3"
+    },
+    {
+      "path": "results/stability_sweep.csv",
+      "bytes": 60386,
+      "sha256": "e3c5fbd4a2f0ff742603358d812e1408ded1e6b7dcd0c726a4c11ab43a75b9f8"
+    },
+    {
+      "path": "results/trajectories.npz",
+      "bytes": 4106251,
+      "sha256": "7a12aa98e461ab698a0b720ed6effcae1d653958c7da52c434dbfd6c6a7f493f"
+    },
+    {
+      "path": "sources/source_audit.md",
+      "bytes": 1866,
+      "sha256": "316e81d2b75d27318be5322a99fa4379ad021e99ef339ec6d3ec6a4d1d48ad21"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 1867,
+      "sha256": "dd26ad36d9114f1507648575126cf6d2fa6415de21d1d8710c0eb6627a5cb28a"
+    },
+    {
+      "path": "src/compare_replay.py",
+      "bytes": 2390,
+      "sha256": "478409f91c3a0c3cc066b2dd85bba5ddb871e07d9945356b848c80ee057c0a5a"
+    },
+    {
+      "path": "src/experiments.py",
+      "bytes": 10918,
+      "sha256": "6a297138af1d34572d3c1b209d4438e41dabb0d191c01aa1271da78a7cb7a948"
+    },
+    {
+      "path": "src/models.py",
+      "bytes": 6621,
+      "sha256": "d1a15100082d1e5c1402b9d4ef1323fea35498c9b976a33d4a9d0d165673ac83"
+    },
+    {
+      "path": "src/plot_results.py",
+      "bytes": 5766,
+      "sha256": "0f36ced5d19d06e0f8ac93e6c6fda9ef6404b5a16691d10b549307994816c7b7"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 15537,
+      "sha256": "3f21d27963d66be0c48e1083b935abff9649ee41e6e168c55073aea519785762"
+    },
+    {
+      "path": "verification/compare_published_curves.py",
+      "bytes": 9833,
+      "sha256": "d2538978614ef34c15978d584732764bca142d156b271c2291341e3617386ecc"
+    },
+    {
+      "path": "verification/derivation.md",
+      "bytes": 1726,
+      "sha256": "da4d64933fac3659f48ecb950368778ad50e0f47f464c9cd903c9a65444f06d1"
+    },
+    {
+      "path": "verification/environment_freeze.txt",
+      "bytes": 261,
+      "sha256": "36f920e784797ee740bccbdc2032f48f6a8e835969903ca27e0ffce7e2012dc3"
+    },
+    {
+      "path": "verification/reference.py",
+      "bytes": 4562,
+      "sha256": "869bf6892e9836e8584cbcb2674b94545c141f606f8a9e7503461b62a810359d"
+    },
+    {
+      "path": "verification/requirements.txt",
+      "bytes": 81,
+      "sha256": "539cd522858e6f4d1b8142b120880d4d389f6cb33ec4ae1913eb069ce4b18783"
+    }
+  ]
+}

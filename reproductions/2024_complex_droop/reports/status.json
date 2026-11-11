@@ -1,0 +1,49 @@
+{
+  "doi": "10.1109/TPEL.2024.3404251",
+  "state": "report_ready",
+  "outcome": "case_studies_i_to_iii_reproduced_with_rotation_angle_and_formula_findings",
+  "scope": "Single grid-connected converter, 2/4/8/12-state averaged models, Case Studies I–III, Eqs. (23) and (26a,b), appendix equilibrium checks and vector figure comparisons.",
+  "scope_zh": "单变流器复杂下垂算例 I–III，2/4/8/12 阶模型、电压跌落、四阶边界、极限环和公式核对。",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 18,
+  "checks_total": 18,
+  "key_results": {
+    "eta_crossing_over_omega0_at_alpha_1_rg_008": 0.09977586054376648,
+    "literal_angle_eta_crossing_over_omega0": 0.16304867587538002,
+    "max_cross_implementation_state_difference_pu": 1.5623752060989204e-06,
+    "case_iii_cycle_period_s_order_2": 0.4816604073240982,
+    "case_iii_cycle_period_s_order_12": 0.462696985933902,
+    "fig4_max_vector_rmse_pu": 0.0006778612103213817,
+    "fig7_max_vector_rmse_pu": 0.0003365798724755293
+  },
+  "critical_gaps": [
+    "The angle printed in the case studies omits the frequency factor if l_g is entered in s/rad. The matched impedance angle was used and checked against the published curves.",
+    "Fig. 5 does not disclose the numerical c1 and epsilon settings. The reported comparison uses the open upper envelope of Eq. (26a,b).",
+    "Original model files and laboratory traces are unavailable in the reviewed sources. Case IV, full-order sufficient bounds (26c,d), and laboratory experiments remain outside the reproduced scope."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "case_parameter_unit_discrepancy",
+      "source": "Author manuscript Table III, Eq. (16), Cases I and III",
+      "finding": "Impedance-angle and literal readings give eta/omega0 crossings 0.09977586 and 0.16304868. The former agrees with Fig. 5(a)."
+    },
+    {
+      "type": "degenerate_uniqueness_counterexample",
+      "source": "Author manuscript Appendix A, Proposition 4",
+      "finding": "The positive-voltage case with polynomial (s-1)^3 has one distinct equilibrium with discriminant zero."
+    },
+    {
+      "type": "missing_characteristic_polynomial_scale",
+      "source": "Author manuscript Appendix A, Proposition 5",
+      "finding": "The physical-time constant coefficient needs eta squared. The correction preserves the sign test."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "ea3e33e05bb7aaa436467557fafde6f29112db018b965c6d4813ac0a4c27a40b",
+  "primary_manifest_sha256": "5065f5de94d0c4e9fc40135764df4c8daedc903fe0b987000aaf339cbec378c3",
+  "source_report_sha256": "246bbac94f1b5263d5f0b01a68e9dc188c024cd2628e2c3ecaa39cf13afeed69"
+}

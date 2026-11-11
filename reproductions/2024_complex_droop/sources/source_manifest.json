@@ -1,0 +1,34 @@
+{
+  "doi": "10.1109/TPEL.2024.3404251",
+  "title": "Quantitative Stability Conditions for Grid-Forming Converters With Complex Droop Control",
+  "authors": ["Xiuqiang He", "Linbin Huang", "Irina Subotić", "Verena Häberle", "Florian Dörfler"],
+  "issue": {"journal": "IEEE Transactions on Power Electronics", "year": 2024, "volume": 39, "number": 9, "pages": "10834–10852"},
+  "online_date": "2024-05-22",
+  "sources": [
+    {"kind": "publisher_metadata", "url": "https://ieeexplore.ieee.org/abstract/document/10536651/"},
+    {"kind": "institutional_publication_record", "url": "https://hdl.handle.net/20.500.11850/694336"},
+    {
+      "kind": "author_manuscript",
+      "version": "arXiv:2310.09933v3",
+      "url": "https://arxiv.org/abs/2310.09933v3",
+      "pdf_url": "https://arxiv.org/pdf/2310.09933v3",
+      "retrieval_url": "https://arxiv.org/pdf/2310.09933",
+      "sha256": "9309f105cf0f02fcf7fa56affb96b5ac322b2952608fce34be24e375b4335c9e",
+      "local_path": "sources/he_et_al_arxiv_2310.09933v3.pdf",
+      "pages": 19,
+      "locations": ["Section III Eqs. (15)–(22)", "Section IV Eq. (23)", "Section V Eqs. (26a,b)", "Section VI Case Studies I–III", "Appendices A and B"]
+    },
+    {
+      "kind": "author_typesetting_archive",
+      "url": "https://arxiv.org/src/2310.09933v3",
+      "local_path": "sources/arxiv_2310.09933v3_source.tar.gz",
+      "sha256": "c4ad5adb11758fc8dca268e86eb89080840c97c26eaeb31826b6c6771be22a4d",
+      "use": "Read formulas and axis-calibrated vector paths in Figs. 4–7."
+    }
+  ],
+  "supplement_search": {
+    "queries": ["DOI plus code/Simulink/supplementary", "arXiv ID plus GitHub/dVOC", "exact title plus dataset/MATLAB"],
+    "original_simulation_code_or_raw_lab_traces_found": false
+  },
+  "distribution": "The local author PDF and source archive are research inputs outside the artifact index."
+}

@@ -34,6 +34,9 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 构网稳定 / GFM stability | [Robust analytical PSC tuning](reproductions/2019_psc_robust) | 频响、附录公式与高无功边界 / Frequency response, formula checks and high reactive injection |
 | 构网控制 / GFM | [DO-GFM](reproductions/2024_do_gfm) | 平均模型、PWM 对照与弱网原图差距 / Averaged model, PWM replay and weak-grid plot gap |
 | 实时仿真 / Real-time simulation | [DMM](reproductions/2022_dmm_resonant_boost) | 谐振升压离线验证 / Offline resonant boost replay |
+| 构网稳定 / GFM stability | [Complex droop](reproductions/2024_complex_droop) | 算例 I–III 与阻抗角 / Cases I–III and impedance angle |
+| 数字孪生 / Digital twin | [Online impedance identification](reproductions/2024_tie_dt_impedance) | 六组三相平均模型 / Six averaged three-phase benchmarks |
+| 构网稳定 / GFM stability | [VSG parameter constraints](reproductions/2019_vsg_parameter_constraints) | 传递函数复跑与算例 3 差异 / Transfer-function replay and Case 3 discrepancy |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 

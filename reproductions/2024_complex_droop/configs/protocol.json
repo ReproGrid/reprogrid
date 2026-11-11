@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2024.3404251",
+  "frozen_utc": "2026-11-11T05:07:00.617777+00:00",
+  "scope": "arXiv:2310.09933v3, Eqs. (15)–(22), (23), (26a,b), Case Studies I–III and equilibrium checks in Appendix A. One converter and one infinite bus in the grid-synchronous frame, continuous averaged dynamics.",
+  "base": {
+    "rated_power_va": 2000000,
+    "rated_voltage_v": 690,
+    "nominal_frequency_hz": 50.0,
+    "grid_frequency_pu": 1.0,
+    "lg_conversion": "l_g = x_g / omega_0",
+    "filter_x_pu": 0.05,
+    "filter_susceptance_pu": 0.05,
+    "filter_r_pu": 0.0016666666666666668,
+    "filter_g_pu": 0.0016666666666666668,
+    "kp_v": 1.0,
+    "kr_v_per_s": 10.0,
+    "kp_c": 2.0,
+    "kr_c_per_s": 20.0,
+    "v_star": 1.0,
+    "vg_pre": 1.0,
+    "vg_post": 0.5,
+    "initialization": "Lift the exact pre-dip equilibrium with zero resonant integrators for omega_delta=0. When multiple pre-dip equilibria exist, use the unique locally attracting branch for the selected order. Integrate the post-dip interval with switched forcing and prepend the constant pre-dip state."
+  },
+  "angle": {
+    "primary": "impedance_matched",
+    "formula_primary": "atan2(omega_g * l_g, r_g)",
+    "formula_printed_literal": "atan2(l_g, r_g)",
+    "selection_evidence": "Table III and Eq. (16) use r_g + j omega_g l_g, Table IV says match the impedance angle, and Fig. 7 states voltage bound 1.07 pu. The literal substitution of the printed l_g in s/rad is a separate sensitivity."
+  },
+  "case_i": {
+    "rg": 0.08,
+    "xg": 0.2,
+    "p_star": 0.5,
+    "q_star": 0.2,
+    "alpha": 1.0,
+    "eta_over_omega0": [
+      0.02,
+      0.06
+    ],
+    "orders": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "start_s": 0.45,
+    "dip_s": 0.5,
+    "stop_s": 0.7,
+    "sample_s": 0.00025,
+    "dip_timing_source": "Fig. 4 time axis"
+  },
+  "case_ii": {
+    "rg_values": [
+      0.08,
+      0.2
+    ],
+    "xg": 0.2,
+    "p_star": 0.5,
+    "q_star": 0.2,
+    "alpha_range": [
+      0.0,
+      7.0
+    ],
+    "alpha_points": 141,
+    "eta_scan_range_over_omega0": [
+      1e-05,
+      1.0
+    ],
+    "eta_scan_points": 160,
+    "comparison_alpha": 1.0,
+    "critical_example_eta_ratios": [
+      0.099,
+      0.101
+    ],
+    "certificate": "Supremum of the sufficient Eq. (26a,b) bound as c_1 approaches the Eq. (23) margin from below and epsilon approaches 3 from above. An open upper bound. Paper does not state numerical c_1 or epsilon.",
+    "additional_rg_020_angle": "Retain case I phi as a diagnostic in addition to recalculating the matched phi for the changed r_g.",
+    "start_s": 1.8,
+    "dip_s": 2.0,
+    "stop_s": 5.0,
+    "sample_s": 0.0005,
+    "dip_timing_source": "Fig. 6 time axis"
+  },
+  "case_iii": {
+    "rg": 0.8,
+    "xg": 0.8,
+    "p_star": 0.8,
+    "q_star": -0.2,
+    "alpha_unstable": 3.0,
+    "alpha_stable": 1.0,
+    "eta_over_omega0": 0.08,
+    "orders": [
+      2,
+      12
+    ],
+    "start_s": 1.5,
+    "dip_s": 2.0,
+    "stop_s": 5.0,
+    "sample_s": 0.0005,
+    "phase_initial_values": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "phase_duration_s": 3.0,
+    "dip_timing_source": "Fig. 7 time axis"
+  },
+  "solver": {
+    "primary_method": "Radau",
+    "primary_rtol": 2e-10,
+    "primary_atol": 2e-12,
+    "reference_method": "BDF",
+    "reference_rtol": 1e-11,
+    "reference_atol": 1e-13,
+    "cycle_max_step_s": 0.005,
+    "cycle_crossings_used": 6
+  },
+  "numerical_criteria": {
+    "max_equilibrium_residual_pu_per_s": 1e-08,
+    "max_jacobian_scaled_error": 1e-08,
+    "max_trajectory_peak_abs_error_pu": 1e-05,
+    "max_relative_quartic_coeff_error": 1e-08,
+    "max_independent_crossing_eta_difference_over_omega0": 1e-08,
+    "max_attracting_fixed_point_tail_error_pu": 2e-05,
+    "max_cycle_period_relative_spread": 0.002,
+    "max_cycle_return_section_spread_pu": 0.001,
+    "max_two_vs_twelve_cycle_period_relative_difference": 0.08,
+    "max_voltage_bound_violation_pu": 1e-06
+  },
+  "algebra_checks": {
+    "random_seed": 3404251,
+    "lyapunov_points": 512,
+    "classical_example": "Appendix A Example 3, p_star=q_star=0, alpha=v_star=1, phi=pi/2, vg=0.1, rg=xg=0.4. Interpret 0.4 pu as reactance and use Eq. (40).",
+    "triple_root_case": "Construct a positive-grid example with alpha=v_star=vg=1, z=0.8+j0.6, matched rotation, rotated normalized setpoint 1.5+j sqrt(3)/2, and omega_delta=0, which gives (s-1)^3."
+  },
+  "revision": {
+    "utc": "2026-11-11T05:14:11.515499+00:00",
+    "reason": "Initial run found three pre-dip equilibria in Case III with alpha=3. Fig. 7 starts on the only locally stable branch, near 0.595+j0.815 pu. The voltage dip itself, all parameter values and tolerances remain the same."
+  },
+  "solver_refinement": {
+    "utc": "2026-11-11T05:18:30.944538+00:00",
+    "reason": "Initial BDF comparison missed the predeclared full-state tolerance only in the extended Case II 0.101 run. Targeted BDF refinement reduced the discrepancy, so the tighter reference tolerance is used across the final runs.",
+    "old_peak_difference_pu": 1.0295986102693e-05,
+    "targeted_refined_peak_difference_pu": 1.5623752060989204e-06,
+    "targeted_refinement_wall_s": 45.40331491699908,
+    "unchanged_threshold_pu": 1e-05
+  }
+}

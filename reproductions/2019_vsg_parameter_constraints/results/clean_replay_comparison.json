@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "data_sha256_match": {
+    "frequency_responses.npz": true,
+    "metrics.json": true,
+    "step_responses.npz": true,
+    "time_constant_sweep.csv": true
+  },
+  "figures_sha256_match": {
+    "bode_validation.png": true,
+    "step_comparison.png": true
+  },
+  "arrays_exact": {
+    "frequency_responses.npz": {
+      "case1__converter": true,
+      "case1__full": true,
+      "case1__line": true,
+      "case1__reduced": true,
+      "case1__swing": true,
+      "case2__converter": true,
+      "case2__full": true,
+      "case2__line": true,
+      "case2__reduced": true,
+      "case2__swing": true,
+      "case2_inferred_high_x__converter": true,
+      "case2_inferred_high_x__full": true,
+      "case2_inferred_high_x__line": true,
+      "case2_inferred_high_x__reduced": true,
+      "case2_inferred_high_x__swing": true,
+      "case2_inferred_low_x__converter": true,
+      "case2_inferred_low_x__full": true,
+      "case2_inferred_low_x__line": true,
+      "case2_inferred_low_x__reduced": true,
+      "case2_inferred_low_x__swing": true,
+      "case3__converter": true,
+      "case3__full": true,
+      "case3__line": true,
+      "case3__reduced": true,
+      "case3__swing": true,
+      "omega_rad_s": true
+    },
+    "step_responses.npz": {
+      "case1__average_w": true,
+      "case1__linear_w": true,
+      "case1__terminal_phase_rad": true,
+      "case3__average_w": true,
+      "case3__linear_w": true,
+      "case3__terminal_phase_rad": true,
+      "time_s": true
+    }
+  }
+}

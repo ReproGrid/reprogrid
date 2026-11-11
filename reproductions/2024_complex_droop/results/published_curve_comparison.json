@@ -1,0 +1,258 @@
+{
+  "fig4": [
+    {
+      "eta_over_omega0": 0.02,
+      "order": 12,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00034714439856165283,
+      "peak_abs_error_pu": 0.002230298620480742
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 8,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00038462006240382463,
+      "peak_abs_error_pu": 0.0026901284756377652
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 4,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0003689704296311505,
+      "peak_abs_error_pu": 0.002481822507507392
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 2,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0003024918190593515,
+      "peak_abs_error_pu": 0.0010168976410183106
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 12,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0006778612103213817,
+      "peak_abs_error_pu": 0.005936720876303259
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 8,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00047866961768442556,
+      "peak_abs_error_pu": 0.004194722151858676
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 4,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00046432008816781924,
+      "peak_abs_error_pu": 0.004212423219472683
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 2,
+      "component": "d",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.000380837331084337,
+      "peak_abs_error_pu": 0.004309874354632814
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 12,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00014498234627274666,
+      "peak_abs_error_pu": 0.0011691263314133268
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 8,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0001378922305537311,
+      "peak_abs_error_pu": 0.001158622783485233
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 4,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0001327351018648268,
+      "peak_abs_error_pu": 0.0011345233568908486
+    },
+    {
+      "eta_over_omega0": 0.02,
+      "order": 2,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 2.8894027493723235e-05,
+      "peak_abs_error_pu": 6.572621582323634e-05
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 12,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00041982772710311996,
+      "peak_abs_error_pu": 0.0027185359333796663
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 8,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0003236427167980913,
+      "peak_abs_error_pu": 0.0027361939587309536
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 4,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.0003119736473874937,
+      "peak_abs_error_pu": 0.0026010717829049873
+    },
+    {
+      "eta_over_omega0": 0.06,
+      "order": 2,
+      "component": "q",
+      "sample_count": 500,
+      "start_s": 0.45,
+      "end_s": 0.6995000000000002,
+      "rmse_pu": 0.00012112881157384004,
+      "peak_abs_error_pu": 0.00023392165287006161
+    }
+  ],
+  "fig5": [
+    {
+      "rg": 0.08,
+      "simulation": {
+        "alpha_1_source": 0.1,
+        "alpha_1_replay": 0.09977586054376648,
+        "sample_count": 8,
+        "rmse_eta_over_omega0": 0.0020159649912049353,
+        "peak_abs_difference_eta_over_omega0": 0.003465808779630375
+      },
+      "sufficient": {
+        "alpha_1_source": 0.035832369903181734,
+        "alpha_1_replay": 0.03758988262389547,
+        "sample_count": 691,
+        "rmse_eta_over_omega0": 0.002325107161852769,
+        "peak_abs_difference_eta_over_omega0": 0.0035956102491700934
+      }
+    },
+    {
+      "rg": 0.2,
+      "simulation": {
+        "alpha_1_source": 0.47621377049836794,
+        "alpha_1_replay": 0.47905999421726764,
+        "sample_count": 8,
+        "rmse_eta_over_omega0": 0.0043613874507669225,
+        "peak_abs_difference_eta_over_omega0": 0.011093598851848352
+      },
+      "sufficient": {
+        "alpha_1_source": 0.10292176324815859,
+        "alpha_1_replay": 0.11148874154363819,
+        "sample_count": 502,
+        "rmse_eta_over_omega0": 0.007714151313163371,
+        "peak_abs_difference_eta_over_omega0": 0.011893417772167333
+      }
+    }
+  ],
+  "fig6": [
+    {
+      "eta_over_omega0": 0.099,
+      "order": 4,
+      "sample_count": 201,
+      "start_s": 2.0,
+      "end_s": 2.199999999999978,
+      "rmse_pu": 0.008963980299220523,
+      "peak_abs_error_pu": 0.023329411266915456
+    },
+    {
+      "eta_over_omega0": 0.099,
+      "order": 2,
+      "sample_count": 201,
+      "start_s": 2.0,
+      "end_s": 2.199999999999978,
+      "rmse_pu": 0.0028913811060871978,
+      "peak_abs_error_pu": 0.04006785062872664
+    },
+    {
+      "eta_over_omega0": 0.101,
+      "order": 4,
+      "sample_count": 201,
+      "start_s": 2.0,
+      "end_s": 2.199999999999978,
+      "rmse_pu": 0.010398610849498925,
+      "peak_abs_error_pu": 0.02902705088924945
+    },
+    {
+      "eta_over_omega0": 0.101,
+      "order": 2,
+      "sample_count": 201,
+      "start_s": 2.0,
+      "end_s": 2.199999999999978,
+      "rmse_pu": 0.0038489861056697845,
+      "peak_abs_error_pu": 0.05109529184009154
+    }
+  ],
+  "fig7": [
+    {
+      "order": 12,
+      "sample_count": 2500,
+      "start_s": 1.5000285992951121,
+      "end_s": 3.999028599294837,
+      "rmse_pu": 0.0003365798724755293,
+      "peak_abs_error_pu": 0.001783659437529006
+    },
+    {
+      "order": 2,
+      "sample_count": 2500,
+      "start_s": 1.5000285992951121,
+      "end_s": 3.999028599294837,
+      "rmse_pu": 0.0002918569350366251,
+      "peak_abs_error_pu": 0.0027485280361025932
+    }
+  ],
+  "scope": "Vector plot readback from arXiv v3. Independent time and voltage calibration from axis ticks, without rescaling or aligning waveforms. Fig. 6 measures 2.00\u20132.20 s to avoid the later printed clipping. Fig. 5 compares the local eigenvalue crossing with the simulation-traversal boundary.",
+  "arxiv_source_sha256": "c4ad5adb11758fc8dca268e86eb89080840c97c26eaeb31826b6c6771be22a4d"
+}

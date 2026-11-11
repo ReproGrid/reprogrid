@@ -1,0 +1,1237 @@
+{
+  "sequence": {
+    "mlbs_chips": 2047,
+    "irs_chips": 4094,
+    "samples_per_common_frame": 16376,
+    "common_frame_s": 1.6376000000000002,
+    "mlbs_period_s": 0.8188000000000001,
+    "common_dft_spacing_hz": 0.6106497313141181,
+    "mlbs_spacing_hz": 1.2212994626282363,
+    "analysis_bandwidth_from_generation_hz": 1125.0,
+    "selected_bin_count": 810,
+    "first_selected_frequency_hz": 10.991695163654127,
+    "last_selected_frequency_hz": 999.0229604298972,
+    "journal_as_mlbs_periods_s": 40.940000000000005,
+    "journal_as_full_irs_frames_s": 81.88000000000001,
+    "thesis_as_mlbs_periods_s": 42.577600000000004,
+    "thesis_as_full_irs_frames_s": 85.15520000000001,
+    "off_parity_energy_fraction": {
+      "mlbs_on_odd_bins": 2.8739301324263246e-32,
+      "irs_on_even_bins": 2.6863386994056083e-32
+    }
+  },
+  "cases": [
+    {
+      "id": "RL_SCR3",
+      "scr": 3,
+      "parallel_c_uf": 0,
+      "reported_p_kw": -10,
+      "reported_q_kvar": 50,
+      "grid_r_ohm": 0.053068650144532756,
+      "grid_l_h": 0.0016892275987433628,
+      "sampled_physical_spectral_radius": 0.9994590781379266,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.0957270584213028e-06,
+        "p95": 6.562033392014231e-05,
+        "max": 0.0016083275599413957,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.8318383200245852e-06,
+        "p95": 5.7263195312636334e-05,
+        "max": 0.002322807360373291,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 2.268796543229806e-06,
+        "p95": 0.00044445404350468824,
+        "max": 0.0027193725950926634,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.17915651518538717,
+        "p95": 0.23488700374795118,
+        "max": 0.23532885388573813,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 1.1554090073589059e-14,
+      "equation9_current_matrix_max_condition": 2.734731009828981,
+      "equation10_max_row_condition": {
+        "grid": 32.45905305278961,
+        "source": 86.578010082119
+      },
+      "periodic_state_relative_closure": 2.3467364925160034e-15,
+      "abc_balance_and_round_trip_max_relative": 3.370773471409553e-14,
+      "physical_drive_amplitude_v": 4.62815299739968,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.08812155570538471,
+        "current": 0.04584900284274304
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.04995000000000001,
+        "current": 0.02598862075984745
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -5.410625498723261,
+        "closed_loop_poles_per_s": [
+          [
+            -1358.2095676792246,
+            6026.605681779149
+          ],
+          [
+            -1358.2095676792246,
+            -6026.605681779149
+          ],
+          [
+            -1233.5877164096664,
+            5680.815660954821
+          ],
+          [
+            -1233.5877164096664,
+            -5680.815660954821
+          ],
+          [
+            -258.3837649334648,
+            810.6887682467328
+          ],
+          [
+            -258.3837649334648,
+            -810.6887682467328
+          ],
+          [
+            -220.22425201481764,
+            559.9611979102925
+          ],
+          [
+            -220.22425201481764,
+            -559.9611979102925
+          ],
+          [
+            -5.410625498723261,
+            33.96020491616977
+          ],
+          [
+            -5.410625498723261,
+            -33.96020491616977
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.017889707846955604,
+        "endpoint_relative_error_to_infinity": 1.9993606415164165e-07,
+        "determinant_vs_pole_product_max_relative": 1.1802758200627715e-14,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.7102844997346875,
+        "nearest_frequency_hz": 112.35955056179773,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 97.54706508866207,
+            "absolute_angular_distance_from_minus_one_deg": 44.3332954812911
+          },
+          {
+            "frequency_hz": 144.48586022603138,
+            "absolute_angular_distance_from_minus_one_deg": 49.493222451806446
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.6565880052746138,
+        "nearest_frequency_hz": 112.35955056179773,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 98.09203869671587,
+            "absolute_angular_distance_from_minus_one_deg": 40.88045311762591
+          },
+          {
+            "frequency_hz": 144.80874004347677,
+            "absolute_angular_distance_from_minus_one_deg": 44.475988009406734
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.6566018596362785,
+        "nearest_frequency_hz": 112.35955056179773,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 98.09248061591988,
+            "absolute_angular_distance_from_minus_one_deg": 40.88141093564417
+          },
+          {
+            "frequency_hz": 144.8092270189624,
+            "absolute_angular_distance_from_minus_one_deg": 44.47653942345244
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    },
+    {
+      "id": "RL_SCR2p5",
+      "scr": 2.5,
+      "parallel_c_uf": 0,
+      "reported_p_kw": -10,
+      "reported_q_kvar": 80,
+      "grid_r_ohm": 0.0636823801734393,
+      "grid_l_h": 0.002027073118492035,
+      "sampled_physical_spectral_radius": 0.999339329923702,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.097329512221573e-06,
+        "p95": 6.758530886374523e-05,
+        "max": 0.0016671430580800337,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.8315177440271812e-06,
+        "p95": 5.7409457836236234e-05,
+        "max": 0.0023229118141848827,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 2.270222768416213e-06,
+        "p95": 0.0004666077920890462,
+        "max": 0.002746122910961044,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.1791532875106303,
+        "p95": 0.23488480259858302,
+        "max": 0.23532668913932653,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 1.508958295950088e-14,
+      "equation9_current_matrix_max_condition": 3.3584631019093174,
+      "equation10_max_row_condition": {
+        "grid": 36.88629128202703,
+        "source": 75.279122447772
+      },
+      "periodic_state_relative_closure": 2.0567371271502452e-15,
+      "abc_balance_and_round_trip_max_relative": 3.4158723155679635e-14,
+      "physical_drive_amplitude_v": 4.544391561421582,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.08974579691495997,
+        "current": 0.03988589921962495
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.04995000000000001,
+        "current": 0.022199375731301388
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -6.608944801712964,
+        "closed_loop_poles_per_s": [
+          [
+            -1382.248783850741,
+            5977.16206335852
+          ],
+          [
+            -1382.248783850741,
+            -5977.16206335852
+          ],
+          [
+            -1255.0520075012396,
+            5635.632500276544
+          ],
+          [
+            -1255.0520075012396,
+            -5635.632500276544
+          ],
+          [
+            -232.21786528836665,
+            767.5119134580139
+          ],
+          [
+            -232.21786528836665,
+            -767.5119134580139
+          ],
+          [
+            -199.68832509383782,
+            518.1064999196919
+          ],
+          [
+            -199.68832509383782,
+            -518.1064999196919
+          ],
+          [
+            -6.608944801712964,
+            39.5428194566433
+          ],
+          [
+            -6.608944801712964,
+            -39.5428194566433
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.01766149840672918,
+        "endpoint_relative_error_to_infinity": 1.6661338819931722e-07,
+        "determinant_vs_pole_product_max_relative": 8.281874871054646e-15,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.7011552946751922,
+        "nearest_frequency_hz": 103.81045432340008,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 88.51153460192232,
+            "absolute_angular_distance_from_minus_one_deg": 44.67085507970149
+          },
+          {
+            "frequency_hz": 134.42356292387058,
+            "absolute_angular_distance_from_minus_one_deg": 48.139698540542405
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.6533961783041579,
+        "nearest_frequency_hz": 103.81045432340008,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 89.03236657225429,
+            "absolute_angular_distance_from_minus_one_deg": 41.51724024232429
+          },
+          {
+            "frequency_hz": 134.77736245603455,
+            "absolute_angular_distance_from_minus_one_deg": 43.50194697689732
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.653410794076847,
+        "nearest_frequency_hz": 103.81045432340008,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 89.03279482063786,
+            "absolute_angular_distance_from_minus_one_deg": 41.518312626149296
+          },
+          {
+            "frequency_hz": 134.77782498002452,
+            "absolute_angular_distance_from_minus_one_deg": 43.50260458154239
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    },
+    {
+      "id": "RL_SCR2",
+      "scr": 2,
+      "parallel_c_uf": 0,
+      "reported_p_kw": -10,
+      "reported_q_kvar": 80,
+      "grid_r_ohm": 0.07960297521679914,
+      "grid_l_h": 0.0025338413981150446,
+      "sampled_physical_spectral_radius": 0.9991628721248733,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.0987331667637073e-06,
+        "p95": 7.00352684228593e-05,
+        "max": 0.001925395182191997,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.831186369941845e-06,
+        "p95": 5.7521481336511705e-05,
+        "max": 0.0023234067807456843,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 2.2713473506455617e-06,
+        "p95": 0.0004916129523969636,
+        "max": 0.002852880989805399,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.17915006142512768,
+        "p95": 0.23488260253598253,
+        "max": 0.23532452546190488,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 1.0798038301312646e-14,
+      "equation9_current_matrix_max_condition": 4.61860776599393,
+      "equation10_max_row_condition": {
+        "grid": 43.37746235778851,
+        "source": 64.24223872129193
+      },
+      "periodic_state_relative_closure": 1.7521410384690272e-15,
+      "abc_balance_and_round_trip_max_relative": 3.3152296614934746e-14,
+      "physical_drive_amplitude_v": 4.421602157730195,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.09223806837989276,
+        "current": 0.03587852562986543
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.04995000000000002,
+        "current": 0.01942942200210311
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -8.375219685487119,
+        "closed_loop_poles_per_s": [
+          [
+            -1406.9017515937007,
+            5927.842489287549
+          ],
+          [
+            -1406.9017515937007,
+            -5927.842489287549
+          ],
+          [
+            -1276.9687487382662,
+            5590.607585718229
+          ],
+          [
+            -1276.9687487382662,
+            -5590.607585718229
+          ],
+          [
+            -204.82453822358866,
+            717.9812344955761
+          ],
+          [
+            -204.82453822358866,
+            -717.9812344955761
+          ],
+          [
+            -178.74566829485292,
+            472.0249390538534
+          ],
+          [
+            -178.74566829485292,
+            -472.0249390538534
+          ],
+          [
+            -8.375219685487119,
+            47.286597065896736
+          ],
+          [
+            -8.375219685487119,
+            -47.286597065896736
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.017298893724519343,
+        "endpoint_relative_error_to_infinity": 1.3329071180290355e-07,
+        "determinant_vs_pole_product_max_relative": 7.000308507826061e-15,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.6839300294013396,
+        "nearest_frequency_hz": 10.991695163654127,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 78.84143672749222,
+            "absolute_angular_distance_from_minus_one_deg": 46.07262012532943
+          },
+          {
+            "frequency_hz": 123.56831087716701,
+            "absolute_angular_distance_from_minus_one_deg": 47.01680458647046
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.6578670697069637,
+        "nearest_frequency_hz": 94.04005862237419,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 79.33329675388218,
+            "absolute_angular_distance_from_minus_one_deg": 43.2169836127744
+          },
+          {
+            "frequency_hz": 123.92628110001439,
+            "absolute_angular_distance_from_minus_one_deg": 42.77517621193143
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.6578825158559812,
+        "nearest_frequency_hz": 94.04005862237419,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 79.33374579902669,
+            "absolute_angular_distance_from_minus_one_deg": 43.218266931039935
+          },
+          {
+            "frequency_hz": 123.92672056053928,
+            "absolute_angular_distance_from_minus_one_deg": 42.77600804238035
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    },
+    {
+      "id": "RLC_800uF",
+      "scr": 3,
+      "parallel_c_uf": 800,
+      "reported_p_kw": 50,
+      "reported_q_kvar": 0,
+      "grid_r_ohm": 0.053068650144532756,
+      "grid_l_h": 0.0016892275987433628,
+      "sampled_physical_spectral_radius": 0.9993653837862403,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.293591816572996e-07,
+        "p95": 0.0004019671920323142,
+        "max": 0.0023474557196358054,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.8361517308120131e-06,
+        "p95": 5.760845398800936e-05,
+        "max": 0.0023228370706641936,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 1.8522571438973845e-06,
+        "p95": 0.0014624526582161206,
+        "max": 0.004792466947843829,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.17255262151355386,
+        "p95": 0.2287837762509241,
+        "max": 0.22922427264709855,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 3.490618937348747e-14,
+      "equation9_current_matrix_max_condition": 25.85586942363411,
+      "equation10_max_row_condition": {
+        "grid": 47.653460160882155,
+        "source": 85.27566872108204
+      },
+      "periodic_state_relative_closure": 3.4118295854928583e-15,
+      "abc_balance_and_round_trip_max_relative": 3.265589721955165e-14,
+      "physical_drive_amplitude_v": 4.144758438050897,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.046866184983027824,
+        "current": 0.09839898953560945
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.02379054857118295,
+        "current": 0.04995
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -6.348143847791976,
+        "closed_loop_poles_per_s": [
+          [
+            -1375.8006131133925,
+            2634.587687536625
+          ],
+          [
+            -1375.8006131133925,
+            -2634.587687536625
+          ],
+          [
+            -1442.489626715985,
+            2429.3238209320143
+          ],
+          [
+            -1442.489626715985,
+            -2429.3238209320143
+          ],
+          [
+            -163.4544521398226,
+            775.7565858358852
+          ],
+          [
+            -163.4544521398226,
+            -775.7565858358852
+          ],
+          [
+            -87.72309071890612,
+            387.72805791015315
+          ],
+          [
+            -87.72309071890612,
+            -387.72805791015315
+          ],
+          [
+            -6.348143847791976,
+            37.18540154659708
+          ],
+          [
+            -6.348143847791976,
+            -37.18540154659708
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.015785837424200155,
+        "endpoint_relative_error_to_infinity": 1.2310670651697486e-06,
+        "determinant_vs_pole_product_max_relative": 1.7834748427016585e-14,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.7748214490168317,
+        "nearest_frequency_hz": 135.56424035173424,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 58.92195071807658,
+            "absolute_angular_distance_from_minus_one_deg": 61.17541990071866
+          },
+          {
+            "frequency_hz": 125.54215766524752,
+            "absolute_angular_distance_from_minus_one_deg": 48.8485466259233
+          },
+          {
+            "frequency_hz": 288.5763369398941,
+            "absolute_angular_distance_from_minus_one_deg": 102.04278809612106
+          },
+          {
+            "frequency_hz": 381.68186871401167,
+            "absolute_angular_distance_from_minus_one_deg": 87.48937543368173
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.7155078828050088,
+        "nearest_frequency_hz": 134.342940889106,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 59.21222354992113,
+            "absolute_angular_distance_from_minus_one_deg": 59.000408707858824
+          },
+          {
+            "frequency_hz": 125.85536064312464,
+            "absolute_angular_distance_from_minus_one_deg": 44.53025903781934
+          },
+          {
+            "frequency_hz": 304.54556792366645,
+            "absolute_angular_distance_from_minus_one_deg": 109.5211783981635
+          },
+          {
+            "frequency_hz": 398.98805460465155,
+            "absolute_angular_distance_from_minus_one_deg": 97.28234622782962
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.7155444517052578,
+        "nearest_frequency_hz": 134.342940889106,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 59.21305727631154,
+            "absolute_angular_distance_from_minus_one_deg": 59.00245821398191
+          },
+          {
+            "frequency_hz": 125.85461924349462,
+            "absolute_angular_distance_from_minus_one_deg": 44.53463411384019
+          },
+          {
+            "frequency_hz": 304.54506297305204,
+            "absolute_angular_distance_from_minus_one_deg": 109.521280953801
+          },
+          {
+            "frequency_hz": 398.9878180810193,
+            "absolute_angular_distance_from_minus_one_deg": 97.28246542498788
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    },
+    {
+      "id": "RLC_1200uF",
+      "scr": 3,
+      "parallel_c_uf": 1200,
+      "reported_p_kw": 50,
+      "reported_q_kvar": 0,
+      "grid_r_ohm": 0.053068650144532756,
+      "grid_l_h": 0.0016892275987433628,
+      "sampled_physical_spectral_radius": 0.9993128440757381,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.0654736508140977e-07,
+        "p95": 0.0004005901226460624,
+        "max": 0.002880535625433848,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.830417672229358e-06,
+        "p95": 5.6389189302303154e-05,
+        "max": 0.002322864586661418,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 1.839717843786523e-06,
+        "p95": 0.0019141356260149694,
+        "max": 0.011053431834056429,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.17207185172639644,
+        "p95": 0.22833805763813483,
+        "max": 0.22877905624596404,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 4.152478865009139e-14,
+      "equation9_current_matrix_max_condition": 17.018160798826493,
+      "equation10_max_row_condition": {
+        "grid": 27.14100605278512,
+        "source": 83.54754778451544
+      },
+      "periodic_state_relative_closure": 4.1311083061438054e-15,
+      "abc_balance_and_round_trip_max_relative": 3.3142983850567376e-14,
+      "physical_drive_amplitude_v": 4.007101280713015,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.04052889491759895,
+        "current": 0.10177931966342238
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.019890271499442995,
+        "current": 0.049949999999999994
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -6.873912583763088,
+        "closed_loop_poles_per_s": [
+          [
+            -1399.276678133173,
+            2308.5566032131333
+          ],
+          [
+            -1399.276678133173,
+            -2308.5566032131333
+          ],
+          [
+            -1471.983391803728,
+            2143.5375099476682
+          ],
+          [
+            -1471.983391803728,
+            -2143.5375099476682
+          ],
+          [
+            -133.7374463637752,
+            751.6078999140823
+          ],
+          [
+            -133.7374463637752,
+            -751.6078999140823
+          ],
+          [
+            -63.94449765146667,
+            325.1136495007264
+          ],
+          [
+            -63.94449765146667,
+            -325.1136495007264
+          ],
+          [
+            -6.873912583763088,
+            38.96445239811957
+          ],
+          [
+            -6.873912583763088,
+            -38.96445239811957
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.012096551865961383,
+        "endpoint_relative_error_to_infinity": 1.3105672673682484e-06,
+        "determinant_vs_pole_product_max_relative": 1.7418741308445718e-14,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.7793502326594333,
+        "nearest_frequency_hz": 128.2364435759648,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 47.61076288549111,
+            "absolute_angular_distance_from_minus_one_deg": 84.98211788176762
+          },
+          {
+            "frequency_hz": 119.73758897105847,
+            "absolute_angular_distance_from_minus_one_deg": 49.34374826520213
+          },
+          {
+            "frequency_hz": 141.07270383596264,
+            "absolute_angular_distance_from_minus_one_deg": 133.59557900291372
+          },
+          {
+            "frequency_hz": 297.9973143781492,
+            "absolute_angular_distance_from_minus_one_deg": 101.30413571385907
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.7243295293371979,
+        "nearest_frequency_hz": 127.01514411333658,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 47.83351327413101,
+            "absolute_angular_distance_from_minus_one_deg": 83.35893417347143
+          },
+          {
+            "frequency_hz": 120.00946537973743,
+            "absolute_angular_distance_from_minus_one_deg": 45.238288512763354
+          },
+          {
+            "frequency_hz": 140.35119855825167,
+            "absolute_angular_distance_from_minus_one_deg": 138.8543493026206
+          },
+          {
+            "frequency_hz": 306.61994368579616,
+            "absolute_angular_distance_from_minus_one_deg": 110.24846971426427
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.7243714216361371,
+        "nearest_frequency_hz": 127.01514411333658,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 47.83441636393553,
+            "absolute_angular_distance_from_minus_one_deg": 83.36350799936481
+          },
+          {
+            "frequency_hz": 120.0099751315216,
+            "absolute_angular_distance_from_minus_one_deg": 45.24283649180479
+          },
+          {
+            "frequency_hz": 140.30361044400283,
+            "absolute_angular_distance_from_minus_one_deg": 138.8480936386909
+          },
+          {
+            "frequency_hz": 306.61946042924524,
+            "absolute_angular_distance_from_minus_one_deg": 110.2486076825701
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    },
+    {
+      "id": "RLC_1600uF",
+      "scr": 3,
+      "parallel_c_uf": 1600,
+      "reported_p_kw": 50,
+      "reported_q_kvar": 0,
+      "grid_r_ohm": 0.053068650144532756,
+      "grid_l_h": 0.0016892275987433628,
+      "sampled_physical_spectral_radius": 0.9992565350274449,
+      "sampled_twin_spectral_radius": 0.9920881324765273,
+      "grid_equation10_vs_equation9": {
+        "median": 1.0496684891799466e-07,
+        "p95": 0.0004600597388971719,
+        "max": 0.003581147379281159,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "source_equation10_vs_equation9": {
+        "median": 1.8285423288821104e-06,
+        "p95": 5.65314626755062e-05,
+        "max": 0.002322903651275013,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "loop_equation10_vs_equation9": {
+        "median": 1.8331776844710342e-06,
+        "p95": 0.002356153939260142,
+        "max": 0.022945771163805737,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "sampled_equation9_vs_continuous_loop": {
+        "median": 0.1721450867282145,
+        "p95": 0.2280996915878132,
+        "max": 0.22854104792359733,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "equation9_vs_sampled_transfer_max_relative": 2.3378431060463505e-14,
+      "equation9_current_matrix_max_condition": 13.426253962771296,
+      "equation10_max_row_condition": {
+        "grid": 19.534678334379503,
+        "source": 81.6583538437727
+      },
+      "periodic_state_relative_closure": 2.445080999887112e-15,
+      "abc_balance_and_round_trip_max_relative": 3.5071230849206564e-14,
+      "physical_drive_amplitude_v": 3.8718078502108644,
+      "physical_drive_trial_amplitude_v": 8.16496580927726,
+      "virtual_current_drive_amplitude_a": 20.41241452319315,
+      "physical_trial_max_dq_perturbation_fraction": {
+        "voltage": 0.03293878193862831,
+        "current": 0.10533581674286538
+      },
+      "physical_max_dq_perturbation_fraction": {
+        "voltage": 0.015619494002223337,
+        "current": 0.049949999999999994
+      },
+      "continuous_full_contour": {
+        "winding_ccw_clockwise_rhp_contour": 0,
+        "open_loop_rhp_poles": 0,
+        "closed_loop_rhp_poles_gnc": 0,
+        "closed_loop_rhp_poles_direct": 0,
+        "closed_loop_max_real_pole_per_s": -7.4374443374764,
+        "closed_loop_poles_per_s": [
+          [
+            -1417.5646598788696,
+            2114.264298587647
+          ],
+          [
+            -1417.5646598788696,
+            -2114.264298587647
+          ],
+          [
+            -1488.4665493245582,
+            1976.6094523199476
+          ],
+          [
+            -1488.4665493245582,
+            -1976.6094523199476
+          ],
+          [
+            -112.40580063507502,
+            728.5302469495266
+          ],
+          [
+            -112.40580063507502,
+            -728.5302469495266
+          ],
+          [
+            -49.94147235992436,
+            276.5692860170772
+          ],
+          [
+            -49.94147235992436,
+            -276.5692860170772
+          ],
+          [
+            -7.4374443374764,
+            40.86198887678856
+          ],
+          [
+            -7.4374443374764,
+            -40.86198887678856
+          ]
+        ],
+        "max_contour_phase_step_rad": 0.013157603966330535,
+        "endpoint_relative_error_to_infinity": 1.35372452143016e-06,
+        "determinant_vs_pole_product_max_relative": 1.0904408481339689e-14,
+        "matrix_vs_scalar_sidebands_max_relative": 1.8000020105637154e-14,
+        "reference_checks": {
+          "gnc_equals_direct_pole_count": true,
+          "full_contour_resolves_argument": true,
+          "determinant_matches_pole_product": true,
+          "independent_scalar_sidebands": true
+        }
+      },
+      "continuous_band": {
+        "minimum_distance_to_minus_one": 0.7897853003753886,
+        "nearest_frequency_hz": 122.12994626282364,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 12.565370494895557,
+            "absolute_angular_distance_from_minus_one_deg": 177.49163529123032
+          },
+          {
+            "frequency_hz": 37.34954828906518,
+            "absolute_angular_distance_from_minus_one_deg": 126.20505789725202
+          },
+          {
+            "frequency_hz": 68.60834871350976,
+            "absolute_angular_distance_from_minus_one_deg": 137.63170458920163
+          },
+          {
+            "frequency_hz": 115.16767036286656,
+            "absolute_angular_distance_from_minus_one_deg": 50.11202948837266
+          },
+          {
+            "frequency_hz": 241.42166556281768,
+            "absolute_angular_distance_from_minus_one_deg": 113.37249112953526
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "sampled_equation9_band": {
+        "minimum_distance_to_minus_one": 0.7381025966216012,
+        "nearest_frequency_hz": 120.9086468001954,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 12.562280710867288,
+            "absolute_angular_distance_from_minus_one_deg": 177.2865838931813
+          },
+          {
+            "frequency_hz": 37.52075538072341,
+            "absolute_angular_distance_from_minus_one_deg": 125.27703716660118
+          },
+          {
+            "frequency_hz": 68.07543565310081,
+            "absolute_angular_distance_from_minus_one_deg": 139.85167968188347
+          },
+          {
+            "frequency_hz": 115.39947237213289,
+            "absolute_angular_distance_from_minus_one_deg": 46.17611124547564
+          },
+          {
+            "frequency_hz": 244.69803793732768,
+            "absolute_angular_distance_from_minus_one_deg": 121.47864780950356
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "identified_band": {
+        "minimum_distance_to_minus_one": 0.738151690382242,
+        "nearest_frequency_hz": 120.9086468001954,
+        "unit_magnitude_crossings": [
+          {
+            "frequency_hz": 12.628871777710343,
+            "absolute_angular_distance_from_minus_one_deg": 177.3176499737852
+          },
+          {
+            "frequency_hz": 37.52085015120839,
+            "absolute_angular_distance_from_minus_one_deg": 125.28852790741792
+          },
+          {
+            "frequency_hz": 68.07551046830339,
+            "absolute_angular_distance_from_minus_one_deg": 139.85291904968236
+          },
+          {
+            "frequency_hz": 115.40051597250977,
+            "absolute_angular_distance_from_minus_one_deg": 46.18084352633651
+          },
+          {
+            "frequency_hz": 244.69752268244997,
+            "absolute_angular_distance_from_minus_one_deg": 121.47872871073686
+          }
+        ],
+        "valid_loop_bins": 810
+      },
+      "checks": {
+        "sampled_reference_is_stable": true,
+        "coherent_periodic_closure": true,
+        "abc_balanced_and_invertible": true,
+        "physical_record_within_five_percent": true,
+        "equation9_matches_sampled_transfer": true,
+        "all_impedance_bins_usable": true,
+        "equation10_median_error_within_gate": true,
+        "equation10_p95_error_within_gate": true,
+        "gnc_equals_direct_pole_count": true,
+        "full_contour_resolves_argument": true,
+        "determinant_matches_pole_product": true,
+        "independent_scalar_sidebands": true
+      }
+    }
+  ],
+  "noise_replay": {
+    "case": "RL_SCR3",
+    "full_common_frames": 25,
+    "voltage_noise_rms_v": 0.02,
+    "current_noise_rms_a": 0.01,
+    "seed": 3395755,
+    "grid": {
+      "median_single_frame_p95": 0.019280534640687224,
+      "first_frame": {
+        "median": 0.006041136843377242,
+        "p95": 0.0189969371831368,
+        "max": 0.1299462816565743,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "geometric_phase_average": {
+        "median": 0.001206534256506432,
+        "p95": 0.004329580945529875,
+        "max": 0.020407698538548888,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "geometric_phase_average_plus_median": {
+        "median": 0.0010127519851080712,
+        "p95": 0.0038002450563201394,
+        "max": 0.01936201415978323,
+        "valid_bins": 810,
+        "total_bins": 810
+      }
+    },
+    "source": {
+      "median_single_frame_p95": 0.0014050333188328295,
+      "first_frame": {
+        "median": 0.0005673946201152835,
+        "p95": 0.001391237373768529,
+        "max": 0.0031647740597671226,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "geometric_phase_average": {
+        "median": 0.00011708099520378444,
+        "p95": 0.0003501469530131252,
+        "max": 0.0023376836840502137,
+        "valid_bins": 810,
+        "total_bins": 810
+      },
+      "geometric_phase_average_plus_median": {
+        "median": 0.00011041645845592601,
+        "p95": 0.00033859873314397523,
+        "max": 0.002554497963565854,
+        "valid_bins": 810,
+        "total_bins": 810
+      }
+    },
+    "synthetic_acquisition_duration_s": 40.940000000000005
+  },
+  "zero_coupling_example": {
+    "diagonal_ohm": [
+      2.0,
+      3.0
+    ],
+    "tested_bins": 810,
+    "equation10_complete_bins": 0,
+    "same_frequency_current_matrix_condition": 1.0,
+    "equation9_max_absolute_error_ohm": 0.0
+  },
+  "global_checks": {
+    "stimuli_have_disjoint_parity": true,
+    "equation10_zero_denominator_is_detected": true
+  },
+  "checks_passed": 74,
+  "checks_total": 74
+}

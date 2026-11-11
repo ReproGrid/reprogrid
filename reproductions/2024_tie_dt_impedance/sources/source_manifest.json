@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2024.3395755",
+  "title": "A Digital Twin Approach for Online Impedance-Based Stability Analysis of Three-Phase AC Systems",
+  "authors": ["Sergio de Lopez Diz", "Roberto Martin Lopez", "Francisco Javier Rodriguez Sanchez", "Emilio José Bueno Peña"],
+  "venue": "IEEE Transactions on Industrial Electronics, 71(12), 16845–16856",
+  "publication_date_online": "2024-05-29",
+  "checked_at_local_date": "2026-11-11",
+  "sources": [
+    {
+      "id": "journal",
+      "doi_url": "https://doi.org/10.1109/TIE.2024.3395755",
+      "institutional_record": "https://portalcientifico.uah.es/documentos/6665f285be265147d9b62f13?lang=en",
+      "full_text": "https://www.researchgate.net/publication/380998215_A_Digital_Twin_Approach_for_Online_Impedance-Based_Stability_Analysis_of_Three-Phase_AC_Systems",
+      "access": "Public author-posted journal text inspected. Publisher PDF fetch did not succeed.",
+      "license_as_printed": "CC BY-NC-ND 4.0",
+      "used_for": ["Fig. 2 and Sections II–IV: port signs, injection paths, Eqs. (2)–(4), (7)–(11)",
+                   "Section V and Table I: 2.5 µs average twin time, 100 µs acquisition, excitation, three laboratory VSC2 voltage PI tunings"]
+    },
+    {
+      "id": "author_thesis",
+      "title": "Digital Twin Technology for Enhanced Monitoring and Stability Assessment of DC/AC Three-Phase Power Converters",
+      "author": "Sergio de Lopez Diz",
+      "year": 2024,
+      "repository_record": "https://ebuah.uah.es/xmlui/handle/10017/63636",
+      "persistent_identifier": "https://hdl.handle.net/10017/63636",
+      "indexed_pdf": "https://ebuah.uah.es/xmlui/bitstream/handle/10017/63636/Thesis%20Sergio%20de%20Lopez%20Diz.pdf?isAllowed=y&sequence=1",
+      "access": "University repository PDF text index inspected. Direct download and image-only table render were unavailable in the environment.",
+      "license_in_repository": "CC BY-NC-ND 4.0",
+      "used_for": ["§4.2.2: cascaded dq current and voltage PI topology",
+                   "§§5.4–5.6: Hadamard modulation, Eqs. (5.10)–(5.15), Tables 5.2–5.4 and Figures 5.13–5.17",
+                   "§6.5: journal laboratory context and 10–1000 Hz reported band"]
+    },
+    {
+      "id": "paper_ref_19",
+      "title": "A real-time digital twin approach on three-phase power converters applied to condition monitoring",
+      "doi_url": "https://doi.org/10.1016/j.apenergy.2022.120606",
+      "used_for": ["Context of the related TNPC hardware. No numerical hardware parameter adopted from this reference."]
+    }
+  ],
+  "public_artifacts_audit": {
+    "crossref_relation": {},
+    "datacite_related_identifier_results": 0,
+    "zenodo_exact_title_or_doi_results": 0,
+    "github_doi_in_repo_description_or_readme_results": 0,
+    "title_and_doi_web_searches": ["IEEE DataPort", "author and institutional pages", "GitHub", "Zenodo", "Simulink"],
+    "synchronized_experimental_data": "not_located_in_reviewed_public_sources",
+    "model_files_and_firmware": "not_located_in_reviewed_public_sources",
+    "original_figures_and_source_full_text_included": false
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "doi": "10.1109/TPWRS.2019.2896853",
+  "grid_omega_rad_s": 314.1592653589793,
+  "eq8_tenth_of_grid_omega_rad_s": 31.415926535897935,
+  "cases": {
+    "case1": {
+      "equation_vs_dq_max_frequency_relative_error": 1.8543855650708497e-15,
+      "equation_vs_dq_max_pole_error_rad_s": 1.9335119931946505e-12,
+      "full_closed_poles_rad_s": [
+        [
+          -804.056436438434,
+          -269.399289085222
+        ],
+        [
+          -804.056436438434,
+          269.399289085222
+        ],
+        [
+          -420.66502146474346,
+          0.0
+        ],
+        [
+          -102.20267733868852,
+          -311.9521196981303
+        ],
+        [
+          -102.20267733868852,
+          311.9521196981303
+        ],
+        [
+          -30.095591529785725,
+          -15.05537484519741
+        ],
+        [
+          -30.095591529785725,
+          15.05537484519741
+        ]
+      ],
+      "reduced_closed_poles_rad_s": [
+        [
+          -30.605769230769234,
+          -13.216615993593608
+        ],
+        [
+          -30.605769230769234,
+          13.216615993593608
+        ]
+      ],
+      "full_closed_classification": "asymptotically_stable",
+      "reduced_closed_classification": "asymptotically_stable",
+      "full_right_half_plane_pole_count": 0,
+      "full_dominant_real_pole_rad_s": -30.095591529785725,
+      "full_clockwise_rhp_nyquist_winding": 0,
+      "nyquist_max_phase_step_rad": 0.003067961399692259,
+      "checks": {
+        "independent_dq_frequency": true,
+        "independent_dq_poles": true,
+        "nyquist_matches_full_pole_count": true,
+        "equation7_matches_frequency_crossing": true,
+        "independent_linear_step": true,
+        "small_step_tends_to_linear_model": true,
+        "published_bode_full_magnitude_and_phase": true
+      },
+      "id": "case1",
+      "source_figure": 2,
+      "parameter_branch": "published_values",
+      "virtual_inductance_h": 0.0,
+      "virtual_resistance_ohm": 10.0,
+      "total_series_inductance_h": 0.1,
+      "total_series_resistance_ohm": 10.0124,
+      "current_loop_time_constant_s": 0.0004921465968586387,
+      "line_dc_power_angle_gain_w_per_rad": 2889619.326175959,
+      "damping_to_inertia_rad_s": 61.21153846153846,
+      "reduced_crossover_eq7_rad_s": 17.46015661394625,
+      "eq8_conditions_in_order": [
+        true,
+        true
+      ],
+      "paper_metrics": {
+        "reported_crossover_rad_s": 17.4,
+        "reported_phase_margin_deg": 74.1,
+        "reported_stability": "stable"
+      },
+      "full_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 17.530775744692857,
+            "phase_margin_deg": 72.15546930999332,
+            "slope_db_decade": -21.34278602497785
+          }
+        ],
+        "negative_real_crossings": [
+          {
+            "omega_rad_s": 147.36781552258563,
+            "gain_margin_db": 24.112843294262163
+          }
+        ]
+      },
+      "reduced_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 17.46015661394625,
+            "phase_margin_deg": 74.07957736108945,
+            "slope_db_decade": -21.504831823914525
+          }
+        ],
+        "negative_real_crossings": []
+      },
+      "readback": {
+        "swing_magnitude_db_rmse": 0.7703908345062936,
+        "swing_phase_deg_rmse": 1.545761058245764,
+        "converter_magnitude_db_rmse": 1.1054301250508267,
+        "converter_phase_deg_rmse": 3.945966576366678,
+        "line_magnitude_db_rmse": 0.5914957524167629,
+        "line_phase_deg_rmse": 2.002068300612377,
+        "full_magnitude_db_rmse": 1.421352875615272,
+        "full_phase_deg_rmse": 3.2892147583015756,
+        "reduced_magnitude_db_rmse": 0.7154085075468801,
+        "reduced_phase_deg_rmse": 1.545761058245764
+      },
+      "step_comparison": {
+        "canonical_vs_dq_linear_max_step_fraction": 7.993605777301127e-15,
+        "nonlinear_small_step_vs_linear_max_step_fraction": 1.4012527128959285e-05,
+        "fig5_post_inferred_step_power_rmse_mw": 0.02588977668477999,
+        "average_model_peak_mw": 0.5002131720299283,
+        "average_model_final_mw": 0.4999999492399345,
+        "max_abs_terminal_phase_rad": 0.17915125181814345
+      }
+    },
+    "case2": {
+      "equation_vs_dq_max_frequency_relative_error": 0.0,
+      "equation_vs_dq_max_pole_error_rad_s": 1.0800249583553523e-11,
+      "full_closed_poles_rad_s": [
+        [
+          -803.0498492369575,
+          -269.31375643131383
+        ],
+        [
+          -803.0498492369575,
+          269.31375643131383
+        ],
+        [
+          -612.1153846153738,
+          0.0
+        ],
+        [
+          -425.81519514311697,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "reduced_closed_poles_rad_s": [
+        [
+          -612.1153846153846,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "full_closed_classification": "marginal",
+      "reduced_closed_classification": "marginal",
+      "full_right_half_plane_pole_count": 0,
+      "full_dominant_real_pole_rad_s": 0.0,
+      "full_clockwise_rhp_nyquist_winding": 0,
+      "nyquist_max_phase_step_rad": 0.0,
+      "checks": {
+        "independent_dq_frequency": true,
+        "independent_dq_poles": true,
+        "nyquist_matches_full_pole_count": true,
+        "equation7_matches_frequency_crossing": true
+      },
+      "id": "case2",
+      "source_figure": 3,
+      "parameter_branch": "published_values",
+      "virtual_inductance_h": -0.1,
+      "virtual_resistance_ohm": 0.0,
+      "total_series_inductance_h": 0.0,
+      "total_series_resistance_ohm": 0.0124,
+      "current_loop_time_constant_s": 0.0004921465968586387,
+      "line_dc_power_angle_gain_w_per_rad": 0.0,
+      "damping_to_inertia_rad_s": 612.1153846153846,
+      "reduced_crossover_eq7_rad_s": null,
+      "eq8_conditions_in_order": null,
+      "paper_metrics": {
+        "reported_crossover_rad_s": 414.2,
+        "reported_reduced_phase_margin_deg": 56.0,
+        "reported_gain_margin_db": -18.1,
+        "reported_phase_crossing_rad_s": 286.0,
+        "reported_stability": "unstable"
+      },
+      "full_margins": {
+        "gain_crossings": [],
+        "negative_real_crossings": []
+      },
+      "reduced_margins": {
+        "gain_crossings": [],
+        "negative_real_crossings": []
+      },
+      "readback": {
+        "swing_magnitude_db_rmse": 0.7276123460185339,
+        "swing_phase_deg_rmse": 0.8736356563257655,
+        "converter_magnitude_db_rmse": 1.2983700719157756,
+        "converter_phase_deg_rmse": 3.5502271507070886
+      }
+    },
+    "case3": {
+      "equation_vs_dq_max_frequency_relative_error": 3.6408899713795835e-15,
+      "equation_vs_dq_max_pole_error_rad_s": 3.865352482534945e-12,
+      "full_closed_poles_rad_s": [
+        [
+          -803.9925304396812,
+          -269.4147749167554
+        ],
+        [
+          -803.9925304396812,
+          269.4147749167554
+        ],
+        [
+          -421.3480599154307,
+          0.0
+        ],
+        [
+          -102.45244673657677,
+          -312.40723343753245
+        ],
+        [
+          -102.45244673657677,
+          312.40723343753245
+        ],
+        [
+          -2.0230165976139287,
+          -33.51301239714883
+        ],
+        [
+          -2.0230165976139287,
+          33.51301239714883
+        ]
+      ],
+      "reduced_closed_poles_rad_s": [
+        [
+          -3.0605769230769235,
+          -33.19676064659237
+        ],
+        [
+          -3.0605769230769235,
+          33.19676064659237
+        ]
+      ],
+      "full_closed_classification": "asymptotically_stable",
+      "reduced_closed_classification": "asymptotically_stable",
+      "full_right_half_plane_pole_count": 0,
+      "full_dominant_real_pole_rad_s": -2.0230165976139287,
+      "full_clockwise_rhp_nyquist_winding": 0,
+      "nyquist_max_phase_step_rad": 0.023632066375493956,
+      "checks": {
+        "independent_dq_frequency": true,
+        "independent_dq_poles": true,
+        "nyquist_matches_full_pole_count": true,
+        "equation7_matches_frequency_crossing": true,
+        "independent_linear_step": true,
+        "small_step_tends_to_linear_model": true,
+        "published_bode_full_magnitude_and_phase": true
+      },
+      "id": "case3",
+      "source_figure": 4,
+      "parameter_branch": "published_values",
+      "virtual_inductance_h": 0.0,
+      "virtual_resistance_ohm": 10.0,
+      "total_series_inductance_h": 0.1,
+      "total_series_resistance_ohm": 10.0124,
+      "current_loop_time_constant_s": 0.0004921465968586387,
+      "line_dc_power_angle_gain_w_per_rad": 2889619.326175959,
+      "damping_to_inertia_rad_s": 6.121153846153846,
+      "reduced_crossover_eq7_rad_s": 33.057762671541234,
+      "eq8_conditions_in_order": [
+        false,
+        false
+      ],
+      "paper_metrics": {
+        "reported_crossover_rad_s": 33.0,
+        "reported_phase_margin_deg": 6.8,
+        "reported_stability": "unstable"
+      },
+      "full_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 33.321076884904784,
+            "phase_margin_deg": 6.804344618415598,
+            "slope_db_decade": -38.72707185036122
+          }
+        ],
+        "negative_real_crossings": [
+          {
+            "omega_rad_s": 55.63639851461849,
+            "gain_margin_db": 8.575784220115846
+          }
+        ]
+      },
+      "reduced_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 33.05776267154123,
+            "phase_margin_deg": 10.490380983903265,
+            "slope_db_decade": -39.337007016143545
+          }
+        ],
+        "negative_real_crossings": []
+      },
+      "readback": {
+        "swing_magnitude_db_rmse": 0.7051306247139462,
+        "swing_phase_deg_rmse": 0.8988443582967839,
+        "converter_magnitude_db_rmse": 1.2507079596363093,
+        "converter_phase_deg_rmse": 3.3779404761228924,
+        "line_magnitude_db_rmse": 0.8682271774870561,
+        "line_phase_deg_rmse": 1.446233363969304,
+        "full_magnitude_db_rmse": 1.353575844693203,
+        "full_phase_deg_rmse": 3.3532016770741686,
+        "reduced_magnitude_db_rmse": 0.9282788727047809,
+        "reduced_phase_deg_rmse": 0.8988443582967839
+      },
+      "step_comparison": {
+        "canonical_vs_dq_linear_max_step_fraction": 5.750955267558311e-14,
+        "nonlinear_small_step_vs_linear_max_step_fraction": 0.0001715851809154234,
+        "fig5_post_inferred_step_power_rmse_mw": 1.067699365440595,
+        "average_model_peak_mw": 0.8899571027540124,
+        "average_model_final_mw": 0.6653560964672491,
+        "max_abs_terminal_phase_rad": 0.33023906503035905
+      }
+    },
+    "case2_inferred_high_x": {
+      "equation_vs_dq_max_frequency_relative_error": 1.0926573970151325e-12,
+      "equation_vs_dq_max_pole_error_rad_s": 2.702305283493095e-12,
+      "full_closed_poles_rad_s": [
+        [
+          -978.2001527593706,
+          -302.7862480216607
+        ],
+        [
+          -978.2001527593706,
+          302.7862480216607
+        ],
+        [
+          -418.5364895443171,
+          -483.06160110125796
+        ],
+        [
+          -418.5364895443171,
+          483.06160110125796
+        ],
+        [
+          -193.57368377747665,
+          0.0
+        ],
+        [
+          140.19428485666484,
+          -304.5727055390226
+        ],
+        [
+          140.19428485666484,
+          304.5727055390226
+        ]
+      ],
+      "reduced_closed_poles_rad_s": [
+        [
+          -306.0576923076923,
+          -460.93141046325627
+        ],
+        [
+          -306.0576923076923,
+          460.93141046325627
+        ]
+      ],
+      "full_closed_classification": "unstable",
+      "reduced_closed_classification": "asymptotically_stable",
+      "full_right_half_plane_pole_count": 2,
+      "full_dominant_real_pole_rad_s": 140.19428485666484,
+      "full_clockwise_rhp_nyquist_winding": -2,
+      "nyquist_max_phase_step_rad": 0.017488459186557975,
+      "checks": {
+        "independent_dq_frequency": true,
+        "independent_dq_poles": true,
+        "nyquist_matches_full_pole_count": true,
+        "equation7_matches_frequency_crossing": true
+      },
+      "id": "case2_inferred_high_x",
+      "source_figure": 3,
+      "parameter_branch": "inferred_from_reported_reduced_crossover",
+      "virtual_inductance_h": -0.09960401174702173,
+      "virtual_resistance_ohm": 0.0,
+      "total_series_inductance_h": 0.0003959882529782771,
+      "total_series_resistance_ohm": 0.0124,
+      "current_loop_time_constant_s": 0.0004921465968586387,
+      "line_dc_power_angle_gain_w_per_rad": 795935598.048128,
+      "damping_to_inertia_rad_s": 612.1153846153846,
+      "reduced_crossover_eq7_rad_s": 414.1999999999979,
+      "eq8_conditions_in_order": [
+        false,
+        true
+      ],
+      "paper_metrics": {
+        "reported_crossover_rad_s": 414.2,
+        "reported_reduced_phase_margin_deg": 56.0,
+        "reported_gain_margin_db": -18.1,
+        "reported_phase_crossing_rad_s": 286.0,
+        "reported_stability": "unstable"
+      },
+      "full_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 455.6742052568936,
+            "phase_margin_deg": -149.50612863130414,
+            "slope_db_decade": -102.88896146636691
+          }
+        ],
+        "negative_real_crossings": [
+          {
+            "omega_rad_s": 288.2852172444177,
+            "gain_margin_db": -18.06904975339912
+          }
+        ]
+      },
+      "reduced_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 414.19999999999783,
+            "phase_margin_deg": 55.914974506298506,
+            "slope_db_decade": -26.281468884882877
+          }
+        ],
+        "negative_real_crossings": []
+      },
+      "readback": {
+        "swing_magnitude_db_rmse": 0.7276123460185339,
+        "swing_phase_deg_rmse": 0.8736356563257655,
+        "converter_magnitude_db_rmse": 1.2983700719157756,
+        "converter_phase_deg_rmse": 3.5502271507070886,
+        "line_magnitude_db_rmse": 1.1134086893681532,
+        "line_phase_deg_rmse": 2.2639480433048234,
+        "full_magnitude_db_rmse": 1.3472671012582185,
+        "full_phase_deg_rmse": 4.224755431011932,
+        "reduced_magnitude_db_rmse": 0.916151891229765,
+        "reduced_phase_deg_rmse": 0.8736356563257656
+      }
+    },
+    "case2_inferred_low_x": {
+      "equation_vs_dq_max_frequency_relative_error": 1.35125090367483e-12,
+      "equation_vs_dq_max_pole_error_rad_s": 3.937456269947113e-11,
+      "full_closed_poles_rad_s": [
+        [
+          -3215.295122305682,
+          -417.5622451457625
+        ],
+        [
+          -3215.295122305682,
+          417.5622451457625
+        ],
+        [
+          -1173.1539222121396,
+          -810.8440868516667
+        ],
+        [
+          -1173.1539222121396,
+          810.8440868516667
+        ],
+        [
+          -201.51069919551466,
+          0.0
+        ],
+        [
+          15.376832122048327,
+          -466.41144570440866
+        ],
+        [
+          15.376832122048327,
+          466.41144570440866
+        ]
+      ],
+      "reduced_closed_poles_rad_s": [
+        [
+          -306.0576923076924,
+          -460.9314104637731
+        ],
+        [
+          -306.0576923076924,
+          460.9314104637731
+        ]
+      ],
+      "full_closed_classification": "unstable",
+      "reduced_closed_classification": "asymptotically_stable",
+      "full_right_half_plane_pole_count": 2,
+      "full_dominant_real_pole_rad_s": 15.376832122048327,
+      "full_clockwise_rhp_nyquist_winding": -2,
+      "nyquist_max_phase_step_rad": 0.0450186958831956,
+      "checks": {
+        "independent_dq_frequency": true,
+        "independent_dq_poles": true,
+        "nyquist_matches_full_pole_count": true,
+        "equation7_matches_frequency_crossing": true
+      },
+      "id": "case2_inferred_low_x",
+      "source_figure": 3,
+      "parameter_branch": "inferred_from_reported_reduced_crossover",
+      "virtual_inductance_h": -0.09999606575571884,
+      "virtual_resistance_ohm": 0.0,
+      "total_series_inductance_h": 3.934244281161847e-06,
+      "total_series_resistance_ohm": 0.0124,
+      "current_loop_time_constant_s": 0.0004921465968586387,
+      "line_dc_power_angle_gain_w_per_rad": 795935598.0493664,
+      "damping_to_inertia_rad_s": 612.1153846153846,
+      "reduced_crossover_eq7_rad_s": 414.2000000004883,
+      "eq8_conditions_in_order": [
+        false,
+        true
+      ],
+      "paper_metrics": {
+        "reported_crossover_rad_s": 414.2,
+        "reported_reduced_phase_margin_deg": 56.0,
+        "reported_gain_margin_db": -18.1,
+        "reported_phase_crossing_rad_s": 286.0,
+        "reported_stability": "unstable"
+      },
+      "full_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 483.69326960656446,
+            "phase_margin_deg": -6.6073670311616866,
+            "slope_db_decade": -32.23964798519417
+          }
+        ],
+        "negative_real_crossings": [
+          {
+            "omega_rad_s": 452.8603233585601,
+            "gain_margin_db": -0.8941045680989596
+          }
+        ]
+      },
+      "reduced_margins": {
+        "gain_crossings": [
+          {
+            "omega_rad_s": 414.2000000004883,
+            "phase_margin_deg": 55.914974506267015,
+            "slope_db_decade": -26.281468884905077
+          }
+        ],
+        "negative_real_crossings": []
+      },
+      "readback": {
+        "swing_magnitude_db_rmse": 0.7276123460185339,
+        "swing_phase_deg_rmse": 0.8736356563257655,
+        "converter_magnitude_db_rmse": 1.2983700719157756,
+        "converter_phase_deg_rmse": 3.5502271507070886,
+        "line_magnitude_db_rmse": 20.219160970944518,
+        "line_phase_deg_rmse": 81.0404104953231,
+        "full_magnitude_db_rmse": 24.51156809272429,
+        "full_phase_deg_rmse": 77.62328655670264,
+        "reduced_magnitude_db_rmse": 0.9161518912358613,
+        "reduced_phase_deg_rmse": 0.8736356563257655
+      }
+    }
+  },
+  "fig5_vector_trace_metrics": {
+    "case1": {
+      "post_step_peak_mw": 0.5326052314375337,
+      "final_trace_mw": 0.5064871436454271,
+      "pre_step_max_abs_mw": 0.3328362145979306
+    },
+    "case2": {
+      "post_step_peak_mw": 3.60688909538788,
+      "final_trace_mw": -0.5381244844121432,
+      "pre_step_max_abs_mw": 4.145650859626264,
+      "number_of_peaks_used_for_frequency": 35,
+      "median_peak_spacing_frequency_hz": 47.61904761904758,
+      "post_step_peaks_mw": [
+        [
+          0.515,
+          2.6259468941382704
+        ],
+        [
+          0.536,
+          2.6412081012571496
+        ],
+        [
+          0.557,
+          2.8088983424221925
+        ],
+        [
+          0.578,
+          2.624396268913776
+        ],
+        [
+          0.6002500000000001,
+          2.660750100094671
+        ],
+        [
+          0.62125,
+          2.842297812667198
+        ],
+        [
+          0.64225,
+          2.6021799956943643
+        ],
+        [
+          0.66325,
+          2.7502870875249537
+        ],
+        [
+          0.684,
+          2.824035811636175
+        ],
+        [
+          0.705,
+          2.5634823857325806
+        ],
+        [
+          0.726,
+          2.8065282282944444
+        ],
+        [
+          0.747,
+          3.117994847607574
+        ],
+        [
+          0.768,
+          2.960794228984405
+        ],
+        [
+          0.789,
+          3.1828089027511965
+        ],
+        [
+          0.81,
+          3.3248052580684155
+        ],
+        [
+          0.8310000000000001,
+          3.1434477826931055
+        ],
+        [
+          0.85175,
+          2.994564499501405
+        ],
+        [
+          0.87275,
+          3.544317634317692
+        ],
+        [
+          0.89375,
+          3.3471738031708944
+        ],
+        [
+          0.9147500000000001,
+          3.166462493808448
+        ],
+        [
+          0.93575,
+          3.2279756585132935
+        ]
+      ]
+    },
+    "case3": {
+      "post_step_peak_mw": 1.8484089453293808,
+      "final_trace_mw": -0.29434466400776577,
+      "pre_step_max_abs_mw": 0.5832587209919264,
+      "number_of_peaks_used_for_frequency": 4,
+      "median_peak_spacing_frequency_hz": 5.056890012642224,
+      "post_step_peaks_mw": [
+        [
+          0.648,
+          1.3925275393398457
+        ],
+        [
+          0.8532500000000001,
+          1.8484089453293808
+        ]
+      ]
+    }
+  },
+  "fig5_inferred_step_start_s": 0.5,
+  "case3_damping_boundary_at_fixed_other_parameters": {
+    "critical_full_model_damping": 5541.716175165031,
+    "critical_pair_imag_rad_s": 33.56880898394174,
+    "independent_dq_real_part_at_boundary_rad_s": -1.5976133803220623e-14,
+    "full_model_real_part_at_0p99_boundary_rad_s": 0.010804172150386178,
+    "full_model_real_part_at_1p01_boundary_rad_s": -0.010804207887489366,
+    "min_damping_for_eq8_frequency_separation": 42289.06225072567,
+    "min_damping_for_eq8_slope_condition": 72886.90207112303
+  },
+  "off_nominal_ideal_series_model_diagnostic": {
+    "initial_phase_rad": 0.2,
+    "printed_eq3_dc_w_per_rad": 2677130.998595023,
+    "ideal_series_dq_dc_w_per_rad": 2649510.977907404,
+    "relative_difference": 0.01042457303175005
+  },
+  "time_constant_sweep": {
+    "points": 181,
+    "eligible_points": 147,
+    "max_case3_real_pole_over_eligible_rad_s": -2.0230506518791525
+  },
+  "checks_passed": 31,
+  "checks_total": 31,
+  "global_checks": {
+    "case1_reduced_crossover_matches_reported": true,
+    "case2_inferred_high_branch_gain_margin_matches": true,
+    "case2_inferred_high_branch_better_explains_line_plot": true,
+    "case2_inferred_high_branch_matches_full_bode": true,
+    "independent_dq_verifies_case3_damping_boundary": true
+  }
+}

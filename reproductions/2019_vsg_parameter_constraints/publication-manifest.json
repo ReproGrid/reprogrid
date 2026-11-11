@@ -1,0 +1,132 @@
+{
+  "doi": "10.1109/TPWRS.2019.2896853",
+  "source_handoff_state": "report_ready",
+  "scope": "Single VSG averaged equations and independent dq states, Cases 1–3 and both inferred Case 2 roots, with figure readbacks.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1553,
+      "sha256": "107aae6fe09455b0ba54a8202152f41d0d694a6dd46a28bfdd7253114067a6f9"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 2895,
+      "sha256": "207da8b742a3d0379eb90cfcec1e34e80d6944d00e86b2f1d4cad13a8674d4e5"
+    },
+    {
+      "path": "figures/bode_validation.png",
+      "bytes": 194555,
+      "sha256": "e4f5beebc7608135f00a59707dd9980d69b037b23635bad0c4f3cb8872157fd0"
+    },
+    {
+      "path": "figures/step_comparison.png",
+      "bytes": 110169,
+      "sha256": "55cd588c61d9100a977b8c1eed0067512b1b62c8e78cb85b3ba596cad4f8e9b1"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 4029,
+      "sha256": "a6ad2e1bd74f27ce192df4468764d4046d5d10133609e04abecda0f8ab3b0b05"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 3002,
+      "sha256": "c980db02ba2818398fd3e04d3d3f6e5d0d1c73325215c7a9e9f99dc38a0ddccb"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "results/clean_replay/run_manifest.json",
+      "bytes": 1643,
+      "sha256": "18d21d2ba19b8cc6e80dba08ef6864b9809035fffbccf29c7ec98898241a4bd7"
+    },
+    {
+      "path": "results/clean_replay_comparison.json",
+      "bytes": 1509,
+      "sha256": "ee6be2055ea4f3289495cf5bcaa24d0b7f0d81f8e6d841b80b680c97b6edc3eb"
+    },
+    {
+      "path": "results/frequency_responses.npz",
+      "bytes": 5031854,
+      "sha256": "6fc78f40d995f3eff36719e88f381c4a05fcb4b20515a4f3874241f398bf87cd"
+    },
+    {
+      "path": "results/metrics.json",
+      "bytes": 21704,
+      "sha256": "863933dd79099ce58c44921e7841e400e8a1e06d364f623ca2db888b0dc365f0"
+    },
+    {
+      "path": "results/run_manifest.json",
+      "bytes": 1643,
+      "sha256": "5322ce8b34f019d4b4794b154cb223127803386515772d96619d7ac38020379c"
+    },
+    {
+      "path": "results/step_responses.npz",
+      "bytes": 95153,
+      "sha256": "c8c48588fee37bd002a27efbd46f8c7c25f08656bdc68e268439dec34ba41aba"
+    },
+    {
+      "path": "results/time_constant_sweep.csv",
+      "bytes": 15792,
+      "sha256": "947dd710c61fbebc24b4ebfa4f22ceb292403fc56fd34b06bc03fa758364e9c4"
+    },
+    {
+      "path": "sources/source_audit.md",
+      "bytes": 2516,
+      "sha256": "48c28b00072982f6682c2fef952e5a0bbfcd3f8c78d643c2ca5aa93bc20f4cc0"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 2059,
+      "sha256": "1f4bf6b478128af2d260c08afc83e8d9a4705642af75398532a5a2676f6502fe"
+    },
+    {
+      "path": "src/compare_replay.py",
+      "bytes": 2425,
+      "sha256": "7e4e54ef828dad9b0d2f63bd02fd155a71fa1e54ed78c1d16e0efb4b912ad48b"
+    },
+    {
+      "path": "src/model.py",
+      "bytes": 6175,
+      "sha256": "2520cce50e3157e7577018947e5ac2a788c73f15948c9c9d55b468e79e2419e4"
+    },
+    {
+      "path": "src/plots.py",
+      "bytes": 3130,
+      "sha256": "356f57705995a7aa322d48c5d39425c1f541cb6c1ea7cfcba5724363358b9b4d"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 19250,
+      "sha256": "6d0188754e17f5411f010d428c33f4156bfaa49f11f1efec1d88faf9d208622b"
+    },
+    {
+      "path": "verification/dq_reference.py",
+      "bytes": 4118,
+      "sha256": "c3d761ac239121ff4a86c1c65860ab11231c06158dcffe792a47fef4f5226e73"
+    },
+    {
+      "path": "verification/environment_freeze.txt",
+      "bytes": 200,
+      "sha256": "ccbd8229d222a361c760f829c0e3e62beb09d9afe392e7ce5bfd1f46a96aa368"
+    },
+    {
+      "path": "verification/fig2_to_5_readback.csv",
+      "bytes": 264121,
+      "sha256": "01ed909697ba5267b9a2b847b79caf04915c71eb2c490506c0465dfe20fb865d"
+    },
+    {
+      "path": "verification/read_figures.py",
+      "bytes": 3620,
+      "sha256": "cc19889d6bd3dd8c85a22b716843bd7c787996d1abd91defdeb8ebb6f4f84a64"
+    }
+  ]
+}
