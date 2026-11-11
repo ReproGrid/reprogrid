@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2021.3074027",
+  "title": "An Optimal Damping Design of Virtual Synchronous Generators for Transient Stability Enhancement",
+  "authors": ["Xiaoling Xiong", "Chao Wu", "Peng Cheng", "Frede Blaabjerg"],
+  "journal": "IEEE Transactions on Power Electronics, 36(10), 11026–11030",
+  "repository_record": "https://vbn.aau.dk/en/publications/an-optimal-damping-design-of-virtual-synchronous-generators-for-t/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/475877929/An_Optimal_Damping_Design_of_Virtual_Synchronous_Generators_for_Transient_Stability_Enhancement.pdf",
+    "workspace_path": "reproductions/2021_vsg_transient_damping/sources/aalborg_author_manuscript.pdf",
+    "sha256": "8f4fd9d4ec04d3f59cf438867cf06aa7a9d52e5ac59b08949e56ad121c724b59",
+    "version": "Aalborg accepted author manuscript with a repository cover page.",
+    "inspected": "Sections II–IV, Eqs. (1)–(7), Table I, Figs. 1–4 and 6."
+  },
+  "numeric_figure_readback": {
+    "path": "verification/fig3_4_readback.csv",
+    "sha256": "d050ccd44540e1f433bb7770b6e1ffb4dfdbb958df48169a5c2b2a805b003c4d",
+    "rows": 2777,
+    "method": "Eight trajectory paths and two stability-region fills from the PDF, calibrated at axis ticks."
+  },
+  "source_pdf_included_in_handoff": false
+}

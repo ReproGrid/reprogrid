@@ -1,0 +1,189 @@
+{
+  "scope": "Analytical factor and threshold, observer frequency responses, stationary-frame trajectories and flag timestamps, lossless local stability",
+  "code_sha256": "90073fe8548dc903a25c38e518406ae8e0959c5544c6a83cfc9d20a104942103",
+  "input_sha256": {
+    "configs/protocol.json": "e978031b64ae8ef057b57306beaca2fa5d52daafe90d8bd6c31a9cb06c611a2e",
+    "results/pulse_traces.npz": "1cf9c70cae277389d2c7126ccee24812d34a8e482cac5db9e44d3ccaaeea0c84",
+    "results/observer_curves.npz": "a31c105740400b67ba1745c0e895ed91794809e8cb3c0244190ef0ad2daedf23",
+    "results/metrics.json": "95e09c7cfd8754f480a943f84a81857fcca9bf0bd74fe8d816f6dd8fc72db2f8"
+  },
+  "checks": {
+    "factor_rederived_from_stationary_inductance": true,
+    "angular_limits_rederived": true,
+    "observer_frequency_responses_agree": true,
+    "independent_trajectories_agree": true,
+    "independent_flags_agree": true,
+    "exact_q_axis_false_declarations_agree": true,
+    "q_equilibrium_is_unstable": true
+  },
+  "passed": true,
+  "sqrt2_normalization_max_error": 1.5543122344752192e-15,
+  "threshold_left_right_deg": [
+    3.5336348803873614,
+    2.4977416106019823
+  ],
+  "frequency_response_max_errors": {
+    "PI": 4.518280359883027e-16,
+    "ESO_C1": 4.47545209131181e-16,
+    "ESO_C2": 4.477810306039989e-16
+  },
+  "hold": {
+    "complete_groups": 67,
+    "group_s": 0.00030000000000000003,
+    "counted_duration_s": 0.020100000000000003,
+    "elapsed_since_first_detector_sample_s": 0.0198,
+    "min_samples_for_full_span": 68,
+    "first_possible_timestamp_for_full_span_s": 0.0204
+  },
+  "lossless_local_spectral_radii": {
+    "pi": {
+      "d_axis": 0.9981093135105954,
+      "q_axis": 1.583352525995117
+    },
+    "eso_c2": {
+      "d_axis": 0.9987896594584333,
+      "q_axis": 3.827561661085486
+    }
+  },
+  "max_estimate_difference_deg": 7.629514569894684e-11,
+  "runs": {
+    "eso_averaged": {
+      "angles": 360,
+      "max_estimate_difference_deg": 4.007498898644031e-12,
+      "max_detector_difference": 7.038813976123492e-14,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "eso_scaled_sqrt2": {
+      "angles": 360,
+      "max_estimate_difference_deg": 4.4018876791455075e-12,
+      "max_detector_difference": 1.0613732115416497e-13,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "eso_switched": {
+      "angles": 36,
+      "max_estimate_difference_deg": 7.629514569894684e-11,
+      "max_detector_difference": 1.1328160631762785e-12,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 36,
+        "declarations_with_sample_span": 36,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 36,
+        "declarations_with_sample_span": 36,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "eso_zero_seed": {
+      "angles": 4,
+      "max_estimate_difference_deg": 0.0,
+      "max_detector_difference": 0.0,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 4,
+        "declarations_with_sample_span": 4,
+        "max_delay_for_retained_declarations_s": 0.0002999999999999982
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 2,
+        "declarations_with_sample_span": 2,
+        "max_delay_for_retained_declarations_s": 0.0002999999999999982
+      },
+      "exact_q_axis_false_declaration": true
+    },
+    "pi_averaged": {
+      "angles": 360,
+      "max_estimate_difference_deg": 3.1551102440118085e-12,
+      "max_detector_difference": 9.592326932761353e-14,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "pi_scaled_sqrt2": {
+      "angles": 360,
+      "max_estimate_difference_deg": 3.256887993818641e-12,
+      "max_detector_difference": 1.326716514427062e-13,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 360,
+        "declarations_with_sample_span": 360,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "pi_switched": {
+      "angles": 36,
+      "max_estimate_difference_deg": 8.55569209313686e-12,
+      "max_detector_difference": 2.3858692799194614e-13,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 36,
+        "declarations_with_sample_span": 36,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 36,
+        "declarations_with_sample_span": 36,
+        "max_delay_for_retained_declarations_s": 0.00030000000000000165
+      }
+    },
+    "pi_zero_seed": {
+      "angles": 4,
+      "max_estimate_difference_deg": 0.0,
+      "max_detector_difference": 0.0,
+      "detector_times_agree": true,
+      "joint_times_agree": true,
+      "detector_window_comparison": {
+        "declarations_with_group_count": 4,
+        "declarations_with_sample_span": 4,
+        "max_delay_for_retained_declarations_s": 0.0002999999999999982
+      },
+      "joint_window_comparison": {
+        "declarations_with_group_count": 2,
+        "declarations_with_sample_span": 2,
+        "max_delay_for_retained_declarations_s": 0.0002999999999999982
+      },
+      "exact_q_axis_false_declaration": true
+    }
+  }
+}

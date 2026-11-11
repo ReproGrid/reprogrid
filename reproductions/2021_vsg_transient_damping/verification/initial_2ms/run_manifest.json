@@ -1,0 +1,31 @@
+{
+  "paper_doi": "10.1109/TPEL.2021.3074027",
+  "started_utc": "2026-11-11T13:00:35.130445+00:00",
+  "finished_utc": "2026-11-11T13:00:52.655344+00:00",
+  "wall_seconds": 17.52499441598775,
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "bdb0a32643ccc6fed73282e9c7552e1a1854a2caed91f36b42fad464c3c6eb6f",
+  "implementation_sha256": {
+    "src/model.py": "14a5c8af2fab8adb8c4e7495275133ff3cab02480679c984d6582333eea86f13",
+    "src/reproduce.py": "94ebe74fdbb25eecdda1e7451093a21bec56ec3905410bbf2e97358638cf2d5e",
+    "src/plots.py": "84b37c2072f72fdbbccf3421fb01dae6605a6b8c5dbda09c574314a43e2427dd",
+    "verification/independent.py": "43f76f37700634a9566938902fb1d7a54cc6ebff02157b69682840886f207467",
+    "verification/fig3_4_readback.csv": "d050ccd44540e1f433bb7770b6e1ffb4dfdbb958df48169a5c2b2a805b003c4d"
+  },
+  "data_sha256": {
+    "metrics.json": "e09c39667fa71e855e9d653d5d446c3ca8d3fed38d363dacddb8ade79f507f92",
+    "phase_traces.npz": "36a67ec6fb77272b9a40c6796e2d33417147ae6099644437576e205726159552",
+    "stability_maps.npz": "60528c31bd1142f54462a7ef55e331f4a4e44e51a8657c86b5829d3f28ee3d0c",
+    "power_angle_curves.npz": "ecf9d865325934bf03ff259b9d1ee16414266a162b6d4a39c74c3f64848a72ab"
+  },
+  "figures_sha256": {
+    "power_angle.png": "c125808271f8cef1a528d71ce492c747e52a671b963065ba1d8070525a68d953",
+    "phase_portraits.png": "b29b4be97a8de0118a4db036fa802724a91ff9ec79c57b1616da040e0bb4460e",
+    "stability_maps.png": "a9973f7d9a31d866fe569d628870d3b9cbdd2a2c84a73e3e9385fb06d97afdb1"
+  },
+  "checks_passed": 13,
+  "checks_total": 14
+}

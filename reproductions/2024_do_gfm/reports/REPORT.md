@@ -54,9 +54,25 @@ Fig. 9 的初始 P=0.5 pu。在相同 50→49 Hz 斜坡下，稳态 P 为 **0.61
 
 ![motulator 和出版图叠加](../results/fig5b_fig6b_comparison.png)
 
+### RFPSC 额定阶跃的计时口径与串联电阻
+
+对 Fig. 5(b) 的 0.66→1 pu 阶跃，按指令幅值计算的 90% 门槛为 0.966 pu，接近原图有功平台 0.9694 pu。改用各曲线阶跃前后各 50 ms 的平台均值定门槛，按首次越线计算的时间顺序反转。改用 25 或 100 ms 的平台窗口也得到相同顺序。
+
+| 数据 | 按指令幅值 10–90% (ms) | 按各自平台 10–90% (ms) | 额定 P (pu) | 额定 Q (pu) |
+|---|---:|---:|---:|---:|
+| 出版图数字化 | 89.72 | 50.82 | 0.9694 | -0.7946 |
+| 名义平均模型 | 61.19 | 60.79 | 0.9996 | -0.6105 |
+| 按额定 P 拟合串联电阻 | 146.84 | 56.44 | 0.9694 | -0.6086 |
+
+实验有功多次越过门槛后又回落。要求连续 20 ms 保持在按平台计算的 90% 门槛或以上，从首次达到 10% 到满足持续条件的区间起点，实验为 106.65 ms，名义模型为 60.79 ms。若按指令定门槛，实验在下一指令前未出现连续 20 ms 达到 0.966 pu 的区间。
+
+固定 L=0.89 pu 和控制参数，分别拟合 0.33、0.66 和 1 pu 指令段的有功平台，所需的 R−Rhat 依次为 0.09205、0.04132、0.02313 pu。用第三个值匹配额定有功后，无功仍偏差约 0.186 pu，且按指令幅值的上升时间超过原图。恒定串联电阻失配在此模型下无法同时解释这些数据。 [诊断数据](../diagnostics/weak_grid_gap.json) · [复跑脚本](../diagnostics/weak_grid_gap.py)
+
+![RFPSC 两种计时口径](../figures/rfpsc_weak_grid_gap.png)
+
 ## 重跑、资料缺口与交付
 
 - 新建 Python 环境按锁定版本重跑，独立模型的数值数组最大差为 0，电感扫描 CSV 字节一致。motulator 的 6 个基准输出逐字节一致，3 个出版图数字化数据文件也重新提取并核对一致。
 - 旧框架结果保留独立来源标签。实验的 Eq. (19) 离散实现、实际电阻、有效输出基波、死区、传感延迟和电网模拟器动态缺少原始输入。Figs. 8、11 的定量硬件轨迹以及保护和 LCL 工况已记录跳过。
 
-[代码与复跑入口](../README.md) · [冻结协议](../configs/protocol.json) · [来源审计](../sources/source_audit.md) · [主运行清单](../results/run_manifest.json) · [坐标交叉核对](../results/cross_implementation.json) · [干净环境重跑](../results/clean_replay_comparison.json) · [框架复跑核对](../results/author_replay_comparison.json) · Agent 与耗时
+[代码与复跑入口](../README.md) · [冻结协议](../configs/protocol.json) · [来源审计](../sources/source_audit.md) · [主运行清单](../results/run_manifest.json) · [坐标交叉核对](../results/cross_implementation.json) · [干净环境重跑](../results/clean_replay_comparison.json) · [框架复跑核对](../results/author_replay_comparison.json)

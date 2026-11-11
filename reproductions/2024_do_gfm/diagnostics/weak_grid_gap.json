@@ -1,0 +1,327 @@
+{
+  "doi": "10.1109/TPEL.2024.3433503",
+  "scope": "Aligned digitized grid-terminal P/Q and the 0.89 pu continuous averaged RFPSC model.",
+  "input_sha256": {
+    "configs/protocol.json": "b217a7ac065f4ed3fa1ea2c4676755c95db3aa9fda9bbd88db16bcc41f4f9178",
+    "reference/fig5b_rfpsc.csv": "3a7784437442be2972fd9a89bf8b9943ecd4e334808c69586719ef173b9d2afe",
+    "results/ideal_rfpsc_weak.npz": "104afe36f1bbfc933123c48d8c109129857e5fb1e4ca7d7e96b4c8e7f8506ecd",
+    "src/reproduce.py": "78413ad74a265c55704d16c5ea54d0e45ee5847eb76794400e6d5eae51f7714c",
+    "reproduce.py": "94a5d10fb5dd6dfea1037a432bc1ab247b9ebebda6df7ec93c1a2a4b4946211a"
+  },
+  "timing": "First directed, linearly interpolated crossings after the same aligned command edge. Command-relative thresholds use the commanded levels. Plateau-relative thresholds use the respective trace's mean P in windows before the step and before the following step.",
+  "plateau_window_s": 0.05,
+  "metrics": {
+    "Fig. 5(b)": [
+      {
+        "step_s": 0.2,
+        "command_pu": [
+          0.0,
+          0.33
+        ],
+        "active_power_plateaus_pu": [
+          -6.228896000000004e-05,
+          0.31995283127999996
+        ],
+        "q_after_pu": -0.089855824,
+        "command_relative_10_90_ms": 41.37825389291727,
+        "plateau_relative_10_90_ms": 34.96680810827846
+      },
+      {
+        "step_s": 0.5,
+        "command_pu": [
+          0.33,
+          0.66
+        ],
+        "active_power_plateaus_pu": [
+          0.31995283127999996,
+          0.6406666088799999
+        ],
+        "q_after_pu": -0.28747114568,
+        "command_relative_10_90_ms": 51.054745178172546,
+        "plateau_relative_10_90_ms": 42.04102319506342
+      },
+      {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6406666088799999,
+          0.9693908307999999
+        ],
+        "q_after_pu": -0.79462465936,
+        "command_relative_10_90_ms": 89.72499282596935,
+        "plateau_relative_10_90_ms": 50.822062551101446
+      },
+      {
+        "step_s": 1.1,
+        "command_pu": [
+          1.0,
+          0.0
+        ],
+        "active_power_plateaus_pu": [
+          0.9693908307999999,
+          -0.00010786984000000002
+        ],
+        "q_after_pu": 0.00156226,
+        "command_relative_10_90_ms": 43.968891428412874,
+        "plateau_relative_10_90_ms": 42.720429858032595
+      }
+    ],
+    "Nominal average model": [
+      {
+        "step_s": 0.2,
+        "command_pu": [
+          0.0,
+          0.33
+        ],
+        "active_power_plateaus_pu": [
+          0.0,
+          0.32999333549163556
+        ],
+        "q_after_pu": -0.04955031495606831,
+        "command_relative_10_90_ms": 32.56940760668214,
+        "plateau_relative_10_90_ms": 32.56655710095255
+      },
+      {
+        "step_s": 0.5,
+        "command_pu": [
+          0.33,
+          0.66
+        ],
+        "active_power_plateaus_pu": [
+          0.32999333549163556,
+          0.6599600853403647
+        ],
+        "q_after_pu": -0.214240708984216,
+        "command_relative_10_90_ms": 39.09574301108698,
+        "plateau_relative_10_90_ms": 39.073437576321865
+      },
+      {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6599600853403647,
+          0.9995745660476641
+        ],
+        "q_after_pu": -0.6104939083715931,
+        "command_relative_10_90_ms": 61.189492352504146,
+        "plateau_relative_10_90_ms": 60.78787350732262
+      },
+      {
+        "step_s": 1.1,
+        "command_pu": [
+          1.0,
+          0.0
+        ],
+        "active_power_plateaus_pu": [
+          0.9995745660476641,
+          1.140367181457121e-06
+        ],
+        "q_after_pu": -1.3951305202051227e-07,
+        "command_relative_10_90_ms": 38.834196632792754,
+        "plateau_relative_10_90_ms": 38.83195785055449
+      }
+    ],
+    "Resistance fit to rated P": [
+      {
+        "step_s": 0.2,
+        "command_pu": [
+          0.0,
+          0.33
+        ],
+        "active_power_plateaus_pu": [
+          0.0,
+          0.32743769608920253
+        ],
+        "q_after_pu": -0.05773566386041321,
+        "command_relative_10_90_ms": 33.39509783684155,
+        "plateau_relative_10_90_ms": 32.336885900371456
+      },
+      {
+        "step_s": 0.5,
+        "command_pu": [
+          0.33,
+          0.66
+        ],
+        "active_power_plateaus_pu": [
+          0.32743769608920253,
+          0.6490256491180376
+        ],
+        "q_after_pu": -0.2274822431971718,
+        "command_relative_10_90_ms": 45.78987408020873,
+        "plateau_relative_10_90_ms": 37.97421123860201
+      },
+      {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6490256491180376,
+          0.9693908307998509
+        ],
+        "q_after_pu": -0.6085895899438747,
+        "command_relative_10_90_ms": 146.83997744518672,
+        "plateau_relative_10_90_ms": 56.436903062053844
+      },
+      {
+        "step_s": 1.1,
+        "command_pu": [
+          1.0,
+          0.0
+        ],
+        "active_power_plateaus_pu": [
+          0.9693908307998509,
+          9.69108377495132e-07
+        ],
+        "q_after_pu": -1.4340713477808226e-07,
+        "command_relative_10_90_ms": 38.70440799156394,
+        "plateau_relative_10_90_ms": 38.50451495118068
+      }
+    ]
+  },
+  "rated_step_plateau_window_sensitivity": [
+    {
+      "window_s": 0.025,
+      "Fig. 5(b)": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6407094291935485,
+          0.968123041935484
+        ],
+        "q_after_pu": -0.7948996193548388,
+        "command_relative_10_90_ms": 89.72499282596935,
+        "plateau_relative_10_90_ms": 50.79479772285034
+      },
+      "Nominal average model": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6599722704912525,
+          0.9996777490697097
+        ],
+        "q_after_pu": -0.6106846645642979,
+        "command_relative_10_90_ms": 61.189492352504146,
+        "plateau_relative_10_90_ms": 60.88489736050751
+      }
+    },
+    {
+      "window_s": 0.05,
+      "Fig. 5(b)": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6406666088799999,
+          0.9693908307999999
+        ],
+        "q_after_pu": -0.79462465936,
+        "command_relative_10_90_ms": 89.72499282596935,
+        "plateau_relative_10_90_ms": 50.822062551101446
+      },
+      "Nominal average model": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6599600853403647,
+          0.9995745660476641
+        ],
+        "q_after_pu": -0.6104939083715931,
+        "command_relative_10_90_ms": 61.189492352504146,
+        "plateau_relative_10_90_ms": 60.78787350732262
+      }
+    },
+    {
+      "window_s": 0.1,
+      "Fig. 5(b)": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6398472642399999,
+          0.96816281368
+        ],
+        "q_after_pu": -0.7927832584400001,
+        "command_relative_10_90_ms": 89.72499282596935,
+        "plateau_relative_10_90_ms": 50.86173016121754
+      },
+      "Nominal average model": {
+        "step_s": 0.8,
+        "command_pu": [
+          0.66,
+          1.0
+        ],
+        "active_power_plateaus_pu": [
+          0.6599097622987187,
+          0.9992171842396623
+        ],
+        "q_after_pu": -0.609833306867398,
+        "command_relative_10_90_ms": 61.189492352504146,
+        "plateau_relative_10_90_ms": 60.45385231577993
+      }
+    }
+  ],
+  "rated_step_sustained_90": {
+    "method": "Time from first 10% crossing to the start of the first interval at or above 90% that lasts one grid cycle. Null means there is no such interval in the sampled step.",
+    "hold_s": 0.02,
+    "rise_10_to_sustained_90_ms": {
+      "Fig. 5(b)": {
+        "command_relative": null,
+        "plateau_relative": 106.65312748220268
+      },
+      "Nominal average model": {
+        "command_relative": 61.189492352504146,
+        "plateau_relative": 60.78787350732262
+      },
+      "Resistance fit to rated P": {
+        "command_relative": 146.83997744518672,
+        "plateau_relative": 56.436903062053844
+      }
+    }
+  },
+  "series_resistance_sensitivity": {
+    "model": "Physical command adds Rhat*i and the plant subtracts R*i; synchronization uses the net command as in Appendix C.",
+    "inductance_pu": 0.89,
+    "fit_bracket_R_minus_Rhat_pu": [
+      0.0,
+      0.15
+    ],
+    "separate_fits_to_each_positive_p_plateau": [
+      {
+        "command_pu": 0.33,
+        "fitted_R_minus_Rhat_pu": 0.09204893763781775
+      },
+      {
+        "command_pu": 0.66,
+        "fitted_R_minus_Rhat_pu": 0.04131906371524748
+      },
+      {
+        "command_pu": 1.0,
+        "fitted_R_minus_Rhat_pu": 0.023127799877904996
+      }
+    ],
+    "rated_calibration_command_pu": 1.0,
+    "rated_fit_peak_current_reference_pu": 1.1444416681540297,
+    "rated_fit_refinement_max_abs_pq_error_pu": 2.311928426479426e-12
+  }
+}

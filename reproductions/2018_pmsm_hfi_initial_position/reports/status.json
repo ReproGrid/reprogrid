@@ -13,6 +13,12 @@
   "clean_environment_replay_passed": true,
   "checks_passed": 23,
   "checks_total": 23,
+  "independent_review": {
+    "passed": true,
+    "checks_passed": 7,
+    "checks_total": 7,
+    "metrics_sha256": "1e9e4289b23448ce6a9214a5be1251e88eed83061ad1920b34e760383b8c1d47"
+  },
   "key_results": {
     "bode_max_gain_rmse_db": 0.12280588599933877,
     "bode_max_phase_rmse_deg": 0.40306642154297395,
@@ -24,7 +30,7 @@
   },
   "critical_gaps": [
     "Original S-Function, injection settings and filter timing are not specified sufficiently for exact Figs. 10–13 reconstruction.",
-    "The published Fig. 9 trace is about 0.88 electrical degrees away from exact q-axis equilibrium. Only the lock category is verified against that curve.",
+    "Fig. 9 vector readback verifies the lock category. Its plotted trace is about 0.88 electrical degrees from the ideal q axis.",
     "The independent linear locked-rotor model has no polarity observability. Nonlinear or bench data are needed for the paper's polarity-detection step."
   ],
   "anomaly_evidence": [
@@ -40,7 +46,7 @@
     }
   ],
   "misconduct_allegation": null,
-  "report_sha256": "30abb300e40a25ff9e13173286570fb002f753eedd6e91c37b8bfc011cc6961a",
+  "report_sha256": "0ff2fce1ef5c9160cf686f3d7507b40845e95f80b6f06a0dfb16089b1bbc5682",
   "primary_manifest_sha256": "65b20cb92abd629ba166e771bbc30b05d7f9e98cff1d4af8d1844a4671f30ac5",
-  "source_report_sha256": "fba71fc919f4261c49eff779ca467921f8ec817473b4ac4abb9ff2a5771a02dc"
+  "source_report_sha256": "d254f188cf2296514b5803f2890f61024d9708c2768abc758ff40078d0bd2a68"
 }

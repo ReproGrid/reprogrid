@@ -1,0 +1,147 @@
+{
+  "doi": "10.1109/TPEL.2021.3074027",
+  "source_handoff_state": "report_ready",
+  "scope": "Eqs. (1)–(7), Fig. 2 trends, Fig. 3 trajectory comparison and Fig. 4 damping-region comparison.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1625,
+      "sha256": "bff6b34896b415c1eb213f53dc4060cec40409bcbe5476c7617b77591ac947c9"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 2824,
+      "sha256": "dfcfb814f2bf0bb7f3fc479a42335beee26b6e6c80ffa6cd1ee889c1133ee2b3"
+    },
+    {
+      "path": "figures/phase_portraits.png",
+      "bytes": 227721,
+      "sha256": "d1c5e210f96f57ba783726777d37614209edd35f038f53d3287541f019d3cffd"
+    },
+    {
+      "path": "figures/power_angle.png",
+      "bytes": 146379,
+      "sha256": "c125808271f8cef1a528d71ce492c747e52a671b963065ba1d8070525a68d953"
+    },
+    {
+      "path": "figures/stability_maps.png",
+      "bytes": 154653,
+      "sha256": "a9973f7d9a31d866fe569d628870d3b9cbdd2a2c84a73e3e9385fb06d97afdb1"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 3707,
+      "sha256": "f8f68634a0234ae740732375946fd342dcc331a0c4171d70d1f888586a0dd344"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 2394,
+      "sha256": "90fe30645c0e58a31dc9d5c0ebe70e58ea77518c3c813b009b9e537ee1a4f144"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 46,
+      "sha256": "cdaedac051825ae5b595cda317e583c3ab5bf1d072f2bdff97b62c71c9fdf068"
+    },
+    {
+      "path": "results/clean_replay/run_manifest.json",
+      "bytes": 1648,
+      "sha256": "a50688c1a1e584a870d40814e80568dc8140636841edce4301af5b701ec25032"
+    },
+    {
+      "path": "results/clean_replay_comparison.json",
+      "bytes": 1117,
+      "sha256": "230bae9c7994586adf46987f3af9dc8bd5163cd3a46b79ea240c27c7abd365df"
+    },
+    {
+      "path": "results/metrics.json",
+      "bytes": 28753,
+      "sha256": "6686f427fe0a66f440780d7248b09b6269d57dd7b97f40e916d7bf0622d50a89"
+    },
+    {
+      "path": "results/phase_traces.npz",
+      "bytes": 5396207,
+      "sha256": "c3bc29aee43e4af416cbe613f2a87d633c77fe3c854d12b1ce663a8d0fe0e1bd"
+    },
+    {
+      "path": "results/power_angle_curves.npz",
+      "bytes": 35778,
+      "sha256": "ecf9d865325934bf03ff259b9d1ee16414266a162b6d4a39c74c3f64848a72ab"
+    },
+    {
+      "path": "results/run_manifest.json",
+      "bytes": 1648,
+      "sha256": "bba2d2a0b37d02734b2a8979b541c03ca51caffa7346f3e1ae8d9960b7c74ff0"
+    },
+    {
+      "path": "results/stability_maps.npz",
+      "bytes": 184645,
+      "sha256": "60528c31bd1142f54462a7ef55e331f4a4e44e51a8657c86b5829d3f28ee3d0c"
+    },
+    {
+      "path": "sources/source_audit.md",
+      "bytes": 1437,
+      "sha256": "24c2d0be6a797ae8d9096cb612b3f7cec147e4e15805ccaa7a34ba4e3541e844"
+    },
+    {
+      "path": "sources/source_manifest.json",
+      "bytes": 1315,
+      "sha256": "61a93cbf5f2a058bb425f41d7d26538ac6f19b42f504f7fe5433fac5cf1a2c14"
+    },
+    {
+      "path": "src/compare_replay.py",
+      "bytes": 2425,
+      "sha256": "7e4e54ef828dad9b0d2f63bd02fd155a71fa1e54ed78c1d16e0efb4b912ad48b"
+    },
+    {
+      "path": "src/model.py",
+      "bytes": 5912,
+      "sha256": "14a5c8af2fab8adb8c4e7495275133ff3cab02480679c984d6582333eea86f13"
+    },
+    {
+      "path": "src/plots.py",
+      "bytes": 4575,
+      "sha256": "84b37c2072f72fdbbccf3421fb01dae6605a6b8c5dbda09c574314a43e2427dd"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 17755,
+      "sha256": "829065d32bfe79d07896eac7b4271a83ae9974633d6d811c0840718ce68c6dff"
+    },
+    {
+      "path": "verification/fig3_4_readback.csv",
+      "bytes": 150415,
+      "sha256": "d050ccd44540e1f433bb7770b6e1ffb4dfdbb958df48169a5c2b2a805b003c4d"
+    },
+    {
+      "path": "verification/independent.py",
+      "bytes": 2368,
+      "sha256": "2c70b7fa545714a224fedce0d1c97ad04dcee1a56ca6480c95ca240c774cfa19"
+    },
+    {
+      "path": "verification/initial_2ms/metrics.json",
+      "bytes": 28749,
+      "sha256": "e09c39667fa71e855e9d653d5d446c3ca8d3fed38d363dacddb8ade79f507f92"
+    },
+    {
+      "path": "verification/initial_2ms/protocol.json",
+      "bytes": 2824,
+      "sha256": "bdb0a32643ccc6fed73282e9c7552e1a1854a2caed91f36b42fad464c3c6eb6f"
+    },
+    {
+      "path": "verification/initial_2ms/run_manifest.json",
+      "bytes": 1648,
+      "sha256": "378d51b031c9eec73a5fb7e52ed4f6d7ed09dd722bc7c1c76ad0e03e9fc7049d"
+    },
+    {
+      "path": "verification/read_figures.py",
+      "bytes": 2177,
+      "sha256": "1599adbcbe0a9dc51fff5ed39d8e8eb5bf3062cb8378e6af28bc85339af8432e"
+    }
+  ]
+}

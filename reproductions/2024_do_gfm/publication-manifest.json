@@ -29,6 +29,16 @@
       "sha256": "027de293c936e7eb2d591be8c7d3daf75f15438573f044a3c7011378b0d52b1c"
     },
     {
+      "path": "diagnostics/weak_grid_gap.json",
+      "bytes": 9380,
+      "sha256": "5339b27c54243aba784675d4000ba0a0b8bff5b4437cee5e6dfb75ce277fb693"
+    },
+    {
+      "path": "diagnostics/weak_grid_gap.py",
+      "bytes": 10556,
+      "sha256": "c8e60cd59f417367b4d76b8a3a01c1b55728324fc1170485f3cfd130246c7b61"
+    },
+    {
       "path": "figures/frequency_and_mode.png",
       "bytes": 120568,
       "sha256": "c532442f63056044c1787ebc62b5a139e4012501b0f848ed95e4a9e05960e638"
@@ -42,6 +52,11 @@
       "path": "figures/inductance_sweep.png",
       "bytes": 88832,
       "sha256": "a441f7115aa80acb2e10b55e15300933cc1018481131a235a362d068be38fa0c"
+    },
+    {
+      "path": "figures/rfpsc_weak_grid_gap.png",
+      "bytes": 167398,
+      "sha256": "f6966c2a09c341311de3fb8852d42d11f3322802d0a8c40774029a2b962b8816"
     },
     {
       "path": "protocol.json",
@@ -70,13 +85,13 @@
     },
     {
       "path": "reports/REPORT.md",
-      "bytes": 6591,
-      "sha256": "be716d0eceded9da58542df7422bdef218255f48cc66a6418f949a8ad2ae3b02"
+      "bytes": 8081,
+      "sha256": "0fe2b027287ebc891b67209a99b3de1f97496c3a172ed15aa756e9e1c2aa1d67"
     },
     {
       "path": "reports/status.json",
       "bytes": 2416,
-      "sha256": "86d8bea15cd76c4c539600800f1d8c84f772e3796052411893fa714ca4d2c3cf"
+      "sha256": "fd4171a4f8637e87adb22659d6ed6a4a5c2243408aaae41e3c15f082e881d7a8"
     },
     {
       "path": "reproduce.py",

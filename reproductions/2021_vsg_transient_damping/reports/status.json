@@ -1,0 +1,47 @@
+{
+  "doi": "10.1109/TPEL.2021.3074027",
+  "state": "report_ready",
+  "display_state_zh": "计算复现完成，图 4 零电阻条件有差异",
+  "outcome": "vsg_transient_damping_reproduced_with_fig4_zero_resistance_discrepancy",
+  "scope_zh": "复现单机 VSG 功角曲线、高通阻尼相平面和增益稳定区，核对 48 mΩ 与图 4 零电阻两种条件。",
+  "scope": "Eqs. (1)–(7), Fig. 2 trends, Fig. 3 trajectory comparison and Fig. 4 damping-region comparison.",
+  "public_fulltext_url": "https://vbn.aau.dk/en/publications/an-optimal-damping-design-of-virtual-synchronous-generators-for-t/",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 14,
+  "checks_total": 14,
+  "key_results": {
+    "grid_points_per_branch": 88176,
+    "solver_max_angle_error_rad": 8.708823884262529e-09,
+    "figure3_50hz_crossing_pattern_matches": true,
+    "figure4_zero_r_alpha_3_gain_samples_crossed": 2501,
+    "table_50hz_alpha_3_gain_intervals_pu": [
+      [
+        15.8,
+        53.5
+      ]
+    ],
+    "table_50hz_figure4_intersection_over_union": 0.9950487717145214,
+    "figure4_zero_r_12mh_max_captured_alpha_grid_rad_s": 0.72,
+    "figure4_zero_r_exact_scr2_max_captured_alpha_grid_rad_s": 0.98
+  },
+  "critical_gaps": [
+    "The actual parameter and ode45 input files for Fig. 4 are unavailable. A 2 kW and 2 kvar base was used for the listed Pmax and Qmax gain factors.",
+    "Quantitative comparison of Fig. 6 requires original experimental traces and inner-loop implementation settings."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "fig4_zero_resistance_condition_discrepancy",
+      "source": "Section III-B, Fig. 4 and Table I",
+      "finding": "Both tested zero-resistance branches cross the unstable equilibrium at every sampled gain for alpha=3. Using Table I's 48 mΩ with exact 50 Hz gives a 15.8–53.5 p.u. capture interval and closely matches the plotted region.",
+      "cause_known": false
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "f8f68634a0234ae740732375946fd342dcc331a0c4171d70d1f888586a0dd344",
+  "primary_manifest_sha256": "bba2d2a0b37d02734b2a8979b541c03ca51caffa7346f3e1ae8d9960b7c74ff0",
+  "source_report_sha256": "77c1ff2c4093332dea801fb026788982f6bf647a826686eb6a0b49b5b83784af"
+}

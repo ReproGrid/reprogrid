@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "data_sha256_match": {
+    "metrics.json": true,
+    "phase_traces.npz": true,
+    "power_angle_curves.npz": true,
+    "stability_maps.npz": true
+  },
+  "figures_sha256_match": {
+    "phase_portraits.png": true,
+    "power_angle.png": true,
+    "stability_maps.png": true
+  },
+  "arrays_exact": {
+    "phase_traces.npz": {
+      "fig4_scr2": true,
+      "fig4_si": true,
+      "gain_pu": true,
+      "table_50hz": true,
+      "table_si": true,
+      "time_s": true
+    },
+    "power_angle_curves.npz": {
+      "angle_rad": true,
+      "power_w": true
+    },
+    "stability_maps.npz": {
+      "alpha_rad_s": true,
+      "fig4_scr2": true,
+      "fig4_scr2_refined": true,
+      "fig4_scr2_stop_s": true,
+      "fig4_si": true,
+      "fig4_si_refined": true,
+      "fig4_si_stop_s": true,
+      "gain_pu": true,
+      "paper_region": true,
+      "refine_alphas_rad_s": true,
+      "refine_gains_pu": true,
+      "table_50hz": true,
+      "table_50hz_refined": true,
+      "table_50hz_stop_s": true,
+      "table_si": true,
+      "table_si_refined": true,
+      "table_si_stop_s": true
+    }
+  }
+}
