@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "byte_identical": true,
+  "files": {
+    "cct_results.json": {
+      "baseline_sha256": "7a856ed59032d22494fa0763432d9fd2d9e4fc5629dafd63379839f078f45031",
+      "replay_sha256": "7a856ed59032d22494fa0763432d9fd2d9e4fc5629dafd63379839f078f45031"
+    },
+    "rated_trajectories.npz": {
+      "baseline_sha256": "293cf479b0252588287d7153aa2b7b483bacc6eee7f6a21cce564678262002f7",
+      "replay_sha256": "293cf479b0252588287d7153aa2b7b483bacc6eee7f6a21cce564678262002f7"
+    },
+    "cct_comparison.png": {
+      "baseline_sha256": "05db68610997f0a37255abaa84b2a57b5e4b734f9c5dab56fd874e66b80c87d7",
+      "replay_sha256": "05db68610997f0a37255abaa84b2a57b5e4b734f9c5dab56fd874e66b80c87d7"
+    },
+    "rated_first_swing.png": {
+      "baseline_sha256": "00e30f3d2204d33ce60309fc488a296ccb476405c32bebdda7014a52794aaf53",
+      "replay_sha256": "00e30f3d2204d33ce60309fc488a296ccb476405c32bebdda7014a52794aaf53"
+    }
+  }
+}

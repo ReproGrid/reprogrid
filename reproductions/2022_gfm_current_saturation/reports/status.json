@@ -1,0 +1,22 @@
+{
+  "doi": "10.1109/TPWRS.2021.3107959",
+  "state": "report_ready",
+  "outcome": "equal_area_cct_and_angle_bound_reproduced_with_first_swing_scope_boundary",
+  "scope_zh": "表 II–IV 的 18 个单机 100% 跌落工况、含阻尼第一摆、Fig. 9 饱和电流角上界。",
+  "checks_passed": 5,
+  "checks_total": 5,
+  "cases_checked": 18,
+  "hardware_validation": false,
+  "clean_environment_replay_passed": true,
+  "key_results": {
+    "rated_zero_phi_damped_ms": 36.521636116388386,
+    "rated_point_eight_phi_damped_ms": 95.53950488776597,
+    "minimum_phi_bound_rad": 0.8089647070476766
+  },
+  "critical_gaps": [
+    "Original EMT and laboratory waveforms and switching behavior have not been reproduced.",
+    "Voltage-mode reentry dynamics, partial sags and line reclosing are outside the verified scope."
+  ],
+  "report_sha256": "af3f3ed3b41a5983c871451f469cc5747908d0bbc6a0e810d358092a60663ede",
+  "result_sha256": "7a856ed59032d22494fa0763432d9fd2d9e4fc5629dafd63379839f078f45031"
+}

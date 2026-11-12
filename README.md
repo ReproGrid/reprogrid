@@ -38,6 +38,7 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 数字孪生 / Digital twin | [Online impedance identification](reproductions/2024_tie_dt_impedance) | 六组三相平均模型 / Six averaged three-phase benchmarks |
 | 构网稳定 / GFM stability | [VSG parameter constraints](reproductions/2019_vsg_parameter_constraints) | 传递函数复跑与算例 3 差异 / Transfer-function replay and Case 3 discrepancy |
 | 构网稳定 / GFM stability | [VSG transient damping](reproductions/2021_vsg_transient_damping) | 电压跌落与暂态稳定增益区 / Voltage dip and transient gain region |
+| 构网稳定 / GFM stability | [GFM current reference saturation](reproductions/2022_gfm_current_saturation) | 18 组全电压跌落工况、第一摆与电流角上界 / 18 full-sag cases, first-swing boundary and current-angle bound |
 | 电机控制 / Motor control | [PMSM high-frequency injection](reproductions/2018_pmsm_hfi_initial_position) | 观测器、归一化和 q 轴误锁 / Observers, normalization and false q-axis lock |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。

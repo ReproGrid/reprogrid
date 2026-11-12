@@ -1,0 +1,72 @@
+{
+  "doi": "10.1109/TPWRS.2021.3107959",
+  "source_handoff_state": "report_ready",
+  "scope": "Tables II–IV, a lossless single-converter first-swing model with damping, and the Fig. 9 saturated current-angle bound. No hardware reproduction.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2394,
+      "sha256": "05100c0c0e47c0879db85e7a16616d57e364e4098aea65407349a76a5a62bb3b"
+    },
+    {
+      "path": "configs/protocol.json",
+      "bytes": 3161,
+      "sha256": "1892542807d58430fca5d22666c6119f39d1157cfec96b8558fdfdc06f0cb7bb"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 3352,
+      "sha256": "af3f3ed3b41a5983c871451f469cc5747908d0bbc6a0e810d358092a60663ede"
+    },
+    {
+      "path": "reports/status.json",
+      "bytes": 996,
+      "sha256": "c3024f256adac46981caa61ddba6a2d3e036b6cd47da74020481052fd54b50e1"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 214,
+      "sha256": "5412ec654e8f92ca7cc98176713e00ba24f76dc745baaa71d9645c4af5757f43"
+    },
+    {
+      "path": "results/cct_comparison.png",
+      "bytes": 114766,
+      "sha256": "05db68610997f0a37255abaa84b2a57b5e4b734f9c5dab56fd874e66b80c87d7"
+    },
+    {
+      "path": "results/cct_results.json",
+      "bytes": 11646,
+      "sha256": "7a856ed59032d22494fa0763432d9fd2d9e4fc5629dafd63379839f078f45031"
+    },
+    {
+      "path": "results/rated_first_swing.png",
+      "bytes": 84215,
+      "sha256": "00e30f3d2204d33ce60309fc488a296ccb476405c32bebdda7014a52794aaf53"
+    },
+    {
+      "path": "results/rated_trajectories.npz",
+      "bytes": 52518,
+      "sha256": "293cf479b0252588287d7153aa2b7b483bacc6eee7f6a21cce564678262002f7"
+    },
+    {
+      "path": "results/replay_check.json",
+      "bytes": 941,
+      "sha256": "d421e270bb4aacff26260091f89d2dea3c527331e691eb153c9b362cd91cb9a5"
+    },
+    {
+      "path": "src/build_report.py",
+      "bytes": 7689,
+      "sha256": "cd95c6b56ce92d594238919acc6c42762f0666262e155fc7f0038c08a04835e4"
+    },
+    {
+      "path": "src/reproduce.py",
+      "bytes": 13338,
+      "sha256": "f6b8ebfeadb766f72fcf9fd7d9a30473b387d15f8e899d628738e84cc2c651ee"
+    }
+  ]
+}

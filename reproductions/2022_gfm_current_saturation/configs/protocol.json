@@ -1,0 +1,46 @@
+{
+  "doi": "10.1109/TPWRS.2021.3107959",
+  "title": "Transient Stability Assessment and Enhancement of Grid-Forming Converters Embedding Current Reference Saturation as Current Limiting Strategy",
+  "source": {
+    "version": "HAL author manuscript with repository cover",
+    "repository": "https://hal.science/hal-03966325v1",
+    "pdf_sha256": "0034f2ed2940970a6df25a2c15373f02ad746d58a35bb7f8e31d09cf1b96a32c",
+    "locations": {"model": "PDF pp. 4–5, Eqs. (1)–(5)", "tables": "PDF pp. 6–7, 9, Tables I–IV", "shift": "PDF pp. 7–8, Eqs. (10)–(14) and Fig. 9"}
+  },
+  "scope": "Single-converter lossless quasi-static power-angle model under the paper's balanced 100% sag. Compare Tables II–IV, reduced-model damping and the saturation-angle bound.",
+  "base": {"power_mw": 1000, "ac_voltage_kv": 320, "omega_b_rad_s": 314.16},
+  "plant": {"grid_voltage_pu": 1.0, "converter_voltage_pu": 1.0, "x_c_pu": 0.15, "x_g_pu": 0.1, "i_max_pu": 1.2},
+  "powers_pu": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5],
+  "scenarios": [
+    {"table": "II", "inertia_s": 5.0, "kp_pu": 0.007, "phi_rad": 0.0, "paper_predicted_ms": [41, 69, 99, 133, 173, 221], "paper_dynamic_ms": [38, 63, 91, 120, 157, 204]},
+    {"table": "III", "inertia_s": 1.25, "kp_pu": 0.014, "phi_rad": 0.0, "paper_predicted_ms": [20, 34, 50, 67, 86, 110], "paper_dynamic_ms": [17, 28, 44, 58, 78, 98]},
+    {"table": "IV", "inertia_s": 5.0, "kp_pu": 0.007, "phi_rad": 0.8, "paper_predicted_ms": [96, 135, 175, 217, 266, 325], "paper_dynamic_ms": [94, 130, 164, 204, 247, 304]}
+  ],
+  "angle_bound": {"scr_range": [1.2, 14.0], "power_range_pu": [0.0, 1.0], "paper_fig9_min_rad": 0.809, "paper_selected_rad": 0.8, "fig10_larger_angle_rad": 1.5},
+  "rated_trajectories": [
+    {"table": "II", "duration_ms": 35, "label": "Reduced model below boundary"},
+    {"table": "II", "duration_ms": 38, "label": "Fig. 7 shorter duration"},
+    {"table": "II", "duration_ms": 45, "label": "Fig. 7 longer duration"},
+    {"table": "IV", "duration_ms": 94, "label": "Table IV detailed-simulation CCT"}
+  ],
+  "numerics": {
+    "solver": {"method": "DOP853", "rtol": 1e-10, "atol": 1e-12, "max_step": 0.02},
+    "refined_solver": {"method": "DOP853", "rtol": 1e-12, "atol": 1e-14, "max_step": 0.01},
+    "saddle_offset_rad": 1e-7,
+    "refined_saddle_offset_rad": 1e-8,
+    "forward_bracket_half_width_ms": 0.25,
+    "max_forward_time_s": 20.0,
+    "archive_step_s": 0.001
+  },
+  "checks": {
+    "paper_integer_ms_absolute_tolerance": 1.0,
+    "analytic_vs_independent_energy_or_saddle_ms": 0.0001,
+    "refinement_ms": 0.0001,
+    "phi_fig9_rad_absolute_tolerance": 0.0005
+  },
+  "scope_exclusions": [
+    "Generic sag, line reclosing, filter dynamics, DC bus, switching model, hardware and protection settings.",
+    "The paper's dynamic CCT column is a comparison target. The reduced model uses its own continuous IP dynamics, with instantaneous transitions and no inner-loop states."
+  ],
+  "freeze_note": "Source values were visually checked after a feasibility prototype. This file fixes the inputs, tolerances and archived experiment before the reported runs. The paper's integer times are recorded as printed."
+}
