@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPEL.2020.3019311",
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "a08b78c0899b50db377f280843b42370575ac3243ac72b41fd262aab3b7b99cc",
+  "implementation_sha256": {
+    "src/model.py": "551571507ebd3b301123ea60b3494851037c75c4bab881b03fa1225164216cf3",
+    "src/reproduce.py": "76f1ee2c3727fbbdf3b046031e9aebe92806059aab93f7d3e150701f0e27b647",
+    "src/plots.py": "0f3a0c2429efdc71f9e81991d6b651ac037c677c139ec868718afef88d1657bd",
+    "verification/independent.py": "efea98a2a71dfd53d43af6ad9b4e112d138b3bd7ec54182e59630df68e91eebe"
+  },
+  "data_sha256": {
+    "metrics.json": "c4137530a41685f6b8cf5bd817c79752b8cbbf08bb50b03d85e6d0fa0e6e66db",
+    "phase_portraits.npz": "81b446e12ef0dafda3d0afb8172f1153f323d2da8f98a8c5a2912bf5e8bde58d",
+    "four_converter_steps.npz": "76b9fb82330610dd7eb187135ab01d022054ec73e16d7609351aebb23ceb62b3",
+    "large_step_probe.npz": "ceaa2435a7cc523792e39e229551898ea8546d0941fd68249a68d9ff25c84614"
+  },
+  "figures_sha256": {
+    "load_limits.png": "400a4670d5e867e6169ace0f9fa8ec2b7ea02baeb8a2d7187b73099b1f73c050",
+    "phase_portraits.png": "e33f45df835575a8475ea87756f3bb3f34752fde0568c0e47659b9320b7393a9",
+    "finite_load_steps.png": "542af71725211d9c04de26df69e0ca4b8f4bab2ec3e8a813e1bd4e8bbcfc0933",
+    "four_converter_steps.png": "ed85ca347777976c8267a7c4186cd1d14ef220389e2bfa78230289f8653f0639"
+  },
+  "checks_passed": 12,
+  "checks_total": 12
+}

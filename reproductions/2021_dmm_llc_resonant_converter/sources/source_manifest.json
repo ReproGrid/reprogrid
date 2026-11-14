@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2020.2998746",
+  "title": "A Direct Mapped Method for Accurate Modeling and Real-Time Simulation of High Switching Frequency Resonant Converters",
+  "authors": [
+    "Hossein Chalangar",
+    "Tarek Ould-Bachir",
+    "Keyhan Sheshyekani",
+    "Jean Mahseredjian"
+  ],
+  "journal": "IEEE Transactions on Industrial Electronics 68(7), 6348–6357",
+  "issue_date": "2021-07",
+  "openalex_id": "W3033181201",
+  "citations_in_2026_11_10_snapshot": 38,
+  "official_record": "https://publications.polymtl.ca/47415/",
+  "repository_record": "https://arxiv.org/abs/2006.04155v1",
+  "source": {
+    "path": "sources/arxiv_author_manuscript.pdf",
+    "url": "https://arxiv.org/pdf/2006.04155v1",
+    "bytes": 1219840,
+    "sha256": "dc7413ba7d1903889a44681acff066dd13a0562317759e1abb7ea756da8f57e4",
+    "version": "Author manuscript arXiv:2006.04155v1, 2020-06-07",
+    "inspected": "pp. 2–8, Figs. 1, 3–7, 10–11, Tables I–IV, Eqs. (1)–(4), (5)–(13), (20)–(31), Section IV.D"
+  },
+  "corroborating_thesis": {
+    "repository": "https://publications.polymtl.ca/9473/",
+    "pdf_url": "https://publications.polymtl.ca/9473/1/2021_HosseinChalangar.pdf",
+    "sha256": "3084bda44193154c10d00d423dd98a78d8744b5e4a0b14a2de7dea0da639fa8b",
+    "inspected": "PDF pp. 51–55 and 60–63, Fig. 3.5–3.6, Fig. 3.10–3.11 and Table 3.2"
+  },
+  "unavailable": [
+    "Figs. 3–4 switching frequency or PWM phase",
+    "exact startup histories and device resistances",
+    "original FE and EMTP projects",
+    "aligned raw waveforms",
+    "FPGA coefficients, timing reports and executable design"
+  ],
+  "source_pdf_included_in_handoff": false
+}

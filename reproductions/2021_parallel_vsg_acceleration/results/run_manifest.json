@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "paper_doi": "10.1109/TPEL.2021.3051272",
+  "python": "3.12.14",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "5cdbbb5cc02958b3d27be07486e2bd897fbd2155adb3e2d87dd56cedef2a7ee7",
+  "implementation_sha256": {
+    "src/model.py": "fbe896ce9c26dfea9ac9c0f276275c2e1dfa2f944f3ae4c8ae28f1363056e4fd",
+    "src/reproduce.py": "fcf8b22058b5aeadb10f190e16f362999979f1953820b9d7b45bac6b10b711d8",
+    "src/plots.py": "df6dd696c1596e8463ee79200441c36294abe5ee217dbe5ab12913e2ab443483",
+    "verification/independent.py": "390a5dd4a445a6b0ae3dbf7e19c9633b0c7e5e47572e6cf99a61ba751db5a721",
+    "verification/fig5_6_bode.csv": "698a366313bc195c4506954b37810cfaca3526dfdd61f4c96a1925db6e67fdb9",
+    "verification/fig8_9_poles.csv": "fe5789fd475840b60e574ab459105458798f2fc9248e2347d296ab247c8b2942"
+  },
+  "data_sha256": {
+    "metrics.json": "217151832cfce57f98c384692b4b777cc341063779aa34e68f197788d74ebe9b",
+    "frequency_responses.npz": "75c3130608d35fc8c32e6dc492f04080b0442328d3a96524e3566245c6cb4f2c",
+    "pole_loci.npz": "f4a03064246fb484318e72ccc2ce8541632867c5632ff626402e646ee31364ce",
+    "load_step.npz": "8fc5723db441e87e48ec62cc03440f35164487a666629554ff0ce0e9abb8fd3e"
+  },
+  "figures_sha256": {
+    "frequency_responses.png": "e718257be846f6397f08cd3caa58032f2af24a86fd5b629f6e81728a14a89ef2",
+    "pole_loci.png": "b293ffc794dd1c39aca0b193ea936e7ea8970550d150d4516a6cd8102d0e9c6a",
+    "load_step.png": "faa765db277b01a96a112da11583e2fa2305c1d4ceb5b9fe864b6d997d0b861e"
+  },
+  "checks_passed": 12,
+  "checks_total": 12
+}

@@ -1,0 +1,16 @@
+{
+  "doi": "10.1109/TPWRS.2021.3097954",
+  "state": "report_ready",
+  "display_state_zh": "平衡点和低压稳定域复现完成",
+  "outcome": "synchronverter_equilibria_and_nonnested_low_voltage_stability_regions_reproduced",
+  "scope_zh": "算例 VI-A/B 标称平衡点、局部极点和 Fig. 11(a) 稳定区。",
+  "hardware_validation": false,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 5,
+  "checks_total": 5,
+  "critical_gaps": [
+    "Fig. 11(b) contours, field current saturation boundaries and hardware were outside this run."
+  ],
+  "report_sha256": "da22d25431c9885e99911fcf74d88077fa29f2cc27e346ad2761acc0dccfb06c",
+  "source_report_sha256": "da22d25431c9885e99911fcf74d88077fa29f2cc27e346ad2761acc0dccfb06c"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2020.3005074",
+  "title": "A Disturbance Observer-Based Current-Constrained Controller for Speed Regulation of PMSM Systems Subject to Unmatched Disturbances",
+  "authors": [
+    "Chen Dai",
+    "Tianliang Guo",
+    "Jun Yang",
+    "Shihua Li"
+  ],
+  "journal": "IEEE Transactions on Industrial Electronics 68(1), 767–775",
+  "early_access": "2020-07-03",
+  "issue_date": "2021-01",
+  "ieee_record": "https://ieeexplore.ieee.org/document/9133318/",
+  "repository_record": "https://repository.lboro.ac.uk/articles/journal_contribution/A_disturbance_observer-based_current-constrained_controller_for_speed_regulation_of_PMSM_systems_subject_to_unmatched_disturbances/16811338",
+  "source": {
+    "path": "sources/loughborough_author_manuscript.pdf",
+    "url": "https://ndownloader.figshare.com/files/31086472",
+    "bytes": 3485084,
+    "sha256": "681c26d3ec79109adf3f56eb7cf2b70765b0867e1b5ce487f1b963d31994e223",
+    "version": "Loughborough University repository author manuscript, Figshare item 16811338",
+    "inspected": "PDF pp. 2–7, Eqs. (1)–(5), (8), (13)–(17), (20)–(21), Assumptions 1–2, Remark 4, Tables I–II, Figs. 2–3 and Section V.A"
+  },
+  "screening_snapshot": "research/screening_2026-11-10/catalog.jsonl",
+  "openalex_id": "W3038177802",
+  "citations_in_snapshot": 192,
+  "figure_comparison": "The original Simulink project and Fig. 3 waveforms were not located. Published Table II values and visible qualitative ranges are recorded independently from solver agreement. No figure tracing or gain fitting was used.",
+  "source_pdf_included_in_handoff": false
+}

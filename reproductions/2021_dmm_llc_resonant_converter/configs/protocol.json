@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2020.2998746",
+  "scope": "Fig. 1 full-bridge LLC with a transformer and four-diode bridge, Table I and Sections II.C–III. Reconstruct Fig. 3–4 mechanisms and the published Set #2 312.5 kHz and 500 kHz operating frequencies in software.",
+  "table_i": {
+    "set1": {"lr_h": 0.000025, "lm_h": 0.000150, "cr_f": 4e-8, "co_f": 0.001, "load_ohm": 30.0, "ratio_primary_secondary": 1.5, "input_v": 600.0, "rated_output_v": 400.0, "rated_power_w": 5300, "listed_frequencies_hz": [160000, 60000]},
+    "set2": {"lr_h": 0.0000045, "lm_h": 0.0000216, "cr_f": 2.2e-8, "co_f": 0.003, "load_ohm": 0.144, "ratio_primary_secondary": 33.0, "input_v": 400.0, "rated_output_v": 12.0, "rated_power_w": 1000, "listed_frequencies_hz": [500000, 210000]}
+  },
+  "frequency_hz": {
+    "set1": {"primary": 100000, "sensitivity": [80000, 120000, 160000], "basis": "Fig. 3 numerical switching frequency is missing. The primary 100 kHz is a round value near the geometric center of the two Table I resonances. 80/120 kHz test the interval and 160 kHz tests the series resonance neighborhood."},
+    "set2": {"primary": 312500, "sensitivity": [400000, 500000], "basis": "312.5 and 500 kHz are specified in Section IV.D. The Fig. 4 switching frequency remains unspecified. 400 kHz is an interior sensitivity point."}
+  },
+  "unreported_inputs": {
+    "baseline_switch_ohm": {"on": 0.001, "off": 100000.0},
+    "sensitivity_switch_ohm": [{"on": 0.01, "off": 100000.0}, {"on": 0.001, "off": 10000.0}],
+    "basis": "The manuscript uses two-valued resistances and does not give LLC-specific numerical values. The baseline reuses the settings of the preceding resonant-boost reproduction. Vary on and off resistance separately. Use the same values for four gated switches and four diodes. No forward diode drop, transformer parasitics or switching transition model is given.",
+    "initialization": "Zero inductor currents and capacitor voltages, then an immediately energized DC source. In the precharge sensitivity only Co starts at the stated rated voltage. Neither initial state was inferred from published curves.",
+    "gates": "50% complementary diagonals (Eq. 26) with initial positive differential voltage; no additional dead time. BE uses sample endpoint gating. Explicit FE uses the previous physical state and drive for its derivatives and the predicted rectifier AC port current for pair selection (Eq. 4). Native steps detect gates on their own grid. The separately labeled locked refinement uses the 15 ns sample edge times."
+  },
+  "runs": {
+    "stop_ps": 48000000000,
+    "save_tail_from_ps": 47850000000,
+    "evaluate_tail_from_ps": 47900000000,
+    "nominal_step_ps": 15000,
+    "extra_steps_ps": [7500, 30000],
+    "fixed_15ns_gate_refinement_steps_ps": [3750, 7500],
+    "reference_step_ps": 1875,
+    "startup_save_interval_ps": 1500000,
+    "inverters": [6, 9],
+    "rectifier_masks": [0, 6, 9, 15],
+    "numerical_cutoff": {"max_abs_tank_current_a": 10000, "max_voltage_multiple_of_input": 20},
+    "fe_note": "The FE comparison reconstructs the published Euler recurrence with the diode pair from the predicted current and the same physical network limits. The authors' FE implementation is unavailable. BE with rectifier pairs alone uses the sign of the Norton history current. It isolates the effect of dropping blocking within the same BE integrator.",
+    "energization_sensitivities": {
+      "zero_initial_state": true,
+      "rated_output_precharge": "Zero branch currents and vCr, with Co charged to the rated output in Table I. Unspecified initial conditions are not selected to match a plot. Include the Set #1 160 kHz startup branch because the zero-state run reaches the numerical cutoff."
+    },
+    "section_iv_d_normal_load_schedule": {
+      "set": "set2", "simulator_step_ps": 25000, "end_ps": 600000000000,
+      "sample_stride_ps": 100000000, "tail_from_ps": 599986000000, "figure_centers_s": [0.05, 0.55],
+      "linear_ramp": {"start_s": 0.25, "end_s": 0.48, "start_hz": 312500, "end_hz": 500000},
+      "basis": "Section IV.D states the frequency endpoints and intervals. A linear frequency ramp with integrated phase is assumed. Nominal R_L remains connected. The original shorted-load interval is outside this normal-load replay. Relative FPGA errors in Table IV are a different comparison."
+    }
+  },
+  "criteria": {
+    "max_dmm_reference_current_error_a": 5e-6,
+    "max_dmm_reference_voltage_error_v": 1e-5,
+    "max_relative_discrete_energy_residual": 1e-7,
+    "max_diode_violation_v": 1e-7,
+    "max_relative_rectifier_kcl_residual": 1e-7,
+    "max_relative_single_stage_history_error": 1e-10,
+    "nodal_tie_v": 1e-9,
+    "require_no_mode_mismatches_outside_nodal_tie": true
+  }
+}

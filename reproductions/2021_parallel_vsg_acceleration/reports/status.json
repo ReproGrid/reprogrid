@@ -1,0 +1,45 @@
+{
+  "doi": "10.1109/TPEL.2021.3051272",
+  "state": "report_ready",
+  "display_state_zh": "已复现图 5–6 频响和图 8–9 极点",
+  "outcome": "parallel_vsg_frequency_response_and_pole_loci_reproduced_from_topology",
+  "scope_zh": "按已公开参数和双 VSG 拓扑重算图 5–6 频响、图 8–9 主导极点和小负荷阶跃。",
+  "scope": "Figure 5–6 load-to-active-power frequency responses, Figure 8–9 eigenvalues and a separate small-load-step calculation.",
+  "public_fulltext_url": "https://vbn.aau.dk/en/publications/active-power-oscillation-damping-based-on-acceleration-control-in/",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 12,
+  "checks_total": 12,
+  "figure_checks_passed": 5,
+  "figure_checks_total": 5,
+  "key_results": {
+    "fig5_peak_frequency_hz": {
+      "traditional": 2.624218543384442,
+      "power_only": 9.682778562612496,
+      "acceleration_only": 1.1117317272815919,
+      "combined": 0.6208690342300635
+    },
+    "bode_max_magnitude_rmse_db": 0.11945323948479314,
+    "bode_max_phase_rmse_deg": 0.7985111627926142,
+    "pole_max_locus_rmse_per_s": 0.42437955122012444,
+    "combined_step_peak_reduction": 0.3679947442645476
+  },
+  "critical_gaps": [
+    "Actual per-unit bus voltage and unrounded K1/K2 or the authors' linearization files are unavailable. Nominal and sensitivity points were calculated from the circuit and published ratings.",
+    "Experimental Fig. 14–15 waveforms, inner-loop settings and implementation timing were outside the verified scope."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "state_notation_consistency",
+      "source": "Eq. (5), Eq. (7), Fig. 7 and Eqs. (16), (30)",
+      "finding": "Eq. (5) prints accelerations, while the dynamics and rotor-angle kinematics require speed deviations as the first two states. The feedback applied to the state derivative is the derivative of the auxiliary power signal."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "4fee4bc3c7931ec625c74c44d8ed562ed83cb5e3f6631675fcb702d422195e4f",
+  "primary_manifest_sha256": "24494f6e755c8f6dcd1523cde7c612bcd4d7541ad1bc27d1d63a6e3e4c755b33",
+  "source_report_sha256": "c1bfb8dce088d3605a9241ec3ebf7cd0404d4105b0127fbfff1df75722c0e159"
+}

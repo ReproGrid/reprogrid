@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "data_sha256_match": {
+    "deep_metrics.json": true,
+    "explicit_diagnostics.npz": true,
+    "sequence_trajectories.npz": true
+  },
+  "figures_sha256_match": {
+    "explicit_step_sweep.png": true,
+    "fig11_waveform_comparison.png": true,
+    "fig3_4_waveform_comparison.png": true,
+    "full_sequence.png": true,
+    "short_and_recovery.png": true
+  },
+  "arrays_exact": {
+    "explicit_diagnostics.npz": {
+      "set1_100000_15000_backward_pairs": true,
+      "set1_100000_15000_dmm": true,
+      "set1_100000_15000_forward_full": true,
+      "set1_100000_15000_forward_pairs": true,
+      "set2_350000_15000_backward_pairs": true,
+      "set2_350000_15000_dmm": true,
+      "set2_350000_15000_forward_full": true,
+      "set2_350000_15000_forward_pairs": true,
+      "set2_350000_30000_forward_pairs": true,
+      "set2_350000_45000_forward_pairs": true,
+      "set2_350000_60000_forward_pairs": true
+    },
+    "sequence_trajectories.npz": {
+      "fixed_point": true,
+      "fixed_point_table_iii": true,
+      "ideal_continuous": true,
+      "ideal_fine": true,
+      "ideal_reset": true,
+      "rectifier_10m": true,
+      "shunt_0p1m": true,
+      "shunt_10m": true,
+      "shunt_1m": true,
+      "single_stage_unaligned": true
+    }
+  }
+}

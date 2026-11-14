@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "data_sha256_match": {
+    "frequency_responses.npz": true,
+    "load_step.npz": true,
+    "metrics.json": true,
+    "pole_loci.npz": true
+  },
+  "figures_sha256_match": {
+    "frequency_responses.png": true,
+    "load_step.png": true,
+    "pole_loci.png": true
+  },
+  "arrays_exact": {
+    "frequency_responses.npz": {
+      "fig5_acceleration_only": true,
+      "fig5_combined": true,
+      "fig5_power_only": true,
+      "fig5_traditional": true,
+      "fig6_0.5": true,
+      "fig6_1.0": true,
+      "fig6_1.5": true,
+      "frequency_hz": true,
+      "sensitivity_aggregate_preload_acceleration_only": true,
+      "sensitivity_aggregate_preload_combined": true,
+      "sensitivity_aggregate_preload_power_only": true,
+      "sensitivity_aggregate_preload_traditional": true,
+      "sensitivity_bus_voltage_0.95_acceleration_only": true,
+      "sensitivity_bus_voltage_0.95_combined": true,
+      "sensitivity_bus_voltage_0.95_power_only": true,
+      "sensitivity_bus_voltage_0.95_traditional": true,
+      "sensitivity_bus_voltage_1.05_acceleration_only": true,
+      "sensitivity_bus_voltage_1.05_combined": true,
+      "sensitivity_bus_voltage_1.05_power_only": true,
+      "sensitivity_bus_voltage_1.05_traditional": true
+    },
+    "load_step.npz": {
+      "acceleration_only": true,
+      "combined": true,
+      "power_only": true,
+      "time_s": true,
+      "traditional": true
+    },
+    "pole_loci.npz": {
+      "fig8_combined": true,
+      "fig8_h1_s": true,
+      "fig8_traditional": true,
+      "fig9_30.0": true,
+      "fig9_50.0": true,
+      "fig9_70.0": true,
+      "fig9_dense_30.0": true,
+      "fig9_dense_50.0": true,
+      "fig9_dense_70.0": true,
+      "fig9_dense_k11": true,
+      "fig9_k11": true
+    }
+  }
+}

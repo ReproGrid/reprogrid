@@ -1,0 +1,42 @@
+{
+  "doi": "10.1109/TPWRS.2021.3097954",
+  "scope": "Section VI-A/B nominal equilibria and local stability of the interior fifth-order synchronverter model; Example VI-A Fig. 11 contours reconstructed on the plotted viewport.",
+  "source": {
+    "url": "https://arxiv.org/abs/2103.07952",
+    "pdf_sha256": "a8075bf5537f0348675c0067bb590ce147d6d528f468143f68225b8145534281",
+    "locations": "Eqs. (7)–(21), (43)–(44), Section VI-A/B, Figs. 10–11"
+  },
+  "frequency_hz": 50,
+  "examples": {
+    "VI-A": {
+      "phase_rms_v": 230, "physical_l_h": 0.00227, "physical_r_ohm": 0.075,
+      "virtual_impedance_scale": 25, "m_h": 3.5, "j": 0.2, "dp": 3.0, "k_a": 5000,
+      "printed_torque_nm": 31.69, "setpoint_w": 9000, "q_set_var": 0,
+      "printed_states_i_d_i_q_omega_delta_deg_i_f": [
+        [-15.24, -16.68, 314.16, 42.42, 0.54], [-235.04, -2.38, 314.16, -90.58, 3.81]
+      ],
+      "printed_p_w": [9000, -93640]
+    },
+    "VI-B": {
+      "phase_rms_v": 6000, "physical_l_h": 0.0275, "physical_r_ohm": 1.08,
+      "virtual_impedance_scale": 30, "m_h": 33, "j": 20.26, "dp": 168.87, "k_a": 5000,
+      "printed_torque_nm": 1830, "setpoint_w": 500000, "q_set_var": 0,
+      "printed_states_i_d_i_q_omega_delta_deg_i_f": [
+        [-34.73, -33.29, 314.16, 46.21, 1.67], [-368.81, -6.01, 314.16, -90.93, 9.22]
+      ],
+      "printed_p_w": [500000, -3830000]
+    }
+  },
+  "fig11": {
+    "example": "VI-A", "p_kw": [-50, 160], "q_kvar": [-50, 210],
+    "plotted_integrator_gain_ka_h": [2.5, 14.3, 40, 1000], "grid_samples": 261,
+    "gain_semantics": "Use the four printed Ktilde settings directly; the viewport is read from the axes. Grid resolution is a reproduction choice."
+  },
+  "checks": {
+    "printed_state_max_error_per_component": 0.0051,
+    "printed_power_max_error_w": [5, 5000],
+    "equilibrium_rhs_max_error": 1e-8,
+    "numeric_jacobian_relative_max_error": 1e-7,
+    "independent_root_scaled_max_error": 1e-8
+  }
+}

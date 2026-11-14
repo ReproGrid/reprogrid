@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2021.3051272",
+  "title": "Active Power Oscillation Damping Based on Acceleration Control in Paralleled Virtual Synchronous Generators System",
+  "authors": [
+    "Meng Chen",
+    "Dao Zhou",
+    "Frede Blaabjerg"
+  ],
+  "journal": "IEEE Transactions on Power Electronics, 36(8), 9501–9510",
+  "repository_record": "https://vbn.aau.dk/en/publications/active-power-oscillation-damping-based-on-acceleration-control-in/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/452682594/FINAL_VERSION.pdf",
+    "path": "sources/aalborg_author_manuscript.pdf",
+    "sha256": "71e7fc7bcf131369b51e2188ef1e7da45533bf24213918ada422055f393f7551",
+    "version": "Accepted author manuscript with Aalborg repository cover.",
+    "inspected": "Sections II–IV, Eqs. (1)–(30), Figs. 2–9, and Table I."
+  },
+  "related_primary_sources": [
+    {
+      "doi": "10.54337/aau460278660",
+      "url": "https://vbn.aau.dk/ws/portalfiles/portal/549538249/PHD_MC_2021_E_pdf.pdf",
+      "path": "sources/chen_thesis.pdf",
+      "sha256": "7c55c04f13e8fd35f2a26c8f1186463c579c4101a26cc5cba5621a623bc794d8",
+      "evidence": "Table 4.1 confirms the 380 V line-to-line RMS base and per-converter 5 kW rating."
+    },
+    {
+      "doi": "10.1109/TSG.2021.3102994",
+      "url": "https://vbn.aau.dk/ws/portalfiles/portal/452682630/FINAL_VERSION.pdf",
+      "path": "sources/chen_tsg_companion.pdf",
+      "sha256": "857c030f00a8945a03a7742edc06fd120310d3bd5fa1711e9432943c9d26be81",
+      "evidence": "Fig. 6 and Eqs. (7)–(15) give the equivalent series reactance and the active-power slopes for the two-VSG reduction."
+    }
+  ],
+  "numeric_figure_readback": [
+    {
+      "path": "verification/fig5_6_bode.csv",
+      "rows": 992,
+      "sha256": "698a366313bc195c4506954b37810cfaca3526dfdd61f4c96a1925db6e67fdb9"
+    },
+    {
+      "path": "verification/fig8_9_poles.csv",
+      "rows": 329,
+      "sha256": "fe5789fd475840b60e574ab459105458798f2fc9248e2347d296ab247c8b2942"
+    }
+  ],
+  "source_pdfs_included_in_handoff": false
+}

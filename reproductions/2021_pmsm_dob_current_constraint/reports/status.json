@@ -1,0 +1,61 @@
+{
+  "doi": "10.1109/TIE.2020.3005074",
+  "state": "report_ready",
+  "display_state_zh": "方程级复现，表 II 未复现",
+  "outcome": "pmsm_dob_current_constraints_reconstruction_with_parameter_and_equation_discrepancies",
+  "scope_zh": "按原文 PMSM 模型与增益核对限流、阶跃和正弦过载，保留极对数和控制律歧义。",
+  "public_fulltext_url": "https://repository.lboro.ac.uk/articles/journal_contribution/A_disturbance_observer-based_current-constrained_controller_for_speed_regulation_of_PMSM_systems_subject_to_unmatched_disturbances/16811338",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 27,
+  "checks_total": 27,
+  "key_results": {
+    "startup_high_dobc_peak_a": 123.30016083087337,
+    "paper_high_dobc_peak_a": 10.268,
+    "startup_dob_cc_eq16_peak_a": 9.999980952541149,
+    "load_step_eq16_peak_a": 9.99996664650214,
+    "load_step_eq16_min_speed_rpm": 2993.5962147243117,
+    "load_at_3000rpm_10a_nm_by_pole_pairs": {
+      "4": 3.0075221436343558,
+      "2": 1.3875221436343554
+    },
+    "exact_sinusoidal_load_peak_nm": 3.2488739419381973,
+    "sinusoid_approach_end_s": {
+      "equation_16": 1.6085926183400723,
+      "equation_17": 1.6085926182845385
+    }
+  },
+  "critical_gaps": [
+    "Original Simulink model, raw waveforms, observer initial state, ramp timing, exact voltage placement and Table II thresholds were unavailable.",
+    "The hardware controller update law and test data were unavailable."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "pole_pairs_conflict",
+      "source": "Eq. (1), Table I",
+      "finding": "The same symbol is used for pole pairs and labeled Poles in the table."
+    },
+    {
+      "type": "non_equivalent_laws",
+      "source": "Eqs. (16), (17)",
+      "finding": "Transforming Eq. (16) contributes a factor of (np*flux)^2 in the barrier denominator."
+    },
+    {
+      "type": "overload_and_proof_applicability",
+      "source": "Assumptions 1–2, Eqs. (20)–(21), Section IV",
+      "finding": "The printed sufficient gain interval is empty. The published 3.2 N·m and sinusoidal maxima exceed the 10 A capacity at 3000 rpm under both pole readings."
+    },
+    {
+      "type": "startup_current_discrepancy",
+      "source": "Eq. (8), Section IV, Fig. 3 and Table II",
+      "finding": "The independently integrated high-gain Eq. (8) controller with the printed gains and ±220 V q-axis clipping peaks around 123 A, versus 10.268 A in Table II."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "e35188093b53e6aa80b3d064adfdf76419048398f0936dbb9ed968f6e2dcf24d",
+  "primary_manifest_sha256": "a3fa86cb0b992f5ef0667c9629a74b5c3f08a229e03ed9afbf9ed5a3e9c8fd36",
+  "source_report_sha256": "bf0c24d66ef5f8209da346045b98592a395a66051229edbce956aef2e8cb256f"
+}

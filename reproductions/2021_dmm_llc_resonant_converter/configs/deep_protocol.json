@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2020.2998746",
+  "base_protocol": "protocol.json",
+  "scope": "Fig. 10 whole sequence, Fig. 11 waveform comparison, Table IV metric comparison and the single-stage arithmetic of Eq. (31). Freeze Table I values and the baseline switch settings from the initial reproduction.",
+  "timing_ps": {
+    "stop": 600000000000,
+    "clock": 25000,
+    "fault_start": 100000000000,
+    "fault_end": 130000000000,
+    "ramp_start": 250000000000,
+    "ramp_end": 480000000000,
+    "frequency_hold": 10000000000,
+    "overview_stride": 100000000,
+    "transition_stride": 25000000,
+    "metric_boundaries": [0, 100000000000, 130000000000, 250000000000, 480000000000, 600000000000]
+  },
+  "gate_schedule": {
+    "initial_half_period_ticks": 64,
+    "final_half_period_ticks": 40,
+    "basis": "Published Fig. 10(b) vector stair levels and dwell times uniquely match a 25 ns grid with integer half-period lengths 64 through 40. Start decreasing the length at 0.25 s, one tick per 10 ms. This is a readback of an input schedule independent of the fitted response; use exact integer lengths and stated event times.",
+    "primary_phase": "continuous_phase",
+    "sensitivity_phase": "reset_at_change",
+    "phase_note": "Both assume initially positive gate. Continuous phase integrates each frequency interval. Reset starts a positive half cycle at a frequency change. The exact counter policy of the authors' FPGA is undisclosed. Same load timing and no additional gate dead time."
+  },
+  "output_short": {
+    "model": "Parallel shunt across the output and capacitor from 0.10 to 0.13 s. Use the published ideal short as the limit; in that case vo is imposed exactly zero and the voltage jump removes the previous capacitor energy. Resolve at the first BE endpoint in the interval.",
+    "resistance_sensitivity_ohm": [0.0001, 0.001, 0.01],
+    "finite_shunt_note": "Nominal load stays connected in parallel. No measured ESR, fixture or switch delay is known. The finite sensitivities quantify how different feasible shunt equivalents affect recovery and current.",
+    "device_split_note": "Vary the rectifier on-resistance alone by 10× at the same short condition to show the effect of its value. Existing nominal tests already vary both bridges together."
+  },
+  "cases": [
+    {"id": "ideal_continuous", "phase": "continuous_phase", "short_ohm": 0, "step_ps": 25000, "verify": true, "pipeline": true},
+    {"id": "ideal_reset", "phase": "reset_at_change", "short_ohm": 0, "step_ps": 25000},
+    {"id": "shunt_0p1m", "phase": "continuous_phase", "short_ohm": 0.0001, "step_ps": 25000},
+    {"id": "shunt_1m", "phase": "continuous_phase", "short_ohm": 0.001, "step_ps": 25000, "verify": true},
+    {"id": "shunt_10m", "phase": "continuous_phase", "short_ohm": 0.01, "step_ps": 25000},
+    {"id": "rectifier_10m", "phase": "continuous_phase", "short_ohm": 0, "step_ps": 25000, "rectifier_ron_ohm": 0.01},
+    {"id": "ideal_fine", "phase": "continuous_phase", "short_ohm": 0, "step_ps": 6250}
+  ],
+  "figure_3_4_detail": {
+    "frequencies_hz": {"set1": 100000, "set2": 350000},
+    "basis": "Set #1 retains the first reproduction assumption. The two like-polarity current zero-crossing intervals in Fig. 4 give about 350 kHz. A 350 kHz hypothesis is tested independently and is not treated as a known original gate frequency. Phase remains uncalibrated.",
+    "step_ps": 15000,
+    "stress_set2_hz": [210000, 250000, 312500, 350000, 400000, 500000],
+    "stress_step_ps": [15000, 30000, 45000, 60000],
+    "fe_full_note": "Full explicit FE diagnostic determines the true branch from the instantaneous differential Norton current source, output capacitor voltage and the finite RSM conductance. Its stiffness is expected to differ from the forced-pair approximation."
+  },
+  "fixed_point_trial": {
+    "case": "ideal_continuous",
+    "vector_signed_bits": 25,
+    "vector_fraction_bits": 23,
+    "coefficient_signed_bits": 35,
+    "coefficient_fraction_bits": 29,
+    "retained_input_scale": "V_in",
+    "state_scales": "[2*V_in/sqrt(L_r/C_r), 2*V_in/sqrt(L_r/C_r), 2*V_in, 2*V_in/n]",
+    "arithmetic": "Independent fixed-point study using Section IV.B word lengths. Normalize each sign row by its largest absolute scaled coefficient. Quantize signed coefficients and state, multiply and accumulate exactly in integers, round to nearest (ties away from zero) and saturate each stored result. Initial stored state zero. Original ROMs, base units, internal truncation and RTL are unavailable.",
+    "table_iii_variant": {"vector_signed_bits": 25, "vector_fraction_bits": 22, "coefficient_signed_bits": 32, "coefficient_fraction_bits": 29,
+      "basis": "Table III labels the FPI and HRT format FXP 32.29/25.22. Keep normalized units and arithmetic identical in this branch."}
+  },
+  "validation": {"max_voltage_delta_v": 1e-5, "max_current_delta_a": 5e-6, "kcl_relative": 1e-7, "diode_voltage_v": 1e-7,
+    "single_stage_max_error_a_or_v": 5e-6},
+  "figure_windows": [
+    {"center_s": 0.05, "v_half_s": 0.000005, "i_half_s": 0.000004, "panels": "a,b"},
+    {"center_s": 0.10, "v_half_s": 0.00001, "i_half_s": 0.000005, "panels": "c,d"},
+    {"center_s": 0.26, "v_half_s": 0.0004, "i_half_s": 0.00001, "panels": "e,f"},
+    {"center_s": 0.55, "v_half_s": 0.000004, "i_half_s": 0.000003, "panels": "g,h"}
+  ],
+  "table_iv_published_percent_order_vo_ir_im": [[0.024,0.383,0.120],[0.001,0.001,0.016],[0.021,0.338,0.131],[0.006,0.391,0.131],[0.023,0.499,0.048],[0.018,0.336,0.124]],
+  "table_ii_published": {
+    "clock_mhz": [40,200,320],
+    "FPI": {"step_ns": [25,25,25], "io_ns": [50,50,50], "lut": [1090,1095,1223], "registers": [1224,1697,2373], "dsp": 88, "bram": 22},
+    "HRT": {"step_ns": [100,40,34.375], "io_ns": [200,80,68.75], "lut": [277,329,311], "registers": [211,350,498], "dsp": 22, "bram": 5.5}
+  },
+  "table_iii_published": {
+    "FPI": {"clock_label_mhz": 320, "step_ns": 25, "lut": 1095, "registers": 1697, "dsp": 88, "dsp_percent": 1.05},
+    "HRT": {"clock_label_mhz": 320, "step_ns": 40, "lut": 329, "registers": 350, "dsp": 22, "dsp_percent": 2.6}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2020.3019311",
+  "title": "System-Level Large-Signal Stability Analysis of Droop-Controlled DC Microgrids",
+  "authors": [
+    "Wenqiang Xie",
+    "Minxiao Han",
+    "Wenyuan Cao",
+    "Josep M. Guerrero",
+    "Juan C. Vasquez"
+  ],
+  "journal": "IEEE Transactions on Power Electronics 36(4), 4224–4236",
+  "repository_record": "https://vbn.aau.dk/en/publications/system-level-large-signal-stability-analysis-of-droop-controlled-/",
+  "source": {
+    "path": "sources/aalborg_author_manuscript.pdf",
+    "url": "https://vbn.aau.dk/ws/files/475857902/System_Level_Large_Signal_Stability_Analysis_of_Droop_Controlled_DC_Microgrids.pdf",
+    "sha256": "466c2360a7fbe775cfd13cd6d3a97d5b2c27b488036e5ecb6d1b98ef1e878d9f",
+    "version": "Aalborg accepted author manuscript with institutional cover.",
+    "inspected": "Sections II–VI, Eqs. (2), (5), (14)–(27), (32), (48), (52)–(54), Tables II–VII, Figs. 3 and 6–11."
+  },
+  "figure_comparison": "Exact tabulated inputs and limits are recorded in the protocol. The published Fig. 6–11 plots are raster images. They are used as qualitative checks, without tracing curves or fitting initial states or converter dynamics.",
+  "source_pdf_included_in_handoff": false
+}

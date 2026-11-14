@@ -1,0 +1,32 @@
+{
+  "doi": "10.1109/TIE.2020.3005074",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "protocol_sha256": "acf5d7ec68fe316b3b3b3b2f764133aae8f01d675656894ab57c8547dcc51057",
+  "implementation_sha256": {
+    "._build_report.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "._independent.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "._metrics.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "._model.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "._plots.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "._reproduce.py": "3fc313649417adbfc9adf24ec0e9fdeede66f5285df6790e574e41034f35c46e",
+    "independent.py": "b83325a016df02f6c10268cdc97c0732549475e8da3cff8af5f5d878d8514b15",
+    "metrics.py": "68713dde73dd3b1e4bc613ca774f0780c63d06aeac17de74cd7956b29b65f702",
+    "model.py": "f80c732f31310b9974edf38b4a6ba327c74e39ab43198ccd962f3056516e3033",
+    "plots.py": "26b1662fa3ddf2e8739bf7f4194661eb39ca6710f29817fd5857114ddfc40493",
+    "reproduce.py": "f41a2e9c2b51591be6f5ee1948fee578e3dfa2b8d400e272a293c441de5c4a0a"
+  },
+  "checks_passed": 27,
+  "checks_total": 27,
+  "data_sha256": {
+    "metrics.json": "8a9911190d955c4d04f1fe23dc428b69df02f3ecbe209f1925029ff06facd3c6",
+    "trajectories.npz": "f1abc04adbacae2c853420e0b770505ccee111720df7f248e8a7eb89d471ee80",
+    "verification_trajectories.npz": "eee19a188bebe721999140e221f0fc7738b369649a4cfe5340126f2dba135c09"
+  },
+  "figures_sha256": {
+    "startup_and_load_step.png": "488fc43352c9c1939246027c51cad20380171ef37d08b53cf0ff35a025a0d470",
+    "overload_boundary.png": "164c5baa90cc7631511f116a0d10da54833ce409bdede29b9f8d874499721d47",
+    "voltage_authority.png": "ce027e3bf71b2abcfc4c384e7d49fcdc7ca48fdd08c6482670b8ed31a37f5aa1"
+  }
+}

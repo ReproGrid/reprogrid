@@ -1,0 +1,257 @@
+{
+  "doi": "10.1109/TPWRS.2021.3097954",
+  "protocol_sha256": "4cbbc913334000785a1d3867655f038fa8c0ac5969475f1464162083e1d0fb2f",
+  "implementation_sha256": "f0d63c349c5663b4771a66dd44699f4ba74667c7ff20c24eaae26f75e5cfecaf",
+  "examples": {
+    "VI-A": {
+      "printed_torque_nm": 31.69,
+      "eq44_torque_nm": 31.694097315719688,
+      "computed_ktilde_a_h": 14288.690166235205,
+      "branches": [
+        {
+          "branch": "right",
+          "state_in_paper_units": [
+            -15.238117273217211,
+            -16.675622012732514,
+            314.1592653589793,
+            42.42094402710051,
+            0.5429653962756171
+          ],
+          "mirrored_state_in_paper_units": [
+            15.238117273217211,
+            16.675622012732514,
+            314.1592653589793,
+            222.42094402710052,
+            -0.5429653962756171
+          ],
+          "p_w": 8998.938517581337,
+          "q_var": 0,
+          "max_real_fourth_order_per_s": -7.447732189437946,
+          "max_real_fifth_order_per_s": -2.9404794164648376,
+          "eigenvalues_per_s": [
+            [
+              -32.52286448944865,
+              313.52694550952293
+            ],
+            [
+              -32.52286448944865,
+              -313.52694550952293
+            ],
+            [
+              -6.546543379411399,
+              10.329392305953261
+            ],
+            [
+              -6.546543379411399,
+              -10.329392305953261
+            ],
+            [
+              -2.9404794164648376,
+              0.0
+            ]
+          ],
+          "mirrored_max_real_fifth_order_per_s": 2.306468902172705,
+          "equilibrium_max_rhs_residual": 9.094947017729282e-13,
+          "numeric_jacobian_scaled_error": 3.879402565113802e-11,
+          "independent_root_scaled_error": 0.0,
+          "max_component_difference_from_printed": 0.004377987267485395
+        },
+        {
+          "branch": "left",
+          "state_in_paper_units": [
+            -235.0421970268873,
+            -2.3755609311992836,
+            314.1592653589793,
+            -90.57906615400378,
+            3.811430637443037
+          ],
+          "mirrored_state_in_paper_units": [
+            235.0421970268873,
+            2.3755609311992836,
+            314.1592653589793,
+            89.42093384599622,
+            -3.811430637443037
+          ],
+          "p_w": -93638.93851758134,
+          "q_var": 0,
+          "max_real_fourth_order_per_s": 8.970368077731592,
+          "max_real_fifth_order_per_s": 16.35760734194079,
+          "eigenvalues_per_s": [
+            [
+              -35.4653802178471,
+              315.5798349690839
+            ],
+            [
+              -35.4653802178471,
+              -315.5798349690839
+            ],
+            [
+              -13.253071030215853,
+              3.206555394262406
+            ],
+            [
+              -13.253071030215853,
+              -3.206555394262406
+            ],
+            [
+              16.35760734194079,
+              0.0
+            ]
+          ],
+          "mirrored_max_real_fifth_order_per_s": 5.656597230197434,
+          "equilibrium_max_rhs_residual": 2.1657342585967854e-11,
+          "numeric_jacobian_scaled_error": 2.620831562188952e-09,
+          "independent_root_scaled_error": 5.970947359328573e-15,
+          "max_component_difference_from_printed": 0.004439068800716317
+        }
+      ]
+    },
+    "VI-B": {
+      "printed_torque_nm": 1830,
+      "eq44_torque_nm": 1830.2818455567963,
+      "computed_ktilde_a_h": 134721.9358530748,
+      "branches": [
+        {
+          "branch": "right",
+          "state_in_paper_units": [
+            -34.72877821219609,
+            -33.28807825146736,
+            314.1592653589793,
+            46.21342987562288,
+            1.6658980742482776
+          ],
+          "mirrored_state_in_paper_units": [
+            34.72877821219609,
+            33.28807825146736,
+            314.1592653589793,
+            226.2134298756229,
+            -1.6658980742482776
+          ],
+          "p_w": 499931.88785780995,
+          "q_var": 0,
+          "max_real_fourth_order_per_s": -4.132898406632447,
+          "max_real_fifth_order_per_s": -2.173838798619138,
+          "eigenvalues_per_s": [
+            [
+              -38.38674786044873,
+              312.9378269066352
+            ],
+            [
+              -38.38674786044873,
+              -312.9378269066352
+            ],
+            [
+              -2.173838798619138,
+              8.396914247123217
+            ],
+            [
+              -2.173838798619138,
+              -8.396914247123217
+            ],
+            [
+              -5.75942436650929,
+              0.0
+            ]
+          ],
+          "mirrored_max_real_fifth_order_per_s": 3.9302604820408473,
+          "equilibrium_max_rhs_residual": 3.637978807091713e-12,
+          "numeric_jacobian_scaled_error": 6.752003071878956e-11,
+          "independent_root_scaled_error": 2.0459047963147143e-16,
+          "max_component_difference_from_printed": 0.004101925751722302
+        },
+        {
+          "branch": "left",
+          "state_in_paper_units": [
+            -368.8071054007665,
+            -6.0128786410664485,
+            314.1592653589793,
+            -90.93404395975419,
+            9.222628422234397
+          ],
+          "mirrored_state_in_paper_units": [
+            368.8071054007665,
+            6.0128786410664485,
+            314.1592653589793,
+            89.06595604024581,
+            -9.222628422234397
+          ],
+          "p_w": -3833265.221191143,
+          "q_var": 0,
+          "max_real_fourth_order_per_s": 6.548454291757484,
+          "max_real_fifth_order_per_s": 14.22323125779843,
+          "eigenvalues_per_s": [
+            [
+              -40.1299406659432,
+              315.9956108228531
+            ],
+            [
+              -40.1299406659432,
+              -315.9956108228531
+            ],
+            [
+              -10.421973805278562,
+              7.524192604934434
+            ],
+            [
+              -10.421973805278562,
+              -7.524192604934434
+            ],
+            [
+              14.22323125779843,
+              0.0
+            ]
+          ],
+          "mirrored_max_real_fifth_order_per_s": 5.401074548459167,
+          "equilibrium_max_rhs_residual": 2.7625901566352695e-11,
+          "numeric_jacobian_scaled_error": 3.022787450901454e-09,
+          "independent_root_scaled_error": 1.1822674471881868e-15,
+          "max_component_difference_from_printed": 0.004043959754184812
+        }
+      ]
+    }
+  },
+  "checks": {
+    "VI-A_right": true,
+    "VI-A_left": true,
+    "VI-B_right": true,
+    "VI-B_left": true,
+    "fig11a_nonnested": true
+  },
+  "fig11a": {
+    "sampled_stable_counts": [
+      {
+        "ktilde_ka_h": 2.5,
+        "stable_grid_points": 15463
+      },
+      {
+        "ktilde_ka_h": 14.3,
+        "stable_grid_points": 23239
+      },
+      {
+        "ktilde_ka_h": 40,
+        "stable_grid_points": 28435
+      },
+      {
+        "ktilde_ka_h": 1000,
+        "stable_grid_points": 34917
+      }
+    ],
+    "non_nested_witnesses": {
+      "lost_when_increasing_gain": {
+        "count": 906,
+        "p_kw": -36.26923076923077,
+        "q_kvar": 170.0,
+        "max_real_2_5_per_s": -1.6234212373146513,
+        "max_real_14_3_per_s": 1.6828704552163734
+      },
+      "gained_when_increasing_gain": {
+        "count": 8682,
+        "p_kw": 53.38461538461539,
+        "q_kvar": 14.0,
+        "max_real_2_5_per_s": 3.3638577373429017,
+        "max_real_14_3_per_s": -3.324369997531509
+      }
+    }
+  },
+  "passed": true
+}

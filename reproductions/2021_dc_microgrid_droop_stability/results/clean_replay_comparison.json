@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "data_sha256_match": {
+    "four_converter_steps.npz": true,
+    "large_step_probe.npz": true,
+    "metrics.json": true,
+    "phase_portraits.npz": true
+  },
+  "figures_sha256_match": {
+    "finite_load_steps.png": true,
+    "four_converter_steps.png": true,
+    "load_limits.png": true,
+    "phase_portraits.png": true
+  },
+  "arrays_exact": {
+    "four_converter_steps.npz": {
+      "0.5mF_full": true,
+      "0.5mF_hypothetical_current_limited_load": true,
+      "0.5mF_parallel_equivalent": true,
+      "0.5mF_printed_equivalent": true,
+      "2.5mF_full": true,
+      "2.5mF_hypothetical_current_limited_load": true,
+      "2.5mF_parallel_equivalent": true,
+      "2.5mF_printed_equivalent": true
+    },
+    "large_step_probe.npz": {
+      "0.025": true,
+      "0.1": true
+    },
+    "phase_portraits.npz": {
+      "25mF_-100000": true,
+      "25mF_-60000": true,
+      "25mF_-80000": true,
+      "25mF_100000": true,
+      "25mF_150000": true,
+      "25mF_220000": true,
+      "25mF_50000": true,
+      "25mF_preloaded": true,
+      "25mF_within_static_limits": true,
+      "6mF_-100000": true,
+      "6mF_-60000": true,
+      "6mF_-80000": true,
+      "6mF_120000": true,
+      "6mF_160000": true,
+      "6mF_40000": true,
+      "6mF_80000": true,
+      "6mF_preloaded": true,
+      "6mF_within_static_limits": true
+    }
+  }
+}

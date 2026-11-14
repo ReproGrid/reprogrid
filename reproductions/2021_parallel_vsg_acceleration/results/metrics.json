@@ -1,0 +1,788 @@
+{
+  "operating_point": {
+    "bus_voltage_pu": 1.0,
+    "line_inductance_mh": [
+      1.0,
+      1.0
+    ],
+    "active_power_by_converter_pu": [
+      0.5,
+      0.5
+    ],
+    "base_impedance_ohm": 28.88,
+    "reactance_by_converter_ohm": [
+      3.3141592653589793,
+      1.3141592653589793
+    ],
+    "angle_by_converter_rad": [
+      0.05740963417263831,
+      0.02275402825974627
+    ],
+    "stiffness_by_converter_pu_per_rad": [
+      8.699769218998654,
+      21.970338629612293
+    ],
+    "phasor_angle_error_rad": 0.0,
+    "phasor_slope_error": 7.105427357601002e-15,
+    "finite_difference_slope_error": 3.979039320256561e-13
+  },
+  "fig5": {
+    "traditional": {
+      "local_maxima": [
+        {
+          "frequency_hz": 2.624218543384442,
+          "gain_db": 4.499326801469245
+        }
+      ],
+      "gain_100hz_db": -10.952886198391646,
+      "dc_share": [
+        0.5,
+        0.5
+      ],
+      "high_frequency_share": [
+        0.28365629693710603,
+        0.716343703062894
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 1.0190492755571723e-15,
+      "nodal_max_complex_error": 4.1510134199090075e-13,
+      "power_balance_max_error": 1.1102230246251565e-16,
+      "eigenvalue_max_pair_error_per_s": 1.7763568394002505e-15,
+      "magnitude_db_rmse": 0.11945323948479314,
+      "magnitude_db_max_absolute_error": 0.36120216979139386,
+      "phase_deg_rmse": 0.7985111627926142,
+      "phase_deg_max_absolute_error": 2.7578323555098763
+    },
+    "power_only": {
+      "local_maxima": [
+        {
+          "frequency_hz": 9.682778562612496,
+          "gain_db": -1.9901806677594494
+        }
+      ],
+      "gain_100hz_db": -11.130959664088964,
+      "dc_share": [
+        0.5000000000000009,
+        0.49999999999999906
+      ],
+      "high_frequency_share": [
+        0.28365629693710603,
+        0.716343703062894
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 7.21989165023357e-15,
+      "nodal_max_complex_error": 5.57193556043054e-13,
+      "power_balance_max_error": 0.0,
+      "eigenvalue_max_pair_error_per_s": 4.4938668397781776e-14,
+      "magnitude_db_rmse": 0.05368391404471097,
+      "magnitude_db_max_absolute_error": 0.1804940580388994,
+      "phase_deg_rmse": 0.3137284844139958,
+      "phase_deg_max_absolute_error": 1.0735899251175596
+    },
+    "acceleration_only": {
+      "local_maxima": [
+        {
+          "frequency_hz": 1.1117317272815919,
+          "gain_db": 2.4821687421957246
+        }
+      ],
+      "gain_100hz_db": -10.950774624441637,
+      "dc_share": [
+        0.49999999999999967,
+        0.5000000000000003
+      ],
+      "high_frequency_share": [
+        0.28365629693710603,
+        0.716343703062894
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 1.9641850382783467e-14,
+      "nodal_max_complex_error": 4.0681804505376247e-13,
+      "power_balance_max_error": 1.1102230246251565e-16,
+      "eigenvalue_max_pair_error_per_s": 3.410605131648481e-13,
+      "magnitude_db_rmse": 0.11709998072737564,
+      "magnitude_db_max_absolute_error": 0.39204996590163255,
+      "phase_deg_rmse": 0.7117838614491376,
+      "phase_deg_max_absolute_error": 2.692563306445699
+    },
+    "combined": {
+      "local_maxima": [
+        {
+          "frequency_hz": 0.6208690342300635,
+          "gain_db": -5.294794872889988
+        }
+      ],
+      "gain_100hz_db": -11.07849005315086,
+      "dc_share": [
+        0.5000000000000013,
+        0.4999999999999987
+      ],
+      "high_frequency_share": [
+        0.28365629693710603,
+        0.716343703062894
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 1.5929693558528298e-14,
+      "nodal_max_complex_error": 3.95659525757834e-13,
+      "power_balance_max_error": 0.0,
+      "eigenvalue_max_pair_error_per_s": 6.359357485052897e-13,
+      "magnitude_db_rmse": 0.014896540707863483,
+      "magnitude_db_max_absolute_error": 0.038970702672882496,
+      "phase_deg_rmse": 0.060926534078292446,
+      "phase_deg_max_absolute_error": 0.14098523963627763
+    }
+  },
+  "fig6": {
+    "0.5": {
+      "local_maxima": [
+        {
+          "frequency_hz": 0.6295061828571975,
+          "gain_db": -5.3064600508780115
+        }
+      ],
+      "gain_100hz_db": -10.773615412285986,
+      "dc_share": [
+        0.499999999999988,
+        0.5000000000000119
+      ],
+      "high_frequency_share": [
+        0.2936572282910051,
+        0.7063427717089948
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 2.073622007752792e-14,
+      "nodal_max_complex_error": 4.320336184456255e-13,
+      "power_balance_max_error": 1.1102230246251565e-16,
+      "eigenvalue_max_pair_error_per_s": 3.410605131648481e-13,
+      "magnitude_db_rmse": 0.012768400539253658,
+      "magnitude_db_max_absolute_error": 0.03168019059309746,
+      "phase_deg_rmse": 0.0515851442182854,
+      "phase_deg_max_absolute_error": 0.11941619482451316,
+      "operating_point": {
+        "bus_voltage_pu": 1.0,
+        "line_inductance_mh": [
+          0.5,
+          1.0
+        ],
+        "active_power_by_converter_pu": [
+          0.5,
+          0.5
+        ],
+        "base_impedance_ohm": 28.88,
+        "reactance_by_converter_ohm": [
+          3.1570796326794897,
+          1.3141592653589793
+        ],
+        "angle_by_converter_rad": [
+          0.05468583352183406,
+          0.02275402825974627
+        ],
+        "stiffness_by_converter_pu_per_rad": [
+          9.134019636070958,
+          21.970338629612293
+        ],
+        "phasor_angle_error_rad": 1.734723475976807e-16,
+        "phasor_slope_error": 7.105427357601002e-15,
+        "finite_difference_slope_error": 6.927791673660977e-13
+      }
+    },
+    "1.0": {
+      "local_maxima": [
+        {
+          "frequency_hz": 0.6208690342300635,
+          "gain_db": -5.294794872889988
+        }
+      ],
+      "gain_100hz_db": -11.07849005315086,
+      "dc_share": [
+        0.5000000000000013,
+        0.4999999999999987
+      ],
+      "high_frequency_share": [
+        0.28365629693710603,
+        0.716343703062894
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 1.5929693558528298e-14,
+      "nodal_max_complex_error": 3.95659525757834e-13,
+      "power_balance_max_error": 0.0,
+      "eigenvalue_max_pair_error_per_s": 6.359357485052897e-13,
+      "magnitude_db_rmse": 0.014832936450488396,
+      "magnitude_db_max_absolute_error": 0.036729352454813124,
+      "phase_deg_rmse": 0.060953577983352755,
+      "phase_deg_max_absolute_error": 0.14031467826146127,
+      "operating_point": {
+        "bus_voltage_pu": 1.0,
+        "line_inductance_mh": [
+          1.0,
+          1.0
+        ],
+        "active_power_by_converter_pu": [
+          0.5,
+          0.5
+        ],
+        "base_impedance_ohm": 28.88,
+        "reactance_by_converter_ohm": [
+          3.3141592653589793,
+          1.3141592653589793
+        ],
+        "angle_by_converter_rad": [
+          0.05740963417263831,
+          0.02275402825974627
+        ],
+        "stiffness_by_converter_pu_per_rad": [
+          8.699769218998654,
+          21.970338629612293
+        ],
+        "phasor_angle_error_rad": 0.0,
+        "phasor_slope_error": 7.105427357601002e-15,
+        "finite_difference_slope_error": 3.979039320256561e-13
+      }
+    },
+    "1.5": {
+      "local_maxima": [
+        {
+          "frequency_hz": 0.6137620051647943,
+          "gain_db": -5.283263206736699
+        }
+      ],
+      "gain_100hz_db": -11.373161886786152,
+      "dc_share": [
+        0.5000000000000016,
+        0.4999999999999985
+      ],
+      "high_frequency_share": [
+        0.2743098794504686,
+        0.7256901205495314
+      ],
+      "high_frequency_share_max_error": 0.0,
+      "swing_filter_max_complex_error": 1.4149525942723413e-14,
+      "nodal_max_complex_error": 3.455735399932948e-13,
+      "power_balance_max_error": 0.0,
+      "eigenvalue_max_pair_error_per_s": 4.121147867408581e-13,
+      "magnitude_db_rmse": 0.016295763842147804,
+      "magnitude_db_max_absolute_error": 0.04108123654557261,
+      "phase_deg_rmse": 0.0662055673541984,
+      "phase_deg_max_absolute_error": 0.15326803601040595,
+      "operating_point": {
+        "bus_voltage_pu": 1.0,
+        "line_inductance_mh": [
+          1.5,
+          1.0
+        ],
+        "active_power_by_converter_pu": [
+          0.5,
+          0.5
+        ],
+        "base_impedance_ohm": 28.88,
+        "reactance_by_converter_ohm": [
+          3.471238898038469,
+          1.3141592653589793
+        ],
+        "angle_by_converter_rad": [
+          0.06013386128731959,
+          0.02275402825974627
+        ],
+        "stiffness_by_converter_pu_per_rad": [
+          8.30475814719814,
+          21.970338629612293
+        ],
+        "phasor_angle_error_rad": 1.3877787807814457e-17,
+        "phasor_slope_error": 7.105427357601002e-15,
+        "finite_difference_slope_error": 3.979039320256561e-13
+      }
+    }
+  },
+  "step": {
+    "traditional": {
+      "peak_increment_p1_pu": 0.008577791457297099,
+      "steady_increment_p1_pu": 0.005,
+      "settling_2_percent_p1_s": 1.705,
+      "reference_max_power_error_pu": 3.8250132228245803e-13
+    },
+    "power_only": {
+      "peak_increment_p1_pu": 0.007723179006638225,
+      "steady_increment_p1_pu": 0.005000000000000009,
+      "settling_2_percent_p1_s": 0.855,
+      "reference_max_power_error_pu": 1.4397033912261215e-12
+    },
+    "acceleration_only": {
+      "peak_increment_p1_pu": 0.007059462296534659,
+      "steady_increment_p1_pu": 0.004999999999999997,
+      "settling_2_percent_p1_s": 4.055,
+      "reference_max_power_error_pu": 6.761227914348078e-10
+    },
+    "combined": {
+      "peak_increment_p1_pu": 0.005421209283614432,
+      "steady_increment_p1_pu": 0.005000000000000013,
+      "settling_2_percent_p1_s": 1.835,
+      "reference_max_power_error_pu": 3.287277394736776e-11
+    }
+  },
+  "operating_point_sensitivity": {
+    "aggregate_preload": {
+      "bus_voltage_pu": 1.0,
+      "line_inductance_mh": [
+        1.0,
+        1.0
+      ],
+      "active_power_by_converter_pu": [
+        0.25,
+        0.25
+      ],
+      "base_impedance_ohm": 28.88,
+      "reactance_by_converter_ohm": [
+        3.3141592653589793,
+        1.3141592653589793
+      ],
+      "angle_by_converter_rad": [
+        0.02869298874724235,
+        0.011376277805885668
+      ],
+      "stiffness_by_converter_pu_per_rad": [
+        8.7105387011273,
+        21.97460533206078
+      ],
+      "phasor_angle_error_rad": 3.469446951953614e-18,
+      "phasor_slope_error": 3.552713678800501e-15,
+      "finite_difference_slope_error": 3.552713678800501e-13,
+      "bode": {
+        "traditional": {
+          "local_maxima": [
+            {
+              "frequency_hz": 2.6302679918953813,
+              "gain_db": 4.499254432308122
+            }
+          ],
+          "gain_100hz_db": -10.946394673598379,
+          "dc_share": [
+            0.4999999999999999,
+            0.5
+          ],
+          "high_frequency_share": [
+            0.2838682683615973,
+            0.7161317316384026
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.887379141862766e-15,
+          "nodal_max_complex_error": 3.889825235780726e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 1.1234667099445444e-14
+        },
+        "power_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 9.682778562612496,
+              "gain_db": -1.9894485783375657
+            }
+          ],
+          "gain_100hz_db": -11.124406183707684,
+          "dc_share": [
+            0.5,
+            0.4999999999999999
+          ],
+          "high_frequency_share": [
+            0.2838682683615973,
+            0.7161317316384026
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 8.406441326920696e-15,
+          "nodal_max_complex_error": 4.095322510258369e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 1.1479169203741087e-13
+        },
+        "acceleration_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 1.1117317272815919,
+              "gain_db": 2.476193534070376
+            }
+          ],
+          "gain_100hz_db": -10.944283471779176,
+          "dc_share": [
+            0.5000000000000001,
+            0.4999999999999998
+          ],
+          "high_frequency_share": [
+            0.2838682683615973,
+            0.7161317316384026
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 2.2479274790093772e-14,
+          "nodal_max_complex_error": 6.553348506147033e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 3.410605131648481e-13
+        },
+        "combined": {
+          "local_maxima": [
+            {
+              "frequency_hz": 0.6208690342300635,
+              "gain_db": -5.295072850896353
+            }
+          ],
+          "gain_100hz_db": -11.071945236391798,
+          "dc_share": [
+            0.5000000000000003,
+            0.49999999999999956
+          ],
+          "high_frequency_share": [
+            0.2838682683615973,
+            0.7161317316384026
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.2735696606640888e-14,
+          "nodal_max_complex_error": 4.128274769336909e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 1.3393730569077889e-12
+        }
+      }
+    },
+    "bus_voltage_0.95": {
+      "bus_voltage_pu": 0.95,
+      "line_inductance_mh": [
+        1.0,
+        1.0
+      ],
+      "active_power_by_converter_pu": [
+        0.5,
+        0.5
+      ],
+      "base_impedance_ohm": 28.88,
+      "reactance_by_converter_ohm": [
+        3.3141592653589793,
+        1.3141592653589793
+      ],
+      "angle_by_converter_rad": [
+        0.0604347853963412,
+        0.023951832030254343
+      ],
+      "stiffness_by_converter_pu_per_rad": [
+        8.26330599570247,
+        20.871237768723734
+      ],
+      "phasor_angle_error_rad": 2.7755575615628914e-17,
+      "phasor_slope_error": 7.105427357601002e-15,
+      "finite_difference_slope_error": 7.691625114603085e-13,
+      "bode": {
+        "traditional": {
+          "local_maxima": [
+            {
+              "frequency_hz": 2.552701302661247,
+              "gain_db": 4.302883613723518
+            }
+          ],
+          "gain_100hz_db": -10.953385677894643,
+          "dc_share": [
+            0.5,
+            0.4999999999999999
+          ],
+          "high_frequency_share": [
+            0.2836257214980697,
+            0.7163742785019303
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 3.1401849173675503e-16,
+          "nodal_max_complex_error": 2.898617267666192e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 0.0
+        },
+        "power_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 9.3110787546783,
+              "gain_db": -2.1074843198481386
+            }
+          ],
+          "gain_100hz_db": -11.122329112096178,
+          "dc_share": [
+            0.49999999999999845,
+            0.5000000000000014
+          ],
+          "high_frequency_share": [
+            0.2836257214980697,
+            0.7163742785019303
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 7.775505421036342e-15,
+          "nodal_max_complex_error": 3.7821655678490233e-13,
+          "power_balance_max_error": 1.1102230246251565e-16,
+          "eigenvalue_max_pair_error_per_s": 6.07087979554246e-14
+        },
+        "acceleration_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 1.0839269140212038,
+              "gain_db": 2.4944402331909137
+            }
+          ],
+          "gain_100hz_db": -10.951379907221991,
+          "dc_share": [
+            0.4999999999999998,
+            0.5000000000000002
+          ],
+          "high_frequency_share": [
+            0.2836257214980697,
+            0.7163742785019303
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.9836985815319828e-14,
+          "nodal_max_complex_error": 3.1699413375226887e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 4.547473508864641e-13
+        },
+        "combined": {
+          "local_maxima": [
+            {
+              "frequency_hz": 0.6081350012787179,
+              "gain_db": -5.288438741514713
+            }
+          ],
+          "gain_100hz_db": -11.072632676859364,
+          "dc_share": [
+            0.5000000000000043,
+            0.4999999999999956
+          ],
+          "high_frequency_share": [
+            0.2836257214980697,
+            0.7163742785019303
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.8879179772019735e-14,
+          "nodal_max_complex_error": 3.857968459976399e-13,
+          "power_balance_max_error": 1.1102230246251565e-16,
+          "eigenvalue_max_pair_error_per_s": 1.7053025658242404e-13
+        }
+      }
+    },
+    "bus_voltage_1.05": {
+      "bus_voltage_pu": 1.05,
+      "line_inductance_mh": [
+        1.0,
+        1.0
+      ],
+      "active_power_by_converter_pu": [
+        0.5,
+        0.5
+      ],
+      "base_impedance_ohm": 28.88,
+      "reactance_by_converter_ohm": [
+        3.3141592653589793,
+        1.3141592653589793
+      ],
+      "angle_by_converter_rad": [
+        0.05467304648865041,
+        0.021670329220313412
+      ],
+      "stiffness_by_converter_pu_per_rad": [
+        9.136160182011901,
+        23.06941095690497
+      ],
+      "phasor_angle_error_rad": 1.8735013540549517e-16,
+      "phasor_slope_error": 3.552713678800501e-15,
+      "finite_difference_slope_error": 4.831690603168681e-13,
+      "bode": {
+        "traditional": {
+          "local_maxima": [
+            {
+              "frequency_hz": 2.6977394324449206,
+              "gain_db": 4.687438485770908
+            }
+          ],
+          "gain_100hz_db": -10.95251768208281,
+          "dc_share": [
+            0.4999999999999999,
+            0.5
+          ],
+          "high_frequency_share": [
+            0.28368260083336516,
+            0.7163173991666347
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 6.866350197783356e-16,
+          "nodal_max_complex_error": 4.837201321895165e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 0.0
+        },
+        "power_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 10.046157902783957,
+              "gain_db": -1.8757350398647967
+            }
+          ],
+          "gain_100hz_db": -11.139747049437132,
+          "dc_share": [
+            0.49999999999999956,
+            0.5000000000000003
+          ],
+          "high_frequency_share": [
+            0.28368260083336516,
+            0.7163173991666347
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 7.595106931212125e-15,
+          "nodal_max_complex_error": 4.791569623227405e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 1.0104956980205695e-13
+        },
+        "acceleration_only": {
+          "local_maxima": [
+            {
+              "frequency_hz": 1.1402497875611686,
+              "gain_db": 2.466206376329229
+            }
+          ],
+          "gain_100hz_db": -10.950300273248905,
+          "dc_share": [
+            0.5000000000000001,
+            0.4999999999999998
+          ],
+          "high_frequency_share": [
+            0.28368260083336516,
+            0.7163173991666347
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.662380574201187e-14,
+          "nodal_max_complex_error": 4.579381963262538e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 5.115907697472721e-13
+        },
+        "combined": {
+          "local_maxima": [
+            {
+              "frequency_hz": 0.633869711256927,
+              "gain_db": -5.300674585332939
+            }
+          ],
+          "gain_100hz_db": -11.084487580011022,
+          "dc_share": [
+            0.5000000000000003,
+            0.49999999999999956
+          ],
+          "high_frequency_share": [
+            0.28368260083336516,
+            0.7163173991666347
+          ],
+          "high_frequency_share_max_error": 0.0,
+          "swing_filter_max_complex_error": 1.6761887465654953e-14,
+          "nodal_max_complex_error": 4.1925413806434813e-13,
+          "power_balance_max_error": 2.220446049250313e-16,
+          "eigenvalue_max_pair_error_per_s": 1.5099033134902129e-12
+        }
+      }
+    }
+  },
+  "doi": "10.1109/TPEL.2021.3051272",
+  "fig8": {
+    "traditional": {
+      "reference_max_error_per_s": 2.0715702557244597e-14,
+      "rightmost_real_part_max_per_s": -2.0189094161739045,
+      "rightmost_real_parts_endpoints_per_s": [
+        -8.793556568599403,
+        -2.0189094161739045
+      ],
+      "imaginary_magnitude_max_of_three_rightmost_per_s": 31.635433417801043,
+      "plotted_points_compared": 60,
+      "plot_rmse_per_s": 0.10941573365079015,
+      "plot_max_error_per_s": 0.2096375655346152
+    },
+    "combined": {
+      "reference_max_error_per_s": 2.156497203031904e-12,
+      "rightmost_real_part_max_per_s": -0.5835469516190094,
+      "rightmost_real_parts_endpoints_per_s": [
+        -0.7473048867665857,
+        -0.5835469516190094
+      ],
+      "imaginary_magnitude_max_of_three_rightmost_per_s": 0.0,
+      "plotted_points_compared": 60,
+      "plot_rmse_per_s": 0.1535406145187577,
+      "plot_max_error_per_s": 0.16943798827105233
+    }
+  },
+  "fig9": {
+    "30.0": {
+      "reference_max_error_per_s": 1.270095140171179e-12,
+      "rightmost_real_part_max_per_s": -0.38611418749038257,
+      "rightmost_real_parts_endpoints_per_s": [
+        -0.7988141940626617,
+        -0.38611418749038257
+      ],
+      "imaginary_magnitude_max_of_three_rightmost_per_s": 0.0,
+      "plotted_points_compared": 63,
+      "plot_rmse_per_s": 0.25987767569718184,
+      "plot_max_error_per_s": 0.30781379637388534,
+      "k11_with_complex_poles_anywhere": [
+        1000.0,
+        1960.0
+      ],
+      "k11_with_complex_poles_within_plot_width": null,
+      "dense_reference_max_error_per_s": 1.5134560271690134e-12
+    },
+    "50.0": {
+      "reference_max_error_per_s": 3.75877107217093e-12,
+      "rightmost_real_part_max_per_s": -0.5219864067911902,
+      "rightmost_real_parts_endpoints_per_s": [
+        -0.8983901068221347,
+        -0.5219864067911902
+      ],
+      "imaginary_magnitude_max_of_three_rightmost_per_s": 0.0,
+      "plotted_points_compared": 62,
+      "plot_rmse_per_s": 0.26437215033456807,
+      "plot_max_error_per_s": 0.5551156969892477,
+      "k11_with_complex_poles_anywhere": [
+        1000.0,
+        1030.0
+      ],
+      "k11_with_complex_poles_within_plot_width": null,
+      "dense_reference_max_error_per_s": 1.4745467069587903e-09
+    },
+    "70.0": {
+      "reference_max_error_per_s": 4.078559620069332e-12,
+      "rightmost_real_part_max_per_s": -0.6143328139963318,
+      "rightmost_real_parts_endpoints_per_s": [
+        -0.9488528137999332,
+        -0.6143328139963318
+      ],
+      "imaginary_magnitude_max_of_three_rightmost_per_s": 24.61394454128836,
+      "plotted_points_compared": 84,
+      "plot_rmse_per_s": 0.42437955122012444,
+      "plot_max_error_per_s": 1.297875014875796,
+      "near_axis_transition_k11_bracket": [
+        3270.0,
+        3280.0
+      ],
+      "k11_with_complex_poles_anywhere": [
+        1000.0,
+        3270.0
+      ],
+      "k11_with_complex_poles_within_plot_width": [
+        1000.0,
+        3270.0
+      ],
+      "dense_reference_max_error_per_s": 2.795275122480234e-11
+    }
+  },
+  "checks": {
+    "synchronizing_slope_phasor_derivative": true,
+    "synchronizing_slope_finite_difference": true,
+    "operating_angle_against_explicit_phasor": true,
+    "figure7_swing_filter_frequency_response": true,
+    "network_frequency_response": true,
+    "swing_filter_eigenvalues": true,
+    "output_power_balance": true,
+    "low_frequency_droop_sharing": true,
+    "high_frequency_algebraic_sharing": true,
+    "independent_load_step": true,
+    "sampled_pole_stability": true,
+    "figure6_nominal_consistency": true
+  },
+  "checks_passed": 12,
+  "checks_total": 12,
+  "paper_comparisons": {
+    "bode_magnitude": true,
+    "bode_phase": true,
+    "reported_resonances": true,
+    "figure8_loci": true,
+    "figure9_loci": true
+  }
+}

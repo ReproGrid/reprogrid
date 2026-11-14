@@ -1,0 +1,59 @@
+{
+  "doi": "10.1109/TIE.2020.2998746",
+  "state": "report_ready",
+  "display_state_zh": "LLC DMM 方程与完整序列已复现",
+  "outcome": "llc_dmm_reproduced_under_disclosed_device_and_startup_assumptions",
+  "scope_zh": "Fig. 1–4 固定频点与离散误差、Fig. 10 完整 0.6 s 序列、Fig. 11 逐窗读回与定点字长及延迟验证。",
+  "public_fulltext_url": "https://arxiv.org/abs/2006.04155v1",
+  "code_executed": true,
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 115,
+  "checks_total": 115,
+  "key_results": {
+    "matched_reference_steps": 9600000,
+    "max_state_current_delta_a": 8.517849181544079e-08,
+    "set2_312p5khz_blocked_pct": 36.12361236123613,
+    "set2_312p5khz_be_pairs_nrmse_pct": 9.651862259210962,
+    "set2_312p5khz_fe_pairs_nrmse_pct": 19.56792810279637,
+    "set2_312p5khz_fe_pairs_30ns_nrmse_pct": 37.81287701343033,
+    "set2_312p5khz_15ns_vs_fine_nrmse_pct": 6.478214530797902,
+    "output_v_near_0p55s": 11.872834387839267,
+    "fig10_frequency_levels": 25,
+    "short_peak_ir_a": 57.07827588272489,
+    "short_recovery_to_90_pct_us": 91.575,
+    "fig11f_positive_peak_a": {
+      "ideal_continuous": 18.581074784050703,
+      "ideal_reset": 47.993485950516266
+    },
+    "fig11f_readback_peak_a": 47.9796777159
+  },
+  "critical_gaps": [
+    "Original FE project, Figs. 3–4 exact gating, initialization, device resistances and aligned waveform data remain unavailable.",
+    "Original FPGA timing, arithmetic and alignment were not validated.",
+    "Exact PWM phase/reset policy, short-branch resistance and original fixed-point ROM/RTL remain unavailable.",
+    "Figure readback is from plotted vectors. It cannot provide the five aligned raw Table IV sequences."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "reported_divergence_not_observed_at_checked_set2_frequencies",
+      "source": "Section II.C, after Fig. 4",
+      "finding": "30 ns pair-only explicit runs remain bounded over 48 ms at 312.5, 400, and 500 kHz with the disclosed reconstruction; errors remain large. The actual Fig. 4 frequency and FE project are unavailable."
+    },
+    {
+      "type": "hardware_tables_disagree_with_main_text",
+      "source": "Section IV.B, Tables II–III",
+      "finding": "Table III labels 320 MHz rows with resource and step values matching the 200 MHz column in Table II; FPI DSP percentage and printed FXP formats also differ."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "8285952146c1afdb85b2c9754aef687d6835c45b948d51baad5947b79b354cc8",
+  "primary_manifest_sha256": "c298e6f04f1a3c6b957c6199a00eb8b8f6e95951a340e1822d606d55f5bab689",
+  "detailed_report": "reports/DETAILED_REPRODUCTION.md",
+  "detailed_report_sha256": "ca17b1e9b546ab8f51163186df8a0195812742ae5ccd30afa6f645b850624d1e",
+  "deep_manifest_sha256": "d2f0ef5bd081fb88abdb3a1347ab9f1e4bbad6c280fbe25471bcadb5d70d6277",
+  "source_report_sha256": "e34d3b5e0cec3b5384a0dbe7e93afdc06cdf0656cf60006da616abdd43d9cff4",
+  "source_detailed_report_sha256": "a76382d2047a34aa4ed826d05ef279dc413a381396566c1eb13cbf6e8db44490"
+}

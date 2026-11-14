@@ -1,0 +1,61 @@
+{
+  "doi": "10.1109/TPEL.2020.3019311",
+  "state": "report_ready",
+  "display_state_zh": "稳态限值复现，发现有限阶跃反例",
+  "outcome": "dc_droop_load_limits_reproduced_with_finite_load_step_counterexample",
+  "scope_zh": "复现二阶直流微网和四变流器负荷阶跃，核验稳态限值、瞬态最低电压和式 (23) 的适用范围。",
+  "public_fulltext_url": "https://vbn.aau.dk/en/publications/system-level-large-signal-stability-analysis-of-droop-controlled-/",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 12,
+  "checks_total": 12,
+  "table_comparisons_passed": 4,
+  "table_comparisons_total": 5,
+  "key_results": {
+    "step_limits": {
+      "25mF": {
+        "positive_voltage_limit_kw": 61.4468936920166,
+        "negative_voltage_limit_kw": -73.03496487935396,
+        "collapse_limit_kw": 196.7077652613322
+      },
+      "6mF": {
+        "positive_voltage_limit_kw": 35.556936264038086,
+        "negative_voltage_limit_kw": -41.86211585998542,
+        "collapse_limit_kw": 121.34934266408285
+      }
+    },
+    "table_ii_local_limit_w": {
+      "25mF": 208333.33333333334,
+      "6mF": 141401.63966827554
+    },
+    "four_converter_local_limit_w": {
+      "0.5mF": 3102.708867705676,
+      "2.5mF": 3750.0
+    },
+    "step_200kw_high_equilibrium_voltage_v": 120.00000000000001,
+    "step_200kw_time_to_5v_s": 0.006106974899197401
+  },
+  "critical_gaps": [
+    "Original initial currents and solver settings for Figs. 7–8 were unavailable. The no-load equilibrium and a separate preload sensitivity are documented.",
+    "Original laboratory inner loops, parasitics, measured waveforms, and post-protection recovery are outside the checked first-stage model."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "local_condition_does_not_establish_finite_step_recovery",
+      "source": "Eqs. (18)–(23), (48) and Table II",
+      "finding": "The Table II 25 mF model has a stable 120 V equilibrium at 200 kW. The no-load-to-200-kW step drives the same model into inevitable voltage collapse. The state-dependent Lyapunov derivative also requires a chain-rule term."
+    },
+    {
+      "type": "table_intersection_value_discrepancy",
+      "source": "Table III and Eqs. (48), (52)",
+      "finding": "The 6 mF case in Table III gives 0.030429 ohm from the printed equations and parameters. The table lists 0.031 ohm."
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "d6044594102dd4e243343b3d2521614accbb2aabde82be01729801ac34727960",
+  "primary_manifest_sha256": "a8eb3bab87c81314427bc21ea640db17dfde0756beb44686557e7221c83752c5",
+  "source_report_sha256": "11e76aa590fca4112c4300040885991c3a5a700661e62fe66168e81390de79e6"
+}

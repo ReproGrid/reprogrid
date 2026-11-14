@@ -1,0 +1,38 @@
+{
+  "doi": "10.1109/TIE.2020.2998746",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "architecture": "arm64",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)",
+  "compiler_flags": [
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-ffp-contract=off"
+  ],
+  "protocol_sha256": "bcc265c3783c461aba61eae2b799ec326d9958c34fdd76c22de06902900ee278",
+  "implementation_sha256": {
+    "reproduce.py": "b22faba461e6e01f3ec42ae8df54a464b9120eaa1a199db0aed10f5f75d5ff13",
+    "simulate.cpp": "8b57cddbe6b5c44092511c224a36c418b927936f20654e49747a742a190e312a",
+    "llc.hpp": "86245217d6f79dc6a69f7ebae064af577a4207048f4e809cac7896c620f26eb4",
+    "reference.hpp": "355942003199124bc4e99ee1feb1712d0839222c7b3ca63fb40e82bd96e66ebf",
+    "network_check.py": "9d2d71d1fc8f0fbd7a1beca9763e03044294a862af81fcde984c7a9a3b872cc8",
+    "results.py": "79202cad1f13556bbbc157b5d0134b9949528902d633545a11a7952eec7764bf",
+    "plots.py": "09ddccdd01fa239e14d8dee8110e055478bd927eaeab013dba6a4e1a1c40b90b"
+  },
+  "checks_passed": 51,
+  "checks_total": 51,
+  "trials": 54,
+  "data_sha256": {
+    "metrics.json": "71a2b80cd0d74abb77c9c26dc74bb53abc9f10ff63796f0415c265e0352346c1",
+    "trajectories.npz": "94d3972dd9a1dc5f0d4f3390137591c3c62c40bf715d8eb06fa2a25cb7a39df8",
+    "independent_trajectories.npz": "dcade5a09fb818650f73bb5651e40c60e99da1f7e872948d56119c15f50318dd"
+  },
+  "figures_sha256": {
+    "rectifier_blocking.png": "96979876b683a61de07585eee47279ac50c2f1bbb544b90abca7531cefd49ebe",
+    "step_size.png": "62c7f6dbd779fe2615df658745c1d2fa1462f91971cc6d347291a00f72bbf3f9",
+    "frequency_schedule.png": "656e1cfa075288270425e2cecf25dcf52c7b15404fe4b3f70b3b78efcea4cbb6"
+  }
+}

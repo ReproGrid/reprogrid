@@ -1,0 +1,15 @@
+{
+  "doi": "10.1109/TPWRS.2021.3097954",
+  "title": "The Equilibrium Points and Stability of Grid-Connected Synchronverters",
+  "authors": [
+    "Pietro Lorenzetti",
+    "Zeev Kustanovich",
+    "Shivprasad Shivratri",
+    "George Weiss"
+  ],
+  "source_url": "https://arxiv.org/pdf/2103.07952",
+  "repository_record": "https://arxiv.org/abs/2103.07952",
+  "sha256": "a8075bf5537f0348675c0067bb590ce147d6d528f468143f68225b8145534281",
+  "source_pdf_required_to_run_model": false,
+  "claim_scope": "Nominal numerical examples VI-A and VI-B; Fig. 11(a) contour shape and non-nesting."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2020.3019311",
+  "paper": {
+    "voltage_bounds_pu": [0.9, 1.1],
+    "equivalent_simulation": {
+      "source_voltage_v": 200.0,
+      "droop_resistance_ohm": 0.048,
+      "inductance_h": 0.00005,
+      "paper_lower_and_upper_voltage_limits_w": [70000, -90000],
+      "cases": {
+        "25mF": {"capacitance_f": 0.025, "phase_portrait_loads_w": [-60000, -80000, -100000, 50000, 100000, 150000, 220000], "paper_stability_limit_w": 210000, "paper_intersection_ohm": 0.015},
+        "6mF": {"capacitance_f": 0.006, "phase_portrait_loads_w": [-60000, -80000, -100000, 40000, 80000, 120000, 160000], "paper_stability_limit_w": 140000, "paper_intersection_ohm": 0.031}
+      }
+    },
+    "four_converter_system": {
+      "source_voltage_v": 100.0,
+      "resistances_ohm": [2.0, 2.0, 4.0, 4.0],
+      "inductances_h": [0.0022, 0.0023, 0.0022, 0.002],
+      "printed_equivalent_resistance_ohm": 0.67,
+      "printed_equivalent_inductance_h": 0.00054,
+      "cases": {
+        "0.5mF": {"branch_capacitances_f": [0.0001, 0.0001, 0.0001, 0.0002], "change_times_s": [0.025, 0.05, 0.075, 0.1], "load_levels_w": [1000, 1500, 2500, 3300], "end_s": 0.15, "paper_stability_limit_w": 3100, "paper_voltage_limit_w": 1350},
+        "2.5mF": {"branch_capacitances_f": [0.0006, 0.0006, 0.0006, 0.0007], "change_times_s": [0.025, 0.05, 0.075, 0.1, 0.125], "load_levels_w": [1000, 1500, 2500, 3500, 3800], "end_s": 0.16, "paper_stability_limit_w": 3750, "paper_voltage_limit_w": 1350}
+      }
+    }
+  },
+  "reconstruction": {
+    "scope": "Fig. 3(c), Tables II–III, and the four parallel droop branches of Fig. 9(b) using Table IV and Eq. (2). Table IV repeated L4 subscripts are mapped by converter row. No PWM, internal PI, physical protection, or second-stage limiting behavior is inferred.",
+    "cpl_model": "Ideal constant power load current is P/u; P<0 injects power. Voltage thresholds are measured and do not change the primary model. Reduced phase portraits and cold-step tests start from zero branch current and the rated bus voltage. Fig. 7–8's initial current is not specified; the zero-load equilibrium is an independent assumption.",
+    "initial_condition_sensitivity": "For the comparison at 70 kW, also initialize each case at the equilibrium of its smallest positive load in Figs. 7 and 8.",
+    "four_branch_voltage_sensitivity": "A separate hypothetical load below 0.9 pu uses constant current P/(0.9 U), continuous with the ideal constant power law at the knee. It represents load model sensitivity.",
+    "phase_portrait_duration_s": 0.075,
+    "cold_step_duration_s": 0.35,
+    "waveform_sample_s": 0.00002,
+    "stop_voltage_pu": 0.05,
+    "cold_step_voltage_guard_stop_pu": [0.025, 0.10],
+    "dynamics_boundary_tolerance_w": 2.0,
+    "solver": {"rtol": 2e-10, "atol": 1e-11, "max_step": 0.00025},
+    "reference_solver": {"rtol": 2e-10, "atol": 3e-12, "max_step": 0.00018},
+    "counterexample": {"case": "25mF", "active_power_w": 200000.0, "retest_stop_voltage_pu": [0.025, 0.10]},
+    "within_both_static_limits_example_w": 70000.0,
+    "lyapunov_derivative_probe": {"case": "25mF", "active_power_w": 65000.0, "initial_current_a": 0.0, "initial_bus_voltage_v": 200.0, "voltage_gradient_step_v": 0.001, "short_trace_duration_s": 0.000001}
+  },
+  "gates": {
+    "table_iii_stability_error_w": 5000.0,
+    "table_iii_voltage_error_w": 5000.0,
+    "table_iii_intersection_tolerance_ohm": 0.0005,
+    "table_v_actual_components_limit_error_w": 10.0,
+    "independent_equilibrium_error_v": 1e-7,
+    "independent_stability_boundary_error_w": 0.002,
+    "independent_bus_waveform_error_v": 0.0002,
+    "independent_current_waveform_error_a": 0.004,
+    "independent_crossing_time_error_s": 0.00000003,
+    "linearization_max_scaled_error": 1e-7,
+    "energy_balance_error_j": 1e-5,
+    "counterexample_derivative_check_relative_error": 0.0005
+  }
+}

@@ -1,0 +1,3955 @@
+{
+  "runs": {
+    "set1_100000_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.611527059247729,
+        "im_a": -7.005691614897644,
+        "vcr_v": -972.7988536636598,
+        "vo_v": 524.6973175407384
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 8.517849181544079e-08,
+        "max_voltage_delta_v": 2.2768479084334103e-06,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 1.1030571609115382e-09,
+        "max_be_energy_relative": 5.287344735794071e-10,
+        "max_single_stage_history_rel": 6.513271963044081e-16,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 3471215,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          686778,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1256675,
+          0,
+          0,
+          1256547,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 31.756144524761936,
+        "ir_rms_a": 18.520655679001855,
+        "vo_mean_v": 524.7137078754054,
+        "vo_pp_v": 0.040739161963074366,
+        "blocked_pct": 38.793879387938794,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "verified",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0,
+      "mode_probes": {
+        "max_current_delta_a": 2.1316282072803006e-14,
+        "max_voltage_delta_v": 1.4551915228366852e-11,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 6.774195704459465e-10,
+        "max_be_energy_relative": 3.3620105637416055e-10,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 5.684341886080802e-14,
+        "reference_matrix_solves": 776,
+        "mode_mismatches": 5,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      },
+      "full_switch_network": {
+        "tested_steps": 56,
+        "max_current_error_a": 6.643574579356937e-13,
+        "max_voltage_error_v": 3.687148364406312e-10,
+        "mode_mismatches_outside_tie": 0
+      }
+    },
+    "set1_100000_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.343696682090199,
+        "im_a": -6.88433877201141,
+        "vcr_v": -976.4944317800704,
+        "vo_v": 524.6243542627968
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600043,
+          0,
+          0,
+          1599957,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.34478811236499,
+        "ir_rms_a": 18.69790081018613,
+        "vo_mean_v": 524.6411490069237,
+        "vo_pp_v": 0.04436806202988919,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 2050,
+        "direct_pair_flips": 2050
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.6455637351651315,
+        "im_a": -7.4304431758441645,
+        "vcr_v": -991.5165278622771,
+        "vo_v": 537.9248733802481
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600017,
+          0,
+          0,
+          1599983,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.63616839769018,
+        "ir_rms_a": 18.887293479683724,
+        "vo_mean_v": 537.9357425823615,
+        "vo_pp_v": 0.0527800393635971,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 2070,
+        "direct_pair_flips": 2070
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_fe_pairs_30ns": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 8732,
+      "end_s": 0.00026196,
+      "stop_state": {
+        "ir_a": 195.01770010517913,
+        "im_a": 0.4551336423837081,
+        "vcr_v": 12127.404479875324,
+        "vo_v": 36.92807664210346
+      },
+      "m1": 10556666.01027452,
+      "m2": 34.333258600478956,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4353,
+          0,
+          0,
+          4379,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 30000,
+      "frequency_hz": 100000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_higher_ron": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.613763995575066,
+        "im_a": -7.007857749025127,
+        "vcr_v": -970.8001260882609,
+        "vo_v": 523.6732486423048
+      },
+      "m1": 42069499.65744532,
+      "m2": 667.6564865459977,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          688609,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1255743,
+          0,
+          0,
+          1255648,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 31.679787537327332,
+        "ir_rms_a": 18.479473501328638,
+        "vo_mean_v": 523.6896150098548,
+        "vo_pp_v": 0.04065654557075504,
+        "blocked_pct": 38.793879387938794,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.01,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_lower_roff": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.567802200032649,
+        "im_a": -6.97710202291671,
+        "vcr_v": -976.2462188292841,
+        "vo_v": 524.4648139565404
+      },
+      "m1": 39808270.80747927,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          686675,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1256710,
+          0,
+          0,
+          1256615,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 31.894182267240488,
+        "ir_rms_a": 18.593107092592483,
+        "vo_mean_v": 524.4812614754476,
+        "vo_pp_v": 0.040866482814976735,
+        "blocked_pct": 38.793879387938794,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        10000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_precharged": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.611527059785761,
+        "im_a": -7.005691615391523,
+        "vcr_v": -972.7988535930452,
+        "vo_v": 524.6973175421813
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1106806,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1046695,
+          0,
+          0,
+          1046499,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 31.756144521747874,
+        "ir_rms_a": 18.52065567746557,
+        "vo_mean_v": 524.7137078769279,
+        "vo_pp_v": 0.040739161793794665,
+        "blocked_pct": 38.793879387938794,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 400.0
+    },
+    "set1_100000_native_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.087081969854995,
+        "im_a": -7.137621234395469,
+        "vcr_v": -985.0433929174734,
+        "vo_v": 531.8521118794563
+      },
+      "m1": 2578054194.0238285,
+      "m2": 534.3332614701363,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          5345770,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10127517,
+          0,
+          0,
+          10126713,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.22572413024979,
+        "ir_rms_a": 18.804548019740864,
+        "vo_mean_v": 531.8684379562948,
+        "vo_pp_v": 0.04111763733635598,
+        "blocked_pct": 38.53711585697411,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 1875,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_native_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.88675318255952,
+        "im_a": -7.084561728296676,
+        "vcr_v": -979.8705981886718,
+        "vo_v": 528.7593387852518
+      },
+      "m1": 167197219.1802226,
+      "m2": 134.3332608843783,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1352330,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2523940,
+          0,
+          0,
+          2523730,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.02699341969734,
+        "ir_rms_a": 18.68163084556481,
+        "vo_mean_v": 528.775697163578,
+        "vo_pp_v": 0.04097447414983435,
+        "blocked_pct": 38.64846621165529,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 7500,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_native_30000ps": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.093148035820015,
+        "im_a": -6.880464123204051,
+        "vcr_v": -959.3397848720539,
+        "vo_v": 516.7870569239329
+      },
+      "m1": 10556666.01027452,
+      "m2": 34.333258600478956,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          351794,
+          0,
+          0,
+          0,
+          0,
+          0,
+          624125,
+          0,
+          0,
+          624081,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 31.25303123856885,
+        "ir_rms_a": 18.20493755375007,
+        "vo_mean_v": 516.8035085755639,
+        "vo_pp_v": 0.04041074104827658,
+        "blocked_pct": 38.793879387938794,
+        "rectifier_mode_transitions": 40,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 30000,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_locked_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.089359364083393,
+        "im_a": -7.139823600818463,
+        "vcr_v": -984.0913312155496,
+        "vo_v": 531.8520832113287
+      },
+      "m1": 2578054194.0238285,
+      "m2": 534.3332614701363,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          5345901,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10127447,
+          0,
+          0,
+          10126652,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.250898309068816,
+        "ir_rms_a": 18.805507688691556,
+        "vo_mean_v": 531.8682757073143,
+        "vo_pp_v": 0.04127082124807657,
+        "blocked_pct": 38.53524084525528,
+        "rectifier_mode_transitions": 41,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 1875,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_locked_3750ps": {
+      "status": "completed",
+      "simulated_steps": 12800000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.020856352807561,
+        "im_a": -7.120344498757861,
+        "vcr_v": -982.4731783817182,
+        "vo_v": 530.816695694564
+      },
+      "m1": 660482728.2992996,
+      "m2": 267.66659460757586,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          2683697,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5058339,
+          0,
+          0,
+          5057964,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.17941816757638,
+        "ir_rms_a": 18.76435729337664,
+        "vo_mean_v": 530.8329179268657,
+        "vo_pp_v": 0.041193955672156335,
+        "blocked_pct": 38.56971424285607,
+        "rectifier_mode_transitions": 41,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 3750,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_100000_locked_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.88408944613545,
+        "im_a": -7.081707013789363,
+        "vcr_v": -979.2419138071357,
+        "vo_v": 528.7592976233826
+      },
+      "m1": 167197219.1802226,
+      "m2": 134.3332608843783,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1352486,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2523839,
+          0,
+          0,
+          2523675,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 32.03711757356253,
+        "ir_rms_a": 18.682257612866223,
+        "vo_mean_v": 528.775577320826,
+        "vo_pp_v": 0.041041286940867394,
+        "blocked_pct": 38.6409660241506,
+        "rectifier_mode_transitions": 41,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 7500,
+      "frequency_hz": 100000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_80000_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": 10.820966364914858,
+        "im_a": 1.7208516923128505,
+        "vcr_v": -1493.8924796678125,
+        "vo_v": 521.2773216560845
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          266478,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1466761,
+          0,
+          0,
+          1466761,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 53.02278189129019,
+        "ir_rms_a": 27.410916844918543,
+        "vo_mean_v": 521.1009607464412,
+        "vo_pp_v": 0.46304552013987177,
+        "blocked_pct": 21.842184218421842,
+        "rectifier_mode_transitions": 32,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 80000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_80000_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": 11.246061296359548,
+        "im_a": 1.7710294172932615,
+        "vcr_v": -1496.2780218417188,
+        "vo_v": 521.1307286191153
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1599975,
+          0,
+          0,
+          1600025,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 53.212350045858194,
+        "ir_rms_a": 27.48416080827174,
+        "vo_mean_v": 520.9550524705714,
+        "vo_pp_v": 0.46222454812220803,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 314,
+        "direct_pair_flips": 314
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 80000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_80000_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": 11.765521118261272,
+        "im_a": 0.22869945121390278,
+        "vcr_v": -1513.232641544353,
+        "vo_v": 534.4911668214354
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600238,
+          0,
+          0,
+          1599762,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 55.51569706799633,
+        "ir_rms_a": 27.85020973007685,
+        "vo_mean_v": 534.3021799487852,
+        "vo_pp_v": 0.4826764005738369,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 334,
+        "direct_pair_flips": 334
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 80000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_80000_fe_pairs_30ns": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 19038,
+      "end_s": 0.00057114,
+      "stop_state": {
+        "ir_a": -206.57436570152,
+        "im_a": -0.6373976273306644,
+        "vcr_v": -12113.648935414467,
+        "vo_v": 51.01738417770705
+      },
+      "m1": 10556666.01027452,
+      "m2": 34.333258600478956,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9525,
+          0,
+          0,
+          9513,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 30000,
+      "frequency_hz": 80000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_120000_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.1277348996554135,
+        "im_a": -7.3770063309912395,
+        "vcr_v": -617.4207350296014,
+        "vo_v": 458.3285253811662
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          595141,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1302387,
+          0,
+          0,
+          1302472,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 22.13697375969216,
+        "ir_rms_a": 14.048282076688,
+        "vo_mean_v": 458.3354893388655,
+        "vo_pp_v": 0.023390063699196162,
+        "blocked_pct": 24.392439243924393,
+        "rectifier_mode_transitions": 48,
+        "direct_pair_flips": 0
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 120000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_120000_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.148920179997539,
+        "im_a": -7.283507237669069,
+        "vcr_v": -623.0227409122972,
+        "vo_v": 458.21653737561235
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1599959,
+          0,
+          0,
+          1600041,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 22.606074121896377,
+        "ir_rms_a": 14.226677387633616,
+        "vo_mean_v": 458.2164672800903,
+        "vo_pp_v": 0.03594601149518439,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 1476,
+        "direct_pair_flips": 1476
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 120000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_120000_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.57234918049207,
+        "im_a": -7.547162904890258,
+        "vcr_v": -617.1368892403389,
+        "vo_v": 467.73846031471936
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1599908,
+          0,
+          0,
+          1600092,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 22.305285721348078,
+        "ir_rms_a": 14.026217741079632,
+        "vo_mean_v": 467.7542628559963,
+        "vo_pp_v": 0.04233881681608409,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 1482,
+        "direct_pair_flips": 1482
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 120000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_120000_fe_pairs_30ns": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 6215,
+      "end_s": 0.00018645,
+      "stop_state": {
+        "ir_a": 168.78653982779642,
+        "im_a": 0.495217427106138,
+        "vcr_v": 12056.430633497634,
+        "vo_v": 34.47218641705348
+      },
+      "m1": 10556666.01027452,
+      "m2": 34.333258600478956,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3020,
+          0,
+          0,
+          3195,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 30000,
+      "frequency_hz": 120000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_160000_be": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 2489,
+      "end_s": 3.7335e-05,
+      "stop_state": {
+        "ir_a": -119.67430937154116,
+        "im_a": -0.13988221738064238,
+        "vcr_v": -12025.679544469058,
+        "vo_v": 9.363181396034937
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1238,
+          0,
+          0,
+          1251,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 160000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_160000_be_pairs": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 2489,
+      "end_s": 3.7335e-05,
+      "stop_state": {
+        "ir_a": -119.67430937154116,
+        "im_a": -0.13988221738064238,
+        "vcr_v": -12025.679544469058,
+        "vo_v": 9.363181396034937
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1238,
+          0,
+          0,
+          1251,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 160000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_160000_fe_pairs": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 2059,
+      "end_s": 3.0885e-05,
+      "stop_state": {
+        "ir_a": -227.02933694552016,
+        "im_a": -0.10003642935050171,
+        "vcr_v": -12034.338594494167,
+        "vo_v": 7.678302853326902
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1014,
+          0,
+          0,
+          1045,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 160000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_160000_fe_pairs_30ns": {
+      "status": "numerical_cutoff",
+      "simulated_steps": 926,
+      "end_s": 2.7779999999999998e-05,
+      "stop_state": {
+        "ir_a": 218.95811390458326,
+        "im_a": 0.08662792118095221,
+        "vcr_v": 12021.414944243656,
+        "vo_v": 6.647183005615986
+      },
+      "m1": 10556666.01027452,
+      "m2": 34.333258600478956,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          420,
+          0,
+          0,
+          506,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": null,
+      "set": "set1",
+      "step_ps": 30000,
+      "frequency_hz": 160000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set1_160000_precharged": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -6.150551983759742,
+        "im_a": -6.152358279111866,
+        "vcr_v": -346.68373053972044,
+        "vo_v": 396.36270990545756
+      },
+      "m1": 42069112.77584465,
+      "m2": 67.66659344577401,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          10859,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1594702,
+          0,
+          0,
+          1594439,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 15.174744653568316,
+        "ir_rms_a": 10.74086733407703,
+        "vo_mean_v": 396.36181660123754,
+        "vo_pp_v": 0.009004939728072259,
+        "blocked_pct": 0.33003300330033003,
+        "rectifier_mode_transitions": 53,
+        "direct_pair_flips": 10
+      },
+      "set": "set1",
+      "step_ps": 15000,
+      "frequency_hz": 160000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 400.0
+    },
+    "set2_312500_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.026725964152778,
+        "im_a": -19.026730926272307,
+        "vcr_v": -252.91671190786957,
+        "vo_v": 18.66933246455912
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 1.6412649017638614e-11,
+        "max_voltage_delta_v": 2.5775648282433394e-10,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 9.211716791416598e-12,
+        "max_be_energy_relative": 2.4549570054971477e-12,
+        "max_single_stage_history_rel": 4.3556223006438364e-16,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 4099865,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1148698,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1025663,
+          0,
+          0,
+          1025639,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.579756353578734,
+        "ir_rms_a": 14.05909376248775,
+        "vo_mean_v": 18.67276512119083,
+        "vo_pp_v": 0.035929582166492224,
+        "blocked_pct": 36.12361236123613,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "verified",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0,
+      "mode_probes": {
+        "max_current_delta_a": 8.881784197001252e-16,
+        "max_voltage_delta_v": 1.7763568394002505e-15,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 3.4249464161164746e-12,
+        "max_be_energy_relative": 1.6097227746259232e-12,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 8.326672684688674e-17,
+        "reference_matrix_solves": 776,
+        "mode_mismatches": 10,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      },
+      "full_switch_network": {
+        "tested_steps": 56,
+        "max_current_error_a": 1.0658141036401503e-13,
+        "max_voltage_error_v": 4.725109192804666e-13,
+        "mode_mismatches_outside_tie": 0
+      }
+    },
+    "set2_312500_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -20.112689885998225,
+        "im_a": -18.12885681333709,
+        "vcr_v": -276.3702628144634,
+        "vo_v": 18.61131449596484
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600088,
+          0,
+          0,
+          1599912,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 21.543546007679684,
+        "ir_rms_a": 14.224211843203491,
+        "vo_mean_v": 18.50963596512373,
+        "vo_pp_v": 0.2892332685875303,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 1165,
+        "direct_pair_flips": 1165
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -21.951354087342878,
+        "im_a": -19.905065732536737,
+        "vcr_v": -202.88568251468317,
+        "vo_v": 19.365610082260453
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600096,
+          0,
+          0,
+          1599904,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 22.919448097549587,
+        "ir_rms_a": 14.160943167947222,
+        "vo_mean_v": 19.3856528135453,
+        "vo_pp_v": 0.07190045537187117,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 1046,
+        "direct_pair_flips": 1046
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_fe_pairs_30ns": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -25.43415397539191,
+        "im_a": -21.55269966684996,
+        "vcr_v": -110.52172913750465,
+        "vo_v": 20.681395339509628
+      },
+      "m1": 11485.797056417521,
+      "m2": 100.13506845029698,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          800018,
+          0,
+          0,
+          799982,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 28.0300706490192,
+        "ir_rms_a": 13.933906380041442,
+        "vo_mean_v": 20.76690366396349,
+        "vo_pp_v": 0.15375773775238244,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 700,
+        "direct_pair_flips": 700
+      },
+      "set": "set2",
+      "step_ps": 30000,
+      "frequency_hz": 312500,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_higher_ron": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -18.819583241844626,
+        "im_a": -18.819587814385255,
+        "vcr_v": -201.31473114846153,
+        "vo_v": 15.112882930253246
+      },
+      "m1": 45686.76068544248,
+      "m2": 1917.1412596072914,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          809524,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1195250,
+          0,
+          0,
+          1195226,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.245996135044305,
+        "ir_rms_a": 12.541040282478562,
+        "vo_mean_v": 15.118211107474869,
+        "vo_pp_v": 0.0231039784969429,
+        "blocked_pct": 25.517551755175518,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.01,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_lower_roff": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.02661240572468,
+        "im_a": -19.026662025981068,
+        "vcr_v": -252.92110969426562,
+        "vo_v": 18.669300133474575
+      },
+      "m1": 45683.559180153046,
+      "m2": 200.13077299751095,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1148698,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1025663,
+          0,
+          0,
+          1025639,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.579691123559513,
+        "ir_rms_a": 14.059079043136318,
+        "vo_mean_v": 18.672733067215493,
+        "vo_pp_v": 0.035929930703609614,
+        "blocked_pct": 36.12361236123613,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        10000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_precharged": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.026725964152778,
+        "im_a": -19.026730926272307,
+        "vcr_v": -252.91671190786957,
+        "vo_v": 18.66933246455912
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1150048,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1025011,
+          0,
+          0,
+          1024941,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.579756353578734,
+        "ir_rms_a": 14.05909376248775,
+        "vo_mean_v": 18.67276512119083,
+        "vo_pp_v": 0.035929582166492224,
+        "blocked_pct": 36.12361236123613,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 12.0
+    },
+    "set2_312500_native_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.901777669169956,
+        "im_a": -19.901782515829773,
+        "vcr_v": -237.7346747461518,
+        "vo_v": 18.97354196039916
+      },
+      "m1": 2918257.5298727346,
+      "m2": 1600.1296497473484,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          9248744,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8175725,
+          0,
+          0,
+          8175531,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.951976763520424,
+        "ir_rms_a": 14.498462407085164,
+        "vo_mean_v": 18.97642694291966,
+        "vo_pp_v": 0.03448375518117075,
+        "blocked_pct": 36.31710198188738,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 1875,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_native_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.573482378339655,
+        "im_a": -19.573487280891825,
+        "vcr_v": -245.0791231058847,
+        "vo_v": 18.84141067235722
+      },
+      "m1": 182476.73739088036,
+      "m2": 400.12982454059136,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          2307270,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2046387,
+          0,
+          0,
+          2046343,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.775005285404273,
+        "ir_rms_a": 14.308173331724278,
+        "vo_mean_v": 18.84520158548383,
+        "vo_pp_v": 0.035024501788772255,
+        "blocked_pct": 36.25590639765994,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 7500,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_native_30000ps": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -18.25536487164018,
+        "im_a": -18.255369970790476,
+        "vcr_v": -270.94887720179696,
+        "vo_v": 18.329566175253056
+      },
+      "m1": 11485.797056417521,
+      "m2": 100.13506845029698,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          569457,
+          0,
+          0,
+          0,
+          0,
+          0,
+          515278,
+          0,
+          0,
+          515265,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.072961140858034,
+        "ir_rms_a": 13.569721739597204,
+        "vo_mean_v": 18.336783267759575,
+        "vo_pp_v": 0.03712268607619151,
+        "blocked_pct": 35.85358535853585,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 30000,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_locked_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.82321389854675,
+        "im_a": -19.823218708182058,
+        "vcr_v": -232.8628690424332,
+        "vo_v": 18.975085982101316
+      },
+      "m1": 2918257.5298727346,
+      "m2": 1600.1296497473484,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          9248721,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8175726,
+          0,
+          0,
+          8175553,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 20.054417200742144,
+        "ir_rms_a": 14.499048719367147,
+        "vo_mean_v": 18.97647001663749,
+        "vo_pp_v": 0.03672000107908602,
+        "blocked_pct": 36.30960193501209,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 1875,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_locked_3750ps": {
+      "status": "completed",
+      "simulated_steps": 12800000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.709934455299365,
+        "im_a": -19.709939287812187,
+        "vcr_v": -235.8661950438849,
+        "vo_v": 18.93086702976042
+      },
+      "m1": 729639.0246796295,
+      "m2": 800.129656604789,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          4624399,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4087849,
+          0,
+          0,
+          4087752,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.98594380446944,
+        "ir_rms_a": 14.435382442081627,
+        "vo_mean_v": 18.932552465123816,
+        "vo_pp_v": 0.0366038076288433,
+        "blocked_pct": 36.31590789769744,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 3750,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_312500_locked_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -19.48278061775219,
+        "im_a": -19.482785494852244,
+        "vcr_v": -241.7301240171946,
+        "vo_v": 18.842893113899454
+      },
+      "m1": 182476.73739088036,
+      "m2": 400.12982454059136,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          2317210,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2041421,
+          0,
+          0,
+          2041369,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 19.84956504578338,
+        "ir_rms_a": 14.308737444799476,
+        "vo_mean_v": 18.84517324941967,
+        "vo_pp_v": 0.03637517401139334,
+        "blocked_pct": 36.405910147753694,
+        "rectifier_mode_transitions": 125,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 7500,
+      "frequency_hz": 312500,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_400000_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -12.2896567682639,
+        "im_a": -12.289660644920616,
+        "vcr_v": -110.0968373014424,
+        "vo_v": 13.806728119214961
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          729132,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1235441,
+          0,
+          0,
+          1235427,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 12.672787493515694,
+        "ir_rms_a": 8.930143904492212,
+        "vo_mean_v": 13.806810300189575,
+        "vo_pp_v": 0.01764680213954506,
+        "blocked_pct": 22.78727872787279,
+        "rectifier_mode_transitions": 160,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 400000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_400000_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -10.904366941482499,
+        "im_a": -12.18518046355065,
+        "vcr_v": -110.32211497998485,
+        "vo_v": 13.771744149374879
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600008,
+          0,
+          0,
+          1599992,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 13.843454530823994,
+        "ir_rms_a": 8.864008650807762,
+        "vo_mean_v": 13.770055712826919,
+        "vo_pp_v": 0.02330720940813258,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 452,
+        "direct_pair_flips": 452
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 400000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_400000_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -12.569088933242838,
+        "im_a": -13.12336969118903,
+        "vcr_v": -87.25401568616583,
+        "vo_v": 14.116503247381642
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600012,
+          0,
+          0,
+          1599988,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 14.535063358239068,
+        "ir_rms_a": 8.362465851679405,
+        "vo_mean_v": 14.12000495855994,
+        "vo_pp_v": 0.013667507458650974,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 613,
+        "direct_pair_flips": 613
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 400000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_400000_fe_pairs_30ns": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -18.418864400489404,
+        "im_a": -13.401880308468009,
+        "vcr_v": -95.37376178855222,
+        "vo_v": 16.06434088689658
+      },
+      "m1": 11485.797056417521,
+      "m2": 100.13506845029698,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          800004,
+          0,
+          0,
+          799996,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 20.13769779630301,
+        "ir_rms_a": 8.58007525497236,
+        "vo_mean_v": 16.077643355728537,
+        "vo_pp_v": 0.05743599185910497,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 674,
+        "direct_pair_flips": 674
+      },
+      "set": "set2",
+      "step_ps": 30000,
+      "frequency_hz": 400000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_be": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -8.739588575759326,
+        "im_a": -8.739592111431321,
+        "vcr_v": -65.23460485626907,
+        "vo_v": 11.92089130918156
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 2.7147173398134328e-12,
+        "max_voltage_delta_v": 3.8625103115919046e-11,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 8.663640669896641e-12,
+        "max_be_energy_relative": 3.317935685839818e-12,
+        "max_single_stage_history_rel": 4.356127606543867e-16,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 4639880,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          239896,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1480051,
+          0,
+          0,
+          1480053,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.243862909200892,
+        "ir_rms_a": 6.676631566388238,
+        "vo_mean_v": 11.918565573822235,
+        "vo_pp_v": 0.010206883600741179,
+        "blocked_pct": 7.485748574857485,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 500000,
+      "method": "verified",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0,
+      "mode_probes": {
+        "max_current_delta_a": 8.881784197001252e-16,
+        "max_voltage_delta_v": 1.7763568394002505e-15,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 3.4249464161164746e-12,
+        "max_be_energy_relative": 1.6097227746259232e-12,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 8.326672684688674e-17,
+        "reference_matrix_solves": 776,
+        "mode_mismatches": 10,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      },
+      "full_switch_network": {
+        "tested_steps": 55,
+        "max_current_error_a": 3.197442310920451e-14,
+        "max_voltage_error_v": 1.4477308241112041e-13,
+        "mode_mismatches_outside_tie": 0
+      }
+    },
+    "set2_500000_be_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.499445297166376,
+        "im_a": -8.596972523115008,
+        "vcr_v": -62.65535669552676,
+        "vo_v": 11.92593888254978
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600002,
+          0,
+          0,
+          1599998,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.961561178926742,
+        "ir_rms_a": 6.418366878419079,
+        "vo_mean_v": 11.922785751395807,
+        "vo_pp_v": 0.014048519586511432,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 166,
+        "direct_pair_flips": 166
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 500000,
+      "method": "backward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_fe_pairs": {
+      "status": "completed",
+      "simulated_steps": 3200000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -9.127397265185284,
+        "im_a": -9.097128223854998,
+        "vcr_v": -43.14511963679678,
+        "vo_v": 12.122792053128473
+      },
+      "m1": 45684.498290726166,
+      "m2": 200.13077299751137,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1600002,
+          0,
+          0,
+          1599998,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 11.507277108905228,
+        "ir_rms_a": 6.365923111160146,
+        "vo_mean_v": 12.122216919349071,
+        "vo_pp_v": 0.01166736550632308,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 276,
+        "direct_pair_flips": 276
+      },
+      "set": "set2",
+      "step_ps": 15000,
+      "frequency_hz": 500000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_fe_pairs_30ns": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -7.457472472309158,
+        "im_a": -8.797066243975245,
+        "vcr_v": -54.58954957491753,
+        "vo_v": 15.633371660980943
+      },
+      "m1": 11485.797056417521,
+      "m2": 100.13506845029698,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          799998,
+          0,
+          0,
+          800002,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 15.340346039682844,
+        "ir_rms_a": 6.440605964166867,
+        "vo_mean_v": 15.637748219357713,
+        "vo_pp_v": 0.021492286813229455,
+        "blocked_pct": 0.0,
+        "rectifier_mode_transitions": 886,
+        "direct_pair_flips": 886
+      },
+      "set": "set2",
+      "step_ps": 30000,
+      "frequency_hz": 500000,
+      "method": "forward_pairs",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_native_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -9.171797238313752,
+        "im_a": -9.17180072588946,
+        "vcr_v": -58.917637734356745,
+        "vo_v": 11.979831085749712
+      },
+      "m1": 2918257.5298727346,
+      "m2": 1600.1296497473484,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1891069,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11854468,
+          0,
+          0,
+          11854463,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.469845644743026,
+        "ir_rms_a": 6.831514806821006,
+        "vo_mean_v": 11.977455408826044,
+        "vo_pp_v": 0.0087392991995916,
+        "blocked_pct": 7.374421090131814,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 1875,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_native_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -9.039847892463879,
+        "im_a": -9.03985140409105,
+        "vcr_v": -62.07183029341367,
+        "vo_v": 11.953916418038444
+      },
+      "m1": 182476.73739088036,
+      "m2": 400.12982454059136,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          480096,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2959952,
+          0,
+          0,
+          2959952,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.373911435509473,
+        "ir_rms_a": 6.764418722038459,
+        "vo_mean_v": 11.952062155817458,
+        "vo_pp_v": 0.009253831549605351,
+        "blocked_pct": 7.5001875046876165,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 7500,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_native_30000ps": {
+      "status": "completed",
+      "simulated_steps": 1600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -8.497957723452965,
+        "im_a": -8.506432314951986,
+        "vcr_v": -73.90192114069926,
+        "vo_v": 11.852665626609244
+      },
+      "m1": 11485.797056417521,
+      "m2": 100.13506845029698,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          127932,
+          0,
+          0,
+          0,
+          0,
+          0,
+          736033,
+          0,
+          0,
+          736035,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.247165960069577,
+        "ir_rms_a": 6.501398834300793,
+        "vo_mean_v": 11.852904409630366,
+        "vo_pp_v": 0.011283871070871143,
+        "blocked_pct": 8.010801080108012,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 30000,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_locked_fine": {
+      "status": "completed",
+      "simulated_steps": 25600000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -9.05588694207821,
+        "im_a": -9.055890411581633,
+        "vcr_v": -56.53978240513904,
+        "vo_v": 11.981466445765077
+      },
+      "m1": 2918257.5298727346,
+      "m2": 1600.1296497473484,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          1907134,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11846410,
+          0,
+          0,
+          11846456,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.556425948578877,
+        "ir_rms_a": 6.833010531347075,
+        "vo_mean_v": 11.978001498904193,
+        "vo_pp_v": 0.010366469686220015,
+        "blocked_pct": 7.432546453415334,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 1875,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_locked_3750ps": {
+      "status": "completed",
+      "simulated_steps": 12800000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -9.011332803446267,
+        "im_a": -9.011336282710317,
+        "vcr_v": -57.81695299563094,
+        "vo_v": 11.97278393195195
+      },
+      "m1": 729639.0246796295,
+      "m2": 800.129656604789,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          928971,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5935512,
+          0,
+          0,
+          5935517,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.504438300238311,
+        "ir_rms_a": 6.810560043118674,
+        "vo_mean_v": 11.969483915750143,
+        "vo_pp_v": 0.010343529503675342,
+        "blocked_pct": 7.241431035775895,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 3750,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_500000_locked_7500ps": {
+      "status": "completed",
+      "simulated_steps": 6400000,
+      "end_s": 0.048,
+      "stop_state": {
+        "ir_a": -8.92156160107475,
+        "im_a": -8.921565099516261,
+        "vcr_v": -60.33699890793321,
+        "vo_v": 11.955398704504837
+      },
+      "m1": 182476.73739088036,
+      "m2": 400.12982454059136,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          496076,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2951961,
+          0,
+          0,
+          2951963,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "late_window": {
+        "start_s": 0.0479,
+        "ir_abs_peak_a": 9.401026085673434,
+        "ir_rms_a": 6.76575338517817,
+        "vo_mean_v": 11.952427074816365,
+        "vo_pp_v": 0.010296558328908745,
+        "blocked_pct": 7.740193504837621,
+        "rectifier_mode_transitions": 200,
+        "direct_pair_flips": 0
+      },
+      "set": "set2",
+      "step_ps": 7500,
+      "frequency_hz": 500000,
+      "method": "dmm",
+      "gate_clock_ps": 15000,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0
+    },
+    "set2_section_iv_d_nominal_load": {
+      "status": "completed",
+      "simulated_steps": 24000000,
+      "end_s": 0.6,
+      "stop_state": {
+        "ir_a": 8.59728601091997,
+        "im_a": 8.60274722939473,
+        "vcr_v": 74.42798001792103,
+        "vo_v": 11.87328715934476
+      },
+      "m1": 16501.68506020582,
+      "m2": 120.13328766916199,
+      "solver_checks": {
+        "max_current_delta_a": 0,
+        "max_voltage_delta_v": 0,
+        "max_diode_sign_violation_v": 0,
+        "max_kcl_relative": 0,
+        "max_be_energy_relative": 0,
+        "max_single_stage_history_rel": 0,
+        "max_mode_mismatch_boundary_distance_v": 0,
+        "reference_matrix_solves": 0,
+        "mode_mismatches": 0,
+        "single_stage_mode_mismatches": 0,
+        "mask_counts": [
+          5957446,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9021131,
+          0,
+          0,
+          9021423,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "set": "set2",
+      "step_ps": 25000,
+      "frequency_hz": null,
+      "method": "dmm",
+      "gate_clock_ps": 0,
+      "resistance_ohm": [
+        0.001,
+        100000.0
+      ],
+      "output_initial_v": 0.0,
+      "schedule_waveform_features": {
+        "near_0.05": {
+          "mean_vo_v": 18.445902665826292,
+          "max_abs_ir_a": 19.119548665347022,
+          "ripple_vo_pp_v": 0.03288640286245226
+        },
+        "near_0.55": {
+          "mean_vo_v": 11.872834387839267,
+          "max_abs_ir_a": 9.056257142220215,
+          "ripple_vo_pp_v": 0.008328431817881565
+        },
+        "near_end": {
+          "mean_vo_v": 11.872835516945267,
+          "max_abs_ir_a": 9.056257142220215,
+          "ripple_vo_pp_v": 0.008328431817881565
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "set1_100000_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.696046701132996,
+      "ir_nrmse_pct": 1.6402756426476717,
+      "vo_mean_error_v": -0.0725590279446773,
+      "vo_nrmse_pct": 0.013829141867453251,
+      "ir_rmse_inside_block_a": 0.28222950815807457,
+      "direct_pair_flips_inside_reference_block": 2043
+    },
+    "set1_100000_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.281172961198095,
+      "ir_nrmse_pct": 2.7591760704693624,
+      "vo_mean_error_v": 13.222034684787717,
+      "vo_nrmse_pct": 2.5198570076173965,
+      "ir_rmse_inside_block_a": 0.33926771814388085,
+      "direct_pair_flips_inside_reference_block": 2051
+    },
+    "set1_100000_fe_pairs_30ns": null,
+    "set1_100000_higher_ron": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.07892898700948336,
+      "ir_nrmse_pct": 0.2282440664588646,
+      "vo_mean_error_v": -1.0240928619062664,
+      "vo_nrmse_pct": 0.19517173869102877
+    },
+    "set1_100000_lower_roff": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.15654155247934654,
+      "ir_nrmse_pct": 0.4784552190732424,
+      "vo_mean_error_v": -0.23244640858443374,
+      "vo_nrmse_pct": 0.04429966490798375
+    },
+    "set1_100000_precharged": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 3.258719516452402e-09,
+      "ir_nrmse_pct": 9.433058400193105e-09,
+      "vo_mean_error_v": 1.5224377051272607e-09,
+      "vo_nrmse_pct": 2.903019114460256e-10
+    },
+    "set1_100000_native_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.8047285766694756,
+      "ir_nrmse_pct": 1.9623934674413888,
+      "vo_mean_error_v": -7.15473163863146,
+      "vo_nrmse_pct": 1.3452070364403206
+    },
+    "set1_100000_native_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.3426801496572729,
+      "ir_nrmse_pct": 0.8470611199889266,
+      "vo_mean_error_v": -3.0927411010890395,
+      "vo_nrmse_pct": 0.5814861131276972
+    },
+    "set1_100000_native_30000ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.6701523158092542,
+      "ir_nrmse_pct": 4.128951127454351,
+      "vo_mean_error_v": -15.064930943371753,
+      "vo_nrmse_pct": 2.8324543997031024
+    },
+    "set1_100000_locked_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.787285233376938,
+      "ir_nrmse_pct": 2.2251624006577866,
+      "vo_mean_error_v": -7.15456939117963,
+      "vo_nrmse_pct": 1.3451769423166446
+    },
+    "set1_100000_locked_3750ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.11396454624539487,
+      "ir_nrmse_pct": 0.32178737821252273,
+      "vo_mean_error_v": -1.0353580877351358,
+      "vo_nrmse_pct": 0.194664381669291
+    },
+    "set1_100000_locked_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.3403819685334426,
+      "ir_nrmse_pct": 0.9614182912154063,
+      "vo_mean_error_v": -3.092698695954067,
+      "vo_nrmse_pct": 0.5814783179575648
+    },
+    "set1_80000_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.4961304009060168,
+      "ir_nrmse_pct": 0.8358229713798669,
+      "vo_mean_error_v": -0.14590829715114198,
+      "vo_nrmse_pct": 0.028000121257643947,
+      "ir_rmse_inside_block_a": 0.25757400813494824,
+      "direct_pair_flips_inside_reference_block": 309
+    },
+    "set1_80000_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 2.503630275853318,
+      "ir_nrmse_pct": 4.755748996948445,
+      "vo_mean_error_v": 13.201219084030088,
+      "vo_nrmse_pct": 2.533332833289916,
+      "ir_rmse_inside_block_a": 1.468798907123443,
+      "direct_pair_flips_inside_reference_block": 331
+    },
+    "set1_80000_fe_pairs_30ns": null,
+    "set1_120000_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.5628390887361734,
+      "ir_nrmse_pct": 2.0478963644770154,
+      "vo_mean_error_v": -0.11902189960704543,
+      "vo_nrmse_pct": 0.025980819931678084,
+      "ir_rmse_inside_block_a": 0.24958556256342632,
+      "direct_pair_flips_inside_reference_block": 1457
+    },
+    "set1_120000_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.7977754616304757,
+      "ir_nrmse_pct": 2.4767798911577885,
+      "vo_mean_error_v": 9.418773654324456,
+      "vo_nrmse_pct": 2.05499589141694,
+      "ir_rmse_inside_block_a": 0.28583792360811644,
+      "direct_pair_flips_inside_reference_block": 1434
+    },
+    "set1_120000_fe_pairs_30ns": null,
+    "set1_160000_be_pairs": null,
+    "set1_160000_fe_pairs": null,
+    "set1_160000_fe_pairs_30ns": null,
+    "set2_312500_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 3.2571553283854757,
+      "ir_nrmse_pct": 9.651862259210962,
+      "vo_mean_error_v": -0.1631318072893467,
+      "vo_nrmse_pct": 0.9559862519448566,
+      "ir_rmse_inside_block_a": 1.147232929607851,
+      "direct_pair_flips_inside_reference_block": 1163
+    },
+    "set2_312500_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 5.654594559248121,
+      "ir_nrmse_pct": 19.56792810279637,
+      "vo_mean_error_v": 0.712887991471333,
+      "vo_nrmse_pct": 3.8184783955610655,
+      "ir_rmse_inside_block_a": 1.7347228829679437,
+      "direct_pair_flips_inside_reference_block": 1014
+    },
+    "set2_312500_fe_pairs_30ns": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 12.844817733118887,
+      "ir_nrmse_pct": 37.81287701343033,
+      "vo_mean_error_v": 2.0941367596420184,
+      "vo_nrmse_pct": 11.215945065331724,
+      "ir_rmse_inside_block_a": 3.6034917262209913,
+      "direct_pair_flips_inside_reference_block": 503
+    },
+    "set2_312500_higher_ron": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 4.933421239819895,
+      "ir_nrmse_pct": 16.916705817763162,
+      "vo_mean_error_v": -3.554554150078591,
+      "vo_nrmse_pct": 19.036047910780272
+    },
+    "set2_312500_lower_roff": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.0003363507796290133,
+      "ir_nrmse_pct": 0.0013385695321518974,
+      "vo_mean_error_v": -3.205396399307282e-05,
+      "vo_nrmse_pct": 0.00017166752742807416
+    },
+    "set2_312500_precharged": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.0,
+      "ir_nrmse_pct": 0.0,
+      "vo_mean_error_v": 0.0,
+      "vo_nrmse_pct": 0.0
+    },
+    "set2_312500_native_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.6321544457985566,
+      "ir_nrmse_pct": 6.478214530797902,
+      "vo_mean_error_v": -0.3036611683012716,
+      "vo_nrmse_pct": 1.6002443807432585
+    },
+    "set2_312500_native_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.7081135671990966,
+      "ir_nrmse_pct": 2.83439266631029,
+      "vo_mean_error_v": -0.13122526710164678,
+      "vo_nrmse_pct": 0.6915354829824771
+    },
+    "set2_312500_native_30000ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 3.380479835411232,
+      "ir_nrmse_pct": 13.29822574380457,
+      "vo_mean_error_v": -0.6396428788561986,
+      "vo_nrmse_pct": 3.3708078779537054
+    },
+    "set2_312500_locked_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.8559660888999412,
+      "ir_nrmse_pct": 7.288498799326623,
+      "vo_mean_error_v": -0.3037042524126912,
+      "vo_nrmse_pct": 1.6004679665398858
+    },
+    "set2_312500_locked_3750ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.27142675459629473,
+      "ir_nrmse_pct": 1.0738797767162624,
+      "vo_mean_error_v": -0.04391748049687033,
+      "vo_nrmse_pct": 0.23143755968087448
+    },
+    "set2_312500_locked_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.8082331321165337,
+      "ir_nrmse_pct": 3.1896626384202875,
+      "vo_mean_error_v": -0.13129667462884806,
+      "vo_nrmse_pct": 0.691910700323477
+    },
+    "set2_400000_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.5655025661592301,
+      "ir_nrmse_pct": 6.940651692501672,
+      "vo_mean_error_v": -0.03675454219658265,
+      "vo_nrmse_pct": 0.2670816329897746,
+      "ir_rmse_inside_block_a": 0.9061076439035053,
+      "direct_pair_flips_inside_reference_block": 452
+    },
+    "set2_400000_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 2.812114528575261,
+      "ir_nrmse_pct": 16.25964152873987,
+      "vo_mean_error_v": 0.3131945628593584,
+      "vo_nrmse_pct": 2.2685672734830606,
+      "ir_rmse_inside_block_a": 1.1795396907016653,
+      "direct_pair_flips_inside_reference_block": 505
+    },
+    "set2_400000_fe_pairs_30ns": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 9.38864848454454,
+      "ir_nrmse_pct": 37.655340301489346,
+      "vo_mean_error_v": 2.2708327455058788,
+      "vo_nrmse_pct": 16.44746195679614,
+      "ir_rmse_inside_block_a": 3.0575032571149197,
+      "direct_pair_flips_inside_reference_block": 303
+    },
+    "set2_500000_be_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.2851214045162411,
+      "ir_nrmse_pct": 7.9256543004961335,
+      "vo_mean_error_v": 0.004220077451195886,
+      "vo_nrmse_pct": 0.03925367333682201,
+      "ir_rmse_inside_block_a": 0.8625425172162572,
+      "direct_pair_flips_inside_reference_block": 166
+    },
+    "set2_500000_fe_pairs": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 2.6660057140040845,
+      "ir_nrmse_pct": 14.105459486759822,
+      "vo_mean_error_v": 0.20365119370442034,
+      "vo_nrmse_pct": 1.7087829272630937,
+      "ir_rmse_inside_block_a": 1.2934445689769631,
+      "direct_pair_flips_inside_reference_block": 176
+    },
+    "set2_500000_fe_pairs_30ns": {
+      "window_s": [
+        0.04790001,
+        0.048
+      ],
+      "max_abs_ir_error_a": 6.4220837056273155,
+      "ir_nrmse_pct": 35.66476125750987,
+      "vo_mean_error_v": 3.71918214094657,
+      "vo_nrmse_pct": 31.204979055249787,
+      "ir_rmse_inside_block_a": 2.52052953183562,
+      "direct_pair_flips_inside_reference_block": 79
+    },
+    "set2_500000_native_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.6804816743003559,
+      "ir_nrmse_pct": 6.022429058786076,
+      "vo_mean_error_v": -0.058889699837107685,
+      "vo_nrmse_pct": 0.4917317675039546
+    },
+    "set2_500000_native_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.27643142208702876,
+      "ir_nrmse_pct": 2.61925417071578,
+      "vo_mean_error_v": -0.025393210597987364,
+      "vo_nrmse_pct": 0.2120331028302129
+    },
+    "set2_500000_native_30000ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 1.3511686496113513,
+      "ir_nrmse_pct": 12.477677919082677,
+      "vo_mean_error_v": -0.12455078621504076,
+      "vo_nrmse_pct": 1.0399941758938964
+    },
+    "set2_500000_locked_15ns": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.7455517564132048,
+      "ir_nrmse_pct": 7.168941178544428,
+      "vo_mean_error_v": -0.059435802116478656,
+      "vo_nrmse_pct": 0.4962479428463155
+    },
+    "set2_500000_locked_3750ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.10767896759591622,
+      "ir_nrmse_pct": 1.0446688053878919,
+      "vo_mean_error_v": -0.008517538101631306,
+      "vo_nrmse_pct": 0.07111572683504061
+    },
+    "set2_500000_locked_7500ps": {
+      "window_s": [
+        0.047900000625,
+        0.048
+      ],
+      "max_abs_ir_error_a": 0.32207228442191416,
+      "ir_nrmse_pct": 3.115406740260218,
+      "vo_mean_error_v": -0.025574390876367776,
+      "vo_nrmse_pct": 0.21352881275032856
+    }
+  },
+  "validation_checks": {
+    "set1_100000_be": {
+      "finished": true,
+      "trajectory_current": true,
+      "trajectory_voltage": true,
+      "trajectory_kcl": true,
+      "trajectory_energy": true,
+      "trajectory_diode_polarity": true,
+      "trajectory_admissible_mode": true,
+      "probes_current": true,
+      "probes_voltage": true,
+      "probes_kcl": true,
+      "probes_energy": true,
+      "probes_diode_polarity": true,
+      "probes_admissible_mode": true,
+      "single_stage_history": true,
+      "single_stage_masks": true,
+      "full_bridge_mna": true,
+      "four_quadrants_probed": true
+    },
+    "set2_312500_be": {
+      "finished": true,
+      "trajectory_current": true,
+      "trajectory_voltage": true,
+      "trajectory_kcl": true,
+      "trajectory_energy": true,
+      "trajectory_diode_polarity": true,
+      "trajectory_admissible_mode": true,
+      "probes_current": true,
+      "probes_voltage": true,
+      "probes_kcl": true,
+      "probes_energy": true,
+      "probes_diode_polarity": true,
+      "probes_admissible_mode": true,
+      "single_stage_history": true,
+      "single_stage_masks": true,
+      "full_bridge_mna": true,
+      "four_quadrants_probed": true
+    },
+    "set2_500000_be": {
+      "finished": true,
+      "trajectory_current": true,
+      "trajectory_voltage": true,
+      "trajectory_kcl": true,
+      "trajectory_energy": true,
+      "trajectory_diode_polarity": true,
+      "trajectory_admissible_mode": true,
+      "probes_current": true,
+      "probes_voltage": true,
+      "probes_kcl": true,
+      "probes_energy": true,
+      "probes_diode_polarity": true,
+      "probes_admissible_mode": true,
+      "single_stage_history": true,
+      "single_stage_masks": true,
+      "full_bridge_mna": true,
+      "four_quadrants_probed": true
+    }
+  },
+  "table_i_calculated": {
+    "set1": {
+      "fr1_hz": 159154.94309189534,
+      "fr2_hz": 60154.91419254177
+    },
+    "set2": {
+      "fr1_hz": 505827.6137721114,
+      "fr2_hz": 210033.4845448862
+    }
+  }
+}

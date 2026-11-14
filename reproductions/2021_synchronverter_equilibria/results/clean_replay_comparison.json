@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "byte_identical": true,
+  "files": {
+    "run_manifest.json": {
+      "primary": "3be61afce79911feee75caa041a0b5e4085c7336a1fb37c521e422392ace4e34",
+      "replay": "3be61afce79911feee75caa041a0b5e4085c7336a1fb37c521e422392ace4e34"
+    },
+    "fig11a_mesh.npz": {
+      "primary": "8468255aee439d3269354b0106df0a7318056b036aade393727d1a6d96c0c089",
+      "replay": "8468255aee439d3269354b0106df0a7318056b036aade393727d1a6d96c0c089"
+    },
+    "fig11a_stability.png": {
+      "primary": "c6e3f0b1b94486fa12c8d041c1ec30355d09c59d4b53cfbdaaa7894d4a54d706",
+      "replay": "c6e3f0b1b94486fa12c8d041c1ec30355d09c59d4b53cfbdaaa7894d4a54d706"
+    }
+  }
+}

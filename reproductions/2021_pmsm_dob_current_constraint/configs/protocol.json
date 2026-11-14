@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TIE.2020.3005074",
+  "predeclared_scope": "Section IV reduced continuous-time PMSM, Eqs. (2)–(5), (8), (13), (16) and (17). Keep Table I and Section IV values and every published load segment. A preliminary solver probe was used to choose numerical coordinates and boundary handling. No controller gains, physical inputs or comparison windows were chosen by matching Fig. 3.",
+  "table_i": {
+    "printed_np": 4,
+    "printed_np_quantity": "Poles",
+    "pair_interpretations": {"equation_symbol_4": 4, "four_physical_poles": 2},
+    "flux_wb": 0.081,
+    "inertia_kg_m2": 0.000235,
+    "viscous_nm_s_per_rad": 0.00074,
+    "resistance_ohm": 0.8,
+    "inductance_h": 0.0029,
+    "rated_power_w": 750,
+    "rated_voltage_v": 220,
+    "rated_current_a": 4.7,
+    "rated_torque_nm": 2.387,
+    "rated_speed_rpm": 3000
+  },
+  "numerical_test": {
+    "reference_rpm": 3000,
+    "iq_bound_a": 10,
+    "uq_limit_v": 220,
+    "dq_model": "Equation (2) with ideal id = 0, average q-axis plant, symmetric applied-voltage clip. No current clamp, reference ramp, switching stage, controller gain rescaling, or integrator anti-windup is in the main reconstruction.",
+    "controllers": {
+      "dobc_high": {"law": "eq8", "k1": 8000, "k2": 200, "p": 200, "ki": 0, "barrier_l": 0},
+      "dobc_low": {"law": "eq8", "k1": 6000, "k2": 200, "p": 200, "ki": 0, "barrier_l": 0},
+      "ccpid": {"law": "eq5", "k1": 8000, "k2": 200, "p": 0, "ki": 85000, "barrier_l": 50},
+      "dob_cc_eq16": {"law": "eq16", "k1": 8000, "k2": 200, "p": 200, "ki": 0, "barrier_l": 50},
+      "dob_cc_eq17": {"law": "eq17", "k1": 8000, "k2": 200, "p": 200, "ki": 0, "barrier_l": 50}
+    },
+    "initial_conditions": {
+      "speed_rpm": 0,
+      "iq_a": 0,
+      "observer_torque_estimate_nm": 0,
+      "integral_speed_error_rad": 0,
+      "basis": "Rest start and zero current inferred from Fig. 3 and Test 1. Zero observer estimate is a reconstruction assumption. The integral lower limit is in Eq. (5)."
+    },
+    "published_constant_segments_s_start_end_nm": [[0, 0.4, 1], [0.4, 0.7, 3], [0.7, 0.9, 2.8]],
+    "unspecified_sawtooth": {
+      "interval_s": [0.9, 1.5],
+      "bounds_nm": [2.8, 3.2],
+      "baseline_assumption": "One symmetric up-and-down ramp over the full window. The timing is inferred only from the stated window and amplitude, not by tracing the waveform.",
+      "sensitivity": "Two equal symmetric up-and-down ramps. Neither ramp shape is used to assert a discrepancy with the exact published waveform."
+    },
+    "published_sinusoid": {"interval_s": [1.5, 2.0], "offset_nm": 2.8, "amplitude_nm": [0.3, 0.2], "frequency_hz": [10, 5]},
+    "table_ii_column_order": ["overshoot_rpm", "settling_s", "peak_current_a", "recovery_s", "rmse_rpm"],
+    "table_ii": {
+      "dobc_high": [0.206, 0.072, 10.268, 0.048, 34.904],
+      "dobc_low": [0.202, 0.116, 9.956, 0.090, 40.772],
+      "ccpid": [0.204, 0.083, 9.951, 0.112, 78.692],
+      "dob_cc_eq16": [0.203, 0.079, 9.953, 0.055, 35.606]
+    }
+  },
+  "scenarios": {
+    "main": "All five equation variants under both pole interpretations. Use the baseline ramp assumption for the sawtooth.",
+    "sawtooth_two_cycles": "Equation (16) and Equation (17) under equation_symbol_4, using two ramp excursions.",
+    "observer_initialization": "Equations (16) and (17) at equation_symbol_4 with the initial estimate preset to the 1 N·m starting load.",
+    "voltage_authority": {"limits_v": [110, null], "equation_symbol_4_controllers": ["dobc_high", "dob_cc_eq16", "dob_cc_eq17"], "horizon_s": 0.9, "purpose": "110 V is one half of the published numerical limit. The ideal unlimited run isolates the contribution of clipping. Its control voltages are mathematical commands."},
+    "conditional_antiwindup": "CCPID with conditional integration under equation_symbol_4. Freeze integration only when speed error drives a saturated voltage further outward.",
+    "sinusoid_from_equilibrium": "All four DOB-law variants at equation_symbol_4, initialized at the exact 2.8 N·m, 3000 rpm equilibrium at t = 1.5 s, isolating the published sine input from unknown ramp history."
+  },
+  "measurement": {
+    "band_rpm": 60,
+    "startup_s": [0, 0.4],
+    "load_step_s": [0.4, 0.7],
+    "second_step_s": [0.7, 0.9],
+    "sinusoid_s": [1.5, 2.0],
+    "convention": "Overshoot is the nonnegative speed excess over 3000 rpm. Settling/recovery is first entry into the 2% band followed by residence through the window end. RMSE requires the complete sinusoidal window. Each incomplete window retains its coverage and measured extrema. The source does not define its metric thresholds or RMSE window."
+  },
+  "numerics": {
+    "solver_primary": "Radau with piecewise analytical Jacobian in motor coordinates, current margin as a state and the equivalent torque-estimate ODE of Eq. (14).",
+    "solver_independent": "BDF in speed error and torque-error margin with per-segment analytical convolution of Eq. (13) after changing observer coordinates. The original Eq. (13) is also checked directly against Eq. (14).",
+    "sampling_s": 0.00005,
+    "max_step_s": 0.001,
+    "primary_rtol": 3e-9,
+    "independent_rtol": 8e-10,
+    "plain_dobc_primary_atol": 1e-9,
+    "atol_margin": 3e-10,
+    "atol_other_states": 3e-10,
+    "boundary_margin_a": 1e-5,
+    "boundary_refinement_margin_a": 1e-7,
+    "check_max_speed_difference_rpm": 0.3,
+    "check_max_current_difference_a": 0.02,
+    "check_boundary_time_difference_s": 0.00001,
+    "boundary_policy": "Stop a barrier law when |iq| first reaches c minus the prescribed numerical margin, before the singular boundary. Both DOB-CC laws with a finite voltage ceiling are checked at 0.1 microampere so that their startup trajectories can be resolved. CCPID and ideal unlimited-voltage runs use 10 microamperes. The run archive at 10 microamperes records the effect of the earlier stop on Eq. (17). A near-boundary event does not establish crossing. The state is never clamped. Baseline DOBC continues over c. Unlimited voltage runs use the original quotient strictly inside the domain."
+  }
+}

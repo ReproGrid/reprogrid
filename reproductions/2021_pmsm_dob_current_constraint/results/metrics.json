@@ -1,0 +1,2214 @@
+{
+  "cases": {
+    "equation_symbol_4__dobc_high": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "main",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_high",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 123.30016083087337,
+          "peak_current_time_s": 0.002992407562561064,
+          "max_speed_rpm": 3672.939095453385,
+          "min_speed_rpm": -0.8296013395822093,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285333,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.01819440405869571
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 15.75121681215844,
+          "peak_current_time_s": 0.40031394860487374,
+          "max_speed_rpm": 3001.5329143362,
+          "min_speed_rpm": 2993.596127195,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301374,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301374,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.0532854752055,
+          "min_speed_rpm": 2999.9814417182565,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684089,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 10.594067456724476,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 3000.0000000000005,
+          "min_speed_rpm": 2999.9999932750657,
+          "end_speed_rpm": 2999.9999950105844,
+          "end_iq_a": 10.594067456724476,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 10.59408313331741,
+          "peak_current_time_s": 1.2000065729416975,
+          "max_speed_rpm": 3000.000008460484,
+          "min_speed_rpm": 2999.9999950105844,
+          "end_speed_rpm": 3000.0000049894147,
+          "end_iq_a": 9.359499557877472,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 10.744913321618144,
+          "peak_current_time_s": 1.828360086900692,
+          "max_speed_rpm": 3000.00007151589,
+          "min_speed_rpm": 2999.999905951716,
+          "end_speed_rpm": 2999.9999059517245,
+          "end_iq_a": 9.359499534039951,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 5.257380930979416e-05
+        }
+      ],
+      "peak_abs_current_a": 123.30016083087337,
+      "min_current_margin_a": -113.30016083087337,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 672.9390954533856,
+        "settling_s": 0.01819440405869571,
+        "peak_current_a": 123.30016083087337,
+        "recovery_s": 0.0,
+        "rmse_rpm": 5.257380930979416e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.02452500000000002,
+      "rhs_evaluations": 47657,
+      "event_margin_a": null
+    },
+    "equation_symbol_4__dobc_low": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "main",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_low",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 123.28669309087034,
+          "peak_current_time_s": 0.0029904500444432906,
+          "max_speed_rpm": 3669.9295197117995,
+          "min_speed_rpm": -0.8296013395822093,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.017927737714642802
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 15.679860909888252,
+          "peak_current_time_s": 0.40031208388999223,
+          "max_speed_rpm": 3001.3685014693206,
+          "min_speed_rpm": 2993.5959538351244,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301372,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.0583477253003,
+          "min_speed_rpm": 2999.9831397036046,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 10.594067456327322,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.999991426949,
+          "end_speed_rpm": 2999.999993347487,
+          "end_iq_a": 10.594067456327322,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 10.594084159271448,
+          "peak_current_time_s": 1.2000071231382392,
+          "max_speed_rpm": 3000.0000104935357,
+          "min_speed_rpm": 2999.999993347487,
+          "end_speed_rpm": 3000.0000066525126,
+          "end_iq_a": 9.359499558275168,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 10.74491345267765,
+          "peak_current_time_s": 1.8283601023914335,
+          "max_speed_rpm": 3000.0000953539175,
+          "min_speed_rpm": 2999.9998746030637,
+          "end_speed_rpm": 2999.9998746030706,
+          "end_iq_a": 9.359499526454936,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 7.009747901538223e-05
+        }
+      ],
+      "peak_abs_current_a": 123.28669309087034,
+      "min_current_margin_a": -113.28669309087034,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 669.9295197117999,
+        "settling_s": 0.017927737714642802,
+        "peak_current_a": 123.28669309087034,
+        "recovery_s": 0.0,
+        "rmse_rpm": 7.009747901538223e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.022724999999999985,
+      "rhs_evaluations": 43993,
+      "event_margin_a": null
+    },
+    "equation_symbol_4__ccpid": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "main",
+      "poles": "equation_symbol_4",
+      "controller": "ccpid",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999971502919976,
+          "peak_current_time_s": 0.0001342796350538609,
+          "max_speed_rpm": 3530.0919743463396,
+          "min_speed_rpm": -0.8296013418441874,
+          "end_speed_rpm": 3011.715208055447,
+          "end_iq_a": 3.7972912305871036,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.24626988646294176
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.985714704720424,
+          "peak_current_time_s": 0.40015992642729575,
+          "max_speed_rpm": 3011.715208055447,
+          "min_speed_rpm": 3000.264486022892,
+          "end_speed_rpm": 3000.264486022892,
+          "end_iq_a": 9.976608839883458,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976608839883458,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3003.8193033974208,
+          "min_speed_rpm": 3000.264486022892,
+          "end_speed_rpm": 3000.458844709669,
+          "end_iq_a": 9.359238947085887,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 9.999887549715037,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 3000.458844709669,
+          "min_speed_rpm": 2507.3279846194882,
+          "end_speed_rpm": 2507.3279846194882,
+          "end_iq_a": 9.999887549715037,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 9.999962611956006,
+          "peak_current_time_s": 1.4108713558891997,
+          "max_speed_rpm": 3112.400468527668,
+          "min_speed_rpm": 2213.8993933691286,
+          "end_speed_rpm": 3112.400468527668,
+          "end_iq_a": 9.999954718741748,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 9.999954718741748,
+          "peak_current_time_s": 1.5,
+          "max_speed_rpm": 4309.755655836835,
+          "min_speed_rpm": 2889.310051697345,
+          "end_speed_rpm": 3041.8192631362826,
+          "end_iq_a": 9.334159511556008,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 529.2600049441422
+        }
+      ],
+      "peak_abs_current_a": 9.999971502919976,
+      "min_current_margin_a": 2.8497080023726085e-05,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 530.0919743463401,
+        "settling_s": 0.24626988646294176,
+        "peak_current_a": 9.999971502919976,
+        "recovery_s": 0.0,
+        "rmse_rpm": 529.2600049441422
+      },
+      "voltage_clip_duration_s_sampled": 0.0008249999999999854,
+      "rhs_evaluations": 57288,
+      "event_margin_a": 1e-05
+    },
+    "equation_symbol_4__dob_cc_eq16": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.0556427583383106,
+      "family": "main",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999980952541149,
+          "peak_current_time_s": 0.00013427976423268056,
+          "max_speed_rpm": 3001.487611489446,
+          "min_speed_rpm": -0.8296013404511858,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.03415962611829734
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.99996664650214,
+          "peak_current_time_s": 0.4001593139784768,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2993.5962147243117,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301388,
+          "peak_current_time_s": 0.7000000000003787,
+          "max_speed_rpm": 3000.0442025511757,
+          "min_speed_rpm": 2999.987174298209,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.0556427583383106,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 1.0556427583383106,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.999962251834,
+          "end_speed_rpm": 2999.999962251834,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.0075236777844143
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.487611489446408,
+        "settling_s": 0.03415962611829734,
+        "peak_current_a": 9.999980952541149,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0007749999999999874,
+      "rhs_evaluations": 32523,
+      "event_margin_a": 1e-07
+    },
+    "equation_symbol_4__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.0556427581499697,
+      "family": "main",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999998000470168,
+          "peak_current_time_s": 0.00013427999744942986,
+          "max_speed_rpm": 3001.7227685313615,
+          "min_speed_rpm": -0.8296013404511858,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.0341592511996484
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.999996494222332,
+          "peak_current_time_s": 0.4001593156534072,
+          "max_speed_rpm": 3000.0003169242573,
+          "min_speed_rpm": 2993.5961365360577,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.97678350730137,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301379,
+          "peak_current_time_s": 0.7000000000005294,
+          "max_speed_rpm": 3000.0517435429692,
+          "min_speed_rpm": 2999.982296764523,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.0556427581499697,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 1.0556427581499697,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.999984462603,
+          "end_speed_rpm": 2999.999984462603,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.007523677533293
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.7227685313619077,
+        "settling_s": 0.0341592511996484,
+        "peak_current_a": 9.999998000470168,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0008749999999999868,
+      "rhs_evaluations": 34744,
+      "event_margin_a": 1e-07
+    },
+    "four_physical_poles__dobc_high": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "main",
+      "poles": "four_physical_poles",
+      "controller": "dobc_high",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 172.33332660420749,
+          "peak_current_time_s": 0.004403741702925217,
+          "max_speed_rpm": 3695.0089476780586,
+          "min_speed_rpm": -1.6653466316546355,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 7.607888002257065,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.019615534112270586
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 31.4900575555726,
+          "peak_current_time_s": 0.40045178218517974,
+          "max_speed_rpm": 3003.917498383379,
+          "min_speed_rpm": 2990.8958822896984,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 19.953567014602744,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 19.953567014602744,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.0579159364906,
+          "min_speed_rpm": 2999.9798297916645,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 18.718999113368177,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 21.18813491344929,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 3000.0000000000005,
+          "min_speed_rpm": 2999.9999932750325,
+          "end_speed_rpm": 2999.999995010585,
+          "end_iq_a": 21.18813491344929,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 21.188166265749853,
+          "peak_current_time_s": 1.2000065727122384,
+          "max_speed_rpm": 3000.0000084603976,
+          "min_speed_rpm": 2999.9999950105844,
+          "end_speed_rpm": 3000.0000049894147,
+          "end_iq_a": 18.718999115755018,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 21.48982664323588,
+          "peak_current_time_s": 1.8283600868662084,
+          "max_speed_rpm": 3000.00007151589,
+          "min_speed_rpm": 2999.9999059517163,
+          "end_speed_rpm": 2999.9999059517245,
+          "end_iq_a": 18.718999068080212,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 5.2573809312569977e-05
+        }
+      ],
+      "peak_abs_current_a": 172.33332660420749,
+      "min_current_margin_a": -162.33332660420749,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 695.008947678059,
+        "settling_s": 0.019615534112270586,
+        "peak_current_a": 172.33332660420749,
+        "recovery_s": 0.0,
+        "rmse_rpm": 5.2573809312569977e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.030124999999999985,
+      "rhs_evaluations": 45931,
+      "event_margin_a": null
+    },
+    "four_physical_poles__dobc_low": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "main",
+      "poles": "four_physical_poles",
+      "controller": "dobc_low",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 172.31213970538522,
+          "peak_current_time_s": 0.00440178429393172,
+          "max_speed_rpm": 3692.8188090697213,
+          "min_speed_rpm": -1.6653466316546355,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 7.6078880022570665,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.019457215243926556
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 31.392811222340875,
+          "peak_current_time_s": 0.40044988679317,
+          "max_speed_rpm": 3003.7118181112805,
+          "min_speed_rpm": 2990.895761838656,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 19.953567014602744,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 19.953567014602744,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.059254615656,
+          "min_speed_rpm": 2999.9828776463905,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 18.718999113368177,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 21.18813491265515,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 3000.0000000000005,
+          "min_speed_rpm": 2999.9999914271784,
+          "end_speed_rpm": 2999.999993347487,
+          "end_iq_a": 21.18813491265515,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 21.18816831831643,
+          "peak_current_time_s": 1.2000071249131854,
+          "max_speed_rpm": 3000.0000104936366,
+          "min_speed_rpm": 2999.9999933474865,
+          "end_speed_rpm": 3000.0000066525126,
+          "end_iq_a": 18.71899911655034,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 21.48982691283117,
+          "peak_current_time_s": 1.8283600818849952,
+          "max_speed_rpm": 3000.0000953539493,
+          "min_speed_rpm": 2999.999874603058,
+          "end_speed_rpm": 2999.999874603069,
+          "end_iq_a": 18.718999052907527,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 7.009747902991897e-05
+        }
+      ],
+      "peak_abs_current_a": 172.31213970538522,
+      "min_current_margin_a": -162.31213970538522,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 692.8188090697217,
+        "settling_s": 0.019457215243926556,
+        "peak_current_a": 172.31213970538522,
+        "recovery_s": 0.0,
+        "rmse_rpm": 7.009747902991897e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.02807500000000001,
+      "rhs_evaluations": 42859,
+      "event_margin_a": null
+    },
+    "four_physical_poles__ccpid": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 0.5618171760417788,
+      "family": "main",
+      "poles": "four_physical_poles",
+      "controller": "ccpid",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.99994956803322,
+          "peak_current_time_s": 0.03779053939749161,
+          "max_speed_rpm": 4391.112826398401,
+          "min_speed_rpm": -1.6653466323423725,
+          "end_speed_rpm": 3291.6948804056,
+          "end_iq_a": 7.276584681841568,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": null
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.5618171760417788,
+          "peak_abs_current_a": 9.99999,
+          "peak_current_time_s": 0.5618171760417788,
+          "max_speed_rpm": 3291.6948804056,
+          "min_speed_rpm": -5132.457582082113,
+          "end_speed_rpm": -5132.457582082113,
+          "end_iq_a": 9.99999,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": null
+        }
+      ],
+      "peak_abs_current_a": 9.99999,
+      "min_current_margin_a": 9.999999999621423e-06,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1391.1128263984015,
+        "settling_s": null,
+        "peak_current_a": 9.99994956803322,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0001749999999999945,
+      "rhs_evaluations": 18277,
+      "event_margin_a": 1e-05
+    },
+    "four_physical_poles__dob_cc_eq16": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 0.4000428258933647,
+      "family": "main",
+      "poles": "four_physical_poles",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999985316429834,
+          "peak_current_time_s": 0.00013426128759990417,
+          "max_speed_rpm": 3000.036067966518,
+          "min_speed_rpm": -1.6653466305542575,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 7.607888002257066,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.14563012883894508
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.4000428258933647,
+          "peak_abs_current_a": 9.999999899999999,
+          "peak_current_time_s": 0.4000428258933647,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2996.8573517506397,
+          "end_speed_rpm": 2996.8573517506397,
+          "end_iq_a": 9.999999899999999,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": null
+        }
+      ],
+      "peak_abs_current_a": 9.999999899999999,
+      "min_current_margin_a": 1.0000000116860974e-07,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 0.03606796651865807,
+        "settling_s": 0.14563012883894508,
+        "peak_current_a": 9.999985316429834,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.00014641294668234206,
+      "rhs_evaluations": 13657,
+      "event_margin_a": 1e-07
+    },
+    "four_physical_poles__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 0.4000428309986896,
+      "family": "main",
+      "poles": "four_physical_poles",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999999614642356,
+          "peak_current_time_s": 0.00013426148313705428,
+          "max_speed_rpm": 3000.1174250815716,
+          "min_speed_rpm": -1.6653466305542575,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 7.6078880022570665,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.14562660628332713
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.4000428309986896,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 0.4000428309986896,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2996.8569368612166,
+          "end_speed_rpm": 2996.8569368612166,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": null
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 0.11742508157203702,
+        "settling_s": 0.14562660628332713,
+        "peak_current_a": 9.999999614642356,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0001464154993447846,
+      "rhs_evaluations": 15175,
+      "event_margin_a": 1e-07
+    },
+    "sawtooth_two_cycles__dob_cc_eq16": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 0.9778219666507776,
+      "family": "sawtooth_two_cycles",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999980952541149,
+          "peak_current_time_s": 0.00013427976423268056,
+          "max_speed_rpm": 3001.487611489446,
+          "min_speed_rpm": -0.8296013404511858,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.03415962611829734
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.99996664650214,
+          "peak_current_time_s": 0.4001593139784768,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2993.5962147243117,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301388,
+          "peak_current_time_s": 0.7000000000003787,
+          "max_speed_rpm": 3000.0442025511757,
+          "min_speed_rpm": 2999.987174298209,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 0.9778219666507776,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 0.9778219666507776,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.9999437367574,
+          "end_speed_rpm": 2999.9999437367574,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.0075252444020735
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.487611489446408,
+        "settling_s": 0.03415962611829734,
+        "peak_current_a": 9.999980952541149,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0007749999999999874,
+      "rhs_evaluations": 31694,
+      "event_margin_a": 1e-07
+    },
+    "observer_initialization__dob_cc_eq16": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.0556427583383106,
+      "family": "observer_initialization",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999980952541156,
+          "peak_current_time_s": 0.00013427976420704314,
+          "max_speed_rpm": 3001.4876114399713,
+          "min_speed_rpm": -0.8296013418441059,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.034159626118295774
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.99996664650214,
+          "peak_current_time_s": 0.4001593139784768,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2993.5962147243117,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301388,
+          "peak_current_time_s": 0.7000000000003787,
+          "max_speed_rpm": 3000.0442025511757,
+          "min_speed_rpm": 2999.987174298209,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.0556427583383106,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 1.0556427583383106,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.999962251834,
+          "end_speed_rpm": 2999.999962251834,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.0075236777844143
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.4876114399717153,
+        "settling_s": 0.034159626118295774,
+        "peak_current_a": 9.999980952541156,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0007749999999999874,
+      "rhs_evaluations": 31288,
+      "event_margin_a": 1e-07
+    },
+    "sawtooth_two_cycles__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 0.9778219665150117,
+      "family": "sawtooth_two_cycles",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999998000470168,
+          "peak_current_time_s": 0.00013427999744942986,
+          "max_speed_rpm": 3001.7227685313615,
+          "min_speed_rpm": -0.8296013404511858,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.0341592511996484
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.999996494222332,
+          "peak_current_time_s": 0.4001593156534072,
+          "max_speed_rpm": 3000.0003169242573,
+          "min_speed_rpm": 2993.5961365360577,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.97678350730137,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301379,
+          "peak_current_time_s": 0.7000000000005294,
+          "max_speed_rpm": 3000.0517435429692,
+          "min_speed_rpm": 2999.982296764523,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 0.9778219665150117,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 0.9778219665150117,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.999975170551,
+          "end_speed_rpm": 2999.999975170551,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.007525244040031
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.7227685313619077,
+        "settling_s": 0.0341592511996484,
+        "peak_current_a": 9.999998000470168,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0008749999999999868,
+      "rhs_evaluations": 32914,
+      "event_margin_a": 1e-07
+    },
+    "observer_initialization__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.0556427581499706,
+      "family": "observer_initialization",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999998000470168,
+          "peak_current_time_s": 0.00013427999744941186,
+          "max_speed_rpm": 3001.7227685233956,
+          "min_speed_rpm": -0.8296013418441059,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285333,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.03415925119964665
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.999996494222444,
+          "peak_current_time_s": 0.4001593156544715,
+          "max_speed_rpm": 3000.0003169242577,
+          "min_speed_rpm": 2993.5961365360604,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.97678350730138,
+          "peak_current_time_s": 0.7000000000005294,
+          "max_speed_rpm": 3000.0517435429692,
+          "min_speed_rpm": 2999.982296764522,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684089,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.0556427581499706,
+          "peak_abs_current_a": 9.9999999,
+          "peak_current_time_s": 1.0556427581499706,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.9999844626036,
+          "end_speed_rpm": 2999.9999844626036,
+          "end_iq_a": 9.9999999,
+          "end_load_nm": 3.0075236775332943
+        }
+      ],
+      "peak_abs_current_a": 9.9999999,
+      "min_current_margin_a": 9.99999993922529e-08,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1.7227685233960983,
+        "settling_s": 0.03415925119964665,
+        "peak_current_a": 9.999998000470168,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0008749999999999868,
+      "rhs_evaluations": 33371,
+      "event_margin_a": 1e-07
+    },
+    "voltage_110v__dobc_high": {
+      "status": "completed",
+      "message": "",
+      "end_s": 0.9,
+      "family": "voltage_110v",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_high",
+      "voltage_limit_v": 110,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 63.123260805454805,
+          "peak_current_time_s": 0.0033862850162443264,
+          "max_speed_rpm": 3179.575933883304,
+          "min_speed_rpm": -1.6650226405071225,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285333,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.023677317820002722
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 12.492279139136453,
+          "peak_current_time_s": 0.4065053597421428,
+          "max_speed_rpm": 3000.2530051722465,
+          "min_speed_rpm": 2873.060529431157,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.006279933053938648
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301372,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.053285475205,
+          "min_speed_rpm": 2998.270399994983,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684089,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        }
+      ],
+      "peak_abs_current_a": 63.123260805454805,
+      "min_current_margin_a": -53.123260805454805,
+      "peak_abs_voltage_v_sampled": 110.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 179.57593388330451,
+        "settling_s": 0.023677317820002722,
+        "peak_current_a": 63.123260805454805,
+        "recovery_s": 0.006279933053938648,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.053325000000000025,
+      "rhs_evaluations": 35212,
+      "event_margin_a": null
+    },
+    "voltage_unlimited__dobc_high": {
+      "status": "completed",
+      "message": "",
+      "end_s": 0.9,
+      "family": "voltage_unlimited",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_high",
+      "voltage_limit_v": null,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 16247.087586820813,
+          "peak_current_time_s": 1.2141081067599322e-05,
+          "max_speed_rpm": 4044.839985261388,
+          "min_speed_rpm": -2.344418471431529e-05,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.00010313289270214716
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 12.861889736056222,
+          "peak_current_time_s": 0.40002437338437974,
+          "max_speed_rpm": 3000.1855828179464,
+          "min_speed_rpm": 2999.4671452480284,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301374,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301374,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3000.0532854752046,
+          "min_speed_rpm": 2999.9814417182565,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        }
+      ],
+      "peak_abs_current_a": 16247.087586820813,
+      "min_current_margin_a": -16237.087586820813,
+      "peak_abs_voltage_v_sampled": 7757162.402602183,
+      "published_metric_comparison": {
+        "overshoot_rpm": 1044.8399852613884,
+        "settling_s": 0.00010313289270214716,
+        "peak_current_a": 16247.087586820813,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 27682,
+      "event_margin_a": null
+    },
+    "voltage_110v__dob_cc_eq16": {
+      "status": "completed",
+      "message": "",
+      "end_s": 0.9,
+      "family": "voltage_110v",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 110,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999980929039003,
+          "peak_current_time_s": 0.0002737676038577117,
+          "max_speed_rpm": 3002.4868495844207,
+          "min_speed_rpm": -1.665022638939811,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.034258542664665353
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.999998315417358,
+          "peak_current_time_s": 0.40323554916468346,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2873.0605314490663,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.11596069353795399
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976783507301388,
+          "peak_current_time_s": 0.7000000000003787,
+          "max_speed_rpm": 3000.0442025511697,
+          "min_speed_rpm": 2998.877870154751,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        }
+      ],
+      "peak_abs_current_a": 9.999998315417358,
+      "min_current_margin_a": 1.6845826422695609e-06,
+      "peak_abs_voltage_v_sampled": 110.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 2.4868495844211793,
+        "settling_s": 0.034258542664665353,
+        "peak_current_a": 9.999980929039003,
+        "recovery_s": 0.11596069353795399,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.013274999999999974,
+      "rhs_evaluations": 30512,
+      "event_margin_a": 1e-07
+    },
+    "voltage_unlimited__dob_cc_eq16": {
+      "status": "completed",
+      "message": "",
+      "end_s": 0.9,
+      "family": "voltage_unlimited",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": null,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999980967220418,
+          "peak_current_time_s": 1.1239582138396941e-05,
+          "max_speed_rpm": 3000.3398633214115,
+          "min_speed_rpm": -2.3444189424027182e-05,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.0340631251421129
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.99959908336085,
+          "peak_current_time_s": 0.4000151597118708,
+          "max_speed_rpm": 2999.9999999999995,
+          "min_speed_rpm": 2999.472812168171,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.97678350730139,
+          "peak_current_time_s": 0.7000000000003787,
+          "max_speed_rpm": 3000.0442025511757,
+          "min_speed_rpm": 2999.987174298211,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        }
+      ],
+      "peak_abs_current_a": 9.999980967220418,
+      "min_current_margin_a": 1.9032779581706905e-05,
+      "peak_abs_voltage_v_sampled": 7757165.820165473,
+      "published_metric_comparison": {
+        "overshoot_rpm": 0.33986332141194,
+        "settling_s": 0.0340631251421129,
+        "peak_current_a": 9.999980967220418,
+        "recovery_s": 0.0,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 25625,
+      "event_margin_a": 1e-05
+    },
+    "voltage_110v__dob_cc_eq17": {
+      "status": "completed",
+      "message": "",
+      "end_s": 0.9,
+      "family": "voltage_110v",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 110,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.99999799800296,
+          "peak_current_time_s": 0.00027376809022397594,
+          "max_speed_rpm": 3002.791131960004,
+          "min_speed_rpm": -1.665022638939811,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 3.8039440011285324,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.03425816784613839
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.999999823147776,
+          "peak_current_time_s": 0.4032355501330861,
+          "max_speed_rpm": 3000.000316924259,
+          "min_speed_rpm": 2873.0605296135914,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.976783507301372,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.11595504160438387
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.97678350730138,
+          "peak_current_time_s": 0.7000000000005294,
+          "max_speed_rpm": 3000.051743542957,
+          "min_speed_rpm": 2998.374368413769,
+          "end_speed_rpm": 2999.9999999999995,
+          "end_iq_a": 9.359499556684087,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        }
+      ],
+      "peak_abs_current_a": 9.999999823147776,
+      "min_current_margin_a": 1.768522235323644e-07,
+      "peak_abs_voltage_v_sampled": 110.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 2.79113196000435,
+        "settling_s": 0.03425816784613839,
+        "peak_current_a": 9.99999799800296,
+        "recovery_s": 0.11595504160438387,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.01442500000000001,
+      "rhs_evaluations": 32146,
+      "event_margin_a": 1e-07
+    },
+    "voltage_unlimited__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 3.738973213591534e-09,
+      "family": "voltage_unlimited",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": null,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 3.738973213591534e-09,
+          "peak_abs_current_a": 9.99999,
+          "peak_current_time_s": 3.738973213591534e-09,
+          "max_speed_rpm": 9.421050054832422e-05,
+          "min_speed_rpm": -2.3444185154386795e-05,
+          "end_speed_rpm": 9.421050054832422e-05,
+          "end_iq_a": 9.99999,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": null
+        }
+      ],
+      "peak_abs_current_a": 9.99999,
+      "min_current_margin_a": 9.999999999621423e-06,
+      "peak_abs_voltage_v_sampled": 7757162.761364306,
+      "published_metric_comparison": {
+        "overshoot_rpm": 0.0,
+        "settling_s": null,
+        "peak_current_a": 9.99999,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 580,
+      "event_margin_a": 1e-05
+    },
+    "conditional_antiwindup__ccpid": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "conditional_antiwindup",
+      "poles": "equation_symbol_4",
+      "controller": "ccpid",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "startup",
+          "start_s": 0,
+          "end_s": 0.4,
+          "peak_abs_current_a": 9.999971462209588,
+          "peak_current_time_s": 0.00013427963450880732,
+          "max_speed_rpm": 3526.093368794172,
+          "min_speed_rpm": -0.8296013418441066,
+          "end_speed_rpm": 3011.633636085481,
+          "end_iq_a": 3.79733755324658,
+          "end_load_nm": 1.0,
+          "time_to_stay_s": 0.24561229125634712
+        },
+        {
+          "segment": "load_step",
+          "start_s": 0.4,
+          "end_s": 0.7,
+          "peak_abs_current_a": 9.985714345298746,
+          "peak_current_time_s": 0.4001599214681519,
+          "max_speed_rpm": 3011.633636085481,
+          "min_speed_rpm": 3000.261764295857,
+          "end_speed_rpm": 3000.261764295857,
+          "end_iq_a": 9.976610631378776,
+          "end_load_nm": 3.0,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "second_step",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "peak_abs_current_a": 9.976610631378776,
+          "peak_current_time_s": 0.7,
+          "max_speed_rpm": 3003.816875973673,
+          "min_speed_rpm": 3000.261764295857,
+          "end_speed_rpm": 3000.458553309771,
+          "end_iq_a": 9.359239112591927,
+          "end_load_nm": 2.8,
+          "time_to_stay_s": 0.0
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 0.9,
+          "end_s": 1.2,
+          "peak_abs_current_a": 9.99988754972227,
+          "peak_current_time_s": 1.2,
+          "max_speed_rpm": 3000.458553309771,
+          "min_speed_rpm": 2507.3279492508923,
+          "end_speed_rpm": 2507.3279492508923,
+          "end_iq_a": 9.99988754972227,
+          "end_load_nm": 3.2
+        },
+        {
+          "segment": "sawtooth",
+          "start_s": 1.2,
+          "end_s": 1.5,
+          "peak_abs_current_a": 9.999962611957471,
+          "peak_current_time_s": 1.4108713574738214,
+          "max_speed_rpm": 3112.4004547815234,
+          "min_speed_rpm": 2213.8993674512158,
+          "end_speed_rpm": 3112.4004547815234,
+          "end_iq_a": 9.999954718744151,
+          "end_load_nm": 2.8
+        },
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 9.999954718744151,
+          "peak_current_time_s": 1.5,
+          "max_speed_rpm": 4309.75564606752,
+          "min_speed_rpm": 2889.3100622945344,
+          "end_speed_rpm": 3041.8192642186978,
+          "end_iq_a": 9.33415951205184,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 529.2600255106995
+        }
+      ],
+      "peak_abs_current_a": 9.999971462209588,
+      "min_current_margin_a": 2.85377904116757e-05,
+      "peak_abs_voltage_v_sampled": 220.0,
+      "published_metric_comparison": {
+        "overshoot_rpm": 526.0933687941724,
+        "settling_s": 0.24561229125634712,
+        "peak_current_a": 9.999971462209588,
+        "recovery_s": 0.0,
+        "rmse_rpm": 529.2600255106995
+      },
+      "voltage_clip_duration_s_sampled": 0.0006749999999999845,
+      "rhs_evaluations": 56817,
+      "event_margin_a": 1e-05
+    },
+    "sinusoid_from_equilibrium__dobc_high": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "sinusoid_from_equilibrium",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_high",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 10.744913329462602,
+          "peak_current_time_s": 1.8283601031984376,
+          "max_speed_rpm": 3000.000071515873,
+          "min_speed_rpm": 2999.999905951723,
+          "end_speed_rpm": 2999.999905951724,
+          "end_iq_a": 9.359499534058454,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 5.2573766139342356e-05
+        }
+      ],
+      "peak_abs_current_a": 10.744913329462602,
+      "min_current_margin_a": -0.7449133294626016,
+      "peak_abs_voltage_v_sampled": 110.40501317383242,
+      "published_metric_comparison": {
+        "overshoot_rpm": null,
+        "settling_s": null,
+        "peak_current_a": null,
+        "recovery_s": null,
+        "rmse_rpm": 5.2573766139342356e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 4037,
+      "event_margin_a": null
+    },
+    "sinusoid_from_equilibrium__dobc_low": {
+      "status": "completed",
+      "message": "",
+      "end_s": 2.0,
+      "family": "sinusoid_from_equilibrium",
+      "poles": "equation_symbol_4",
+      "controller": "dobc_low",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 2.0,
+          "peak_abs_current_a": 10.744913446937376,
+          "peak_current_time_s": 1.8283600799155866,
+          "max_speed_rpm": 3000.000095353941,
+          "min_speed_rpm": 2999.9998746030515,
+          "end_speed_rpm": 2999.999874603064,
+          "end_iq_a": 9.359499526451085,
+          "end_load_nm": 2.799999999999998,
+          "rmse_rpm": 7.009743243019223e-05
+        }
+      ],
+      "peak_abs_current_a": 10.744913446937376,
+      "min_current_margin_a": -0.7449134469373764,
+      "peak_abs_voltage_v_sampled": 110.4050136561707,
+      "published_metric_comparison": {
+        "overshoot_rpm": null,
+        "settling_s": null,
+        "peak_current_a": null,
+        "recovery_s": null,
+        "rmse_rpm": 7.009743243019223e-05
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 4014,
+      "event_margin_a": null
+    },
+    "sinusoid_from_equilibrium__dob_cc_eq16": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.6085926183400723,
+      "family": "sinusoid_from_equilibrium",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq16",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 1.6085926183400723,
+          "peak_abs_current_a": 9.999999899999999,
+          "peak_current_time_s": 1.6085926183400723,
+          "max_speed_rpm": 3000.0000721305896,
+          "min_speed_rpm": 2999.999783805933,
+          "end_speed_rpm": 2999.999783805933,
+          "end_iq_a": 9.999999899999999,
+          "end_load_nm": 3.007548225012827
+        }
+      ],
+      "peak_abs_current_a": 9.999999899999999,
+      "min_current_margin_a": 1.0000000116860974e-07,
+      "peak_abs_voltage_v_sampled": 109.98353358574005,
+      "published_metric_comparison": {
+        "overshoot_rpm": null,
+        "settling_s": null,
+        "peak_current_a": null,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 3452,
+      "event_margin_a": 1e-07
+    },
+    "sinusoid_from_equilibrium__dob_cc_eq17": {
+      "status": "near_boundary",
+      "message": "A termination event occurred.",
+      "end_s": 1.6085926182845385,
+      "family": "sinusoid_from_equilibrium",
+      "poles": "equation_symbol_4",
+      "controller": "dob_cc_eq17",
+      "voltage_limit_v": 220,
+      "segments": [
+        {
+          "segment": "sinusoid",
+          "start_s": 1.5,
+          "end_s": 1.6085926182845385,
+          "peak_abs_current_a": 9.999999900000015,
+          "peak_current_time_s": 1.6085926182845385,
+          "max_speed_rpm": 3000.000071580255,
+          "min_speed_rpm": 2999.9998753892005,
+          "end_speed_rpm": 2999.9998753892005,
+          "end_iq_a": 9.999999900000015,
+          "end_load_nm": 3.0075482237786315
+        }
+      ],
+      "peak_abs_current_a": 9.999999900000015,
+      "min_current_margin_a": 9.999998518139819e-08,
+      "peak_abs_voltage_v_sampled": 109.98301374277672,
+      "published_metric_comparison": {
+        "overshoot_rpm": null,
+        "settling_s": null,
+        "peak_current_a": null,
+        "recovery_s": null,
+        "rmse_rpm": null
+      },
+      "voltage_clip_duration_s_sampled": 0.0,
+      "rhs_evaluations": 3050,
+      "event_margin_a": 1e-07
+    }
+  },
+  "capacity": {
+    "equation_symbol_4": {
+      "pole_pairs": 4,
+      "torque_constant_nm_per_a": 0.324,
+      "load_at_ceiling_nm": 3.0075221436343558,
+      "proof_assumption_1_max_load_nm": 1.5037610718171779,
+      "eq16_over_eq17_penalty_at_same_l": 9.525986892242036,
+      "equilibria": [
+        {
+          "load_nm": 1.0,
+          "iq_a": 3.803944001128533,
+          "uq_v": 104.83075717721212,
+          "speed_at_current_ceiling_rpm": 28905.978853446944
+        },
+        {
+          "load_nm": 2.8,
+          "iq_a": 9.359499556684087,
+          "uq_v": 109.27520162165656,
+          "speed_at_current_ceiling_rpm": 5677.960131927082
+        },
+        {
+          "load_nm": 3.0,
+          "iq_a": 9.976783507301372,
+          "uq_v": 109.76902878215039,
+          "speed_at_current_ceiling_rpm": 3097.069162869318
+        },
+        {
+          "load_nm": 3.2,
+          "iq_a": 10.594067457918657,
+          "uq_v": 110.26285594264422,
+          "speed_at_current_ceiling_rpm": 516.178193811553
+        }
+      ],
+      "printed_proof_conditions": {
+        "k1_lower": 675.6756756756757,
+        "k1_upper": 49.679796762698,
+        "k2_lower": 1234.0425531914893,
+        "applied_k1": 8000,
+        "applied_k2": 200,
+        "feasible_k1_interval": false
+      }
+    },
+    "four_physical_poles": {
+      "pole_pairs": 2,
+      "torque_constant_nm_per_a": 0.162,
+      "load_at_ceiling_nm": 1.3875221436343554,
+      "proof_assumption_1_max_load_nm": 0.6937610718171777,
+      "eq16_over_eq17_penalty_at_same_l": 38.103947568968145,
+      "equilibria": [
+        {
+          "load_nm": 1.0,
+          "iq_a": 7.607888002257066,
+          "uq_v": 56.9801113899603,
+          "speed_at_current_ceiling_rpm": 8000.762004079064
+        },
+        {
+          "load_nm": 2.8,
+          "iq_a": 18.718999113368174,
+          "uq_v": 65.86900027884919,
+          "speed_at_current_ceiling_rpm": -15227.256717440794
+        },
+        {
+          "load_nm": 3.0,
+          "iq_a": 19.953567014602744,
+          "uq_v": 66.85665459983684,
+          "speed_at_current_ceiling_rpm": -17808.14768649856
+        },
+        {
+          "load_nm": 3.2,
+          "iq_a": 21.188134915837313,
+          "uq_v": 67.84430892082449,
+          "speed_at_current_ceiling_rpm": -20389.038655556324
+        }
+      ],
+      "printed_proof_conditions": {
+        "k1_lower": 675.6756756756757,
+        "k1_upper": 49.679796762698,
+        "k2_lower": 1234.0425531914893,
+        "applied_k1": 8000,
+        "applied_k2": 200,
+        "feasible_k1_interval": false
+      }
+    }
+  },
+  "cross_checks": {
+    "equation_symbol_4__dobc_high": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 3.641705552581698e-05,
+      "max_sampled_iq_difference_a": 9.856482392933685e-06,
+      "max_dense_peak_current_difference_a": 1.0020301033364376e-08,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "equation_symbol_4__dobc_low": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 0.00016683695457686554,
+      "max_sampled_iq_difference_a": 0.000155031862440147,
+      "max_dense_peak_current_difference_a": 1.4762392197553709e-08,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "equation_symbol_4__ccpid": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 8.569892997911666e-06,
+      "max_sampled_iq_difference_a": 1.3133287399824667e-05,
+      "max_dense_peak_current_difference_a": 7.784883848671598e-11,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "equation_symbol_4__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 3.7005889765850952e-06,
+      "max_sampled_iq_difference_a": 4.663131033311174e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 1.6653345369377348e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "equation_symbol_4__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.9848662304866593e-06,
+      "max_sampled_iq_difference_a": 1.257661519815656e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 4.529709940470639e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "four_physical_poles__dobc_high": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 2.0679626231867587e-05,
+      "max_sampled_iq_difference_a": 7.295064328616263e-06,
+      "max_dense_peak_current_difference_a": 2.0624426610993396e-07,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "four_physical_poles__dobc_low": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 2.16979701690434e-05,
+      "max_sampled_iq_difference_a": 1.1177586991095723e-05,
+      "max_dense_peak_current_difference_a": 4.218750575546437e-07,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "four_physical_poles__ccpid": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.7814300008467399e-06,
+      "max_sampled_iq_difference_a": 3.988640853158643e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 9.643064124986722e-12,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "four_physical_poles__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 5.079417633169214e-06,
+      "max_sampled_iq_difference_a": 3.0023586488070464e-06,
+      "max_dense_peak_current_difference_a": 1.7763568394002505e-15,
+      "end_time_difference_s": 7.16093850883226e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        1.7763568394002505e-15,
+        0.0
+      ]
+    },
+    "four_physical_poles__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 5.289631545224438e-06,
+      "max_sampled_iq_difference_a": 7.105141543561899e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 1.4022116801015727e-13,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "sawtooth_two_cycles__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 3.7005889765850952e-06,
+      "max_sampled_iq_difference_a": 4.663131033311174e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 8.104628079763643e-15,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "observer_initialization__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 3.7005888060548386e-06,
+      "max_sampled_iq_difference_a": 4.6318480215745694e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 1.6653345369377348e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "sawtooth_two_cycles__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.9848662304866593e-06,
+      "max_sampled_iq_difference_a": 1.257661519815656e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 1.4432899320127035e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "observer_initialization__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.9848539523081854e-06,
+      "max_sampled_iq_difference_a": 1.3509690273139086e-06,
+      "max_dense_peak_current_difference_a": 0.0,
+      "end_time_difference_s": 4.618527782440651e-14,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        0.0
+      ]
+    },
+    "voltage_110v__dobc_high": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.732076361804502e-05,
+      "max_sampled_iq_difference_a": 1.5510095334292373e-05,
+      "max_dense_peak_current_difference_a": 5.2172019593399455e-08,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "voltage_unlimited__dobc_high": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.2302551112952642e-05,
+      "max_sampled_iq_difference_a": 7.796070894983131e-05,
+      "max_dense_peak_current_difference_a": 3.12989141093567e-06,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "voltage_110v__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 2.9024968171142973e-06,
+      "max_sampled_iq_difference_a": 1.296325108057772e-05,
+      "max_dense_peak_current_difference_a": 1.5193357683074282e-10,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "voltage_unlimited__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 7.748776198468477e-06,
+      "max_sampled_iq_difference_a": 2.144441601714675e-05,
+      "max_dense_peak_current_difference_a": 1.588063014423824e-12,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "voltage_110v__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 5.440896984509891e-06,
+      "max_sampled_iq_difference_a": 9.363458108424538e-06,
+      "max_dense_peak_current_difference_a": 2.3092638912203256e-14,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "voltage_unlimited__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 2.5246949787944076e-09,
+      "max_sampled_iq_difference_a": 8.058709788372198e-08,
+      "max_dense_peak_current_difference_a": 1.7763568394002505e-15,
+      "end_time_difference_s": 3.0131330979109815e-17,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        0.0,
+        1.7763568394002505e-15
+      ]
+    },
+    "conditional_antiwindup__ccpid": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 2.171988899135613e-05,
+      "max_sampled_iq_difference_a": 3.8433068731080766e-05,
+      "max_dense_peak_current_difference_a": 3.590727715163666e-11,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "sinusoid_from_equilibrium__dobc_high": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 7.526068657170981e-10,
+      "max_sampled_iq_difference_a": 1.1760805662675011e-08,
+      "max_dense_peak_current_difference_a": 7.27402138522848e-10,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "sinusoid_from_equilibrium__dobc_low": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 7.112248567864299e-10,
+      "max_sampled_iq_difference_a": 1.1597444782296407e-08,
+      "max_dense_peak_current_difference_a": 7.88060106060584e-09,
+      "end_time_difference_s": 0.0,
+      "primary_status": "completed",
+      "independent_status": "completed",
+      "event_residual_a": []
+    },
+    "sinusoid_from_equilibrium__dob_cc_eq16": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.3983481039758772e-09,
+      "max_sampled_iq_difference_a": 1.201546773188511e-08,
+      "max_dense_peak_current_difference_a": 1.7763568394002505e-15,
+      "end_time_difference_s": 6.661338147750939e-16,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        1.7763568394002505e-15,
+        0.0
+      ]
+    },
+    "sinusoid_from_equilibrium__dob_cc_eq17": {
+      "passed": true,
+      "max_sampled_speed_difference_rpm": 1.1764313967432827e-09,
+      "max_sampled_iq_difference_a": 1.1493582974253513e-08,
+      "max_dense_peak_current_difference_a": 1.4210854715202004e-14,
+      "end_time_difference_s": 4.440892098500626e-16,
+      "primary_status": "near_boundary",
+      "independent_status": "near_boundary",
+      "event_residual_a": [
+        1.4210854715202004e-14,
+        0.0
+      ]
+    }
+  },
+  "checks": {
+    "equation_symbol_4__dobc_high": true,
+    "equation_symbol_4__dobc_low": true,
+    "equation_symbol_4__ccpid": true,
+    "equation_symbol_4__dob_cc_eq16": true,
+    "equation_symbol_4__dob_cc_eq17": true,
+    "four_physical_poles__dobc_high": true,
+    "four_physical_poles__dobc_low": true,
+    "four_physical_poles__ccpid": true,
+    "four_physical_poles__dob_cc_eq16": true,
+    "four_physical_poles__dob_cc_eq17": true,
+    "sawtooth_two_cycles__dob_cc_eq16": true,
+    "observer_initialization__dob_cc_eq16": true,
+    "sawtooth_two_cycles__dob_cc_eq17": true,
+    "observer_initialization__dob_cc_eq17": true,
+    "voltage_110v__dobc_high": true,
+    "voltage_unlimited__dobc_high": true,
+    "voltage_110v__dob_cc_eq16": true,
+    "voltage_unlimited__dob_cc_eq16": true,
+    "voltage_110v__dob_cc_eq17": true,
+    "voltage_unlimited__dob_cc_eq17": true,
+    "conditional_antiwindup__ccpid": true,
+    "sinusoid_from_equilibrium__dobc_high": true,
+    "sinusoid_from_equilibrium__dobc_low": true,
+    "sinusoid_from_equilibrium__dob_cc_eq16": true,
+    "sinusoid_from_equilibrium__dob_cc_eq17": true,
+    "printed_eq13_matches_eq14": true,
+    "nominal_torque_balance": true
+  },
+  "observer_eq13_error_nm": 1.021596252037682e-09,
+  "table_ii_comparison": {
+    "dobc_high": {
+      "overshoot_rpm": {
+        "paper": 0.206,
+        "computed": 672.9390954533856,
+        "signed_delta": 672.7330954533855
+      },
+      "settling_s": {
+        "paper": 0.072,
+        "computed": 0.01819440405869571,
+        "signed_delta": -0.05380559594130428
+      },
+      "peak_current_a": {
+        "paper": 10.268,
+        "computed": 123.30016083087337,
+        "signed_delta": 113.03216083087337
+      },
+      "recovery_s": {
+        "paper": 0.048,
+        "computed": 0.0,
+        "signed_delta": -0.048
+      },
+      "rmse_rpm": {
+        "paper": 34.904,
+        "computed": 5.257380930979416e-05,
+        "signed_delta": -34.90394742619069
+      }
+    },
+    "dobc_low": {
+      "overshoot_rpm": {
+        "paper": 0.202,
+        "computed": 669.9295197117999,
+        "signed_delta": 669.7275197117999
+      },
+      "settling_s": {
+        "paper": 0.116,
+        "computed": 0.017927737714642802,
+        "signed_delta": -0.0980722622853572
+      },
+      "peak_current_a": {
+        "paper": 9.956,
+        "computed": 123.28669309087034,
+        "signed_delta": 113.33069309087034
+      },
+      "recovery_s": {
+        "paper": 0.09,
+        "computed": 0.0,
+        "signed_delta": -0.09
+      },
+      "rmse_rpm": {
+        "paper": 40.772,
+        "computed": 7.009747901538223e-05,
+        "signed_delta": -40.77192990252098
+      }
+    },
+    "ccpid": {
+      "overshoot_rpm": {
+        "paper": 0.204,
+        "computed": 530.0919743463401,
+        "signed_delta": 529.8879743463401
+      },
+      "settling_s": {
+        "paper": 0.083,
+        "computed": 0.24626988646294176,
+        "signed_delta": 0.16326988646294177
+      },
+      "peak_current_a": {
+        "paper": 9.951,
+        "computed": 9.999971502919976,
+        "signed_delta": 0.04897150291997576
+      },
+      "recovery_s": {
+        "paper": 0.112,
+        "computed": 0.0,
+        "signed_delta": -0.112
+      },
+      "rmse_rpm": {
+        "paper": 78.692,
+        "computed": 529.2600049441422,
+        "signed_delta": 450.5680049441422
+      }
+    },
+    "dob_cc_eq16": {
+      "overshoot_rpm": {
+        "paper": 0.203,
+        "computed": 1.487611489446408,
+        "signed_delta": 1.284611489446408
+      },
+      "settling_s": {
+        "paper": 0.079,
+        "computed": 0.03415962611829734,
+        "signed_delta": -0.04484037388170266
+      },
+      "peak_current_a": {
+        "paper": 9.953,
+        "computed": 9.999980952541149,
+        "signed_delta": 0.046980952541149534
+      },
+      "recovery_s": {
+        "paper": 0.055,
+        "computed": 0.0,
+        "signed_delta": -0.055
+      },
+      "rmse_rpm": {
+        "paper": 35.606,
+        "computed": null,
+        "signed_delta": null
+      }
+    }
+  }
+}

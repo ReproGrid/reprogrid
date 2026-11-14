@@ -40,6 +40,11 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 构网稳定 / GFM stability | [VSG transient damping](reproductions/2021_vsg_transient_damping) | 电压跌落与暂态稳定增益区 / Voltage dip and transient gain region |
 | 构网稳定 / GFM stability | [GFM current reference saturation](reproductions/2022_gfm_current_saturation) | 18 组全电压跌落工况、第一摆与电流角上界 / 18 full-sag cases, first-swing boundary and current-angle bound |
 | 电机控制 / Motor control | [PMSM high-frequency injection](reproductions/2018_pmsm_hfi_initial_position) | 观测器、归一化和 q 轴误锁 / Observers, normalization and false q-axis lock |
+| 构网稳定 / GFM stability | [Parallel VSG acceleration damping](reproductions/2021_parallel_vsg_acceleration) | 频响、极点与小负荷阶跃 / Bode response, poles and small load step |
+| 构网稳定 / GFM stability | [Synchronverter equilibria](reproductions/2021_synchronverter_equilibria) | 平衡点、极点与 P–Q 稳定域 / Equilibria, poles and P–Q stability regions |
+| 微网稳定 / Microgrid stability | [DC microgrid droop stability](reproductions/2021_dc_microgrid_droop_stability) | 负荷上限和有限阶跃 / Load limits and finite load steps |
+| 电机控制 / Motor control | [PMSM current-constrained control](reproductions/2021_pmsm_dob_current_constraint) | 独立方程模型与表 II 差异 / Equation model and Table II discrepancy |
+| 实时仿真 / Real-time simulation | [LLC direct mapping](reproductions/2021_dmm_llc_resonant_converter) | 整流模式、0.6 秒序列及离线定点核对 / Rectifier modes, 0.6 s sequence and offline fixed-point checks |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 
