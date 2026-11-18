@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2021.3117633",
+  "title": "Comparison and Selection of Grid-Tied Inverter Models for Accurate and Efficient EMT Simulations",
+  "authors": [
+    "Kenichiro Sano",
+    "Shuntaro Horiuchi",
+    "Taku Noda"
+  ],
+  "journal": "IEEE Transactions on Power Electronics 37(3), 3462–3472",
+  "issue_date": "2022-03",
+  "openalex_id": "W3201925192",
+  "citations_in_2026_11_10_snapshot": 35,
+  "official_record": "https://ieeexplore.ieee.org/document/9560075/",
+  "official_open_pdf": "https://ieeexplore.ieee.org/ielx7/63/9632664/09560075.pdf",
+  "author_source_list": "https://sites.google.com/view/papers-by-noda/int-journal",
+  "institutional_record": "https://cir.nii.ac.jp/crid/2120870839734640896",
+  "source": {
+    "url": "https://doi.org/10.1109/TPEL.2021.3117633",
+    "license": "CC BY 4.0",
+    "version": "IEEE version of record text, web PDF extraction",
+    "inspected": "Sections II, III A–E, IV C–E and V. Equation (1), captions, model time steps, test settings and reported computing time ratios. Table II appeared as a non-extracted image."
+  },
+  "circuit_benchmark": {
+    "citation": "Okada, Sano, Y. Noda and Fukushima, CIRED 2019, paper 1513. TPEL reference [3].",
+    "url": "https://www.cired-repository.org/bitstreams/993c93d6-b75c-4cdf-9845-a58762162e44/download",
+    "sha256": "a8d908addea98cad8cec5f9092ae8573a4e838dc7f4045d9730f07df97453a7c",
+    "inspected": "Figs. 1–2, Tables 1–2, switching sidebands, Fig. 3 network impedance, and the carrier-frequency experiment. Circuit reconstruction only."
+  },
+  "integrator_reference": {
+    "citation": "Noda, Kikuma and Yonezawa, Supplementary Techniques for 2S-DIRK-Based EMT Simulations, IPST 2013",
+    "url": "https://ipstconf.org/papers/Proc_IPST2013/13IPST091.pdf",
+    "use": "Two-stage integrator and controlled-voltage interpolation context. The adopted stage inputs are defined in the code."
+  },
+  "unavailable": [
+    "Verified numerical cells in the TPEL Table II and original Fig. 10 circuit drawing",
+    "Original XTAP project, ripple filter and line values, DC source and startup",
+    "Absolute current PI, outer-loop and PLL settings, exact controller and switching timing",
+    "Raw harmonic waveforms and machine baseline for Table III"
+  ],
+  "source_pdf_included_in_handoff": false
+}

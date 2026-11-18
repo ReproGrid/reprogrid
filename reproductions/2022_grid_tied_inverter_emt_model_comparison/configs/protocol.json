@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2021.3117633",
+  "claim_scope": "Eq. (1) voltage interpolation and the high-order and grid-injected harmonic mechanisms of IV-C and IV-E in the cited CIRED circuit. Original Table II values and closed-loop XTAP traces require additional source data.",
+  "paper_conditions": {
+    "carrier_hz": 4500,
+    "switching_step_us": 2,
+    "interpolation_step_us": 10,
+    "average_step_us": 100,
+    "current_injection_step_us": 600,
+    "grid_fifth_relative_peak": 0.1,
+    "dead_time_experiment_us": 25,
+    "circuit_table_values": null
+  },
+  "cired_2019_tables_1_2": {
+    "grid_line_to_line_rms_v": 200.0,
+    "grid_frequency_hz": 50,
+    "rated_inverter_va": 4200.0,
+    "published_output_w": 4200.0,
+    "dc_v": 370.0,
+    "filter_inductance_h": 0.0011,
+    "filter_capacitance_f": 0.00002,
+    "filter_damping_ohm": 4.7,
+    "transformer_leakage_h": 0.00017,
+    "delta_delta_turns_ratio": 1.0,
+    "line_inverter_side_inductance_h": 0.001,
+    "line_grid_side_inductance_h": 0.001,
+    "line_midpoint_capacitance_f": 0.0000012
+  },
+  "assumptions": {
+    "filter_inductor_series_ohm": 0.1,
+    "line_inverter_side_series_ohm": 0.1,
+    "line_grid_side_series_ohm": 0.1,
+    "bridge": "Ideal, three wire, stiff DC, no dead time, no leakage or parasitic common-mode path.",
+    "operating_point": "Fundamental bridge phasor by AC load flow for 4.2 kW and zero var at the infinite bus of the nominal circuit. No closed-loop controller. Freeze this command across models and changes of cable, resistance, or carrier.",
+    "pwm": "Symmetric triangular carrier, common to the three legs, valley at zero, reference sampled and held at each peak and valley, no overmodulation.",
+    "target_circuit": "CIRED 2019 Figure 1–2, transformer represented by unity-ratio balanced leakage, midpoint shunt line capacitance. Resistances lumped on three inductors, Cline ideal."
+  },
+  "analysis": {
+    "carrier_hz_sweep": [4000, 4500, 5000, 5500, 6000, 6500, 7000, 8000, 9000, 10000],
+    "line_c_multiplier": [0.8, 1.0, 1.2],
+    "resistance_multiplier": [0.5, 1.0, 2.0],
+    "flat_wave_reference_step_us": 0.5,
+    "steps_us": [2, 4, 5, 10, 20, 25, 40, 50],
+    "step_phase_fraction": [0.0, 0.25, 0.5, 0.75],
+    "carrier_band_half_width_hz": 250,
+    "diagnostic_carrier_hz": 6000,
+    "sideband_order": 2,
+    "relative_reference_dft_allowance": 0.0005,
+    "engineering_harmonic_amplitude_allowance_pct": 5.0,
+    "exact_voltage_area_allowance_vs": 1e-11,
+    "independent_kcl_allowance_a": 1e-10
+  }
+}

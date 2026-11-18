@@ -45,6 +45,7 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 微网稳定 / Microgrid stability | [DC microgrid droop stability](reproductions/2021_dc_microgrid_droop_stability) | 负荷上限和有限阶跃 / Load limits and finite load steps |
 | 电机控制 / Motor control | [PMSM current-constrained control](reproductions/2021_pmsm_dob_current_constraint) | 独立方程模型与表 II 差异 / Equation model and Table II discrepancy |
 | 实时仿真 / Real-time simulation | [LLC direct mapping](reproductions/2021_dmm_llc_resonant_converter) | 整流模式、0.6 秒序列及离线定点核对 / Rectifier modes, 0.6 s sequence and offline fixed-point checks |
+| 实时仿真 / Real-time simulation | [Grid-tied inverter EMT](reproductions/2022_grid_tied_inverter_emt_model_comparison) | 电压插值、载波边带与近谐振步长 / Voltage interpolation, carrier sidebands and time steps near resonance |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPEL.2021.3117633",
+  "scope": "Eq. (1) voltage interpolation and the high-order and grid-injected harmonic mechanisms of IV-C and IV-E in the cited CIRED circuit. Original Table II values and closed-loop XTAP traces require additional source data.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "protocol_sha256": "03d1f29809cff65a1c0ce687423d8d40eb2163b3fd55f798712f4b65bec72371",
+  "implementation_sha256": {
+    "circuit.py": "f89d02d8f53265c56fdf47b817d64382437e5dbfa1fb7bfb384e449532a639df",
+    "plots.py": "d8a9e29c555aa18f10d361d320fb5e53c845f30b7ee6ca6fc34adc0a3943c5b3",
+    "pwm.py": "20914a1f4ea6caaf121ce6cc758c898cc5979dd10dfb281ee82483650cffcac8",
+    "reference.py": "8fcc2576a997770de32d3f37f422fc75ff063787541215f7be7f2311239ff09d",
+    "reproduce.py": "a90c42e64932816e0855b519a9c38414421bf082321a49e91d5590da4c1a46b3",
+    "solvers.py": "704d52e93e793d1b460627562cdc6e3482622ff9bf7f405b4a6a7794cfc94a02"
+  },
+  "data_sha256": {
+    "metrics.json": "bbce19affa2aaba774943d9f4a02adc469fb54673ef5a44b736f9c680a4303bf",
+    "waveforms.npz": "e6e9dc4740b4f87d4d7c366a8e95a6cf08805169d29ab6ae3ca48aba8329bf9f"
+  },
+  "figures_sha256": {
+    "carrier_comparison.png": "256e5f3dc7348af16f664ada875e528b8b14c6b8ecaa2219299bdc8ed6de6cd4",
+    "step_phase_sensitivity.png": "fd8d28bf7af5d4838c470df8909781fff968807cd7b6db66061c3158045a7d19",
+    "network_and_grid_fifth.png": "a45b91a400b902d3e616f2ad418fc13ce97ffd44340ae5e244854c45e1dec801"
+  },
+  "checks_passed": 21,
+  "checks_total": 21
+}

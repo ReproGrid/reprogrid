@@ -1,0 +1,34 @@
+{
+  "doi": "10.1109/TPEL.2021.3117633",
+  "state": "report_ready",
+  "display_state_zh": "VI 算法和三相谐波已复现，原闭环案例待补",
+  "outcome": "voltage_interpolation_reproduced_on_cited_cired_three_phase_circuit",
+  "scope_zh": "式 (1) 与公开 CIRED 三相台架的高频边带、共振步长敏感性、网侧五次谐波。",
+  "public_fulltext_url": "https://www.researchgate.net/publication/358932924_Comparison_and_Selection_of_Grid-Tied_Inverter_Models_for_Accurate_and_Efficient_EMT_Simulations",
+  "paper_condition_replay_state": "parked_missing_original_table_ii_and_closed_loop_project",
+  "code_executed": true,
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 21,
+  "checks_total": 21,
+  "key_results": {
+    "vi10_4500_voltage_amplitude_error_pct": 0.3181344063127143,
+    "vi10_4500_cable_current_amplitude_error_pct": 0.9870838434469299,
+    "vi10_6000_voltage_amplitude_error_pct": 19.888828271925767,
+    "vi10_6000_cable_current_amplitude_error_pct": 21.4333952988539,
+    "vi4_6000_worst_cable_current_amplitude_error_pct": 3.2018025689853213,
+    "av100_grid_fifth_current_increment_amp_error_pct": -0.21485224942774833
+  },
+  "critical_gaps": [
+    "原文表 II 数字与 Fig. 10 拓扑原图尚未取得可核验版本，Fig. 11–15 的定量原算例暂缓。",
+    "原 XTAP 工程、开关/采样与 2S-DIRK 配合方式、PI/PLL 增益、PV 与直流侧参数、初始状态和对齐波形未取得。",
+    "本次三相基准用理想桥和固定直流电源。原死区、直流动态、CCI/SCI 波形和表 III 的目标平台耗时留待核验。"
+  ],
+  "anomaly_evidence": [],
+  "misconduct_allegation": null,
+  "report_sha256": "e3249cb40eee772bbde3ce2b0eaead753cf959bff033cb12cd72cb61674a3e94",
+  "primary_manifest_sha256": "d0e64a62008fa2cf821b5f34ffc82ca9239e6d2badf58b1ffa09b802e8c80516",
+  "source_report_sha256": "93ebb041085459328c9b8028929122d857ef79702631aa20dc41815404ea750d"
+}
