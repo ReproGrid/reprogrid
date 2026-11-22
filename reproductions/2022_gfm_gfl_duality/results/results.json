@@ -1,0 +1,812 @@
+{
+  "paper_doi": "10.1109/TPWRS.2022.3151851",
+  "reference_commit": "8f73752332d6c2144570ac101e556f1859c06930",
+  "model_sha256": "4ecf2088c71498f1bf44e5a77967a07512e299dbd3a3ee0e85a880ae57c9eab1",
+  "archive_sha256": "6553b973850f0c909a9888c7dc7c0ef62329797c022fd72230e7f600d845f945",
+  "script_sha256": "9522db27907810104bf4ffda88423c7a077bb21085e7a86f26dff93ce7dc2d9d",
+  "validation_scope": "Independent single-inverter ABC electrical model and controllers, 1.8\u20132.4 s, with 2.0 s opening and 2.2 s reclosing commands.",
+  "limits": {
+    "steady_dq_and_frequency_max_pu": 0.0001,
+    "steady_abc_max_pu": 0.0001,
+    "steady_phase_max_rad": 0.0001,
+    "waveform_abc_dq_rms_pu": 0.01,
+    "waveform_abc_dq_max_pu": 0.02,
+    "frequency_rms_hz": 0.05,
+    "frequency_max_hz": 0.15,
+    "phase_max_rad": 0.02
+  },
+  "source_audit": {
+    "rf_mask_ohm": 1e-09,
+    "gain_case_rf_mask_expressions": {
+      "2387": "Lf/5",
+      "2455": "Lf/5"
+    },
+    "gain_case_rf_resolved_ohm_at_base_impedance_1": 0.01,
+    "slx_modified_timestamp": "2021-04-21T16:52:18Z",
+    "current_controller_mask": {
+      "Ts": "Ts",
+      "Wbase": "Wbase",
+      "Lf": "Lf*(Vbase^2/Sbase)/Wbase",
+      "Kg": "0",
+      "Kp": "w_i*Lf*(Vbase^2/Sbase)/Wbase",
+      "Ki": "w_i*w_i/4*Lf*(Vbase^2/Sbase)/Wbase",
+      "vdmax": "inf",
+      "vqmax": "inf",
+      "Kcd": "0"
+    },
+    "grid_angle_integrator": "Integration: Trapezoidal",
+    "grid_angle_initial_condition_setting": "Auto",
+    "powergui_solver": "Tustin/Backward Euler (TBE)",
+    "powergui_sample_time": "Ts"
+  },
+  "resistance_diagnostic": {
+    "effective_resistance_ohm": 0.009999999999899421,
+    "integrator_initial_dq_fitted": [
+      0.016182716694757317,
+      0.0002542184283849218
+    ],
+    "training_line_intervals_s": [
+      2.0100000000000002,
+      2.1999
+    ],
+    "held_out_line_intervals_s": [
+      2.2004,
+      2.4
+    ],
+    "training_kvl_max_error_pu": 9.601694439531627e-16,
+    "held_out_kvl_max_error_pu": 9.331303091331122e-13,
+    "training_design_condition_number": 9.459565050367067
+  },
+  "comparison": {
+    "source_mask": {
+      "resistance_ohm": 1e-09,
+      "switches": [
+        {
+          "time_s": 2.001,
+          "phase": "B",
+          "closed": false
+        },
+        {
+          "time_s": 2.0042,
+          "phase": "A",
+          "closed": false
+        },
+        {
+          "time_s": 2.0076,
+          "phase": "C",
+          "closed": false
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "A",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "B",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "C",
+          "closed": true
+        }
+      ],
+      "steady_state": {
+        "means_dq_pu": {
+          "vcdq": {
+            "model": [
+              1.0333413540145746,
+              -4.5320196033482587e-13
+            ],
+            "reference": [
+              1.03334222434049,
+              2.2333185821510339e-13
+            ]
+          },
+          "ildq": {
+            "model": [
+              0.4999999999999943,
+              -1.6064789255809674e-14
+            ],
+            "reference": [
+              0.499999999999954,
+              -2.0004382698945998e-13
+            ]
+          },
+          "igdq": {
+            "model": [
+              0.49999999999998435,
+              -0.02066852702648186
+            ],
+            "reference": [
+              0.5000000000001784,
+              -0.020668544434554213
+            ]
+          }
+        },
+        "max_abs_errors": {
+          "vcabc": 7.117037268411508e-07,
+          "ilabc": 1.902289326321388e-08,
+          "igabc": 4.873430117791067e-09,
+          "vcdq": 8.703273339794038e-07,
+          "ildq": 4.159839139816768e-12,
+          "igdq": 1.7411418182233795e-08,
+          "frequency_hz": 1.9087309510723571e-10,
+          "phase_rad": 4.659739261114737e-08
+        },
+        "passed": true
+      },
+      "transients": [
+        {
+          "event": "opening",
+          "samples": 2000,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.00811521170596945,
+              "max_abs_error": 0.026532530759992512,
+              "passed": false
+            },
+            "ilabc": {
+              "rms_error": 0.009649145221891725,
+              "max_abs_error": 0.03146743988396605,
+              "passed": false
+            },
+            "igabc": {
+              "rms_error": 0.009815070423588387,
+              "max_abs_error": 0.030846900748421203,
+              "passed": false
+            },
+            "vcdq": {
+              "rms_error": 0.008901588954160404,
+              "max_abs_error": 0.023574605798297954,
+              "passed": false
+            },
+            "ildq": {
+              "rms_error": 0.010134077749363595,
+              "max_abs_error": 0.03221568688825782,
+              "passed": false
+            },
+            "igdq": {
+              "rms_error": 0.010343699150907241,
+              "max_abs_error": 0.03283996805016387,
+              "passed": false
+            },
+            "frequency_hz": {
+              "rms_error": 0.13047939835084077,
+              "max_abs_error": 0.35812369666011534,
+              "passed": false
+            },
+            "phase_rad": {
+              "rms_error": 0.006686569180120868,
+              "max_abs_error": 0.01713412358981259,
+              "passed": true
+            }
+          },
+          "passed": false
+        },
+        {
+          "event": "reclosing",
+          "samples": 2001,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.00976052399653736,
+              "max_abs_error": 0.030882526297409445,
+              "passed": false
+            },
+            "ilabc": {
+              "rms_error": 0.0167584199705438,
+              "max_abs_error": 0.05036672807358422,
+              "passed": false
+            },
+            "igabc": {
+              "rms_error": 0.017020795114731525,
+              "max_abs_error": 0.050219129099998094,
+              "passed": false
+            },
+            "vcdq": {
+              "rms_error": 0.01156655291909214,
+              "max_abs_error": 0.029769950431008718,
+              "passed": false
+            },
+            "ildq": {
+              "rms_error": 0.018396975989822862,
+              "max_abs_error": 0.0406164068651822,
+              "passed": false
+            },
+            "igdq": {
+              "rms_error": 0.018698927882769563,
+              "max_abs_error": 0.0410314970399584,
+              "passed": false
+            },
+            "frequency_hz": {
+              "rms_error": 0.16750436162443588,
+              "max_abs_error": 0.4012679059808235,
+              "passed": false
+            },
+            "phase_rad": {
+              "rms_error": 0.007973639430030892,
+              "max_abs_error": 0.020323102119959913,
+              "passed": false
+            }
+          },
+          "passed": false
+        }
+      ],
+      "passed": false
+    },
+    "trapezoid": {
+      "resistance_ohm": 0.01,
+      "switches": [
+        {
+          "time_s": 2.001,
+          "phase": "B",
+          "closed": false
+        },
+        {
+          "time_s": 2.0042,
+          "phase": "A",
+          "closed": false
+        },
+        {
+          "time_s": 2.0076,
+          "phase": "C",
+          "closed": false
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "A",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "B",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "C",
+          "closed": true
+        }
+      ],
+      "steady_state": {
+        "means_dq_pu": {
+          "vcdq": {
+            "model": [
+              1.0333413540145815,
+              -4.505653471847948e-13
+            ],
+            "reference": [
+              1.03334222434049,
+              2.2333185821510339e-13
+            ]
+          },
+          "ildq": {
+            "model": [
+              0.49999999999995975,
+              -2.2436659734975662e-14
+            ],
+            "reference": [
+              0.499999999999954,
+              -2.0004382698945998e-13
+            ]
+          },
+          "igdq": {
+            "model": [
+              0.4999999999999507,
+              -0.02066852702648863
+            ],
+            "reference": [
+              0.5000000000001784,
+              -0.020668544434554213
+            ]
+          }
+        },
+        "max_abs_errors": {
+          "vcabc": 7.117037319481767e-07,
+          "ilabc": 1.9022893684751685e-08,
+          "igabc": 4.873430103913279e-09,
+          "vcdq": 8.703272083021574e-07,
+          "ildq": 3.847644425292174e-12,
+          "igdq": 1.7411379574228114e-08,
+          "frequency_hz": 1.9054624544878607e-10,
+          "phase_rad": 4.659739261114737e-08
+        },
+        "passed": true
+      },
+      "transients": [
+        {
+          "event": "opening",
+          "samples": 2000,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.0005288340169600838,
+              "max_abs_error": 0.006135663097463329,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.00036445419355845036,
+              "max_abs_error": 0.004001959574669003,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.00018315891363695637,
+              "max_abs_error": 0.00043457889382955694,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0005867016421725238,
+              "max_abs_error": 0.007272027450830443,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.00039723059910098306,
+              "max_abs_error": 0.004517472960174657,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.00018845544461732727,
+              "max_abs_error": 0.0004276268124881466,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.008303382206926993,
+              "max_abs_error": 0.09041251542993933,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 0.00013625122804670068,
+              "max_abs_error": 0.0002475539960187234,
+              "passed": true
+            }
+          },
+          "passed": true
+        },
+        {
+          "event": "reclosing",
+          "samples": 2001,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.0002448004883117389,
+              "max_abs_error": 0.0040865687603847695,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.00023978536225798932,
+              "max_abs_error": 0.0028455715580968377,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.00020485220228610274,
+              "max_abs_error": 0.0027190480524241223,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0002998387739242076,
+              "max_abs_error": 0.005208409735763961,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.00027782984050362086,
+              "max_abs_error": 0.0033463780239738616,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.00023180533328723385,
+              "max_abs_error": 0.0025624115799745203,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.003935530754672554,
+              "max_abs_error": 0.05722368687597168,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 8.111882879108701e-05,
+              "max_abs_error": 0.0002547002168284962,
+              "passed": true
+            }
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "backward_euler": {
+      "resistance_ohm": 0.01,
+      "switches": [
+        {
+          "time_s": 2.001,
+          "phase": "B",
+          "closed": false
+        },
+        {
+          "time_s": 2.0042,
+          "phase": "A",
+          "closed": false
+        },
+        {
+          "time_s": 2.0076,
+          "phase": "C",
+          "closed": false
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "A",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "B",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "C",
+          "closed": true
+        }
+      ],
+      "steady_state": {
+        "means_dq_pu": {
+          "vcdq": {
+            "model": [
+              1.0333413540145815,
+              -4.505653471847948e-13
+            ],
+            "reference": [
+              1.03334222434049,
+              2.2333185821510339e-13
+            ]
+          },
+          "ildq": {
+            "model": [
+              0.49999999999995975,
+              -2.2436659734975662e-14
+            ],
+            "reference": [
+              0.499999999999954,
+              -2.0004382698945998e-13
+            ]
+          },
+          "igdq": {
+            "model": [
+              0.4999999999999507,
+              -0.02066852702648863
+            ],
+            "reference": [
+              0.5000000000001784,
+              -0.020668544434554213
+            ]
+          }
+        },
+        "max_abs_errors": {
+          "vcabc": 7.117037319481767e-07,
+          "ilabc": 1.9022893684751685e-08,
+          "igabc": 4.873430103913279e-09,
+          "vcdq": 8.703272083021574e-07,
+          "ildq": 3.847644425292174e-12,
+          "igdq": 1.7411379574228114e-08,
+          "frequency_hz": 1.9054624544878607e-10,
+          "phase_rad": 4.659739261114737e-08
+        },
+        "passed": true
+      },
+      "transients": [
+        {
+          "event": "opening",
+          "samples": 2000,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.00047937834564647534,
+              "max_abs_error": 0.005810587453748663,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.00033305499841187027,
+              "max_abs_error": 0.0035506806644786046,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.00017238465724630554,
+              "max_abs_error": 0.00040618522436314253,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0005472601964225534,
+              "max_abs_error": 0.006832201780074265,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.0003710602573585896,
+              "max_abs_error": 0.004094522455946117,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.00017774113694421173,
+              "max_abs_error": 0.0004207865691783219,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.007746396860613762,
+              "max_abs_error": 0.08338089527637749,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 0.00012746896728184942,
+              "max_abs_error": 0.00023077924515746417,
+              "passed": true
+            }
+          },
+          "passed": true
+        },
+        {
+          "event": "reclosing",
+          "samples": 2001,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.00033932373141665363,
+              "max_abs_error": 0.004763753895789452,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.000544258849467362,
+              "max_abs_error": 0.006223085153908711,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.0005369415414809433,
+              "max_abs_error": 0.0043411701434429364,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0004088927924892692,
+              "max_abs_error": 0.0058104427822360805,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.000624227166395578,
+              "max_abs_error": 0.007682952050788422,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.0006134669089748734,
+              "max_abs_error": 0.005370650712496081,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.006087687765665598,
+              "max_abs_error": 0.06416541425167566,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 0.00025312084733296043,
+              "max_abs_error": 0.0007959845178220348,
+              "passed": true
+            }
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "two_half_backward_euler": {
+      "resistance_ohm": 0.01,
+      "switches": [
+        {
+          "time_s": 2.001,
+          "phase": "B",
+          "closed": false
+        },
+        {
+          "time_s": 2.0042,
+          "phase": "A",
+          "closed": false
+        },
+        {
+          "time_s": 2.0076,
+          "phase": "C",
+          "closed": false
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "A",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "B",
+          "closed": true
+        },
+        {
+          "time_s": 2.2001,
+          "phase": "C",
+          "closed": true
+        }
+      ],
+      "steady_state": {
+        "means_dq_pu": {
+          "vcdq": {
+            "model": [
+              1.0333413540145815,
+              -4.505653471847948e-13
+            ],
+            "reference": [
+              1.03334222434049,
+              2.2333185821510339e-13
+            ]
+          },
+          "ildq": {
+            "model": [
+              0.49999999999995975,
+              -2.2436659734975662e-14
+            ],
+            "reference": [
+              0.499999999999954,
+              -2.0004382698945998e-13
+            ]
+          },
+          "igdq": {
+            "model": [
+              0.4999999999999507,
+              -0.02066852702648863
+            ],
+            "reference": [
+              0.5000000000001784,
+              -0.020668544434554213
+            ]
+          }
+        },
+        "max_abs_errors": {
+          "vcabc": 7.117037319481767e-07,
+          "ilabc": 1.9022893684751685e-08,
+          "igabc": 4.873430103913279e-09,
+          "vcdq": 8.703272083021574e-07,
+          "ildq": 3.847644425292174e-12,
+          "igdq": 1.7411379574228114e-08,
+          "frequency_hz": 1.9054624544878607e-10,
+          "phase_rad": 4.659739261114737e-08
+        },
+        "passed": true
+      },
+      "transients": [
+        {
+          "event": "opening",
+          "samples": 2000,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.0005619264094664416,
+              "max_abs_error": 0.0067424755987510535,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.00038191970359074034,
+              "max_abs_error": 0.004175414663955369,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.00017723773844142456,
+              "max_abs_error": 0.0004186211655267287,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0006120099954869674,
+              "max_abs_error": 0.007803661900552761,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.0004111819970918214,
+              "max_abs_error": 0.00467675764999928,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.00018240467899054513,
+              "max_abs_error": 0.0004421737093074918,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.0086541831817581,
+              "max_abs_error": 0.09428832938290554,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 0.0001317675068323868,
+              "max_abs_error": 0.00025021046076290077,
+              "passed": true
+            }
+          },
+          "passed": true
+        },
+        {
+          "event": "reclosing",
+          "samples": 2001,
+          "channels": {
+            "vcabc": {
+              "rms_error": 0.00031831317370810375,
+              "max_abs_error": 0.003376157256283596,
+              "passed": true
+            },
+            "ilabc": {
+              "rms_error": 0.0005412718141099538,
+              "max_abs_error": 0.005798754027702171,
+              "passed": true
+            },
+            "igabc": {
+              "rms_error": 0.0005386795833755531,
+              "max_abs_error": 0.00420202977268877,
+              "passed": true
+            },
+            "vcdq": {
+              "rms_error": 0.0003820718906026486,
+              "max_abs_error": 0.004013250756272596,
+              "passed": true
+            },
+            "ildq": {
+              "rms_error": 0.0006209259382820959,
+              "max_abs_error": 0.007174671700225538,
+              "passed": true
+            },
+            "igdq": {
+              "rms_error": 0.0006163431396204685,
+              "max_abs_error": 0.005220071016565457,
+              "passed": true
+            },
+            "frequency_hz": {
+              "rms_error": 0.005658849420650127,
+              "max_abs_error": 0.053510850578987856,
+              "passed": true
+            },
+            "phase_rad": {
+              "rms_error": 0.00025578994799180525,
+              "max_abs_error": 0.0008053418232520926,
+              "passed": true
+            }
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "source_parameter_validation_passed": false,
+  "archive_cross_checks": {
+    "Case2_GFL_w_pll": {
+      "source_sha256": "b1923bf49541acd61264914251a1ef4bfb2f3d891518167e10e9e8423743473a",
+      "effective_resistance_ohm": 0.009999999998901214,
+      "integrator_initial_dq_fitted": [
+        0.024079102694283077,
+        0.0003782647725466739
+      ],
+      "training_line_intervals_s": [
+        0.1,
+        1.0
+      ],
+      "held_out_line_intervals_s": [
+        2.2004,
+        2.4
+      ],
+      "training_kvl_max_error_pu": 9.620047813907462e-13,
+      "held_out_kvl_max_error_pu": 7.548753289121635e-13,
+      "training_design_condition_number": 27.99618064950633
+    },
+    "Case2_GFL_w_i": {
+      "source_sha256": "94335fcdd621d3cfe424059ab9db1cf53303b312c2bf2b1d313ed85689dcc3f8",
+      "effective_resistance_ohm": 0.009999999998901214,
+      "integrator_initial_dq_fitted": [
+        0.024079102694283077,
+        0.0003782647725466739
+      ],
+      "training_line_intervals_s": [
+        0.1,
+        1.0
+      ],
+      "held_out_line_intervals_s": [
+        2.2004,
+        2.4
+      ],
+      "training_kvl_max_error_pu": 9.620047813907462e-13,
+      "held_out_kvl_max_error_pu": 6.991976442272119e-13,
+      "training_design_condition_number": 27.99618064950633
+    }
+  },
+  "conditional_validation_passed": true
+}

@@ -1,0 +1,56 @@
+{
+  "doi": "10.1109/TPWRS.2022.3151851",
+  "state": "report_ready",
+  "display_state_zh": "六组单机极点与跟网逆变器有条件时域复现",
+  "outcome": "six_single_inverter_root_loci_and_recorded_input_control_loops_reproduced",
+  "scope_zh": "六组单机极点及记录输入同步环；Fig. 8(d) 独立闭环波形在推断 0.01 Ω 下通过。",
+  "public_fulltext_url": "https://arxiv.org/abs/2105.13094v3",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "code_executed": true,
+  "paper_condition_replay_state": "analytic_and_recorded_input_loop_reproduced_full_circuit_amplitudes_unresolved",
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 150,
+  "checks_total": 150,
+  "key_results": {
+    "critical_parameters": {
+      "GFM_Z": 0.236614405759786,
+      "GFL_Y": 0.5940349622709967,
+      "GFM_m": 0.07862875125897721,
+      "GFL_w_pll": 31.52582515749424,
+      "GFM_w_v": 196.54562939702333,
+      "GFL_w_i": 174.34182109160966
+    },
+    "max_author_marker_real_delta_hz": 0.03266752350618973,
+    "max_author_marker_imag_delta_hz": 0.29987637329355366,
+    "recorded_input_loop_max_frequency_delta_hz": 1.8981483052016301e-10,
+    "max_initial_dq_error_pu": 8.707039493849322e-07
+  },
+  "critical_gaps": [
+    "SLX 网强支路掩码与存档等效电阻不同。未能确认生成 MAT 的具体模型版本和 R2020b TBE 切换实现。",
+    "单机其他闭环暂态幅值、多机和硬件尚待定量验证。"
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "analytic_and_simulation_configurations_differ",
+      "finding": "Released sources use different Rf, operating points, PLL input filtering, sampling and finite breaker resistance.",
+      "source": "sources/source_audit.json",
+      "misconduct_inference": false
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "3ab6c3e23951dd890735a3d82db1697abc4c10ea4bc921aa8dbbe0d86a4d90ec",
+  "primary_manifest_sha256": "36e79a951d971baa82a251687a530937dd128a59f6ed579bb67ed75d0949cc6a",
+  "source_report_sha256": "7de2fb2221e94928ce95b26938f11f0e24632057c33d2f98008bfdbbbe7b7578",
+  "transient_followup": {
+    "passed_with_inferred_resistance": true,
+    "source_mask_waveforms_passed": false,
+    "hardware_validation": false,
+    "case": "Fig. 8(d)",
+    "source_mask_ohm": 1e-09,
+    "inferred_effective_ohm": 0.01,
+    "switch_step_methods_passed": 3,
+    "result_file": "results/results.json"
+  }
+}

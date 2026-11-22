@@ -1,0 +1,28 @@
+{
+  "artifact_sha256": {
+    "LICENSE": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe",
+    "README.md": "b9208c619a47139b6fa12ce69e2ceaf1819c5cd6bcf2a5c260847ab8a04c883b",
+    "configs/protocol.json": "c2059d46c9b66a1062bc22b6e7c31b5c19a75d43dbef01c4b80d4accee0b3f7f",
+    "figures/gfl_closed_loop.png": "2a52c479ffb575bf87742a0b327760603d793f3d9be7ede34e20ce93a2fc7eef",
+    "figures/sampling_and_mode_comparison.png": "4edca07c913fb10e58af096a9fef672066f30d52605b328b2283d8ab23fd2613",
+    "figures/six_root_loci.png": "9be800e39f181a39ac0307cdb5ff72b0994adb45a60bacf03c24d16d69d6759f",
+    "reports/GFL_TRANSIENT.md": "3e2bfcc96ced9b80880233c331c04bd63aeeb692cf4caf52fa9d5a5f441a6812",
+    "reports/REPORT.md": "3ab6c3e23951dd890735a3d82db1697abc4c10ea4bc921aa8dbbe0d86a4d90ec",
+    "reports/status.json": "bf0504d469c351d5ae4c27ca231ae7aebffd285cf959c752bc5464e6c160b949",
+    "requirements.txt": "f712ef07524911194ff19103763cc08c7463d8c659d8b25039eb7546434899d4",
+    "results/metrics.json": "ce3030edd222631c231ac968b41f16b225189a90faa590116d4606cd2c4826b6",
+    "results/results.json": "ff2d3c499ef1c0f19d3fa5868ef6995445f0020a9d919f14d0b676a0c69f9e13",
+    "sources/source_audit.json": "1b61dd43867ac51af9e8e25240be2d22884ad4568f3d55d3288ec45440bc9f46",
+    "sources/source_audit.md": "bd22da20f729f7ad006d4c5cfb63381e62306376852ef70c420593bddc521508",
+    "sources/source_manifest.json": "7b5ef7370b964ac830f37b7223db9b21df2d169276b8b1a12663903a906d830f",
+    "src/author_data.py": "5ccab3731644ab7debf23e5e8da3bbad485942da9409cb985d5415c7263d47bc",
+    "src/fetch_baseline_inputs.py": "80a831b2a3ce89b6240a8cf0a57332eaa80430f1c268d3db775eecc4f2d92157",
+    "src/linear_models.py": "d84bcabe310d547a4f21daa20ec2528eb363f15b8dc9205cae20a18f7e7d366b",
+    "src/plot.py": "6effa689e700eca15456cd1378f1dcef87a6dd7aa6207577816b43771703b5fa",
+    "src/plots.py": "72d82c7537dce333845d9442b7da0a05db7046483ce17beec88438c05bba0d2e",
+    "src/replay.py": "9522db27907810104bf4ffda88423c7a077bb21085e7a86f26dff93ce7dc2d9d",
+    "src/reproduce.py": "c972c17a79d088a5ebf837626b9672ea6f95692491cfb799223d627cf82a2359",
+    "src/sampled_model.py": "e1234b5675f5f8a7e1bc80088e4850fd7c16b78b07fc5b158d4a0a736ed31849",
+    "verification/derivation.md": "853869d0b07adbd805647fd95b862e5f0c83953bbbdcc1438eb0754f04b4dd4d"
+  }
+}

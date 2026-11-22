@@ -1,0 +1,112 @@
+{
+  "doi": "10.1109/TPWRS.2022.3151851",
+  "scope": "Single-inverter-infinite-bus Fig. 8–10 only. Author analytic implementations, independently derived dq circuits and sampled controller reconstruction.",
+  "author_commit": "8f73752332d6c2144570ac101e556f1859c06930",
+  "base_frequency_hz": 50.0,
+  "filter_l_pu": 0.05,
+  "filter_c_pu": 0.02,
+  "gfm": {
+    "current_index_hz": 500.0,
+    "voltage_index_hz": 250.0,
+    "droop_lpf_hz": 15.0,
+    "droop_pu": 0.05,
+    "voltage_ki_multiplier": 20.0,
+    "grid_x_pu": 0.3,
+    "filter_r_analytic_pu": 0.01,
+    "filter_r_simulation_pu": 0.005
+  },
+  "gfl": {
+    "current_index_hz": 250.0,
+    "pll_index_hz": 15.0,
+    "pll_lpf_hz": 1000.0,
+    "grid_x_pu": 0.4,
+    "analytic_voltage_pu": 1.0,
+    "analytic_load_current_pu": -0.5,
+    "filter_r_analytic_pu": 0.005,
+    "filter_r_grid_case_simulation_pu": 1e-09,
+    "filter_r_gain_cases_simulation_pu": 0.01
+  },
+  "sweeps": [
+    {
+      "key": "GFM_Z",
+      "figure": "8(a,c)",
+      "kind": "GFM",
+      "field": "grid_x_pu",
+      "start": 0.3,
+      "stop": 0.1,
+      "count": 7
+    },
+    {
+      "key": "GFL_Y",
+      "figure": "8(b,d)",
+      "kind": "GFL",
+      "field": "grid_x_pu",
+      "start": 0.4,
+      "stop": 0.6,
+      "count": 7
+    },
+    {
+      "key": "GFM_m",
+      "figure": "9(a,c)",
+      "kind": "GFM",
+      "field": "droop_pu",
+      "start": 0.05,
+      "stop": 0.2,
+      "count": 7
+    },
+    {
+      "key": "GFL_w_pll",
+      "figure": "9(b,d)",
+      "kind": "GFL",
+      "field": "pll_index_hz",
+      "start": 15.0,
+      "stop": 60.0,
+      "count": 7
+    },
+    {
+      "key": "GFM_w_v",
+      "figure": "10(a,c)",
+      "kind": "GFM",
+      "field": "voltage_index_hz",
+      "start": 250.0,
+      "stop": 150.0,
+      "count": 7
+    },
+    {
+      "key": "GFL_w_i",
+      "figure": "10(b,d)",
+      "kind": "GFL",
+      "field": "current_index_hz",
+      "start": 250.0,
+      "stop": 150.0,
+      "count": 7
+    }
+  ],
+  "time_domain": {
+    "start_s": 1.8,
+    "stop_s": 2.6,
+    "change_s": 2.0,
+    "restore_s": 2.2,
+    "sample_step_s": 0.0001,
+    "refinement_step_s": 5e-05,
+    "load_impulse_r_pu": 10000.0,
+    "load_impulse_duration_s": 0.0001,
+    "grid_breaker_r_pu": 0.01,
+    "gfl_pll_frequency_display_lpf_hz": 100.0,
+    "gfl_inner_frequency_display_lpf_stages": 2
+  },
+  "assumptions": {
+    "initialization": "Solve the sampled-controller periodic equilibrium with original 50 Hz source and command. No wave-shape or parameter fitting.",
+    "plant_integrator": "Primary trapezoidal electrical circuit with forward-Euler PI/LPF and one-sample abc bridge delay. Independent sensitivity uses exact held-source propagation. Original R2020b Tustin/Backward-Euler event history is unresolved.",
+    "grid_event": "Finite breaker resistance and two physical inductive branches retained. No reset of existing branch currents.",
+    "internal_grid_inductance": "The published Lc=1e-9 pu and Rc=1e-20 or Lc/5 are collapsed into the finite external grid branch. This is documented for the averaged circuit reconstruction.",
+    "event_integrator_sensitivity": "One backward-Euler step on each topology transition is a separately identified scenario. It does not claim exact source TBE implementation."
+  },
+  "acceptance": {
+    "gfm_cross_path_max_rad_s": 2e-06,
+    "polynomial_matrix_normalized_residual": 1e-07,
+    "plot_real_hz": 0.1,
+    "plot_imag_hz": 0.35,
+    "time_amplitude_assessment_only": true
+  }
+}

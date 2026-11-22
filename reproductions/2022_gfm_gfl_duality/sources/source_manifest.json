@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "doi": "10.1109/TPWRS.2022.3151851",
+  "title": "Revisiting Grid-Forming and Grid-Following Inverters: A Duality Theory",
+  "authors": [
+    "Yitong Li",
+    "Yunjie Gu",
+    "Timothy C. Green"
+  ],
+  "author_manuscript": "https://arxiv.org/abs/2105.13094v3",
+  "institutional_pdf": "https://researchportal.bath.ac.uk/files/236394950/Revisiting_Grid_Forming_and_Grid_Following_Inverters_A_Duality_Theory.pdf",
+  "authors_project": "https://github.com/Future-Power-Networks/Simplus-Grid-Tool/tree/8f73752332d6c2144570ac101e556f1859c06930",
+  "commit": "8f73752332d6c2144570ac101e556f1859c06930",
+  "source_files_sha256": {
+    "SingleInverterCase_Script/MainDuality_v2.m": "9c930c2d4aab1d620cd0dcd029b72e7f97c9d87333b0bebe4303fa4421e4394c",
+    "SingleInverterCase_Script/CalcSwingDroop.m": "c19b9737bf7b82471f3ea8c6c3c6c5944a9b8ac00d45c9d3d488dd819d1fe6e8",
+    "SingleInverterCase_Script/CalcSwingPLL.m": "c6152c2524ac1ced1548b89b5f849e22efb5a755ffb4f97877da3b922c144d1c",
+    "SingleInverterCase_Simulation/Case2_SingleInverterInfiniteBus/Case2_SimPara.m": "e79c73e1ce3d84542688a5f68e33582dbf077e249df8a83c1f23e20e9f43636d",
+    "SingleInverterCase_Script/Case2_GFM_Z.png": "6f34a7733c8a041f59f98fe89fc00e6daface920173b1a524ce56a7b1d913a35",
+    "SingleInverterCase_Simulation/Case2_SingleInverterInfiniteBus/Case2_GFM_Z.mat": "ad1f38bb9321fdf5f5decd1dabeb84ff71be9edba86f932b2c4903405dc8dba0"
+  },
+  "local_source_sha256": {
+    "CalcSwingDroop.m": "c19b9737bf7b82471f3ea8c6c3c6c5944a9b8ac00d45c9d3d488dd819d1fe6e8",
+    "CalcSwingPLL.m": "c6152c2524ac1ced1548b89b5f849e22efb5a755ffb4f97877da3b922c144d1c",
+    "Case2_GFL_Y.mat": "6553b973850f0c909a9888c7dc7c0ef62329797c022fd72230e7f600d845f945",
+    "Case2_GFL_Y.png": "4059e497407eaf88840e34c5a532f05793504db4df44f83429e6f90b5d41ef19",
+    "Case2_GFL_w_i.mat": "94335fcdd621d3cfe424059ab9db1cf53303b312c2bf2b1d313ed85689dcc3f8",
+    "Case2_GFL_w_i.png": "3cc56e092d92c7d6c4bea5a4a2a0d406b3452898650a18d2c4b71d6a31b0bcee",
+    "Case2_GFL_w_pll.mat": "b1923bf49541acd61264914251a1ef4bfb2f3d891518167e10e9e8423743473a",
+    "Case2_GFL_w_pll.png": "e856526b31daa508f5b664b4adbf30527f08ce958f0167a76018e979cd5e778c",
+    "Case2_GFM_Z.mat": "ad1f38bb9321fdf5f5decd1dabeb84ff71be9edba86f932b2c4903405dc8dba0",
+    "Case2_GFM_Z.png": "6f34a7733c8a041f59f98fe89fc00e6daface920173b1a524ce56a7b1d913a35",
+    "Case2_GFM_m.mat": "6bc8f72325672f25d0830e87ae84ee33258e430a4db6430babf1f13d2911b233",
+    "Case2_GFM_m.png": "a342777627f877768656262121a69496f2253d319c77b30342c10d9bf95600cc",
+    "Case2_GFM_w_v.mat": "1a1a51724bbf73b7ca6605b18aa3975f1462ffff643fcfd678e20e50a082e6ca",
+    "Case2_GFM_w_v.png": "a173454faae47801427eba9063430be6e514ac9f7e057990037be46fb7010add",
+    "Case2_Sim.slx": "4ecf2088c71498f1bf44e5a77967a07512e299dbd3a3ee0e85a880ae57c9eab1",
+    "Case2_SimPara.m": "e79c73e1ce3d84542688a5f68e33582dbf077e249df8a83c1f23e20e9f43636d",
+    "GridFollowingVSI.m": "c199e14e81fd6f75746df77ba843e5cead7f20e76a4b73dcf580e41af271cfed",
+    "GridFormingVSI.m": "6d38bfebc36941c2ee9b2374949d5b816f68cb4232e72a6120ce193bf9b170ea",
+    "MainDuality_v2.m": "9c930c2d4aab1d620cd0dcd029b72e7f97c9d87333b0bebe4303fa4421e4394c",
+    "Plot_Case2.m": "fb9864f996c6300af952c9773160a5013edd6a82b49641e03e4ef689a6475a46",
+    "SimplexPS.slx": "8b4c7873be33e9312e87db1462a9d4008df91f5b3b1c10011aeb70d2a519a2d9",
+    "arxiv_2105_13094v3.pdf": "549961530cfe7e51ac0a3fc3444ba549b8f3cb6c05aa7b4b24d213d5bdd2f605"
+  },
+  "local_audit": "sources/source_audit.json",
+  "inspected": [
+    "arXiv v3 Figs. 8–10, Appendix B Table II",
+    "Both complete single-inverter analytic scripts and all six seven-point sweeps",
+    "Case2_Sim.slx and linked SimplexPS.slx, model R2020b, topology, gains and event configuration",
+    "Six original MAT files, 30,001 samples each at 100 us"
+  ],
+  "inspection_completed_local_date": "2026-11-22",
+  "pending": [
+    "Original R2020b TBE history updates at topology changes",
+    "Exact quantitative re-execution of six transient trajectories",
+    "Hardware or protection validation"
+  ]
+}
