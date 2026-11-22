@@ -1,0 +1,32 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "title": "Equivalent Circuit Model of Grid-Forming Converters With Circular Current Limiter for Transient Stability Analysis",
+  "authors": [
+    "Bo Fan",
+    "Xiongfei Wang"
+  ],
+  "journal": "IEEE Transactions on Power Systems, vol. 37, no. 4, pp. 3141–3144, 2022",
+  "version": "Accepted author manuscript with institutional cover",
+  "landing_url": "https://vbn.aau.dk/en/publications/equivalent-circuit-model-of-grid-forming-converters-with-circular/",
+  "pdf_url": "https://vbn.aau.dk/ws/files/473629176/TPWRS3173160.pdf",
+  "sha256": "ffcc20bbf011ad0350524bc8a5bede18070494d038fcac9fa6cdd3d2042abaec",
+  "source_figures_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "reference_10": {
+    "doi": "10.1109/TIE.2021.3065614",
+    "pdf_url": "https://vbn.aau.dk/ws/files/413106431/TIE3065614.pdf",
+    "sha256": "7ea7031e9c9dfba377d8c1bb824dd93e866a984ef9ebcf0c266ec2dc8140d8db",
+    "scope": "Corroborates the apparatus, LC branch, 10 kHz sampling and a separate controller's 50 Hz power filter. The 50 Hz filter is a sensitivity scenario for the letter."
+  },
+  "unavailable_artifacts": [
+    "Raw synchronized grid voltage, converter power, and phase",
+    "DSP code, exact PI gain scaling, sample-to-PWM latency, and event phase settings"
+  ],
+  "source_pdf_required_to_run_model": false
+}

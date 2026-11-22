@@ -1,0 +1,31 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "source": "Aalborg accepted manuscript, printed pp. 2–4, Fig. 2, Table I and Figs. 3, 5–6",
+  "table_i": {
+    "voltage_phase_peak_v": 155.56,
+    "frequency_hz": 50,
+    "grid_inductance_h": 0.011,
+    "grid_resistance_ohm": 0.3,
+    "grid_reactance_printed_pu": 0.24,
+    "grid_resistance_printed_pu": 0.021,
+    "active_reference_w": 2000,
+    "active_reference_pu": 0.8,
+    "voltage_reference_pu": 1.0,
+    "current_limit_pu": 1.2,
+    "power_droop_pu": 0.01
+  },
+  "base_convention": "Use S_b = P_ref,W/P_ref,pu, V_b as the Table I dq phase-peak voltage, I_b=S_b/(1.5 V_b), and omega_b=2π·50. Equations (4)–(5) give dδ/dt=omega_b K_p,pu (P_ref,pu−P_pu) in seconds.",
+  "fault_grid_voltage_pu": 0.5,
+  "paper_test_s": [
+    {"figure": "5", "duration_s": 0.45, "reported_basin_offset_revolutions": 0},
+    {"figure": "6", "duration_s": 0.65, "reported_basin_offset_revolutions": 1}
+  ],
+  "diagnostic_duration_s": 0.25,
+  "postfault_stop_s": 6,
+  "observation_step_s": 0.001,
+  "solver": {"method": "DOP853", "rtol": 1e-10, "atol": 1e-12, "max_step": 0.002},
+  "refinement": {"method": "RK45", "rtol": 1e-11, "atol": 1e-13, "max_step": 0.002},
+  "acceptance": {"circuit_pu": 1e-10, "angle_refinement_rad": 2e-7, "settled_angle_rad": 1e-7},
+  "scope": "First-order P–f synchronization, algebraic L–R grid circuit and circular current limiter from Eqs. (4)–(6). The grid-voltage magnitude steps with no phase jump. Inner loops, filter states, PWM and hardware recovery timing remain outside the integration.",
+  "freeze_note": "Source inputs were visually verified and prototyped before recording the archived run and its checks. No gain or impedance was adjusted to match the experimental outcome."
+}

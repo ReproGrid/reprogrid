@@ -1,0 +1,3168 @@
+{
+  "doi": "10.1109/TPWRS.2017.2697765",
+  "scope": "Exactly homogeneous load and bus states. Interbus resistive currents vanish in the original connected topology.",
+  "parameters": {
+    "vref_v": 400.0,
+    "rs_ohm": 0.05,
+    "rl_ohm": 0.05,
+    "ls_h": 0.0009,
+    "ll_h": 0.0009,
+    "cb_f": 0.00075,
+    "cl_f": 0.0007,
+    "p_min_w": 5000.0,
+    "p_max_w": 20000.0
+  },
+  "cases": [
+    {
+      "power_per_bus_w": 5000.0,
+      "droop_ohm": 0.06,
+      "load_voltage_v": 397.9898987322333,
+      "bus_voltage_v": 398.6180553784104,
+      "current_a": 12.563132923541833,
+      "rightmost_real_per_s": -29.9041790334711,
+      "frequency_hz": 316.3892914221498,
+      "independent_impedance_max_error_rad_s": 8.020010147630763e-13
+    },
+    {
+      "power_per_bus_w": 15000.0,
+      "droop_ohm": 0.06,
+      "load_voltage_v": 393.9071942966532,
+      "bus_voltage_v": 395.8111960789491,
+      "current_a": 38.08003564591775,
+      "rightmost_real_per_s": -3.5674002523502275,
+      "frequency_hz": 121.91539957283666,
+      "independent_impedance_max_error_rad_s": 4.654057037974405e-13
+    },
+    {
+      "power_per_bus_w": 16000.0,
+      "droop_ohm": 0.06,
+      "load_voltage_v": 393.4941859591652,
+      "bus_voltage_v": 395.52725284692605,
+      "current_a": 40.66133775521755,
+      "rightmost_real_per_s": -0.1937516105180403,
+      "frequency_hz": 121.8658719446674,
+      "independent_impedance_max_error_rad_s": 1.591696018992615e-12
+    },
+    {
+      "power_per_bus_w": 20000.0,
+      "droop_ohm": 0.06,
+      "load_voltage_v": 391.8332609325088,
+      "bus_voltage_v": 394.3853668910998,
+      "current_a": 51.04211917182011,
+      "rightmost_real_per_s": 13.471467333349977,
+      "frequency_hz": 121.64776342916691,
+      "independent_impedance_max_error_rad_s": 1.8361524514154335e-12
+    },
+    {
+      "power_per_bus_w": 5000.0,
+      "droop_ohm": 0.1,
+      "load_voltage_v": 397.48417658131496,
+      "bus_voltage_v": 398.1131324359862,
+      "current_a": 12.579117093425051,
+      "rightmost_real_per_s": -35.70796805372001,
+      "frequency_hz": 316.2806976115732,
+      "independent_impedance_max_error_rad_s": 4.786020928989078e-13
+    },
+    {
+      "power_per_bus_w": 15000.0,
+      "droop_ohm": 0.1,
+      "load_voltage_v": 392.35384061671346,
+      "bus_voltage_v": 394.2653804625351,
+      "current_a": 38.23079691643276,
+      "rightmost_real_per_s": -19.582035674170342,
+      "frequency_hz": 121.6820142286247,
+      "independent_impedance_max_error_rad_s": 4.548028586499771e-13
+    },
+    {
+      "power_per_bus_w": 16000.0,
+      "droop_ohm": 0.1,
+      "load_voltage_v": 391.8332609325088,
+      "bus_voltage_v": 393.87494569938156,
+      "current_a": 40.83369533745609,
+      "rightmost_real_per_s": -16.151304184016603,
+      "frequency_hz": 121.62787068934082,
+      "independent_impedance_max_error_rad_s": 8.049229328257953e-13
+    },
+    {
+      "power_per_bus_w": 20000.0,
+      "droop_ohm": 0.1,
+      "load_voltage_v": 389.7366596101027,
+      "bus_voltage_v": 392.302494707577,
+      "current_a": 51.31670194948621,
+      "rightmost_real_per_s": -2.212586296591638,
+      "frequency_hz": 121.38962236359977,
+      "independent_impedance_max_error_rad_s": 4.654057037974405e-13
+    },
+    {
+      "power_per_bus_w": 5000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.2141687034858,
+      "bus_voltage_v": 396.8451405862382,
+      "current_a": 12.619437655047218,
+      "rightmost_real_per_s": -50.01089943421283,
+      "frequency_hz": 315.84181994244705,
+      "independent_impedance_max_error_rad_s": 9.487275594025571e-13
+    },
+    {
+      "power_per_bus_w": 15000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.41443681416774,
+      "bus_voltage_v": 390.34536401180645,
+      "current_a": 38.61854395277427,
+      "rightmost_real_per_s": -35.82612414861584,
+      "frequency_hz": 315.42623587601344,
+      "independent_impedance_max_error_rad_s": 2.323040122572746e-12
+    },
+    {
+      "power_per_bus_w": 16000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.61663039293717,
+      "bus_voltage_v": 389.68052532744764,
+      "current_a": 41.2778986902094,
+      "rightmost_real_per_s": -34.35772349367243,
+      "frequency_hz": 315.3713635651455,
+      "independent_impedance_max_error_rad_s": 3.651387794037898e-12
+    },
+    {
+      "power_per_bus_w": 20000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.3908891458577,
+      "bus_voltage_v": 386.9924076215481,
+      "current_a": 52.030369513807514,
+      "rightmost_real_per_s": -28.394976381514606,
+      "frequency_hz": 315.1249213803023,
+      "independent_impedance_max_error_rad_s": 4.687428401686771e-13
+    }
+  ],
+  "droop_0p06_common_mode_boundary": {
+    "power_per_bus_w": 16057.28096828506,
+    "droop_ohm": 0.06,
+    "load_voltage_v": 393.47050174399817,
+    "bus_voltage_v": 395.51096994899876,
+    "current_a": 40.80936410001157,
+    "rightmost_real_per_s": 1.1076341424746422e-13,
+    "frequency_hz": 121.86297578083678,
+    "independent_impedance_max_error_rad_s": 4.62671908852022e-13
+  },
+  "droop_0p2_power_sweep": [
+    {
+      "power_per_bus_w": 5000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.2141687034858,
+      "bus_voltage_v": 396.8451405862382,
+      "current_a": 12.619437655047218,
+      "rightmost_real_per_s": -50.01089943421283,
+      "frequency_hz": 315.84181994244705,
+      "independent_impedance_max_error_rad_s": 9.487275594025571e-13
+    },
+    {
+      "power_per_bus_w": 5050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.1759414403306,
+      "bus_voltage_v": 396.8132845336088,
+      "current_a": 12.746861865564842,
+      "rightmost_real_per_s": -49.94224730286808,
+      "frequency_hz": 315.840298346171,
+      "independent_impedance_max_error_rad_s": 1.3709056206021401e-12
+    },
+    {
+      "power_per_bus_w": 5100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.13770672667715,
+      "bus_voltage_v": 396.78142227223094,
+      "current_a": 12.874310911076293,
+      "rightmost_real_per_s": -49.87357230163171,
+      "frequency_hz": 315.8387715501879,
+      "independent_impedance_max_error_rad_s": 4.099037227506403e-13
+    },
+    {
+      "power_per_bus_w": 5150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.0994645581675,
+      "bus_voltage_v": 396.7495537984729,
+      "current_a": 13.001784806108262,
+      "rightmost_real_per_s": -49.80487443002381,
+      "frequency_hz": 315.83723954889024,
+      "independent_impedance_max_error_rad_s": 2.361953496943366e-13
+    },
+    {
+      "power_per_bus_w": 5200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.0612149304395,
+      "bus_voltage_v": 396.7176791086996,
+      "current_a": 13.129283565201606,
+      "rightmost_real_per_s": -49.73615368758402,
+      "frequency_hz": 315.8357023366645,
+      "independent_impedance_max_error_rad_s": 1.3830600733622801e-12
+    },
+    {
+      "power_per_bus_w": 5250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 396.02295783912655,
+      "bus_voltage_v": 396.68579819927214,
+      "current_a": 13.256807202911373,
+      "rightmost_real_per_s": -49.667410073870506,
+      "frequency_hz": 315.8341599078897,
+      "independent_impedance_max_error_rad_s": 4.705166569221804e-13
+    },
+    {
+      "power_per_bus_w": 5300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.984693279858,
+      "bus_voltage_v": 396.65391106654835,
+      "current_a": 13.384355733806814,
+      "rightmost_real_per_s": -49.59864358846154,
+      "frequency_hz": 315.8326122569401,
+      "independent_impedance_max_error_rad_s": 7.963152328398961e-13
+    },
+    {
+      "power_per_bus_w": 5350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.9464212482586,
+      "bus_voltage_v": 396.62201770688216,
+      "current_a": 13.511929172471412,
+      "rightmost_real_per_s": -49.5298542309545,
+      "frequency_hz": 315.83105937818283,
+      "independent_impedance_max_error_rad_s": 5.686117965451148e-13
+    },
+    {
+      "power_per_bus_w": 5400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.90814173994914,
+      "bus_voltage_v": 396.5901181166243,
+      "current_a": 13.639527533502887,
+      "rightmost_real_per_s": -49.46104200096572,
+      "frequency_hz": 315.8295012659786,
+      "independent_impedance_max_error_rad_s": 1.4293040022357853e-12
+    },
+    {
+      "power_per_bus_w": 5450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.86985475054604,
+      "bus_voltage_v": 396.5582122921217,
+      "current_a": 13.767150831513225,
+      "rightmost_real_per_s": -49.392206898131434,
+      "frequency_hz": 315.8279379146825,
+      "independent_impedance_max_error_rad_s": 1.1440400022922138e-12
+    },
+    {
+      "power_per_bus_w": 5500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.8315602756614,
+      "bus_voltage_v": 396.52630022971783,
+      "current_a": 13.894799081128701,
+      "rightmost_real_per_s": -49.32334892210747,
+      "frequency_hz": 315.826369318642,
+      "independent_impedance_max_error_rad_s": 6.12222357532858e-13
+    },
+    {
+      "power_per_bus_w": 5550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.79325831090307,
+      "bus_voltage_v": 396.4943819257526,
+      "current_a": 14.022472296989886,
+      "rightmost_real_per_s": -49.25446807256867,
+      "frequency_hz": 315.82479547220004,
+      "independent_impedance_max_error_rad_s": 2.31335954426011e-12
+    },
+    {
+      "power_per_bus_w": 5600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.7549488518745,
+      "bus_voltage_v": 396.46245737656204,
+      "current_a": 14.15017049375168,
+      "rightmost_real_per_s": -49.18556434921025,
+      "frequency_hz": 315.8232163696918,
+      "independent_impedance_max_error_rad_s": 7.932979741239192e-13
+    },
+    {
+      "power_per_bus_w": 5650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.716631894175,
+      "bus_voltage_v": 396.4305265784792,
+      "current_a": 14.277893686083324,
+      "rightmost_real_per_s": -49.11663775174657,
+      "frequency_hz": 315.8216320054466,
+      "independent_impedance_max_error_rad_s": 9.640627499647887e-13
+    },
+    {
+      "power_per_bus_w": 5700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.6783074333995,
+      "bus_voltage_v": 396.3985895278329,
+      "current_a": 14.405641888668418,
+      "rightmost_real_per_s": -49.047688279911675,
+      "frequency_hz": 315.82004237378726,
+      "independent_impedance_max_error_rad_s": 9.097444676580534e-13
+    },
+    {
+      "power_per_bus_w": 5750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.6399754651385,
+      "bus_voltage_v": 396.3666462209487,
+      "current_a": 14.533415116204951,
+      "rightmost_real_per_s": -48.978715933459895,
+      "frequency_hz": 315.8184474690305,
+      "independent_impedance_max_error_rad_s": 1.1390866590859189e-12
+    },
+    {
+      "power_per_bus_w": 5800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.60163598497843,
+      "bus_voltage_v": 396.3346966541487,
+      "current_a": 14.661213383405306,
+      "rightmost_real_per_s": -48.909720712164926,
+      "frequency_hz": 315.8168472854872,
+      "independent_impedance_max_error_rad_s": 1.3830600733622801e-12
+    },
+    {
+      "power_per_bus_w": 5850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.5632889885011,
+      "bus_voltage_v": 396.3027408237509,
+      "current_a": 14.789036704996297,
+      "rightmost_real_per_s": -48.8407026158207,
+      "frequency_hz": 315.81524181746005,
+      "independent_impedance_max_error_rad_s": 1.1475650145042902e-12
+    },
+    {
+      "power_per_bus_w": 5900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.52493447128427,
+      "bus_voltage_v": 396.2707787260702,
+      "current_a": 14.916885095719167,
+      "rightmost_real_per_s": -48.771661644240815,
+      "frequency_hz": 315.8136310592472,
+      "independent_impedance_max_error_rad_s": 1.370224141509328e-12
+    },
+    {
+      "power_per_bus_w": 5950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.4865724289011,
+      "bus_voltage_v": 396.2388103574176,
+      "current_a": 15.044758570329629,
+      "rightmost_real_per_s": -48.70259779725892,
+      "frequency_hz": 315.81201500513976,
+      "independent_impedance_max_error_rad_s": 4.832213032818602e-13
+    },
+    {
+      "power_per_bus_w": 6000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.4482028569206,
+      "bus_voltage_v": 396.2068357141005,
+      "current_a": 15.17265714359788,
+      "rightmost_real_per_s": -48.63351107472914,
+      "frequency_hz": 315.8103936494222,
+      "independent_impedance_max_error_rad_s": 2.5371848444674254e-12
+    },
+    {
+      "power_per_bus_w": 6050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.40982575090743,
+      "bus_voltage_v": 396.1748547924229,
+      "current_a": 15.300580830308604,
+      "rightmost_real_per_s": -48.564401476525475,
+      "frequency_hz": 315.8087669863732,
+      "independent_impedance_max_error_rad_s": 1.1382885756177522e-12
+    },
+    {
+      "power_per_bus_w": 6100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.3714411064217,
+      "bus_voltage_v": 396.14286758868474,
+      "current_a": 15.428529645261024,
+      "rightmost_real_per_s": -48.49526900254202,
+      "frequency_hz": 315.80713501026406,
+      "independent_impedance_max_error_rad_s": 7.105427357601002e-13
+    },
+    {
+      "power_per_bus_w": 6150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.33304891901935,
+      "bus_voltage_v": 396.1108740991828,
+      "current_a": 15.556503603268888,
+      "rightmost_real_per_s": -48.42611365269286,
+      "frequency_hz": 315.80549771536084,
+      "independent_impedance_max_error_rad_s": 1.5935336723124737e-12
+    },
+    {
+      "power_per_bus_w": 6200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.29464918425185,
+      "bus_voltage_v": 396.0788743202099,
+      "current_a": 15.684502719160514,
+      "rightmost_real_per_s": -48.356935426913125,
+      "frequency_hz": 315.80385509592196,
+      "independent_impedance_max_error_rad_s": 2.8421709430404007e-13
+    },
+    {
+      "power_per_bus_w": 6250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.25624189766637,
+      "bus_voltage_v": 396.0468682480553,
+      "current_a": 15.812527007778801,
+      "rightmost_real_per_s": -48.28773432515764,
+      "frequency_hz": 315.8022071462005,
+      "independent_impedance_max_error_rad_s": 7.791709393054202e-13
+    },
+    {
+      "power_per_bus_w": 6300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.21782705480564,
+      "bus_voltage_v": 396.0148558790047,
+      "current_a": 15.940576483981241,
+      "rightmost_real_per_s": -48.21851034740226,
+      "frequency_hz": 315.80055386044256,
+      "independent_impedance_max_error_rad_s": 1.8468781290406667e-12
+    },
+    {
+      "power_per_bus_w": 6350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.179404651208,
+      "bus_voltage_v": 395.98283720934,
+      "current_a": 16.06865116263996,
+      "rightmost_real_per_s": -48.14926349364237,
+      "frequency_hz": 315.79889523288705,
+      "independent_impedance_max_error_rad_s": 2.981579898534021e-12
+    },
+    {
+      "power_per_bus_w": 6400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.1409746824075,
+      "bus_voltage_v": 395.9508122353396,
+      "current_a": 16.19675105864171,
+      "rightmost_real_per_s": -48.07999376389496,
+      "frequency_hz": 315.79723125776854,
+      "independent_impedance_max_error_rad_s": 1.8283467199674115e-12
+    },
+    {
+      "power_per_bus_w": 6450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.10253714393366,
+      "bus_voltage_v": 395.91878095327803,
+      "current_a": 16.324876186887913,
+      "rightmost_real_per_s": -48.010701158196696,
+      "frequency_hz": 315.7955619293132,
+      "independent_impedance_max_error_rad_s": 1.3807949762310995e-12
+    },
+    {
+      "power_per_bus_w": 6500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.0640920313116,
+      "bus_voltage_v": 395.8867433594263,
+      "current_a": 16.45302656229468,
+      "rightmost_real_per_s": -47.941385676605734,
+      "frequency_hz": 315.7938872417412,
+      "independent_impedance_max_error_rad_s": 2.2737367544323206e-13
+    },
+    {
+      "power_per_bus_w": 6550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 395.0256393400622,
+      "bus_voltage_v": 395.85469945005184,
+      "current_a": 16.58120219979281,
+      "rightmost_real_per_s": -47.87204731920038,
+      "frequency_hz": 315.7922071892661,
+      "independent_impedance_max_error_rad_s": 9.35005127166504e-13
+    },
+    {
+      "power_per_bus_w": 6600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.98717906570164,
+      "bus_voltage_v": 395.82264922141803,
+      "current_a": 16.70940311432783,
+      "rightmost_real_per_s": -47.8026860860797,
+      "frequency_hz": 315.79052176609605,
+      "independent_impedance_max_error_rad_s": 6.176410867084522e-13
+    },
+    {
+      "power_per_bus_w": 6650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.948711203742,
+      "bus_voltage_v": 395.790592669785,
+      "current_a": 16.837629320860014,
+      "rightmost_real_per_s": -47.73330197736414,
+      "frequency_hz": 315.78883096643125,
+      "independent_impedance_max_error_rad_s": 5.533572525688879e-13
+    },
+    {
+      "power_per_bus_w": 6700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.9102357496907,
+      "bus_voltage_v": 395.75852979140893,
+      "current_a": 16.96588083436439,
+      "rightmost_real_per_s": -47.66389499319401,
+      "frequency_hz": 315.7871347844663,
+      "independent_impedance_max_error_rad_s": 4.832213032818602e-13
+    },
+    {
+      "power_per_bus_w": 6750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.8717526990508,
+      "bus_voltage_v": 395.7264605825423,
+      "current_a": 17.094157669830775,
+      "rightmost_real_per_s": -47.59446513373185,
+      "frequency_hz": 315.7854332143887,
+      "independent_impedance_max_error_rad_s": 9.398791159259423e-13
+    },
+    {
+      "power_per_bus_w": 6800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.8332620473209,
+      "bus_voltage_v": 395.69438503943405,
+      "current_a": 17.222459842263792,
+      "rightmost_real_per_s": -47.52501239916002,
+      "frequency_hz": 315.78372625038025,
+      "independent_impedance_max_error_rad_s": 1.1406147582181184e-12
+    },
+    {
+      "power_per_bus_w": 6850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.79476378999516,
+      "bus_voltage_v": 395.6623031583293,
+      "current_a": 17.35078736668288,
+      "rightmost_real_per_s": -47.45553678968277,
+      "frequency_hz": 315.7820138866154,
+      "independent_impedance_max_error_rad_s": 6.844854043943254e-13
+    },
+    {
+      "power_per_bus_w": 6900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.7562579225633,
+      "bus_voltage_v": 395.6302149354694,
+      "current_a": 17.479140258122335,
+      "rightmost_real_per_s": -47.386038305525176,
+      "frequency_hz": 315.7802961172623,
+      "independent_impedance_max_error_rad_s": 1.5956708065935119e-12
+    },
+    {
+      "power_per_bus_w": 6950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.7177444405106,
+      "bus_voltage_v": 395.5981203670922,
+      "current_a": 17.607518531631303,
+      "rightmost_real_per_s": -47.31651694693335,
+      "frequency_hz": 315.7785729364831,
+      "independent_impedance_max_error_rad_s": 1.4062285205060312e-12
+    },
+    {
+      "power_per_bus_w": 7000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.67922333931784,
+      "bus_voltage_v": 395.5660194494315,
+      "current_a": 17.735922202273834,
+      "rightmost_real_per_s": -47.24697271417453,
+      "frequency_hz": 315.7768443384323,
+      "independent_impedance_max_error_rad_s": 2.072301269188038e-12
+    },
+    {
+      "power_per_bus_w": 7050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.6406946144614,
+      "bus_voltage_v": 395.5339121787178,
+      "current_a": 17.864351285128862,
+      "rightmost_real_per_s": -47.17740560753835,
+      "frequency_hz": 315.7751103172592,
+      "independent_impedance_max_error_rad_s": 1.173600664085277e-12
+    },
+    {
+      "power_per_bus_w": 7100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.6021582614129,
+      "bus_voltage_v": 395.50179855117744,
+      "current_a": 17.992805795290273,
+      "rightmost_real_per_s": -47.107815627334176,
+      "frequency_hz": 315.7733708671052,
+      "independent_impedance_max_error_rad_s": 1.1372235930902297e-12
+    },
+    {
+      "power_per_bus_w": 7150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.5636142756399,
+      "bus_voltage_v": 395.46967856303326,
+      "current_a": 18.121285747866885,
+      "rightmost_real_per_s": -47.03820277389384,
+      "frequency_hz": 315.7716259821061,
+      "independent_impedance_max_error_rad_s": 1.6098458656515905e-12
+    },
+    {
+      "power_per_bus_w": 7200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.52506265260524,
+      "bus_voltage_v": 395.43755221050435,
+      "current_a": 18.249791157982482,
+      "rightmost_real_per_s": -46.96856704757036,
+      "frequency_hz": 315.76987565639087,
+      "independent_impedance_max_error_rad_s": 4.935587579328812e-13
+    },
+    {
+      "power_per_bus_w": 7250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.48650338776724,
+      "bus_voltage_v": 395.40541948980604,
+      "current_a": 18.37832204077585,
+      "rightmost_real_per_s": -46.898908448738425,
+      "frequency_hz": 315.76811988408133,
+      "independent_impedance_max_error_rad_s": 1.4425942523264978e-12
+    },
+    {
+      "power_per_bus_w": 7300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.4479364765798,
+      "bus_voltage_v": 395.3732803971498,
+      "current_a": 18.506878411400777,
+      "rightmost_real_per_s": -46.82922697779433,
+      "frequency_hz": 315.76635865929376,
+      "independent_impedance_max_error_rad_s": 6.86584323598427e-13
+    },
+    {
+      "power_per_bus_w": 7350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.40936191449214,
+      "bus_voltage_v": 395.34113492874343,
+      "current_a": 18.63546028502609,
+      "rightmost_real_per_s": -46.759522635155776,
+      "frequency_hz": 315.7645919761365,
+      "independent_impedance_max_error_rad_s": 3.979039320256561e-13
+    },
+    {
+      "power_per_bus_w": 7400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.3707796969493,
+      "bus_voltage_v": 395.30898308079105,
+      "current_a": 18.76406767683565,
+      "rightmost_real_per_s": -46.6897954212625,
+      "frequency_hz": 315.7628198287127,
+      "independent_impedance_max_error_rad_s": 1.1400613357256805e-12
+    },
+    {
+      "power_per_bus_w": 7450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.3321898193915,
+      "bus_voltage_v": 395.2768248494929,
+      "current_a": 18.892700602028413,
+      "rightmost_real_per_s": -46.620045336575785,
+      "frequency_hz": 315.7610422111178,
+      "independent_impedance_max_error_rad_s": 6.821210263296962e-13
+    },
+    {
+      "power_per_bus_w": 7500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.29359227725445,
+      "bus_voltage_v": 395.2446602310454,
+      "current_a": 19.021359075818417,
+      "rightmost_real_per_s": -46.550272381579106,
+      "frequency_hz": 315.7592591174414,
+      "independent_impedance_max_error_rad_s": 3.4426950435128706e-12
+    },
+    {
+      "power_per_bus_w": 7550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.25498706596954,
+      "bus_voltage_v": 395.2124892216413,
+      "current_a": 19.15004311343481,
+      "rightmost_real_per_s": -46.48047655677722,
+      "frequency_hz": 315.7574705417652,
+      "independent_impedance_max_error_rad_s": 1.8192114345999083e-12
+    },
+    {
+      "power_per_bus_w": 7600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.21637418096344,
+      "bus_voltage_v": 395.18031181746954,
+      "current_a": 19.278752730121887,
+      "rightmost_real_per_s": -46.410657862697576,
+      "frequency_hz": 315.7556764781657,
+      "independent_impedance_max_error_rad_s": 9.310008041529271e-13
+    },
+    {
+      "power_per_bus_w": 7650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.17775361765825,
+      "bus_voltage_v": 395.1481280147152,
+      "current_a": 19.407487941139095,
+      "rightmost_real_per_s": -46.34081629988934,
+      "frequency_hz": 315.7538769207126,
+      "independent_impedance_max_error_rad_s": 1.1753845957259849e-12
+    },
+    {
+      "power_per_bus_w": 7700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.13912537147166,
+      "bus_voltage_v": 395.11593780955974,
+      "current_a": 19.53624876176106,
+      "rightmost_real_per_s": -46.27095186892346,
+      "frequency_hz": 315.7520718634679,
+      "independent_impedance_max_error_rad_s": 6.99803436660041e-13
+    },
+    {
+      "power_per_bus_w": 7750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.1004894378167,
+      "bus_voltage_v": 395.0837411981806,
+      "current_a": 19.6650352072776,
+      "rightmost_real_per_s": -46.20106457039376,
+      "frequency_hz": 315.7502613004879,
+      "independent_impedance_max_error_rad_s": 4.592217417228007e-13
+    },
+    {
+      "power_per_bus_w": 7800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.06184581210186,
+      "bus_voltage_v": 395.05153817675154,
+      "current_a": 19.793847292993767,
+      "rightmost_real_per_s": -46.13115440491555,
+      "frequency_hz": 315.74844522582157,
+      "independent_impedance_max_error_rad_s": 6.87429441225494e-13
+    },
+    {
+      "power_per_bus_w": 7850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 394.02319448973105,
+      "bus_voltage_v": 395.01932874144256,
+      "current_a": 19.922685034229843,
+      "rightmost_real_per_s": -46.06122137312704,
+      "frequency_hz": 315.74662363351166,
+      "independent_impedance_max_error_rad_s": 5.468871621841872e-13
+    },
+    {
+      "power_per_bus_w": 7900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.9845354661036,
+      "bus_voltage_v": 394.98711288841963,
+      "current_a": 20.05154844632138,
+      "rightmost_real_per_s": -45.991265475688266,
+      "frequency_hz": 315.74479651759395,
+      "independent_impedance_max_error_rad_s": 4.547473508864641e-13
+    },
+    {
+      "power_per_bus_w": 7950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.9458687366142,
+      "bus_voltage_v": 394.9548906138452,
+      "current_a": 20.18043754461921,
+      "rightmost_real_per_s": -45.92128671328197,
+      "frequency_hz": 315.74296387209773,
+      "independent_impedance_max_error_rad_s": 1.3716235698681945e-12
+    },
+    {
+      "power_per_bus_w": 8000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.9071942966532,
+      "bus_voltage_v": 394.9226619138777,
+      "current_a": 20.309352344489465,
+      "rightmost_real_per_s": -45.851285086613395,
+      "frequency_hz": 315.74112569104545,
+      "independent_impedance_max_error_rad_s": 2.0508114719310326e-12
+    },
+    {
+      "power_per_bus_w": 8050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.86851214160595,
+      "bus_voltage_v": 394.8904267846716,
+      "current_a": 20.438292861313617,
+      "rightmost_real_per_s": -45.78126059641028,
+      "frequency_hz": 315.7392819684526,
+      "independent_impedance_max_error_rad_s": 7.963152328398961e-13
+    },
+    {
+      "power_per_bus_w": 8100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.82982226685345,
+      "bus_voltage_v": 394.85818522237787,
+      "current_a": 20.56725911048848,
+      "rightmost_real_per_s": -45.71121324342249,
+      "frequency_hz": 315.7374326983289,
+      "independent_impedance_max_error_rad_s": 1.3645380800150865e-12
+    },
+    {
+      "power_per_bus_w": 8150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.7911246677721,
+      "bus_voltage_v": 394.82593722314346,
+      "current_a": 20.69625110742623,
+      "rightmost_real_per_s": -45.64114302842344,
+      "frequency_hz": 315.7355778746758,
+      "independent_impedance_max_error_rad_s": 2.0680089680186433e-12
+    },
+    {
+      "power_per_bus_w": 8200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.7524193397337,
+      "bus_voltage_v": 394.7936827831114,
+      "current_a": 20.82526886755445,
+      "rightmost_real_per_s": -45.5710499522086,
+      "frequency_hz": 315.73371749148976,
+      "independent_impedance_max_error_rad_s": 1.8245320740907157e-12
+    },
+    {
+      "power_per_bus_w": 8250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.7137062781052,
+      "bus_voltage_v": 394.76142189842096,
+      "current_a": 20.95431240631612,
+      "rightmost_real_per_s": -45.500934015596464,
+      "frequency_hz": 315.73185154275865,
+      "independent_impedance_max_error_rad_s": 2.292323633365001e-12
+    },
+    {
+      "power_per_bus_w": 8300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.67498547824914,
+      "bus_voltage_v": 394.72915456520764,
+      "current_a": 21.083381739169663,
+      "rightmost_real_per_s": -45.43079521942816,
+      "frequency_hz": 315.72998002246555,
+      "independent_impedance_max_error_rad_s": 5.186961971048731e-13
+    },
+    {
+      "power_per_bus_w": 8350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.6362569355233,
+      "bus_voltage_v": 394.69688077960274,
+      "current_a": 21.21247688158896,
+      "rightmost_real_per_s": -45.3606335645684,
+      "frequency_hz": 315.72810292458485,
+      "independent_impedance_max_error_rad_s": 1.3039959579776293e-12
+    },
+    {
+      "power_per_bus_w": 8400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.59752064528095,
+      "bus_voltage_v": 394.66460053773415,
+      "current_a": 21.341597849063362,
+      "rightmost_real_per_s": -45.2904490519041,
+      "frequency_hz": 315.72622024308566,
+      "independent_impedance_max_error_rad_s": 2.0464740982800417e-12
+    },
+    {
+      "power_per_bus_w": 8450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.5587766028707,
+      "bus_voltage_v": 394.6323138357256,
+      "current_a": 21.47074465709772,
+      "rightmost_real_per_s": -45.22024168234538,
+      "frequency_hz": 315.724331971929,
+      "independent_impedance_max_error_rad_s": 3.1836200105498394e-12
+    },
+    {
+      "power_per_bus_w": 8500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.52002480363626,
+      "bus_voltage_v": 394.6000206696969,
+      "current_a": 21.59991732121241,
+      "rightmost_real_per_s": -45.150011456826064,
+      "frequency_hz": 315.7224381050708,
+      "independent_impedance_max_error_rad_s": 8.526512829121202e-13
+    },
+    {
+      "power_per_bus_w": 8550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.481265242917,
+      "bus_voltage_v": 394.5677210357642,
+      "current_a": 21.72911585694335,
+      "rightmost_real_per_s": -45.079758376302166,
+      "frequency_hz": 315.72053863645897,
+      "independent_impedance_max_error_rad_s": 1.1369571915889545e-12
+    },
+    {
+      "power_per_bus_w": 8600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.4424979160474,
+      "bus_voltage_v": 394.5354149300395,
+      "current_a": 21.858340279842025,
+      "rightmost_real_per_s": -45.00948244175386,
+      "frequency_hz": 315.71863356003445,
+      "independent_impedance_max_error_rad_s": 1.3649080239232024e-12
+    },
+    {
+      "power_per_bus_w": 8650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.4037228183573,
+      "bus_voltage_v": 394.5031023486311,
+      "current_a": 21.987590605475496,
+      "rightmost_real_per_s": -44.93918365418398,
+      "frequency_hz": 315.7167228697317,
+      "independent_impedance_max_error_rad_s": 1.0546713903795235e-12
+    },
+    {
+      "power_per_bus_w": 8700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.36493994517207,
+      "bus_voltage_v": 394.47078328764337,
+      "current_a": 22.116866849426444,
+      "rightmost_real_per_s": -44.86886201461922,
+      "frequency_hz": 315.71480655947914,
+      "independent_impedance_max_error_rad_s": 1.850687635408088e-12
+    },
+    {
+      "power_per_bus_w": 8750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.32614929181204,
+      "bus_voltage_v": 394.4384577431767,
+      "current_a": 22.246169027293174,
+      "rightmost_real_per_s": -44.79851752410934,
+      "frequency_hz": 315.7128846231969,
+      "independent_impedance_max_error_rad_s": 2.0464740982800417e-12
+    },
+    {
+      "power_per_bus_w": 8800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.2873508535931,
+      "bus_voltage_v": 394.4061257113276,
+      "current_a": 22.375497154689644,
+      "rightmost_real_per_s": -44.728150183727735,
+      "frequency_hz": 315.7109570547997,
+      "independent_impedance_max_error_rad_s": 9.228306279882315e-13
+    },
+    {
+      "power_per_bus_w": 8850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.24854462582636,
+      "bus_voltage_v": 394.37378718818866,
+      "current_a": 22.504851247245487,
+      "rightmost_real_per_s": -44.65775999457174,
+      "frequency_hz": 315.7090238481945,
+      "independent_impedance_max_error_rad_s": 3.431332922076196e-12
+    },
+    {
+      "power_per_bus_w": 8900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.20973060381823,
+      "bus_voltage_v": 394.3414421698485,
+      "current_a": 22.634231320606023,
+      "rightmost_real_per_s": -44.587346957761525,
+      "frequency_hz": 315.70708499728124,
+      "independent_impedance_max_error_rad_s": 6.893363226728811e-13
+    },
+    {
+      "power_per_bus_w": 8950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.1709087828703,
+      "bus_voltage_v": 394.3090906523919,
+      "current_a": 22.763637390432315,
+      "rightmost_real_per_s": -44.5169110744416,
+      "frequency_hz": 315.7051404959539,
+      "independent_impedance_max_error_rad_s": 6.903974881155497e-13
+    },
+    {
+      "power_per_bus_w": 9000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.1320791582797,
+      "bus_voltage_v": 394.27673263189973,
+      "current_a": 22.893069472401137,
+      "rightmost_real_per_s": -44.44645234577995,
+      "frequency_hz": 315.70319033809915,
+      "independent_impedance_max_error_rad_s": 9.428824462902865e-13
+    },
+    {
+      "power_per_bus_w": 9050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.0932417253385,
+      "bus_voltage_v": 394.24436810444877,
+      "current_a": 23.022527582205043,
+      "rightmost_real_per_s": -44.375970772968614,
+      "frequency_hz": 315.7012345175964,
+      "independent_impedance_max_error_rad_s": 9.096057172999542e-13
+    },
+    {
+      "power_per_bus_w": 9100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.0543964793343,
+      "bus_voltage_v": 394.2119970661119,
+      "current_a": 23.152011735552367,
+      "rightmost_real_per_s": -44.30546635722338,
+      "frequency_hz": 315.6992730283189,
+      "independent_impedance_max_error_rad_s": 3.4135644425146874e-13
+    },
+    {
+      "power_per_bus_w": 9150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 393.0155434155498,
+      "bus_voltage_v": 394.1796195129582,
+      "current_a": 23.281521948167246,
+      "rightmost_real_per_s": -44.23493909978404,
+      "frequency_hz": 315.69730586413186,
+      "independent_impedance_max_error_rad_s": 4.723906993886732e-13
+    },
+    {
+      "power_per_bus_w": 9200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.97668252926314,
+      "bus_voltage_v": 394.1472354410526,
+      "current_a": 23.41105823578965,
+      "rightmost_real_per_s": -44.16438900191434,
+      "frequency_hz": 315.69533301889555,
+      "independent_impedance_max_error_rad_s": 5.686117965451148e-13
+    },
+    {
+      "power_per_bus_w": 9250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.9378138157474,
+      "bus_voltage_v": 394.11484484645615,
+      "current_a": 23.540620614175403,
+      "rightmost_real_per_s": -44.0938160649024,
+      "frequency_hz": 315.6933544864614,
+      "independent_impedance_max_error_rad_s": 1.2508781472129948e-12
+    },
+    {
+      "power_per_bus_w": 9300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.8989372702712,
+      "bus_voltage_v": 394.08244772522596,
+      "current_a": 23.6702090990962,
+      "rightmost_real_per_s": -44.023220290060024,
+      "frequency_hz": 315.69137026067466,
+      "independent_impedance_max_error_rad_s": 9.122660370453579e-13
+    },
+    {
+      "power_per_bus_w": 9350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.8600528880981,
+      "bus_voltage_v": 394.05004407341505,
+      "current_a": 23.799823706339634,
+      "rightmost_real_per_s": -43.95260167872361,
+      "frequency_hz": 315.68938033537347,
+      "independent_impedance_max_error_rad_s": 1.6405999405903699e-12
+    },
+    {
+      "power_per_bus_w": 9400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.82116066448725,
+      "bus_voltage_v": 394.0176338870727,
+      "current_a": 23.92946445170921,
+      "rightmost_real_per_s": -43.881960232253974,
+      "frequency_hz": 315.68738470438984,
+      "independent_impedance_max_error_rad_s": 6.827128885029375e-13
+    },
+    {
+      "power_per_bus_w": 9450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.7822605946927,
+      "bus_voltage_v": 393.9852171622439,
+      "current_a": 24.059131351024384,
+      "rightmost_real_per_s": -43.811295952036076,
+      "frequency_hz": 315.6853833615477,
+      "independent_impedance_max_error_rad_s": 9.507741522101145e-13
+    },
+    {
+      "power_per_bus_w": 9500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.74335267396384,
+      "bus_voltage_v": 393.9527938949699,
+      "current_a": 24.188824420120564,
+      "rightmost_real_per_s": -43.74060883947905,
+      "frequency_hz": 315.6833763006649,
+      "independent_impedance_max_error_rad_s": 7.336160194393135e-13
+    },
+    {
+      "power_per_bus_w": 9550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.7044368975453,
+      "bus_voltage_v": 393.92036408128774,
+      "current_a": 24.318543674849156,
+      "rightmost_real_per_s": -43.66989889601727,
+      "frequency_hz": 315.6813635155515,
+      "independent_impedance_max_error_rad_s": 6.844854043943254e-13
+    },
+    {
+      "power_per_bus_w": 9600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.66551326067673,
+      "bus_voltage_v": 393.88792771723064,
+      "current_a": 24.448289131077573,
+      "rightmost_real_per_s": -43.59916612310896,
+      "frequency_hz": 315.6793450000113,
+      "independent_impedance_max_error_rad_s": 7.236381552771727e-13
+    },
+    {
+      "power_per_bus_w": 9650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.62658175859326,
+      "bus_voltage_v": 393.8554847988277,
+      "current_a": 24.57806080468925,
+      "rightmost_real_per_s": -43.52841052223759,
+      "frequency_hz": 315.67732074784124,
+      "independent_impedance_max_error_rad_s": 5.084229945850415e-13
+    },
+    {
+      "power_per_bus_w": 9700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.58764238652486,
+      "bus_voltage_v": 393.82303532210403,
+      "current_a": 24.70785871158369,
+      "rightmost_real_per_s": -43.45763209491062,
+      "frequency_hz": 315.6752907528306,
+      "independent_impedance_max_error_rad_s": 2.454202677763894e-13
+    },
+    {
+      "power_per_bus_w": 9750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.5486951396971,
+      "bus_voltage_v": 393.7905792830809,
+      "current_a": 24.83768286767645,
+      "rightmost_real_per_s": -43.3868308426612,
+      "frequency_hz": 315.67325500876166,
+      "independent_impedance_max_error_rad_s": 5.084229945850415e-13
+    },
+    {
+      "power_per_bus_w": 9800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.5097400133302,
+      "bus_voltage_v": 393.75811667777515,
+      "current_a": 24.96753328889922,
+      "rightmost_real_per_s": -43.316006767046616,
+      "frequency_hz": 315.6712135094105,
+      "independent_impedance_max_error_rad_s": 3.8738070541989715e-12
+    },
+    {
+      "power_per_bus_w": 9850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.47077700264003,
+      "bus_voltage_v": 393.72564750220005,
+      "current_a": 25.097409991199783,
+      "rightmost_real_per_s": -43.245159869649385,
+      "frequency_hz": 315.66916624854605,
+      "independent_impedance_max_error_rad_s": 1.1412121530676047e-12
+    },
+    {
+      "power_per_bus_w": 9900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.4318061028374,
+      "bus_voltage_v": 393.6931717523645,
+      "current_a": 25.227312990542078,
+      "rightmost_real_per_s": -43.17429015207688,
+      "frequency_hz": 315.6671132199296,
+      "independent_impedance_max_error_rad_s": 1.1849032477171422e-12
+    },
+    {
+      "power_per_bus_w": 9950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.39282730912817,
+      "bus_voltage_v": 393.66068942427347,
+      "current_a": 25.357242302906222,
+      "rightmost_real_per_s": -43.1033976159615,
+      "frequency_hz": 315.66505441731505,
+      "independent_impedance_max_error_rad_s": 1.5918694731386092e-12
+    },
+    {
+      "power_per_bus_w": 10000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.35384061671346,
+      "bus_voltage_v": 393.6282005139279,
+      "current_a": 25.487197944288507,
+      "rightmost_real_per_s": -43.03248226296114,
+      "frequency_hz": 315.6629898344506,
+      "independent_impedance_max_error_rad_s": 2.961625313623389e-12
+    },
+    {
+      "power_per_bus_w": 10050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.31484602078956,
+      "bus_voltage_v": 393.59570501732463,
+      "current_a": 25.61717993070145,
+      "rightmost_real_per_s": -42.96154409475842,
+      "frequency_hz": 315.66091946507674,
+      "independent_impedance_max_error_rad_s": 6.824540119616012e-13
+    },
+    {
+      "power_per_bus_w": 10100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.27584351654787,
+      "bus_voltage_v": 393.56320293045655,
+      "current_a": 25.747188278173798,
+      "rightmost_real_per_s": -42.89058311306133,
+      "frequency_hz": 315.65884330292675,
+      "independent_impedance_max_error_rad_s": 1.1753845957259849e-12
+    },
+    {
+      "power_per_bus_w": 10150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.2368330991749,
+      "bus_voltage_v": 393.5306942493124,
+      "current_a": 25.877223002750558,
+      "rightmost_real_per_s": -42.81959931960381,
+      "frequency_hz": 315.6567613417272,
+      "independent_impedance_max_error_rad_s": 7.06695388950968e-13
+    },
+    {
+      "power_per_bus_w": 10200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.1978147638521,
+      "bus_voltage_v": 393.49817896987673,
+      "current_a": 26.007284120493036,
+      "rightmost_real_per_s": -42.748592716144266,
+      "frequency_hz": 315.6546735751972,
+      "independent_impedance_max_error_rad_s": 1.6014977558999226e-12
+    },
+    {
+      "power_per_bus_w": 10250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.1587885057563,
+      "bus_voltage_v": 393.4656570881303,
+      "current_a": 26.137371647478826,
+      "rightmost_real_per_s": -42.677563304467284,
+      "frequency_hz": 315.65257999704914,
+      "independent_impedance_max_error_rad_s": 7.236381552771727e-13
+    },
+    {
+      "power_per_bus_w": 10300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.1197543200594,
+      "bus_voltage_v": 393.43312860004954,
+      "current_a": 26.267485599801848,
+      "rightmost_real_per_s": -42.60651108638257,
+      "frequency_hz": 315.6504806009882,
+      "independent_impedance_max_error_rad_s": 1.591679168153992e-12
+    },
+    {
+      "power_per_bus_w": 10350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.0807122019283,
+      "bus_voltage_v": 393.4005935016069,
+      "current_a": 26.397625993572397,
+      "rightmost_real_per_s": -42.5354360637258,
+      "frequency_hz": 315.64837538071225,
+      "independent_impedance_max_error_rad_s": 7.190186943645084e-13
+    },
+    {
+      "power_per_bus_w": 10400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.04166214652486,
+      "bus_voltage_v": 393.3680517887707,
+      "current_a": 26.527792844917126,
+      "rightmost_real_per_s": -42.46433823835822,
+      "frequency_hz": 315.646264329913,
+      "independent_impedance_max_error_rad_s": 1.8192114345999083e-12
+    },
+    {
+      "power_per_bus_w": 10450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 392.0026041490063,
+      "bus_voltage_v": 393.33550345750524,
+      "current_a": 26.657986169979097,
+      "rightmost_real_per_s": -42.393217612166495,
+      "frequency_hz": 315.64414744227304,
+      "independent_impedance_max_error_rad_s": 1.1622533253667107e-12
+    },
+    {
+      "power_per_bus_w": 10500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.96353820452464,
+      "bus_voltage_v": 393.30294850377055,
+      "current_a": 26.78820598491779,
+      "rightmost_real_per_s": -42.3220741870638,
+      "frequency_hz": 315.6420247114702,
+      "independent_impedance_max_error_rad_s": 2.274846706538671e-13
+    },
+    {
+      "power_per_bus_w": 10550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.92446430822724,
+      "bus_voltage_v": 393.2703869235227,
+      "current_a": 26.91845230590913,
+      "rightmost_real_per_s": -42.25090796498888,
+      "frequency_hz": 315.63989613117366,
+      "independent_impedance_max_error_rad_s": 1.1497846143541756e-12
+    },
+    {
+      "power_per_bus_w": 10600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.8853824552564,
+      "bus_voltage_v": 393.23781871271365,
+      "current_a": 27.04872514914551,
+      "rightmost_real_per_s": -42.179718947906196,
+      "frequency_hz": 315.6377616950458,
+      "independent_impedance_max_error_rad_s": 2.2773310361445225e-12
+    },
+    {
+      "power_per_bus_w": 10650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.84629264074925,
+      "bus_voltage_v": 393.2052438672911,
+      "current_a": 27.179024530835832,
+      "rightmost_real_per_s": -42.10850713780669,
+      "frequency_hz": 315.63562139674303,
+      "independent_impedance_max_error_rad_s": 4.856703836433968e-13
+    },
+    {
+      "power_per_bus_w": 10700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.8071948598383,
+      "bus_voltage_v": 393.1726623831986,
+      "current_a": 27.309350467205494,
+      "rightmost_real_per_s": -42.037272536707256,
+      "frequency_hz": 315.6334752299117,
+      "independent_impedance_max_error_rad_s": 2.9589391785647743e-12
+    },
+    {
+      "power_per_bus_w": 10750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.76808910765106,
+      "bus_voltage_v": 393.1400742563759,
+      "current_a": 27.43970297449644,
+      "rightmost_real_per_s": -41.966015146651,
+      "frequency_hz": 315.6313231881949,
+      "independent_impedance_max_error_rad_s": 1.5921865975661509e-12
+    },
+    {
+      "power_per_bus_w": 10800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.7289753793099,
+      "bus_voltage_v": 393.1074794827582,
+      "current_a": 27.57008206896719,
+      "rightmost_real_per_s": -41.89473496970733,
+      "frequency_hz": 315.62916526522486,
+      "independent_impedance_max_error_rad_s": 4.582862941503293e-13
+    },
+    {
+      "power_per_bus_w": 10850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.6898536699322,
+      "bus_voltage_v": 393.0748780582768,
+      "current_a": 27.700487766892834,
+      "rightmost_real_per_s": -41.823432007971995,
+      "frequency_hz": 315.62700145462935,
+      "independent_impedance_max_error_rad_s": 4.786020928989078e-13
+    },
+    {
+      "power_per_bus_w": 10900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.65072397463047,
+      "bus_voltage_v": 393.0422699788587,
+      "current_a": 27.830920084565086,
+      "rightmost_real_per_s": -41.75210626356699,
+      "frequency_hz": 315.6248317500274,
+      "independent_impedance_max_error_rad_s": 3.0212691549237007e-13
+    },
+    {
+      "power_per_bus_w": 10950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.6115862885123,
+      "bus_voltage_v": 393.0096552404269,
+      "current_a": 27.96137903829229,
+      "rightmost_real_per_s": -41.68075773864115,
+      "frequency_hz": 315.6226561450313,
+      "independent_impedance_max_error_rad_s": 9.764211987602427e-13
+    },
+    {
+      "power_per_bus_w": 11000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.5724406066802,
+      "bus_voltage_v": 392.9770338389001,
+      "current_a": 28.091864644399443,
+      "rightmost_real_per_s": -41.60938643536946,
+      "frequency_hz": 315.62047463324643,
+      "independent_impedance_max_error_rad_s": 9.122660370453579e-13
+    },
+    {
+      "power_per_bus_w": 11050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.53328692423156,
+      "bus_voltage_v": 392.944405770193,
+      "current_a": 28.22237691922824,
+      "rightmost_real_per_s": -41.537992355953904,
+      "frequency_hz": 315.61828720827083,
+      "independent_impedance_max_error_rad_s": 3.4224270219716276e-13
+    },
+    {
+      "power_per_bus_w": 11100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.49412523625887,
+      "bus_voltage_v": 392.91177103021573,
+      "current_a": 28.35291587913707,
+      "rightmost_real_per_s": -41.46657550262328,
+      "frequency_hz": 315.61609386369497,
+      "independent_impedance_max_error_rad_s": 7.031142602530156e-13
+    },
+    {
+      "power_per_bus_w": 11150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.4549555378497,
+      "bus_voltage_v": 392.8791296148747,
+      "current_a": 28.48348154050105,
+      "rightmost_real_per_s": -41.39513587763247,
+      "frequency_hz": 315.61389459310277,
+      "independent_impedance_max_error_rad_s": 1.365425777005875e-12
+    },
+    {
+      "power_per_bus_w": 11200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.4157778240864,
+      "bus_voltage_v": 392.84648152007196,
+      "current_a": 28.61407391971206,
+      "rightmost_real_per_s": -41.3236734832641,
+      "frequency_hz": 315.6116893900696,
+      "independent_impedance_max_error_rad_s": 2.744755864140394e-12
+    },
+    {
+      "power_per_bus_w": 11250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.3765920900464,
+      "bus_voltage_v": 392.8138267417053,
+      "current_a": 28.744693033178752,
+      "rightmost_real_per_s": -41.25218832182714,
+      "frequency_hz": 315.6094782481656,
+      "independent_impedance_max_error_rad_s": 5.116401106134473e-13
+    },
+    {
+      "power_per_bus_w": 11300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.337398330802,
+      "bus_voltage_v": 392.78116527566834,
+      "current_a": 28.8753388973266,
+      "rightmost_real_per_s": -41.18068039565772,
+      "frequency_hz": 315.6072611609517,
+      "independent_impedance_max_error_rad_s": 3.317557437278751e-13
+    },
+    {
+      "power_per_bus_w": 11350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.2981965414207,
+      "bus_voltage_v": 392.74849711785055,
+      "current_a": 29.00601152859786,
+      "rightmost_real_per_s": -41.10914970711927,
+      "frequency_hz": 315.6050381219829,
+      "independent_impedance_max_error_rad_s": 2.5421149729252077e-13
+    },
+    {
+      "power_per_bus_w": 11400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.2589867169645,
+      "bus_voltage_v": 392.7158222641371,
+      "current_a": 29.136710943451693,
+      "rightmost_real_per_s": -41.037596258602065,
+      "frequency_hz": 315.6028091248061,
+      "independent_impedance_max_error_rad_s": 1.0423446395232218e-12
+    },
+    {
+      "power_per_bus_w": 11450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.2197688524908,
+      "bus_voltage_v": 392.683140710409,
+      "current_a": 29.267437158364093,
+      "rightmost_real_per_s": -40.966020052523746,
+      "frequency_hz": 315.6005741629618,
+      "independent_impedance_max_error_rad_s": 2.4233986836860863e-12
+    },
+    {
+      "power_per_bus_w": 11500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.1805429430516,
+      "bus_voltage_v": 392.650452452543,
+      "current_a": 29.398190189827975,
+      "rightmost_real_per_s": -40.89442109132935,
+      "frequency_hz": 315.5983332299819,
+      "independent_impedance_max_error_rad_s": 1.8359109850919894e-12
+    },
+    {
+      "power_per_bus_w": 11550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.14130898369405,
+      "bus_voltage_v": 392.6177574864117,
+      "current_a": 29.528970054353167,
+      "rightmost_real_per_s": -40.82279937749142,
+      "frequency_hz": 315.5960863193926,
+      "independent_impedance_max_error_rad_s": 1.1475650145042902e-12
+    },
+    {
+      "power_per_bus_w": 11600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.10206696946005,
+      "bus_voltage_v": 392.58505580788335,
+      "current_a": 29.659776768466447,
+      "rightmost_real_per_s": -40.75115491350934,
+      "frequency_hz": 315.59383342471165,
+      "independent_impedance_max_error_rad_s": 1.8192114345999083e-12
+    },
+    {
+      "power_per_bus_w": 11650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.0628168953865,
+      "bus_voltage_v": 392.5523474128221,
+      "current_a": 29.790610348711574,
+      "rightmost_real_per_s": -40.679487701910915,
+      "frequency_hz": 315.59157453945005,
+      "independent_impedance_max_error_rad_s": 4.4600354915687647e-13
+    },
+    {
+      "power_per_bus_w": 11700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 391.0235587565052,
+      "bus_voltage_v": 392.5196322970877,
+      "current_a": 29.921470811649286,
+      "rightmost_real_per_s": -40.60779774525103,
+      "frequency_hz": 315.5893096571108,
+      "independent_impedance_max_error_rad_s": 2.06141906123404e-12
+    },
+    {
+      "power_per_bus_w": 11750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.98429254784276,
+      "bus_voltage_v": 392.4869104565356,
+      "current_a": 30.05235817385736,
+      "rightmost_real_per_s": -40.53608504611204,
+      "frequency_hz": 315.5870387711905,
+      "independent_impedance_max_error_rad_s": 5.826450433232822e-13
+    },
+    {
+      "power_per_bus_w": 11800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.9450182644208,
+      "bus_voltage_v": 392.45418188701734,
+      "current_a": 30.183272451930605,
+      "rightmost_real_per_s": -40.46434960710488,
+      "frequency_hz": 315.5847618751777,
+      "independent_impedance_max_error_rad_s": 2.2850771577215914e-12
+    },
+    {
+      "power_per_bus_w": 11850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.90573590125575,
+      "bus_voltage_v": 392.4214465843798,
+      "current_a": 30.314213662480906,
+      "rightmost_real_per_s": -40.392591430867554,
+      "frequency_hz": 315.58247896255415,
+      "independent_impedance_max_error_rad_s": 6.532357550987174e-13
+    },
+    {
+      "power_per_bus_w": 11900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.86644545335884,
+      "bus_voltage_v": 392.3887045444657,
+      "current_a": 30.445181822137247,
+      "rightmost_real_per_s": -40.32081052006636,
+      "frequency_hz": 315.5801900267936,
+      "independent_impedance_max_error_rad_s": 3.18640194309322e-12
+    },
+    {
+      "power_per_bus_w": 11950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.8271469157363,
+      "bus_voltage_v": 392.35595576311357,
+      "current_a": 30.57617694754572,
+      "rightmost_real_per_s": -40.249006877395445,
+      "frequency_hz": 315.57789506136345,
+      "independent_impedance_max_error_rad_s": 1.3854672365148818e-12
+    },
+    {
+      "power_per_bus_w": 12000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.78784028338913,
+      "bus_voltage_v": 392.3232002361576,
+      "current_a": 30.707199055369568,
+      "rightmost_real_per_s": -40.17718050557728,
+      "frequency_hz": 315.5755940597224,
+      "independent_impedance_max_error_rad_s": 4.582862941503293e-13
+    },
+    {
+      "power_per_bus_w": 12050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.74852555131326,
+      "bus_voltage_v": 392.2904379594277,
+      "current_a": 30.838248162289197,
+      "rightmost_real_per_s": -40.10533140736223,
+      "frequency_hz": 315.5732870153229,
+      "independent_impedance_max_error_rad_s": 1.3669039909031027e-12
+    },
+    {
+      "power_per_bus_w": 12100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.7092027144993,
+      "bus_voltage_v": 392.2576689287494,
+      "current_a": 30.969324285002223,
+      "rightmost_real_per_s": -40.03345958552906,
+      "frequency_hz": 315.5709739216092,
+      "independent_impedance_max_error_rad_s": 6.858117849340973e-13
+    },
+    {
+      "power_per_bus_w": 12150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.66987176793293,
+      "bus_voltage_v": 392.22489313994413,
+      "current_a": 31.100427440223456,
+      "rightmost_real_per_s": -39.96156504288457,
+      "frequency_hz": 315.5686547720191,
+      "independent_impedance_max_error_rad_s": 1.3645380800150865e-12
+    },
+    {
+      "power_per_bus_w": 12200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.6305327065945,
+      "bus_voltage_v": 392.19211058882877,
+      "current_a": 31.23155764468496,
+      "rightmost_real_per_s": -39.88964778226439,
+      "frequency_hz": 315.56632955998174,
+      "independent_impedance_max_error_rad_s": 3.552713678800501e-13
+    },
+    {
+      "power_per_bus_w": 12250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.5911855254592,
+      "bus_voltage_v": 392.159321271216,
+      "current_a": 31.362714915136074,
+      "rightmost_real_per_s": -39.817707806532496,
+      "frequency_hz": 315.56399827892045,
+      "independent_impedance_max_error_rad_s": 1.366091171202613e-12
+    },
+    {
+      "power_per_bus_w": 12300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.551830219497,
+      "bus_voltage_v": 392.1265251829142,
+      "current_a": 31.49389926834342,
+      "rightmost_real_per_s": -39.74574511858114,
+      "frequency_hz": 315.5616609222495,
+      "independent_impedance_max_error_rad_s": 7.533428621004656e-13
+    },
+    {
+      "power_per_bus_w": 12350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.5124667836727,
+      "bus_voltage_v": 392.09372231972725,
+      "current_a": 31.625110721090945,
+      "rightmost_real_per_s": -39.673759721331194,
+      "frequency_hz": 315.55931748337673,
+      "independent_impedance_max_error_rad_s": 1.820986708439858e-12
+    },
+    {
+      "power_per_bus_w": 12400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.473095212946,
+      "bus_voltage_v": 392.060912677455,
+      "current_a": 31.756349290179934,
+      "rightmost_real_per_s": -39.60175161773276,
+      "frequency_hz": 315.55696795570196,
+      "independent_impedance_max_error_rad_s": 3.4130023708983287e-12
+    },
+    {
+      "power_per_bus_w": 12450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.4337155022713,
+      "bus_voltage_v": 392.02809625189275,
+      "current_a": 31.88761499242904,
+      "rightmost_real_per_s": -39.5297208107642,
+      "frequency_hz": 315.5546123326188,
+      "independent_impedance_max_error_rad_s": 1.1382885756177522e-12
+    },
+    {
+      "power_per_bus_w": 12500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.39432764659773,
+      "bus_voltage_v": 391.99527303883144,
+      "current_a": 32.01890784467431,
+      "rightmost_real_per_s": -39.45766730343294,
+      "frequency_hz": 315.55225060751184,
+      "independent_impedance_max_error_rad_s": 1.1495870021551971e-12
+    },
+    {
+      "power_per_bus_w": 12550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.35493164086927,
+      "bus_voltage_v": 391.96244303405774,
+      "current_a": 32.15022786376921,
+      "rightmost_real_per_s": -39.38559109877539,
+      "frequency_hz": 315.54988277375867,
+      "independent_impedance_max_error_rad_s": 5.770726973039175e-13
+    },
+    {
+      "power_per_bus_w": 12600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.31552748002457,
+      "bus_voltage_v": 391.9296062333538,
+      "current_a": 32.28157506658466,
+      "rightmost_real_per_s": -39.313492199857,
+      "frequency_hz": 315.54750882472996,
+      "independent_impedance_max_error_rad_s": 9.688687278932855e-13
+    },
+    {
+      "power_per_bus_w": 12650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.2761151589973,
+      "bus_voltage_v": 391.89676263249777,
+      "current_a": 32.41294947000902,
+      "rightmost_real_per_s": -39.241370609772105,
+      "frequency_hz": 315.54512875378845,
+      "independent_impedance_max_error_rad_s": 9.374856803373542e-13
+    },
+    {
+      "power_per_bus_w": 12700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.23669467271554,
+      "bus_voltage_v": 391.863912227263,
+      "current_a": 32.544351090948176,
+      "rightmost_real_per_s": -39.16922633164437,
+      "frequency_hz": 315.54274255428925,
+      "independent_impedance_max_error_rad_s": 3.18326317670505e-12
+    },
+    {
+      "power_per_bus_w": 12750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.19726601610233,
+      "bus_voltage_v": 391.8310550134186,
+      "current_a": 32.67577994632552,
+      "rightmost_real_per_s": -39.097059368627,
+      "frequency_hz": 315.5403502195811,
+      "independent_impedance_max_error_rad_s": 2.7592488775877086e-13
+    },
+    {
+      "power_per_bus_w": 12800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.1578291840754,
+      "bus_voltage_v": 391.79819098672954,
+      "current_a": 32.80723605308198,
+      "rightmost_real_per_s": -39.02486972390177,
+      "frequency_hz": 315.53795174300325,
+      "independent_impedance_max_error_rad_s": 1.597947266062715e-12
+    },
+    {
+      "power_per_bus_w": 12850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.1183841715472,
+      "bus_voltage_v": 391.765320142956,
+      "current_a": 32.93871942817608,
+      "rightmost_real_per_s": -38.95265740068098,
+      "frequency_hz": 315.5355471178888,
+      "independent_impedance_max_error_rad_s": 2.2781733181718378e-12
+    },
+    {
+      "power_per_bus_w": 12900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.0789309734248,
+      "bus_voltage_v": 391.732442477854,
+      "current_a": 33.07023008858391,
+      "rightmost_real_per_s": -38.880422402205596,
+      "frequency_hz": 315.53313633756414,
+      "independent_impedance_max_error_rad_s": 5.684341886080801e-13
+    },
+    {
+      "power_per_bus_w": 12950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.03946958461023,
+      "bus_voltage_v": 391.6995579871752,
+      "current_a": 33.201768051299204,
+      "rightmost_real_per_s": -38.808164731746515,
+      "frequency_hz": 315.53071939534533,
+      "independent_impedance_max_error_rad_s": 1.374858882450988e-12
+    },
+    {
+      "power_per_bus_w": 13000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 390.0,
+      "bus_voltage_v": 391.6666666666667,
+      "current_a": 33.333333333333336,
+      "rightmost_real_per_s": -38.73588439260409,
+      "frequency_hz": 315.52829628454384,
+      "independent_impedance_max_error_rad_s": 2.280122671451361e-12
+    },
+    {
+      "power_per_bus_w": 13050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.9605222144854,
+      "bus_voltage_v": 391.6337685120712,
+      "current_a": 33.464925951715344,
+      "rightmost_real_per_s": -38.66358138810867,
+      "frequency_hz": 315.5258669984619,
+      "independent_impedance_max_error_rad_s": 1.1849032477171422e-12
+    },
+    {
+      "power_per_bus_w": 13100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.9210362229524,
+      "bus_voltage_v": 391.600863519127,
+      "current_a": 33.59654592349198,
+      "rightmost_real_per_s": -38.59125572162025,
+      "frequency_hz": 315.5234315303948,
+      "independent_impedance_max_error_rad_s": 1.148554474947213e-12
+    },
+    {
+      "power_per_bus_w": 13150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.8815420202817,
+      "bus_voltage_v": 391.5679516835681,
+      "current_a": 33.72819326572771,
+      "rightmost_real_per_s": -38.51890739652886,
+      "frequency_hz": 315.52098987362973,
+      "independent_impedance_max_error_rad_s": 5.022285747336438e-13
+    },
+    {
+      "power_per_bus_w": 13200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.8420396013486,
+      "bus_voltage_v": 391.5350330011238,
+      "current_a": 33.85986799550476,
+      "rightmost_real_per_s": -38.44653641625477,
+      "frequency_hz": 315.51854202144733,
+      "independent_impedance_max_error_rad_s": 1.168491795662687e-12
+    },
+    {
+      "power_per_bus_w": 13250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.8025289610231,
+      "bus_voltage_v": 391.50210746751924,
+      "current_a": 33.99157012992311,
+      "rightmost_real_per_s": -38.37414278424772,
+      "frequency_hz": 315.51608796711935,
+      "independent_impedance_max_error_rad_s": 1.6067852149737876e-12
+    },
+    {
+      "power_per_bus_w": 13300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.76301009416983,
+      "bus_voltage_v": 391.46917507847485,
+      "current_a": 34.12329968610057,
+      "rightmost_real_per_s": -38.301726503988135,
+      "frequency_hz": 315.5136277039113,
+      "independent_impedance_max_error_rad_s": 3.2155493553843715e-13
+    },
+    {
+      "power_per_bus_w": 13350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.72348299564817,
+      "bus_voltage_v": 391.4362358297068,
+      "current_a": 34.25505668117277,
+      "rightmost_real_per_s": -38.22928757898641,
+      "frequency_hz": 315.51116122507995,
+      "independent_impedance_max_error_rad_s": 1.1369571915889545e-12
+    },
+    {
+      "power_per_bus_w": 13400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.683947660312,
+      "bus_voltage_v": 391.4032897169267,
+      "current_a": 34.38684113229318,
+      "rightmost_real_per_s": -38.15682601278343,
+      "frequency_hz": 315.50868852387475,
+      "independent_impedance_max_error_rad_s": 6.982506031146954e-13
+    },
+    {
+      "power_per_bus_w": 13450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.64440408301004,
+      "bus_voltage_v": 391.3703367358417,
+      "current_a": 34.518653056633156,
+      "rightmost_real_per_s": -38.084341808950555,
+      "frequency_hz": 315.5062095935383,
+      "independent_impedance_max_error_rad_s": 5.518497755175417e-13
+    },
+    {
+      "power_per_bus_w": 13500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.6048522585854,
+      "bus_voltage_v": 391.3373768821545,
+      "current_a": 34.65049247138197,
+      "rightmost_real_per_s": -38.01183497108934,
+      "frequency_hz": 315.5037244273041,
+      "independent_impedance_max_error_rad_s": 1.5918694731386092e-12
+    },
+    {
+      "power_per_bus_w": 13550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.565292181876,
+      "bus_voltage_v": 391.30441015156333,
+      "current_a": 34.78235939374682,
+      "rightmost_real_per_s": -37.939305502832326,
+      "frequency_hz": 315.5012330183998,
+      "independent_impedance_max_error_rad_s": 7.031142602530156e-13
+    },
+    {
+      "power_per_bus_w": 13600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.5257238477142,
+      "bus_voltage_v": 391.2714365397618,
+      "current_a": 34.91425384095287,
+      "rightmost_real_per_s": -37.866753407842396,
+      "frequency_hz": 315.49873536004407,
+      "independent_impedance_max_error_rad_s": 7.285055754650952e-13
+    },
+    {
+      "power_per_bus_w": 13650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.48614725092705,
+      "bus_voltage_v": 391.2384560424392,
+      "current_a": 35.04617583024324,
+      "rightmost_real_per_s": -37.79417868981345,
+      "frequency_hz": 315.496231445448,
+      "independent_impedance_max_error_rad_s": 2.5421149729252077e-13
+    },
+    {
+      "power_per_bus_w": 13700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.44656238633627,
+      "bus_voltage_v": 391.20546865528024,
+      "current_a": 35.1781253788791,
+      "rightmost_real_per_s": -37.72158135247012,
+      "frequency_hz": 315.49372126781594,
+      "independent_impedance_max_error_rad_s": 1.1382885756177522e-12
+    },
+    {
+      "power_per_bus_w": 13750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.4069692487581,
+      "bus_voltage_v": 391.1724743739651,
+      "current_a": 35.310102504139635,
+      "rightmost_real_per_s": -37.64896139956768,
+      "frequency_hz": 315.4912048203438,
+      "independent_impedance_max_error_rad_s": 1.3657400313298934e-12
+    },
+    {
+      "power_per_bus_w": 13800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.3673678330034,
+      "bus_voltage_v": 391.1394731941695,
+      "current_a": 35.44210722332209,
+      "rightmost_real_per_s": -37.57631883489276,
+      "frequency_hz": 315.48868209622026,
+      "independent_impedance_max_error_rad_s": 9.25343817704044e-13
+    },
+    {
+      "power_per_bus_w": 13850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.32775813387747,
+      "bus_voltage_v": 391.10646511156455,
+      "current_a": 35.57413955374182,
+      "rightmost_real_per_s": -37.50365366226307,
+      "frequency_hz": 315.4861530886252,
+      "independent_impedance_max_error_rad_s": 4.547473508864641e-13
+    },
+    {
+      "power_per_bus_w": 13900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.28814014618035,
+      "bus_voltage_v": 391.07345012181696,
+      "current_a": 35.706199512732276,
+      "rightmost_real_per_s": -37.43096588552755,
+      "frequency_hz": 315.48361779073264,
+      "independent_impedance_max_error_rad_s": 1.415264864377451e-12
+    },
+    {
+      "power_per_bus_w": 13950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.24851386470647,
+      "bus_voltage_v": 391.0404282205887,
+      "current_a": 35.83828711764507,
+      "rightmost_real_per_s": -37.35825550856594,
+      "frequency_hz": 315.4810761957074,
+      "independent_impedance_max_error_rad_s": 2.063181690525957e-12
+    },
+    {
+      "power_per_bus_w": 14000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.208879284245,
+      "bus_voltage_v": 391.0073994035375,
+      "current_a": 35.97040238584997,
+      "rightmost_real_per_s": -37.28552253528994,
+      "frequency_hz": 315.47852829670694,
+      "independent_impedance_max_error_rad_s": 9.764211987602427e-13
+    },
+    {
+      "power_per_bus_w": 14050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.1692363995795,
+      "bus_voltage_v": 390.97436366631626,
+      "current_a": 36.10254533473494,
+      "rightmost_real_per_s": -37.2127669696422,
+      "frequency_hz": 315.47597408688154,
+      "independent_impedance_max_error_rad_s": 1.388015726556066e-12
+    },
+    {
+      "power_per_bus_w": 14100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.1295852054882,
+      "bus_voltage_v": 390.94132100457347,
+      "current_a": 36.23471598170618,
+      "rightmost_real_per_s": -37.13998881559715,
+      "frequency_hz": 315.4734135593735,
+      "independent_impedance_max_error_rad_s": 1.3807949762310995e-12
+    },
+    {
+      "power_per_bus_w": 14150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.08992569674353,
+      "bus_voltage_v": 390.90827141395295,
+      "current_a": 36.36691434418814,
+      "rightmost_real_per_s": -37.06718807716081,
+      "frequency_hz": 315.4708467073167,
+      "independent_impedance_max_error_rad_s": 7.06695388950968e-13
+    },
+    {
+      "power_per_bus_w": 14200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.0502578681129,
+      "bus_voltage_v": 390.87521489009407,
+      "current_a": 36.499140439623524,
+      "rightmost_real_per_s": -36.99436475837088,
+      "frequency_hz": 315.468273523838,
+      "independent_impedance_max_error_rad_s": 7.055514053778557e-13
+    },
+    {
+      "power_per_bus_w": 14250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 389.01058171435795,
+      "bus_voltage_v": 390.8421514286316,
+      "current_a": 36.63139428547336,
+      "rightmost_real_per_s": -36.92151886329691,
+      "frequency_hz": 315.46569400205675,
+      "independent_impedance_max_error_rad_s": 8.186056748397873e-13
+    },
+    {
+      "power_per_bus_w": 14300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.97089723023487,
+      "bus_voltage_v": 390.8090810251957,
+      "current_a": 36.763675899217006,
+      "rightmost_real_per_s": -36.84865039604018,
+      "frequency_hz": 315.4631081350837,
+      "independent_impedance_max_error_rad_s": 3.0100187120464685e-12
+    },
+    {
+      "power_per_bus_w": 14350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.9312044104944,
+      "bus_voltage_v": 390.77600367541197,
+      "current_a": 36.89598529835216,
+      "rightmost_real_per_s": -36.775759360734156,
+      "frequency_hz": 315.4605159160224,
+      "independent_impedance_max_error_rad_s": 4.602649920770331e-13
+    },
+    {
+      "power_per_bus_w": 14400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.8915032498815,
+      "bus_voltage_v": 390.74291937490125,
+      "current_a": 37.02832250039494,
+      "rightmost_real_per_s": -36.7028457615439,
+      "frequency_hz": 315.45791733796835,
+      "independent_impedance_max_error_rad_s": 1.6675213359417494e-12
+    },
+    {
+      "power_per_bus_w": 14450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.85179374313606,
+      "bus_voltage_v": 390.7098281192801,
+      "current_a": 37.16068752287984,
+      "rightmost_real_per_s": -36.62990960266677,
+      "frequency_hz": 315.45531239400884,
+      "independent_impedance_max_error_rad_s": 1.151780788743061e-12
+    },
+    {
+      "power_per_bus_w": 14500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.81207588499205,
+      "bus_voltage_v": 390.67672990416,
+      "current_a": 37.2930803833598,
+      "rightmost_real_per_s": -36.5569508883329,
+      "frequency_hz": 315.4527010772247,
+      "independent_impedance_max_error_rad_s": 1.8468781290406667e-12
+    },
+    {
+      "power_per_bus_w": 14550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.77234967017813,
+      "bus_voltage_v": 390.64362472514847,
+      "current_a": 37.42550109940624,
+      "rightmost_real_per_s": -36.48396962280415,
+      "frequency_hz": 315.450083380688,
+      "independent_impedance_max_error_rad_s": 1.1369571915889545e-12
+    },
+    {
+      "power_per_bus_w": 14600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.7326150934173,
+      "bus_voltage_v": 390.6105125778477,
+      "current_a": 37.55794968860907,
+      "rightmost_real_per_s": -36.41096581037493,
+      "frequency_hz": 315.4474592974626,
+      "independent_impedance_max_error_rad_s": 5.706060765338024e-13
+    },
+    {
+      "power_per_bus_w": 14650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.692872149427,
+      "bus_voltage_v": 390.5773934578558,
+      "current_a": 37.6904261685767,
+      "rightmost_real_per_s": -36.337939455371945,
+      "frequency_hz": 315.4448288206053,
+      "independent_impedance_max_error_rad_s": 1.372377932070197e-12
+    },
+    {
+      "power_per_bus_w": 14700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.65312083291917,
+      "bus_voltage_v": 390.54426736076596,
+      "current_a": 37.82293055693611,
+      "rightmost_real_per_s": -36.26489056215516,
+      "frequency_hz": 315.44219194316486,
+      "independent_impedance_max_error_rad_s": 7.335127829044157e-13
+    },
+    {
+      "power_per_bus_w": 14750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.6133611386001,
+      "bus_voltage_v": 390.5111342821668,
+      "current_a": 37.95546287133285,
+      "rightmost_real_per_s": -36.19181913511616,
+      "frequency_hz": 315.4395486581823,
+      "independent_impedance_max_error_rad_s": 1.8749713606747085e-12
+    },
+    {
+      "power_per_bus_w": 14800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.57359306117064,
+      "bus_voltage_v": 390.4779942176422,
+      "current_a": 38.08802312943106,
+      "rightmost_real_per_s": -36.11872517868022,
+      "frequency_hz": 315.4368989586903,
+      "independent_impedance_max_error_rad_s": 6.858117849340973e-13
+    },
+    {
+      "power_per_bus_w": 14850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.5338165953259,
+      "bus_voltage_v": 390.44484716277157,
+      "current_a": 38.22061134891353,
+      "rightmost_real_per_s": -36.04560869730494,
+      "frequency_hz": 315.4342428377143,
+      "independent_impedance_max_error_rad_s": 1.6740030976180136e-12
+    },
+    {
+      "power_per_bus_w": 14900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.49403173575547,
+      "bus_voltage_v": 390.41169311312956,
+      "current_a": 38.35322754748168,
+      "rightmost_real_per_s": -35.972469695481166,
+      "frequency_hz": 315.4315802882709,
+      "independent_impedance_max_error_rad_s": 1.1395519496557132e-12
+    },
+    {
+      "power_per_bus_w": 14950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.4542384771433,
+      "bus_voltage_v": 390.37853206428605,
+      "current_a": 38.48587174285565,
+      "rightmost_real_per_s": -35.89930817773245,
+      "frequency_hz": 315.42891130337017,
+      "independent_impedance_max_error_rad_s": 4.935587579328812e-13
+    },
+    {
+      "power_per_bus_w": 15000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.41443681416774,
+      "bus_voltage_v": 390.34536401180645,
+      "current_a": 38.61854395277427,
+      "rightmost_real_per_s": -35.82612414861584,
+      "frequency_hz": 315.42623587601344,
+      "independent_impedance_max_error_rad_s": 2.323040122572746e-12
+    },
+    {
+      "power_per_bus_w": 15050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.37462674150146,
+      "bus_voltage_v": 390.3121889512512,
+      "current_a": 38.75124419499511,
+      "rightmost_real_per_s": -35.75291761272111,
+      "frequency_hz": 315.4235539991945,
+      "independent_impedance_max_error_rad_s": 1.831436823467531e-12
+    },
+    {
+      "power_per_bus_w": 15100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.3348082538116,
+      "bus_voltage_v": 390.27900687817635,
+      "current_a": 38.88397248729451,
+      "rightmost_real_per_s": -35.67968857467176,
+      "frequency_hz": 315.4208656658983,
+      "independent_impedance_max_error_rad_s": 1.1425385788607957e-12
+    },
+    {
+      "power_per_bus_w": 15150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.2949813457597,
+      "bus_voltage_v": 390.2458177881331,
+      "current_a": 39.01672884746761,
+      "rightmost_real_per_s": -35.60643703912453,
+      "frequency_hz": 315.4181708691032,
+      "independent_impedance_max_error_rad_s": 5.999354308361175e-13
+    },
+    {
+      "power_per_bus_w": 15200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.2551460120015,
+      "bus_voltage_v": 390.21262167666794,
+      "current_a": 39.14951329332837,
+      "rightmost_real_per_s": -35.53316301076935,
+      "frequency_hz": 315.41546960177914,
+      "independent_impedance_max_error_rad_s": 9.149186213801313e-13
+    },
+    {
+      "power_per_bus_w": 15250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.2153022471871,
+      "bus_voltage_v": 390.17941853932257,
+      "current_a": 39.28232584270961,
+      "rightmost_real_per_s": -35.45986649433064,
+      "frequency_hz": 315.41276185688736,
+      "independent_impedance_max_error_rad_s": 9.149186213801313e-13
+    },
+    {
+      "power_per_bus_w": 15300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.1754500459611,
+      "bus_voltage_v": 390.14620837163426,
+      "current_a": 39.415166513463014,
+      "rightmost_real_per_s": -35.386547494565335,
+      "frequency_hz": 315.41004762738265,
+      "independent_impedance_max_error_rad_s": 6.839319866476865e-13
+    },
+    {
+      "power_per_bus_w": 15350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.13558940296224,
+      "bus_voltage_v": 390.11299116913517,
+      "current_a": 39.54803532345918,
+      "rightmost_real_per_s": -35.31320601626472,
+      "frequency_hz": 315.4073269062102,
+      "independent_impedance_max_error_rad_s": 1.300914297657792e-12
+    },
+    {
+      "power_per_bus_w": 15400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.0957203128237,
+      "bus_voltage_v": 390.0797669273531,
+      "current_a": 39.680932290587656,
+      "rightmost_real_per_s": -35.23984206425408,
+      "frequency_hz": 315.4045996863087,
+      "independent_impedance_max_error_rad_s": 1.7243805032327956e-12
+    },
+    {
+      "power_per_bus_w": 15450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.05584277017294,
+      "bus_voltage_v": 390.0465356418108,
+      "current_a": 39.81385743275692,
+      "rightmost_real_per_s": -35.16645564339244,
+      "frequency_hz": 315.40186596060806,
+      "independent_impedance_max_error_rad_s": 1.6098458656515905e-12
+    },
+    {
+      "power_per_bus_w": 15500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 388.01595676963166,
+      "bus_voltage_v": 390.0132973080264,
+      "current_a": 39.946810767894476,
+      "rightmost_real_per_s": -35.0930467585724,
+      "frequency_hz": 315.3991257220298,
+      "independent_impedance_max_error_rad_s": 1.365425777005875e-12
+    },
+    {
+      "power_per_bus_w": 15550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.97606230581596,
+      "bus_voltage_v": 389.9800519215133,
+      "current_a": 40.07979231394683,
+      "rightmost_real_per_s": -35.01961541472162,
+      "frequency_hz": 315.396378963489,
+      "independent_impedance_max_error_rad_s": 2.0469674445013717e-12
+    },
+    {
+      "power_per_bus_w": 15600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.9361593733361,
+      "bus_voltage_v": 389.9467994777801,
+      "current_a": 40.21280208887955,
+      "rightmost_real_per_s": -34.94616161680134,
+      "frequency_hz": 315.3936256778913,
+      "independent_impedance_max_error_rad_s": 7.959347365693046e-13
+    },
+    {
+      "power_per_bus_w": 15650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.89624796679686,
+      "bus_voltage_v": 389.91353997233074,
+      "current_a": 40.345840110677244,
+      "rightmost_real_per_s": -34.87268536980723,
+      "frequency_hz": 315.39086585813476,
+      "independent_impedance_max_error_rad_s": 3.317557437278751e-13
+    },
+    {
+      "power_per_bus_w": 15700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.85632808079686,
+      "bus_voltage_v": 389.88027340066407,
+      "current_a": 40.478906397343685,
+      "rightmost_real_per_s": -34.79918667876947,
+      "frequency_hz": 315.38809949710947,
+      "independent_impedance_max_error_rad_s": 1.1395519496557132e-12
+    },
+    {
+      "power_per_bus_w": 15750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.81639970992944,
+      "bus_voltage_v": 389.84699975827453,
+      "current_a": 40.612000966901725,
+      "rightmost_real_per_s": -34.725665548752644,
+      "frequency_hz": 315.38532658769714,
+      "independent_impedance_max_error_rad_s": 5.084229945850415e-13
+    },
+    {
+      "power_per_bus_w": 15800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.776462848782,
+      "bus_voltage_v": 389.8137190406517,
+      "current_a": 40.74512383739339,
+      "rightmost_real_per_s": -34.65212198485604,
+      "frequency_hz": 315.38254712277234,
+      "independent_impedance_max_error_rad_s": 4.973799150320701e-13
+    },
+    {
+      "power_per_bus_w": 15850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.736517491936,
+      "bus_voltage_v": 389.78043124328,
+      "current_a": 40.878275026879926,
+      "rightmost_real_per_s": -34.57855599221338,
+      "frequency_hz": 315.37976109520105,
+      "independent_impedance_max_error_rad_s": 1.0074934758925143e-12
+    },
+    {
+      "power_per_bus_w": 15900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.69656363396746,
+      "bus_voltage_v": 389.74713636163955,
+      "current_a": 41.011454553441766,
+      "rightmost_real_per_s": -34.50496757599385,
+      "frequency_hz": 315.37696849784066,
+      "independent_impedance_max_error_rad_s": 1.6048988364710912e-12
+    },
+    {
+      "power_per_bus_w": 15950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.6566012694464,
+      "bus_voltage_v": 389.71383439120535,
+      "current_a": 41.144662435178596,
+      "rightmost_real_per_s": -34.431356741400634,
+      "frequency_hz": 315.3741693235419,
+      "independent_impedance_max_error_rad_s": 6.927336182574409e-13
+    },
+    {
+      "power_per_bus_w": 16000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.61663039293717,
+      "bus_voltage_v": 389.68052532744764,
+      "current_a": 41.2778986902094,
+      "rightmost_real_per_s": -34.35772349367243,
+      "frequency_hz": 315.3713635651455,
+      "independent_impedance_max_error_rad_s": 3.651387794037898e-12
+    },
+    {
+      "power_per_bus_w": 16050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.5766509989983,
+      "bus_voltage_v": 389.6472091658319,
+      "current_a": 41.41116333667242,
+      "rightmost_real_per_s": -34.284067838082954,
+      "frequency_hz": 315.36855121548604,
+      "independent_impedance_max_error_rad_s": 1.5967462057804648e-12
+    },
+    {
+      "power_per_bus_w": 16100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.5366630821824,
+      "bus_voltage_v": 389.61388590181866,
+      "current_a": 41.544456392725294,
+      "rightmost_real_per_s": -34.2103897799408,
+      "frequency_hz": 315.3657322673889,
+      "independent_impedance_max_error_rad_s": 6.858117849340973e-13
+    },
+    {
+      "power_per_bus_w": 16150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.49666663703647,
+      "bus_voltage_v": 389.5805555308637,
+      "current_a": 41.67777787654497,
+      "rightmost_real_per_s": -34.13668932459049,
+      "frequency_hz": 315.3629067136714,
+      "independent_impedance_max_error_rad_s": 1.1466187323182295e-12
+    },
+    {
+      "power_per_bus_w": 16200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.45666165810167,
+      "bus_voltage_v": 389.5472180484181,
+      "current_a": 41.81112780632781,
+      "rightmost_real_per_s": -34.062966477411,
+      "frequency_hz": 315.3600745471434,
+      "independent_impedance_max_error_rad_s": 4.743637797012786e-13
+    },
+    {
+      "power_per_bus_w": 16250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.41664813991315,
+      "bus_voltage_v": 389.51387344992764,
+      "current_a": 41.944506200289595,
+      "rightmost_real_per_s": -33.989221243817475,
+      "frequency_hz": 315.3572357606057,
+      "independent_impedance_max_error_rad_s": 4.614153139941158e-13
+    },
+    {
+      "power_per_bus_w": 16300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.3766260770003,
+      "bus_voltage_v": 389.4805217308336,
+      "current_a": 42.07791307666557,
+      "rightmost_real_per_s": -33.91545362926035,
+      "frequency_hz": 315.35439034685174,
+      "independent_impedance_max_error_rad_s": 3.002259577114999e-12
+    },
+    {
+      "power_per_bus_w": 16350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.33659546388685,
+      "bus_voltage_v": 389.44716288657236,
+      "current_a": 42.21134845371042,
+      "rightmost_real_per_s": -33.84166363922591,
+      "frequency_hz": 315.3515382986665,
+      "independent_impedance_max_error_rad_s": 9.738583750694498e-13
+    },
+    {
+      "power_per_bus_w": 16400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.29655629509045,
+      "bus_voltage_v": 389.4137969125754,
+      "current_a": 42.34481234969838,
+      "rightmost_real_per_s": -33.76785127923581,
+      "frequency_hz": 315.34867960882747,
+      "independent_impedance_max_error_rad_s": 1.3950000680543387e-12
+    },
+    {
+      "power_per_bus_w": 16450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.25650856512306,
+      "bus_voltage_v": 389.38042380426924,
+      "current_a": 42.47830478292318,
+      "rightmost_real_per_s": -33.694016554847906,
+      "frequency_hz": 315.34581427010244,
+      "independent_impedance_max_error_rad_s": 1.025177993177327e-12
+    },
+    {
+      "power_per_bus_w": 16500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.21645226849057,
+      "bus_voltage_v": 389.3470435570755,
+      "current_a": 42.611825771698165,
+      "rightmost_real_per_s": -33.620159471655704,
+      "frequency_hz": 315.3429422752524,
+      "independent_impedance_max_error_rad_s": 1.3695791870305567e-12
+    },
+    {
+      "power_per_bus_w": 16550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.1763873996931,
+      "bus_voltage_v": 389.3136561664109,
+      "current_a": 42.74537533435625,
+      "rightmost_real_per_s": -33.54628003528903,
+      "frequency_hz": 315.3400636170304,
+      "independent_impedance_max_error_rad_s": 7.06695388950968e-13
+    },
+    {
+      "power_per_bus_w": 16600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.136313953225,
+      "bus_voltage_v": 389.2802616276875,
+      "current_a": 42.878953489249945,
+      "rightmost_real_per_s": -33.4723782514138,
+      "frequency_hz": 315.33717828818004,
+      "independent_impedance_max_error_rad_s": 9.157184117337655e-13
+    },
+    {
+      "power_per_bus_w": 16650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.0962319235746,
+      "bus_voltage_v": 389.24685993631215,
+      "current_a": 43.01256025475147,
+      "rightmost_real_per_s": -33.39845412573206,
+      "frequency_hz": 315.3342862814377,
+      "independent_impedance_max_error_rad_s": 9.096057172999542e-13
+    },
+    {
+      "power_per_bus_w": 16700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.0561413052242,
+      "bus_voltage_v": 389.2134510876868,
+      "current_a": 43.1461956492527,
+      "rightmost_real_per_s": -33.324507663982274,
+      "frequency_hz": 315.3313875895307,
+      "independent_impedance_max_error_rad_s": 1.4210854715202004e-12
+    },
+    {
+      "power_per_bus_w": 16750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 387.0160420926504,
+      "bus_voltage_v": 389.1800350772087,
+      "current_a": 43.279859691165214,
+      "rightmost_real_per_s": -33.250538871939085,
+      "frequency_hz": 315.32848220517906,
+      "independent_impedance_max_error_rad_s": 3.199249736593133e-12
+    },
+    {
+      "power_per_bus_w": 16800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.9759342803239,
+      "bus_voltage_v": 389.1466119002699,
+      "current_a": 43.41355239892035,
+      "rightmost_real_per_s": -33.17654775541446,
+      "frequency_hz": 315.3255701210949,
+      "independent_impedance_max_error_rad_s": 1.1400613357256805e-12
+    },
+    {
+      "power_per_bus_w": 16850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.9358178627092,
+      "bus_voltage_v": 389.1131815522577,
+      "current_a": 43.54727379096923,
+      "rightmost_real_per_s": -33.10253432025591,
+      "frequency_hz": 315.32265132998043,
+      "independent_impedance_max_error_rad_s": 1.4293040022357853e-12
+    },
+    {
+      "power_per_bus_w": 16900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.8956928342652,
+      "bus_voltage_v": 389.07974402855433,
+      "current_a": 43.681023885782736,
+      "rightmost_real_per_s": -33.02849857234862,
+      "frequency_hz": 315.31972582453136,
+      "independent_impedance_max_error_rad_s": 7.658385056269759e-13
+    },
+    {
+      "power_per_bus_w": 16950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.85555918944453,
+      "bus_voltage_v": 389.04629932453713,
+      "current_a": 43.81480270185163,
+      "rightmost_real_per_s": -32.95444051761373,
+      "frequency_hz": 315.3167935974341,
+      "independent_impedance_max_error_rad_s": 1.373168647196854e-12
+    },
+    {
+      "power_per_bus_w": 17000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.81541692269406,
+      "bus_voltage_v": 389.0128474355784,
+      "current_a": 43.94861025768652,
+      "rightmost_real_per_s": -32.88036016201043,
+      "frequency_hz": 315.31385464136713,
+      "independent_impedance_max_error_rad_s": 6.824540119616012e-13
+    },
+    {
+      "power_per_bus_w": 17050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.77526602845467,
+      "bus_voltage_v": 388.97938835704554,
+      "current_a": 44.08244657181788,
+      "rightmost_real_per_s": -32.806257511534,
+      "frequency_hz": 315.31090894900063,
+      "independent_impedance_max_error_rad_s": 2.275612257834646e-12
+    },
+    {
+      "power_per_bus_w": 17100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.73510650116117,
+      "bus_voltage_v": 388.945922084301,
+      "current_a": 44.21631166279614,
+      "rightmost_real_per_s": -32.73213257221728,
+      "frequency_hz": 315.3079565129972,
+      "independent_impedance_max_error_rad_s": 2.608766145426361e-13
+    },
+    {
+      "power_per_bus_w": 17150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.6949383352425,
+      "bus_voltage_v": 388.9124486127021,
+      "current_a": 44.350205549191664,
+      "rightmost_real_per_s": -32.65798535013013,
+      "frequency_hz": 315.30499732600987,
+      "independent_impedance_max_error_rad_s": 2.0650406114668876e-12
+    },
+    {
+      "power_per_bus_w": 17200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.65476152512156,
+      "bus_voltage_v": 388.8789679376013,
+      "current_a": 44.4841282495948,
+      "rightmost_real_per_s": -32.583815851380045,
+      "frequency_hz": 315.30203138068435,
+      "independent_impedance_max_error_rad_s": 4.561330185226789e-13
+    },
+    {
+      "power_per_bus_w": 17250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.61457606521526,
+      "bus_voltage_v": 388.84548005434607,
+      "current_a": 44.61807978261591,
+      "rightmost_real_per_s": -32.509624082112104,
+      "frequency_hz": 315.2990586696577,
+      "independent_impedance_max_error_rad_s": 1.1466187323182295e-12
+    },
+    {
+      "power_per_bus_w": 17300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.5743819499344,
+      "bus_voltage_v": 388.81198495827863,
+      "current_a": 44.7520601668854,
+      "rightmost_real_per_s": -32.43541004850813,
+      "frequency_hz": 315.2960791855588,
+      "independent_impedance_max_error_rad_s": 1.3807949762310995e-12
+    },
+    {
+      "power_per_bus_w": 17350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.53417917368387,
+      "bus_voltage_v": 388.7784826447365,
+      "current_a": 44.88606942105374,
+      "rightmost_real_per_s": -32.361173756788205,
+      "frequency_hz": 315.2930929210083,
+      "independent_impedance_max_error_rad_s": 6.858117849340973e-13
+    },
+    {
+      "power_per_bus_w": 17400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.49396773086255,
+      "bus_voltage_v": 388.7449731090521,
+      "current_a": 45.02010756379152,
+      "rightmost_real_per_s": -32.28691521321034,
+      "frequency_hz": 315.2900998686178,
+      "independent_impedance_max_error_rad_s": 1.8196692880880536e-12
+    },
+    {
+      "power_per_bus_w": 17450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.45374761586316,
+      "bus_voltage_v": 388.7114563465526,
+      "current_a": 45.15417461378944,
+      "rightmost_real_per_s": -32.21263442407001,
+      "frequency_hz": 315.28710002099206,
+      "independent_impedance_max_error_rad_s": 1.4570111509301904e-12
+    },
+    {
+      "power_per_bus_w": 17500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.4135188230725,
+      "bus_voltage_v": 388.6779323525604,
+      "current_a": 45.28827058975838,
+      "rightmost_real_per_s": -32.13833139570075,
+      "frequency_hz": 315.2840933707256,
+      "independent_impedance_max_error_rad_s": 9.110753959663678e-13
+    },
+    {
+      "power_per_bus_w": 17550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.3732813468712,
+      "bus_voltage_v": 388.64440112239265,
+      "current_a": 45.42239551042941,
+      "rightmost_real_per_s": -32.06400613447414,
+      "frequency_hz": 315.2810799104061,
+      "independent_impedance_max_error_rad_s": 2.5012012646553813e-12
+    },
+    {
+      "power_per_bus_w": 17600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.3330351816338,
+      "bus_voltage_v": 388.6108626513615,
+      "current_a": 45.55654939455382,
+      "rightmost_real_per_s": -31.989658646800102,
+      "frequency_hz": 315.27805963261244,
+      "independent_impedance_max_error_rad_s": 5.955433342649106e-13
+    },
+    {
+      "power_per_bus_w": 17650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.2927803217291,
+      "bus_voltage_v": 388.5773169347742,
+      "current_a": 45.69073226090315,
+      "rightmost_real_per_s": -31.915288939126746,
+      "frequency_hz": 315.27503252991505,
+      "independent_impedance_max_error_rad_s": 1.148554474947213e-12
+    },
+    {
+      "power_per_bus_w": 17700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.25251676151925,
+      "bus_voltage_v": 388.5437639679327,
+      "current_a": 45.824944128269244,
+      "rightmost_real_per_s": -31.84089701794025,
+      "frequency_hz": 315.2719985948757,
+      "independent_impedance_max_error_rad_s": 1.2311524178400404e-12
+    },
+    {
+      "power_per_bus_w": 17750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.2122444953607,
+      "bus_voltage_v": 388.5102037461339,
+      "current_a": 45.95918501546426,
+      "rightmost_real_per_s": -31.766482889765587,
+      "frequency_hz": 315.2689578200485,
+      "independent_impedance_max_error_rad_s": 5.695987298961417e-13
+    },
+    {
+      "power_per_bus_w": 17800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.1719635176038,
+      "bus_voltage_v": 388.4766362646698,
+      "current_a": 46.09345494132067,
+      "rightmost_real_per_s": -31.69204656116643,
+      "frequency_hz": 315.26591019797803,
+      "independent_impedance_max_error_rad_s": 9.099386826154683e-13
+    },
+    {
+      "power_per_bus_w": 17850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.1316738225926,
+      "bus_voltage_v": 388.44306151882716,
+      "current_a": 46.22775392469136,
+      "rightmost_real_per_s": -31.617588038744962,
+      "frequency_hz": 315.2628557212015,
+      "independent_impedance_max_error_rad_s": 4.675700544617141e-13
+    },
+    {
+      "power_per_bus_w": 17900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.0913754046651,
+      "bus_voltage_v": 388.40947950388755,
+      "current_a": 46.362081984449624,
+      "rightmost_real_per_s": -31.54310732914199,
+      "frequency_hz": 315.25979438224766,
+      "independent_impedance_max_error_rad_s": 1.1412121530676047e-12
+    },
+    {
+      "power_per_bus_w": 17950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.05106825815324,
+      "bus_voltage_v": 388.3758902151277,
+      "current_a": 46.49643913948917,
+      "rightmost_real_per_s": -31.468604439037392,
+      "frequency_hz": 315.2567261736363,
+      "independent_impedance_max_error_rad_s": 5.325279608584803e-13
+    },
+    {
+      "power_per_bus_w": 18000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 386.01075237738274,
+      "bus_voltage_v": 388.34229364781896,
+      "current_a": 46.630825408724185,
+      "rightmost_real_per_s": -31.39407937515013,
+      "frequency_hz": 315.253651087879,
+      "independent_impedance_max_error_rad_s": 3.4224270219716276e-13
+    },
+    {
+      "power_per_bus_w": 18050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.9704277566732,
+      "bus_voltage_v": 388.30868979722766,
+      "current_a": 46.765240811089384,
+      "rightmost_real_per_s": -31.319532144238252,
+      "frequency_hz": 315.25056911747873,
+      "independent_impedance_max_error_rad_s": 3.343516959739849e-13
+    },
+    {
+      "power_per_bus_w": 18100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.930094390338,
+      "bus_voltage_v": 388.27507865861503,
+      "current_a": 46.89968536553998,
+      "rightmost_real_per_s": -31.24496275309899,
+      "frequency_hz": 315.24748025493045,
+      "independent_impedance_max_error_rad_s": 2.644326580413064e-13
+    },
+    {
+      "power_per_bus_w": 18150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.88975227268446,
+      "bus_voltage_v": 388.24146022723704,
+      "current_a": 47.03415909105178,
+      "rightmost_real_per_s": -31.17037120856876,
+      "frequency_hz": 315.2443844927202,
+      "independent_impedance_max_error_rad_s": 1.60356524462098e-12
+    },
+    {
+      "power_per_bus_w": 18200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.8494013980137,
+      "bus_voltage_v": 388.20783449834477,
+      "current_a": 47.16866200662115,
+      "rightmost_real_per_s": -31.0957575175237,
+      "frequency_hz": 315.24128182332595,
+      "independent_impedance_max_error_rad_s": 1.1859094492531963e-12
+    },
+    {
+      "power_per_bus_w": 18250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.80904176062046,
+      "bus_voltage_v": 388.1742014671837,
+      "current_a": 47.303194131265116,
+      "rightmost_real_per_s": -31.021121686879056,
+      "frequency_hz": 315.238172239217,
+      "independent_impedance_max_error_rad_s": 9.487275594025571e-13
+    },
+    {
+      "power_per_bus_w": 18300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.7686733547936,
+      "bus_voltage_v": 388.14056112899465,
+      "current_a": 47.43775548402135,
+      "rightmost_real_per_s": -30.94646372359014,
+      "frequency_hz": 315.23505573285377,
+      "independent_impedance_max_error_rad_s": 2.5036928884157122e-12
+    },
+    {
+      "power_per_bus_w": 18350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.72829617481557,
+      "bus_voltage_v": 388.106913479013,
+      "current_a": 47.572346083948204,
+      "rightmost_real_per_s": -30.87178363465192,
+      "frequency_hz": 315.23193229668914,
+      "independent_impedance_max_error_rad_s": 5.362597410144533e-13
+    },
+    {
+      "power_per_bus_w": 18400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.6879102149626,
+      "bus_voltage_v": 388.07325851246884,
+      "current_a": 47.70696595012477,
+      "rightmost_real_per_s": -30.797081427099002,
+      "frequency_hz": 315.22880192316677,
+      "independent_impedance_max_error_rad_s": 1.367863973295373e-12
+    },
+    {
+      "power_per_bus_w": 18450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.6475154695047,
+      "bus_voltage_v": 388.0395962245872,
+      "current_a": 47.84161510165089,
+      "rightmost_real_per_s": -30.722357108006324,
+      "frequency_hz": 315.2256646047213,
+      "independent_impedance_max_error_rad_s": 1.1373179286581532e-12
+    },
+    {
+      "power_per_bus_w": 18500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.60711193270583,
+      "bus_voltage_v": 388.0059266105882,
+      "current_a": 47.97629355764715,
+      "rightmost_real_per_s": -30.64761068448833,
+      "frequency_hz": 315.22252033378055,
+      "independent_impedance_max_error_rad_s": 8.020010147630763e-13
+    },
+    {
+      "power_per_bus_w": 18550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.5666995988235,
+      "bus_voltage_v": 387.97224966568626,
+      "current_a": 48.11100133725501,
+      "rightmost_real_per_s": -30.572842163700685,
+      "frequency_hz": 315.2193691027618,
+      "independent_impedance_max_error_rad_s": 1.1900318142080251e-12
+    },
+    {
+      "power_per_bus_w": 18600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.52627846210896,
+      "bus_voltage_v": 387.9385653850908,
+      "current_a": 48.245738459636755,
+      "rightmost_real_per_s": -30.49805155283801,
+      "frequency_hz": 315.21621090407484,
+      "independent_impedance_max_error_rad_s": 1.3860911393412875e-12
+    },
+    {
+      "power_per_bus_w": 18650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.4858485168073,
+      "bus_voltage_v": 387.9048737640061,
+      "current_a": 48.38050494397553,
+      "rightmost_real_per_s": -30.423238859136397,
+      "frequency_hz": 315.2130457301215,
+      "independent_impedance_max_error_rad_s": 9.128469485094744e-13
+    },
+    {
+      "power_per_bus_w": 18700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.44540975715734,
+      "bus_voltage_v": 387.8711747976311,
+      "current_a": 48.51530080947542,
+      "rightmost_real_per_s": -30.348404089871913,
+      "frequency_hz": 315.20987357329363,
+      "independent_impedance_max_error_rad_s": 1.8190449138500806e-12
+    },
+    {
+      "power_per_bus_w": 18750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.40496217739155,
+      "bus_voltage_v": 387.83746848115965,
+      "current_a": 48.65012607536142,
+      "rightmost_real_per_s": -30.273547252361467,
+      "frequency_hz": 315.2066944259756,
+      "independent_impedance_max_error_rad_s": 2.8421709430404007e-13
+    },
+    {
+      "power_per_bus_w": 18800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.36450577173616,
+      "bus_voltage_v": 387.8037548097801,
+      "current_a": 48.784980760879535,
+      "rightmost_real_per_s": -30.198668353962756,
+      "frequency_hz": 315.20350828054296,
+      "independent_impedance_max_error_rad_s": 1.8279911612597554e-12
+    },
+    {
+      "power_per_bus_w": 18850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.324040534411,
+      "bus_voltage_v": 387.77003377867584,
+      "current_a": 48.91986488529677,
+      "rightmost_real_per_s": -30.12376740207398,
+      "frequency_hz": 315.2003151293617,
+      "independent_impedance_max_error_rad_s": 1.1369571915889545e-12
+    },
+    {
+      "power_per_bus_w": 18900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.2835664596297,
+      "bus_voltage_v": 387.7363053830247,
+      "current_a": 49.05477846790114,
+      "rightmost_real_per_s": -30.04884440413482,
+      "frequency_hz": 315.19711496479124,
+      "independent_impedance_max_error_rad_s": 2.063181690525957e-12
+    },
+    {
+      "power_per_bus_w": 18950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.2430835415995,
+      "bus_voltage_v": 387.7025696179996,
+      "current_a": 49.18972152800177,
+      "rightmost_real_per_s": -29.97389936762535,
+      "frequency_hz": 315.1939077791802,
+      "independent_impedance_max_error_rad_s": 1.5916196931799163e-12
+    },
+    {
+      "power_per_bus_w": 19000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.20259177452135,
+      "bus_voltage_v": 387.6688264787678,
+      "current_a": 49.32469408492886,
+      "rightmost_real_per_s": -29.89893230006772,
+      "frequency_hz": 315.1906935648705,
+      "independent_impedance_max_error_rad_s": 5.252732528980522e-13
+    },
+    {
+      "power_per_bus_w": 19050.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.1620911525899,
+      "bus_voltage_v": 387.6350759604916,
+      "current_a": 49.459696158033765,
+      "rightmost_real_per_s": -29.823943209024314,
+      "frequency_hz": 315.1874723141934,
+      "independent_impedance_max_error_rad_s": 1.602301439850545e-12
+    },
+    {
+      "power_per_bus_w": 19100.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.1215816699933,
+      "bus_voltage_v": 387.60131805832776,
+      "current_a": 49.594727766689,
+      "rightmost_real_per_s": -29.748932102099886,
+      "frequency_hz": 315.18424401947385,
+      "independent_impedance_max_error_rad_s": 1.4012111730788315e-12
+    },
+    {
+      "power_per_bus_w": 19150.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.08106332091353,
+      "bus_voltage_v": 387.56755276742797,
+      "current_a": 49.729788930288265,
+      "rightmost_real_per_s": -29.673898986939992,
+      "frequency_hz": 315.18100867302604,
+      "independent_impedance_max_error_rad_s": 8.060198361185503e-13
+    },
+    {
+      "power_per_bus_w": 19200.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.04053609952604,
+      "bus_voltage_v": 387.53378008293834,
+      "current_a": 49.86487966824653,
+      "rightmost_real_per_s": -29.598843871232553,
+      "frequency_hz": 315.1777662671569,
+      "independent_impedance_max_error_rad_s": 7.105427357601002e-13
+    },
+    {
+      "power_per_bus_w": 19250.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 385.0,
+      "bus_voltage_v": 387.5,
+      "current_a": 50.0,
+      "rightmost_real_per_s": -29.52376676270626,
+      "frequency_hz": 315.17451679416405,
+      "independent_impedance_max_error_rad_s": 8.722111060094207e-13
+    },
+    {
+      "power_per_bus_w": 19300.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.95945501649817,
+      "bus_voltage_v": 387.4662125137485,
+      "current_a": 50.13514994500619,
+      "rightmost_real_per_s": -29.448667669132597,
+      "frequency_hz": 315.1712602463366,
+      "independent_impedance_max_error_rad_s": 1.2710574864626038e-12
+    },
+    {
+      "power_per_bus_w": 19350.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.9189011431768,
+      "bus_voltage_v": 387.432417619314,
+      "current_a": 50.27032952274395,
+      "rightmost_real_per_s": -29.373546598324445,
+      "frequency_hz": 315.1679966159548,
+      "independent_impedance_max_error_rad_s": 3.552713678800501e-13
+    },
+    {
+      "power_per_bus_w": 19400.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.87833837418594,
+      "bus_voltage_v": 387.39861531182163,
+      "current_a": 50.405538752713476,
+      "rightmost_real_per_s": -29.29840355813692,
+      "frequency_hz": 315.1647258952906,
+      "independent_impedance_max_error_rad_s": 7.168034567967647e-13
+    },
+    {
+      "power_per_bus_w": 19450.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.8377667036691,
+      "bus_voltage_v": 387.3648055863909,
+      "current_a": 50.54077765443638,
+      "rightmost_real_per_s": -29.223238556467486,
+      "frequency_hz": 315.1614480766074,
+      "independent_impedance_max_error_rad_s": 4.564234742547372e-13
+    },
+    {
+      "power_per_bus_w": 19500.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.7971861257633,
+      "bus_voltage_v": 387.33098843813605,
+      "current_a": 50.6760462474557,
+      "rightmost_real_per_s": -29.14805160125583,
+      "frequency_hz": 315.1581631521585,
+      "independent_impedance_max_error_rad_s": 2.307076569970579e-12
+    },
+    {
+      "power_per_bus_w": 19550.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.7565966345992,
+      "bus_voltage_v": 387.297163862166,
+      "current_a": 50.811344551335935,
+      "rightmost_real_per_s": -29.072842700483648,
+      "frequency_hz": 315.15487111419066,
+      "independent_impedance_max_error_rad_s": 1.5956708065935119e-12
+    },
+    {
+      "power_per_bus_w": 19600.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.7159982243011,
+      "bus_voltage_v": 387.26333185358425,
+      "current_a": 50.946672585663066,
+      "rightmost_real_per_s": -28.99761186217603,
+      "frequency_hz": 315.15157195494015,
+      "independent_impedance_max_error_rad_s": 5.404330315117937e-13
+    },
+    {
+      "power_per_bus_w": 19650.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.6753908889866,
+      "bus_voltage_v": 387.22949240748886,
+      "current_a": 51.08203037004462,
+      "rightmost_real_per_s": -28.92235909439982,
+      "frequency_hz": 315.14826566663527,
+      "independent_impedance_max_error_rad_s": 4.655004020764636e-13
+    },
+    {
+      "power_per_bus_w": 19700.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.63477462276705,
+      "bus_voltage_v": 387.1956455189725,
+      "current_a": 51.21741792410969,
+      "rightmost_real_per_s": -28.847084405265477,
+      "frequency_hz": 315.14495224149545,
+      "independent_impedance_max_error_rad_s": 1.3683990555680368e-12
+    },
+    {
+      "power_per_bus_w": 19750.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.5941494197473,
+      "bus_voltage_v": 387.1617911831227,
+      "current_a": 51.35283526750894,
+      "rightmost_real_per_s": -28.771787802925445,
+      "frequency_hz": 315.14163167173086,
+      "independent_impedance_max_error_rad_s": 1.1370681997996043e-12
+    },
+    {
+      "power_per_bus_w": 19800.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.5535152740256,
+      "bus_voltage_v": 387.12792939502134,
+      "current_a": 51.488282419914675,
+      "rightmost_real_per_s": -28.696469295576165,
+      "frequency_hz": 315.138303949544,
+      "independent_impedance_max_error_rad_s": 2.1219547189458826e-12
+    },
+    {
+      "power_per_bus_w": 19850.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.5128721796938,
+      "bus_voltage_v": 387.0940601497448,
+      "current_a": 51.62375940102086,
+      "rightmost_real_per_s": -28.62112889145655,
+      "frequency_hz": 315.134969067128,
+      "independent_impedance_max_error_rad_s": 1.8276424394341885e-12
+    },
+    {
+      "power_per_bus_w": 19900.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.47222013083706,
+      "bus_voltage_v": 387.06018344236423,
+      "current_a": 51.75926623054318,
+      "rightmost_real_per_s": -28.5457665988488,
+      "frequency_hz": 315.1316270166668,
+      "independent_impedance_max_error_rad_s": 1.159382807962353e-12
+    },
+    {
+      "power_per_bus_w": 19950.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.4315591215343,
+      "bus_voltage_v": 387.02629926794526,
+      "current_a": 51.894802928219015,
+      "rightmost_real_per_s": -28.470382426078277,
+      "frequency_hz": 315.1282777903361,
+      "independent_impedance_max_error_rad_s": 9.19988223589023e-13
+    },
+    {
+      "power_per_bus_w": 20000.0,
+      "droop_ohm": 0.2,
+      "load_voltage_v": 384.3908891458577,
+      "bus_voltage_v": 386.9924076215481,
+      "current_a": 52.030369513807514,
+      "rightmost_real_per_s": -28.394976381514606,
+      "frequency_hz": 315.1249213803023,
+      "independent_impedance_max_error_rad_s": 4.687428401686771e-13
+    }
+  ],
+  "checks": {
+    "independent_equations_match": true,
+    "published_15kw_common_mode_stable": true,
+    "published_16kw_near_threshold": true,
+    "published_20kw_weak_droop_common_mode_unstable": true,
+    "droop_0p2_common_mode_stable_over_sampled_load_range": true
+  },
+  "source_sha256": "4b8d1cfbdad18b1a85d0ab0a30d410014896773bea1341d653228768ba90cfb9",
+  "pending": "Full 36-state network, mixed load uncertainty and the robust SDP feasibility problem remain to run."
+}

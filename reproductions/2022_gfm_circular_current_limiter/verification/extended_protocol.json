@@ -1,0 +1,41 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "primary_inputs": "Table I of the accepted author manuscript, Fig. 1 controller and circuit, Fig. 2 for the capacitor-retaining phasor approximation",
+  "filter_table_i": {
+    "converter_inductance_h": 0.0015,
+    "converter_inductance_printed_pu": 0.032,
+    "capacitor_f": 0.000015,
+    "capacitor_printed_pu": 0.068,
+    "voltage_kp_pu": 1,
+    "voltage_ki_pu": 5,
+    "current_kp_pu": 1,
+    "current_ki_pu": 10,
+    "sampling_hz": 10000,
+    "switching_hz": 10000
+  },
+  "sampled_runs": [
+    {"key": "si_nominal", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 0},
+    {"key": "printed_pu", "electrical_units": "printed_pu", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 0},
+    {"key": "grid_frame_hold", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "grid", "delay": 0, "power_filter_hz": 0},
+    {"key": "extra_tick_delay", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 1, "power_filter_hz": 0},
+    {"key": "ki_per_second", "electrical_units": "si", "pi_time_base": "seconds", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 0},
+    {"key": "prefilter_50hz", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 50},
+    {"key": "retain_voltage_pi_state", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 0, "retain_voltage_pi_state": true},
+    {"key": "dc700_svpwm_headroom", "electrical_units": "si", "pi_time_base": "electrical", "voltage_hold": "stationary", "delay": 0, "power_filter_hz": 0, "dc_bus_v": 700}
+  ],
+  "assumptions": {
+    "balanced_test": "Grid magnitude is stepped from 1 to 0.5 pu and restored, with zero grid phase jump. Initialize each model at its own pre-fault steady state with P=0.8 pu.",
+    "actuator": "Ideal averaged converter voltage with the labelled 10 kHz sampler. Nominal reconstruction holds each sequence voltage command in the physical stationary frame for one sample; alternative cases test the choice of hold frame and one extra sample of latency.",
+    "voltage_headroom": "A separate sensitivity limits the bridge voltage to Vdc/sqrt(3) using the 700 V laboratory supply of reference [10] and the circular linear-modulation limit. This is a derived average-voltage sensitivity with the same current PI state update.",
+    "pi_units": "Electrical normalized time uses omega_b*Ki as the amplitude-normalized per-second integral rates. Also test the alternative where the printed integrator gains are applied directly in seconds. Table I does not identify DSP coefficients.",
+    "antiwindup": "Reset the voltage-PI integral state and omit its output when the computed reference would exceed the current limit. Test retaining the stored state with its output gated as a distinct interpretation. Use the circular projection exactly, with no additional hysteresis. Propagate the currents and capacitor voltage continuously through events.",
+    "frequency_cross_terms": "Physical plant equations use grid-synchronous dq; diagram feedforward uses the stated nominal grid angular frequency. Conversions to the controller frame use the integrated droop angle.",
+    "power_lpf": "Use the unfiltered capacitor-terminal P in the main reconstruction, as drawn in Fig. 1. The 50 Hz sensitivity comes from the cited laboratory setup in reference [10] and is not a confirmed filter setting for the letter."
+  },
+  "readback_uncertainty": {"relative_trace_px": 2, "division_period_px": 100},
+  "sag_amplitude_sensitivity_pu": [0.45, 0.475, 0.5, 0.525, 0.55],
+  "same_basin_limit_resolution_s": 0.002,
+  "settled_angle_tolerance_rad": 0.01,
+  "verification_sample_integration_atol_pu": 2e-9,
+  "verification_algebraic_pu": 1e-9
+}

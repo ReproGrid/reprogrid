@@ -1,0 +1,37 @@
+{
+  "doi": "10.1109/TPWRS.2017.2697765",
+  "title": "Robust Stability Analysis of DC Microgrids With Constant Power Loads",
+  "authors": [
+    "Jianzhe Liu",
+    "Wei Zhang",
+    "Giorgio Rizzoni"
+  ],
+  "journal": "IEEE Transactions on Power Systems",
+  "author_manuscript": "https://arxiv.org/abs/1702.07580",
+  "source": {
+    "path": "sources/arxiv_1702_07580.pdf",
+    "url": "https://arxiv.org/pdf/1702.07580",
+    "sha256": "eda8457b926ca300205df242ecd2a944a1e02f63481fa8827e1da3a8f9fa9f17",
+    "inspected": "Eqs. (1)–(10), appendix A, Table I–II and Figs. 3–8"
+  },
+  "author_bibliography": "https://www.wzhanglab.site/publications/",
+  "dissertation": {
+    "title": "On Control and Optimization of DC Microgrids",
+    "author": "Jianzhe Liu",
+    "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1512049527948171&disposition=inline",
+    "path": "sources/liu_thesis.pdf",
+    "sha256": "327fc51a52ca422d69b52eae2725eb4af0b2ed51ecab6a968dba33614df304ad",
+    "scope": "Chapter 2, including Sections 2.3.1–2.3.2, Fig. 2.7 and Table 2.2"
+  },
+  "vector_readback": {
+    "path": "results/pdf_vector_readback.json",
+    "implementation": "src/read_paper_figures.py"
+  },
+  "citations_in_2026_11_10_snapshot": 171,
+  "rank_in_snapshot": 67,
+  "unavailable_artifacts": [
+    "Original Simulink project, exact model initialization and solver settings",
+    "Original CVX scripts and diagnostics, including the exact lower delta used in the Table II Eq. (7) search",
+    "Raw sample records and individual CPL commands for Figs. 4, 5, 7, and 8"
+  ]
+}

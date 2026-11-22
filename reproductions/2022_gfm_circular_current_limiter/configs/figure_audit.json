@@ -1,0 +1,32 @@
+{
+  "pdf_page_one_based": 4,
+  "fig3": {
+    "top_y_pt": 59.2417755,
+    "bottom_y_pt": 180.9111938,
+    "power_top_pu": 1.5,
+    "power_bottom_pu": -1.5,
+    "left_panel_x_pt": [126.08786, 215.99367],
+    "right_panel_x_pt": [229.47958, 499.197],
+    "normal_power_path": 154,
+    "sag_power_path": 155,
+    "short_clearing_path": 67,
+    "long_clearing_path": 159,
+    "max_si_curve_abs_error_pu": 0.002,
+    "max_clearance_time_difference_s": 0.002
+  },
+  "scope": {
+    "power_pu_per_div": 1.0,
+    "pixels_per_horizontal_div": 100.1,
+    "pixels_per_vertical_div": 65.2,
+    "power_row_window": [465, 675],
+    "blue_thresholds": [20, 40, 60],
+    "baseline_windows_x_inclusive": [[120, 195], [140, 205], [160, 210]],
+    "baseline_pixel_offset_sensitivity": [-1, 0, 1],
+    "panels": [
+      {"figure": 5, "xref": 260, "sag_edges_x": [222, 447], "seconds_per_div": 0.2, "duration_ms": 450},
+      {"figure": 6, "xref": 282, "sag_edges_x": [222, 384], "seconds_per_div": 0.4, "duration_ms": 650}
+    ],
+    "maximum_duration_readback_error_s": 0.006
+  },
+  "note": "Axis calibrations and raster windows were read from the published graphics. The blue power trace is referenced to its own pre-sag level. All PNG pixel coordinates refer to the embedded image as stored, before the PDF page transformation. The ±1 pixel baseline shift is an explicit sensitivity, not a full measurement uncertainty bound."
+}

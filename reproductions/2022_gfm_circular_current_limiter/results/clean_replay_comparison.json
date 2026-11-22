@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "byte_identical": true,
+  "files": {
+    "run_manifest.json": {
+      "primary": "da0f3f4368a5b3e24720fb731d64daf6d65e6365ae7e9a03e68792a8c4949415",
+      "replay": "da0f3f4368a5b3e24720fb731d64daf6d65e6365ae7e9a03e68792a8c4949415"
+    },
+    "trajectories.npz": {
+      "primary": "45d25538225e6de52ce13abdea31ce4a0cf5cfa7876b1c49d34a75eb9b347fca",
+      "replay": "45d25538225e6de52ce13abdea31ce4a0cf5cfa7876b1c49d34a75eb9b347fca"
+    },
+    "power_angle_and_recovery.png": {
+      "primary": "b3428f42d35a613d1280a255b416a6c49d9b421c34048cea40e40080f43a44f2",
+      "replay": "b3428f42d35a613d1280a255b416a6c49d9b421c34048cea40e40080f43a44f2"
+    }
+  }
+}

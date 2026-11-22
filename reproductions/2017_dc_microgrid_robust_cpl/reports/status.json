@@ -1,0 +1,47 @@
+{
+  "doi": "10.1109/TPWRS.2017.2697765",
+  "state": "report_ready",
+  "display_state_zh": "九节点证书与三组时域结论复现，图 8 和部分表值存在差异",
+  "outcome": "full_network_robust_certificates_reproduced_figure8_and_two_limits_disagree",
+  "scope_zh": "按原图和元件 SI 值重建九节点与八节点，复算式 (7)、(9)、(10)、Table II 及图 4、5、7、8。",
+  "public_fulltext_url": "https://arxiv.org/abs/1702.07580",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "code_executed": true,
+  "paper_condition_replay_state": "partial_quantitative_reproduction_with_fig8_and_table_counterexamples",
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 49,
+  "checks_total": 49,
+  "key_results": {
+    "nine_bus_critical_kw_per_load": 16.0572809682852,
+    "frequency_hz": 121.86297578083658,
+    "d010_contracted_box_eq7_decay_per_s": 0.5527023538790182,
+    "d020_paper_box_eq10_decay_per_s": 1.7680264769717955,
+    "fig8_min_cpl_v_440_ref_at_20kw": 399.90543363264607,
+    "fig8_leading_real_per_s_440_ref_at_20kw": 1.1120910831626163,
+    "eight_bus_1ohm_eq9_limit_per_s": 40.17159467845889,
+    "eight_bus_1ohm_eq10_bracket_per_s": [
+      190.96875,
+      191.078125
+    ]
+  },
+  "critical_gaps": [
+    "公开图形可读，尚无原始 Simulink、CVX 与逐路命令。",
+    "图 4 的 16 kW 档与图 7 的 17 kW 档存在暂态幅值差异。",
+    "图 8 在公开 440 V 工况的稳态电压及极点存在可重复差异。",
+    "Table II 的 1 Ω 式 (9)、(10) 阈值存在差异。"
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "configuration_or_result_discrepancy",
+      "finding": "Published Fig. 8 operating point and selected Table II bounds differ under the declared model.",
+      "source": "results/metrics.json",
+      "misconduct_inference": false
+    }
+  ],
+  "misconduct_allegation": null,
+  "report_sha256": "965783a6566d5e0e3fba78257af73fc8d1474b9fe01d85614151fb202c77249c",
+  "primary_manifest_sha256": "53e0643550a1cc186db880bbd6924d99b302079d939c505d0c5eaefcfe62ad77",
+  "source_report_sha256": "f7be71608c398b33b2c445acecf179632e45b5d48f2babcdf1b15c9d4113596e"
+}

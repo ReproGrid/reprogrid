@@ -47,6 +47,8 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 实时仿真 / Real-time simulation | [LLC direct mapping](reproductions/2021_dmm_llc_resonant_converter) | 整流模式、0.6 秒序列及离线定点核对 / Rectifier modes, 0.6 s sequence and offline fixed-point checks |
 | 实时仿真 / Real-time simulation | [Grid-tied inverter EMT](reproductions/2022_grid_tied_inverter_emt_model_comparison) | 电压插值、载波边带与近谐振步长 / Voltage interpolation, carrier sidebands and time steps near resonance |
 | 并网稳定 / Grid synchronization | [GFM/GFL single-inverter duality](reproductions/2022_gfm_gfl_duality) | 六组根轨迹，及推断阻值下的 GFL 网强切换 / Six root-locus sweeps and the GFL transient with inferred resistance |
+| 微网稳定 / Microgrid stability | [DC microgrid with constant power loads](reproductions/2017_dc_microgrid_robust_cpl) | 九节点和八节点证书、四组电压复算及 440 V 工况差异 / Nine- and eight-bus certificates, four voltage replays, and the 440 V discrepancy |
+| 构网稳定 / GFM stability | [Circular current limiter](reproductions/2022_gfm_circular_current_limiter) | 功角、10 kHz 采样与 450/650 ms 滑相对照 / Power angle, 10 kHz sampling, and 450/650 ms slip cases |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 

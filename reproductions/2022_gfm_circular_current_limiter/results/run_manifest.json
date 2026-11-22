@@ -1,0 +1,115 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "protocol_sha256": "cf19c8098f114a334afc57dccd08d20489b116d558dc7187da07c05732b4410c",
+  "implementation_sha256": "ffaa6371814f4095379e6d46f346d775cf8ff76523ebd12ccc81ccd699eb5b87",
+  "base": {
+    "s_va": 2500.0,
+    "i_peak_a": 10.71397960058284,
+    "z_ohm": 14.51934816,
+    "omega_rad_s": 314.1592653589793
+  },
+  "trace_columns": [
+    "time_s",
+    "angle_rad",
+    "terminal_active_power_pu",
+    "current_pu",
+    "equivalent_limiter_r_pu"
+  ],
+  "models": {
+    "si_derived": {
+      "grid_resistance_pu": 0.020662084598706942,
+      "grid_reactance_pu": 0.23801012833821134,
+      "postfault_sep_rad": 0.19142431849698735,
+      "postfault_uep_rad": 0.37183651061515705,
+      "fault_peak_power_pu": 0.6297534018221381,
+      "same_basin_clearing_boundary_s": 0.33036449572930726,
+      "droop_rad_s_per_pu": 3.141592653589793,
+      "circuit_max_power_difference_pu": 4.510836149052011e-13,
+      "cases": [
+        {
+          "figure": null,
+          "duration_s": 0.25,
+          "clear_angle_rad": 0.3276448009704977,
+          "basin_offset_revolutions": 0,
+          "end_angle_residual_rad": 7.771561172376096e-16,
+          "first_postfault_limiter_exit_sample_s_after_clear": 0.04999999999999999,
+          "max_current_pu": 1.2000000000000004,
+          "max_refined_angle_difference_rad": 1.595065746151647e-10
+        },
+        {
+          "figure": "5",
+          "duration_s": 0.45,
+          "reported_basin_offset_revolutions": 0,
+          "clear_angle_rad": 0.4423361803655791,
+          "basin_offset_revolutions": 1,
+          "end_angle_residual_rad": 1.5987211554602254e-14,
+          "first_postfault_limiter_exit_sample_s_after_clear": 1.248,
+          "max_current_pu": 1.2000000000000004,
+          "max_refined_angle_difference_rad": 2.9644953158936005e-09
+        },
+        {
+          "figure": "6",
+          "duration_s": 0.65,
+          "reported_basin_offset_revolutions": 1,
+          "clear_angle_rad": 0.5853086433812961,
+          "basin_offset_revolutions": 1,
+          "end_angle_residual_rad": 1.5987211554602254e-14,
+          "first_postfault_limiter_exit_sample_s_after_clear": 1.116,
+          "max_current_pu": 1.2000000000000006,
+          "max_refined_angle_difference_rad": 1.0780332893034483e-07
+        }
+      ]
+    },
+    "printed_pu": {
+      "grid_resistance_pu": 0.021,
+      "grid_reactance_pu": 0.24,
+      "postfault_sep_rad": 0.19304142912165567,
+      "postfault_uep_rad": 0.3747006630201146,
+      "fault_peak_power_pu": 0.6302399999999996,
+      "same_basin_clearing_boundary_s": 0.3334679328242738,
+      "droop_rad_s_per_pu": 3.141592653589793,
+      "circuit_max_power_difference_pu": 1.5920598173124745e-12,
+      "cases": [
+        {
+          "figure": null,
+          "duration_s": 0.25,
+          "clear_angle_rad": 0.3289412395997467,
+          "basin_offset_revolutions": 0,
+          "end_angle_residual_rad": 2.4741320103771614e-13,
+          "first_postfault_limiter_exit_sample_s_after_clear": 0.04799999999999999,
+          "max_current_pu": 1.2000000000000006,
+          "max_refined_angle_difference_rad": 4.870859271477457e-11
+        },
+        {
+          "figure": "5",
+          "duration_s": 0.45,
+          "reported_basin_offset_revolutions": 0,
+          "clear_angle_rad": 0.4431275361651533,
+          "basin_offset_revolutions": 1,
+          "end_angle_residual_rad": 2.646771690706373e-13,
+          "first_postfault_limiter_exit_sample_s_after_clear": 1.2510000000000001,
+          "max_current_pu": 1.2000000000000006,
+          "max_refined_angle_difference_rad": 2.809814603210725e-10
+        },
+        {
+          "figure": "6",
+          "duration_s": 0.65,
+          "reported_basin_offset_revolutions": 1,
+          "clear_angle_rad": 0.5852068697423167,
+          "basin_offset_revolutions": 1,
+          "end_angle_residual_rad": 2.646771690706373e-13,
+          "first_postfault_limiter_exit_sample_s_after_clear": 1.117,
+          "max_current_pu": 1.2000000000000006,
+          "max_refined_angle_difference_rad": 3.8207748076501957e-10
+        }
+      ]
+    }
+  },
+  "checks": {
+    "circuit_identities": true,
+    "voltage_sag_removes_equilibria": true,
+    "refined_angle_and_current_bound": true,
+    "settled_basin_matches_clearing_integral": true
+  },
+  "passed": true
+}

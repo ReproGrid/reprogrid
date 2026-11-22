@@ -1,0 +1,566 @@
+{
+  "source_pdf_sha256": "eda8457b926ca300205df242ecd2a944a1e02f63481fa8827e1da3a8f9fa9f17",
+  "method": "Affine conversion of PDF vector paths. Use 31 uniform samples for the median and visible vector vertices for the voltage span.",
+  "figures": {
+    "4": {
+      "power_end_s_from_pdf": 25.672000340733085,
+      "step_pdf_midpoint_s": [
+        2.9917446129106366,
+        4.991307314640602,
+        6.99182142676018,
+        8.991621981087548,
+        10.991184682817515,
+        12.991221857345408,
+        14.990784559075372,
+        16.990585113402744,
+        18.990388132523865,
+        20.990188686851234,
+        22.98975015618432,
+        24.98978733071222
+      ],
+      "power_level_kw_pdf": [
+        4.999999690065379,
+        5.999839438189503,
+        6.999679186313627,
+        8.000328839033802,
+        9.000168587157926,
+        9.999999985750133,
+        10.999839733874257,
+        11.999679481998381,
+        13.000329134718557,
+        14.000160533310762,
+        15.000000281434886,
+        15.99984002955901,
+        16.999679777683134
+      ],
+      "plateau_windows": [
+        {
+          "power_kw": 5,
+          "window_s": [
+            2.8,
+            2.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 398.6215673224936,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 6,
+          "window_s": [
+            4.8,
+            4.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 398.34386087150347,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 7,
+          "window_s": [
+            6.8,
+            6.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 398.0661126727005,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 8,
+          "window_s": [
+            8.8,
+            8.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 397.7883644738975,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 9,
+          "window_s": [
+            10.8,
+            10.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 397.5066502328751,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 10,
+          "window_s": [
+            12.8,
+            12.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 397.22890203407206,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 11,
+          "window_s": [
+            14.8,
+            14.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.9511538352691,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 12,
+          "window_s": [
+            16.8,
+            16.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.6693978464338,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 13,
+          "window_s": [
+            18.8,
+            18.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.39164964763086,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 14,
+          "window_s": [
+            20.8,
+            20.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.10989365879556,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 15,
+          "window_s": [
+            22.8,
+            22.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 395.8252797899218,
+          "pdf_span_v": 0.04830221945212543
+        },
+        {
+          "power_kw": 16,
+          "window_s": [
+            24.8,
+            24.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.42660708382726,
+          "pdf_span_v": 10.469349511951634
+        },
+        {
+          "power_kw": 17,
+          "window_s": [
+            25.472,
+            25.622
+          ],
+          "coverage_samples": 0,
+          "pdf_median_v": null,
+          "pdf_span_v": null
+        }
+      ]
+    },
+    "5": {
+      "power_end_s_from_pdf": 32.00354767340885,
+      "step_pdf_midpoint_s": [
+        1.9886668734127797,
+        3.991171761043593,
+        5.993381832425414,
+        7.995002271309251,
+        9.997801975189056,
+        11.999716472439497,
+        13.987487368562194,
+        15.989698955708793,
+        17.991614968724008,
+        19.99441164107426,
+        21.9960320799581,
+        23.99824215133992,
+        26.00015816435514,
+        27.988517177211044,
+        29.99043319022626
+      ],
+      "power_level_kw_pdf": [
+        4.999999830639822,
+        6.000008886599727,
+        6.999998340688535,
+        8.00000739664844,
+        8.999996850737247,
+        10.000005906697151,
+        10.99999536078596,
+        12.000004416745865,
+        13.00001347270577,
+        14.000002926794577,
+        15.000011982754483,
+        16.00000143684329,
+        17.000010492803195,
+        17.999999946892004,
+        19.000009002851908,
+        19.999998456940716
+      ],
+      "plateau_windows": [
+        {
+          "power_kw": 5,
+          "window_s": [
+            1.8,
+            1.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.8498891177673,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 6,
+          "window_s": [
+            3.8,
+            3.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 396.21300291529315,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 7,
+          "window_s": [
+            5.8,
+            5.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 395.574101644594,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 8,
+          "window_s": [
+            7.8,
+            7.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 394.93318530567,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 9,
+          "window_s": [
+            9.8,
+            9.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 394.2902331246218,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 10,
+          "window_s": [
+            11.8,
+            11.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 393.64528664924785,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 11,
+          "window_s": [
+            13.8,
+            13.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 392.9983043317498,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 12,
+          "window_s": [
+            15.8,
+            15.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 392.34828902496474,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 13,
+          "window_s": [
+            17.8,
+            17.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 391.6962794238539,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 14,
+          "window_s": [
+            19.8,
+            19.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 391.0412160595569,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 15,
+          "window_s": [
+            21.8,
+            21.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 390.38515554809703,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 16,
+          "window_s": [
+            23.8,
+            23.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 389.7260620473501,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 17,
+          "window_s": [
+            25.8,
+            25.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 389.0639563312155,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 18,
+          "window_s": [
+            27.8,
+            27.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 388.40083269401873,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 19,
+          "window_s": [
+            29.8,
+            29.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 387.73467606753496,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 20,
+          "window_s": [
+            31.8,
+            31.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 387.0654864517642,
+          "pdf_span_v": 0.0
+        }
+      ]
+    },
+    "7": {
+      "power_end_s_from_pdf": 6.8412624637573884,
+      "step_pdf_midpoint_s": [
+        2.0002335881509774,
+        3.999833696193,
+        5.999370103684045
+      ],
+      "power_level_kw_pdf": [
+        10.999787372961126,
+        13.000081811586288,
+        14.99963150393005,
+        16.999925942555212
+      ],
+      "plateau_windows": [
+        {
+          "power_kw": 11,
+          "window_s": [
+            1.8,
+            1.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 378.28219874440254,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 13,
+          "window_s": [
+            3.8,
+            3.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 374.0474486336441,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 15,
+          "window_s": [
+            5.8,
+            5.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 369.7060227017322,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 17,
+          "window_s": [
+            6.6419999999999995,
+            6.792
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 364.9733532044208,
+          "pdf_span_v": 7.674835351181969
+        }
+      ]
+    },
+    "8": {
+      "power_end_s_from_pdf": 24.002434730592988,
+      "step_pdf_midpoint_s": [
+        3.992512341229118,
+        5.999464462942418,
+        7.990957168404114,
+        9.997911332852121,
+        11.989404038313817,
+        13.996560433497672,
+        15.988457600431067,
+        17.99500526067267,
+        19.987108743811323,
+        21.994060865524624
+      ],
+      "power_level_kw_pdf": [
+        9.9993560170881,
+        10.999414554701918,
+        11.999482856986662,
+        12.999551159271405,
+        13.999609696885223,
+        14.999677999169966,
+        15.999746301454712,
+        16.99980483906853,
+        17.999873141353273,
+        18.999941443638015,
+        19.999999981251833
+      ],
+      "plateau_windows": [
+        {
+          "power_kw": 10,
+          "window_s": [
+            3.8,
+            3.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 432.736570996564,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 11,
+          "window_s": [
+            5.8,
+            5.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 430.93226708327046,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 12,
+          "window_s": [
+            7.8,
+            7.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 429.1108351202222,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 13,
+          "window_s": [
+            9.8,
+            9.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 427.2739637883809,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 14,
+          "window_s": [
+            11.8,
+            11.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 425.42161862486995,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 15,
+          "window_s": [
+            13.8,
+            13.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 423.550387804889,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 16,
+          "window_s": [
+            15.8,
+            15.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 421.6637176161151,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 17,
+          "window_s": [
+            17.8,
+            17.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 419.75643862703276,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 18,
+          "window_s": [
+            19.8,
+            19.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 417.83199712531894,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 19,
+          "window_s": [
+            21.8,
+            21.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 415.8886699671352,
+          "pdf_span_v": 0.0
+        },
+        {
+          "power_kw": 20,
+          "window_s": [
+            23.8,
+            23.95
+          ],
+          "coverage_samples": 31,
+          "pdf_median_v": 413.92536728963654,
+          "pdf_span_v": 0.0010338863031051915
+        }
+      ]
+    }
+  }
+}

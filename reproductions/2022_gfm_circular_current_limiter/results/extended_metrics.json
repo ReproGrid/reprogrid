@@ -1,0 +1,900 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "phasor": {
+    "published_fig3": {
+      "stable_angle_rad": 0.19141150628412085,
+      "first_unstable_angle_rad": 0.371873599256403,
+      "same_basin_boundary_s_from_drawn_curves": 0.33044498886121493,
+      "maximum_drawn_sag_power_pu": 0.6296933026884787
+    },
+    "models": {
+      "si": {
+        "electrical_pu": {
+          "r_grid": 0.020662084598706942,
+          "x_grid": 0.23801012833821134,
+          "x_filter": 0.03245592659157428,
+          "b_cap": 0.06842081627155272
+        },
+        "without_capacitor": {
+          "stable_angle_rad": 0.19142431849698763,
+          "first_unstable_angle_rad": 0.371836510615157,
+          "available_uniform_angle_margin_rad": 0.18041219211816936,
+          "peak_fault_power_pu": 0.6297534018210367,
+          "same_basin_boundary_s": 0.33036449572930676,
+          "cases": [
+            {
+              "duration_s": 0.45,
+              "clear_angle_rad": 0.4423361803655791,
+              "drift_rad": 0.2509118618685915,
+              "min_drift_from_max_fault_power_rad": 0.24068045796195817,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 4.039333533765304
+            },
+            {
+              "duration_s": 0.65,
+              "clear_angle_rad": 0.5853086433812962,
+              "drift_rad": 0.3938843248843086,
+              "min_drift_from_max_fault_power_rad": 0.34764955038949513,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 12.231052251156147
+            }
+          ]
+        },
+        "with_capacitor": {
+          "stable_angle_rad": 0.19142431849698763,
+          "first_unstable_angle_rad": 0.36498854887807974,
+          "available_uniform_angle_margin_rad": 0.17356423038109212,
+          "peak_fault_power_pu": 0.6406786240148039,
+          "same_basin_boundary_s": 0.33881730547954897,
+          "cases": [
+            {
+              "duration_s": 0.45,
+              "clear_angle_rad": 0.42551357775281734,
+              "drift_rad": 0.2340892592558297,
+              "min_drift_from_max_fault_power_rad": 0.22523528895970926,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 3.4678287094299063
+            },
+            {
+              "duration_s": 0.65,
+              "clear_angle_rad": 0.5556265837002776,
+              "drift_rad": 0.36420226520329,
+              "min_drift_from_max_fault_power_rad": 0.32533986183069113,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 10.92275480997996
+            }
+          ]
+        },
+        "capacitor_removal_power_error_pu": 1.7763568394002505e-15,
+        "capacitor_full_kcl_error_pu": 1.0109637277313279e-12,
+        "fig3_pdf_global_curve_max_error_pu": [
+          0.0005742816265091877,
+          0.00018619908023720377
+        ],
+        "fig3_pdf_enlarged_curve_max_error_pu": [
+          0.0022151248357944464,
+          0.00013059642369295243
+        ],
+        "voltage_sag_sensitivity": [
+          {
+            "sag_pu": 0.45,
+            "stable_angle_rad": 0.19142431849698763,
+            "first_unstable_angle_rad": 0.371836510615157,
+            "available_uniform_angle_margin_rad": 0.18041219211816936,
+            "peak_fault_power_pu": 0.5697534018217885,
+            "same_basin_boundary_s": 0.24658851222403025,
+            "cases": [
+              {
+                "duration_s": 0.45,
+                "clear_angle_rad": 0.5350284073340353,
+                "drift_rad": 0.34360408883704774,
+                "min_drift_from_max_fault_power_rad": 0.32550345960781973,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 9.350206932726556
+              },
+              {
+                "duration_s": 0.65,
+                "clear_angle_rad": 0.7401006977805543,
+                "drift_rad": 0.5486763792835667,
+                "min_drift_from_max_fault_power_rad": 0.4701716638779619,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 21.099983670393083
+              }
+            ]
+          },
+          {
+            "sag_pu": 0.475,
+            "stable_angle_rad": 0.19142431849698763,
+            "first_unstable_angle_rad": 0.371836510615157,
+            "available_uniform_angle_margin_rad": 0.18041219211816936,
+            "peak_fault_power_pu": 0.5997534018215183,
+            "same_basin_boundary_s": 0.2824467931890983,
+            "cases": [
+              {
+                "duration_s": 0.45,
+                "clear_angle_rad": 0.48850581129041587,
+                "drift_rad": 0.2970814927934282,
+                "min_drift_from_max_fault_power_rad": 0.28309195878473953,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 6.68465852743514
+              },
+              {
+                "duration_s": 0.65,
+                "clear_angle_rad": 0.6630572118133204,
+                "drift_rad": 0.47163289331633285,
+                "min_drift_from_max_fault_power_rad": 0.4089106071335127,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 16.685717085495202
+              }
+            ]
+          },
+          {
+            "sag_pu": 0.5,
+            "stable_angle_rad": 0.19142431849698763,
+            "first_unstable_angle_rad": 0.371836510615157,
+            "available_uniform_angle_margin_rad": 0.18041219211816936,
+            "peak_fault_power_pu": 0.6297534018210367,
+            "same_basin_boundary_s": 0.33036449572930676,
+            "cases": [
+              {
+                "duration_s": 0.45,
+                "clear_angle_rad": 0.4423361803655791,
+                "drift_rad": 0.2509118618685915,
+                "min_drift_from_max_fault_power_rad": 0.24068045796195817,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 4.039333533765304
+              },
+              {
+                "duration_s": 0.65,
+                "clear_angle_rad": 0.5853086433812962,
+                "drift_rad": 0.3938843248843086,
+                "min_drift_from_max_fault_power_rad": 0.34764955038949513,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 12.231052251156147
+              }
+            ]
+          },
+          {
+            "sag_pu": 0.525,
+            "stable_angle_rad": 0.19142431849698763,
+            "first_unstable_angle_rad": 0.371836510615157,
+            "available_uniform_angle_margin_rad": 0.18041219211816936,
+            "peak_fault_power_pu": 0.6597534018201705,
+            "same_basin_boundary_s": 0.39761703786228353,
+            "cases": [
+              {
+                "duration_s": 0.45,
+                "clear_angle_rad": 0.39708331244560696,
+                "drift_rad": 0.20565899394861933,
+                "min_drift_from_max_fault_power_rad": 0.19826895713972048,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 1.4465351910879447
+              },
+              {
+                "duration_s": 0.65,
+                "clear_angle_rad": 0.5083968106715391,
+                "drift_rad": 0.3169724921745515,
+                "min_drift_from_max_fault_power_rad": 0.2863884936462629,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 7.824328842270832
+              }
+            ]
+          },
+          {
+            "sag_pu": 0.55,
+            "stable_angle_rad": 0.19142431849698763,
+            "first_unstable_angle_rad": 0.371836510615157,
+            "available_uniform_angle_margin_rad": 0.18041219211816936,
+            "peak_fault_power_pu": 0.689753401818592,
+            "same_basin_boundary_s": 0.4988155135135462,
+            "cases": [
+              {
+                "duration_s": 0.45,
+                "clear_angle_rad": 0.35350760372772405,
+                "drift_rad": 0.16208328523073642,
+                "min_drift_from_max_fault_power_rad": 0.1558574563184898,
+                "above_first_unstable_angle": false,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 0.0
+              },
+              {
+                "duration_s": 0.65,
+                "clear_angle_rad": 0.4345227984299301,
+                "drift_rad": 0.24309847993294245,
+                "min_drift_from_max_fault_power_rad": 0.22512743690448525,
+                "above_first_unstable_angle": true,
+                "min_grid_phase_advance_at_clear_deg_for_same_basin": 3.591659725128858
+              }
+            ]
+          }
+        ]
+      },
+      "printed_pu": {
+        "electrical_pu": {
+          "r_grid": 0.021,
+          "x_grid": 0.24,
+          "x_filter": 0.032,
+          "b_cap": 0.068
+        },
+        "without_capacitor": {
+          "stable_angle_rad": 0.19304142912140773,
+          "first_unstable_angle_rad": 0.37470066302035554,
+          "available_uniform_angle_margin_rad": 0.1816592338989478,
+          "peak_fault_power_pu": 0.6302399999984495,
+          "same_basin_boundary_s": 0.3334679328251352,
+          "cases": [
+            {
+              "duration_s": 0.45,
+              "clear_angle_rad": 0.4431275361648857,
+              "drift_rad": 0.250086107043478,
+              "min_drift_from_max_fault_power_rad": 0.23999254599522354,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 3.9205710364586546
+            },
+            {
+              "duration_s": 0.65,
+              "clear_angle_rad": 0.5852068697419601,
+              "drift_rad": 0.39216544062055236,
+              "min_drift_from_max_fault_power_rad": 0.34665589977087846,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 12.061117206456384
+            }
+          ]
+        },
+        "with_capacitor": {
+          "stable_angle_rad": 0.19304142912140773,
+          "first_unstable_angle_rad": 0.36789776892508586,
+          "available_uniform_angle_margin_rad": 0.17485633980367812,
+          "peak_fault_power_pu": 0.6412054810626975,
+          "same_basin_boundary_s": 0.34230141528336633,
+          "cases": [
+            {
+              "duration_s": 0.45,
+              "clear_angle_rad": 0.4262888258956032,
+              "drift_rad": 0.23324739677419545,
+              "min_drift_from_max_fault_power_rad": 0.22449046235568976,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 3.3455611257185893
+            },
+            {
+              "duration_s": 0.65,
+              "clear_angle_rad": 0.5554965503520118,
+              "drift_rad": 0.3624551212306041,
+              "min_drift_from_max_fault_power_rad": 0.3242640011804408,
+              "above_first_unstable_angle": true,
+              "min_grid_phase_advance_at_clear_deg_for_same_basin": 10.748618417560074
+            }
+          ]
+        },
+        "capacitor_removal_power_error_pu": 1.887379141862766e-15,
+        "capacitor_full_kcl_error_pu": 1.0801678182216842e-12,
+        "fig3_pdf_global_curve_max_error_pu": [
+          0.016265963547793083,
+          0.002433829521841624
+        ],
+        "fig3_pdf_enlarged_curve_max_error_pu": [
+          0.021938315821883547,
+          0.001626345598468415
+        ]
+      }
+    }
+  },
+  "sampled": {
+    "si_nominal": {
+      "scenario": {
+        "key": "si_nominal",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 0
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 7.771561172376096e-16,
+      "prefault_max_discrete_pole_modulus": 0.9986850400562233,
+      "prefault_dominant_discrete_pole": [
+        0.9986850400562233,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44213916941959336,
+          "drift_to_clear_rad": 0.25071462445240517,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.6226556809465397,
+          "fault_current_peak_pu": 1.2608706505103742,
+          "fault_current_peak_after_initial_5ms_pu": 1.2567220284589635,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4114702759454965,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.2232,
+          "max_command_pu": 3.48724719986983,
+          "max_limited_command_pu": 3.48724719986983,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5962972467353554,
+          "drift_to_clear_rad": 0.40487270176816725,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.601730794432694,
+          "fault_current_peak_pu": 1.2647693596357314,
+          "fault_current_peak_after_initial_5ms_pu": 1.2647693596357314,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4114737118429552,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.1092,
+          "max_command_pu": 3.4870926769229036,
+          "max_limited_command_pu": 3.4870926769229036,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated",
+      "clearing_boundary": {
+        "observed_local_boundary_s": [
+          0.3109,
+          0.3125
+        ],
+        "tested_clearing_times": [
+          {
+            "duration_s": 0.25,
+            "offset_turns": 0,
+            "residual_rad": 8.881784197001252e-15
+          },
+          {
+            "duration_s": 0.45,
+            "offset_turns": 1,
+            "residual_rad": 2.913225216616411e-13
+          },
+          {
+            "duration_s": 0.35000000000000003,
+            "offset_turns": 1,
+            "residual_rad": 2.913225216616411e-13
+          },
+          {
+            "duration_s": 0.3,
+            "offset_turns": 0,
+            "residual_rad": 8.493206138382448e-15
+          },
+          {
+            "duration_s": 0.325,
+            "offset_turns": 1,
+            "residual_rad": 2.913225216616411e-13
+          },
+          {
+            "duration_s": 0.3125,
+            "offset_turns": 1,
+            "residual_rad": 2.913225216616411e-13
+          },
+          {
+            "duration_s": 0.3062,
+            "offset_turns": 0,
+            "residual_rad": 8.576472865229334e-15
+          },
+          {
+            "duration_s": 0.3093,
+            "offset_turns": 0,
+            "residual_rad": 8.604228440844963e-15
+          },
+          {
+            "duration_s": 0.3109,
+            "offset_turns": 0,
+            "residual_rad": 8.604228440844963e-15
+          }
+        ]
+      }
+    },
+    "printed_pu": {
+      "scenario": {
+        "key": "printed_pu",
+        "electrical_units": "printed_pu",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 0
+      },
+      "prefault_fixed_point_angle_rad": 0.19304166072168202,
+      "prefault_fixed_point_residual": 8.881784197001252e-16,
+      "prefault_max_discrete_pole_modulus": 0.9986961157699706,
+      "prefault_dominant_discrete_pole": [
+        0.9986961157699706,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.399277463072224e-14,
+        "instantaneous_energy_balance_error_pu": 4.432010314303625e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44261687179143,
+          "drift_to_clear_rad": 0.24957521106974798,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.922107000813412e-13,
+          "fault_mean_active_power_pu": 0.6234616510446516,
+          "fault_current_peak_pu": 1.2600647647166394,
+          "fault_current_peak_after_initial_5ms_pu": 1.2562872045454163,
+          "first_10ms_peak_sampled_current_pu": 1.2600647647166394,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4110794543025165,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.2269,
+          "max_command_pu": 3.4835702078124466,
+          "max_limited_command_pu": 3.4835702078124466,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5955120736510271,
+          "drift_to_clear_rad": 0.40247041292934504,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.9309887850104133e-13,
+          "fault_mean_active_power_pu": 0.6029072133355647,
+          "fault_current_peak_pu": 1.2642365565775378,
+          "fault_current_peak_after_initial_5ms_pu": 1.2642365565775378,
+          "first_10ms_peak_sampled_current_pu": 1.2600647647166394,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.411079436561438,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.11,
+          "max_command_pu": 3.4835706166326417,
+          "max_limited_command_pu": 3.4835706166326417,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated"
+    },
+    "grid_frame_hold": {
+      "scenario": {
+        "key": "grid_frame_hold",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "grid",
+        "delay": 0,
+        "power_filter_hz": 0
+      },
+      "prefault_fixed_point_angle_rad": 0.19142431849698796,
+      "prefault_fixed_point_residual": 1.2212453270876722e-15,
+      "prefault_max_discrete_pole_modulus": 0.9986850400859739,
+      "prefault_dominant_discrete_pole": [
+        0.9986850400859739,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.459238664507121e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44137215575652083,
+          "drift_to_clear_rad": 0.24994783725953287,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.922107000813412e-13,
+          "fault_mean_active_power_pu": 0.6231980719334083,
+          "fault_current_peak_pu": 1.260939491176713,
+          "fault_current_peak_after_initial_5ms_pu": 1.2568378602877506,
+          "first_10ms_peak_sampled_current_pu": 1.260939491176713,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4158132274636022,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.2288000000000001,
+          "max_command_pu": 3.4654592511933027,
+          "max_limited_command_pu": 3.4654592511933027,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5940883485684118,
+          "drift_to_clear_rad": 0.4026640300714238,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.6028123975656284,
+          "fault_current_peak_pu": 1.2648601796735053,
+          "fault_current_peak_after_initial_5ms_pu": 1.2648601796735053,
+          "first_10ms_peak_sampled_current_pu": 1.260939491176713,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4158134167587386,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.1119,
+          "max_command_pu": 3.465482357752269,
+          "max_limited_command_pu": 3.465482357752269,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated"
+    },
+    "extra_tick_delay": {
+      "scenario": {
+        "key": "extra_tick_delay",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 1,
+        "power_filter_hz": 0
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 7.771561172376096e-16,
+      "prefault_max_discrete_pole_modulus": 1.139700873473006,
+      "prefault_dominant_discrete_pole": [
+        0.6166205451598455,
+        0.9584869244188509
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {},
+      "state": "prefault_locally_unstable"
+    },
+    "ki_per_second": {
+      "scenario": {
+        "key": "ki_per_second",
+        "electrical_units": "si",
+        "pi_time_base": "seconds",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 0
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 7.771561172376096e-16,
+      "prefault_max_discrete_pole_modulus": 0.999500195222165,
+      "prefault_dominant_discrete_pole": [
+        0.9995001951793006,
+        9.256681498396606e-06
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.4246962589951774,
+          "drift_to_clear_rad": 0.23327171402798919,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 4.3787196091216174e-13,
+          "fault_mean_active_power_pu": 0.6349940161285624,
+          "fault_current_peak_pu": 1.2431992990437084,
+          "fault_current_peak_after_initial_5ms_pu": 1.231354291085019,
+          "first_10ms_peak_sampled_current_pu": 1.2431992990437084,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.2138493698507542,
+          "post_first_unclipped_sample_s": 0.0005,
+          "last_postfault_clipped_sample_s": 1.2593,
+          "max_command_pu": 1.2524476139846086,
+          "max_limited_command_pu": 1.2524476139846086,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5552443149451037,
+          "drift_to_clear_rad": 0.36381976997791554,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 3.82804898890754e-13,
+          "fault_mean_active_power_pu": 0.6218347237337178,
+          "fault_current_peak_pu": 1.2431992990437084,
+          "fault_current_peak_after_initial_5ms_pu": 1.231354291085019,
+          "first_10ms_peak_sampled_current_pu": 1.2431992990437084,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.2267748579249185,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.1231,
+          "max_command_pu": 1.252447568567203,
+          "max_limited_command_pu": 1.252447568567203,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated"
+    },
+    "prefilter_50hz": {
+      "scenario": {
+        "key": "prefilter_50hz",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 50
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 3.3306690738754696e-16,
+      "prefault_max_discrete_pole_modulus": 0.9986255493152205,
+      "prefault_dominant_discrete_pole": [
+        0.9986255493152205,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44061262531154377,
+          "drift_to_clear_rad": 0.24918808034435558,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 3.099742684753437e-13,
+          "fault_mean_active_power_pu": 0.6229087528051287,
+          "fault_current_peak_pu": 1.2608652417337531,
+          "fault_current_peak_after_initial_5ms_pu": 1.2565791210591566,
+          "first_10ms_peak_sampled_current_pu": 1.2608652417337531,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4116578119642422,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.2343,
+          "max_command_pu": 3.4867286195242597,
+          "max_limited_command_pu": 3.4867286195242597,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5925018133760964,
+          "drift_to_clear_rad": 0.4010772684089082,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 3.099742684753437e-13,
+          "fault_mean_active_power_pu": 0.60245208738683,
+          "fault_current_peak_pu": 1.2644990302653132,
+          "fault_current_peak_after_initial_5ms_pu": 1.2644990302653132,
+          "first_10ms_peak_sampled_current_pu": 1.2608652417337531,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4116645153505933,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.1143,
+          "max_command_pu": 3.486752710572876,
+          "max_limited_command_pu": 3.486752710572876,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated"
+    },
+    "retain_voltage_pi_state": {
+      "scenario": {
+        "key": "retain_voltage_pi_state",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 0,
+        "retain_voltage_pi_state": true
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 7.771561172376096e-16,
+      "prefault_max_discrete_pole_modulus": 0.9986850400562233,
+      "prefault_dominant_discrete_pole": [
+        0.9986850400562233,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44345922387416076,
+          "drift_to_clear_rad": 0.25203467890697256,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.6217219334283416,
+          "fault_current_peak_pu": 1.2608706505103742,
+          "fault_current_peak_after_initial_5ms_pu": 1.258606124311269,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4210179691236988,
+          "post_first_unclipped_sample_s": 0.0006000000000000001,
+          "last_postfault_clipped_sample_s": 1.2176,
+          "max_command_pu": 3.5175976437253276,
+          "max_limited_command_pu": 3.5175976437253276,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.599504328629637,
+          "drift_to_clear_rad": 0.4080797836624488,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.6001602623207699,
+          "fault_current_peak_pu": 1.268342622162892,
+          "fault_current_peak_after_initial_5ms_pu": 1.268342622162892,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.4212499957215552,
+          "post_first_unclipped_sample_s": 0.0005,
+          "last_postfault_clipped_sample_s": 1.1005,
+          "max_command_pu": 3.5224869975869617,
+          "max_limited_command_pu": 3.5224869975869617,
+          "pref_pu": 0.8
+        }
+      },
+      "state": "events_simulated"
+    },
+    "dc700_svpwm_headroom": {
+      "scenario": {
+        "key": "dc700_svpwm_headroom",
+        "electrical_units": "si",
+        "pi_time_base": "electrical",
+        "voltage_hold": "stationary",
+        "delay": 0,
+        "power_filter_hz": 0,
+        "dc_bus_v": 700
+      },
+      "prefault_fixed_point_angle_rad": 0.1914245449671882,
+      "prefault_fixed_point_residual": 7.771561172376096e-16,
+      "prefault_max_discrete_pole_modulus": 0.9986850400562233,
+      "prefault_dominant_discrete_pole": [
+        0.9986850400562233,
+        0.0
+      ],
+      "checks": {
+        "held_sample_independent_ode_error_pu": 1.3965026934617231e-14,
+        "instantaneous_energy_balance_error_pu": 2.794431352981519e-13
+      },
+      "tests": {
+        "fig5": {
+          "duration_s": 0.45,
+          "clear_angle_rad": 0.44213916941959336,
+          "drift_to_clear_rad": 0.25071462445240517,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.6226556809465397,
+          "fault_current_peak_pu": 1.2608706505103742,
+          "fault_current_peak_after_initial_5ms_pu": 1.2567220284589635,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.622294081441012,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.2102000000000002,
+          "max_command_pu": 3.3823268592230424,
+          "max_limited_command_pu": 2.5980019827252394,
+          "pref_pu": 0.8
+        },
+        "fig6": {
+          "duration_s": 0.65,
+          "clear_angle_rad": 0.5962972467353554,
+          "drift_to_clear_rad": 0.40487270176816725,
+          "final_basin_offset_turns": 1,
+          "final_angle_residual_rad": 2.913225216616411e-13,
+          "fault_mean_active_power_pu": 0.601730794432694,
+          "fault_current_peak_pu": 1.2647693596357314,
+          "fault_current_peak_after_initial_5ms_pu": 1.2647693596357314,
+          "first_10ms_peak_sampled_current_pu": 1.2608706505103742,
+          "max_projected_reference_pu": 1.2000000000000004,
+          "recovery_current_peak_pu": 1.6239645505964055,
+          "post_first_unclipped_sample_s": 0.0007,
+          "last_postfault_clipped_sample_s": 1.0961,
+          "max_command_pu": 3.3692745857706936,
+          "max_limited_command_pu": 2.5980019827252394,
+          "pref_pu": 0.8
+        }
+      },
+      "bridge_limit_pu": 2.5980019827252385,
+      "state": "events_simulated"
+    }
+  },
+  "figure_readback": {
+    "5": {
+      "measured_duration_s": 0.45,
+      "mean_fault_power_pu": 0.6704413443030645,
+      "power_pixel_uncertainty_pu": 0.03066073892380806,
+      "estimated_preclear_angle_change_rad": 0.18542283790158978,
+      "integrated_preclear_angle_change_rad": 0.1779336817214089,
+      "measured_p_integral_at_clear_rad": 0.18315923442590826,
+      "fault_phase_rmse_with_recorded_power_rad": 0.010923396777862976,
+      "angle_pixel_uncertainty_rad": 0.009632355215667002,
+      "post_fault_first_100ms_power_95th_percentile_pu": 1.259911083857121,
+      "ending_scope_unwrapped_angle_turns": -0.0007665184730952015
+    },
+    "6": {
+      "measured_duration_s": 0.652,
+      "mean_fault_power_pu": 0.6469314337469398,
+      "power_pixel_uncertainty_pu": 0.03066073892380806,
+      "estimated_preclear_angle_change_rad": 0.3612133205875126,
+      "integrated_preclear_angle_change_rad": 0.3063088958582112,
+      "measured_p_integral_at_clear_rad": 0.3135331622699614,
+      "fault_phase_rmse_with_recorded_power_rad": 0.09720334208620614,
+      "angle_pixel_uncertainty_rad": 0.19264710431334006,
+      "post_fault_first_100ms_power_95th_percentile_pu": 0.8613214778476161,
+      "ending_scope_unwrapped_angle_turns": 1.0
+    }
+  },
+  "sampled_trace_columns": [
+    "time_s",
+    "angle_rad",
+    "active_power_pu",
+    "reactive_power_pu",
+    "converter_current_pu",
+    "grid_current_pu",
+    "capacitor_voltage_pu",
+    "limited_current_reference_pu",
+    "circular_limiter_active",
+    "bridge_unlimited_command_pu",
+    "grid_voltage_pu",
+    "bridge_limited_command_pu"
+  ],
+  "readback_phase_replay_columns": [
+    "time_s",
+    "power_pu",
+    "image_angle_rad",
+    "integrated_from_power_rad",
+    "relative_capacitor_v_pu"
+  ],
+  "checks": {
+    "archived_scalar_cct_matches_independent_inverse": true,
+    "fig3_si_power_curve_both_levels": true,
+    "fig3_equilibrium_angles": true,
+    "fig3_readback_clearing_integral": true,
+    "fig5_phase_integral_from_visible_power": true,
+    "fig6_phase_integral_within_scope_resolution": true,
+    "fig5_scope_returns_without_phase_wrap": true,
+    "fig6_scope_unwraps_once": true,
+    "si_full_kcl_at_both_grid_voltages": true,
+    "si_zero_capacitor_matches_original_equations": true,
+    "printed_pu_full_kcl_at_both_grid_voltages": true,
+    "printed_pu_zero_capacitor_matches_original_equations": true,
+    "si_nominal_exact_hold_matches_independent_ode": true,
+    "si_nominal_electrical_energy_balance": true,
+    "si_nominal_prefault_fixed_point": true,
+    "si_nominal_fig5_reference_limit": true,
+    "si_nominal_fig5_settled_classification": true,
+    "si_nominal_fig6_reference_limit": true,
+    "si_nominal_fig6_settled_classification": true,
+    "printed_pu_exact_hold_matches_independent_ode": true,
+    "printed_pu_electrical_energy_balance": true,
+    "printed_pu_prefault_fixed_point": true,
+    "printed_pu_fig5_reference_limit": true,
+    "printed_pu_fig5_settled_classification": true,
+    "printed_pu_fig6_reference_limit": true,
+    "printed_pu_fig6_settled_classification": true,
+    "grid_frame_hold_exact_hold_matches_independent_ode": true,
+    "grid_frame_hold_electrical_energy_balance": true,
+    "grid_frame_hold_prefault_fixed_point": true,
+    "grid_frame_hold_fig5_reference_limit": true,
+    "grid_frame_hold_fig5_settled_classification": true,
+    "grid_frame_hold_fig6_reference_limit": true,
+    "grid_frame_hold_fig6_settled_classification": true,
+    "extra_tick_delay_exact_hold_matches_independent_ode": true,
+    "extra_tick_delay_electrical_energy_balance": true,
+    "extra_tick_delay_prefault_fixed_point": true,
+    "ki_per_second_exact_hold_matches_independent_ode": true,
+    "ki_per_second_electrical_energy_balance": true,
+    "ki_per_second_prefault_fixed_point": true,
+    "ki_per_second_fig5_reference_limit": true,
+    "ki_per_second_fig5_settled_classification": true,
+    "ki_per_second_fig6_reference_limit": true,
+    "ki_per_second_fig6_settled_classification": true,
+    "prefilter_50hz_exact_hold_matches_independent_ode": true,
+    "prefilter_50hz_electrical_energy_balance": true,
+    "prefilter_50hz_prefault_fixed_point": true,
+    "prefilter_50hz_fig5_reference_limit": true,
+    "prefilter_50hz_fig5_settled_classification": true,
+    "prefilter_50hz_fig6_reference_limit": true,
+    "prefilter_50hz_fig6_settled_classification": true,
+    "retain_voltage_pi_state_exact_hold_matches_independent_ode": true,
+    "retain_voltage_pi_state_electrical_energy_balance": true,
+    "retain_voltage_pi_state_prefault_fixed_point": true,
+    "retain_voltage_pi_state_fig5_reference_limit": true,
+    "retain_voltage_pi_state_fig5_settled_classification": true,
+    "retain_voltage_pi_state_fig6_reference_limit": true,
+    "retain_voltage_pi_state_fig6_settled_classification": true,
+    "dc700_svpwm_headroom_exact_hold_matches_independent_ode": true,
+    "dc700_svpwm_headroom_electrical_energy_balance": true,
+    "dc700_svpwm_headroom_prefault_fixed_point": true,
+    "dc700_svpwm_headroom_fig5_reference_limit": true,
+    "dc700_svpwm_headroom_fig5_settled_classification": true,
+    "dc700_svpwm_headroom_fig5_bridge_voltage_limit": true,
+    "dc700_svpwm_headroom_fig6_reference_limit": true,
+    "dc700_svpwm_headroom_fig6_settled_classification": true,
+    "dc700_svpwm_headroom_fig6_bridge_voltage_limit": true,
+    "fig5_visible_duration_within_4ms": true,
+    "fig6_visible_duration_within_4ms": true,
+    "nominal_sampled_transition_bracket_resolved": true
+  }
+}

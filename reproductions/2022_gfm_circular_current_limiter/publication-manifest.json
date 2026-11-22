@@ -1,0 +1,30 @@
+{
+  "artifact_sha256": {
+    "LICENSE": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe",
+    "README.md": "fb9679f0c62e67c14d2abaa73384c31539a58c3dc7e099ed10f3ece88aede609",
+    "configs/figure_audit.json": "90935bde930f3fc8234fd23e9e1fa0f400bf28e7c1686e66d9ab7c94ca5ce4c3",
+    "configs/protocol.json": "cf19c8098f114a334afc57dccd08d20489b116d558dc7187da07c05732b4410c",
+    "figures/power_angle_and_recovery.png": "b3428f42d35a613d1280a255b416a6c49d9b421c34048cea40e40080f43a44f2",
+    "figures/sampled_circuit_response.png": "5ebb4e9eecdb0bbcf7626a985923431f107edadce9905171af09e2388dc3a13d",
+    "reports/REPORT.md": "cdfdf4412410ee31e66d09b4af11ec9ecbaeea6d94ec7b2dea0abe962ad2fda4",
+    "reports/status.json": "55d777254133c973bee01dd59c7ef5799dceee5143943f525890def062e38aa5",
+    "requirements.txt": "5412ec654e8f92ca7cc98176713e00ba24f76dc745baaa71d9645c4af5757f43",
+    "results/clean_replay_comparison.json": "206eff14e669fdaac6d938bfa5f19c943a7bfa35b4207a68de64b0b6fb41c9e3",
+    "results/extended_metrics.json": "6a49744ce828a5edd57952a08906bef9546efa827a4367a686b51d33f3a4b6d6",
+    "results/extended_model_traces.npz": "2749cc4c3c5720c2686951631a8a64d79978b14fda1204918fb68056467ffcb9",
+    "results/figure_audit.json": "538e297cafa116a0c0eb40b2a6659ee624b15f4eeb2cba3b8c618a28254e7afc",
+    "results/run_manifest.json": "da0f3f4368a5b3e24720fb731d64daf6d65e6365ae7e9a03e68792a8c4949415",
+    "results/trajectories.npz": "45d25538225e6de52ce13abdea31ce4a0cf5cfa7876b1c49d34a75eb9b347fca",
+    "sources/source_audit.md": "b6dcbf48b306bbfe65deff58b89f0bcb76be009fcb7ec9c21e79d6b2e3662b73",
+    "sources/source_manifest.json": "e9dad1ec2f68ff7f349e2ff9f6056961558fad4cf17113050741ff31f3283edf",
+    "src/audit_figures.py": "f932d973c340f8d39a44eb14675dfadb362bcca83990867a14ef60bf8ffdd4a8",
+    "src/phasor_circuit.py": "41fc7b4997d2c9cf0658aa05b87bf463081622dc8b14eedfa7a18cbb71e01d7c",
+    "src/plot_extended.py": "41e40497043ffb85e7201e918e38262a093c9d472bd2773f2cb343cc58e63d95",
+    "src/render_public.py": "518d2927c3976378c719c628f628a672930daa31d11b98dd6c5d6f5a278847c2",
+    "src/reproduce.py": "ffaa6371814f4095379e6d46f346d775cf8ff76523ebd12ccc81ccd699eb5b87",
+    "src/run_extended.py": "12ab4122dad236438d1dd29ae6f4e8909b66ea97505a3befe8e771cd07fdba9e",
+    "src/sampled_circuit.py": "570f844da034659c7951de2d6694ee2fb50a5dc5b31a2767e9c609dcdcf9c77d",
+    "verification/extended_protocol.json": "203f1bde5711e0529834ea83b31147f2638c01978baa5cf0e45d4dad191f7492",
+    "verification/read_published.py": "9cb3b85fb263efed94c2209f2bc54a5cdaca6babd8d6c0170629fc96937537db"
+  }
+}

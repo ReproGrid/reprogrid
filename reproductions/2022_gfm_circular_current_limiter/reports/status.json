@@ -1,0 +1,41 @@
+{
+  "doi": "10.1109/TPWRS.2022.3173160",
+  "state": "report_ready",
+  "display_state_zh": "圆形限流功角曲线已复现，450 ms 电路模型与实验恢复有差异",
+  "outcome": "scalar_and_sampled_replays_with_quantified_short_sag_power_discrepancy",
+  "scope_zh": "图 3 功角曲线、450/650 ms 降阶及 10 kHz 电路、下垂有功输入重放和敏感性。",
+  "checks_total": 77,
+  "checks_passed": 77,
+  "hardware_validation": false,
+  "clean_environment_replay_passed": true,
+  "critical_gaps": [
+    "The Fig. 5 laboratory result returns without a slip under the labelled 450 ms sag while the nominal scalar and sampled circuit predict one slip.",
+    "Raw synchronized records, grid-voltage phase, gain conversion, and ADC-to-PWM latency are unavailable."
+  ],
+  "report_sha256": "cdfdf4412410ee31e66d09b4af11ec9ecbaeea6d94ec7b2dea0abe962ad2fda4",
+  "primary_manifest_sha256": "da0f3f4368a5b3e24720fb731d64daf6d65e6365ae7e9a03e68792a8c4949415",
+  "all_paper_claims_reproduced": false,
+  "public_fulltext_url": "https://vbn.aau.dk/ws/files/473629176/TPWRS3173160.pdf",
+  "key_results": {
+    "reduced_clearing_s": 0.33036449572930676,
+    "capacitor_clearing_s": 0.33881730547954897,
+    "sampled_clearing_s_bracket": [
+      0.3109,
+      0.3125
+    ],
+    "fig5_visible_mean_active_power_pu": 0.6704413443030645,
+    "fig5_sampled_mean_active_power_pu": 0.6226556809465397
+  },
+  "anomaly_evidence": [
+    {
+      "type": "simulation_experiment_discrepancy",
+      "source": "results/extended_metrics.json",
+      "finding": "A fixed-gain replay of the visible Fig. 5 power follows its angle. Terminal power remains different in the nominal circuit reproduction.",
+      "misconduct_inference": false
+    }
+  ],
+  "misconduct_allegation": null,
+  "extended_checks": 69,
+  "extended_manifest_sha256": "16fdf23d92cf84139d42f84b97035630d8f1aeda08007daec08d2eb509a891e8",
+  "source_report_sha256": "63d74686a109430791765480febebf6aa58ce1ccf93d99da9a79e334205bef91"
+}

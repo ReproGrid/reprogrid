@@ -1,0 +1,109 @@
+{
+  "fig3": {
+    "sep_rad": 0.19145395093034592,
+    "uep_rad": 0.37183794386436825,
+    "clearance_from_vector_seconds": 0.330142630854538,
+    "plotted_examples": {
+      "short": {
+        "angle_rad": 0.33898662036356125,
+        "time_implied_at_table_i_gain_s": 0.2707074812462273,
+        "beyond_uep": false
+      },
+      "long": {
+        "angle_rad": 0.38903290052446415,
+        "time_implied_at_table_i_gain_s": 0.36043411633421946,
+        "beyond_uep": true
+      }
+    },
+    "curve_errors": {
+      "si_derived": {
+        "normal": {
+          "points": 6284,
+          "rmse_pu": 0.00012505124347361079,
+          "max_abs_pu": 0.000891348037399986
+        },
+        "sag": {
+          "points": 6283,
+          "rmse_pu": 7.304094934626767e-05,
+          "max_abs_pu": 0.00027798695343250746
+        }
+      },
+      "printed_pu": {
+        "normal": {
+          "points": 6284,
+          "rmse_pu": 0.0034024890484011428,
+          "max_abs_pu": 0.021240725366440172
+        },
+        "sag": {
+          "points": 6283,
+          "rmse_pu": 0.0013785540541210468,
+          "max_abs_pu": 0.0024621723690004815
+        }
+      }
+    }
+  },
+  "oscilloscope": [
+    {
+      "figure": 5,
+      "nominal_duration_s": 0.45,
+      "raster_duration_s": 0.44955044955044965,
+      "baseline_method_variants": 27,
+      "replayed_fault_angle_increase_rad_range": [
+        0.16048475921422684,
+        0.2038069797579601
+      ],
+      "nominal_model_fault_angle_increase_rad": 0.2509118618685917,
+      "original_basin_angle_increase_rad": 0.1804121921181697,
+      "range_contains_boundary": true,
+      "mean_replayed_power_deficit_pu_range": [
+        0.11363326516700734,
+        0.14430811179277472
+      ]
+    },
+    {
+      "figure": 6,
+      "nominal_duration_s": 0.65,
+      "raster_duration_s": 0.6473526473526475,
+      "baseline_method_variants": 27,
+      "replayed_fault_angle_increase_rad_range": [
+        0.2508837927488155,
+        0.3444597891232781
+      ],
+      "nominal_model_fault_angle_increase_rad": 0.3938843248843087,
+      "original_basin_angle_increase_rad": 0.1804121921181697,
+      "range_contains_boundary": false,
+      "mean_replayed_power_deficit_pu_range": [
+        0.12336211467090802,
+        0.16937438460955848
+      ]
+    }
+  ],
+  "checks": {
+    "vector_curves_match_si_model": true,
+    "vector_clearance_agrees_with_si_model": true,
+    "fig3_clearing_examples_straddle_boundary": true,
+    "scope_timebase_agrees_with_captions": true
+  },
+  "provenance": {
+    "source_pdf_sha256": "ffcc20bbf011ad0350524bc8a5bede18070494d038fcac9fa6cdd3d2042abaec",
+    "figure_protocol_sha256": "90935bde930f3fc8234fd23e9e1fa0f400bf28e7c1686e66d9ab7c94ca5ce4c3",
+    "primary_manifest_sha256": "da0f3f4368a5b3e24720fb731d64daf6d65e6365ae7e9a03e68792a8c4949415",
+    "primary_trajectories_sha256": "45d25538225e6de52ce13abdea31ce4a0cf5cfa7876b1c49d34a75eb9b347fca",
+    "implementation_sha256": "f932d973c340f8d39a44eb14675dfadb362bcca83990867a14ef60bf8ffdd4a8",
+    "pymupdf_version": "2.1"
+  },
+  "trace_columns": {
+    "normal_and_sag": [
+      "angle_rad",
+      "power_pu"
+    ],
+    "scope_5_and_scope_6": [
+      "time_s",
+      "angle_increase_min_rad",
+      "angle_increase_max_rad",
+      "power_deficit_min_pu",
+      "power_deficit_max_pu"
+    ]
+  },
+  "passed": true
+}
