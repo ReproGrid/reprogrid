@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks_passed": 45,
+  "checks_total": 45,
+  "independent_data_hash_matches_handoff": {
+    "metrics.json": "cbebe0e516cd6baddb1ec0a3cee0135bb5884cb70e59b97bc6f6b2a056de1f29",
+    "numerical_traces.npz": "1234fb2099f63af44be6320e2bcf6e07cc7088d9f968e5343dacf6937cd20e63"
+  },
+  "public_computed_figure_sha256": {
+    "resistance_power_and_phase.png": "4108cff7804ad7eeced51a58b784244c129b335591f499c646c588464c5c6d0c",
+    "vsg_derating_boundary.png": "a7f411fc73c071e7dd26fdec0b78e4a59ef9034da40c9e850e78a61b29c72a9e"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

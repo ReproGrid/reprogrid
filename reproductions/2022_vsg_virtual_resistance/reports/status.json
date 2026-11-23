@@ -1,0 +1,41 @@
+{
+  "doi": "10.1109/TIE.2021.3082055",
+  "state": "report_ready",
+  "outcome": "vsg_virtual_resistance_derating_reproduced_with_boundary_sensitivity",
+  "display_state_zh": "VSG 虚拟电阻与有功降额已复算，舍入可翻转失步判定",
+  "scope_zh": "按图 3 单机电路、表 I 与式 (14)–(20)，复算图 4、5、10、11 的功角曲线、跌落相轨迹和临界降额增益。",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "paper_condition_replay_state": "reduced_model_qualitative_agreement_with_gain_scale_and_amplitude_gaps",
+  "public_fulltext_url": "https://vbn.aau.dk/ws/files/475879419/Effects_of_Virtual_Resistance_on_Transient_Stability_of_Virtual_Synchronous_Generators_under_Grid_Voltage_Sag.pdf",
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 45,
+  "checks_total": 45,
+  "key_results": {
+    "table_i_si_x_pu": 0.5024000000000001,
+    "printed_x_pu": 0.5,
+    "fig10_case2_outcome_si": "forward_slip",
+    "fig10_case2_outcome_rounded": "settles",
+    "fig11_k_at_rv_0p02_rg_0p003_w_per_v": 1.3626708984375,
+    "fig11_k_at_rv_0p02_rg_0_w_per_v": 2.5887451171875,
+    "fig10_case5_simulated_peak_rad_s": 0.963085621346994,
+    "fig10_case5_published_peak_rad_s": 1.5696835935617153
+  },
+  "critical_gaps": [
+    "Kfactor unit annotation in Figs. 10–11 and original model input file used by ode45",
+    "Original dSPACE controller timing, limiters and lab acquisition data"
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "input_precision_and_dimensional_sensitivity",
+      "source": "results/metrics.json",
+      "finding": "Using 0.5 pu rather than the SI-derived reactance changes the Fig. 10 first-swing classifications. Fig. 10 Case 5 differs in phase-portrait amplitude under the consistent SI-gain interpretation.",
+      "misconduct_inference": false
+    }
+  ],
+  "report_sha256": "bdf8af5b6e8b20b0ba77bb2ef2478ac6201e1d1064e0f510dd7c67a348aaea96",
+  "source_report_sha256": "73f82de3b909611aebaaea495a391f195ebce8c99ca8ca93ea4a042d265a72f6",
+  "publication_scope": "Independent numerical reconstruction. Paper digitization is regenerated locally from a hash-pinned manuscript. Public figures show computed trajectories."
+}

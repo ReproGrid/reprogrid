@@ -49,6 +49,9 @@ diff -r -x '._*' papers/rfpsc-linear/results /tmp/reprogrid-rfpsc
 | 并网稳定 / Grid synchronization | [GFM/GFL single-inverter duality](reproductions/2022_gfm_gfl_duality) | 六组根轨迹，及推断阻值下的 GFL 网强切换 / Six root-locus sweeps and the GFL transient with inferred resistance |
 | 微网稳定 / Microgrid stability | [DC microgrid with constant power loads](reproductions/2017_dc_microgrid_robust_cpl) | 九节点和八节点证书、四组电压复算及 440 V 工况差异 / Nine- and eight-bus certificates, four voltage replays, and the 440 V discrepancy |
 | 构网稳定 / GFM stability | [Circular current limiter](reproductions/2022_gfm_circular_current_limiter) | 功角、10 kHz 采样与 450/650 ms 滑相对照 / Power angle, 10 kHz sampling, and 450/650 ms slip cases |
+| 并网稳定 / Grid synchronization | [PLL transient stability](reproductions/2020_pll_transient_stability) | 临界阻尼差异、相图与 600 ms 跌落 / Critical-damping discrepancy, phase portraits and 600 ms sags |
+| 构网稳定 / GFM stability | [VSG acceleration voltage compensation](reproductions/2022_vsg_avr_transient) | 电压环、增益区间和电流裕度 / Voltage loop, gain interval and current headroom |
+| 构网稳定 / GFM stability | [VSG virtual resistance](reproductions/2022_vsg_virtual_resistance) | 跌落、降额边界及电抗舍入敏感性 / Sags, derating limits and reactance-rounding sensitivity |
 
 各目录包含冻结配置、开源实现、计算结果与验证记录。以上范围均为计算证据，原硬件实验未得到定量复现。
 

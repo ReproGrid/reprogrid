@@ -1,0 +1,48 @@
+{
+  "doi": "10.1109/TIE.2021.3114723",
+  "state": "report_ready",
+  "outcome": "vsg_acceleration_voltage_compensation_with_gain_interval_discrepancy",
+  "display_state_zh": "VSG 电压补偿的首摆收益已复算，增益上下界存在差异",
+  "scope_zh": "复算单台 VSG 接无穷大母线下图 6、8、9 与第 III-C 节的增益选择。",
+  "code_executed": true,
+  "hardware_validation": false,
+  "all_paper_claims_reproduced": false,
+  "paper_condition_replay_state": "reduced_model_reproduced_with_quantitative_and_gain_case_discrepancies",
+  "public_fulltext_url": "https://vbn.aau.dk/ws/files/452682649/FINAL_VERSION.pdf",
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 18,
+  "checks_total": 18,
+  "key_results": {
+    "paper_k_interval": [
+      0.54,
+      0.94
+    ],
+    "table_i_k_interval": [
+      0.18,
+      0.87
+    ],
+    "text_scr_k_interval": [
+      0.3,
+      0.89
+    ],
+    "k_0p30_turn_rad": 1.684115111218588,
+    "k_0p90_voltage_pu": 1.2231304568189196
+  },
+  "critical_gaps": [
+    "Original Fig. 6 and Fig. 9 model, initial state and integration input file",
+    "Outer-voltage and current limiter implementations, including overmodulation and anti-windup",
+    "Raw experimental voltage, current and phase recordings"
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "reproducible_numerical_discrepancy",
+      "source": "results/metrics.json",
+      "finding": "Table I and Eqs. (1), (7), (13), (14), (29) give different admissible k values and a different k=0.30 outcome from Section III-C and Fig. 9.",
+      "misconduct_inference": false
+    }
+  ],
+  "report_sha256": "12a3a56723058643721481d4973720504dc5123aa751528d6db275067b074936",
+  "source_report_sha256": "4d6da60cf18401f7b5ab064d5470b506608dc8015a792b4b97ad8d3258e9ae04",
+  "publication_scope": "Independent numerical reconstruction. Paper digitization is regenerated locally from a hash-pinned manuscript. Public figures show computed trajectories."
+}

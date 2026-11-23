@@ -1,0 +1,18 @@
+{
+  "doi": "10.1109/TIE.2021.3082055",
+  "title": "Effects of Virtual Resistance on Transient Stability of Virtual Synchronous Generators Under Grid Voltage Sag",
+  "authors": ["Xiaoling Xiong", "Chao Wu", "Frede Blaabjerg"],
+  "journal": "IEEE Transactions on Industrial Electronics, 69(5), 4754–4764, 2022",
+  "publication_year_of_record": 2022,
+  "public_landing_page": "https://vbn.aau.dk/da/publications/effects-of-virtual-resistance-on-transient-stability-of-virtual-s/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/475879419/Effects_of_Virtual_Resistance_on_Transient_Stability_of_Virtual_Synchronous_Generators_under_Grid_Voltage_Sag.pdf",
+    "local_path": "sources/accepted.pdf",
+    "sha256": "7401ea5bd619f4bdb67f8f191283264bad7acb6aaae585d4adb73d21adae0b13",
+    "kind": "Public accepted author manuscript hosted by Aalborg University",
+    "figure_page_numbers_counting_cover": {"3":5,"4":6,"5":6,"10":8,"11":8,"13":10,"14":10,"15":10}
+  },
+  "digitization": {"script":"verification/read_figures.py","results":"results/published_curves.json","method":"Calibrate axes and read the phase trajectories in Fig. 10 and critical-gain paths in Fig. 11 from the pinned PDF."},
+  "citation_snapshot": {"date":"2026-11-10","cited_by_count":174,"normalized_percentile":0.98431442,"rank":22,"openalex_id":"W3164185548"},
+  "unavailable_artifacts": ["Kfactor unit annotation in Figs. 10–11 and original model input file used by ode45","Original dSPACE controller timing, limiters and lab acquisition data"]
+}

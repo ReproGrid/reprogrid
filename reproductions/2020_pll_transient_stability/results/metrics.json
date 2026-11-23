@@ -1,0 +1,1767 @@
+{
+  "doi": "10.1109/TPEL.2019.2937942",
+  "prefault_stable_angle_rad": 0.28379410920832787,
+  "inductance_pu_s": 0.0008912676813146139,
+  "unbounded_phase_trace_columns": [
+    "s",
+    "rad",
+    "Hz deviation"
+  ],
+  "critical_damping": {
+    "fault_v_pu": 0.14,
+    "ratio": 0.7142857142857143,
+    "zeta": 0.3910394401277755,
+    "zeta_finer_seed": 0.39103944070660546,
+    "article_text_zeta": 0.695,
+    "article_vector_zeta": 0.6997100296242968,
+    "forward_boundary_checks": [
+      {
+        "damping": 0.39003944012777547,
+        "forward_outcome": "crosses_saddle"
+      },
+      {
+        "damping": 0.3920394401277755,
+        "forward_outcome": "converges"
+      },
+      {
+        "damping": 0.5,
+        "forward_outcome": "converges"
+      }
+    ],
+    "starting_angle_sensitivity": [
+      {
+        "phase_offset_deg": -5,
+        "initial_phase_rad": 0.19652764660861138,
+        "critical_zeta": 0.2615818333633028
+      },
+      {
+        "phase_offset_deg": 0,
+        "initial_phase_rad": 0.28379410920832787,
+        "critical_zeta": 0.3910394401277755
+      },
+      {
+        "phase_offset_deg": 5,
+        "initial_phase_rad": 0.37106057180804436,
+        "critical_zeta": 0.5145289052766241
+      }
+    ],
+    "published_marker_sensitivity": {
+      "angle_rad": 0.3295755746800202,
+      "critical_zeta": 0.456522838174354
+    },
+    "critical_initial_phase_offset_deg_for_case_i": 4.399920072558988,
+    "array_columns": [
+      "disturbance_ratio",
+      "same_topology_critical_zeta",
+      "figure9_vector_zeta"
+    ]
+  },
+  "phase_portraits": {
+    "0.14": {
+      "equilibrium": {
+        "count": 2,
+        "stable_rad": -0.7956029534845354,
+        "lower_separatrix_rad": -2.3459897001052576
+      },
+      "cases": {
+        "case_i": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            8463.999999999998
+          ],
+          "initial_frequency_deviation_hz": -2.0382018632120484,
+          "min_phase_rad_before_-pi_or_time_limit": -1.912553376344861,
+          "crosses_fault_basin_edge": false,
+          "angle_at_last_sample_rad": -0.7956029340852749,
+          "last_time_s": 4.0,
+          "time_to_minus_pi_s": null,
+          "converges_to_hyperbolic_equilibrium": true,
+          "independent_swing_sequence_abs_error": 5.248979029204293e-10,
+          "reformulations_agree_on_crossing_minus_pi": true
+        },
+        "case_ii": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            940.4444444444442
+          ],
+          "initial_frequency_deviation_hz": -2.0382018632120484,
+          "min_phase_rad_before_-pi_or_time_limit": -1.212455355481937,
+          "crosses_fault_basin_edge": false,
+          "angle_at_last_sample_rad": -0.7956029773406124,
+          "last_time_s": 4.0,
+          "time_to_minus_pi_s": null,
+          "converges_to_hyperbolic_equilibrium": true,
+          "independent_swing_sequence_abs_error": 1.0279110895794474e-10,
+          "reformulations_agree_on_crossing_minus_pi": true
+        },
+        "case_iii_p_mode": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            0.0
+          ],
+          "initial_frequency_deviation_hz": -2.0382018632120484,
+          "min_phase_rad_before_-pi_or_time_limit": -0.7956029534845351,
+          "crosses_fault_basin_edge": false,
+          "angle_at_last_sample_rad": -0.7956029534845351,
+          "last_time_s": 4.0,
+          "time_to_minus_pi_s": null,
+          "converges_to_hyperbolic_equilibrium": true,
+          "independent_swing_sequence_abs_error": 6.702705057648473e-11,
+          "reformulations_agree_on_crossing_minus_pi": true
+        }
+      },
+      "prefault_angle_from_fig13_marker_rad": 0.3295755746800202,
+      "adaptive_fig13_curve_frequency_at_phase_zero_hz": -2.8989268910242822,
+      "p_mode_equation_frequency_at_phase_zero_hz": -1.464225476445437
+    },
+    "0.10": {
+      "equilibrium": {
+        "count": 1,
+        "stable_rad": -1.5707963267948966,
+        "lower_separatrix_rad": -1.5707963267948966
+      },
+      "cases": {
+        "case_i": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            8463.999999999998
+          ],
+          "initial_frequency_deviation_hz": -1.8742086098501591,
+          "min_phase_rad_before_-pi_or_time_limit": -3.1415926535897927,
+          "crosses_fault_basin_edge": true,
+          "angle_at_last_sample_rad": -3.1415926535897927,
+          "last_time_s": 0.10868856149964505,
+          "time_to_minus_pi_s": 0.10868856149964505,
+          "converges_to_hyperbolic_equilibrium": false,
+          "independent_swing_sequence_abs_error": 6.621299064590858e-10,
+          "reformulations_agree_on_crossing_minus_pi": true
+        },
+        "case_ii": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            940.4444444444442
+          ],
+          "initial_frequency_deviation_hz": -1.8742086098501591,
+          "min_phase_rad_before_-pi_or_time_limit": -3.1415926535897927,
+          "crosses_fault_basin_edge": true,
+          "angle_at_last_sample_rad": -3.1415926535897927,
+          "last_time_s": 0.33508326789988074,
+          "time_to_minus_pi_s": 0.33508326789988074,
+          "converges_to_hyperbolic_equilibrium": false,
+          "independent_swing_sequence_abs_error": 1.0486655988017901e-09,
+          "reformulations_agree_on_crossing_minus_pi": true
+        },
+        "case_iii_p_mode": {
+          "gains_kp_ki": [
+            91.99999999999999,
+            0.0
+          ],
+          "initial_frequency_deviation_hz": -1.8742086098501591,
+          "min_phase_rad_before_-pi_or_time_limit": -1.5175465960706875,
+          "crosses_fault_basin_edge": false,
+          "angle_at_last_sample_rad": -1.5175465960706875,
+          "last_time_s": 4.0,
+          "time_to_minus_pi_s": null,
+          "converges_to_hyperbolic_equilibrium": false,
+          "independent_swing_sequence_abs_error": 2.5474733433838992e-11,
+          "reformulations_agree_on_crossing_minus_pi": true,
+          "independent_closed_form_max_angle_error_rad": 1.395517035263083e-11
+        }
+      },
+      "prefault_angle_from_fig13_marker_rad": 0.3295755746800202,
+      "adaptive_fig13_curve_frequency_at_phase_zero_hz": -3.0639420805936837,
+      "p_mode_equation_frequency_at_phase_zero_hz": -1.464225476445437
+    }
+  },
+  "sampled_replays": {
+    "duration_s": 0.6,
+    "reported_cases": {
+      "0.14": {
+        "case_i_fix_pi": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.9273704286549307,
+          "fault_minimum_frequency_hz": 45.44417951956623,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 20.279245519236056,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 91.8891788281142,
+          "current_reactive_alignment_error_deg": 1.889178828114197,
+          "final_postfault_frequency_hz": 50.0,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": []
+        },
+        "case_ii_fix_pi": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7142967627669616,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 88.77056572477493,
+          "current_reactive_alignment_error_deg": -1.2294342752250742,
+          "final_postfault_frequency_hz": 49.99999999552316,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.388831021882254e-09,
+          "switching_events": []
+        },
+        "case_iii_fig12_order": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7969711938168833,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 0.17933333333333334,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 90.0208490037462,
+          "current_reactive_alignment_error_deg": 0.020849003746207018,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 10.188461988303127
+            },
+            {
+              "time_from_fault_s": 0.1076,
+              "p_mode": false,
+              "phase_rad": -0.46953167134393897,
+              "threshold_signal": 0.4990934461123533
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -0.7969711938168833,
+              "threshold_signal": 78.98293254859806
+            },
+            {
+              "time_from_fault_s": 0.6362,
+              "p_mode": false,
+              "phase_rad": 0.18572746443918875,
+              "threshold_signal": 0.44900614376525483
+            },
+            {
+              "time_from_fault_s": 0.6518,
+              "p_mode": true,
+              "phase_rad": 0.26726519871747567,
+              "threshold_signal": 5.000656587361702
+            },
+            {
+              "time_from_fault_s": 1.1795,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.4998994350156284
+            }
+          ]
+        },
+        "adaptive_abs_rocof_first": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7922766954132332,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 12.163909618461354,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 89.95050931152103,
+          "current_reactive_alignment_error_deg": -0.049490688478968536,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.220446049250313e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 10.188461988303127
+            },
+            {
+              "time_from_fault_s": 1.7634,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49976615564548554
+            }
+          ]
+        },
+        "adaptive_angular_thresholds": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7957241749335995,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 64.01599466766392,
+          "p_mode_fraction_during_fault": 0.7938333333333333,
+          "at_fault_entry_rocof_in_selected_units": 64.01599466766392,
+          "clearance_current_angle_from_pcc_deg": 90.0018019674068,
+          "current_reactive_alignment_error_deg": 0.0018019674068057157,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 64.01599466766392
+            },
+            {
+              "time_from_fault_s": 0.1218,
+              "p_mode": false,
+              "phase_rad": -0.5137664324214537,
+              "threshold_signal": 0.4995911184872912
+            },
+            {
+              "time_from_fault_s": 0.24550000000000002,
+              "p_mode": true,
+              "phase_rad": -0.7985634562170996,
+              "threshold_signal": 5.001852262429757
+            },
+            {
+              "time_from_fault_s": 0.6371,
+              "p_mode": false,
+              "phase_rad": 0.19434271379857657,
+              "threshold_signal": 0.41463622489562824
+            },
+            {
+              "time_from_fault_s": 0.6387,
+              "p_mode": true,
+              "phase_rad": 0.20739879224324637,
+              "threshold_signal": 5.254857784313115
+            },
+            {
+              "time_from_fault_s": 1.5392000000000001,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.4997977133759934
+            }
+          ]
+        },
+        "adaptive_omit_held_integral": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7969711938168833,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 0.17933333333333334,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 90.0208490037462,
+          "current_reactive_alignment_error_deg": 0.020849003746207018,
+          "final_postfault_frequency_hz": 49.99999981284859,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 9.986341048540126e-08,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 10.188461988303127
+            },
+            {
+              "time_from_fault_s": 0.1076,
+              "p_mode": false,
+              "phase_rad": -0.46953167134393897,
+              "threshold_signal": 0.4990934461123533
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -0.7969711938168833,
+              "threshold_signal": 78.98293254859806
+            },
+            {
+              "time_from_fault_s": 0.6362,
+              "p_mode": false,
+              "phase_rad": 0.18572746443918875,
+              "threshold_signal": 0.44900614376525483
+            },
+            {
+              "time_from_fault_s": 0.6521,
+              "p_mode": true,
+              "phase_rad": 0.2710586817573692,
+              "threshold_signal": 5.002202567892187
+            },
+            {
+              "time_from_fault_s": 1.1795,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.4998052175709669
+            }
+          ]
+        },
+        "case_i_pi_conditional_integration": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.9273704286549307,
+          "fault_minimum_frequency_hz": 45.44417951956623,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 20.279245519236056,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 91.8891788281142,
+          "current_reactive_alignment_error_deg": 1.889178828114197,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.220446049250313e-16,
+          "switching_events": []
+        },
+        "case_ii_pi_conditional_integration": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7142967627669616,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 88.77056572477493,
+          "current_reactive_alignment_error_deg": -1.2294342752250742,
+          "final_postfault_frequency_hz": 49.99999999889956,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 5.871919617206345e-10,
+          "switching_events": []
+        },
+        "p_mode_all_the_time": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.7922766954132332,
+          "fault_minimum_frequency_hz": 47.96179813678795,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 89.95050931152103,
+          "current_reactive_alignment_error_deg": -0.049490688478968536,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.831068712794149e-15,
+          "switching_events": []
+        },
+        "pll_freeze": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": 0.28379410920832787,
+          "fault_minimum_frequency_hz": 50.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.188461988303127,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 10.188461988303127,
+          "clearance_current_angle_from_pcc_deg": 71.43242229472584,
+          "current_reactive_alignment_error_deg": -18.56757770527416,
+          "final_postfault_frequency_hz": 50.0,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 0.0,
+          "switching_events": []
+        }
+      },
+      "0.10": {
+        "case_i_fix_pi": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -18.31316006011654,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.5662,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.0671,
+          "first_negative_full_cycle_slip_s": 0.2081,
+          "max_filtered_rocof_in_selected_units_during_fault": 149.69104181823178,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 65.86169858689023,
+          "current_reactive_alignment_error_deg": -24.138301413109772,
+          "final_postfault_frequency_hz": 49.999999999997364,
+          "final_nearest_nominal_rotation": -3,
+          "final_nominal_equilibrium_residual_rad": 1.7763568394002505e-14,
+          "switching_events": []
+        },
+        "case_ii_fix_pi": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -11.207884604991811,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.1839,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.1918,
+          "first_negative_full_cycle_slip_s": 0.4319,
+          "max_filtered_rocof_in_selected_units_during_fault": 21.356481714424255,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 54.04880301603014,
+          "current_reactive_alignment_error_deg": -35.95119698396986,
+          "final_postfault_frequency_hz": 50.00000001552222,
+          "final_nearest_nominal_rotation": -2,
+          "final_nominal_equilibrium_residual_rad": 8.28261192964419e-09,
+          "switching_events": []
+        },
+        "case_iii_fig12_order": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.5645271483979633,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.3899,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 0.221,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 76.4121401482815,
+          "current_reactive_alignment_error_deg": -13.587859851718505,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.1326,
+              "p_mode": false,
+              "phase_rad": -0.6315374964667747,
+              "threshold_signal": 0.49947065507773664
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -2.5645271483979633,
+              "threshold_signal": 57.452203171346106
+            },
+            {
+              "time_from_fault_s": 0.679,
+              "p_mode": false,
+              "phase_rad": -0.08266895206204689,
+              "threshold_signal": 0.39169378861424764
+            },
+            {
+              "time_from_fault_s": 0.6815,
+              "p_mode": true,
+              "phase_rad": -0.0047549500354716785,
+              "threshold_signal": 5.066174907905767
+            },
+            {
+              "time_from_fault_s": 1.4984000000000002,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49986977058052934
+            }
+          ]
+        },
+        "adaptive_abs_rocof_first": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -1.2545553185790794,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.307953082702658,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 89.0853465480847,
+          "current_reactive_alignment_error_deg": -0.9146534519152993,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 1.6653345369377348e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 1.8117,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49990896700988274
+            }
+          ]
+        },
+        "adaptive_angular_thresholds": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.0745666100208826,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.4188,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 58.865282453024285,
+          "p_mode_fraction_during_fault": 0.32266666666666666,
+          "at_fault_entry_rocof_in_selected_units": 58.865282453024285,
+          "clearance_current_angle_from_pcc_deg": 86.91923200224234,
+          "current_reactive_alignment_error_deg": -3.080767997757661,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 1.6653345369377348e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 58.865282453024285
+            },
+            {
+              "time_from_fault_s": 0.1521,
+              "p_mode": false,
+              "phase_rad": -0.7000574374639464,
+              "threshold_signal": 0.48918733693924754
+            },
+            {
+              "time_from_fault_s": 0.5585,
+              "p_mode": true,
+              "phase_rad": -2.031152565940931,
+              "threshold_signal": 5.0007097871799235
+            },
+            {
+              "time_from_fault_s": 1.8125,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49984241607403757
+            }
+          ]
+        },
+        "adaptive_omit_held_integral": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.5645271483979633,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.3899,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 0.221,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 76.4121401482815,
+          "current_reactive_alignment_error_deg": -13.587859851718505,
+          "final_postfault_frequency_hz": 50.00003874373448,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.0673650419023026e-05,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.1326,
+              "p_mode": false,
+              "phase_rad": -0.6315374964667747,
+              "threshold_signal": 0.49947065507773664
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -2.5645271483979633,
+              "threshold_signal": 57.452203171346106
+            },
+            {
+              "time_from_fault_s": 0.679,
+              "p_mode": false,
+              "phase_rad": -0.08266895206204689,
+              "threshold_signal": 0.39169378861424764
+            },
+            {
+              "time_from_fault_s": 0.6794,
+              "p_mode": true,
+              "phase_rad": -0.0706622625249949,
+              "threshold_signal": 5.145075119807067
+            },
+            {
+              "time_from_fault_s": 1.4983,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.4999701779360038
+            }
+          ]
+        },
+        "case_i_pi_conditional_integration": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -18.294942948316564,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.4924,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.0674,
+          "first_negative_full_cycle_slip_s": 0.20850000000000002,
+          "max_filtered_rocof_in_selected_units_during_fault": 23.473252014903224,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 65.58183785944338,
+          "current_reactive_alignment_error_deg": -24.418162140556618,
+          "final_postfault_frequency_hz": 50.000000000002714,
+          "final_nearest_nominal_rotation": -3,
+          "final_nominal_equilibrium_residual_rad": 1.7763568394002505e-14,
+          "switching_events": []
+        },
+        "case_ii_pi_conditional_integration": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -10.295334338716359,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0772,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.1918,
+          "first_negative_full_cycle_slip_s": 0.43220000000000003,
+          "max_filtered_rocof_in_selected_units_during_fault": 16.477197807134658,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 46.74141556661681,
+          "current_reactive_alignment_error_deg": -43.25858443338319,
+          "final_postfault_frequency_hz": 50.000000009039596,
+          "final_nearest_nominal_rotation": -2,
+          "final_nominal_equilibrium_residual_rad": 4.82351936170744e-09,
+          "switching_events": []
+        },
+        "p_mode_all_the_time": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -1.2545553185790794,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 89.0853465480847,
+          "current_reactive_alignment_error_deg": -0.9146534519152993,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.831068712794149e-15,
+          "switching_events": []
+        },
+        "pll_freeze": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": 0.28379410920832787,
+          "fault_minimum_frequency_hz": 50.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 71.20011484134734,
+          "current_reactive_alignment_error_deg": -18.799885158652657,
+          "final_postfault_frequency_hz": 50.0,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 0.0,
+          "switching_events": []
+        }
+      }
+    },
+    "adaptive_refinements": {
+      "case_iii_fig12_order": {
+        "total_duration_s": 0.6,
+        "phase_at_clearing_rad": -2.563411754041721,
+        "fault_minimum_frequency_hz": 48.12579139014984,
+        "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+        "fault_separatrix_or_fold_rad": -1.5707963267948966,
+        "first_crossing_of_edge_s": 0.38995,
+        "first_negative_full_cycle_slip_s": null,
+        "max_filtered_rocof_in_selected_units_during_fault": 9.36987176647724,
+        "p_mode_fraction_during_fault": 0.22108333333333333,
+        "at_fault_entry_rocof_in_selected_units": 9.36987176647724,
+        "clearance_current_angle_from_pcc_deg": 76.43037633758127,
+        "current_reactive_alignment_error_deg": -13.569623662418735,
+        "final_postfault_frequency_hz": 50.000000000000085,
+        "final_nearest_nominal_rotation": 0,
+        "final_nominal_equilibrium_residual_rad": 4.996003610813204e-16,
+        "switching_events": [
+          {
+            "time_from_fault_s": 0.0,
+            "p_mode": true,
+            "phase_rad": 0.28379410920832787,
+            "threshold_signal": 9.36987176647724
+          },
+          {
+            "time_from_fault_s": 0.13265000000000002,
+            "p_mode": false,
+            "phase_rad": -0.6316185565630309,
+            "threshold_signal": 0.4991869714896245
+          },
+          {
+            "time_from_fault_s": 0.6,
+            "p_mode": true,
+            "phase_rad": -2.563411754041721,
+            "threshold_signal": 57.540962132466746
+          },
+          {
+            "time_from_fault_s": 0.67895,
+            "p_mode": false,
+            "phase_rad": -0.08312435403266909,
+            "threshold_signal": 0.4414944662360433
+          },
+          {
+            "time_from_fault_s": 0.68145,
+            "p_mode": true,
+            "phase_rad": -0.005226191062627452,
+            "threshold_signal": 5.016271401365255
+          },
+          {
+            "time_from_fault_s": 1.49825,
+            "p_mode": false,
+            "phase_rad": 0.28379410920832215,
+            "threshold_signal": 0.49998573402847435
+          }
+        ]
+      },
+      "adaptive_abs_rocof_first": {
+        "total_duration_s": 0.6,
+        "phase_at_clearing_rad": -1.2545182268221047,
+        "fault_minimum_frequency_hz": 48.12579139014984,
+        "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+        "fault_separatrix_or_fold_rad": -1.5707963267948966,
+        "first_crossing_of_edge_s": null,
+        "first_negative_full_cycle_slip_s": null,
+        "max_filtered_rocof_in_selected_units_during_fault": 10.30830800239291,
+        "p_mode_fraction_during_fault": 1.0,
+        "at_fault_entry_rocof_in_selected_units": 9.36987176647724,
+        "clearance_current_angle_from_pcc_deg": 89.08526856605909,
+        "current_reactive_alignment_error_deg": -0.9147314339409149,
+        "final_postfault_frequency_hz": 50.000000000000085,
+        "final_nearest_nominal_rotation": 0,
+        "final_nominal_equilibrium_residual_rad": 3.885780586188048e-16,
+        "switching_events": [
+          {
+            "time_from_fault_s": 0.0,
+            "p_mode": true,
+            "phase_rad": 0.28379410920832787,
+            "threshold_signal": 9.36987176647724
+          },
+          {
+            "time_from_fault_s": 1.8117,
+            "p_mode": false,
+            "phase_rad": 0.28379410920832215,
+            "threshold_signal": 0.499942270530754
+          }
+        ]
+      }
+    },
+    "duration_sensitivity_at_fold": [
+      {
+        "duration_s": 2,
+        "fig12_order": {
+          "total_duration_s": 2,
+          "phase_at_clearing_rad": -20.059169308768293,
+          "fault_minimum_frequency_hz": 47.07154907726342,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.3899,
+          "first_negative_full_cycle_slip_s": 0.8569,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 0.32785,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 88.78779879117005,
+          "current_reactive_alignment_error_deg": -1.2122012088299527,
+          "final_postfault_frequency_hz": 50.00000000000273,
+          "final_nearest_nominal_rotation": -3,
+          "final_nominal_equilibrium_residual_rad": 1.7763568394002505e-14,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.1326,
+              "p_mode": false,
+              "phase_rad": -0.6315374964667747,
+              "threshold_signal": 0.49947065507773664
+            },
+            {
+              "time_from_fault_s": 0.6123000000000001,
+              "p_mode": true,
+              "phase_rad": -2.692319960657487,
+              "threshold_signal": 5.004101554209384
+            },
+            {
+              "time_from_fault_s": 0.6124,
+              "p_mode": false,
+              "phase_rad": -2.6928403949813093,
+              "threshold_signal": 0.20992247168604194
+            },
+            {
+              "time_from_fault_s": 0.6604,
+              "p_mode": true,
+              "phase_rad": -3.0849378454823166,
+              "threshold_signal": 5.006467557146535
+            },
+            {
+              "time_from_fault_s": 0.8529,
+              "p_mode": false,
+              "phase_rad": -5.950548411391058,
+              "threshold_signal": 0.49601652048018025
+            },
+            {
+              "time_from_fault_s": 1.1673,
+              "p_mode": true,
+              "phase_rad": -9.135365569099816,
+              "threshold_signal": 5.013137906391452
+            },
+            {
+              "time_from_fault_s": 1.2073,
+              "p_mode": false,
+              "phase_rad": -9.45180402800647,
+              "threshold_signal": 0.4940647885456505
+            },
+            {
+              "time_from_fault_s": 1.2395,
+              "p_mode": true,
+              "phase_rad": -9.86602176588135,
+              "threshold_signal": 5.008310361070106
+            },
+            {
+              "time_from_fault_s": 1.3689,
+              "p_mode": false,
+              "phase_rad": -12.011711349122441,
+              "threshold_signal": 0.49952654025300147
+            },
+            {
+              "time_from_fault_s": 1.6661000000000001,
+              "p_mode": true,
+              "phase_rad": -15.461219437061882,
+              "threshold_signal": 5.015199838244741
+            },
+            {
+              "time_from_fault_s": 1.7136,
+              "p_mode": false,
+              "phase_rad": -15.874065398560877,
+              "threshold_signal": 0.4924799148336454
+            },
+            {
+              "time_from_fault_s": 1.7432,
+              "p_mode": true,
+              "phase_rad": -16.293493774381865,
+              "threshold_signal": 5.005681041047657
+            },
+            {
+              "time_from_fault_s": 1.8568,
+              "p_mode": false,
+              "phase_rad": -18.219345148632105,
+              "threshold_signal": 0.4918614133113793
+            },
+            {
+              "time_from_fault_s": 2.0,
+              "p_mode": true,
+              "phase_rad": -20.059169308768293,
+              "threshold_signal": 78.29050707215106
+            },
+            {
+              "time_from_fault_s": 2.0395000000000003,
+              "p_mode": false,
+              "phase_rad": -18.824235290356206,
+              "threshold_signal": 0.44117453035274123
+            },
+            {
+              "time_from_fault_s": 2.0431,
+              "p_mode": true,
+              "phase_rad": -18.74532611652447,
+              "threshold_signal": 5.106030557963363
+            },
+            {
+              "time_from_fault_s": 2.7866,
+              "p_mode": false,
+              "phase_rad": -18.565761812330614,
+              "threshold_signal": 0.4998495104489186
+            }
+          ]
+        },
+        "abs_rocof_first": {
+          "total_duration_s": 2,
+          "phase_at_clearing_rad": -2.4947460599526776,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 1.3652,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 10.307953082702658,
+          "p_mode_fraction_during_fault": 0.4259,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 78.42667594813294,
+          "current_reactive_alignment_error_deg": -11.573324051867061,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 1.6653345369377348e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.8518,
+              "p_mode": false,
+              "phase_rad": -1.3389663618173349,
+              "threshold_signal": 0.4998855100100853
+            },
+            {
+              "time_from_fault_s": 2.0,
+              "p_mode": true,
+              "phase_rad": -2.4947460599526776,
+              "threshold_signal": 76.79443977394412
+            },
+            {
+              "time_from_fault_s": 3.2483,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49999655167667506
+            }
+          ]
+        },
+        "fixed_p_mode": {
+          "total_duration_s": 2,
+          "phase_at_clearing_rad": -1.4664661223503002,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 89.89269792343143,
+          "current_reactive_alignment_error_deg": -0.1073020765685726,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.831068712794149e-15,
+          "switching_events": []
+        }
+      },
+      {
+        "duration_s": 5,
+        "fig12_order": {
+          "total_duration_s": 5,
+          "phase_at_clearing_rad": -59.476945185139186,
+          "fault_minimum_frequency_hz": 46.957907552579755,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.3899,
+          "first_negative_full_cycle_slip_s": 0.8569,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 0.31952,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 65.870348386983,
+          "current_reactive_alignment_error_deg": -24.129651613017003,
+          "final_postfault_frequency_hz": 50.000000000005535,
+          "final_nearest_nominal_rotation": -9,
+          "final_nominal_equilibrium_residual_rad": 2.842170943040401e-14,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.1326,
+              "p_mode": false,
+              "phase_rad": -0.6315374964667747,
+              "threshold_signal": 0.49947065507773664
+            },
+            {
+              "time_from_fault_s": 0.6123000000000001,
+              "p_mode": true,
+              "phase_rad": -2.692319960657487,
+              "threshold_signal": 5.004101554209384
+            },
+            {
+              "time_from_fault_s": 0.6124,
+              "p_mode": false,
+              "phase_rad": -2.6928403949813093,
+              "threshold_signal": 0.20992247168604194
+            },
+            {
+              "time_from_fault_s": 0.6604,
+              "p_mode": true,
+              "phase_rad": -3.0849378454823166,
+              "threshold_signal": 5.006467557146535
+            },
+            {
+              "time_from_fault_s": 0.8529,
+              "p_mode": false,
+              "phase_rad": -5.950548411391058,
+              "threshold_signal": 0.49601652048018025
+            },
+            {
+              "time_from_fault_s": 1.1673,
+              "p_mode": true,
+              "phase_rad": -9.135365569099816,
+              "threshold_signal": 5.013137906391452
+            },
+            {
+              "time_from_fault_s": 1.2073,
+              "p_mode": false,
+              "phase_rad": -9.45180402800647,
+              "threshold_signal": 0.4940647885456505
+            },
+            {
+              "time_from_fault_s": 1.2395,
+              "p_mode": true,
+              "phase_rad": -9.86602176588135,
+              "threshold_signal": 5.008310361070106
+            },
+            {
+              "time_from_fault_s": 1.3689,
+              "p_mode": false,
+              "phase_rad": -12.011711349122441,
+              "threshold_signal": 0.49952654025300147
+            },
+            {
+              "time_from_fault_s": 1.6661000000000001,
+              "p_mode": true,
+              "phase_rad": -15.461219437061882,
+              "threshold_signal": 5.015199838244741
+            },
+            {
+              "time_from_fault_s": 1.7136,
+              "p_mode": false,
+              "phase_rad": -15.874065398560877,
+              "threshold_signal": 0.4924799148336454
+            },
+            {
+              "time_from_fault_s": 1.7432,
+              "p_mode": true,
+              "phase_rad": -16.293493774381865,
+              "threshold_signal": 5.005681041047657
+            },
+            {
+              "time_from_fault_s": 1.8568,
+              "p_mode": false,
+              "phase_rad": -18.219345148632105,
+              "threshold_signal": 0.4918614133113793
+            },
+            {
+              "time_from_fault_s": 2.1489000000000003,
+              "p_mode": true,
+              "phase_rad": -21.756921040002872,
+              "threshold_signal": 5.003751289514523
+            },
+            {
+              "time_from_fault_s": 2.1988000000000003,
+              "p_mode": false,
+              "phase_rad": -22.202976086793385,
+              "threshold_signal": 0.49706030463481377
+            },
+            {
+              "time_from_fault_s": 2.2278000000000002,
+              "p_mode": true,
+              "phase_rad": -22.6264191997286,
+              "threshold_signal": 5.011018495956358
+            },
+            {
+              "time_from_fault_s": 2.3360000000000003,
+              "p_mode": false,
+              "phase_rad": -24.47362734524576,
+              "threshold_signal": 0.4969586856037091
+            },
+            {
+              "time_from_fault_s": 2.6263,
+              "p_mode": true,
+              "phase_rad": -28.045805944792573,
+              "threshold_signal": 5.010744734596516
+            },
+            {
+              "time_from_fault_s": 2.677,
+              "p_mode": false,
+              "phase_rad": -28.50414445954921,
+              "threshold_signal": 0.49650903957645925
+            },
+            {
+              "time_from_fault_s": 2.7058,
+              "p_mode": true,
+              "phase_rad": -28.929572241060363,
+              "threshold_signal": 5.017411735661991
+            },
+            {
+              "time_from_fault_s": 2.8119,
+              "p_mode": false,
+              "phase_rad": -30.745739660696717,
+              "threshold_signal": 0.4962535205463153
+            },
+            {
+              "time_from_fault_s": 3.1015,
+              "p_mode": true,
+              "phase_rad": -34.33070459347827,
+              "threshold_signal": 5.008880388944428
+            },
+            {
+              "time_from_fault_s": 3.1526,
+              "p_mode": false,
+              "phase_rad": -34.7945836472831,
+              "threshold_signal": 0.492431697205312
+            },
+            {
+              "time_from_fault_s": 3.1813000000000002,
+              "p_mode": true,
+              "phase_rad": -35.22041251387484,
+              "threshold_signal": 5.018612889665059
+            },
+            {
+              "time_from_fault_s": 3.2866,
+              "p_mode": false,
+              "phase_rad": -37.02468691962841,
+              "threshold_signal": 0.496457256268312
+            },
+            {
+              "time_from_fault_s": 3.5759000000000003,
+              "p_mode": true,
+              "phase_rad": -40.61389269707593,
+              "threshold_signal": 5.002529234003175
+            },
+            {
+              "time_from_fault_s": 3.6272,
+              "p_mode": false,
+              "phase_rad": -41.080046557583955,
+              "threshold_signal": 0.4921668988092786
+            },
+            {
+              "time_from_fault_s": 3.6558,
+              "p_mode": true,
+              "phase_rad": -41.504715055619364,
+              "threshold_signal": 5.0040556939156176
+            },
+            {
+              "time_from_fault_s": 3.7609000000000004,
+              "p_mode": false,
+              "phase_rad": -43.30600532868648,
+              "threshold_signal": 0.4996397585824864
+            },
+            {
+              "time_from_fault_s": 4.0501000000000005,
+              "p_mode": true,
+              "phase_rad": -46.8976860460782,
+              "threshold_signal": 5.005841506122779
+            },
+            {
+              "time_from_fault_s": 4.1014,
+              "p_mode": false,
+              "phase_rad": -47.36420226786382,
+              "threshold_signal": 0.49383145816741925
+            },
+            {
+              "time_from_fault_s": 4.13,
+              "p_mode": true,
+              "phase_rad": -47.789170811100306,
+              "threshold_signal": 5.004968923550019
+            },
+            {
+              "time_from_fault_s": 4.235,
+              "p_mode": false,
+              "phase_rad": -49.58897279476601,
+              "threshold_signal": 0.4963656349272857
+            },
+            {
+              "time_from_fault_s": 4.5242,
+              "p_mode": true,
+              "phase_rad": -53.181165085272205,
+              "threshold_signal": 5.007343506012802
+            },
+            {
+              "time_from_fault_s": 4.5755,
+              "p_mode": false,
+              "phase_rad": -53.64785635523713,
+              "threshold_signal": 0.49285858972579344
+            },
+            {
+              "time_from_fault_s": 4.6041,
+              "p_mode": true,
+              "phase_rad": -54.072969781435596,
+              "threshold_signal": 5.006947607416001
+            },
+            {
+              "time_from_fault_s": 4.7091,
+              "p_mode": false,
+              "phase_rad": -55.87277536352765,
+              "threshold_signal": 0.49144998201109236
+            },
+            {
+              "time_from_fault_s": 4.9984,
+              "p_mode": true,
+              "phase_rad": -59.46542955790361,
+              "threshold_signal": 5.016681826447845
+            },
+            {
+              "time_from_fault_s": 5.0882000000000005,
+              "p_mode": false,
+              "phase_rad": -56.706060464671594,
+              "threshold_signal": 0.2617483967167922
+            },
+            {
+              "time_from_fault_s": 5.0907,
+              "p_mode": true,
+              "phase_rad": -56.62752064833181,
+              "threshold_signal": 5.055768327215416
+            },
+            {
+              "time_from_fault_s": 5.9465,
+              "p_mode": false,
+              "phase_rad": -56.264873655408316,
+              "threshold_signal": 0.4997562567374391
+            }
+          ]
+        },
+        "abs_rocof_first": {
+          "total_duration_s": 5,
+          "phase_at_clearing_rad": -13.703694426518487,
+          "fault_minimum_frequency_hz": 47.071549121155826,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 1.3652,
+          "first_negative_full_cycle_slip_s": 2.2816,
+          "max_filtered_rocof_in_selected_units_during_fault": 12.047744798950303,
+          "p_mode_fraction_during_fault": 0.53092,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 88.35029064440312,
+          "current_reactive_alignment_error_deg": -1.6497093555968831,
+          "final_postfault_frequency_hz": 50.00000000000141,
+          "final_nearest_nominal_rotation": -2,
+          "final_nominal_equilibrium_residual_rad": 5.329070518200751e-15,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 9.368700678899426
+            },
+            {
+              "time_from_fault_s": 0.8518,
+              "p_mode": false,
+              "phase_rad": -1.3389663618173349,
+              "threshold_signal": 0.4998855100100853
+            },
+            {
+              "time_from_fault_s": 2.0191,
+              "p_mode": true,
+              "phase_rad": -2.6528203425270633,
+              "threshold_signal": 5.000069514072108
+            },
+            {
+              "time_from_fault_s": 3.1476,
+              "p_mode": false,
+              "phase_rad": -7.62559954825347,
+              "threshold_signal": 0.49997203280321484
+            },
+            {
+              "time_from_fault_s": 4.3257,
+              "p_mode": true,
+              "phase_rad": -8.936799892313356,
+              "threshold_signal": 5.007078201218111
+            },
+            {
+              "time_from_fault_s": 6.205500000000001,
+              "p_mode": false,
+              "phase_rad": -12.282576505150937,
+              "threshold_signal": 0.4998857949486728
+            }
+          ]
+        },
+        "fixed_p_mode": {
+          "total_duration_s": 5,
+          "phase_at_clearing_rad": -1.5280251490106018,
+          "fault_minimum_frequency_hz": 48.12579139014984,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 9.368700678899426,
+          "p_mode_fraction_during_fault": 1.0,
+          "at_fault_entry_rocof_in_selected_units": 9.368700678899426,
+          "clearance_current_angle_from_pcc_deg": 89.98156609546028,
+          "current_reactive_alignment_error_deg": -0.018433904539719492,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.831068712794149e-15,
+          "switching_events": []
+        }
+      }
+    ],
+    "slew_sensitivity": [
+      {
+        "ramp_s": 0.002,
+        "case_i_0p14": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.9260603279410007,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0014,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 45.7015953592658,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 16.331528206030516,
+          "clearance_current_angle_from_pcc_deg": 91.87569877545522,
+          "current_reactive_alignment_error_deg": 1.87569877545522,
+          "final_postfault_frequency_hz": 50.0,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": []
+        },
+        "adaptive_0p10": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.618596111227415,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0013000000000000002,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.38530000000000003,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 40.11043176115589,
+          "p_mode_fraction_during_fault": 0.21416666666666667,
+          "at_fault_entry_rocof_in_selected_units": 15.438545311599704,
+          "clearance_current_angle_from_pcc_deg": 74.82793023741696,
+          "current_reactive_alignment_error_deg": -15.172069762583035,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 15.438545311599704
+            },
+            {
+              "time_from_fault_s": 0.1285,
+              "p_mode": false,
+              "phase_rad": -0.6275448117438301,
+              "threshold_signal": 0.49770092394753324
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -2.618596111227415,
+              "threshold_signal": 53.541462506250795
+            },
+            {
+              "time_from_fault_s": 0.6805,
+              "p_mode": false,
+              "phase_rad": -0.08961402508765504,
+              "threshold_signal": 0.4023304769784518
+            },
+            {
+              "time_from_fault_s": 0.683,
+              "p_mode": true,
+              "phase_rad": -0.011319863070912149,
+              "threshold_signal": 5.069674441467909
+            },
+            {
+              "time_from_fault_s": 1.5037,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49985462764678784
+            }
+          ]
+        }
+      },
+      {
+        "ramp_s": 0.005,
+        "case_i_0p14": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.9283307213362859,
+          "fault_minimum_frequency_hz": 45.0,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0002,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 25.851751388426667,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 4.986868055745274,
+          "clearance_current_angle_from_pcc_deg": 91.90336115048358,
+          "current_reactive_alignment_error_deg": 1.9033611504835761,
+          "final_postfault_frequency_hz": 50.0,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": []
+        },
+        "adaptive_0p10": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.574733224497736,
+          "fault_minimum_frequency_hz": 45.69006085383979,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.3894,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 21.3178454809068,
+          "p_mode_fraction_during_fault": 0.219,
+          "at_fault_entry_rocof_in_selected_units": 5.879850950176085,
+          "clearance_current_angle_from_pcc_deg": 76.11768399033211,
+          "current_reactive_alignment_error_deg": -13.882316009667889,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 5.879850950176085
+            },
+            {
+              "time_from_fault_s": 0.0009000000000000001,
+              "p_mode": false,
+              "phase_rad": 0.2876650275157308,
+              "threshold_signal": 0.37503424086056336
+            },
+            {
+              "time_from_fault_s": 0.0019,
+              "p_mode": true,
+              "phase_rad": 0.2848147950747271,
+              "threshold_signal": 5.453253120214811
+            },
+            {
+              "time_from_fault_s": 0.13240000000000002,
+              "p_mode": false,
+              "phase_rad": -0.6289797957788728,
+              "threshold_signal": 0.4995572676934841
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -2.574733224497736,
+              "threshold_signal": 36.974996210086545
+            },
+            {
+              "time_from_fault_s": 0.6793,
+              "p_mode": false,
+              "phase_rad": -0.08345025020105096,
+              "threshold_signal": 0.431981095570277
+            },
+            {
+              "time_from_fault_s": 0.6818000000000001,
+              "p_mode": true,
+              "phase_rad": -0.005483154565852723,
+              "threshold_signal": 5.0287965567890796
+            },
+            {
+              "time_from_fault_s": 1.4989000000000001,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.4997963666535624
+            }
+          ]
+        }
+      },
+      {
+        "ramp_s": 0.01,
+        "case_i_0p14": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -0.9202879999061376,
+          "fault_minimum_frequency_hz": 45.372464028910194,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -2.3459897001052576,
+          "first_crossing_of_edge_s": null,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 20.395686785132995,
+          "p_mode_fraction_during_fault": 0.0,
+          "at_fault_entry_rocof_in_selected_units": 12.09300014300387,
+          "clearance_current_angle_from_pcc_deg": 91.79594079820333,
+          "current_reactive_alignment_error_deg": 1.7959407982033326,
+          "final_postfault_frequency_hz": 49.99999999999996,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": []
+        },
+        "adaptive_0p10": {
+          "total_duration_s": 0.6,
+          "phase_at_clearing_rad": -2.608792416004371,
+          "fault_minimum_frequency_hz": 46.90407779809307,
+          "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+          "fault_separatrix_or_fold_rad": -1.5707963267948966,
+          "first_crossing_of_edge_s": 0.38970000000000005,
+          "first_negative_full_cycle_slip_s": null,
+          "max_filtered_rocof_in_selected_units_during_fault": 15.124288719897653,
+          "p_mode_fraction_during_fault": 0.22183333333333333,
+          "at_fault_entry_rocof_in_selected_units": 12.98598303743468,
+          "clearance_current_angle_from_pcc_deg": 75.11618453509561,
+          "current_reactive_alignment_error_deg": -14.883815464904387,
+          "final_postfault_frequency_hz": 50.00000000000004,
+          "final_nearest_nominal_rotation": 0,
+          "final_nominal_equilibrium_residual_rad": 2.7755575615628914e-16,
+          "switching_events": [
+            {
+              "time_from_fault_s": 0.0,
+              "p_mode": true,
+              "phase_rad": 0.28379410920832787,
+              "threshold_signal": 12.98598303743468
+            },
+            {
+              "time_from_fault_s": 0.004,
+              "p_mode": false,
+              "phase_rad": 0.31812759780527855,
+              "threshold_signal": 0.44980781693122496
+            },
+            {
+              "time_from_fault_s": 0.006,
+              "p_mode": true,
+              "phase_rad": 0.31267245294968277,
+              "threshold_signal": 5.027008516420156
+            },
+            {
+              "time_from_fault_s": 0.1351,
+              "p_mode": false,
+              "phase_rad": -0.6103752405134607,
+              "threshold_signal": 0.4985396149503951
+            },
+            {
+              "time_from_fault_s": 0.6,
+              "p_mode": true,
+              "phase_rad": -2.608792416004371,
+              "threshold_signal": 28.02650309314979
+            },
+            {
+              "time_from_fault_s": 0.6804,
+              "p_mode": false,
+              "phase_rad": -0.08295192251820044,
+              "threshold_signal": 0.3782211260702203
+            },
+            {
+              "time_from_fault_s": 0.6829000000000001,
+              "p_mode": true,
+              "phase_rad": -0.005018241424467627,
+              "threshold_signal": 5.08038859193362
+            },
+            {
+              "time_from_fault_s": 1.5,
+              "p_mode": false,
+              "phase_rad": 0.28379410920832504,
+              "threshold_signal": 0.49999051704983244
+            }
+          ]
+        }
+      }
+    ],
+    "small_r_diagnostic": {
+      "total_duration_s": 0.6,
+      "phase_at_clearing_rad": -0.17271907881888315,
+      "fault_minimum_frequency_hz": 49.29095690250656,
+      "time_on_lower_frequency_clamp_during_fault_s": 0.0,
+      "fault_separatrix_or_fold_rad": -2.9402347327994622,
+      "first_crossing_of_edge_s": null,
+      "first_negative_full_cycle_slip_s": null,
+      "max_filtered_rocof_in_selected_units_during_fault": 3.5132627545872848,
+      "p_mode_fraction_during_fault": 0.0,
+      "at_fault_entry_rocof_in_selected_units": 3.5132627545872848,
+      "clearance_current_angle_from_pcc_deg": 89.574272427994,
+      "current_reactive_alignment_error_deg": -0.42572757200599654,
+      "final_postfault_frequency_hz": 49.99999999989999,
+      "final_nearest_nominal_rotation": 0,
+      "final_nominal_equilibrium_residual_rad": 5.33642019462377e-11,
+      "switching_events": [
+        {
+          "time_from_fault_s": 0.6,
+          "p_mode": true,
+          "phase_rad": -0.17271907881888315,
+          "threshold_signal": 35.8083108329501
+        },
+        {
+          "time_from_fault_s": 0.6273000000000001,
+          "p_mode": false,
+          "phase_rad": 0.25013123545254295,
+          "threshold_signal": 0.49839319414980027
+        }
+      ]
+    }
+  },
+  "rocof_units": {
+    "kp_rad_s_per_pu": 91.99999999999999,
+    "reference_r_pu": 0.02,
+    "fault_edge_s": 0.01,
+    "equation20_angular_rad_per_s2": 8.973785891868621,
+    "equation20_hz_per_s": 1.4282223829392038,
+    "manuscript_hz_per_s": 8.8,
+    "published_switch_on_hz_per_s": 5,
+    "table_i_table_ii_sags_eq17": [
+      {
+        "sag_pu": 0.14,
+        "frequency_jump_hz": -2.0382018632120484,
+        "eq17_edge_estimate_hz_per_s": 9.940427785256858
+      },
+      {
+        "sag_pu": 0.1,
+        "frequency_jump_hz": -1.8742086098501591,
+        "eq17_edge_estimate_hz_per_s": 9.140623250810902
+      }
+    ]
+  },
+  "sampled_trace_columns": [
+    "time_s",
+    "angle_rad",
+    "frequency_hz",
+    "raw_frequency_hz",
+    "pcc_d_pu",
+    "pcc_q_pu",
+    "threshold_signal_in_selected_units",
+    "p_mode",
+    "integrator_rad_s",
+    "current_d_pu",
+    "current_q_pu",
+    "grid_voltage_pu"
+  ],
+  "checks": {
+    "stable_manifold_refines": true,
+    "stable_manifold_bracket_matches_forward_trajectories": true,
+    "published_fig9_readback_matches_quoted_threshold": true,
+    "fig13_damping_case_i_consistent_with_forward_critical_calculation": true,
+    "unique_equilibrium_at_published_deep_sag": true,
+    "fold_p_mode_agrees_with_exact_cotangent_solution": true,
+    "0.14_case_i_independent_formulation": true,
+    "0.14_case_ii_independent_formulation": true,
+    "0.14_case_iii_p_mode_independent_formulation": true,
+    "0.14_case_i_fix_pi_frequency_guard_consistent": true,
+    "0.14_case_ii_fix_pi_frequency_guard_consistent": true,
+    "0.14_case_iii_fig12_order_frequency_guard_consistent": true,
+    "0.14_adaptive_abs_rocof_first_frequency_guard_consistent": true,
+    "0.14_adaptive_angular_thresholds_frequency_guard_consistent": true,
+    "0.14_adaptive_omit_held_integral_frequency_guard_consistent": true,
+    "0.14_case_i_pi_conditional_integration_frequency_guard_consistent": true,
+    "0.14_case_ii_pi_conditional_integration_frequency_guard_consistent": true,
+    "0.14_p_mode_all_the_time_frequency_guard_consistent": true,
+    "0.14_pll_freeze_frequency_guard_consistent": true,
+    "0.10_case_i_independent_formulation": true,
+    "0.10_case_ii_independent_formulation": true,
+    "0.10_case_iii_p_mode_independent_formulation": true,
+    "0.10_case_i_fix_pi_frequency_guard_consistent": true,
+    "0.10_case_ii_fix_pi_frequency_guard_consistent": true,
+    "0.10_case_iii_fig12_order_frequency_guard_consistent": true,
+    "0.10_adaptive_abs_rocof_first_frequency_guard_consistent": true,
+    "0.10_adaptive_angular_thresholds_frequency_guard_consistent": true,
+    "0.10_adaptive_omit_held_integral_frequency_guard_consistent": true,
+    "0.10_case_i_pi_conditional_integration_frequency_guard_consistent": true,
+    "0.10_case_ii_pi_conditional_integration_frequency_guard_consistent": true,
+    "0.10_p_mode_all_the_time_frequency_guard_consistent": true,
+    "0.10_pll_freeze_frequency_guard_consistent": true,
+    "case_iii_fig12_order_refinement_preserves_saddle_crossing": true,
+    "case_iii_fig12_order_refinement_clearance_phase_within_0p02_rad": true,
+    "adaptive_abs_rocof_first_refinement_preserves_saddle_crossing": true,
+    "adaptive_abs_rocof_first_refinement_clearance_phase_within_0p02_rad": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_sha256": {
+    "LICENSE": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe",
+    "README.md": "9c4e63f5bc7f9c0cee488e3fe247d5649bcb0c33abc23eadee2dc3cac829ccac",
+    "configs/protocol.json": "6f98933a31a1778e1e1237202e6f03770ea435a900817fe7b90ff8cd9ae23981",
+    "figures/adaptive_switching.png": "8827338ca83d2a1c6427e37972072b4f6358b16d35197e31a9bd21a9a5b9da80",
+    "figures/critical_damping.png": "253383be7ffc50c735421e512505de6f650cdc4747a0daf0ea31e527a1212708",
+    "figures/phase_portrait_replay.png": "99af2469972b76d7a5b087f466b77680485f433fb7a72ff1f9895a1f084f7cf2",
+    "reports/REPORT.md": "1546fb58f9ec6c6bced1124c53c5624081277867c5d6347e8a66a4e70329e3ee",
+    "reports/status.json": "88e469f5555c63efc2662f056d5955e845733ed30b6292e1f0d53d9d23dcc9c1",
+    "requirements.txt": "5412ec654e8f92ca7cc98176713e00ba24f76dc745baaa71d9645c4af5757f43",
+    "results/clean_replay_comparison.json": "13a7a12b33f52158b218198445cb62a8ec0045464f65fa95289d0a027a97e44b",
+    "results/metrics.json": "353ac5dcc2c876f2a69eeacfdb7e8641af43b7c0d4a7f867b8b5894d60f471b1",
+    "results/numerical_traces.npz": "62b7f520f23ddffa7d144d4ad8f37a7613947333efb8c0072cd296f5c24a94f2",
+    "sources/source_audit.md": "f1ccebd270aa8547bfbe69fccda9289d43354b61f70ed8a4449cb46c6d0dbd6c",
+    "sources/source_manifest.json": "c4921c0cba693116205a2cd27aa461589053bc7be91324cc2c8befd5a3c9c58b",
+    "src/model.py": "22603b5c6d4fc13d4c79e4745109f2c89c449478af222f6628ab2155182f9448",
+    "src/plots.py": "ff689af2af2dcafa6bfe05cfec6a384affd6cc9f948233b5a46eb3b7fd8c7cf4",
+    "src/reproduce.py": "793ea651a4f9627724b2221569c6a6beb16d8bd6c70e73973657ce23813992d7",
+    "src/stability.py": "921eee406c812b7a768d0f2aadf616d4b92b0c71118846d2590bb6c317aeffc7",
+    "src/studies.py": "53a5b471c2f12a4c579c1d1c18b617de6d10f6f0ac189e1ca40f917e86db68ce",
+    "verification/read_figures.py": "9bd3e5ad8587d7b9df930bc4a2246ac444e6485398dff6360add302e4e2c5b06"
+  }
+}

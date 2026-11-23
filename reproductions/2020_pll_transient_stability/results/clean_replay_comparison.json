@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks_passed": 36,
+  "checks_total": 36,
+  "independent_data_hash_matches_handoff": {
+    "metrics.json": "353ac5dcc2c876f2a69eeacfdb7e8641af43b7c0d4a7f867b8b5894d60f471b1",
+    "numerical_traces.npz": "62b7f520f23ddffa7d144d4ad8f37a7613947333efb8c0072cd296f5c24a94f2"
+  },
+  "public_computed_figure_sha256": {
+    "adaptive_switching.png": "8827338ca83d2a1c6427e37972072b4f6358b16d35197e31a9bd21a9a5b9da80",
+    "critical_damping.png": "253383be7ffc50c735421e512505de6f650cdc4747a0daf0ea31e527a1212708",
+    "phase_portrait_replay.png": "99af2469972b76d7a5b087f466b77680485f433fb7a72ff1f9895a1f084f7cf2"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

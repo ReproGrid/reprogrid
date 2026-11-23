@@ -1,0 +1,18 @@
+{
+  "doi": "10.1109/TIE.2021.3114723",
+  "title": "Enhanced Transient Angle Stability Control of Grid-Forming Converter Based on Virtual Synchronous Generator",
+  "authors": ["Meng Chen", "Dao Zhou", "Frede Blaabjerg"],
+  "journal": "IEEE Transactions on Industrial Electronics, 69(9), 9133–9144, 2022",
+  "publication_year_of_record": 2022,
+  "public_landing_page": "https://vbn.aau.dk/en/publications/enhanced-transient-angle-stability-control-of-grid-forming-conver/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/452682649/FINAL_VERSION.pdf",
+    "local_path": "sources/accepted.pdf",
+    "sha256": "4092d437b58178dab341d417cdd4e4649589b120da2e52fa60599f85964459c7",
+    "kind": "Public author version hosted by Aalborg University",
+    "figure_page_numbers_counting_cover": {"6":7,"8":8,"9":9}
+  },
+  "digitization": {"script":"verification/read_figures.py","results":"results/published_curves.json","method":"Calibrate axes and read vector paths of Figs. 6 and 9 from the pinned PDF."},
+  "citation_snapshot": {"date":"2026-11-10","cited_by_count":250,"normalized_percentile":0.99512582,"rank":19,"openalex_id":"W3204174786"},
+  "unavailable_artifacts": ["Original Fig. 6 and Fig. 9 model, initial state and integration input file","Outer-voltage and current limiter implementations, including overmodulation and anti-windup","Raw experimental voltage, current and phase recordings"]
+}

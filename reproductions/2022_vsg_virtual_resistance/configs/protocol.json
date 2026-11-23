@@ -1,0 +1,51 @@
+{
+  "doi": "10.1109/TIE.2021.3082055",
+  "scope": "Table I and Eqs. (2), (14)–(18), (20), using the topology of Fig. 3, with numeric comparisons to Figs. 4, 5, 10 and 11.",
+  "table_i": {
+    "power_base_w": 2000,
+    "voltage_phase_peak_v": 100,
+    "omega_0_rad_s": 314,
+    "l_grid_h": 0.012,
+    "r_grid_ohm": 0.0225,
+    "l_grid_printed_pu": 0.5,
+    "r_grid_printed_pu": 0.003,
+    "p_ref_pu": 1,
+    "q_ref_pu": 0,
+    "v_ref_pu": 1,
+    "grid_prefault_pu": 1,
+    "j_coeff": 10,
+    "dp_coeff": 25,
+    "dq_pu": 0.1
+  },
+  "source_tests": {
+    "fig4_pairs_rg_rv_pu": [[0.1,0],[0.05,0],[0,0],[0,0.05],[0,0.1]],
+    "fig4_grid_voltages_pu": [1,0.6,0.4],
+    "fig5_pairs_rg_rv_pu": [[0,0.003],[0,0.001],[0,0],[0.002,0],[0.005,0]],
+    "fig10_rv_and_gain": [[0.005,0],[0.015,0],[0.015,0.5],[0.015,5],[0.015,50]],
+    "fig11_grid_rg_pu": [0,0.003],
+    "fig11_virtual_resistance_pu": [0,0.005,0.01,0.015,0.02,0.03,0.04,0.05,0.06,0.08,0.1],
+    "fault_threshold_voltage_pu": 0.95,
+    "moderate_sag_pu": 0.6,
+    "deep_sag_pu": 0.4,
+    "deep_sag_gain_cases_w_per_v": [0,20,50],
+    "deep_sag_rv_pu": 0.015,
+    "exact_utility_frequency_hz": 50
+  },
+  "numerics": {
+    "trace_horizon_s": 24,
+    "search_horizon_s": 40,
+    "max_step_s": 0.045,
+    "waveform_step_s": 0.003,
+    "solver_rtol": 2e-10,
+    "solver_atol": 2e-12,
+    "gain_bracket_w_per_v": [0,24],
+    "gain_bracket_tolerance_w_per_v": 0.001
+  },
+  "assumptions": {
+    "bases": "Use balanced three-phase power and phase-peak voltage/current bases. Use rated active power also as the reactive power base.",
+    "frequency": "Baseline uses 314 rad/s and 12 mH from Table I. Independently repeat using its printed 0.5 pu and exact 50 Hz applied to 12 mH.",
+    "gain_unit": "The figure captions omit the conductance of the power-reference correction. Interpret Eq. (20) in W and V as primary; independently test the literal printed numbers as pu power per pu voltage.",
+    "disturbance": "Permanent balanced sag, nominal grid angle speed. Solve each configuration to its own prefault steady state. Voltage and current inner loops are ideal, with instantaneous Q–V droop and a delay-free threshold in Fig. 9.",
+    "limits": "Replay the power reference directly according to Eq. (20); firmware saturation, filtering and anti-windup settings are unavailable."
+  }
+}

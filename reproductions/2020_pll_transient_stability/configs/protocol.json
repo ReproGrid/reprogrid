@@ -1,0 +1,45 @@
+{
+  "doi": "10.1109/TPEL.2019.2937942",
+  "source_scope": "IEEE final paper, Fig. 2, Eqs. (1)–(20), Tables I–II, Figs. 9 and 13, balanced single-converter cases of Figs. 15–16",
+  "table_i": {
+    "rated_grid_ll_rms_v": 33000,
+    "rated_three_phase_w": 1000000,
+    "nominal_hz": 50,
+    "nominal_voltage_pu": 1,
+    "filter_inductance_pu": 0.096,
+    "line_inductance_pu": 0.28,
+    "line_resistance_pu": 0.1,
+    "rated_current_pu": 1,
+    "prefault_current_dq_pu": [1, 0],
+    "fault_current_dq_pu": [0, -1]
+  },
+  "table_ii": {"settling_time_s": 0.1, "damping_case_i": 0.5, "damping_case_ii_and_iii": 1.5},
+  "balanced_cases": {
+    "residual_voltage_pu": [0.14, 0.10],
+    "fault_on_s": 2.5,
+    "fault_clear_s": 3.1,
+    "reported_phase_portrait": {"0.14": {"case_i": "slips", "case_ii": "stable", "case_iii": "stable"},
+                                "0.10": {"case_i": "slips", "case_ii": "slips", "case_iii": "stable"}},
+    "reported_critical_damping_at_0p14": 0.695
+  },
+  "rocof": {"lpf_s": 0.2, "switch_on_hz_per_s": 5, "switch_off_hz_per_s": 0.5,
+            "output_frequency_limits_hz": [45, 55], "section_iv_b_reference_line_r_pu": 0.02,
+            "section_iv_b_reference_fault_edge_s": 0.01, "article_example_hz_per_s": 8.8},
+  "variants": {
+    "fault_current_ramp_s": [0.002, 0.005, 0.01],
+    "long_fault_duration_s": [0.6, 2, 5],
+    "reference_initial_phase_offsets_deg": [-5, 0, 5],
+    "damping_ratio_curve_disturbance_ratios": [0.6, 0.625, 0.65, 0.675, 0.7, 0.7142857142857143, 0.725, 0.75, 0.775, 0.8, 0.825, 0.85, 0.875, 0.9, 0.925, 0.95, 0.97, 0.98, 0.99]
+  },
+  "numerics": {"integral_state_ode_rtol": 2e-11, "integral_state_ode_atol": 2e-13, "continuous_phase_horizon_s": 4,
+               "phase_plot_interval_s": 0.0005, "separatrix_seed_rad": 0.000002,
+               "sample_period_s": 0.0001, "sample_period_refined_s": 0.00005, "postfault_horizon_s": 1.6},
+  "assumptions": {
+    "power_stage": "Use the author's Fig. 2 ideal current source at the PCC connected through Rline and Lline. The filter inductance Lf belongs to Fig. 1, outside the current-source equivalent. The fixed-frequency source and steps have zero phase jump.",
+    "normalization": "Vgn=1 pu. Kp and Ki are in radians per second and radians per second squared per pu detector voltage, respectively; all phase states use radians. ωgn=2π50 and Xline=ωgn Lline. Use Hz only after dividing angular frequency by 2π.",
+    "initialization": "Use the pre-fault stable root of Eq. (7) and zero frequency error, and preserve phase and unswitched integral state through the voltage/current step. In the unbounded phase portrait, the P-output can jump immediately.",
+    "hybrid_main": "Sampled implementation holds the PLL frequency on each step. Eq. (15) is evaluated with the preceding mode's raw frequency deviation as in Fig. 12, i.e. derivative of |Δf| then a signed LPF and magnitude test. Reset the integral on entering the transient proportional mode, with zero bias while in that mode. Check an alternative hold/omit policy, an absolute-derivative-first filter, and a numeric angular-ROCOF interpretation separately.",
+    "clipping": "Fig. 13 replay is unbounded as its frequency axis shows. The sampled time-domain cases use 45–55 Hz clipping, and they compare plain PI and conditional integration during clipping. Exact firmware anti-windup and sample timing remain unavailable.",
+    "current_transition": "Main cases switch the ideal current source instantaneously. The separate bounded slew sensitivities include Lline di/dt in the PCC voltage while line current changes linearly. The slew and sample periods are explicit implementation assumptions."
+  }
+}

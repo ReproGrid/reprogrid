@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks_passed": 18,
+  "checks_total": 18,
+  "independent_data_hash_matches_handoff": {
+    "metrics.json": "3dac9e52133e94300cd1d6d97e600fe2e097adb43f53de97d2cd2b64358634c4",
+    "numerical_traces.npz": "16114b3d67be95b6211e76968d380c4fbb10138e12fc9e11b9da7eb2dd493067"
+  },
+  "public_computed_figure_sha256": {
+    "gain_headroom.png": "6f7e7566239401eada3000b9fa84336cce6c0ce52b2f2371920f9afc16e18838",
+    "vsg_voltage_and_phase.png": "bd346aaac06fdfea28ba3b0956b4b311c67ab56cc9be15366cc41d857fcbb1ec"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

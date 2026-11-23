@@ -1,0 +1,40 @@
+{
+  "doi": "10.1109/TPEL.2019.2937942",
+  "state": "report_ready",
+  "outcome": "single_converter_pll_reproduction_with_damping_and_rocof_discrepancies",
+  "display_state_zh": "单变流器 PLL 相轨迹已复算，临界阻尼和 ROCOF 存在差异",
+  "scope_zh": "按图 2 单变流器和表 I–II 复算图 9 临界阻尼、图 13 相轨迹及图 15–16 的平衡电压跌落控制。",
+  "all_paper_claims_reproduced": false,
+  "hardware_validation": false,
+  "code_executed": true,
+  "public_fulltext_url": "https://vbn.aau.dk/ws/files/337054418/08820019.pdf",
+  "paper_condition_replay_state": "reduced_phase_and_sampled_balanced_sags_reproduced_with_discrepancies",
+  "cross_implementation_passed": true,
+  "clean_environment_replay_passed": true,
+  "checks_passed": 36,
+  "checks_total": 36,
+  "key_results": {
+    "zeta_critical_0p14": 0.3910394401277755,
+    "printed_zeta_critical_0p14": 0.695,
+    "eq20_hz_per_s": 1.4282223829392038,
+    "eq20_printed_hz_per_s": 8.8,
+    "fold_crossing_fig12_order_at_0p10_s": 0.3899,
+    "fold_crossing_abs_rocof_first_at_0p10_s": null
+  },
+  "critical_gaps": [
+    "Fig. 9 and Fig. 13 generation scripts are unavailable, including the original initial states and signal normalization.",
+    "The precise ROCOF filtering order in firmware, switching sample order and frequency-clamp anti-windup are unverified.",
+    "Full switching-model traces, asymmetric-fault control and synchronized lab recordings are outside this reproduction."
+  ],
+  "anomaly_evidence": [
+    {
+      "type": "reproducible_numerical_discrepancy",
+      "source": "results/metrics.json",
+      "finding": "Table I–II give a different damping threshold and phase portrait for the 0.14 pu fault. Eq. (20) also gives a rad/s² to Hz/s conversion discrepancy.",
+      "misconduct_inference": false
+    }
+  ],
+  "report_sha256": "1546fb58f9ec6c6bced1124c53c5624081277867c5d6347e8a66a4e70329e3ee",
+  "source_report_sha256": "d36f953f581acc789ca5e4b71e73873a21ccd53b7f7d7658a5bd51c1d30b960b",
+  "publication_scope": "Independent numerical reconstruction. Paper digitization is regenerated locally from a hash-pinned manuscript. Public figures show computed trajectories."
+}

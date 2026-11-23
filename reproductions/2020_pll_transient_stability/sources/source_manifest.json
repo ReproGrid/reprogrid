@@ -1,0 +1,18 @@
+{
+  "doi": "10.1109/TPEL.2019.2937942",
+  "title": "Design-Oriented Transient Stability Analysis of PLL-Synchronized Voltage-Source Converters",
+  "authors": ["Heng Wu", "Xiongfei Wang"],
+  "journal": "IEEE Transactions on Power Electronics, 35(4), 3573–3589, 2020",
+  "publication_year_of_record": 2020,
+  "public_landing_page": "https://vbn.aau.dk/en/publications/design-oriented-transient-stability-analysis-of-pll-synchronized-/",
+  "source": {
+    "url": "https://vbn.aau.dk/ws/files/337054418/08820019.pdf",
+    "local_path": "sources/08820019.pdf",
+    "sha256": "e2711a74f5ce25801dbcd9d11e6493c2eab0ce3f4aef7feed9fa0204e90ae533",
+    "kind": "IEEE published article hosted by Aalborg University, including one institutional cover page",
+    "figure_page_numbers_counting_cover": {"9": 6,"12": 7,"13": 9,"15":10,"16":11}
+  },
+  "digitization": {"script":"verification/read_figures.py", "results":"results/published_curves.json", "method":"Read labelled axes and vector paths from the hash-pinned PDF"},
+  "citation_snapshot": {"date":"2026-11-10", "cited_by_count":464, "normalized_percentile":0.99765412, "rank":30},
+  "unavailable_artifacts": ["Original Fig. 9 and Fig. 13 generation scripts with complete initial conditions and controller normalization", "Original MATLAB/PLECS models, sampled controller and anti-windup timing", "Synchronized PCC/GCP measurements and instrument acquisition files"]
+}

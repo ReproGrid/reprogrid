@@ -1,0 +1,21 @@
+{
+  "artifact_sha256": {
+    "LICENSE": "286623bdc0700b6e0be537b254f2b5c7033d6c7aa2dac2e390cb7337ff0906fe",
+    "README.md": "7c556e1acfd2a53a91fe325159774b9cb856be3a44e3b5f0be2573f43ca63da6",
+    "configs/protocol.json": "41987e825a4c04ad4db725fe37d82c6573b14f868de4141f75a0e17198f71d66",
+    "figures/gain_headroom.png": "6f7e7566239401eada3000b9fa84336cce6c0ce52b2f2371920f9afc16e18838",
+    "figures/vsg_voltage_and_phase.png": "bd346aaac06fdfea28ba3b0956b4b311c67ab56cc9be15366cc41d857fcbb1ec",
+    "reports/REPORT.md": "12a3a56723058643721481d4973720504dc5123aa751528d6db275067b074936",
+    "reports/status.json": "0606a767beb7ea036b0d2114c76fde4d690cb0c028144065fdd0c5f41c8f09d3",
+    "requirements.txt": "5412ec654e8f92ca7cc98176713e00ba24f76dc745baaa71d9645c4af5757f43",
+    "results/clean_replay_comparison.json": "1642e85ff8b4027e9138f6d163692a522024014b3fc8c53f1e7ff2eb13a3b2e8",
+    "results/metrics.json": "3dac9e52133e94300cd1d6d97e600fe2e097adb43f53de97d2cd2b64358634c4",
+    "results/numerical_traces.npz": "16114b3d67be95b6211e76968d380c4fbb10138e12fc9e11b9da7eb2dd493067",
+    "sources/source_manifest.json": "22ff192cdbcefad10eaeb8833901fe0af5cbad637cf4364358072df0dcd456c0",
+    "src/model.py": "ca387f7638a7de3b86ecf80dadb743ebbb849bfd852969da490d895433bd4283",
+    "src/plots.py": "2d71bf95adeaa3efbc586c760b2a7203f6a84dc940b8a4ce1f1c43f4b83efe47",
+    "src/reproduce.py": "cec57c1cb092caa9a35f587f7ab9f2a187b18014e4f0dab4d250a88d35ed3628",
+    "src/study.py": "267de975031ddd85572a6fad679db46b18b04be75513a19bfd0f005811acc3b3",
+    "verification/read_figures.py": "4d9c81b9abfa147e9de571a75d72f6cba21ba98f383273ebfb639aa9244a907b"
+  }
+}
